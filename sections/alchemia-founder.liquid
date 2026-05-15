@@ -1,0 +1,520 @@
+{% comment %} ============================================================
+  SECTION: alchemia-founder.liquid
+  Founder feature section. Used by:
+    - templates/page.about.json  (full about/founder experience)
+    - templates/page.science.json  (focused mid-page callout)
+
+  Sub-sections are individually toggled with show_* settings.
+  All text and images are editable. Defaults preserve the
+  original hardcoded content so existing pages are unaffected.
+============================================================ {% endcomment %}
+
+{% comment %} ─── A. HERO SPLIT ────────────────────────────────────────── {% endcomment %}
+<section class="page-hero section section--dark" {{ section.shopify_attributes }}>
+  <div class="container split">
+
+    <div class="am-fade">
+      {%- if section.settings.hero_eyebrow != blank -%}
+        <span class="eyebrow">{{ section.settings.hero_eyebrow }}</span>
+      {%- endif -%}
+      <h1>{{ section.settings.hero_heading }}</h1>
+      <p>{{ section.settings.hero_body }}</p>
+      <div class="button-row">
+        <a class="button button--gold" href="{{ section.settings.hero_cta1_url | default: '/pages/system' }}">
+          {{ section.settings.hero_cta1_label }}
+        </a>
+        {%- if section.settings.hero_cta2_label != blank -%}
+          <a class="button button--outline" href="{{ section.settings.hero_cta2_url | default: '/pages/science' }}">
+            {{ section.settings.hero_cta2_label }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="media-frame media-frame--portrait am-fade" style="animation-delay:120ms">
+      {%- if section.settings.hero_image != blank -%}
+        <img
+          src="{{ section.settings.hero_image | image_url: width: 880 }}"
+          alt="{{ section.settings.hero_image.alt | default: section.settings.hero_heading | escape }}"
+          width="{{ section.settings.hero_image.width }}"
+          height="{{ section.settings.hero_image.height }}"
+          loading="eager"
+          fetchpriority="high">
+      {%- else -%}
+        <img
+          src="{{ 'mia-founder-editorial.jpg' | asset_url }}"
+          alt="Dr. Mia Luna"
+          loading="eager">
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+
+{% comment %} ─── B. FOUNDER STORY (toggleable) ───────────────────────── {% endcomment %}
+{%- if section.settings.show_story -%}
+<section class="section section--cream">
+  <div class="container split">
+
+    <div class="am-fade">
+      {%- if section.settings.story_eyebrow != blank -%}
+        <span class="eyebrow">{{ section.settings.story_eyebrow }}</span>
+      {%- endif -%}
+      <h2>{{ section.settings.story_heading }}</h2>
+      <p>{{ section.settings.story_body1 }}</p>
+      {%- if section.settings.story_body2 != blank -%}
+        <p>{{ section.settings.story_body2 }}</p>
+      {%- endif -%}
+    </div>
+
+    <blockquote class="card am-fade" style="animation-delay:100ms">
+      {%- if section.settings.quote_eyebrow != blank -%}
+        <span class="eyebrow">{{ section.settings.quote_eyebrow }}</span>
+      {%- endif -%}
+      <h3>{{ section.settings.quote_heading }}</h3>
+      <p>{{ section.settings.quote_body }}</p>
+    </blockquote>
+
+  </div>
+</section>
+{%- endif -%}
+
+{% comment %} ─── C. MISSION CARDS (toggleable) ───────────────────────── {% endcomment %}
+{%- if section.settings.show_mission -%}
+{%- assign mission_blocks = section.blocks | where: 'type', 'mission_card' -%}
+<section class="section section--dark">
+  <div class="container">
+
+    <div class="section-header am-fade">
+      {%- if section.settings.mission_eyebrow != blank -%}
+        <span class="eyebrow">{{ section.settings.mission_eyebrow }}</span>
+      {%- endif -%}
+      <h2>{{ section.settings.mission_heading }}</h2>
+      <p>{{ section.settings.mission_body }}</p>
+    </div>
+
+    {%- if mission_blocks.size > 0 -%}
+      <div class="grid grid--3">
+        {%- for block in mission_blocks -%}
+          <article class="card am-fade" style="animation-delay:{{ forloop.index0 | times: 80 }}ms" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.heading }}</h3>
+            <p>{{ block.settings.body }}</p>
+          </article>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="grid grid--3">
+        <article class="card am-fade">
+          <h3>Internal skin health</h3>
+          <p>Support skin from within, not only through surface-level care.</p>
+        </article>
+        <article class="card am-fade" style="animation-delay:80ms">
+          <h3>Dermatologist-formulated</h3>
+          <p>Products are developed through clinical insight, not supplement trends.</p>
+        </article>
+        <article class="card am-fade" style="animation-delay:160ms">
+          <h3>Purpose-driven prevention</h3>
+          <p>Every purchase supports a larger mission tied to melanoma research and education.</p>
+        </article>
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+{%- endif -%}
+
+{% comment %} ─── D. CLINICAL GAP SPLIT (toggleable) ──────────────────── {% endcomment %}
+{%- if section.settings.show_gap -%}
+<section class="section section--cream">
+  <div class="container split">
+
+    <div class="media-frame am-fade">
+      {%- if section.settings.gap_image != blank -%}
+        <img
+          src="{{ section.settings.gap_image | image_url: width: 860 }}"
+          alt="{{ section.settings.gap_image.alt | default: section.settings.gap_heading | escape }}"
+          width="{{ section.settings.gap_image.width }}"
+          height="{{ section.settings.gap_image.height }}"
+          loading="lazy">
+      {%- else -%}
+        <img src="{{ 'system-stack.jpg' | asset_url }}" alt="Alchemia MD complete system" loading="lazy">
+      {%- endif -%}
+    </div>
+
+    <div class="am-fade" style="animation-delay:100ms">
+      {%- if section.settings.gap_eyebrow != blank -%}
+        <span class="eyebrow">{{ section.settings.gap_eyebrow }}</span>
+      {%- endif -%}
+      <h2>{{ section.settings.gap_heading }}</h2>
+      <p>{{ section.settings.gap_body1 }}</p>
+      {%- if section.settings.gap_body2 != blank -%}
+        <p>{{ section.settings.gap_body2 }}</p>
+      {%- endif -%}
+      {%- if section.settings.gap_cta_label != blank -%}
+        <a class="button button--dark" href="{{ section.settings.gap_cta_url | default: '/pages/system' }}">
+          {{ section.settings.gap_cta_label }}
+        </a>
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+{%- endif -%}
+
+{% comment %} ─── E. MISSION BAND (toggleable) ─────────────────────────── {% endcomment %}
+{%- if section.settings.show_mission_band -%}
+<section class="section mission-band">
+  <div class="container statement am-fade">
+    {%- if section.settings.band_eyebrow != blank -%}
+      <span class="eyebrow">{{ section.settings.band_eyebrow }}</span>
+    {%- endif -%}
+    <h2>{{ section.settings.band_heading }}</h2>
+    <p>{{ section.settings.band_body1 }}</p>
+    {%- if section.settings.band_body2 != blank -%}
+      <p>{{ section.settings.band_body2 }}</p>
+    {%- endif -%}
+  </div>
+</section>
+{%- endif -%}
+
+{% comment %} ─── F. PRODUCT STEPS (toggleable) ───────────────────────── {% endcomment %}
+{%- if section.settings.show_steps -%}
+{%- assign step_blocks = section.blocks | where: 'type', 'step_card' -%}
+<section class="section section--dark">
+  <div class="container">
+
+    <div class="section-header am-fade">
+      {%- if section.settings.steps_heading != blank -%}
+        <h2>{{ section.settings.steps_heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.steps_subtext != blank -%}
+        <p>{{ section.settings.steps_subtext }}</p>
+      {%- endif -%}
+    </div>
+
+    <div class="steps">
+      {%- if step_blocks.size > 0 -%}
+        {%- for block in step_blocks -%}
+          <article class="step-card am-fade" style="animation-delay:{{ forloop.index0 | times: 80 }}ms" {{ block.shopify_attributes }}>
+            <span class="role-badge">{{ block.settings.role }}</span>
+            <h3>{{ block.settings.product_name }}</h3>
+            <p>{{ block.settings.description }}</p>
+          </article>
+        {%- endfor -%}
+      {%- else -%}
+        <article class="step-card am-fade">
+          <span class="role-badge">Protect</span>
+          <h3>UV Shield+</h3>
+          <p>Daily support for skin exposed to UV stress.</p>
+        </article>
+        <article class="step-card am-fade" style="animation-delay:80ms">
+          <span class="role-badge">Balance</span>
+          <h3>Skinbiotic+</h3>
+          <p>Gut-skin support for internal balance.</p>
+        </article>
+        <article class="step-card am-fade" style="animation-delay:160ms">
+          <span class="role-badge">Restore</span>
+          <h3>Dermaboost+</h3>
+          <p>Support for skin recovery, vitality, and resilience.</p>
+        </article>
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Founder Feature",
+  "tag": "div",
+  "class": "am-section-founder",
+  "settings": [
+
+    { "type": "header", "content": "A — Hero" },
+    {
+      "type": "text",
+      "id": "hero_eyebrow",
+      "label": "Eyebrow",
+      "default": "About the founder"
+    },
+    {
+      "type": "text",
+      "id": "hero_heading",
+      "label": "Heading (H1)",
+      "default": "Founded by a dermatologist. Driven by prevention."
+    },
+    {
+      "type": "textarea",
+      "id": "hero_body",
+      "label": "Body text",
+      "default": "Alchemia MD was created by Dr. Mia Luna to help people support skin health from within through dermatologist-formulated, science-backed supplements."
+    },
+    {
+      "type": "text",
+      "id": "hero_cta1_label",
+      "label": "Primary button label",
+      "default": "Shop the system"
+    },
+    {
+      "type": "url",
+      "id": "hero_cta1_url",
+      "label": "Primary button URL",
+      "default": "/pages/system"
+    },
+    {
+      "type": "text",
+      "id": "hero_cta2_label",
+      "label": "Secondary button label (optional)",
+      "default": "Explore the science"
+    },
+    {
+      "type": "url",
+      "id": "hero_cta2_url",
+      "label": "Secondary button URL",
+      "default": "/pages/science"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Founder image"
+    },
+
+    { "type": "header", "content": "B — Founder story" },
+    {
+      "type": "checkbox",
+      "id": "show_story",
+      "label": "Show story section",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "story_eyebrow",
+      "label": "Eyebrow",
+      "default": "Founder story"
+    },
+    {
+      "type": "text",
+      "id": "story_heading",
+      "label": "Heading",
+      "default": "A personal mission became a professional calling."
+    },
+    {
+      "type": "textarea",
+      "id": "story_body1",
+      "label": "Body paragraph 1",
+      "default": "Dr. Mia Luna's commitment to skin health began with the loss of her mother to melanoma during childhood. That loss shaped her decision to pursue medicine and ultimately become a board-certified dermatologist."
+    },
+    {
+      "type": "textarea",
+      "id": "story_body2",
+      "label": "Body paragraph 2 (optional)",
+      "default": "After years in clinical practice, she saw a recurring problem: patients were asking for natural, trustworthy ways to support their skin, but were often left managing long lists of individual supplements. Alchemia MD was created to simplify that process with targeted formulas designed for specific roles in the skin health journey."
+    },
+    {
+      "type": "text",
+      "id": "quote_eyebrow",
+      "label": "Quote eyebrow",
+      "default": "Dr. Luna's philosophy"
+    },
+    {
+      "type": "text",
+      "id": "quote_heading",
+      "label": "Quote heading",
+      "default": "Skin health should not stop at the surface."
+    },
+    {
+      "type": "textarea",
+      "id": "quote_body",
+      "label": "Quote body",
+      "default": "True skin support lives at the intersection of prevention, clinical insight, daily consistency, and education."
+    },
+
+    { "type": "header", "content": "C — Mission cards" },
+    {
+      "type": "checkbox",
+      "id": "show_mission",
+      "label": "Show mission section",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "mission_eyebrow",
+      "label": "Eyebrow",
+      "default": "Why Alchemia MD exists"
+    },
+    {
+      "type": "text",
+      "id": "mission_heading",
+      "label": "Heading",
+      "default": "Created to change how people support their skin."
+    },
+    {
+      "type": "textarea",
+      "id": "mission_body",
+      "label": "Subtext",
+      "default": "Alchemia MD is built on the belief that skin is not a static surface to be fixed. It is a dynamic, living system that responds, rebuilds, protects, and restores."
+    },
+    {
+      "type": "paragraph",
+      "content": "Add 'Mission card' blocks below to override the default cards."
+    },
+
+    { "type": "header", "content": "D — Clinical gap" },
+    {
+      "type": "checkbox",
+      "id": "show_gap",
+      "label": "Show clinical gap section",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "gap_image",
+      "label": "Section image"
+    },
+    {
+      "type": "text",
+      "id": "gap_eyebrow",
+      "label": "Eyebrow",
+      "default": "Clinical gap"
+    },
+    {
+      "type": "text",
+      "id": "gap_heading",
+      "label": "Heading",
+      "default": "The supplement routine was too complicated."
+    },
+    {
+      "type": "textarea",
+      "id": "gap_body1",
+      "label": "Body paragraph 1",
+      "default": "Many people want to support their skin from within, but the options are often fragmented: single-ingredient bottles, unclear dosages, generic beauty claims, and little dermatological guidance."
+    },
+    {
+      "type": "textarea",
+      "id": "gap_body2",
+      "label": "Body paragraph 2 (optional)",
+      "default": "Alchemia MD simplifies skin supplementation with targeted, multi-ingredient formulas designed for specific roles in a complete daily skin health system."
+    },
+    {
+      "type": "text",
+      "id": "gap_cta_label",
+      "label": "Button label",
+      "default": "Shop the complete system"
+    },
+    {
+      "type": "url",
+      "id": "gap_cta_url",
+      "label": "Button URL",
+      "default": "/pages/system"
+    },
+
+    { "type": "header", "content": "E — Mission band" },
+    {
+      "type": "checkbox",
+      "id": "show_mission_band",
+      "label": "Show mission band",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "band_eyebrow",
+      "label": "Eyebrow",
+      "default": "Brand philosophy"
+    },
+    {
+      "type": "text",
+      "id": "band_heading",
+      "label": "Heading",
+      "default": "Balance is not created. It is restored."
+    },
+    {
+      "type": "textarea",
+      "id": "band_body1",
+      "label": "Body paragraph 1",
+      "default": "For centuries, alchemy pursued the idea of transformation through balance. Alchemia MD applies that philosophy to skin health through a modern dermatological lens."
+    },
+    {
+      "type": "textarea",
+      "id": "band_body2",
+      "label": "Body paragraph 2 (optional)",
+      "default": "Skin is always working to return to equilibrium. It sheds, rebuilds, responds, and recovers. Alchemia MD products are designed to support that process from within."
+    },
+
+    { "type": "header", "content": "F — Product steps" },
+    {
+      "type": "checkbox",
+      "id": "show_steps",
+      "label": "Show product steps section",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "steps_heading",
+      "label": "Heading",
+      "default": "A complete system for internal skin defense."
+    },
+    {
+      "type": "text",
+      "id": "steps_subtext",
+      "label": "Subtext",
+      "default": "Each Alchemia MD formula is designed for a distinct role in the daily skin health journey."
+    },
+    {
+      "type": "paragraph",
+      "content": "Add 'Step card' blocks below to override the default product steps."
+    }
+
+  ],
+  "blocks": [
+    {
+      "type": "mission_card",
+      "name": "Mission card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Card heading"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Body text",
+          "default": "Card description."
+        }
+      ]
+    },
+    {
+      "type": "step_card",
+      "name": "Step card",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role badge",
+          "default": "Protect"
+        },
+        {
+          "type": "text",
+          "id": "product_name",
+          "label": "Product name",
+          "default": "UV Shield+"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Daily support for skin exposed to UV stress."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Founder Feature"
+    }
+  ]
+}
+{% endschema %}

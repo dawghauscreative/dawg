@@ -1,0 +1,121 @@
+{
+  "sections": {
+    "main": {
+      "type": "alchemia-science",
+      "blocks": {
+        "pillar-1": {
+          "type": "pillar",
+          "settings": {
+            "fallback_asset": "science-botanical.jpg",
+            "heading": "Plant-based power",
+            "body": "Premium botanical extracts, vitamins, and phytonutrients are selected to support skin from within."
+          }
+        },
+        "pillar-2": {
+          "type": "pillar",
+          "settings": {
+            "fallback_asset": "science-lab.jpg",
+            "heading": "Clinically informed",
+            "body": "Each formula is developed around a clear role in the skin health journey: protect, balance, or restore."
+          }
+        },
+        "pillar-3": {
+          "type": "pillar",
+          "settings": {
+            "fallback_asset": "system-stack.jpg",
+            "heading": "Targeted and effective",
+            "body": "The system is built to simplify daily supplement routines without generic beauty claims."
+          }
+        }
+      },
+      "block_order": ["pillar-1", "pillar-2", "pillar-3"],
+      "settings": {
+        "eyebrow": "The science",
+        "heading": "Rooted in science. Built for skin.",
+        "body": "At Alchemia MD, healthy, resilient skin starts from within. Our formulas are grounded in dermatological logic and powered by ingredients selected for a specific role in daily skin support.",
+        "button_label": "Shop the system",
+        "button_url": "/pages/system",
+        "pillars_eyebrow": "Our science. Your advantage.",
+        "pillars_heading": "Formulation logic before ingredient hype."
+      }
+    },
+    "science-cards": {
+      "type": "am-cards-grid",
+      "blocks": {
+        "sc-1": {
+          "type": "card",
+          "settings": {
+            "title": "Evidence-based ingredients",
+            "text": "Every ingredient is selected based on peer-reviewed dermatological and clinical research."
+          }
+        },
+        "sc-2": {
+          "type": "card",
+          "settings": {
+            "title": "Multi-ingredient formulas",
+            "text": "Designed to replace supplement stacking with targeted, purposeful daily formulas."
+          }
+        },
+        "sc-3": {
+          "type": "card",
+          "settings": {
+            "title": "Transparent dosing",
+            "text": "No proprietary blends. Clear formulation logic and labeled amounts."
+          }
+        },
+        "sc-4": {
+          "type": "card",
+          "settings": {
+            "title": "Physician-led development",
+            "text": "Formulas reviewed and created by a board-certified dermatologist."
+          }
+        }
+      },
+      "block_order": ["sc-1", "sc-2", "sc-3", "sc-4"],
+      "settings": {
+        "bg_style": "section--charcoal",
+        "eyebrow": "Our approach",
+        "heading": "Formulated with purpose.",
+        "columns": "4"
+      }
+    },
+    "founder": {
+      "type": "alchemia-founder",
+      "settings": {
+        "hero_eyebrow": "Meet the formulator",
+        "hero_heading": "Founded by a dermatologist. Driven by prevention.",
+        "hero_body": "Alchemia MD was created by Dr. Mia Luna to help people support skin health from within through dermatologist-formulated, science-backed supplements.",
+        "hero_cta1_label": "Shop the system",
+        "hero_cta1_url": "/pages/system",
+        "hero_cta2_label": "Explore the science",
+        "hero_cta2_url": "/pages/science",
+        "show_story": true,
+        "story_eyebrow": "Founder story",
+        "story_heading": "A personal mission became a professional calling.",
+        "story_body1": "Dr. Mia Luna's commitment to skin health began with the loss of her mother to melanoma during childhood. That loss shaped her decision to pursue medicine and ultimately become a board-certified dermatologist.",
+        "story_body2": "After years in clinical practice, she saw a recurring problem: patients were asking for natural, trustworthy ways to support their skin, but were often left managing long lists of individual supplements. Alchemia MD was created to simplify that process with targeted formulas designed for specific roles in the skin health journey.",
+        "quote_eyebrow": "Dr. Luna's philosophy",
+        "quote_heading": "Skin health should not stop at the surface.",
+        "quote_body": "True skin support lives at the intersection of prevention, clinical insight, daily consistency, and education.",
+        "show_mission": false,
+        "show_gap": false,
+        "show_mission_band": false,
+        "show_steps": false
+      }
+    },
+    "cta": {
+      "type": "am-cta-band",
+      "settings": {
+        "bg_style": "",
+        "eyebrow": "Shop the science",
+        "heading": "Physician-formulated support for daily skin health.",
+        "body": "Three targeted formulas designed to protect, balance, and restore skin from within.",
+        "cta_label": "Explore the system",
+        "cta_url": "/pages/system",
+        "cta_style": "button--gold",
+        "tagline": "PROTECT  •  BALANCE  •  RESTORE"
+      }
+    }
+  },
+  "order": ["main", "science-cards", "founder", "cta"]
+}

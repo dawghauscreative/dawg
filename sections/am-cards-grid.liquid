@@ -1,0 +1,127 @@
+<section class="section {{ section.settings.bg_style }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="section-header am-fade">
+      {%- if section.settings.eyebrow != blank -%}
+        <span class="eyebrow">{{ section.settings.eyebrow }}</span>
+      {%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+      {%- if section.settings.subtext != blank -%}
+        <p>{{ section.settings.subtext }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="grid grid--{{ section.settings.columns }}">
+        {%- for block in section.blocks -%}
+          <article class="card am-fade" style="animation-delay:{{ forloop.index0 | times: 80 }}ms" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.text }}</p>
+          </article>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.cta_label != blank and section.settings.cta_link != blank -%}
+      <div style="text-align:center;margin-top:2.5rem">
+        <a class="button {{ section.settings.cta_style }}" href="{{ section.settings.cta_link }}">
+          {{ section.settings.cta_label }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Cards Grid",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "bg_style",
+      "label": "Background",
+      "options": [
+        { "value": "section--dark", "label": "Dark" },
+        { "value": "section--cream", "label": "Cream" },
+        { "value": "section--charcoal", "label": "Charcoal" },
+        { "value": "section--green", "label": "Deep green" }
+      ],
+      "default": "section--dark"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Columns",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Surface protection is only part of the story."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "cta_style",
+      "label": "Button style",
+      "options": [
+        { "value": "button--gold", "label": "Gold" },
+        { "value": "button--outline", "label": "Outline" }
+      ],
+      "default": "button--gold"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Card title" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Card body text." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cards Grid",
+      "settings": {
+        "eyebrow": "The problem",
+        "heading": "Surface protection is only part of the story.",
+        "subtext": "Sun-exposed skin faces more than what can be seen on the surface.",
+        "columns": "3",
+        "bg_style": "section--dark"
+      },
+      "blocks": [
+        { "type": "card", "settings": { "title": "UV exposure adds up", "text": "Golf, tennis, boating, beach days, travel, and outdoor routines create repeated skin stress over time." } },
+        { "type": "card", "settings": { "title": "Most routines are incomplete", "text": "Topical skincare and sunscreen matter, but they do not address every internal factor involved in skin resilience." } },
+        { "type": "card", "settings": { "title": "Supplement overload creates confusion", "text": "Most people are left managing multiple bottles, unclear dosages, and disconnected ingredients." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

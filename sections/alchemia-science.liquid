@@ -1,0 +1,248 @@
+{% comment %} ============================================================
+  SECTION: alchemia-science.liquid
+  Science page hero + optional 3-pillar card row.
+  Used by: templates/page.science.json (as "main")
+
+  Zones:
+    A. Page hero — dark, split layout
+    B. Science pillars — cream, 3-column grid (blocks)
+============================================================ {% endcomment %}
+
+{% comment %} ─── A. HERO ─────────────────────────────────────────────── {% endcomment %}
+<section class="page-hero section section--dark" {{ section.shopify_attributes }}>
+  <div class="container split">
+
+    <div class="am-fade">
+      {%- if section.settings.eyebrow != blank -%}
+        <span class="eyebrow">{{ section.settings.eyebrow }}</span>
+      {%- endif -%}
+
+      {%- if section.settings.heading != blank -%}
+        <h1>{{ section.settings.heading }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.body != blank -%}
+        <p>{{ section.settings.body }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.button_label != blank -%}
+        <div class="button-row">
+          <a class="button button--gold" href="{{ section.settings.button_url | default: '/pages/system' }}">
+            {{ section.settings.button_label }}
+          </a>
+          {%- if section.settings.button2_label != blank -%}
+            <a class="button button--outline" href="{{ section.settings.button2_url }}">
+              {{ section.settings.button2_label }}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="media-frame am-fade" style="animation-delay:120ms">
+      {%- if section.settings.hero_image != blank -%}
+        <img
+          src="{{ section.settings.hero_image | image_url: width: 960 }}"
+          alt="{{ section.settings.hero_image.alt | default: section.settings.heading | escape }}"
+          width="{{ section.settings.hero_image.width }}"
+          height="{{ section.settings.hero_image.height }}"
+          loading="eager"
+          fetchpriority="high">
+      {%- else -%}
+        <img
+          src="{{ 'science-system.jpg' | asset_url }}"
+          alt="Alchemia MD product system with botanical science styling"
+          loading="eager">
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+
+{% comment %} ─── B. SCIENCE PILLARS (blocks, only renders if blocks exist) {% endcomment %}
+{%- assign pillar_blocks = section.blocks | where: 'type', 'pillar' -%}
+{%- if pillar_blocks.size > 0 -%}
+
+<section class="section section--cream">
+  <div class="container">
+
+    <div class="section-header am-fade">
+      {%- if section.settings.pillars_eyebrow != blank -%}
+        <span class="eyebrow">{{ section.settings.pillars_eyebrow }}</span>
+      {%- endif -%}
+      {%- if section.settings.pillars_heading != blank -%}
+        <h2>{{ section.settings.pillars_heading }}</h2>
+      {%- endif -%}
+    </div>
+
+    <div class="grid grid--3">
+      {%- for block in pillar_blocks -%}
+        <article class="system-card am-fade" style="animation-delay:{{ forloop.index0 | times: 100 }}ms" {{ block.shopify_attributes }}>
+          <div class="system-card__image">
+            {%- if block.settings.image != blank -%}
+              <img
+                src="{{ block.settings.image | image_url: width: 640 }}"
+                alt="{{ block.settings.image.alt | default: block.settings.heading | escape }}"
+                width="{{ block.settings.image.width }}"
+                height="{{ block.settings.image.height }}"
+                loading="lazy">
+            {%- else -%}
+              <img
+                src="{{ block.settings.fallback_asset | default: 'science-botanical.jpg' | asset_url }}"
+                alt="{{ block.settings.heading | escape }}"
+                loading="lazy">
+            {%- endif -%}
+          </div>
+          <div class="system-card__body">
+            {%- if block.settings.heading != blank -%}
+              <h3>{{ block.settings.heading }}</h3>
+            {%- endif -%}
+            {%- if block.settings.body != blank -%}
+              <p>{{ block.settings.body }}</p>
+            {%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Science — Hero",
+  "tag": "div",
+  "class": "am-section-science-hero",
+  "settings": [
+    { "type": "header", "content": "Hero" },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow label",
+      "default": "The science"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading (H1)",
+      "default": "Rooted in science. Built for skin."
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Body text",
+      "default": "At Alchemia MD, healthy, resilient skin starts from within. Our formulas are grounded in dermatological logic and powered by ingredients selected for a specific role in daily skin support."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Primary button label",
+      "default": "Shop the system"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Primary button URL",
+      "default": "/pages/system"
+    },
+    {
+      "type": "text",
+      "id": "button2_label",
+      "label": "Secondary button label (optional)"
+    },
+    {
+      "type": "url",
+      "id": "button2_url",
+      "label": "Secondary button URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image"
+    },
+    { "type": "header", "content": "Science pillars" },
+    {
+      "type": "paragraph",
+      "content": "Add up to 3 'Science pillar card' blocks below to show the cream card row."
+    },
+    {
+      "type": "text",
+      "id": "pillars_eyebrow",
+      "label": "Eyebrow label",
+      "default": "Our science. Your advantage."
+    },
+    {
+      "type": "text",
+      "id": "pillars_heading",
+      "label": "Heading (H2)",
+      "default": "Formulation logic before ingredient hype."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pillar",
+      "name": "Science pillar card",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card image"
+        },
+        {
+          "type": "text",
+          "id": "fallback_asset",
+          "label": "Fallback asset filename",
+          "info": "Used if no image is selected above. Enter a filename from your theme assets (e.g. science-botanical.jpg).",
+          "default": "science-botanical.jpg"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Pillar heading"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Body text",
+          "default": "Short description of this formulation pillar."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Science — Hero",
+      "blocks": [
+        {
+          "type": "pillar",
+          "settings": {
+            "fallback_asset": "science-botanical.jpg",
+            "heading": "Plant-based power",
+            "body": "Premium botanical extracts, vitamins, and phytonutrients are selected to support skin from within."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "fallback_asset": "science-lab.jpg",
+            "heading": "Clinically informed",
+            "body": "Each formula is developed around a clear role in the skin health journey: protect, balance, or restore."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "fallback_asset": "system-stack.jpg",
+            "heading": "Targeted and effective",
+            "body": "The system is built to simplify daily supplement routines without generic beauty claims."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
