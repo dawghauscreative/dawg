@@ -29,6 +29,8 @@
   if product != blank
     assign product_form_id = 'product-form-' | append: section.id
   endif
+
+  assign final_atc_label_rendered = section.settings.final_atc_label | replace: '{title}', display_title
 %}
 
 {%- style -%}
@@ -390,7 +392,7 @@
     function updateButtonState(isAvailable) {
       var atcLabel = '{{ section.settings.atc_label | escape }}';
       var soldOut = '{{ section.settings.sold_out_label | escape }}';
-      var finalLabel = '{{ section.settings.final_atc_label | replace: '{title}', display_title | escape }}';
+      var finalLabel = '{{ final_atc_label_rendered | escape }}';
 
       if (mainAtcButton) {
         mainAtcButton.disabled = !isAvailable;
@@ -548,7 +550,7 @@
       "default": "Sold Out"
     },
     {
-      "type": "url",
+      "type": "text",
       "id": "system_url",
       "label": "System page URL",
       "default": "/pages/system"
@@ -560,7 +562,7 @@
       "default": "Shop the complete system"
     },
     {
-      "type": "url",
+      "type": "text",
       "id": "fallback_atc_url",
       "label": "Fallback shop URL (no product)",
       "default": "/collections/all"
@@ -582,7 +584,7 @@
       "default": "Shop"
     },
     {
-      "type": "url",
+      "type": "text",
       "id": "breadcrumb_shop_url",
       "label": "Shop URL",
       "default": "/collections/all"
@@ -735,7 +737,7 @@
       "default": "UV Shield+ is the Protect step. Pair it with Skinbiotic+ for Balance and Dermaboost+ for Restore to complete the daily internal skin health system."
     },
     {
-      "type": "url",
+      "type": "text",
       "id": "upsell_url",
       "label": "Upsell button URL",
       "default": "/pages/system"
@@ -786,7 +788,7 @@
       "default": "Alchemia MD was founded by Dr. Mia Luna, a board-certified dermatologist who created the brand after years of seeing patients seek natural, trustworthy ways to support their skin health."
     },
     {
-      "type": "url",
+      "type": "text",
       "id": "founder_button_url",
       "label": "Founder button URL",
       "default": "/pages/about"
