@@ -356,13 +356,13 @@
         {% unless selected_variant.available %}disabled{% endunless %}
       >
         {% if selected_variant.available %}
-          {{ section.settings.final_atc_label | replace: '{title}', display_title }}
+          {{ final_atc_label_rendered }}
         {% else %}
           {{ section.settings.sold_out_label }}
         {% endif %}
       </button>
     {% else %}
-      <a class="button button--gold" href="{{ section.settings.fallback_atc_url }}">{{ section.settings.final_atc_label | replace: '{title}', display_title }}</a>
+      <a class="button button--gold" href="{{ section.settings.fallback_atc_url }}">{{ final_atc_label_rendered }}</a>
     {% endif %}
   </div>
 </section>
