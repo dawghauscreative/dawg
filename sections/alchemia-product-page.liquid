@@ -354,13 +354,13 @@
         {% unless selected_variant.available %}disabled{% endunless %}
       >
         {% if selected_variant.available %}
-          {{ section.settings.final_atc_label | replace: '{{title}}', display_title }}
+          {{ section.settings.final_atc_label | replace: '{title}', display_title }}
         {% else %}
           {{ section.settings.sold_out_label }}
         {% endif %}
       </button>
     {% else %}
-      <a class="button button--gold" href="{{ section.settings.fallback_atc_url }}">{{ section.settings.final_atc_label | replace: '{{title}}', display_title }}</a>
+      <a class="button button--gold" href="{{ section.settings.fallback_atc_url }}">{{ section.settings.final_atc_label | replace: '{title}', display_title }}</a>
     {% endif %}
   </div>
 </section>
@@ -390,7 +390,7 @@
     function updateButtonState(isAvailable) {
       var atcLabel = '{{ section.settings.atc_label | escape }}';
       var soldOut = '{{ section.settings.sold_out_label | escape }}';
-      var finalLabel = '{{ section.settings.final_atc_label | replace: "{{title}}", display_title | escape }}';
+      var finalLabel = '{{ section.settings.final_atc_label | replace: '{title}', display_title | escape }}';
 
       if (mainAtcButton) {
         mainAtcButton.disabled = !isAvailable;
@@ -833,8 +833,8 @@
       "type": "text",
       "id": "final_atc_label",
       "label": "Final CTA button label",
-      "default": "Add {{title}} to Cart",
-      "info": "Use {{title}} to insert the product name."
+      "default": "Add {title} to Cart",
+      "info": "Use {title} to insert the product name."
     },
     {
       "type": "header",
