@@ -1,0 +1,998 @@
+{% liquid
+  assign hero_image = section.settings.hero_image
+  assign fallback_asset = section.settings.fallback_asset | default: 'uv-shield-hero.jpg'
+  assign fallback_src = fallback_asset | asset_url
+  if fallback_asset contains '://'
+    assign fallback_src = fallback_asset
+  endif
+
+  assign founder_image = section.settings.founder_image
+  assign founder_image_asset = section.settings.founder_image_asset | default: 'mia-founder-editorial.jpg'
+  assign founder_image_src = founder_image_asset | asset_url
+  if founder_image_asset contains '://'
+    assign founder_image_src = founder_image_asset
+  endif
+
+  assign display_title = section.settings.product_name
+  if display_title == blank and product != blank
+    assign display_title = product.title
+  endif
+
+  assign selected_variant = product.selected_or_first_available_variant
+  assign benefit_blocks = section.blocks | where: 'type', 'benefit'
+  assign use_case_blocks = section.blocks | where: 'type', 'use_case'
+  assign ingredient_blocks = section.blocks | where: 'type', 'ingredient'
+  assign faq_blocks = section.blocks | where: 'type', 'faq'
+  assign trust_blocks = section.blocks | where: 'type', 'trust_item'
+  assign how_to_use_blocks = section.blocks | where: 'type', 'how_to_use_step'
+
+  if product != blank
+    assign product_form_id = 'product-form-' | append: section.id
+  endif
+%}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .product-hero__buy h1 {
+    color: {{ section.settings.heading_color }};
+  }
+  #shopify-section-{{ section.id }} .product-hero__buy .eyebrow {
+    color: {{ section.settings.eyebrow_color }};
+  }
+  #shopify-section-{{ section.id }} .product-hero__buy p {
+    color: {{ section.settings.body_color }};
+  }
+  #shopify-section-{{ section.id }} .product-hero__buy .role-badge {
+    color: {{ section.settings.badge_color }};
+  }
+  #shopify-section-{{ section.id }} .product-hero__buy .trust-line span {
+    color: {{ section.settings.trust_color }};
+  }
+  #shopify-section-{{ section.id }} .section--dark h2,
+  #shopify-section-{{ section.id }} .section--dark p,
+  #shopify-section-{{ section.id }} .section--dark li,
+  #shopify-section-{{ section.id }} .section--dark .eyebrow {
+    color: {{ section.settings.dark_section_text_color }};
+  }
+  #shopify-section-{{ section.id }} .section--charcoal h2,
+  #shopify-section-{{ section.id }} .section--charcoal p,
+  #shopify-section-{{ section.id }} .section--charcoal .eyebrow {
+    color: {{ section.settings.charcoal_section_text_color }};
+  }
+{%- endstyle -%}
+
+<section class="product-hero">
+  <div class="product-hero__media">
+    {% if hero_image != blank %}
+      {{ hero_image | image_url: width: 1100 | image_tag: widths: '520, 760, 1100', loading: 'eager', alt: display_title }}
+    {% elsif product.featured_image != blank %}
+      {{ product.featured_image | image_url: width: 1100 | image_tag: widths: '520, 760, 1100', loading: 'eager', alt: product.title }}
+    {% else %}
+      <img src="{{ fallback_src }}" alt="{{ display_title | escape }}" loading="eager">
+    {% endif %}
+  </div>
+
+  <div class="product-hero__buy">
+    <div class="purchase-card">
+      <div class="breadcrumbs">
+        <a href="{{ routes.root_url }}">{{ section.settings.breadcrumb_home }}</a> /
+        <a href="{{ section.settings.breadcrumb_shop_url }}">{{ section.settings.breadcrumb_shop }}</a> /
+        {{ display_title }}
+      </div>
+
+      <span class="role-badge">{{ section.settings.role_badge_prefix }}{{ section.settings.role }}</span>
+
+      <h1>{{ display_title }}</h1>
+
+      <p class="eyebrow">{{ section.settings.positioning_line }}</p>
+
+      <p>{{ section.settings.short_description }}</p>
+
+      <div class="trust-line">
+        {% if trust_blocks.size > 0 %}
+          {% for block in trust_blocks %}
+            <span {{ block.shopify_attributes }}>{{ block.settings.label }}</span>
+          {% endfor %}
+        {% else %}
+          <span>{{ section.settings.trust_1 }}</span>
+          <span>{{ section.settings.trust_2 }}</span>
+          <span>{{ section.settings.trust_3 }}</span>
+        {% endif %}
+      </div>
+
+      <div id="atc-sentinel"></div>
+
+      {% if product != blank %}
+        {% form 'product', product, id: product_form_id, class: 'buy-buttons' %}
+
+          {% if product.has_only_default_variant == false %}
+            <select
+              class="variant-select"
+              name="id"
+              data-variant-select
+              aria-label="Choose {{ product.title | escape }}"
+            >
+              {% for variant in product.variants %}
+                <option
+                  value="{{ variant.id }}"
+                  data-price="{{ variant.price | money }}"
+                  data-compare-price="{% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money }}{% endif %}"
+                  data-available="{{ variant.available }}"
+                  {% if variant == selected_variant %}selected="selected"{% endif %}
+                >
+                  {{ variant.title }} — {{ variant.price | money }}
+                </option>
+              {% endfor %}
+            </select>
+          {% else %}
+            <input type="hidden" name="id" value="{{ selected_variant.id }}">
+          {% endif %}
+
+          <div class="product-price">
+            <span data-selected-price>{{ selected_variant.price | money }}</span>
+
+            <s data-compare-price {% unless selected_variant.compare_at_price > selected_variant.price %}hidden{% endunless %}>
+              {{ selected_variant.compare_at_price | money }}
+            </s>
+          </div>
+
+          <div class="quantity-row">
+            <input
+              class="quantity-input"
+              type="number"
+              name="quantity"
+              value="1"
+              min="1"
+              aria-label="{{ 'products.product.quantity' | t }}"
+            >
+
+            <button
+              class="button button--gold"
+              type="submit"
+              name="add"
+              data-add-to-cart
+              {% unless selected_variant.available %}disabled{% endunless %}
+            >
+              {% if selected_variant.available %}
+                {{ section.settings.atc_label }}
+              {% else %}
+                {{ section.settings.sold_out_label }}
+              {% endif %}
+            </button>
+          </div>
+
+        {% endform %}
+
+        <div id="sticky-atc" class="sticky-atc" aria-hidden="true">
+          <span class="sticky-atc__title">{{ display_title }}</span>
+
+          <button
+            class="button button--gold"
+            type="button"
+            data-sticky-atc-btn
+            {% unless selected_variant.available %}disabled{% endunless %}
+          >
+            {% if selected_variant.available %}
+              {{ section.settings.atc_label }}
+            {% else %}
+              {{ section.settings.sold_out_label }}
+            {% endif %}
+          </button>
+        </div>
+      {% else %}
+        <a class="button button--gold" href="{{ section.settings.fallback_atc_url }}">{{ section.settings.atc_label }}</a>
+      {% endif %}
+
+      <a class="button button--outline" href="{{ section.settings.system_url }}">{{ section.settings.system_button_label }}</a>
+
+      {% for block in section.blocks %}
+        {% if block.type == '@app' %}
+          {% render block %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if benefit_blocks.size > 0 %}
+  <section class="product-benefits" aria-label="{{ display_title }} benefits">
+    {% for block in benefit_blocks %}
+      <article class="product-benefit" {{ block.shopify_attributes }}>
+        <h3>{{ block.settings.title }}</h3>
+        <p>{{ block.settings.text }}</p>
+      </article>
+    {% endfor %}
+  </section>
+{% endif %}
+
+<section class="section section--cream">
+  <div class="container product-detail">
+    <nav class="detail-nav" aria-label="Product detail sections">
+      <a href="#description">{{ section.settings.nav_description }}</a>
+      <a href="#who">{{ section.settings.nav_who }}</a>
+      <a href="#ingredients">{{ section.settings.nav_ingredients }}</a>
+      <a href="#use">{{ section.settings.nav_use }}</a>
+      <a href="#faq">{{ section.settings.nav_faq }}</a>
+    </nav>
+
+    <div id="description">
+      <span class="role-badge">{{ section.settings.role }}</span>
+
+      <h2>{{ section.settings.role_heading }}</h2>
+
+      <p>{{ section.settings.role_body }}</p>
+
+      <div id="who" class="section-header section-header--left">
+        <h2>{{ section.settings.why_heading }}</h2>
+        <p>{{ section.settings.why_intro }}</p>
+      </div>
+
+      {% if use_case_blocks.size > 0 %}
+        <div class="grid grid--2">
+          {% for block in use_case_blocks %}
+            <article class="card" {{ block.shopify_attributes }}>
+              <h3>{{ block.settings.title }}</h3>
+              <p>{{ block.settings.text }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <aside id="ingredients" class="ingredient-card">
+      <h3>{{ section.settings.formula_heading }}</h3>
+
+      <p>{{ section.settings.formula_body }}</p>
+
+      {% if ingredient_blocks.size > 0 %}
+        <div class="ingredient-list">
+          {% for block in ingredient_blocks %}
+            <div class="ingredient-item" {{ block.shopify_attributes }}>
+              <strong>{{ block.settings.title }}</strong>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </aside>
+  </div>
+</section>
+
+<section class="section section--dark" id="use">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">{{ section.settings.how_eyebrow }}</span>
+
+      <h2>{{ section.settings.how_heading }}</h2>
+
+      <p>{{ section.settings.how_intro }}</p>
+
+      <ul class="feature-list">
+        {% if how_to_use_blocks.size > 0 %}
+          {% for block in how_to_use_blocks %}
+            <li {{ block.shopify_attributes }}>{{ block.settings.step }}</li>
+          {% endfor %}
+        {% else %}
+          <li>{{ section.settings.how_step_1 }}</li>
+          <li>{{ section.settings.how_step_2 }}</li>
+          <li>{{ section.settings.how_step_3 }}</li>
+          {% if section.settings.role == 'Protect' %}
+            <li>{{ section.settings.how_step_protect }}</li>
+          {% endif %}
+        {% endif %}
+      </ul>
+    </div>
+
+    <div class="bundle-upsell">
+      <div>
+        <span class="eyebrow">{{ section.settings.upsell_eyebrow }}</span>
+
+        <h3>{{ section.settings.upsell_heading }}</h3>
+
+        <p>{{ section.settings.upsell_text }}</p>
+      </div>
+
+      <a class="button button--gold" href="{{ section.settings.upsell_url }}">{{ section.settings.upsell_button_label }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--charcoal">
+  <div class="container split">
+    <div class="media-frame media-frame--portrait">
+      {% if founder_image != blank %}
+        {{ founder_image | image_url: width: 800 | image_tag: widths: '400, 600, 800', loading: 'lazy', alt: section.settings.founder_image_alt }}
+      {% else %}
+        <img src="{{ founder_image_src }}" alt="{{ section.settings.founder_image_alt | escape }}" loading="lazy">
+      {% endif %}
+    </div>
+
+    <div>
+      <span class="eyebrow">{{ section.settings.founder_eyebrow }}</span>
+
+      <h2>{{ section.settings.founder_heading }}</h2>
+
+      <p>{{ section.settings.founder_text }}</p>
+
+      <a class="button button--outline" href="{{ section.settings.founder_button_url }}">{{ section.settings.founder_button_label }}</a>
+    </div>
+  </div>
+</section>
+
+{% if faq_blocks.size > 0 %}
+  <section class="section section--cream" id="faq">
+    <div class="container grid grid--2">
+      <div>
+        <span class="eyebrow">{{ section.settings.faq_eyebrow }}</span>
+
+        <h2>{{ display_title }} {{ section.settings.faq_heading_suffix }}</h2>
+      </div>
+
+      <div class="faq-list">
+        {% for block in faq_blocks %}
+          <details {{ block.shopify_attributes }}>
+            <summary>{{ block.settings.question }}</summary>
+            <p>{{ block.settings.answer }}</p>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+<section class="section cta-band">
+  <div class="container cta-band__inner">
+    <div>
+      <h2>{{ section.settings.final_heading }}</h2>
+      <p>{{ section.settings.final_text }}</p>
+    </div>
+
+    {% if product != blank %}
+      <button
+        class="button button--gold"
+        type="button"
+        data-final-atc-btn
+        {% unless selected_variant.available %}disabled{% endunless %}
+      >
+        {% if selected_variant.available %}
+          {{ section.settings.final_atc_label | replace: '{{title}}', display_title }}
+        {% else %}
+          {{ section.settings.sold_out_label }}
+        {% endif %}
+      </button>
+    {% else %}
+      <a class="button button--gold" href="{{ section.settings.fallback_atc_url }}">{{ section.settings.final_atc_label | replace: '{{title}}', display_title }}</a>
+    {% endif %}
+  </div>
+</section>
+
+{% if product != blank %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var productForm = document.getElementById('{{ product_form_id }}');
+    var variantSelect = document.querySelector('[data-variant-select]');
+    var priceEl = document.querySelector('[data-selected-price]');
+    var comparePriceEl = document.querySelector('[data-compare-price]');
+    var mainAtcButton = document.querySelector('[data-add-to-cart]');
+    var stickyAtcButton = document.querySelector('[data-sticky-atc-btn]');
+    var finalAtcButton = document.querySelector('[data-final-atc-btn]');
+    var stickyAtc = document.getElementById('sticky-atc');
+    var sentinel = document.getElementById('atc-sentinel');
+
+    function submitProductForm() {
+      if (!productForm) return;
+      if (typeof productForm.requestSubmit === 'function') {
+        productForm.requestSubmit();
+      } else {
+        productForm.submit();
+      }
+    }
+
+    function updateButtonState(isAvailable) {
+      var atcLabel = '{{ section.settings.atc_label | escape }}';
+      var soldOut = '{{ section.settings.sold_out_label | escape }}';
+      var finalLabel = '{{ section.settings.final_atc_label | replace: "{{title}}", display_title | escape }}';
+
+      if (mainAtcButton) {
+        mainAtcButton.disabled = !isAvailable;
+        mainAtcButton.textContent = isAvailable ? atcLabel : soldOut;
+      }
+      if (stickyAtcButton) {
+        stickyAtcButton.disabled = !isAvailable;
+        stickyAtcButton.textContent = isAvailable ? atcLabel : soldOut;
+      }
+      if (finalAtcButton) {
+        finalAtcButton.disabled = !isAvailable;
+        finalAtcButton.textContent = isAvailable ? finalLabel : soldOut;
+      }
+    }
+
+    if (variantSelect) {
+      variantSelect.addEventListener('change', function () {
+        var selectedOption = variantSelect.options[variantSelect.selectedIndex];
+        var isAvailable = selectedOption.getAttribute('data-available') === 'true';
+        var price = selectedOption.getAttribute('data-price');
+        var comparePrice = selectedOption.getAttribute('data-compare-price');
+
+        if (priceEl && price) priceEl.textContent = price;
+
+        if (comparePriceEl) {
+          if (comparePrice) {
+            comparePriceEl.textContent = comparePrice;
+            comparePriceEl.hidden = false;
+          } else {
+            comparePriceEl.hidden = true;
+          }
+        }
+
+        updateButtonState(isAvailable);
+      });
+    }
+
+    if (stickyAtcButton) {
+      stickyAtcButton.addEventListener('click', function () { submitProductForm(); });
+    }
+
+    if (finalAtcButton) {
+      finalAtcButton.addEventListener('click', function () { submitProductForm(); });
+    }
+
+    if (stickyAtc && sentinel && 'IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            stickyAtc.setAttribute('aria-hidden', 'true');
+            stickyAtc.classList.remove('is-visible');
+          } else {
+            stickyAtc.setAttribute('aria-hidden', 'false');
+            stickyAtc.classList.add('is-visible');
+          }
+        });
+      });
+      observer.observe(sentinel);
+    }
+  });
+</script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Alchemia product page",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Product basics"
+    },
+    {
+      "type": "text",
+      "id": "product_name",
+      "label": "Product name",
+      "default": "UV Shield+"
+    },
+    {
+      "type": "text",
+      "id": "role",
+      "label": "System role",
+      "default": "Protect"
+    },
+    {
+      "type": "text",
+      "id": "role_badge_prefix",
+      "label": "Role badge prefix",
+      "default": "Role in the system: "
+    },
+    {
+      "type": "text",
+      "id": "positioning_line",
+      "label": "Positioning line (eyebrow under title)",
+      "default": "Daily internal support for skin exposed to the sun."
+    },
+    {
+      "type": "textarea",
+      "id": "short_description",
+      "label": "Short description",
+      "default": "Dermatologist-formulated supplement support for people who spend time outdoors and want to support long-term skin health from within."
+    },
+    {
+      "type": "header",
+      "content": "Hero image"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image (Shopify Files)"
+    },
+    {
+      "type": "text",
+      "id": "fallback_asset",
+      "label": "Fallback hero image filename or full URL",
+      "default": "uv-shield-hero.jpg",
+      "info": "Used if no image is selected above and no product image exists."
+    },
+    {
+      "type": "header",
+      "content": "Trust line"
+    },
+    {
+      "type": "text",
+      "id": "trust_1",
+      "label": "Trust item 1",
+      "default": "Physician-formulated",
+      "info": "Ignored when Trust Item blocks are added below."
+    },
+    {
+      "type": "text",
+      "id": "trust_2",
+      "label": "Trust item 2",
+      "default": "Natural"
+    },
+    {
+      "type": "text",
+      "id": "trust_3",
+      "label": "Trust item 3",
+      "default": "Gluten-free"
+    },
+    {
+      "type": "header",
+      "content": "Buttons & links"
+    },
+    {
+      "type": "text",
+      "id": "atc_label",
+      "label": "Add to cart button label",
+      "default": "Add to Cart"
+    },
+    {
+      "type": "text",
+      "id": "sold_out_label",
+      "label": "Sold out label",
+      "default": "Sold Out"
+    },
+    {
+      "type": "url",
+      "id": "system_url",
+      "label": "System page URL",
+      "default": "/pages/system"
+    },
+    {
+      "type": "text",
+      "id": "system_button_label",
+      "label": "System button label",
+      "default": "Shop the complete system"
+    },
+    {
+      "type": "url",
+      "id": "fallback_atc_url",
+      "label": "Fallback shop URL (no product)",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Breadcrumbs"
+    },
+    {
+      "type": "text",
+      "id": "breadcrumb_home",
+      "label": "Home label",
+      "default": "Home"
+    },
+    {
+      "type": "text",
+      "id": "breadcrumb_shop",
+      "label": "Shop label",
+      "default": "Shop"
+    },
+    {
+      "type": "url",
+      "id": "breadcrumb_shop_url",
+      "label": "Shop URL",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Detail navigation labels"
+    },
+    {
+      "type": "text",
+      "id": "nav_description",
+      "label": "Description nav label",
+      "default": "Description"
+    },
+    {
+      "type": "text",
+      "id": "nav_who",
+      "label": "Who it is for nav label",
+      "default": "Who it is for"
+    },
+    {
+      "type": "text",
+      "id": "nav_ingredients",
+      "label": "Ingredients nav label",
+      "default": "Ingredients"
+    },
+    {
+      "type": "text",
+      "id": "nav_use",
+      "label": "How to use nav label",
+      "default": "How to use"
+    },
+    {
+      "type": "text",
+      "id": "nav_faq",
+      "label": "FAQ nav label",
+      "default": "FAQ"
+    },
+    {
+      "type": "header",
+      "content": "Description section"
+    },
+    {
+      "type": "text",
+      "id": "role_heading",
+      "label": "Role heading",
+      "default": "The Protect Formula"
+    },
+    {
+      "type": "textarea",
+      "id": "role_body",
+      "label": "Role body",
+      "default": "UV Shield+ is designed as the first step in the Alchemia MD Skin Defense System, supporting skin exposed to daily UV stress from the inside out."
+    },
+    {
+      "type": "text",
+      "id": "why_heading",
+      "label": "Who it is for heading",
+      "default": "Made for sun-exposed routines."
+    },
+    {
+      "type": "textarea",
+      "id": "why_intro",
+      "label": "Who it is for intro",
+      "default": "UV Shield+ was created for people whose skin experiences repeated sun exposure through work, sport, travel, and lifestyle."
+    },
+    {
+      "type": "header",
+      "content": "Ingredients section"
+    },
+    {
+      "type": "text",
+      "id": "formula_heading",
+      "label": "Formula heading",
+      "default": "Formulated with purpose."
+    },
+    {
+      "type": "textarea",
+      "id": "formula_body",
+      "label": "Formula body",
+      "default": "Every ingredient should serve a clear role in supporting skin health, resilience, and daily wellness."
+    },
+    {
+      "type": "header",
+      "content": "How to use section"
+    },
+    {
+      "type": "text",
+      "id": "how_eyebrow",
+      "label": "How to use eyebrow",
+      "default": "Daily routine"
+    },
+    {
+      "type": "text",
+      "id": "how_heading",
+      "label": "How to use heading",
+      "default": "How UV Shield+ fits into daily skin defense."
+    },
+    {
+      "type": "textarea",
+      "id": "how_intro",
+      "label": "How to use intro paragraph",
+      "default": "Take as directed on the product label as part of your daily wellness and skin health routine."
+    },
+    {
+      "type": "text",
+      "id": "how_step_1",
+      "label": "Step 1",
+      "default": "Use consistently",
+      "info": "Ignored when How to Use Step blocks are added below."
+    },
+    {
+      "type": "text",
+      "id": "how_step_2",
+      "label": "Step 2",
+      "default": "Fits into morning or evening supplement routines"
+    },
+    {
+      "type": "text",
+      "id": "how_step_3",
+      "label": "Step 3",
+      "default": "Works best as part of the full Alchemia MD System"
+    },
+    {
+      "type": "text",
+      "id": "how_step_protect",
+      "label": "Protect-role step (shown only when role = Protect)",
+      "default": "Designed to complement topical sun protection"
+    },
+    {
+      "type": "header",
+      "content": "Bundle upsell"
+    },
+    {
+      "type": "text",
+      "id": "upsell_eyebrow",
+      "label": "Upsell eyebrow",
+      "default": "Better together"
+    },
+    {
+      "type": "text",
+      "id": "upsell_heading",
+      "label": "Upsell heading",
+      "default": "Complete the skin defense system."
+    },
+    {
+      "type": "textarea",
+      "id": "upsell_text",
+      "label": "Upsell text",
+      "default": "UV Shield+ is the Protect step. Pair it with Skinbiotic+ for Balance and Dermaboost+ for Restore to complete the daily internal skin health system."
+    },
+    {
+      "type": "url",
+      "id": "upsell_url",
+      "label": "Upsell button URL",
+      "default": "/pages/system"
+    },
+    {
+      "type": "text",
+      "id": "upsell_button_label",
+      "label": "Upsell button label",
+      "default": "Upgrade to the system bundle"
+    },
+    {
+      "type": "header",
+      "content": "Founder section"
+    },
+    {
+      "type": "image_picker",
+      "id": "founder_image",
+      "label": "Founder image (Shopify Files)"
+    },
+    {
+      "type": "text",
+      "id": "founder_image_asset",
+      "label": "Founder fallback image filename or full URL",
+      "default": "mia-founder-editorial.jpg"
+    },
+    {
+      "type": "text",
+      "id": "founder_image_alt",
+      "label": "Founder image alt text",
+      "default": "Dr. Mia Luna"
+    },
+    {
+      "type": "text",
+      "id": "founder_eyebrow",
+      "label": "Founder eyebrow",
+      "default": "Founder trust"
+    },
+    {
+      "type": "text",
+      "id": "founder_heading",
+      "label": "Founder heading",
+      "default": "Dermatologist-formulated skin support."
+    },
+    {
+      "type": "textarea",
+      "id": "founder_text",
+      "label": "Founder text",
+      "default": "Alchemia MD was founded by Dr. Mia Luna, a board-certified dermatologist who created the brand after years of seeing patients seek natural, trustworthy ways to support their skin health."
+    },
+    {
+      "type": "url",
+      "id": "founder_button_url",
+      "label": "Founder button URL",
+      "default": "/pages/about"
+    },
+    {
+      "type": "text",
+      "id": "founder_button_label",
+      "label": "Founder button label",
+      "default": "Read the founder story"
+    },
+    {
+      "type": "header",
+      "content": "FAQ section"
+    },
+    {
+      "type": "text",
+      "id": "faq_eyebrow",
+      "label": "FAQ eyebrow",
+      "default": "FAQ"
+    },
+    {
+      "type": "text",
+      "id": "faq_heading_suffix",
+      "label": "FAQ heading suffix (appended to product name)",
+      "default": "Questions"
+    },
+    {
+      "type": "header",
+      "content": "Final CTA"
+    },
+    {
+      "type": "text",
+      "id": "final_heading",
+      "label": "Final CTA heading",
+      "default": "Start your daily internal skin defense routine."
+    },
+    {
+      "type": "textarea",
+      "id": "final_text",
+      "label": "Final CTA text",
+      "default": "Support skin exposed to the sun with a dermatologist-formulated supplement built for daily use."
+    },
+    {
+      "type": "text",
+      "id": "final_atc_label",
+      "label": "Final CTA button label",
+      "default": "Add {{title}} to Cart",
+      "info": "Use {{title}} to insert the product name."
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Hero heading color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_color",
+      "label": "Hero eyebrow color",
+      "default": "#7a6e62"
+    },
+    {
+      "type": "color",
+      "id": "body_color",
+      "label": "Hero body text color",
+      "default": "#3a3a3a"
+    },
+    {
+      "type": "color",
+      "id": "badge_color",
+      "label": "Role badge color",
+      "default": "#7a6e62"
+    },
+    {
+      "type": "color",
+      "id": "trust_color",
+      "label": "Trust line text color",
+      "default": "#3a3a3a"
+    },
+    {
+      "type": "color",
+      "id": "dark_section_text_color",
+      "label": "Dark section text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "charcoal_section_text_color",
+      "label": "Charcoal section text color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "trust_item",
+      "name": "Trust line item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Physician-formulated"
+        }
+      ]
+    },
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Daily support"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Supports skin from within as part of a daily skin health routine."
+        }
+      ]
+    },
+    {
+      "type": "use_case",
+      "name": "Use case",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Outdoor lifestyles"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "For people whose skin is exposed to sun, sweat, heat, wind, and travel."
+        }
+      ]
+    },
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Ingredient name",
+          "default": "Ingredient name"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Purpose",
+          "default": "One-sentence purpose statement for this ingredient."
+        }
+      ]
+    },
+    {
+      "type": "how_to_use_step",
+      "name": "How to use step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step",
+          "label": "Step text",
+          "default": "Use consistently every day"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Is this a replacement for sunscreen?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "No. Alchemia MD supplements are designed to complement a complete skin health routine, including proper topical sun protection."
+        }
+      ]
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Alchemia product page",
+      "blocks": [
+        { "type": "trust_item", "settings": { "label": "Physician-formulated" } },
+        { "type": "trust_item", "settings": { "label": "Natural" } },
+        { "type": "trust_item", "settings": { "label": "Gluten-free" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
