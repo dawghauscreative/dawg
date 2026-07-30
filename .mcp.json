@@ -1,11 +1,43 @@
 {
   "mcpServers": {
-    "leadconnector": {
+    "leadconnector-dhc": {
       "type": "http",
       "url": "https://services.leadconnectorhq.com/mcp/anthropic/v2",
       "headers": {
-        "Authorization": "Bearer ${LEADCONNECTOR_API_KEY}",
-        "locationId": "${LEADCONNECTOR_LOCATION_ID}"
+        "Authorization": "Bearer ${GHL_DHC_PRIVATE_TOKEN}",
+        "locationId": "${GHL_DHC_LOCATION_ID}"
+      }
+    },
+    "leadconnector-hscf": {
+      "type": "http",
+      "url": "https://services.leadconnectorhq.com/mcp/anthropic/v2",
+      "headers": {
+        "Authorization": "Bearer ${GHL_HSCF_PRIVATE_TOKEN}",
+        "locationId": "${GHL_HSCF_LOCATION_ID}"
+      }
+    },
+    "leadconnector-tela": {
+      "type": "http",
+      "url": "https://services.leadconnectorhq.com/mcp/anthropic/v2",
+      "headers": {
+        "Authorization": "Bearer ${GHL_TELA_PRIVATE_TOKEN}",
+        "locationId": "${GHL_TELA_LOCATION_ID}"
+      }
+    },
+    "leadconnector-csg": {
+      "type": "http",
+      "url": "https://services.leadconnectorhq.com/mcp/anthropic/v2",
+      "headers": {
+        "Authorization": "Bearer ${GHL_CSG_PRIVATE_TOKEN}",
+        "locationId": "${GHL_CSG_LOCATION_ID}"
+      }
+    },
+    "leadconnector-il": {
+      "type": "http",
+      "url": "https://services.leadconnectorhq.com/mcp/anthropic/v2",
+      "headers": {
+        "Authorization": "Bearer ${GHL_IL_PRIVATE_TOKEN}",
+        "locationId": "${GHL_IL_LOCATION_ID}"
       }
     }
   }
