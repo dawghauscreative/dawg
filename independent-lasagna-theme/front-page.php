@@ -6,57 +6,81 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 get_header();
+
+$reel_url = get_theme_mod( 'il_reel_video_url' );
 ?>
 
 <section class="hero hero--home">
 	<div class="container hero__inner il-fade">
-		<span class="eyebrow"><?php esc_html_e( 'Food & Lifestyle Entertainment', 'independent-lasagna' ); ?></span>
-		<h1><?php esc_html_e( 'A social production company, making it independent.', 'independent-lasagna' ); ?></h1>
-		<p class="hero__lede"><?php esc_html_e( 'Video production, web & social, feature films, wedding films, and original series — built by a crew of filmmakers who believe in doing it together.', 'independent-lasagna' ); ?></p>
+		<span class="eyebrow"><?php esc_html_e( 'Food. Travel. People. Places.', 'independent-lasagna' ); ?></span>
+		<h1><?php esc_html_e( 'We go looking for stories with layers.', 'independent-lasagna' ); ?></h1>
+		<p class="hero__lede"><?php esc_html_e( 'Independent Lasagna Productions makes documentary films and original series about food, travel, and the people who make a place worth stopping for. Brands hire us to do the same for them.', 'independent-lasagna' ); ?></p>
 		<div class="button-row">
-			<a class="button button--gold" href="<?php echo esc_url( home_url( '/work/' ) ); ?>"><?php esc_html_e( 'See Our Work', 'independent-lasagna' ); ?></a>
+			<a class="button button--primary" href="<?php echo esc_url( home_url( '/work/' ) ); ?>"><?php esc_html_e( 'Watch Our Work', 'independent-lasagna' ); ?></a>
 			<a class="button button--outline" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Project', 'independent-lasagna' ); ?></a>
 		</div>
 	</div>
 </section>
 
+<section class="section section--dark">
+	<div class="container il-fade">
+		<?php if ( $reel_url ) : ?>
+			<?php il_video_embed( $reel_url ); ?>
+		<?php else : ?>
+			<div class="media-frame media-frame--reel">
+				<span class="media-frame__placeholder" aria-hidden="true"></span>
+			</div>
+			<p class="il-admin-note"><?php esc_html_e( 'Reel coming soon — add a link under Customize → Site Identity → Homepage Reel Video URL.', 'independent-lasagna' ); ?></p>
+		<?php endif; ?>
+	</div>
+</section>
+
 <section class="section section--cream">
 	<div class="container statement il-fade">
-		<span class="eyebrow"><?php esc_html_e( 'Do It Together', 'independent-lasagna' ); ?></span>
-		<h2><?php esc_html_e( 'High quality content shouldn’t be out of reach.', 'independent-lasagna' ); ?></h2>
-		<p><?php esc_html_e( 'Independent Lasagna Productions was founded by filmmakers who wanted financially feasible, high-quality media for small businesses, couples, and independent creators alike — from commercials and websites to weddings and feature films. We call it a Do It Together Creative Collective: creatives and businesses of every kind, working toward the same thing.', 'independent-lasagna' ); ?></p>
-		<a class="link-arrow" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'More about us', 'independent-lasagna' ); ?></a>
+		<?php il_layers_mark(); ?>
+		<span class="eyebrow"><?php esc_html_e( 'How We Work', 'independent-lasagna' ); ?></span>
+		<h2><?php esc_html_e( 'Every story has layers. We dig through them.', 'independent-lasagna' ); ?></h2>
+		<p><?php esc_html_e( 'Food gets us through the door. Travel gets us there. People give us the story. Film lets us bring it home. We aren’t just filming what people eat — we’re documenting why it matters.', 'independent-lasagna' ); ?></p>
 	</div>
 </section>
 
 <section class="section section--dark">
 	<div class="container">
 		<div class="section-header il-fade">
-			<span class="eyebrow"><?php esc_html_e( 'What We Do', 'independent-lasagna' ); ?></span>
-			<h2><?php esc_html_e( 'Production services for businesses, couples, and creators.', 'independent-lasagna' ); ?></h2>
+			<span class="eyebrow"><?php esc_html_e( 'Original Productions', 'independent-lasagna' ); ?></span>
+			<h2><?php esc_html_e( 'Shows we make because we can’t not make them.', 'independent-lasagna' ); ?></h2>
 		</div>
 		<div class="grid grid--3">
 			<?php
-			$services = array(
-				array( 'Video Production', 'Commercials, brand films, and video content shot and edited to actually get watched.' ),
-				array( 'Web Design & Management', 'A stylish, personalized site — we’ll build it, host it, manage it, or teach you how.' ),
-				array( 'Social Content & Management', 'Fun, clickable content for your platforms: videos, graphics, and campaigns that spread.' ),
-				array( 'Graphic Design', 'Brand identity, print, and digital design that holds up next to the big budgets.' ),
-				array( 'Sound Design & Music', 'Original composition and sound design built for picture, not stock-library filler.' ),
-				array( 'Wedding Films', 'Documentary-style wedding coverage that plays back like a story, not a highlight reel.' ),
+			$originals_query = new WP_Query(
+				array(
+					'post_type'      => 'il_work',
+					'posts_per_page' => 3,
+					'no_found_rows'  => true,
+					'tax_query'      => array(
+						array(
+							'taxonomy' => 'il_work_type',
+							'field'    => 'slug',
+							'terms'    => 'original-productions',
+						),
+					),
+				)
 			);
-			foreach ( $services as $i => $service ) :
+			if ( $originals_query->have_posts() ) :
+				$i = 0;
+				while ( $originals_query->have_posts() ) :
+					$originals_query->the_post();
+					il_work_card( get_the_ID(), $i * 70 );
+					$i++;
+				endwhile;
+				wp_reset_postdata();
+			else :
 				?>
-				<article class="card il-fade" style="animation-delay:<?php echo esc_attr( $i * 70 ); ?>ms">
-					<h3><?php echo esc_html( $service[0] ); ?></h3>
-					<p><?php echo esc_html( $service[1] ); ?></p>
-				</article>
-				<?php
-			endforeach;
-			?>
+				<p class="il-admin-note"><?php esc_html_e( 'First season is in production. Add entries under Work → Add New and tag them “Original Productions.”', 'independent-lasagna' ); ?></p>
+			<?php endif; ?>
 		</div>
 		<div class="section-footer il-fade">
-			<a class="button button--outline" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'All Services', 'independent-lasagna' ); ?></a>
+			<a class="button button--outline" href="<?php echo esc_url( add_query_arg( 'type', 'original-productions', home_url( '/work/' ) ) ); ?>"><?php esc_html_e( 'All Original Productions', 'independent-lasagna' ); ?></a>
 		</div>
 	</div>
 </section>
@@ -64,49 +88,78 @@ get_header();
 <section class="section section--cream">
 	<div class="container">
 		<div class="section-header il-fade">
-			<span class="eyebrow"><?php esc_html_e( 'Featured Work', 'independent-lasagna' ); ?></span>
-			<h2><?php esc_html_e( 'Feature films, wedding films, and original series.', 'independent-lasagna' ); ?></h2>
+			<span class="eyebrow"><?php esc_html_e( 'Our Specialty', 'independent-lasagna' ); ?></span>
+			<h2><?php esc_html_e( 'Food is the doorway. Travel gets us there.', 'independent-lasagna' ); ?></h2>
+		</div>
+		<div class="split">
+			<article class="card il-fade">
+				<span class="eyebrow"><?php esc_html_e( 'Food', 'independent-lasagna' ); ?></span>
+				<h3><?php esc_html_e( 'We’d rather eat off a folding table than a $300 tasting menu.', 'independent-lasagna' ); ?></h3>
+				<p><?php esc_html_e( 'A grandmother making dumplings. A pitmaster who’s been up since 5 a.m. A six-table restaurant run by a family that crossed an ocean to open it. Food is rarely just the story — it’s how we get invited into a bigger one.', 'independent-lasagna' ); ?></p>
+			</article>
+			<article class="card il-fade" style="animation-delay:100ms">
+				<span class="eyebrow"><?php esc_html_e( 'Travel', 'independent-lasagna' ); ?></span>
+				<h3><?php esc_html_e( 'We’re not chasing a top-ten list. We’re chasing a guy in a town you’ve never heard of.', 'independent-lasagna' ); ?></h3>
+				<p><?php esc_html_e( 'Small towns. Neighborhood bars. Roadside attractions everyone else drives past. We go looking for the places and people that haven’t been smoothed out yet — before they are.', 'independent-lasagna' ); ?></p>
+			</article>
+		</div>
+	</div>
+</section>
+
+<section class="section section--dark">
+	<div class="container">
+		<div class="section-header il-fade">
+			<span class="eyebrow"><?php esc_html_e( 'Client Work', 'independent-lasagna' ); ?></span>
+			<h2><?php esc_html_e( 'Brands who wanted the real thing.', 'independent-lasagna' ); ?></h2>
 		</div>
 		<div class="grid grid--3">
 			<?php
-			$work_query = new WP_Query(
+			$client_query = new WP_Query(
 				array(
 					'post_type'      => 'il_work',
 					'posts_per_page' => 3,
 					'no_found_rows'  => true,
+					'tax_query'      => array(
+						array(
+							'taxonomy' => 'il_work_type',
+							'field'    => 'slug',
+							'terms'    => 'client-work',
+						),
+					),
 				)
 			);
-			if ( $work_query->have_posts() ) :
+			if ( $client_query->have_posts() ) :
 				$i = 0;
-				while ( $work_query->have_posts() ) :
-					$work_query->the_post();
+				while ( $client_query->have_posts() ) :
+					$client_query->the_post();
 					il_work_card( get_the_ID(), $i * 70 );
 					$i++;
 				endwhile;
 				wp_reset_postdata();
 			else :
-				$fallback = array(
-					array( 'Feature Film', 'American Paradice' ),
-					array( 'Feature Film', 'Odie' ),
-					array( 'Original Series', 'Beyond the Check' ),
-				);
-				foreach ( $fallback as $i => $item ) :
-					?>
-					<article class="work-card il-fade" style="animation-delay:<?php echo esc_attr( $i * 70 ); ?>ms">
-						<div class="work-card__media"><span class="work-card__media-placeholder" aria-hidden="true"></span></div>
-						<div class="work-card__body">
-							<span class="eyebrow"><?php echo esc_html( $item[0] ); ?></span>
-							<h3><?php echo esc_html( $item[1] ); ?></h3>
-						</div>
-					</article>
-					<?php
-				endforeach;
 				?>
-				<p class="il-admin-note"><?php esc_html_e( 'Showing placeholder titles — add real entries under Work → Add New in wp-admin.', 'independent-lasagna' ); ?></p>
+				<p class="il-admin-note"><?php esc_html_e( 'Nothing published yet. Add entries under Work → Add New and tag them “Client Work.”', 'independent-lasagna' ); ?></p>
 			<?php endif; ?>
 		</div>
 		<div class="section-footer il-fade">
-			<a class="button button--outline" href="<?php echo esc_url( home_url( '/work/' ) ); ?>"><?php esc_html_e( 'View All Work', 'independent-lasagna' ); ?></a>
+			<a class="button button--outline" href="<?php echo esc_url( add_query_arg( 'type', 'client-work', home_url( '/work/' ) ) ); ?>"><?php esc_html_e( 'See All Client Work', 'independent-lasagna' ); ?></a>
+		</div>
+	</div>
+</section>
+
+<section class="section section--cream">
+	<div class="container split">
+		<div class="il-fade">
+			<span class="eyebrow"><?php esc_html_e( 'For Brands', 'independent-lasagna' ); ?></span>
+			<h2><?php esc_html_e( 'We also make things for people who aren’t us.', 'independent-lasagna' ); ?></h2>
+			<p><?php esc_html_e( 'Restaurant films. Tourism campaigns. Founder documentaries. Commercials that don’t feel like commercials. If your brand has a story with any layers to it at all, we probably want to make it.', 'independent-lasagna' ); ?></p>
+			<a class="link-arrow" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'See our services', 'independent-lasagna' ); ?></a>
+		</div>
+		<div class="il-fade" style="animation-delay:100ms">
+			<span class="eyebrow"><?php esc_html_e( 'Who We Are', 'independent-lasagna' ); ?></span>
+			<h2><?php esc_html_e( 'Founded on the idea that good stories shouldn’t need a big budget.', 'independent-lasagna' ); ?></h2>
+			<p><?php esc_html_e( 'Independent Lasagna Productions was started by filmmakers who’d rather find a story behind a gas station than sit in a conference room. We’re still doing that. Curious, independent, and always slightly hungry.', 'independent-lasagna' ); ?></p>
+			<a class="link-arrow" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'More about us', 'independent-lasagna' ); ?></a>
 		</div>
 	</div>
 </section>
@@ -115,7 +168,7 @@ get_header();
 	<div class="container">
 		<div class="section-header il-fade">
 			<span class="eyebrow"><?php esc_html_e( 'Slices of Lasagna', 'independent-lasagna' ); ?></span>
-			<h2><?php esc_html_e( 'Latest from the News.', 'independent-lasagna' ); ?></h2>
+			<h2><?php esc_html_e( 'Dispatches from the road.', 'independent-lasagna' ); ?></h2>
 		</div>
 		<div class="grid grid--3">
 			<?php
@@ -155,8 +208,8 @@ get_header();
 
 <section class="section cta-band">
 	<div class="container statement il-fade">
-		<h2><?php esc_html_e( 'Have a project? Let’s make something together.', 'independent-lasagna' ); ?></h2>
-		<a class="button button--gold" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Project', 'independent-lasagna' ); ?></a>
+		<h2><?php esc_html_e( 'Got a story with layers? So do we. Let’s talk.', 'independent-lasagna' ); ?></h2>
+		<a class="button button--primary" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Project', 'independent-lasagna' ); ?></a>
 	</div>
 </section>
 

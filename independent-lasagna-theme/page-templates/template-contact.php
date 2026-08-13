@@ -14,7 +14,7 @@ $status = isset( $_GET['il_contact'] ) ? sanitize_key( wp_unslash( $_GET['il_con
 	<div class="container il-fade">
 		<span class="eyebrow"><?php esc_html_e( 'Let’s Talk', 'independent-lasagna' ); ?></span>
 		<h1><?php the_title(); ?></h1>
-		<p class="hero__lede"><?php esc_html_e( 'Tell us about your project — commercial, wedding, web build, or something we haven’t thought of yet. Name your budget; we’ll tell you what’s possible.', 'independent-lasagna' ); ?></p>
+		<p class="hero__lede"><?php esc_html_e( 'Tell us about your project — a restaurant film, a tourism campaign, a documentary, a commercial, or something we haven’t thought of yet. Name your budget; we’ll tell you what’s possible.', 'independent-lasagna' ); ?></p>
 	</div>
 </section>
 
@@ -57,12 +57,11 @@ $status = isset( $_GET['il_contact'] ) ? sanitize_key( wp_unslash( $_GET['il_con
 				<div class="form-row">
 					<label for="il_service"><?php esc_html_e( 'What do you need?', 'independent-lasagna' ); ?></label>
 					<select id="il_service" name="il_service">
-						<option value="Video Production"><?php esc_html_e( 'Video Production', 'independent-lasagna' ); ?></option>
-						<option value="Web Design & Management"><?php esc_html_e( 'Web Design & Management', 'independent-lasagna' ); ?></option>
-						<option value="Social Content & Management"><?php esc_html_e( 'Social Content & Management', 'independent-lasagna' ); ?></option>
-						<option value="Graphic Design"><?php esc_html_e( 'Graphic Design', 'independent-lasagna' ); ?></option>
-						<option value="Sound Design & Music"><?php esc_html_e( 'Sound Design & Music', 'independent-lasagna' ); ?></option>
-						<option value="Wedding Film"><?php esc_html_e( 'Wedding Film', 'independent-lasagna' ); ?></option>
+						<option value="Food & Beverage Production"><?php esc_html_e( 'Food & Beverage Production', 'independent-lasagna' ); ?></option>
+						<option value="Travel & Destination Production"><?php esc_html_e( 'Travel & Destination Production', 'independent-lasagna' ); ?></option>
+						<option value="Documentary & Branded Storytelling"><?php esc_html_e( 'Documentary & Branded Storytelling', 'independent-lasagna' ); ?></option>
+						<option value="Commercial Production"><?php esc_html_e( 'Commercial Production', 'independent-lasagna' ); ?></option>
+						<option value="Original Programming / Partnership"><?php esc_html_e( 'Original Programming / Partnership', 'independent-lasagna' ); ?></option>
 						<option value="Other"><?php esc_html_e( 'Something Else', 'independent-lasagna' ); ?></option>
 					</select>
 				</div>
@@ -81,8 +80,6 @@ $status = isset( $_GET['il_contact'] ) ? sanitize_key( wp_unslash( $_GET['il_con
 				<span class="eyebrow"><?php esc_html_e( 'Direct Lines', 'independent-lasagna' ); ?></span>
 				<h3><?php esc_html_e( 'General Inquiries', 'independent-lasagna' ); ?></h3>
 				<p><a href="mailto:info@independentlasagna.com">info@independentlasagna.com</a></p>
-				<h3><?php esc_html_e( 'Weddings', 'independent-lasagna' ); ?></h3>
-				<p><a href="mailto:weddings@independentlasagna.com">weddings@independentlasagna.com</a></p>
 				<h3><?php esc_html_e( 'Follow Along', 'independent-lasagna' ); ?></h3>
 				<?php il_social_links(); ?>
 			</div>

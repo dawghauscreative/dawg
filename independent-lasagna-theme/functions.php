@@ -80,7 +80,7 @@ function il_widgets_init() {
 add_action( 'widgets_init', 'il_widgets_init' );
 
 /**
- * "Work" custom post type — feature films, wedding films, web series & shows.
+ * "Work" custom post type — original productions and client films alike.
  * This is the editable, repeatable portfolio content that used to be a pile
  * of static one-off pages; now it is add-in-wp-admin content.
  */
@@ -129,15 +129,18 @@ function il_register_work_cpt() {
 add_action( 'init', 'il_register_work_cpt' );
 
 /**
- * Seed the work-type taxonomy with the studio's three lanes on theme
- * activation, so the Work archive has something sensible to filter by
- * immediately instead of an empty term list.
+ * Seed the work-type taxonomy with ILP's two lanes on theme activation,
+ * so the Work archive has something sensible to filter by immediately
+ * instead of an empty term list.
+ *
+ * The split is deliberate: ILP runs two connected businesses on one
+ * reel — shows made for ourselves, and films made for clients. Every
+ * "Work" entry gets sorted into exactly one.
  */
 function il_seed_work_types() {
 	$terms = array(
-		'feature-films' => __( 'Feature Films', 'independent-lasagna' ),
-		'wedding-films' => __( 'Wedding Films', 'independent-lasagna' ),
-		'shows-series'  => __( 'Shows & Series', 'independent-lasagna' ),
+		'original-productions' => __( 'Original Productions', 'independent-lasagna' ),
+		'client-work'          => __( 'Client Work', 'independent-lasagna' ),
 	);
 	foreach ( $terms as $slug => $name ) {
 		if ( ! term_exists( $slug, 'il_work_type' ) ) {
@@ -263,6 +266,30 @@ add_filter(
 		return '&hellip;';
 	}
 );
+
+/**
+ * Homepage reel video (Customizer). One field — a YouTube/Vimeo URL —
+ * so the hero reel can be swapped without touching code.
+ */
+function il_customize_register( $wp_customize ) {
+	$wp_customize->add_setting(
+		'il_reel_video_url',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+	$wp_customize->add_control(
+		'il_reel_video_url',
+		array(
+			'label'       => __( 'Homepage reel video URL', 'independent-lasagna' ),
+			'description' => __( 'YouTube or Vimeo link for the reel embedded near the top of the homepage.', 'independent-lasagna' ),
+			'section'     => 'title_tagline',
+			'type'        => 'url',
+		)
+	);
+}
+add_action( 'customize_register', 'il_customize_register' );
 
 /**
  * Small template helpers.

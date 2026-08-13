@@ -8,6 +8,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Print the small stacked-bars-and-dot "layers" mark that echoes the
+ * logo. Used sparingly, ahead of a handful of section eyebrows.
+ */
+function il_layers_mark() {
+	echo '<span class="layers-mark" aria-hidden="true"><span class="layers-mark__row"><span class="layers-mark__bar layers-mark__bar--top"></span><span class="layers-mark__dot"></span></span><span class="layers-mark__bar layers-mark__bar--bottom"></span></span>';
+}
+
+/**
  * Print the social links menu as icon links. Falls back to the studio's
  * known public profiles if no "Social Links Menu" has been assigned yet,
  * so the footer never ships empty.
@@ -41,7 +49,8 @@ function il_social_links() {
 }
 
 /**
- * Card markup for a single "Work" entry (feature film, wedding film, show).
+ * Card markup for a single "Work" entry — an original production or a
+ * client film.
  */
 function il_work_card( $post_id, $delay_ms = 0 ) {
 	$title      = get_the_title( $post_id );

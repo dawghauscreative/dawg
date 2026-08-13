@@ -12,7 +12,8 @@
   --paper: #fbf8f1;
   --accent: #e0512e;
   --accent-dark: #b73d20;
-  --gold: #d9a441;
+  --chartreuse: #d9d94c;
+  --chartreuse-dark: #b7b93a;
   --text-on-dark: #f4ede0;
   --text-on-dark-muted: #c8bfb2;
   --text-on-light: #1c1720;
@@ -164,6 +165,35 @@ p {
 
 .section--cream .eyebrow { color: var(--accent-dark); }
 
+/* ---- Layers mark ----
+   A small recurring echo of the logo's stacked bars + dot. Every story
+   has layers; this is the one visual joke we allow ourselves. */
+.layers-mark {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1.1rem;
+}
+.layers-mark__row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.layers-mark__bar {
+  display: block;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--chartreuse);
+}
+.layers-mark__bar--top { width: 30px; }
+.layers-mark__bar--bottom { width: 22px; background: var(--accent); }
+.layers-mark__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--chartreuse);
+}
+
 .hero__lede {
   font-size: 1.15rem;
   max-width: 640px;
@@ -216,11 +246,11 @@ p {
   transform: translateY(-2px);
 }
 
-.button--gold {
+.button--primary {
   background: var(--accent);
   color: #fff;
 }
-.button--gold:hover {
+.button--primary:hover {
   background: var(--accent-dark);
 }
 
@@ -463,6 +493,13 @@ blockquote.card {
 .media-frame--portrait {
   aspect-ratio: 3 / 4;
 }
+.media-frame--reel {
+  aspect-ratio: 16 / 9;
+}
+.media-frame--reel .media-frame__placeholder {
+  aspect-ratio: auto;
+  height: 100%;
+}
 .media-frame__placeholder,
 .work-card__media-placeholder {
   display: block;
@@ -570,10 +607,10 @@ blockquote.card {
   color: #fff;
   margin-bottom: 1.2rem;
 }
-.cta-band .button--gold {
+.cta-band .button--primary {
   background: var(--ink);
 }
-.cta-band .button--gold:hover {
+.cta-band .button--primary:hover {
   background: #000;
 }
 

@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			?>
 		</nav>
 
-		<a class="button button--gold site-header__cta" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
+		<a class="button button--primary site-header__cta" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
 			<?php esc_html_e( 'Start a Project', 'independent-lasagna' ); ?>
 		</a>
 

@@ -14,7 +14,7 @@ $founders = array( 'Reyshan Parker', 'Matt Krueger', 'Zach Karamalegos', 'Michae
 	<div class="container il-fade">
 		<span class="eyebrow"><?php esc_html_e( 'About Us', 'independent-lasagna' ); ?></span>
 		<h1><?php the_title(); ?></h1>
-		<p class="hero__lede"><?php esc_html_e( 'A Multi-Layered Entity, unified around a Do It Together Creative Collective — uniting creatives and businesses of all types for the common good.', 'independent-lasagna' ); ?></p>
+		<p class="hero__lede"><?php esc_html_e( 'A production company built at the intersection of food, travel, and documentary storytelling — with the independent-vs-homogenized itch built right into the name.', 'independent-lasagna' ); ?></p>
 	</div>
 </section>
 
@@ -22,14 +22,15 @@ $founders = array( 'Reyshan Parker', 'Matt Krueger', 'Zach Karamalegos', 'Michae
 	<div class="container split">
 		<div class="il-fade">
 			<span class="eyebrow"><?php esc_html_e( 'Our Story', 'independent-lasagna' ); ?></span>
-			<h2><?php esc_html_e( 'Founded to make high-quality content financially feasible.', 'independent-lasagna' ); ?></h2>
-			<p><?php esc_html_e( 'Independent Lasagna Productions LLC was founded by Reyshan Parker and a crew of fellow SCAD alumni and Savannah locals, in order to build what they call a Social Production Company.', 'independent-lasagna' ); ?></p>
-			<p><?php esc_html_e( 'We specialize in high-quality media content — film and video production, web and graphic design, commercials, wedding documentaries, web series, and feature films. We create original online content and localized media services, covering everything from launch parties to weddings, on any budget.', 'independent-lasagna' ); ?></p>
+			<h2><?php esc_html_e( 'The name is supposed to make you ask a question.', 'independent-lasagna' ); ?></h2>
+			<p><?php esc_html_e( 'Independent Lasagna Productions was founded by Reyshan Parker and a crew of fellow SCAD alumni and Savannah locals who got tired of watching every town start to look the same — same restaurants, same hotels, same top-ten lists. We wanted to go find what was left of everything else.', 'independent-lasagna' ); ?></p>
+			<p><?php esc_html_e( 'So we make films about the things that haven’t been smoothed out yet: the diner, the roadside stand, the family recipe, the guy who’s run the same bar for thirty years. Food is usually how we get in the door. It’s rarely the whole story.', 'independent-lasagna' ); ?></p>
 		</div>
 		<blockquote class="card il-fade" style="animation-delay:100ms">
+			<?php il_layers_mark(); ?>
 			<span class="eyebrow"><?php esc_html_e( 'Our Philosophy', 'independent-lasagna' ); ?></span>
-			<h3><?php esc_html_e( 'Let’s do it together.', 'independent-lasagna' ); ?></h3>
-			<p><?php esc_html_e( 'It’s our mission to bring jobs to people with the talent and know-how to create content and media of all forms — helping people pursue their dreams, and in doing so, help others pursue their own.', 'independent-lasagna' ); ?></p>
+			<h3><?php esc_html_e( 'Every story has layers.', 'independent-lasagna' ); ?></h3>
+			<p><?php esc_html_e( 'Lasagna is built one layer at a time. So is a good story. Food is the top layer — the thing you notice first. Underneath it: people, place, history, culture. Our job is to dig through them, then bring back what we found.', 'independent-lasagna' ); ?></p>
 		</blockquote>
 	</div>
 </section>
@@ -43,16 +44,31 @@ $founders = array( 'Reyshan Parker', 'Matt Krueger', 'Zach Karamalegos', 'Michae
 <?php endif; ?>
 
 <section class="section section--dark">
+	<div class="container split">
+		<div class="il-fade">
+			<span class="eyebrow"><?php esc_html_e( 'Independent, on Purpose', 'independent-lasagna' ); ?></span>
+			<h2><?php esc_html_e( 'What survives when every town gets the same everything?', 'independent-lasagna' ); ?></h2>
+			<p><?php esc_html_e( 'We’re drawn to independent restaurants, independent farmers, independent makers — the ones still doing it their own way. Not because we’re against progress. Because those are the stories worth telling before they’re gone.', 'independent-lasagna' ); ?></p>
+		</div>
+		<div class="il-fade" style="animation-delay:100ms">
+			<span class="eyebrow"><?php esc_html_e( 'Not Political. Just Curious.', 'independent-lasagna' ); ?></span>
+			<h2><?php esc_html_e( 'We just want to know who’s still doing things differently.', 'independent-lasagna' ); ?></h2>
+			<p><?php esc_html_e( 'A neighborhood bar can tell you who lives there. A disappearing diner can tell you about a town. A strange regional dish can tell you why two places fifty miles apart grew up nothing alike. We go find out.', 'independent-lasagna' ); ?></p>
+		</div>
+	</div>
+</section>
+
+<section class="section section--cream">
 	<div class="container">
 		<div class="section-header il-fade">
-			<span class="eyebrow"><?php esc_html_e( 'The Team', 'independent-lasagna' ); ?></span>
-			<h2><?php esc_html_e( 'Do It Together, since the start.', 'independent-lasagna' ); ?></h2>
+			<span class="eyebrow"><?php esc_html_e( 'The Crew', 'independent-lasagna' ); ?></span>
+			<h2><?php esc_html_e( 'Filmmakers, not tourists.', 'independent-lasagna' ); ?></h2>
 		</div>
 		<div class="grid grid--3">
 			<article class="card il-fade">
 				<span class="eyebrow"><?php esc_html_e( 'Founder', 'independent-lasagna' ); ?></span>
 				<h3>Reyshan Parker</h3>
-				<p><?php esc_html_e( 'Producer / Creative Director / Editor / Web Designer', 'independent-lasagna' ); ?></p>
+				<p><?php esc_html_e( 'Producer / Director / Editor', 'independent-lasagna' ); ?></p>
 			</article>
 			<article class="card il-fade" style="animation-delay:70ms">
 				<span class="eyebrow"><?php esc_html_e( 'Founding Crew', 'independent-lasagna' ); ?></span>
@@ -70,8 +86,8 @@ $founders = array( 'Reyshan Parker', 'Matt Krueger', 'Zach Karamalegos', 'Michae
 
 <section class="section cta-band">
 	<div class="container statement il-fade">
-		<h2><?php esc_html_e( 'Want to work with a Do It Together crew?', 'independent-lasagna' ); ?></h2>
-		<a class="button button--gold" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Project', 'independent-lasagna' ); ?></a>
+		<h2><?php esc_html_e( 'Have a story with layers? We’d like to go find it.', 'independent-lasagna' ); ?></h2>
+		<a class="button button--primary" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Project', 'independent-lasagna' ); ?></a>
 	</div>
 </section>
 

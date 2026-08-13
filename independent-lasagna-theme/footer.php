@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<span class="site-branding__wordmark">Independent<em>Lasagna</em></span>
 				</a>
 			<?php endif; ?>
-			<p class="footer-tagline"><?php esc_html_e( 'A social production company. Video, web, social, and film — made independent.', 'independent-lasagna' ); ?></p>
+			<p class="footer-tagline"><?php esc_html_e( 'A food-and-travel-forward production company. We go looking for stories with layers.', 'independent-lasagna' ); ?></p>
 			<?php il_social_links(); ?>
 		</div>
 
@@ -42,7 +42,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<h3 class="footer-col__title"><?php esc_html_e( 'Get In Touch', 'independent-lasagna' ); ?></h3>
 			<ul class="footer-contact">
 				<li><a href="mailto:info@independentlasagna.com">info@independentlasagna.com</a></li>
-				<li><a href="mailto:weddings@independentlasagna.com"><?php esc_html_e( 'Weddings:', 'independent-lasagna' ); ?> weddings@independentlasagna.com</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a project →', 'independent-lasagna' ); ?></a></li>
 			</ul>
 		</div>
@@ -56,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 
 	<div class="container footer-bottom">
-		<p>&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'Let\'s do it together.', 'independent-lasagna' ); ?></p>
+		<p>&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'Still hungry.', 'independent-lasagna' ); ?></p>
 	</div>
 </footer>
 

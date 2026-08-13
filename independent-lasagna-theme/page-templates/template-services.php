@@ -9,29 +9,29 @@ get_header();
 
 $services = array(
 	array(
-		'name'  => __( 'Video Production', 'independent-lasagna' ),
-		'body'  => __( 'Commercials, brand films, and event coverage — shot, edited, and color graded in-house. We build viral-esque content designed to actually get watched and shared, not just posted.', 'independent-lasagna' ),
-		'items' => array( 'Small Business Commercials', 'Video Editing', 'Color Grading & Correction', 'Video Cleanup & Restoration' ),
+		'name'  => __( 'Food & Beverage Production', 'independent-lasagna' ),
+		'body'  => __( 'Restaurant films, chef profiles, and product launches shot the way we’d actually want to watch them — closer to a food documentary than a menu ad.', 'independent-lasagna' ),
+		'items' => array( 'Restaurant Films', 'Chef Profiles', 'Product Launches', 'Recipe & Cooking Content' ),
 	),
 	array(
-		'name'  => __( 'Web Design & Management', 'independent-lasagna' ),
-		'body'  => __( 'A stylish, personalized website for business or pleasure. We’ll build it, host it, manage it — or teach you how to run it yourself.', 'independent-lasagna' ),
-		'items' => array( 'Custom site design', 'Hosting & maintenance', 'Hands-on training' ),
+		'name'  => __( 'Travel & Destination Production', 'independent-lasagna' ),
+		'body'  => __( 'Tourism campaigns and destination films built around the actual place, not a stock-footage version of it. Made for boards, hotels, and regions that want to feel like somewhere.', 'independent-lasagna' ),
+		'items' => array( 'Destination Films', 'Tourism Campaigns', 'Hotel & Resort Storytelling', 'Regional Campaigns' ),
 	),
 	array(
-		'name'  => __( 'Social Content & Management', 'independent-lasagna' ),
-		'body'  => __( 'Trouble coming up with fun, clickable content for your platforms? We handle the memes, videos, graphics, and contests so your feed never goes quiet.', 'independent-lasagna' ),
-		'items' => array( 'Content creation', 'Channel management', 'Campaigns & contests' ),
+		'name'  => __( 'Documentary & Branded Storytelling', 'independent-lasagna' ),
+		'body'  => __( 'Founder stories, company histories, and human-interest films for brands with something real to say — told at documentary length, not thirty-second-ad length.', 'independent-lasagna' ),
+		'items' => array( 'Founder Stories', 'Company Documentaries', 'Customer Stories', 'Docuseries' ),
 	),
 	array(
-		'name'  => __( 'Graphic Design', 'independent-lasagna' ),
-		'body'  => __( 'Brand identity, print, and digital design built to hold its own next to the big budgets — logos, posters, packaging, and everything in between.', 'independent-lasagna' ),
-		'items' => array( 'Brand identity', 'Print & packaging', 'Digital assets' ),
+		'name'  => __( 'Commercial Production', 'independent-lasagna' ),
+		'body'  => __( 'Straightforward, well-made commercials and digital campaigns — for when the assignment really is an ad, and the ad should just be good.', 'independent-lasagna' ),
+		'items' => array( 'Broadcast Commercials', 'Digital Advertising', 'Social Video', 'Branded Entertainment' ),
 	),
 	array(
-		'name'  => __( 'Sound Design & Original Music', 'independent-lasagna' ),
-		'body'  => __( 'Original composition and sound design built for your picture, not pulled from a stock library — because the right score changes everything.', 'independent-lasagna' ),
-		'items' => array( 'Original scoring', 'Sound design & mix', 'Audio cleanup' ),
+		'name'  => __( 'Original Programming', 'independent-lasagna' ),
+		'body'  => __( 'Series and documentary development for networks, streamers, and digital publishers looking for a production partner who already knows how to find the story.', 'independent-lasagna' ),
+		'items' => array( 'Series Development', 'Documentary Development', 'YouTube Programming', 'Pilot Production' ),
 	),
 );
 ?>
@@ -40,9 +40,9 @@ $services = array(
 	<div class="container il-fade">
 		<span class="eyebrow"><?php esc_html_e( 'What We Do', 'independent-lasagna' ); ?></span>
 		<h1><?php the_title(); ?></h1>
-		<p class="hero__lede"><?php esc_html_e( 'Small businesses can’t afford the high prices of normal production services — so we make high-quality content financially feasible, for our clients and ourselves.', 'independent-lasagna' ); ?></p>
+		<p class="hero__lede"><?php esc_html_e( 'We make films for two audiences: the people who watch our own shows, and the brands who hire us to make theirs. Both sides run on the same instinct — go find the real story.', 'independent-lasagna' ); ?></p>
 		<div class="button-row">
-			<a class="button button--gold" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Request a Free Consultation', 'independent-lasagna' ); ?></a>
+			<a class="button button--primary" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Project', 'independent-lasagna' ); ?></a>
 		</div>
 	</div>
 </section>
@@ -78,10 +78,10 @@ $services = array(
 <section class="section section--cream">
 	<div class="container split">
 		<div class="il-fade">
-			<span class="eyebrow"><?php esc_html_e( 'Also Available', 'independent-lasagna' ); ?></span>
-			<h2><?php esc_html_e( 'Wedding Films', 'independent-lasagna' ); ?></h2>
-			<p><?php esc_html_e( 'Documentary-style wedding coverage — every package built around your day, your budget, and your story. From ceremony coverage to full-length wedding documentaries.', 'independent-lasagna' ); ?></p>
-			<a class="button button--dark" href="mailto:weddings@independentlasagna.com"><?php esc_html_e( 'Email the Wedding Team', 'independent-lasagna' ); ?></a>
+			<span class="eyebrow"><?php esc_html_e( 'Also Ours', 'independent-lasagna' ); ?></span>
+			<h2><?php esc_html_e( 'We make our own stuff too.', 'independent-lasagna' ); ?></h2>
+			<p><?php esc_html_e( 'Original documentaries and series, produced independently, for the same reason we got into this — because the story was too good to leave alone. Client work funds it. Curiosity drives it.', 'independent-lasagna' ); ?></p>
+			<a class="button button--dark" href="<?php echo esc_url( add_query_arg( 'type', 'original-productions', home_url( '/work/' ) ) ); ?>"><?php esc_html_e( 'Watch Our Originals', 'independent-lasagna' ); ?></a>
 		</div>
 		<div class="media-frame il-fade" style="animation-delay:100ms">
 			<span class="media-frame__placeholder" aria-hidden="true"></span>
@@ -91,8 +91,8 @@ $services = array(
 
 <section class="section cta-band">
 	<div class="container statement il-fade">
-		<h2><?php esc_html_e( 'Name your budget. Let’s talk about your project.', 'independent-lasagna' ); ?></h2>
-		<a class="button button--gold" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get In Touch', 'independent-lasagna' ); ?></a>
+		<h2><?php esc_html_e( 'Tell us the story. We’ll figure out the budget.', 'independent-lasagna' ); ?></h2>
+		<a class="button button--primary" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get In Touch', 'independent-lasagna' ); ?></a>
 	</div>
 </section>
 

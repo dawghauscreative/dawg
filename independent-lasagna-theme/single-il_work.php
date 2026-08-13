@@ -1,6 +1,6 @@
 <?php
 /**
- * Single "Work" entry — feature film, wedding film, or show.
+ * Single "Work" entry — an original production or a client film.
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -14,6 +14,8 @@ while ( have_posts() ) :
 	$watch_label = get_post_meta( get_the_ID(), '_il_watch_label', true );
 	$terms       = get_the_terms( get_the_ID(), 'il_work_type' );
 	$type_label  = ( $terms && ! is_wp_error( $terms ) ) ? $terms[0]->name : '';
+	$type_slug   = ( $terms && ! is_wp_error( $terms ) ) ? $terms[0]->slug : '';
+	$is_original = ( 'original-productions' === $type_slug );
 	?>
 
 	<section class="page-hero">
@@ -23,7 +25,7 @@ while ( have_posts() ) :
 			<?php if ( has_excerpt() ) : ?><p class="hero__lede"><?php echo esc_html( get_the_excerpt() ); ?></p><?php endif; ?>
 			<?php if ( $watch_url ) : ?>
 				<div class="button-row">
-					<a class="button button--gold" href="<?php echo esc_url( $watch_url ); ?>" target="_blank" rel="noopener noreferrer">
+					<a class="button button--primary" href="<?php echo esc_url( $watch_url ); ?>" target="_blank" rel="noopener noreferrer">
 						<?php echo esc_html( $watch_label ? $watch_label : __( 'Watch Now', 'independent-lasagna' ) ); ?>
 					</a>
 				</div>
@@ -45,8 +47,13 @@ while ( have_posts() ) :
 
 	<section class="section cta-band">
 		<div class="container statement il-fade">
-			<h2><?php esc_html_e( 'Want something like this made?', 'independent-lasagna' ); ?></h2>
-			<a class="button button--gold" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Project', 'independent-lasagna' ); ?></a>
+			<?php if ( $is_original ) : ?>
+				<h2><?php esc_html_e( 'More episodes are on the way.', 'independent-lasagna' ); ?></h2>
+				<a class="button button--primary" href="<?php echo esc_url( add_query_arg( 'type', 'original-productions', home_url( '/work/' ) ) ); ?>"><?php esc_html_e( 'See All Original Productions', 'independent-lasagna' ); ?></a>
+			<?php else : ?>
+				<h2><?php esc_html_e( 'Want something like this made?', 'independent-lasagna' ); ?></h2>
+				<a class="button button--primary" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Project', 'independent-lasagna' ); ?></a>
+			<?php endif; ?>
 		</div>
 	</section>
 

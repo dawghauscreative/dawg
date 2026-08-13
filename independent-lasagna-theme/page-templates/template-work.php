@@ -16,7 +16,7 @@ $terms       = get_terms( array( 'taxonomy' => 'il_work_type', 'hide_empty' => f
 	<div class="container il-fade">
 		<span class="eyebrow"><?php esc_html_e( 'Our Work', 'independent-lasagna' ); ?></span>
 		<h1><?php the_title(); ?></h1>
-		<p class="hero__lede"><?php esc_html_e( 'Feature films, wedding films, and original series — a running record of what a Do It Together crew can put on screen.', 'independent-lasagna' ); ?></p>
+		<p class="hero__lede"><?php esc_html_e( 'Original productions and client films — a running record of the stories we’ve gone looking for, on our own dime and someone else’s.', 'independent-lasagna' ); ?></p>
 	</div>
 </section>
 
