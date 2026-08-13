@@ -24,8 +24,8 @@ function il_setup() {
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 120,
-			'width'       => 360,
+			'height'      => 160,
+			'width'       => 260,
 			'flex-height' => true,
 			'flex-width'  => true,
 		)
@@ -269,13 +269,15 @@ add_filter(
 
 /**
  * Homepage reel video (Customizer). One field — a YouTube/Vimeo URL —
- * so the hero reel can be swapped without touching code.
+ * so the hero reel can be swapped without touching code. Defaults to
+ * the "Beyond the Check" S2 trailer as a placeholder; replace any time
+ * under Customize → Site Identity.
  */
 function il_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'il_reel_video_url',
 		array(
-			'default'           => '',
+			'default'           => 'https://www.youtube.com/watch?v=x47SqaswqR8',
 			'sanitize_callback' => 'esc_url_raw',
 		)
 	);
