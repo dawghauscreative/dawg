@@ -268,12 +268,85 @@ add_filter(
 );
 
 /**
- * Homepage reel video (Customizer). One field — a YouTube/Vimeo URL —
- * so the hero reel can be swapped without touching code. Defaults to
- * the "Beyond the Check" S2 trailer as a placeholder; replace any time
- * under Customize → Site Identity.
+ * Homepage Content (Customizer). A dedicated panel — separate from
+ * Site Identity — so the reel video and hero copy can be changed from
+ * wp-admin without touching a template file. Defaults match the
+ * original hard-coded copy, so nothing changes on the live site until
+ * a field is actually edited here.
  */
 function il_customize_register( $wp_customize ) {
+	$wp_customize->add_panel(
+		'il_homepage_content',
+		array(
+			'title'       => __( 'Homepage Content', 'independent-lasagna' ),
+			'description' => __( 'The reel video and the top-of-homepage headline — edit these here instead of asking for a code change.', 'independent-lasagna' ),
+			'priority'    => 25,
+		)
+	);
+
+	$wp_customize->add_section(
+		'il_hero_section',
+		array(
+			'title' => __( 'Hero', 'independent-lasagna' ),
+			'panel' => 'il_homepage_content',
+		)
+	);
+	$wp_customize->add_section(
+		'il_reel_section',
+		array(
+			'title' => __( 'Reel Video', 'independent-lasagna' ),
+			'panel' => 'il_homepage_content',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'il_hero_eyebrow',
+		array(
+			'default'           => __( 'Food. Travel. People. Places.', 'independent-lasagna' ),
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+	$wp_customize->add_control(
+		'il_hero_eyebrow',
+		array(
+			'label'   => __( 'Eyebrow (small label above the headline)', 'independent-lasagna' ),
+			'section' => 'il_hero_section',
+			'type'    => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'il_hero_headline',
+		array(
+			'default'           => __( 'We go looking for stories with layers.', 'independent-lasagna' ),
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+	$wp_customize->add_control(
+		'il_hero_headline',
+		array(
+			'label'   => __( 'Headline', 'independent-lasagna' ),
+			'section' => 'il_hero_section',
+			'type'    => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'il_hero_lede',
+		array(
+			'default'           => __( 'Independent Lasagna Productions makes documentary films and original series about food, travel, and the people who make a place worth stopping for. Brands hire us to do the same for them.', 'independent-lasagna' ),
+			'sanitize_callback' => 'sanitize_textarea_field',
+		)
+	);
+	$wp_customize->add_control(
+		'il_hero_lede',
+		array(
+			'label'   => __( 'Subheadline', 'independent-lasagna' ),
+			'section' => 'il_hero_section',
+			'type'    => 'textarea',
+		)
+	);
+
 	$wp_customize->add_setting(
 		'il_reel_video_url',
 		array(
@@ -284,9 +357,9 @@ function il_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'il_reel_video_url',
 		array(
-			'label'       => __( 'Homepage reel video URL', 'independent-lasagna' ),
-			'description' => __( 'YouTube or Vimeo link for the reel embedded near the top of the homepage.', 'independent-lasagna' ),
-			'section'     => 'title_tagline',
+			'label'       => __( 'Reel video URL', 'independent-lasagna' ),
+			'description' => __( 'Paste a YouTube or Vimeo link. Currently set to a placeholder trailer — swap it any time.', 'independent-lasagna' ),
+			'section'     => 'il_reel_section',
 			'type'        => 'url',
 		)
 	);
