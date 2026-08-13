@@ -12,13 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="container footer-grid">
 
 		<div class="footer-col footer-col--brand">
-			<a class="site-branding" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<?php if ( has_custom_logo() ) : ?>
-					<?php the_custom_logo(); ?>
-				<?php else : ?>
+			<?php if ( has_custom_logo() ) : ?>
+				<div class="site-branding"><?php the_custom_logo(); ?></div>
+			<?php else : ?>
+				<a class="site-branding" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<span class="site-branding__wordmark">Independent<em>Lasagna</em></span>
-				<?php endif; ?>
-			</a>
+				</a>
+			<?php endif; ?>
 			<p class="footer-tagline"><?php esc_html_e( 'A social production company. Video, web, social, and film — made independent.', 'independent-lasagna' ); ?></p>
 			<?php il_social_links(); ?>
 		</div>

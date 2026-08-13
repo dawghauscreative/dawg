@@ -20,13 +20,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 <header class="site-header" id="site-header">
 	<div class="container site-header__row">
 
-		<a class="site-branding" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-			<?php if ( has_custom_logo() ) : ?>
-				<?php the_custom_logo(); ?>
-			<?php else : ?>
+		<?php if ( has_custom_logo() ) : ?>
+			<div class="site-branding"><?php the_custom_logo(); ?></div>
+		<?php else : ?>
+			<a class="site-branding" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<span class="site-branding__wordmark">Independent<em>Lasagna</em></span>
-			<?php endif; ?>
-		</a>
+			</a>
+		<?php endif; ?>
 
 		<nav class="site-nav" id="site-nav" aria-label="<?php esc_attr_e( 'Primary', 'independent-lasagna' ); ?>">
 			<?php

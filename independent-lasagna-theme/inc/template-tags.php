@@ -20,8 +20,6 @@ function il_social_links() {
 				'container'      => false,
 				'menu_class'     => 'social-links',
 				'depth'          => 1,
-				'link_before'    => '<span class="screen-reader-text">',
-				'link_after'     => '</span>',
 			)
 		);
 		return;
@@ -85,6 +83,6 @@ function il_video_embed( $url ) {
 		return;
 	}
 	echo '<div class="video-embed">';
-	echo wp_oembed_get( esc_url( $url ) ); // phpcs:ignore WordPress.Security.EscapeOutput
+	echo wp_oembed_get( esc_url_raw( $url ) ); // phpcs:ignore WordPress.Security.EscapeOutput
 	echo '</div>';
 }

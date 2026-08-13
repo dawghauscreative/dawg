@@ -467,7 +467,6 @@ blockquote.card {
 .work-card__media-placeholder {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
   background:
     linear-gradient(135deg, rgba(224, 81, 46, 0.35), rgba(217, 164, 65, 0.2)),
     var(--ink-soft);
