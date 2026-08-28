@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 get_header();
 
-$reel_url      = get_theme_mod( 'il_reel_video_url' );
+$reel_url      = get_theme_mod( 'il_reel_video_url', 'https://www.youtube.com/watch?v=x47SqaswqR8' );
 $hero_eyebrow  = get_theme_mod( 'il_hero_eyebrow', __( 'Food. Travel. People. Places.', 'independent-lasagna' ) );
 $hero_headline = get_theme_mod( 'il_hero_headline', __( 'We go looking for stories with layers.', 'independent-lasagna' ) );
 $hero_lede     = get_theme_mod( 'il_hero_lede', __( 'Independent Lasagna Productions makes documentary films and original series about food, travel, and the people who make a place worth stopping for. Brands hire us to do the same for them.', 'independent-lasagna' ) );
