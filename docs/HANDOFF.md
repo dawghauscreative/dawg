@@ -25,6 +25,7 @@ Type: headlines BC Novatica (kit serves 400/700, so semibold renders 700, never 
 - Cards (home, collection, search, cross-sell) link to the product page and have no add-to-cart.
 - Staging-only: Theme settings > Product pages > "basic Supply selector". Leave OFF in production.
 - Prices are read from Shopify data. Nothing is hard-coded: no prices, percentages, savings or variant IDs.
+- The base price block (`show_base_price`) is OFF by default because Supr's widget shows pricing.
 
 ## Switches (Theme settings)
 

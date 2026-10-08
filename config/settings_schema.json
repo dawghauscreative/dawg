@@ -370,8 +370,8 @@
         "type": "checkbox",
         "id": "show_base_price",
         "label": "Show base price in the product hero",
-        "default": true,
-        "info": "Read from Shopify product data. Turn off once Supr's widget shows pricing, to avoid a duplicate price."
+        "default": false,
+        "info": "Read from Shopify product data. Off by default now that Supr's widget shows pricing. Turn on only if the page needs a price outside the widget."
       },
       {
         "type": "checkbox",
