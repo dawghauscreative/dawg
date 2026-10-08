@@ -1,0 +1,59 @@
+\b(cure[sd]?|curing)\b
+\btreat(s|ed|ing|ment|ments)?\b
+\bprevent(s|ed|ing)?\b
+\bdiagnos(e|es|ed|is|ing)\b
+\bheal(s|ed|ing)?\b
+\bskin cancer\b
+\bcancer\b
+\bDNA[- ]repair\b
+\brepair capacity\b
+\breverse(s|d)? (the )?(sun )?damage\b
+\breverse(s|d)? (the )?(signs of )?aging\b
+\b(skip|ditch|forget) (the |your )?sunscreen\b
+\breplace(s|d)? (your |the )?sunscreen\b
+\binstead of sunscreen\b
+\bsunscreen (in a|you can) (pill|capsule|bottle|swallow)\b
+\boral sunscreen\b
+\bprovides? (all )?the UV defense\b
+\bclinically (proven|significant|tested)\b
+\bclinical(ly)? dos(e|es|ing|age)\b
+\bscientifically proven\b
+\bproven to\b
+\bguaranteed results?\b
+\bguarantee(s|d)?\b
+\bmoney[- ]back\b
+\brisk[- ]free\b
+\bFDA[- ](approved|cleared|certified)\b
+\b(doctor|dermatologist)[- ]recommended\b
+\brecommended by (doctors|dermatologists)\b
+\beveryone needs\b
+\bneed all three\b
+\ball three (are )?(essential|necessary|required)\b
+\b(results?|transformation|visible results?) in (just )?(90|ninety) days\b
+\b90[- ]day transformation\b
+\bproprietary blend\b
+\bsignature (skin health )?complex\b
+\btransformative results?\b
+\bexclusive formula\b
+\bimperfections?\b
+\bflawless\b
+\bperfect(ing)? (your )?skin\b
+\bsilently destroying\b
+\baging you faster\b
+\bbuy now before it'?s too late\b
+\b(sun damage )?ruin your skin\b
+\bfade hyperpigmentation\b
+\bsmooth(e|es)? fine lines\b
+\brebuild(s)? the skin barrier\b
+\beliminates? inflammation\b
+\bcalm(s)? inflammation\b
+\brestores? youthful\b
+pagefly
+ai_gen_block
+48264233091307
+amd-dhc-product-page-fix
+my-header
+lorem ipsum
+#X{6}
+\b(C99246|183323|171717)\b
+variant[_-]?id["' :=]+[0-9]{8,}

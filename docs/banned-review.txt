@@ -1,0 +1,25 @@
+\bmelanoma\b
+\b(acne|eczema|psoriasis|rosacea|dermatitis)\b
+\banti-?aging\b
+\binflammation|inflammatory\b
+\bhyperpigmentation\b
+\bwrinkles?\b
+\bfine lines\b
+\bskin barrier\b
+\bimmune (support|function|system)\b
+\bimmunity\b
+\bclearer[- ]looking skin\b
+\bclinically supported\b
+\bUV protection\b
+\bSPF\b
+\bsun protection factor\b
+\bdetox
+\b(testimonials?|before (and|&) after|real results|customer results)\b
+\bstudy|studies|clinical trial|peer[- ]reviewed|published research\b
+pubmed|ncbi\.nlm|doi\.org|clinicaltrials\.gov|sciencedirect|jamanetwork|nejm\.org
+\b(certified|cGMP|third[- ]party (tested|verified)|lab[- ]tested|NSF)\b
+\bimmunosuppress
+\$[0-9]
+[0-9]+ ?% ?off\b
+\bsave [0-9$]
+\b90[- ]days?\b

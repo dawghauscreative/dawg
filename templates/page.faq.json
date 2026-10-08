@@ -6,8 +6,8 @@
         "q1": {
           "type": "item",
           "settings": {
-            "question": "Do these products replace sunscreen?",
-            "answer": "<p>No. UV Shield+ is designed to work alongside your sunscreen, not replace it. Alchemia MD complements your existing skincare and sun safety routines by adding a powerful layer of support from within.</p>"
+            "question": "How do Alchemia MD products fit with sunscreen?",
+            "answer": "<p>UV Shield+ is designed to work alongside your sunscreen, not replace it. Alchemia MD complements your existing skincare and sun safety routines by adding a powerful layer of support from within.</p>"
           }
         },
         "q2": {
