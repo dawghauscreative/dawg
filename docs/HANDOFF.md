@@ -125,8 +125,8 @@ Shopify rejects a whole JSON template if any `richtext` setting is plain text. T
 
 Decisions to confirm:
 - The 16:9 video slot you asked for earlier is kept between the featured system and the finder (not in the blueprint). Delete the "video" section on the home template if unwanted.
-- Dropped from the old home: trust-bar strip and the "Every purchase supports a larger mission" melanoma band (not in the blueprint). The label line still appears on each product page.
-- Protect/Balance/Restore positioning lines ("Outdoor support for resilient skin", "Essential gut care for skin health", "Immune support for calm, balanced skin") come from the blueprint and differ from the current label taglines ("Daily support for active, sun-ready skin" etc.). Align one to the other.
+- Trust strip (under the hero) and the "Every purchase supports a larger mission" band (before the email sign-up) were restored at the owner's request even though the blueprint omits them.
+- Protect/Balance/Restore columns use the label taglines ("Daily support for active, sun-ready skin", "Daily probiotic for gut and skin health", "Daily immune support for calm, balanced skin") by owner decision, not the blueprint's positioning lines.
 - Hero image: uses the Sun Safe System product's first media in Shopify (pick another in the section if needed). System finder, featured and final CTA use the clean system renders (`system-*.webp` assets).
 - Education cards 2 and 3 show "Coming soon" until their articles are published (drafts exist: "What Is the Gut-Skin Axis?" and "Why Consistency Matters in Skin Health"). Paste the article URL into each card when live.
 - Lifestyle: "Running + Cycling" and "Outdoor living" are placeholder frames awaiting photos.

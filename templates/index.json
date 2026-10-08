@@ -88,7 +88,7 @@
           "settings": {
             "product": "uv-shield",
             "role": "Protect",
-            "tagline": "Outdoor support for resilient skin.",
+            "tagline": "Daily support for active, sun-ready skin",
             "text": "Designed around nutritional and antioxidant support for people who spend significant time outdoors.",
             "cta": "Explore UV Shield+"
           }
@@ -98,7 +98,7 @@
           "settings": {
             "product": "skinbiotic",
             "role": "Balance",
-            "tagline": "Essential gut care for skin health.",
+            "tagline": "Daily probiotic for gut and skin health",
             "text": "A synbiotic approach designed around the connection between the intestinal microbiome and skin wellness.",
             "cta": "Explore Skinbiotic+"
           }
@@ -108,7 +108,7 @@
           "settings": {
             "product": "dermaboost",
             "role": "Restore",
-            "tagline": "Immune support for calm, balanced skin.",
+            "tagline": "Daily immune support for calm, balanced skin",
             "text": "A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.",
             "cta": "Explore Dermaboost+"
           }
@@ -562,10 +562,59 @@
         "asset": "system-sun-safe.webp",
         "light_panel": true
       }
+    },
+    "trust_strip": {
+      "type": "trust-bar",
+      "settings": {
+        "color_scheme": "beige"
+      },
+      "blocks": {
+        "t1": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "text": "Dermatologist developed"
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "text": "Founded by Dr. Mia Luna"
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "text": "Your purchase contributes to melanoma research"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    },
+    "mission": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "band",
+        "align": "center",
+        "width": "narrow",
+        "eyebrow": "Mission",
+        "heading": "Every purchase supports a larger mission.",
+        "heading_tag": "h2",
+        "body": "<p>Your purchase contributes to melanoma research.</p>",
+        "button_label": "Learn about our mission",
+        "button_url": "/pages/founder"
+      }
     }
   },
   "order": [
     "hero",
+    "trust_strip",
     "category",
     "problem",
     "roles",
@@ -580,6 +629,7 @@
     "philosophy",
     "trust",
     "education",
+    "mission",
     "email",
     "final"
   ]
