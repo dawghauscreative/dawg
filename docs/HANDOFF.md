@@ -35,7 +35,7 @@ Type: headlines BC Novatica (kit serves 400/700, so semibold renders 700, never 
 | `compliance_slots_enabled` | ON | Slots render only when they have content. Bundle 2 notice and Skinbiotic+ caution are empty and undecided. |
 | `fda_disclaimer_text` | label wording | Taken from the printed labels. Reyshan/counsel to confirm. |
 | `melanoma_line_text` | label wording | Verified on all three product labels. No amounts shown. |
-| Video 9:16 `show_placeholder` | ON | Neutral frame on home and all 7 product pages. Add a video or switch off before launch. |
+| Video `show_placeholder` (aspect 16:9 default, 9:16 optional) | ON | Neutral frame on home and all 7 product pages. Add a video or switch off before launch. |
 
 ## Copy and image sources
 

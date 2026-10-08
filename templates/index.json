@@ -140,7 +140,7 @@
       "type": "email-capture"
     },
     "video": {
-      "type": "video-vertical"
+      "type": "video-slot"
     }
   },
   "order": [

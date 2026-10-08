@@ -75,7 +75,7 @@
       "type": "compliance-notice"
     },
     "video": {
-      "type": "video-vertical"
+      "type": "video-slot"
     }
   },
   "order": [

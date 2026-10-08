@@ -1,10 +1,16 @@
 {%- comment -%}
-  9:16 vertical video slot (home page and all 7 product pages).
-  Accepts a Shopify-hosted video OR a YouTube/Vimeo link. With neither set, shows a neutral 9:16 placeholder frame
+  Video slot (home page and all 7 product pages). Default 16:9; 9:16 vertical is a setting.
+  Accepts a Shopify-hosted video OR a YouTube/Vimeo link. With neither set, shows a neutral placeholder frame
   (no copy) while "Show placeholder frame" is on. Turn that off to hide the slot until a video is added.
   Compliance: the Bundle 2 physician-guidance notice format (lower-third vs voiced line) is NOT decided here.
 {%- endcomment -%}
 {%- liquid
+  assign ratio_class = 'ratio-16x9'
+  assign frame_class = 'video-frame--wide'
+  if section.settings.aspect == '9x16'
+    assign ratio_class = 'ratio-9x16'
+    assign frame_class = ''
+  endif
   assign has_video = false
   if section.settings.video != blank or section.settings.video_url != blank
     assign has_video = true
@@ -17,7 +23,7 @@
 {%- if has_video or section.settings.show_placeholder -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
-    <div class="video-split{% if has_text %} video-split--text{% endif %}{% if section.settings.video_side == 'left' %} video-split--left{% endif %}">
+    <div class="video-split{% if has_text %} video-split--text{% endif %}{% if section.settings.video_side == 'left' %} video-split--left{% endif %}{% if frame_class != blank %} video-split--wide{% endif %}">
       {%- if has_text -%}
         <div class="video-split__text">
           {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
@@ -27,7 +33,7 @@
         </div>
       {%- endif -%}
 
-      <div class="video-frame ratio-9x16">
+      <div class="video-frame {{ ratio_class }} {{ frame_class }}">
         {%- if section.settings.video != blank -%}
           {{- section.settings.video | video_tag: image_size: '720x', controls: true, preload: 'none', playsinline: true, class: 'video-frame__media', title: section.settings.video_title -}}
         {%- elsif section.settings.video_url != blank -%}
@@ -45,22 +51,23 @@
 
 {% schema %}
 {
-  "name": "Video 9:16",
+  "name": "Video",
   "settings": [
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
-    { "type": "header", "content": "Video (9:16 vertical)" },
-    { "type": "video", "id": "video", "label": "Shopify-hosted video", "info": "Upload a vertical 9:16 file. Takes priority over the link below." },
+    { "type": "select", "id": "aspect", "label": "Aspect ratio", "default": "16x9", "options": [{ "value": "16x9", "label": "16:9 (widescreen)" }, { "value": "9x16", "label": "9:16 (vertical)" }] },
+    { "type": "header", "content": "Video" },
+    { "type": "video", "id": "video", "label": "Shopify-hosted video", "info": "Upload a file that matches the aspect ratio above. Takes priority over the link below." },
     { "type": "video_url", "id": "video_url", "label": "YouTube or Vimeo link", "accept": ["youtube", "vimeo"] },
     { "type": "text", "id": "video_title", "label": "Accessible title", "default": "Video", "info": "Read by screen readers. Describe the video." },
     { "type": "checkbox", "id": "show_placeholder", "label": "Show placeholder frame when no video is set", "default": true, "info": "Turn off before launch if a video is not ready." },
     { "type": "header", "content": "Text beside the video (optional)" },
-    { "type": "select", "id": "video_side", "label": "Video position (desktop)", "default": "right", "options": [{ "value": "right", "label": "Right" }, { "value": "left", "label": "Left" }] },
+    { "type": "select", "id": "video_side", "label": "Video position (desktop, when text is set)", "default": "right", "options": [{ "value": "right", "label": "Right" }, { "value": "left", "label": "Left" }] },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "richtext", "id": "body", "label": "Text", "info": "Empty until approved copy is supplied." },
     { "type": "text", "id": "button_label", "label": "Button label" },
     { "type": "url", "id": "button_url", "label": "Button link" }
   ],
-  "presets": [{ "name": "Video 9:16" }]
+  "presets": [{ "name": "Video" }]
 }
 {% endschema %}
