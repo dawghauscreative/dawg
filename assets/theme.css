@@ -635,3 +635,13 @@ h1, h2, h3, h4 { font-variant-numeric: lining-nums; }
 .sci-rcard__main { display: grid; gap: 18px; align-content: start; min-width: 0; }
 @media (min-width: 640px) { .sci-rcard--media { grid-template-columns: 150px minmax(0, 1fr); gap: 28px; } }
 .ingredient .media { margin-bottom: 4px; }
+
+/* Ingredient slide galleries on the Science page */
+.sci-research { display: grid; gap: 24px; grid-template-columns: 1fr; }
+@media (min-width: 750px) { .sci-research:not(.sci-research--wide) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.sci-rcard--media .sci-rcard__media { width: min(320px, 100%); }
+@media (min-width: 750px) { .sci-rcard--media { grid-template-columns: 300px minmax(0, 1fr); gap: 36px; } .sci-rcard--media .sci-rcard__media { width: 300px; } }
+.sci-slides { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 8px; }
+.sci-slides button { padding: 0; border: 1px solid var(--rule); background: none; cursor: pointer; opacity: .65; aspect-ratio: 4/5; overflow: hidden; }
+.sci-slides button[aria-current="true"], .sci-slides button:hover { opacity: 1; border-color: var(--accent); }
+.sci-slides img { width: 100%; height: 100%; object-fit: cover; }

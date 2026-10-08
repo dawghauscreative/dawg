@@ -149,7 +149,8 @@
             "why": "<p>Nicotinamide takes part in cellular energy metabolism and has been studied in relation to UV-response biology and skin barrier function.</p>",
             "shows": "<p>A randomized, double-blind crossover study in healthy volunteers found that oral nicotinamide reduced UV-induced suppression of a measured skin immune response at the doses studied.</p><p>Separate laboratory and topical research found that nicotinamide increased synthesis of ceramides, free fatty acids, and cholesterol involved in epidermal barrier function.</p>",
             "context": "<p>The barrier-lipid study included cell-culture and topical application research. It is not proof that oral UV Shield+ produces the same effect.</p>",
-            "studies": "yiasemides-nicotinamide-2009, tanno-nicotinamide-barrier-2000"
+            "studies": "yiasemides-nicotinamide-2009, tanno-nicotinamide-barrier-2000",
+            "slide_set": "d02"
           }
         },
         "b2": {
@@ -160,7 +161,8 @@
             "evidence": "Human clinical research",
             "why": "<p>Polypodium leucotomos has been studied as an oral botanical in relation to skin responses to ultraviolet exposure.</p>",
             "shows": "<p>In a randomized, double-blind, placebo-controlled study of healthy adults, oral Polypodium leucotomos was evaluated for UV-response endpoints over the study period.</p><p>Earlier human research also evaluated oral Polypodium leucotomos in experimentally UV-exposed skin, and newer controlled studies have continued to investigate it in healthy volunteers.</p>",
-            "studies": "nestor-polypodium-rct, middelkamp-hup-polypodium, faisal-uva-2026"
+            "studies": "nestor-polypodium-rct, middelkamp-hup-polypodium, faisal-uva-2026",
+            "slide_set": "d01"
           }
         },
         "b3": {
@@ -172,7 +174,8 @@
             "why": "<p>Resveratrol is a polyphenol studied for antioxidant, cellular-signaling, and skin-related effects.</p>",
             "shows": "<p>A randomized, placebo-controlled study in women aged 40 and older evaluated oral and topical trans-resveratrol over eight weeks and measured several skin parameters, including moisture, elasticity and sebum.</p>",
             "context": "<p>The dose and study design differ from UV Shield+. It supports ingredient rationale rather than establishing finished-product efficacy.</p>",
-            "studies": "rao-resveratrol-2025"
+            "studies": "rao-resveratrol-2025",
+            "slide_set": "d04"
           }
         },
         "b4": {
@@ -186,7 +189,8 @@
             "shows_label": "Research context",
             "shows": "<p>Human research on oral green tea polyphenols has produced mixed results. A two-year randomized placebo-controlled study found some interim changes in selected clinical parameters but did not find oral green tea polyphenols superior to placebo for overall clinical or histologic photoaging outcomes after 24 months.</p>",
             "language": "We include mixed and null findings on purpose.",
-            "studies": "green-tea-two-year-trial"
+            "studies": "green-tea-two-year-trial",
+            "slide_set": "d03"
           }
         },
         "b5": {
@@ -196,7 +200,8 @@
             "subtitle": "Blue-green algae",
             "evidence": "Emerging / preclinical",
             "why": "<p>Spirulina contains proteins, minerals, carotenoids, and phycocyanin, and contributes a different nutritional and antioxidant profile from the formula's polyphenols.</p>",
-            "language": "Included for its nutritional and antioxidant profile while human skin-specific research continues to develop."
+            "language": "Included for its nutritional and antioxidant profile while human skin-specific research continues to develop.",
+            "slide_set": "d05"
           }
         }
       },
@@ -235,7 +240,8 @@
             "name": "Inulin",
             "subtitle": "Prebiotic fiber",
             "evidence": "Established prebiotic biology",
-            "why": "<p>Inulin is a fermentable carbohydrate that can serve as food for certain intestinal microorganisms. Its role in Skinbiotic+ is foundational: it forms the prebiotic side of a synbiotic formulation.</p>"
+            "why": "<p>Inulin is a fermentable carbohydrate that can serve as food for certain intestinal microorganisms. Its role in Skinbiotic+ is foundational: it forms the prebiotic side of a synbiotic formulation.</p>",
+            "slide_set": "d11"
           }
         },
         "b2": {
@@ -247,7 +253,8 @@
             "why": "<p>Different strains of the same species can behave differently.</p>",
             "shows": "<p>A randomized, double-blind, placebo-controlled trial involving 110 adults evaluated Lactobacillus plantarum HY7714 for 12 weeks and reported changes in several measured skin parameters.</p>",
             "context": "<p>This evidence is specific to the HY7714 strain. It does not prove identical outcomes for every L. plantarum strain.</p>",
-            "studies": "lee-hy7714-2015"
+            "studies": "lee-hy7714-2015",
+            "slide_set": "d07"
           }
         },
         "b3": {
@@ -259,7 +266,8 @@
             "why": "<p>Different microorganisms occupy different ecological niches and produce different metabolites. The formula rationale is broader microbiome support rather than assuming every species provides the same function.</p>",
             "shows_label": "Research context",
             "shows": "<p>Clinical reviews of probiotic interventions in dermatology point to potential effects through gut-skin signaling, but repeatedly note substantial heterogeneity across strains, formulations, study populations, and outcomes.</p>",
-            "studies": "gao-probiotics-gut-skin-2023, probiotic-clinical-review-2026"
+            "studies": "gao-probiotics-gut-skin-2023, probiotic-clinical-review-2026",
+            "slide_set": "d08"
           }
         },
         "b4": {
@@ -269,7 +277,8 @@
             "subtitle": "Next-generation probiotic",
             "evidence": "Emerging",
             "why": "<p>Akkermansia is an emerging microbiome organism studied extensively in intestinal barrier and metabolic biology. Its skin-specific evidence is primarily emerging and preclinical.</p>",
-            "language": "Included as a next-generation microbiome component while human skin-specific research continues to develop."
+            "language": "Included as a next-generation microbiome component while human skin-specific research continues to develop.",
+            "slide_set": "d06"
           }
         }
       },
@@ -316,16 +325,18 @@
             "why": "<p>Curcumin has been widely investigated for its effects on cellular signaling and oxidative-stress pathways. The formulation uses an optimized form because conventional curcumin has limited oral bioavailability.</p>",
             "shows_label": "Research context",
             "shows": "<p>Published pharmacokinetic reviews have compared enhanced-bioavailability curcumin preparations with conventional curcumin. Claims about bioavailability should remain formulation-specific and measured rather than assumed.</p>",
-            "studies": "jamwal-curcumin-pk-review, curcumin-independent-pk"
+            "studies": "jamwal-curcumin-pk-review, curcumin-independent-pk",
+            "slide_set": "d21"
           }
         },
         "b3": {
           "type": "research_card",
           "settings": {
-            "name": "Vitamin C + zinc",
-            "subtitle": "Essential nutrients",
+            "name": "Vitamin C",
+            "subtitle": "Essential nutrient",
             "evidence": "Established nutritional physiology",
-            "why": "<p>These are essential nutrients with established physiological roles. Vitamin C participates in collagen biosynthesis and antioxidant systems. Zinc acts as a cofactor for numerous enzymes and contributes to normal immune and cellular functions.</p>"
+            "why": "<p>Vitamin C is an essential nutrient with established physiological roles. It participates in collagen biosynthesis and antioxidant systems.</p>",
+            "slide_set": "d15"
           }
         },
         "b4": {
@@ -337,7 +348,28 @@
             "why": "<p>Quercetin is a plant flavonoid studied for antioxidant and cellular-signaling properties.</p>",
             "shows_label": "Research context",
             "shows": "<p>Human pharmacokinetic studies confirm oral absorption of quercetin-containing preparations, while much of the skin-specific mechanistic rationale remains derived from laboratory research.</p>",
-            "studies": "quercetin-human-pk"
+            "studies": "quercetin-human-pk",
+            "slide_set": "d17"
+          }
+        },
+        "bz": {
+          "type": "research_card",
+          "settings": {
+            "name": "Zinc",
+            "subtitle": "Essential mineral",
+            "evidence": "Established nutritional physiology",
+            "why": "<p>Zinc is an essential mineral that acts as a cofactor for numerous enzymes and contributes to normal immune and cellular functions.</p>",
+            "slide_set": "d16"
+          }
+        },
+        "bd": {
+          "type": "research_card",
+          "settings": {
+            "name": "Vitamin D3",
+            "subtitle": "Cholecalciferol, from lichen",
+            "evidence": "Established nutritional physiology",
+            "why": "<p>Vitamin D is an essential nutrient that contributes to normal immune function. The form used here is plant-derived, from lichen.</p>",
+            "slide_set": "d14"
           }
         }
       },
@@ -345,6 +377,8 @@
         "b1",
         "b2",
         "b3",
+        "bz",
+        "bd",
         "b4"
       ]
     },

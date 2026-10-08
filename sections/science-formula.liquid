@@ -41,11 +41,25 @@
       </div>
     {%- endif -%}
 
-    <div class="cols cols--2 sci-research">
+    <div class="sci-research{% if section.settings.show_card_images %} sci-research--wide{% endif %}">
       {%- for block in section.blocks -%}
         <article class="sci-rcard{% if block.settings.mixed %} sci-rcard--mixed{% endif %}{% if section.settings.show_card_images %} sci-rcard--media{% endif %}" {{ block.shopify_attributes }}>
           {%- if section.settings.show_card_images -%}
-            <div class="sci-rcard__media">{% render 'responsive-image', image: block.settings.image, ratio: '4x5', sizes: '160px', alt: block.settings.name %}</div>
+            {%- assign slide_set = block.settings.slide_set | strip -%}
+            <div class="sci-rcard__media"{% if slide_set != blank %} data-gallery{% endif %}>
+              {%- if slide_set != blank -%}
+                {%- assign slide_1 = 'slide-' | append: slide_set | append: '-1.webp' -%}
+                <div class="media ratio-4x5"><img data-gallery-main src="{{ slide_1 | asset_url }}" alt="{{ block.settings.name | escape }}: ingredient slide" width="1122" height="1402" loading="lazy" sizes="(min-width: 990px) 320px, 100vw"></div>
+                <div class="sci-slides">
+                  {%- for n in (1..4) -%}
+                    {%- assign slide_n = 'slide-' | append: slide_set | append: '-' | append: n | append: '.webp' -%}
+                    <button type="button" data-thumb data-src="{{ slide_n | asset_url }}" aria-label="{{ block.settings.name | escape }}, slide {{ n }}" aria-current="{% if n == 1 %}true{% else %}false{% endif %}"><img src="{{ slide_n | asset_url }}" alt="" width="1122" height="1402" loading="lazy"></button>
+                  {%- endfor -%}
+                </div>
+              {%- else -%}
+                {% render 'responsive-image', image: block.settings.image, ratio: '4x5', sizes: '(min-width: 990px) 320px, 100vw', alt: block.settings.name %}
+              {%- endif -%}
+            </div>
           {%- endif -%}
           <div class="sci-rcard__main">
           <header>
@@ -112,6 +126,7 @@
         { "type": "text", "id": "language", "label": "Public language line" },
         { "type": "richtext", "id": "context", "label": "Important context" },
         { "type": "text", "id": "studies", "label": "Citations (study handles, comma separated)" },
+        { "type": "text", "id": "slide_set", "label": "Ingredient slide set", "info": "Slide set key, e.g. d02 for assets slide-d02-1 to slide-d02-4. Shows the four slides as a gallery. Leave empty to use the image picker below." },
         { "type": "image_picker", "id": "image", "label": "Ingredient image" },
         { "type": "checkbox", "id": "mixed", "label": "Mixed or null findings", "default": false }
       ]

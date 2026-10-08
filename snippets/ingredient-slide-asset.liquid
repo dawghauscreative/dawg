@@ -1,0 +1,22 @@
+{%- comment -%}
+  Maps an ingredient record (by handle) to the slide set used as its card image (title slide of the set).
+  Outputs a theme asset filename, or nothing when no slide exists yet. Usage: {% render 'ingredient-slide-asset', handle: ingredient.system.handle %}
+{%- endcomment -%}
+{%- case handle -%}
+  {%- when 'polypodium-leucotomos' -%}slide-d01-1.webp
+  {%- when 'niacinamide-500' -%}slide-d02-1.webp
+  {%- when 'egcg' -%}slide-d03-1.webp
+  {%- when 'trans-resveratrol' -%}slide-d04-1.webp
+  {%- when 'spirulina' -%}slide-d05-1.webp
+  {%- when 'akkermansia-muciniphila' -%}slide-d06-1.webp
+  {%- when 'lactobacillus-plantarum' -%}slide-d07-1.webp
+  {%- when 'lactobacillus-rhamnosus' -%}slide-d08-1.webp
+  {%- when 'bifidobacterium-bifidum' -%}slide-d10-1.webp
+  {%- when 'organic-inulin' -%}slide-d11-1.webp
+  {%- when 'niacinamide-250' -%}slide-d12-1.webp
+  {%- when 'vitamin-d3' -%}slide-d14-1.webp
+  {%- when 'vitamin-c' -%}slide-d15-1.webp
+  {%- when 'zinc-gluconate' -%}slide-d16-1.webp
+  {%- when 'quercetin' -%}slide-d17-1.webp
+  {%- when 'longvida-curcumin' -%}slide-d21-1.webp
+{%- endcase -%}

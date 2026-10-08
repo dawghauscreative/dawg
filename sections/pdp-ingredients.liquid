@@ -7,8 +7,10 @@
     <div class="cols cols--3">
       {%- for ingredient in ingredients -%}
         <article class="ingredient">
-          {%- if ingredient.image != blank or section.settings.show_image_frames -%}
-            {% render 'responsive-image', image: ingredient.image.value, ratio: '4x5', sizes: '(min-width: 750px) 30vw, 100vw', alt: ingredient.name.value %}
+          {%- capture slide_capture -%}{%- render 'ingredient-slide-asset', handle: ingredient.system.handle -%}{%- endcapture -%}
+          {%- assign slide_asset = slide_capture | strip -%}
+          {%- if ingredient.image != blank or slide_asset != blank or section.settings.show_image_frames -%}
+            {% render 'responsive-image', image: ingredient.image.value, asset: slide_asset, ratio: '4x5', sizes: '(min-width: 750px) 30vw, 100vw', alt: ingredient.name.value %}
           {%- endif -%}
           {%- if ingredient.role.value != blank -%}<span class="ingredient__role">{{ ingredient.role.value }}</span>{%- endif -%}
           <h3>{{ ingredient.name.value }}</h3>

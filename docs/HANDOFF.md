@@ -113,7 +113,7 @@ Decisions and flags:
 
 ## Uploaded images (Oct 8, evening)
 
-153 files were uploaded to branch `claude/refactor-shopify-hero-section-Qq2kK`. They are copied (de-duplicated, renamed) to `source-images/` on this branch with a compliance note in `source-images/README.md`. They are NOT in the theme and NOT synced to Shopify. The 22 ingredient-slide sets carry claims that conflict with the brief (90-day header, before/during-sun timing, DNA-damage and condition wording) and need counsel review first.
+153 files were uploaded to branch `claude/refactor-shopify-hero-section-Qq2kK`. They are copied (de-duplicated, renamed) to `source-images/` on this branch with a compliance note in `source-images/README.md`. They are NOT in the theme and NOT synced to Shopify. The 22 ingredient-slide sets carry claims that conflicted with the brief (90-day header, before/during-sun timing, DNA-damage and condition wording); the owner then confirmed them as approved and they are wired into the Science page and ingredient cards (see `source-images/README.md`).
 
 ## Why product descriptions were missing (fixed)
 
