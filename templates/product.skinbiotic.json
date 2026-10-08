@@ -1,22 +1,36 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "pdp-main",
       "blocks": {
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {}
         },
         "tagline": {
-          "type": "tagline"
+          "type": "tagline",
+          "settings": {}
         },
         "reviews": {
-          "type": "reviews"
+          "type": "reviews",
+          "settings": {}
         },
         "buy_buttons": {
-          "type": "buy_buttons"
+          "type": "buy_buttons",
+          "settings": {}
         },
         "expectation": {
-          "type": "expectation"
+          "type": "expectation",
+          "settings": {}
         },
         "trust_bar": {
           "type": "trust_bar",
@@ -26,13 +40,16 @@
           }
         },
         "fda": {
-          "type": "fda"
+          "type": "fda",
+          "settings": {}
         },
         "melanoma": {
-          "type": "melanoma"
+          "type": "melanoma",
+          "settings": {}
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
         }
       },
       "block_order": [
@@ -45,37 +62,48 @@
         "trust_bar",
         "melanoma",
         "fda"
-      ]
+      ],
+      "settings": {}
     },
     "definition": {
-      "type": "pdp-definition"
+      "type": "pdp-definition",
+      "settings": {}
     },
     "benefits": {
-      "type": "pdp-benefits"
+      "type": "pdp-benefits",
+      "settings": {}
     },
     "ingredients": {
-      "type": "pdp-ingredients"
+      "type": "pdp-ingredients",
+      "settings": {}
     },
     "how": {
-      "type": "pdp-how-it-works"
+      "type": "pdp-how-it-works",
+      "settings": {}
     },
     "timeline": {
-      "type": "renewal-timeline"
+      "type": "renewal-timeline",
+      "settings": {}
     },
     "crosssell": {
-      "type": "pdp-crosssell"
+      "type": "pdp-crosssell",
+      "settings": {}
     },
     "reviews": {
-      "type": "pdp-reviews"
+      "type": "pdp-reviews",
+      "settings": {}
     },
     "faq": {
-      "type": "pdp-faq"
+      "type": "pdp-faq",
+      "settings": {}
     },
     "compliance": {
-      "type": "compliance-notice"
+      "type": "compliance-notice",
+      "settings": {}
     },
     "video": {
-      "type": "video-slot"
+      "type": "video-slot",
+      "settings": {}
     }
   },
   "order": [
