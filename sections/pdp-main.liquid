@@ -64,6 +64,12 @@
                 <p class="pdp__tagline" {{ block.shopify_attributes }}>{{ product.metafields.custom.tagline }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>
               {%- endif -%}
 
+            {%- when 'price' -%}
+              {%- comment -%} Base price read from Shopify data. Hide with Theme settings > Product pages once Supr's widget shows pricing. {%- endcomment -%}
+              {%- if settings.show_base_price -%}
+                <p class="pdp__price" {{ block.shopify_attributes }}>{% render 'price', product: product %}</p>
+              {%- endif -%}
+
             {%- when 'reviews' -%}
               {%- comment -%} Review summary slot. Renders nothing until a reviews app is on. {%- endcomment -%}
               <div class="reviews-slot pdp__reviews" data-reviews-summary {{ block.shopify_attributes }}></div>
@@ -159,6 +165,7 @@
   "blocks": [
     { "type": "title", "name": "Title", "limit": 1 },
     { "type": "tagline", "name": "Tagline", "limit": 1 },
+    { "type": "price", "name": "Price", "limit": 1 },
     { "type": "reviews", "name": "Review summary slot", "limit": 1 },
     { "type": "buy_buttons", "name": "Buy buttons", "limit": 1 },
     { "type": "expectation", "name": "Expectation line", "limit": 1 },

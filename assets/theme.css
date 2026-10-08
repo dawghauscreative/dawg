@@ -352,3 +352,6 @@ p { margin: 0; }
 .definition, .timeline__range, .pcard__title, .faq summary, .site-header__logo { font-weight: 400; }
 body { letter-spacing: .01em; line-height: 1.7; }
 .btn { font-weight: 700; }
+
+.pdp__price { font-family: var(--font-callout); font-size: 1.25rem; letter-spacing: .06em; color: var(--c-white) !important; }
+.pdp__price .price-from { font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; opacity: .8; }

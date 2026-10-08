@@ -30,11 +30,15 @@
         },
         "melanoma": {
           "type": "melanoma"
+        },
+        "price": {
+          "type": "price"
         }
       },
       "block_order": [
         "title",
         "tagline",
+        "price",
         "reviews",
         "buy_buttons",
         "expectation",
