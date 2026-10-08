@@ -1,3 +1,53 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "current": {}
+  "current": {
+    "content_for_index": [],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "18363274320096901237": {
+        "type": "shopify://apps/supr-bundles-subscriptions/blocks/app-embed/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
+        "disabled": false,
+        "settings": {}
+      },
+      "5269207691391943459": {
+        "type": "shopify://apps/gtm-data-layer/blocks/gropulse-gtm/ec1066b4-8b00-4630-a216-c88f51204a28",
+        "disabled": false,
+        "settings": {}
+      },
+      "16944763978814972657": {
+        "type": "shopify://apps/gtm-data-layer/blocks/consent-banner/ec1066b4-8b00-4630-a216-c88f51204a28",
+        "disabled": false,
+        "settings": {}
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "7079518687644006178": {
+        "type": "shopify://apps/checkout-blocks/blocks/app-embed/b0024ca5-9de8-4bf0-a92f-cd0783877ae2",
+        "disabled": false,
+        "settings": {
+          "utm_id": true,
+          "utm_source": true,
+          "utm_medium": true,
+          "utm_campaign": true,
+          "utm_term": true,
+          "ref": true
+        }
+      }
+    }
+  }
 }

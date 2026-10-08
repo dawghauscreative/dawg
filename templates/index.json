@@ -1,31 +1,45 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero",
       "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "Internal Skin Defense for Life in the Sun",
+        "body": "",
+        "primary_label": "Shop the System",
         "primary_url": "/products/sun-safe-system",
+        "secondary_label": "Explore the Science",
         "secondary_url": "/pages/science",
+        "image_alt": "",
         "background_asset": "hero-banner-1.webp"
       }
     },
     "category": {
       "type": "category-statement",
       "settings": {
+        "color_scheme": "light",
         "eyebrow": "Our mission",
         "statement": "To transform skin health from the inside out. We are guided by dermatological science and the philosophy that balance is a practice, not a destination."
       }
     },
     "problem": {
       "type": "problem",
-      "settings": {
-        "eyebrow": "Why Alchemia MD began",
-        "heading": "Throughout her years in practice, a few things became clear:"
-      },
       "blocks": {
         "pt1": {
           "type": "point",
           "settings": {
             "icon": "none",
+            "title": "",
             "text": "Patients were increasingly seeking natural options to support their skin health."
           }
         },
@@ -33,6 +47,7 @@
           "type": "point",
           "settings": {
             "icon": "none",
+            "title": "",
             "text": "She was writing the same list of supplements over and over."
           }
         },
@@ -40,6 +55,7 @@
           "type": "point",
           "settings": {
             "icon": "none",
+            "title": "",
             "text": "There was no single solution that brought it all together."
           }
         }
@@ -48,11 +64,19 @@
         "pt1",
         "pt2",
         "pt3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "Why Alchemia MD began",
+        "heading": "Throughout her years in practice, a few things became clear:",
+        "body": ""
+      }
     },
     "solution": {
       "type": "solution",
       "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
         "heading": "Alchemia MD gives people a clear, trusted way to care for their skin from the inside out.",
         "body": "<p>Each formula translates Dr. Mia Luna's expertise into practical daily support for the skin's natural resilience.</p><p>The result is a purposeful routine that fits real life and helps people stay consistent with their long-term skin health.</p>"
       }
@@ -83,7 +107,31 @@
         "p1",
         "p2",
         "p3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "",
+        "body": "",
+        "link_label": "",
+        "link_url": ""
+      }
+    },
+    "video": {
+      "type": "video-vertical",
+      "settings": {
+        "color_scheme": "dark",
+        "video": "shopify://files/videos/hf_20260503_005659_fe87e28d-6747-4371-9806-17accfc37fd7.mp4",
+        "video_url": "",
+        "video_title": "Video",
+        "show_placeholder": true,
+        "video_side": "right",
+        "eyebrow": "",
+        "heading": "",
+        "body": "",
+        "button_label": "",
+        "button_url": ""
+      }
     },
     "lifestyle": {
       "type": "lifestyle-strip",
@@ -91,25 +139,29 @@
         "s1": {
           "type": "image",
           "settings": {
-            "asset": "lifestyle-uvshield-dermaboost-tennis.webp"
+            "asset": "lifestyle-uvshield-dermaboost-tennis.webp",
+            "caption": ""
           }
         },
         "s2": {
           "type": "image",
           "settings": {
-            "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp"
+            "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp",
+            "caption": ""
           }
         },
         "s3": {
           "type": "image",
           "settings": {
-            "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp"
+            "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
+            "caption": ""
           }
         },
         "s4": {
           "type": "image",
           "settings": {
-            "asset": "lifestyle-skinbiotic-cliffs.webp"
+            "asset": "lifestyle-skinbiotic-cliffs.webp",
+            "caption": ""
           }
         }
       },
@@ -118,29 +170,49 @@
         "s2",
         "s3",
         "s4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": ""
+      }
     },
     "founder": {
       "type": "founder",
       "settings": {
-        "link_label": "Meet Dr. Luna",
-        "link_url": "/pages/founder",
+        "color_scheme": "dark",
         "image_asset": "founder-portrait.webp",
+        "image_alt": "Dr. Mia Luna",
+        "image_side": "left",
+        "eyebrow": "",
+        "heading": "Dr. Mia Luna",
         "credentials": "Board-certified dermatologist",
-        "body": "<p>As someone who personally takes supplements, Dr. Luna began to consider the possibilities. What if the most beneficial ingredients for skin health could exist within one effective, convenient formula?</p>"
+        "body": "<p>As someone who personally takes supplements, Dr. Luna began to consider the possibilities. What if the most beneficial ingredients for skin health could exist within one effective, convenient formula?</p>",
+        "link_label": "Meet Dr. Luna",
+        "link_url": "/pages/founder"
       }
     },
     "final": {
       "type": "final-cta",
       "settings": {
-        "product": "sun-safe-system"
+        "color_scheme": "green",
+        "product": "sun-safe-system",
+        "eyebrow": "",
+        "heading": "",
+        "body": "",
+        "button_label": "Shop the System"
       }
     },
     "email": {
-      "type": "email-capture"
-    },
-    "video": {
-      "type": "video-vertical"
+      "type": "email-capture",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "",
+        "heading": "",
+        "body": "",
+        "button_label": "Subscribe",
+        "success_text": "Thank you."
+      }
     }
   },
   "order": [
