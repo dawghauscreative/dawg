@@ -110,3 +110,11 @@ Decisions and flags:
 - Reworded to pass the copy rules: "Alchemia MD replaces sunscreen" and "oral sunscreen" (banned phrases) became "A supplement can stand in for sunscreen" and "A supplement is not sun protection"; "clinically tested" and "treatment" were reworded; UV-response study descriptions drop minimal-erythema figures and doses; the Dr. Mia line is presented as brand copy, not a quotation, until she approves it as authored.
 - Ingredient slide images are pre-wired to Shopify Files (uv-shield-2-five-actives, sk09, sk10, dermaboost-2-inside). They were not visible to the build, so each must be reviewed for claims before launch. Empty image slots show a placeholder frame.
 - The "ingredient slides" mentioned as added to the repo were not found on the build branch; if they live elsewhere, point to the path or branch.
+
+## Uploaded images (Oct 8, evening)
+
+153 files were uploaded to branch `claude/refactor-shopify-hero-section-Qq2kK`. They are copied (de-duplicated, renamed) to `source-images/` on this branch with a compliance note in `source-images/README.md`. They are NOT in the theme and NOT synced to Shopify. The 22 ingredient-slide sets carry claims that conflict with the brief (90-day header, before/during-sun timing, DNA-damage and condition wording) and need counsel review first.
+
+## Why product descriptions were missing (fixed)
+
+Shopify rejects a whole JSON template if any `richtext` setting is plain text. The FAQ answers were plain text, so 8 templates silently failed to sync and the draft theme kept the old versions. Always wrap richtext values in `<p>`. Also: Sun Resilience, Skin Recovery and Complete Skin Defense had no template suffix, so they used the generic product template; fixed in the product settings.
