@@ -41,11 +41,16 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         }
       },
       "block_order": [
         "title",
         "tagline",
+        "description",
         "price",
         "reviews",
         "buy_buttons",
@@ -96,35 +101,35 @@
           "type": "item",
           "settings": {
             "question": "How do I take Dermaboost+?",
-            "answer": "Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water."
+            "answer": "<p>Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "What is in Dermaboost+?",
-            "answer": "Each serving (2 capsules) contains vitamin C, vitamin D (from lichen), niacin (as niacinamide), zinc, Longvida® optimized curcumin extract, quercetin, olive leaf extract and astaxanthin. The full Supplement Facts are on this page."
+            "answer": "<p>Each serving (2 capsules) contains vitamin C, vitamin D (from lichen), niacin (as niacinamide), zinc, Longvida® optimized curcumin extract, quercetin, olive leaf extract and astaxanthin. The full Supplement Facts are on this page.</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "How long does one bottle last?",
-            "answer": "One bottle lasts 30 days at the daily serving and 15 days at the enhanced serving."
+            "answer": "<p>One bottle lasts 30 days at the daily serving and 15 days at the enhanced serving.</p>"
           }
         },
         "q4": {
           "type": "item",
           "settings": {
             "question": "Where does Dermaboost+ fit in the Alchemia MD system?",
-            "answer": "Dermaboost+ is the Restore step: daily immune support and antioxidant nutrition for calm, balanced skin.†"
+            "answer": "<p>Dermaboost+ is the Restore step: daily immune support and antioxidant nutrition for calm, balanced skin.†</p>"
           }
         },
         "q5": {
           "type": "item",
           "settings": {
             "question": "Should I check with my healthcare professional first?",
-            "answer": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
           }
         }
       },

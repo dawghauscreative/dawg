@@ -7,35 +7,35 @@
           "type": "item",
           "settings": {
             "question": "Are Alchemia MD products dermatologist-formulated?",
-            "answer": "Alchemia MD was founded by board-certified dermatologist Dr. Mia Luna, and our supplements are dermatologist-formulated."
+            "answer": "<p>Alchemia MD was founded by board-certified dermatologist Dr. Mia Luna, and our supplements are dermatologist-formulated.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "Who is Alchemia MD for?",
-            "answer": "Alchemia MD is designed for people who want daily internal skin health support, especially those with active, sun-exposed lifestyles such as golf, tennis, boating, beach days and travel."
+            "answer": "<p>Alchemia MD is designed for people who want daily internal skin health support, especially those with active, sun-exposed lifestyles such as golf, tennis, boating, beach days and travel.</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "What does each formula do?",
-            "answer": "UV Shield+ is the Protect step, with daily antioxidant and nutritional support for skin exposed to life outdoors. Skinbiotic+ is the Balance step, a synbiotic designed around the gut-skin connection. Dermaboost+ is the Restore step, with immune-supportive and antioxidant nutrition for calm, balanced skin.†"
+            "answer": "<p>UV Shield+ is the Protect step, with daily antioxidant and nutritional support for skin exposed to life outdoors. Skinbiotic+ is the Balance step, a synbiotic designed around the gut-skin connection. Dermaboost+ is the Restore step, with immune-supportive and antioxidant nutrition for calm, balanced skin.†</p>"
           }
         },
         "q4": {
           "type": "item",
           "settings": {
             "question": "Where can I see the full ingredient list?",
-            "answer": "Every product page shows the full Supplement Facts, and the Science page lists each ingredient and amount as printed on the label."
+            "answer": "<p>Every product page shows the full Supplement Facts, and the Science page lists each ingredient and amount as printed on the label.</p>"
           }
         },
         "q5": {
           "type": "item",
           "settings": {
             "question": "How long does one bottle last?",
-            "answer": "UV Shield+ and Dermaboost+ contain 60 capsules, which last 30 days at the daily serving and 15 days at the enhanced serving. Skinbiotic+ contains 30 capsules, a 30-day supply at one capsule daily."
+            "answer": "<p>UV Shield+ and Dermaboost+ contain 60 capsules, which last 30 days at the daily serving and 15 days at the enhanced serving. Skinbiotic+ contains 30 capsules, a 30-day supply at one capsule daily.</p>"
           }
         }
       },
@@ -60,21 +60,21 @@
           "type": "item",
           "settings": {
             "question": "What is the difference between an individual product and a system?",
-            "answer": "An individual product is a single formula. A system combines complementary formulas into one daily routine, so you can start with what you need and add to it over time."
+            "answer": "<p>An individual product is a single formula. A system combines complementary formulas into one daily routine, so you can start with what you need and add to it over time.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "Can I start with just one product?",
-            "answer": "Yes. Each formula has its own role and you can start with one. The systems are for people who want a combined routine, and the Complete Skin Defense System is the most comprehensive option."
+            "answer": "<p>Yes. Each formula has its own role and you can start with one. The systems are for people who want a combined routine, and the Complete Skin Defense System is the most comprehensive option.</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "Can I take more than one product together?",
-            "answer": "Yes. The products are designed to work together as a daily routine. Follow the suggested use on each product label."
+            "answer": "<p>Yes. The products are designed to work together as a daily routine. Follow the suggested use on each product label.</p>"
           }
         }
       },
@@ -97,7 +97,7 @@
           "type": "item",
           "settings": {
             "question": "How do Alchemia MD products fit with sunscreen?",
-            "answer": "UV Shield+ is designed to work alongside your sunscreen, not replace it. Alchemia MD complements your existing skincare and sun safety routines by adding a layer of support from within. It is not a sunscreen and does not replace sun protection."
+            "answer": "<p>UV Shield+ is designed to work alongside your sunscreen, not replace it. Alchemia MD complements your existing skincare and sun safety routines by adding a layer of support from within. It is not a sunscreen and does not replace sun protection.</p>"
           }
         }
       },
@@ -118,21 +118,21 @@
           "type": "item",
           "settings": {
             "question": "How do I take UV Shield+ and Dermaboost+?",
-            "answer": "Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water."
+            "answer": "<p>Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "How do I take Skinbiotic+?",
-            "answer": "Take one (1) capsule daily with water."
+            "answer": "<p>Take one (1) capsule daily with water.</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "Should I check with my healthcare professional first?",
-            "answer": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
           }
         }
       },
@@ -155,14 +155,14 @@
           "type": "item",
           "settings": {
             "question": "How do I manage my subscription?",
-            "answer": "Use the Manage subscription link in the site header or footer."
+            "answer": "<p>Use the Manage subscription link in the site header or footer.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "How can I contact Alchemia MD?",
-            "answer": "Email info@alchemiamd.com or use the form on the Contact page."
+            "answer": "<p>Email info@alchemiamd.com or use the form on the Contact page.</p>"
           }
         }
       },

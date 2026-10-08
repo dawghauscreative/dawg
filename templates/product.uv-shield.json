@@ -41,11 +41,16 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         }
       },
       "block_order": [
         "title",
         "tagline",
+        "description",
         "price",
         "reviews",
         "buy_buttons",
@@ -96,42 +101,42 @@
           "type": "item",
           "settings": {
             "question": "How does UV Shield+ fit with sunscreen?",
-            "answer": "UV Shield+ is made to be used alongside your sunscreen, protective clothing and shade. It is not a sunscreen and does not replace sun protection."
+            "answer": "<p>UV Shield+ is made to be used alongside your sunscreen, protective clothing and shade. It is not a sunscreen and does not replace sun protection.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "How do I take UV Shield+?",
-            "answer": "Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water."
+            "answer": "<p>Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water.</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "How long does one bottle last?",
-            "answer": "One bottle lasts 30 days at the daily serving and 15 days at the enhanced serving."
+            "answer": "<p>One bottle lasts 30 days at the daily serving and 15 days at the enhanced serving.</p>"
           }
         },
         "q4": {
           "type": "item",
           "settings": {
             "question": "What is in UV Shield+?",
-            "answer": "Each serving (2 capsules) contains niacin (as niacinamide), Polypodium leucotomos, EGCG from green tea leaf extract, spirulina and trans-resveratrol. The full Supplement Facts are on this page."
+            "answer": "<p>Each serving (2 capsules) contains niacin (as niacinamide), Polypodium leucotomos, EGCG from green tea leaf extract, spirulina and trans-resveratrol. The full Supplement Facts are on this page.</p>"
           }
         },
         "q5": {
           "type": "item",
           "settings": {
             "question": "Who is UV Shield+ designed for?",
-            "answer": "People who spend time outdoors, such as golfers, tennis players, boaters, beachgoers, travelers and outdoor athletes."
+            "answer": "<p>People who spend time outdoors, such as golfers, tennis players, boaters, beachgoers, travelers and outdoor athletes.</p>"
           }
         },
         "q6": {
           "type": "item",
           "settings": {
             "question": "Should I check with my healthcare professional first?",
-            "answer": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
           }
         }
       },

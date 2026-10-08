@@ -41,11 +41,16 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         }
       },
       "block_order": [
         "title",
         "tagline",
+        "description",
         "price",
         "reviews",
         "buy_buttons",
@@ -104,35 +109,35 @@
           "type": "item",
           "settings": {
             "question": "What is included in the Sun Safe System?",
-            "answer": "One UV Shield+ (60 capsules) and one Skinbiotic+ (30 capsules)."
+            "answer": "<p>One UV Shield+ (60 capsules) and one Skinbiotic+ (30 capsules).</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "Why combine these two formulas?",
-            "answer": "UV Shield+ provides antioxidant and nutritional support for skin exposed to the environment, while Skinbiotic+ supports the gut-skin connection. Together they pair support for the skin you expose to the sun with the internal systems connected to skin health.†"
+            "answer": "<p>UV Shield+ provides antioxidant and nutritional support for skin exposed to the environment, while Skinbiotic+ supports the gut-skin connection. Together they pair support for the skin you expose to the sun with the internal systems connected to skin health.†</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "How do I take the products in this system?",
-            "answer": "Take each product as directed on its label. The directions for both are shown on this page."
+            "answer": "<p>Take each product as directed on its label. The directions for both are shown on this page.</p>"
           }
         },
         "q4": {
           "type": "item",
           "settings": {
             "question": "How does the system fit with sunscreen?",
-            "answer": "UV Shield+ is made to be used alongside your sunscreen, protective clothing and shade. It is not a sunscreen and does not replace sun protection."
+            "answer": "<p>UV Shield+ is made to be used alongside your sunscreen, protective clothing and shade. It is not a sunscreen and does not replace sun protection.</p>"
           }
         },
         "q5": {
           "type": "item",
           "settings": {
             "question": "Should I check with my healthcare professional first?",
-            "answer": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
           }
         }
       },

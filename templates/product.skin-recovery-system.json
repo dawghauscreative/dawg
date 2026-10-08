@@ -41,11 +41,16 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         }
       },
       "block_order": [
         "title",
         "tagline",
+        "description",
         "price",
         "reviews",
         "buy_buttons",
@@ -104,28 +109,28 @@
           "type": "item",
           "settings": {
             "question": "What is included in the Skin Recovery System?",
-            "answer": "One Skinbiotic+ (30 capsules) and one Dermaboost+ (60 capsules)."
+            "answer": "<p>One Skinbiotic+ (30 capsules) and one Dermaboost+ (60 capsules).</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "Why combine these two formulas?",
-            "answer": "Skinbiotic+ supports gut and microbiome balance, while Dermaboost+ provides antioxidant and immune-supportive nutrition. Together they pair internal balance with nutritional support for calm, resilient skin.†"
+            "answer": "<p>Skinbiotic+ supports gut and microbiome balance, while Dermaboost+ provides antioxidant and immune-supportive nutrition. Together they pair internal balance with nutritional support for calm, resilient skin.†</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "How do I take the products in this system?",
-            "answer": "Take each product as directed on its label. The directions for both are shown on this page."
+            "answer": "<p>Take each product as directed on its label. The directions for both are shown on this page.</p>"
           }
         },
         "q4": {
           "type": "item",
           "settings": {
             "question": "Should I check with my healthcare professional first?",
-            "answer": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
           }
         }
       },

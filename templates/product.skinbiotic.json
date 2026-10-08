@@ -41,11 +41,16 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         }
       },
       "block_order": [
         "title",
         "tagline",
+        "description",
         "price",
         "reviews",
         "buy_buttons",
@@ -96,42 +101,42 @@
           "type": "item",
           "settings": {
             "question": "How do I take Skinbiotic+?",
-            "answer": "Take one (1) capsule daily with water."
+            "answer": "<p>Take one (1) capsule daily with water.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "What is in Skinbiotic+?",
-            "answer": "Each capsule contains organic inulin, a prebiotic fiber, and a probiotic blend of five strains: Lactobacillus plantarum, Bifidobacterium bifidum, Akkermansia muciniphila, Lactobacillus rhamnosus and Bifidobacterium lactis."
+            "answer": "<p>Each capsule contains organic inulin, a prebiotic fiber, and a probiotic blend of five strains: Lactobacillus plantarum, Bifidobacterium bifidum, Akkermansia muciniphila, Lactobacillus rhamnosus and Bifidobacterium lactis.</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "What is a synbiotic?",
-            "answer": "A synbiotic pairs a prebiotic, which feeds beneficial bacteria, with probiotics, which are live beneficial bacteria. Skinbiotic+ combines both in one capsule."
+            "answer": "<p>A synbiotic pairs a prebiotic, which feeds beneficial bacteria, with probiotics, which are live beneficial bacteria. Skinbiotic+ combines both in one capsule.</p>"
           }
         },
         "q4": {
           "type": "item",
           "settings": {
             "question": "What is the gut-skin connection?",
-            "answer": "Researchers study how the gut microbiome and the skin influence one another. Skinbiotic+ is designed around that connection to support gut and skin health.†"
+            "answer": "<p>Researchers study how the gut microbiome and the skin influence one another. Skinbiotic+ is designed around that connection to support gut and skin health.†</p>"
           }
         },
         "q5": {
           "type": "item",
           "settings": {
             "question": "How long does one bottle last?",
-            "answer": "One bottle contains 30 capsules, a 30-day supply at one capsule daily."
+            "answer": "<p>One bottle contains 30 capsules, a 30-day supply at one capsule daily.</p>"
           }
         },
         "q6": {
           "type": "item",
           "settings": {
             "question": "Should I check with my healthcare professional first?",
-            "answer": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
           }
         }
       },
