@@ -8,14 +8,14 @@
     "theme_support_url": "https://alchemiamd.com"
   },
   {
-    "name": "Brand colors (Brand Guidelines V1)",
+    "name": "Brand colors (Blueprint V2)",
     "settings": [
       {
         "type": "color",
         "id": "color_black",
-        "label": "Alchemia Black",
+        "label": "Black",
         "default": "#141414",
-        "info": "Primary dark background. 100K black."
+        "info": "Primary dark background."
       },
       {
         "type": "color",
@@ -26,45 +26,37 @@
       },
       {
         "type": "color",
-        "id": "color_emerald",
-        "label": "Emerald",
-        "default": "#132D22",
-        "info": "Deep green section background."
-      },
-      {
-        "type": "color",
         "id": "color_evergreen",
         "label": "Evergreen",
-        "default": "#2D3D2D",
-        "info": "Secondary green. Cards on Emerald."
+        "default": "#1A2E1F",
+        "info": "Secondary dark surface. Use selectively."
       },
       {
         "type": "color",
         "id": "color_gold",
         "label": "Gold",
-        "default": "#C18C31",
-        "info": "Accent, primary button, thin rules."
-      },
-      {
-        "type": "color",
-        "id": "color_beige",
-        "label": "Beige",
-        "default": "#DEBC8C",
-        "info": "Warm accent band."
-      },
-      {
-        "type": "color",
-        "id": "color_gray",
-        "label": "Gray",
-        "default": "#AFAFAF",
-        "info": "Body copy on dark backgrounds."
+        "default": "#C9A96E",
+        "info": "Accent, primary button on dark, thin rules, icon details."
       },
       {
         "type": "color",
         "id": "color_white",
-        "label": "White",
-        "default": "#FFFFFF",
-        "info": "Headlines on dark, light sections."
+        "label": "Beige (primary light surface and text on dark)",
+        "default": "#F5F0E8"
+      },
+      {
+        "type": "color",
+        "id": "color_beige",
+        "label": "Warm beige (secondary band)",
+        "default": "#EDE3D2",
+        "info": "A slightly deeper tone of Beige for alternating light bands."
+      },
+      {
+        "type": "color",
+        "id": "color_gray",
+        "label": "Muted gray",
+        "default": "#AFAFAF",
+        "info": "Muted details only."
       }
     ]
   },
@@ -73,70 +65,76 @@
     "settings": [
       {
         "type": "header",
-        "content": "Headlines: BC Novatica (Adobe Fonts)"
-      },
-      {
-        "type": "text",
-        "id": "adobe_kit_url",
-        "label": "Adobe Fonts kit stylesheet URL",
-        "default": "https://use.typekit.net/qza3lbn.css",
-        "info": "Not self-hostable. The Adobe subscription must stay active. Add Dejanire Text to this kit for body copy."
+        "content": "Headlines: Cormorant Garamond (Google Fonts)"
       },
       {
         "type": "text",
         "id": "display_font_family",
         "label": "Headline font-family (CSS)",
-        "default": "\"bc-novatica-cyr\", sans-serif",
-        "info": "Brand Guidelines: BC Novatica SemiBold, never all caps. The kit serves weights 400 and 700 only, so semibold maps to 700."
+        "default": "\"Cormorant Garamond\", Georgia, serif"
+      },
+      {
+        "type": "text",
+        "id": "display_font_stylesheet_url",
+        "label": "Headline font stylesheet URL",
+        "default": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
       },
       {
         "type": "select",
         "id": "headline_weight",
         "label": "Headline weight",
-        "default": "600",
+        "default": "500",
         "options": [
           {
             "value": "400",
             "label": "Regular (400)"
           },
           {
+            "value": "500",
+            "label": "Medium (500)"
+          },
+          {
             "value": "600",
-            "label": "Semibold (600, uses 700 until the kit includes it)"
+            "label": "Semibold (600)"
           },
           {
             "value": "700",
             "label": "Bold (700)"
           }
-        ],
-        "info": "Brand Guidelines call for BC Novatica SemiBold. Use Regular for a lighter, more editorial look."
+        ]
       },
       {
         "type": "header",
-        "content": "Body copy: Dejanire Text"
+        "content": "Body: BC Novatica CYR (Adobe Fonts kit)"
+      },
+      {
+        "type": "text",
+        "id": "adobe_kit_url",
+        "label": "Adobe Fonts kit stylesheet URL",
+        "default": "https://use.typekit.net/qza3lbn.css",
+        "info": "Kit qza3lbn serves weights 400 and 700 plus italics. The Adobe subscription must stay active."
       },
       {
         "type": "text",
         "id": "body_font_family",
         "label": "Body font-family (CSS)",
-        "default": "\"dejanire-text\", Georgia, serif",
-        "info": "Dejanire Text Regular and Italic (Retype Foundry, also on Adobe Fonts). Add it to the kit above and confirm the CSS family name. Falls back to Georgia until then."
+        "default": "\"bc-novatica-cyr\", sans-serif"
       },
       {
         "type": "header",
-        "content": "Callouts and subheaders: Roboto"
+        "content": "Callouts and buttons"
       },
       {
         "type": "text",
         "id": "callout_font_family",
         "label": "Callout font-family (CSS)",
-        "default": "Roboto, \"Helvetica Neue\", Arial, sans-serif",
-        "info": "Small caps feel, generous tracking. Regular, Medium, Bold."
+        "default": "\"bc-novatica-cyr\", sans-serif"
       },
       {
         "type": "text",
         "id": "callout_font_stylesheet_url",
-        "label": "Callout font stylesheet URL",
-        "default": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        "label": "Callout font stylesheet URL (optional)",
+        "default": ""
       }
     ]
   },
@@ -210,7 +208,7 @@
         "type": "text",
         "id": "fda_dagger",
         "label": "Dagger mark",
-        "default": "\u2020",
+        "default": "†",
         "info": "Shown before the disclaimer in the product hero."
       },
       {

@@ -169,25 +169,7 @@
         "body": "<p>Golf, tennis, sailing, beach days and travel. Alchemia MD is for people who live actively, with daily internal support alongside sunscreen and smart sun habits.</p>"
       },
       "blocks": {
-        "s1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/back-lit-young-female-multiracial-tennis-players-w-2026-03-25-03-18-19-utc_Large_33af3979-5b4a-46c2-b954-2bdaed9743dc.jpg",
-            "asset": "lifestyle-uvshield-dermaboost-tennis.webp",
-            "label": "Tennis",
-            "caption": "Court time"
-          }
-        },
-        "s2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/family-sailing-at-sunset-on-luxury-boat-2026-03-27-00-33-51-utc_Large_d9a9c705-5243-4f08-b80c-a7a620ca8241.jpg",
-            "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp",
-            "label": "Yachting",
-            "caption": "Days on the water"
-          }
-        },
-        "s3": {
+        "t1": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/silhouette-of-golfers-hit-sweeping-and-keep-golf-c-2026-03-19-02-22-18-utc_Large_602982b3-bc47-4fbb-a744-8ba4faa4f081.jpg",
@@ -196,21 +178,63 @@
             "caption": "Long rounds"
           }
         },
-        "s4": {
+        "t2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/back-lit-young-female-multiracial-tennis-players-w-2026-03-25-03-18-19-utc_Large_33af3979-5b4a-46c2-b954-2bdaed9743dc.jpg",
+            "asset": "lifestyle-uvshield-dermaboost-tennis.webp",
+            "label": "Tennis",
+            "caption": "Court time"
+          }
+        },
+        "t3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/family-sailing-at-sunset-on-luxury-boat-2026-03-27-00-33-51-utc_Large_d9a9c705-5243-4f08-b80c-a7a620ca8241.jpg",
+            "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp",
+            "label": "Sailing",
+            "caption": "Days on the water"
+          }
+        },
+        "t4": {
+          "type": "image",
+          "settings": {
+            "label": "Running",
+            "caption": "Early miles"
+          }
+        },
+        "t5": {
+          "type": "image",
+          "settings": {
+            "label": "Cycling",
+            "caption": "Long rides"
+          }
+        },
+        "t6": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/portrait-of-a-beautiful-woman-on-the-beach-at-suns-2026-03-25-06-30-52-utc_Large_88f1f284-5829-4cad-b407-ec1cdccd5ce2.jpg",
             "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
             "label": "Beach",
-            "caption": "Coastal travel"
+            "caption": "Coastal days"
+          }
+        },
+        "t7": {
+          "type": "image",
+          "settings": {
+            "label": "Travel",
+            "caption": "Time away"
           }
         }
       },
       "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4"
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7"
       ]
     },
     "founder": {
@@ -265,7 +289,7 @@
           "type": "card",
           "settings": {
             "icon": "shield",
-            "title": "Dermatologist-led formulation",
+            "title": "Dermatologist‑led formulation",
             "text": "Developed under the guidance of board-certified dermatologist Dr. Mia Luna."
           }
         }
@@ -350,6 +374,57 @@
         "s3",
         "s4"
       ]
+    },
+    "education": {
+      "type": "education-grid",
+      "settings": {
+        "color_scheme": "beige",
+        "eyebrow": "Education",
+        "heading": "Understand your skin from the inside out.",
+        "body": "<p>Dermatologist-led guides to the science behind skin health from within.</p>",
+        "link_label": "Explore skin health guides",
+        "link_url": "/blogs/news"
+      },
+      "blocks": {
+        "g1": {
+          "type": "guide",
+          "settings": {
+            "title": "What Is Internal Skin Defense?",
+            "link": "/blogs/news/what-is-internal-skin-defense-alchemia-md"
+          }
+        },
+        "g2": {
+          "type": "guide",
+          "settings": {
+            "title": "The Gut-Skin Connection"
+          }
+        },
+        "g3": {
+          "type": "guide",
+          "settings": {
+            "title": "Supporting Skin Through Daily Sun Exposure"
+          }
+        },
+        "g4": {
+          "type": "guide",
+          "settings": {
+            "title": "Understanding Skin Renewal"
+          }
+        },
+        "g5": {
+          "type": "guide",
+          "settings": {
+            "title": "How Antioxidants Support Skin Health"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5"
+      ]
     }
   },
   "order": [
@@ -364,6 +439,7 @@
     "lifestyle",
     "founder",
     "science",
+    "education",
     "mission",
     "final"
   ]

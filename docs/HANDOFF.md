@@ -13,10 +13,10 @@ No theme was created in the store by this build. Either connect this branch with
 
 ## Design tokens and type (Brand Guidelines V1 wins over the brief)
 
-Colours: Black `#141414`, Charcoal `#212121`, Emerald `#132D22`, Evergreen `#2D3D2D`, Gold `#C18C31`, Beige `#DEBC8C`, Gray `#AFAFAF`, White. All are Theme settings.
-Schemes per section: Black, Evergreen-family (uses Emerald for contrast with gold text), White, Beige. Body copy is Gray on dark, per the guide.
-Type: headlines BC Novatica (kit serves 400/700, so semibold renders 700, never all caps), body **Dejanire Text**, callouts Roboto tracked caps.
-**Fonts on hold** (see Known gaps). Current fonts stay as they are; body falls back to Georgia until the Adobe kit carries the body font.
+Colours (Blueprint V2, Oct 2026): Black `#141414`, Gold `#C9A96E`, Evergreen `#1A2E1F`, Beige `#F5F0E8` (primary light surface and text on dark), plus Charcoal `#212121` for cards and a warm secondary beige `#EDE3D2`. All are Theme settings. Brand Guidelines V1 colours are retired.
+Schemes per section: Black, Evergreen, Beige (light), warm Beige. Body copy on dark is Beige at 80%.
+Type (Blueprint V2): headlines **Cormorant Garamond** (Google Fonts, weight setting default 500), body and callouts **BC Novatica CYR** (Adobe kit `qza3lbn`, 400/700). Dejanire Text and Roboto are retired.
+Fonts follow Blueprint V2 (see Colours and type above).
 
 ## Buy box rules (Supr owns it)
 
@@ -55,7 +55,6 @@ Not in the brief's metafield list: `custom.tier1_citations` (the brief refers to
 
 - Products keep their single "Default Title" variant by decision (see Buy box rules). Do not add Supply variants.
 - Navigation is built from the fixed product handles, so no menu needs creating. Footer legal links point at the store policies (`/policies/terms-of-service`, `privacy-policy`, `refund-policy`) plus draft pages `/pages/shipping`, `/pages/subscription-terms`, `/pages/sms-terms` (unpublished, empty, `page.legal` template: publish once counsel supplies text) and `/pages/data-sharing-opt-out`.
-- Fonts are on HOLD: keep the current setup. The brand guide says Dejanire Text for body; the locked decision was BC Novatica CYR plus Cormorant Garamond. Reyshan is confirming which is right. Do not change fonts until told.
 - Reviews: Judge.me is skipped for now (no reviews yet; post-launch). The Reviews section renders nothing until an app block is added.
 - Old HOME, SYSTEM, ABOUT and "Copy of HOME" pages are left untouched. Reyshan removes them after the new theme is live and nothing links to them.
 - No 301 redirects needed: the site has never been live.
@@ -86,8 +85,15 @@ Store data written through the connector (editable in Shopify admin, not in the 
 Theme: new `pdp-description` section renders each product's Shopify description (intro text plus a Supplement Facts panel; internal HTML comments are stripped so notes never reach page source), `ingredient-library` section for the Science page, ingredient amounts on cards, card summary line, 4-up "Systems" row on the home page, product FAQs on all 7 PDPs, FAQ page grouped by topic, Science page sections 1-7, founder path.
 
 Open items found while writing content (decide before launch):
-1. Skinbiotic+ description states "30 billion CFU". The label Supplement Facts shows a 215 mg blend with no CFU line, so that figure is unverified. Remove it or confirm.
-2. The Skinbiotic+, Skin Recovery and Complete System descriptions carry internal notes (open questions 8.2 and 8.5) about a physician-guidance caution for people on immunosuppressant medication. Still unresolved. Use the `custom.compliance_slot` metafield once wording is approved; nothing was invented.
+1. Skinbiotic+ description states "30 billion CFU". Decision (Oct 2026): leave it as is. Note the printed label Supplement Facts shows a 215 mg blend with no CFU line.
+2. The immunosuppressant physician-guidance caution (internal notes 8.2 and 8.5 in some product descriptions) is deliberately LEFT OFF by decision (Oct 2026). The notes themselves are stripped from page source by the theme.
 3. "Clinical evidence" is a card title on the home page (from the blueprint). Counsel to confirm wording.
 4. Not built (no approved articles or images): home "Education" guide row, blog articles, Life-in-the-Sun tiles for running, cycling and travel, Tier 1 citations, FAQ categories for Subscriptions billing and Shipping.
-5. Blueprint V2 lists a different palette (Gold #C9A96E, Evergreen #1A2E1F, Beige #F5F0E8) and fonts (Cormorant Garamond display, BC Novatica body) than Brand Guidelines V1. Theme still uses V1 and current fonts; fonts are on hold per Reyshan.
+5. Palette and fonts now follow Blueprint V2 by decision.
+
+## Placeholders (Oct 2026)
+
+- Image slots with no image show a hatched placeholder frame (no text). Home lifestyle strip has Running, Cycling and Travel placeholders awaiting images; Education cards have image placeholders.
+- Education: blog renamed "Education" (handle `news`). One published article (What Is Internal Skin Defense?) plus four UNPUBLISHED draft placeholders (gut-skin connection, daily sun exposure, skin renewal, antioxidants). Home Education row shows "Coming soon" for any card without a link; paste the article URL into the card once published.
+- Product gallery images already in Shopify include infographics (UV-stress timeline, layered protection, before/during/after the sun, "what the science supports"). Blueprint V2 says do not use the before/during/after infographic and UV Shield+ infographics only after clearance. Counsel to review before launch; remove from product media if not cleared.
+- Founder story: source draft in `docs/source/` (docx and md). The founder page uses adapted wording; the md file lists what was changed and why.

@@ -1,0 +1,60 @@
+{%- comment -%}
+  Education guides row. Each card is a guide: title, optional short line, optional image, optional article link.
+  A card with no link shows a "Coming soon" label instead of a dead link. Nothing is written here.
+{%- endcomment -%}
+{%- if section.blocks.size > 0 -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="cols cols--auto4 edu-grid">
+      {%- for block in section.blocks -%}
+        {%- assign has_link = false -%}
+        {%- if block.settings.link != blank -%}{%- assign has_link = true -%}{%- endif -%}
+        <{% if has_link %}a href="{{ block.settings.link }}"{% else %}div{% endif %} class="edu-card{% unless has_link %} edu-card--soon{% endunless %}" {{ block.shopify_attributes }}>
+          {% render 'responsive-image', image: block.settings.image, ratio: '4x5', sizes: '(min-width: 990px) 20vw, 50vw', alt: block.settings.title %}
+          <div class="edu-card__body">
+            <h3>{{ block.settings.title }}</h3>
+            {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
+            {%- if has_link -%}<span class="text-link">Read the guide</span>{%- else -%}<span class="edu-card__soon">Coming soon</span>{%- endif -%}
+          </div>
+        </{% if has_link %}a{% else %}div{% endif %}>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.link_label != blank -%}
+      <div class="btn-row" style="justify-content:center;margin-top:56px">
+        <a class="btn btn--outline" href="{{ section.settings.link_url | default: blogs.news.url }}">{{ section.settings.link_label }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+{%- elsif request.design_mode -%}
+<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] No guides added yet.</div></section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Education guides",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }, { "value": "beige", "label": "Warm beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "link_label", "label": "Link button label" },
+    { "type": "url", "id": "link_url", "label": "Link button URL" }
+  ],
+  "blocks": [
+    {
+      "type": "guide",
+      "name": "Guide",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Short line (optional)" },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "url", "id": "link", "label": "Article link", "info": "Leave empty until the article is published. The card then shows Coming soon." }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [{ "name": "Education guides", "blocks": [{ "type": "guide" }, { "type": "guide" }, { "type": "guide" }, { "type": "guide" }] }]
+}
+{% endschema %}

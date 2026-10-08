@@ -12,6 +12,11 @@
       <link rel="preconnect" href="https://use.typekit.net" crossorigin>
       <link rel="stylesheet" href="{{ settings.adobe_kit_url }}">
     {%- endif -%}
+    {%- if settings.display_font_stylesheet_url != blank -%}
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="{{ settings.display_font_stylesheet_url }}">
+    {%- endif -%}
     {%- if settings.callout_font_stylesheet_url != blank -%}
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +49,7 @@
       :root {
         --c-black: {{ settings.color_black }};
         --c-charcoal: {{ settings.color_charcoal }};
-        --c-emerald: {{ settings.color_emerald }};
+        --c-emerald: {{ settings.color_evergreen }};
         --c-evergreen: {{ settings.color_evergreen }};
         --c-gold: {{ settings.color_gold }};
         --c-beige: {{ settings.color_beige }};

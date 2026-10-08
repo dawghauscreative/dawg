@@ -33,12 +33,12 @@ button { font: inherit; color: inherit; }
 
 /* ---------- Colour schemes ---------- */
 .scheme-dark {
-  --bg: var(--c-black); --fg: var(--c-white); --body: var(--c-gray); --accent: var(--c-gold); --rule: color-mix(in srgb, var(--c-gold) 55%, transparent);
+  --bg: var(--c-black); --fg: var(--c-white); --body: color-mix(in srgb, var(--c-white) 80%, var(--c-black)); --accent: var(--c-gold); --rule: color-mix(in srgb, var(--c-gold) 55%, transparent);
   --btn-bg: var(--c-gold); --btn-fg: var(--c-black); --card: var(--c-charcoal);
 }
 .scheme-green {
-  --bg: var(--c-emerald); --fg: var(--c-white); --body: var(--c-gray); --accent: var(--c-gold); --rule: color-mix(in srgb, var(--c-gold) 55%, transparent);
-  --btn-bg: var(--c-gold); --btn-fg: var(--c-black); --card: var(--c-evergreen);
+  --bg: var(--c-emerald); --fg: var(--c-white); --body: color-mix(in srgb, var(--c-white) 80%, var(--c-black)); --accent: var(--c-gold); --rule: color-mix(in srgb, var(--c-gold) 55%, transparent);
+  --btn-bg: var(--c-gold); --btn-fg: var(--c-black); --card: color-mix(in srgb, var(--c-white) 7%, var(--c-evergreen));
 }
 .scheme-light {
   --bg: var(--c-white); --fg: var(--c-black); --body: color-mix(in srgb, var(--c-black) 82%, var(--c-white)); --accent: var(--c-black); --rule: color-mix(in srgb, var(--c-black) 22%, transparent);
@@ -72,11 +72,11 @@ button { font: inherit; color: inherit; }
 @media (min-width: 990px) { :root { --gutter: 56px; } .cols--2 { gap: 80px; } }
 
 /* ---------- Type ---------- */
-h1, h2, h3, h4 { font-family: var(--font-display); font-weight: var(--headline-weight, 600); line-height: 1.12; letter-spacing: -0.012em; margin: 0; text-wrap: balance; }
-h1 { font-size: clamp(2.4rem, 5.4vw, 4.5rem); }
-h2 { font-size: clamp(1.9rem, 3.8vw, 3rem); }
-h3 { font-size: clamp(1.4rem, 2vw, 1.85rem); line-height: 1.2; }
-h4 { font-size: 1.2rem; }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: var(--headline-weight, 500); line-height: 1.08; letter-spacing: -0.005em; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2.7rem, 6vw, 5rem); }
+h2 { font-size: clamp(2.15rem, 4.3vw, 3.5rem); }
+h3 { font-size: clamp(1.55rem, 2.3vw, 2.1rem); line-height: 1.15; }
+h4 { font-size: 1.4rem; }
 p { margin: 0; }
 .lede { font-size: clamp(1.05rem, 1.4vw, 1.25rem); line-height: 1.6; max-width: 56ch; opacity: .88; }
 .prose p + p { margin-top: 1em; }
@@ -113,7 +113,7 @@ p { margin: 0; }
 .ratio-1x1 { aspect-ratio: 1 / 1; }
 .ratio-3x2 { aspect-ratio: 3 / 2; }
 .ratio-16x9 { aspect-ratio: 16 / 9; }
-.media--ph { border: 1px solid var(--rule); }
+.media--ph { border: 1px solid var(--rule); background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--card, #1c1c1c) 100%, transparent) 0 14px, color-mix(in srgb, var(--rule) 22%, var(--card, #1c1c1c)) 14px 15px); }
 
 /* ---------- Cards ---------- */
 .card { background: var(--card); border: 1px solid var(--rule); padding: clamp(24px, 3vw, 40px); }
@@ -287,7 +287,7 @@ p { margin: 0; }
 /* Footer */
 .site-footer { background: var(--c-black); border-top: 1px solid color-mix(in srgb, var(--c-gold) 40%, transparent); padding-block: clamp(56px, 7vw, 96px) 32px; font-size: .92rem; }
 .site-footer__grid { display: grid; gap: 40px; }
-@media (min-width: 750px) { .site-footer__grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+@media (min-width: 750px) { .site-footer__grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; } }
 .site-footer h2 { font-family: var(--font-body); font-size: .7rem; letter-spacing: .22em; text-transform: uppercase; color: var(--c-gold); font-weight: 700; margin-bottom: 18px; }
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .site-footer a { text-decoration: none; opacity: .9; }
@@ -412,7 +412,7 @@ body { letter-spacing: .01em; line-height: 1.7; }
 @media (min-width: 750px) { .trust-strip { grid-template-columns: repeat(var(--cols, 3), 1fr); } .trust-strip > div { border-bottom: 0; } .trust-strip > div:last-child { border-right: 0; } }
 
 /* Band: black-to-emerald with gold hairlines (CTA and mission) */
-.scheme-band { --bg: var(--c-black); --fg: var(--c-white); --body: var(--c-gray); --accent: var(--c-gold); --rule: color-mix(in srgb, var(--c-gold) 55%, transparent); --btn-bg: var(--c-gold); --btn-fg: var(--c-black); --card: var(--c-charcoal); color: var(--fg); background: linear-gradient(90deg, color-mix(in srgb, var(--c-black) 94%, transparent), color-mix(in srgb, var(--c-emerald) 82%, transparent)), var(--c-black); border-block: 1px solid color-mix(in srgb, var(--c-gold) 34%, transparent); }
+.scheme-band { --bg: var(--c-black); --fg: var(--c-white); --body: color-mix(in srgb, var(--c-white) 80%, var(--c-black)); --accent: var(--c-gold); --rule: color-mix(in srgb, var(--c-gold) 55%, transparent); --btn-bg: var(--c-gold); --btn-fg: var(--c-black); --card: var(--c-charcoal); color: var(--fg); background: linear-gradient(90deg, color-mix(in srgb, var(--c-black) 94%, transparent), color-mix(in srgb, var(--c-emerald) 82%, transparent)), var(--c-black); border-block: 1px solid color-mix(in srgb, var(--c-gold) 34%, transparent); }
 .scheme-band p, .scheme-band li { color: var(--body); }
 .scheme-band h1, .scheme-band h2, .scheme-band h3 { color: var(--c-white); }
 /* Gold band (newsletter) */
@@ -493,3 +493,13 @@ body { letter-spacing: .01em; line-height: 1.7; }
 .lib__title { margin: 0 0 1.5rem; display: flex; align-items: center; gap: .9rem; flex-wrap: wrap; }
 .lib__title a { color: inherit; }
 .pcard-wrap--featured .pcard { border-color: var(--c-gold); box-shadow: 0 0 0 1px var(--c-gold); }
+
+/* Education guides */
+.edu-card { display: block; text-decoration: none; color: inherit; border: 1px solid var(--rule); background: var(--card); overflow: hidden; transition: border-color .25s, transform .25s; }
+a.edu-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.edu-card .media { border: 0; border-bottom: 1px solid var(--rule); }
+.edu-card__body { padding: 20px 22px 24px; display: grid; gap: 10px; }
+.edu-card__body h3 { font-size: 1.5rem; }
+.edu-card__soon { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; opacity: .65; }
+@media (min-width: 1100px) { .edu-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+h1, h2, h3, h4 { font-variant-numeric: lining-nums; }

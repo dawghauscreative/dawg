@@ -20,25 +20,20 @@
         {%- endif -%}
       </div>
 
-      <div>
-        <h2>Explore</h2>
-        <ul>
-          {%- for block in section.blocks -%}
-            {%- if block.settings.column == 'explore' -%}<li {{ block.shopify_attributes }}><a href="{{ block.settings.url }}">{{ block.settings.label }}</a></li>{%- endif -%}
-          {%- endfor -%}
-          <li><a href="{{ settings.customer_portal_url | default: routes.account_url }}">{{ settings.manage_subscription_label }}</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Legal</h2>
-        <ul>
-          {%- for block in section.blocks -%}
-            {%- if block.settings.column == 'legal' -%}<li {{ block.shopify_attributes }}><a href="{{ block.settings.url }}">{{ block.settings.label }}</a></li>{%- endif -%}
-          {%- endfor -%}
-          <li>{% render 'guarantee-badge', style: 'refund' %}</li>
-        </ul>
-      </div>
+      {%- assign col_ids = 'shop,learn,support,legal' | split: ',' -%}
+      {%- assign col_names = 'Shop,Learn,Support,Legal' | split: ',' -%}
+      {%- for col in col_ids -%}
+        <div>
+          <h2>{{ col_names[forloop.index0] }}</h2>
+          <ul>
+            {%- for block in section.blocks -%}
+              {%- if block.settings.column == col -%}<li {{ block.shopify_attributes }}><a href="{{ block.settings.url }}">{{ block.settings.label }}</a></li>{%- endif -%}
+            {%- endfor -%}
+            {%- if col == 'support' -%}<li><a href="{{ settings.customer_portal_url | default: routes.account_url }}">{{ settings.manage_subscription_label }}</a></li>{%- endif -%}
+            {%- if col == 'legal' -%}<li>{% render 'guarantee-badge', style: 'refund' %}</li>{%- endif -%}
+          </ul>
+        </div>
+      {%- endfor -%}
     </div>
 
     <div class="site-footer__legal">
@@ -62,7 +57,7 @@
       "settings": [
         { "type": "text", "id": "label", "label": "Label", "default": "Link" },
         { "type": "url", "id": "url", "label": "URL" },
-        { "type": "select", "id": "column", "label": "Column", "options": [{ "value": "explore", "label": "Explore" }, { "value": "legal", "label": "Legal" }], "default": "legal" }
+        { "type": "select", "id": "column", "label": "Column", "options": [{ "value": "shop", "label": "Shop" }, { "value": "learn", "label": "Learn" }, { "value": "support", "label": "Support" }, { "value": "legal", "label": "Legal" }], "default": "legal" }
       ]
     }
   ]

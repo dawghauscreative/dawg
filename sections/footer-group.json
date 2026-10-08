@@ -5,20 +5,36 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "s1": {
+          "type": "link",
+          "settings": {
+            "label": "Systems",
+            "url": "/collections/bundles",
+            "column": "shop"
+          }
+        },
+        "s2": {
+          "type": "link",
+          "settings": {
+            "label": "Individual Products",
+            "url": "/collections/individual-products",
+            "column": "shop"
+          }
+        },
         "c1": {
           "type": "link",
           "settings": {
             "label": "Science",
             "url": "/pages/science",
-            "column": "explore"
+            "column": "learn"
           }
         },
         "c2": {
           "type": "link",
           "settings": {
-            "label": "Founder",
-            "url": "/pages/founder",
-            "column": "explore"
+            "label": "Education",
+            "url": "/blogs/news",
+            "column": "learn"
           }
         },
         "c3": {
@@ -26,34 +42,42 @@
           "settings": {
             "label": "FAQ",
             "url": "/pages/faq",
-            "column": "explore"
+            "column": "learn"
           }
         },
         "c4": {
           "type": "link",
           "settings": {
-            "label": "Contact",
-            "url": "/pages/contact",
-            "column": "explore"
+            "label": "Founder",
+            "url": "/pages/founder",
+            "column": "learn"
           }
         },
-        "c5": {
+        "u1": {
           "type": "link",
           "settings": {
-            "label": "News",
-            "url": "/blogs/news",
-            "column": "explore"
+            "label": "Contact",
+            "url": "/pages/contact",
+            "column": "support"
+          }
+        },
+        "u2": {
+          "type": "link",
+          "settings": {
+            "label": "Shipping",
+            "url": "/pages/shipping",
+            "column": "support"
+          }
+        },
+        "u3": {
+          "type": "link",
+          "settings": {
+            "label": "Returns",
+            "url": "/policies/refund-policy",
+            "column": "support"
           }
         },
         "l1": {
-          "type": "link",
-          "settings": {
-            "label": "Terms of Service",
-            "url": "/policies/terms-of-service",
-            "column": "legal"
-          }
-        },
-        "l2": {
           "type": "link",
           "settings": {
             "label": "Privacy Policy",
@@ -61,23 +85,15 @@
             "column": "legal"
           }
         },
+        "l2": {
+          "type": "link",
+          "settings": {
+            "label": "Terms of Service",
+            "url": "/policies/terms-of-service",
+            "column": "legal"
+          }
+        },
         "l3": {
-          "type": "link",
-          "settings": {
-            "label": "Refund Policy",
-            "url": "/policies/refund-policy",
-            "column": "legal"
-          }
-        },
-        "l4": {
-          "type": "link",
-          "settings": {
-            "label": "Shipping Policy",
-            "url": "/pages/shipping",
-            "column": "legal"
-          }
-        },
-        "l5": {
           "type": "link",
           "settings": {
             "label": "Subscription Terms",
@@ -85,7 +101,7 @@
             "column": "legal"
           }
         },
-        "l6": {
+        "l4": {
           "type": "link",
           "settings": {
             "label": "SMS Terms",
@@ -93,7 +109,7 @@
             "column": "legal"
           }
         },
-        "l7": {
+        "l5": {
           "type": "link",
           "settings": {
             "label": "Your Privacy Choices",
@@ -103,18 +119,20 @@
         }
       },
       "block_order": [
+        "s1",
+        "s2",
         "c1",
         "c2",
         "c3",
         "c4",
-        "c5",
+        "u1",
+        "u2",
+        "u3",
         "l1",
         "l2",
         "l3",
         "l4",
-        "l5",
-        "l6",
-        "l7"
+        "l5"
       ],
       "settings": {}
     },

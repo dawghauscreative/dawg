@@ -1,12 +1,11 @@
-{%- assign shown = 0 -%}
-{%- for block in section.blocks -%}{%- if block.settings.image != blank or block.settings.asset != blank -%}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
-{%- if shown > 0 -%}
+{%- if section.blocks.size > 0 -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
     <div class="cols cols--4" style="gap:16px">
       {%- for block in section.blocks -%}
-        {%- if block.settings.image != blank or block.settings.asset != blank -%}
+        {%- comment -%} Tiles without an image show a placeholder frame. {%- endcomment -%}
+        {%- if true -%}
           <figure class="lifestyle-tile" {{ block.shopify_attributes }}>
             {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, ratio: '4x5', sizes: '(min-width: 990px) 25vw, 50vw', alt: block.settings.label %}
             {%- if block.settings.label != blank or block.settings.caption != blank -%}
@@ -22,7 +21,7 @@
   </div>
 </section>
 {%- elsif request.design_mode -%}
-<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] Lifestyle strip has no images and is hidden. Use activity shots, not posing.</div></section>
+<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] Lifestyle strip has no tiles and is hidden. Use activity shots, not posing.</div></section>
 {%- endif -%}
 
 {% schema %}
