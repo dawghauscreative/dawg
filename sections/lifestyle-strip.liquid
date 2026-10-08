@@ -1,14 +1,14 @@
 {%- assign shown = 0 -%}
-{%- for block in section.blocks -%}{%- if block.settings.image != blank -%}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- for block in section.blocks -%}{%- if block.settings.image != blank or block.settings.asset != blank -%}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- if shown > 0 -%}
 <section class="section--tight scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading -%}
     <div class="cols cols--4">
       {%- for block in section.blocks -%}
-        {%- if block.settings.image != blank -%}
+        {%- if block.settings.image != blank or block.settings.asset != blank -%}
           <figure style="margin:0" {{ block.shopify_attributes }}>
-            {% render 'responsive-image', image: block.settings.image, ratio: '4x5', sizes: '(min-width: 750px) 25vw, 50vw' %}
+            {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, ratio: '4x5', sizes: '(min-width: 750px) 25vw, 50vw', alt: block.settings.caption %}
             {%- if block.settings.caption != blank -%}<figcaption class="small" style="margin-top:10px">{{ block.settings.caption }}</figcaption>{%- endif -%}
           </figure>
         {%- endif -%}
@@ -34,6 +34,7 @@
       "name": "Image",
       "settings": [
         { "type": "image_picker", "id": "image", "label": "Image", "info": "Activity, not posing. Photo list to be confirmed by Reyshan." },
+        { "type": "text", "id": "asset", "label": "Fallback theme asset filename", "info": "Used only when no image is picked." },
         { "type": "text", "id": "caption", "label": "Caption" }
       ]
     }

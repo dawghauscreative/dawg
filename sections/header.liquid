@@ -10,7 +10,7 @@
       {%- if settings.logo != blank -%}
         <img src="{{ settings.logo | image_url: width: 480 }}" alt="{{ shop.name | escape }}" width="{{ settings.logo_width }}" height="{{ settings.logo_width | divided_by: settings.logo.aspect_ratio | round }}" style="width:{{ settings.logo_width }}px">
       {%- else -%}
-        {{ shop.name }}
+        <img src="{{ 'alchemia-logo-white.png' | asset_url }}" alt="{{ shop.name | escape }}" width="{{ settings.logo_width }}" height="{{ settings.logo_width | times: 118 | divided_by: 900 }}" style="width:{{ settings.logo_width }}px">
       {%- endif -%}
     </a>
 
@@ -61,7 +61,7 @@
 
   <div class="drawer" id="MenuDrawer" role="dialog" aria-modal="true" aria-label="{{ 'general.menu' | t }}">
     <div class="drawer__bar">
-      <span class="site-header__logo">{{ shop.name }}</span>
+      <span class="site-header__logo"><img src="{{ settings.logo | default: 'alchemia-logo-white.png' | asset_url }}" alt="{{ shop.name | escape }}" width="180" height="24" style="width:180px;height:auto"></span>
       <button class="icon-btn" type="button" data-menu-close aria-label="{{ 'general.close' | t }}">{% render 'icon', name: 'close' %}</button>
     </div>
     <nav aria-label="Mobile">

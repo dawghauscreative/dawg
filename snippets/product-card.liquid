@@ -10,7 +10,7 @@
     <div class="pcard__body">
       <h3 class="pcard__title">{{ product.title }}</h3>
       {%- if product.metafields.custom.tagline != blank -%}
-        <p class="pcard__tagline">{{ product.metafields.custom.tagline }}</p>
+        <p class="pcard__tagline">{{ product.metafields.custom.tagline }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>
       {%- endif -%}
       <p class="pcard__price">{% render 'price', product: product %}</p>
       <span class="text-link pcard__link">View product</span>

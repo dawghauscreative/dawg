@@ -4,7 +4,8 @@
       "type": "hero",
       "settings": {
         "primary_url": "/products/sun-safe-system",
-        "secondary_url": "/pages/science"
+        "secondary_url": "/pages/science",
+        "background_asset": "hero-banner-1.webp"
       }
     },
     "category": {
@@ -45,7 +46,39 @@
       ]
     },
     "lifestyle": {
-      "type": "lifestyle-strip"
+      "type": "lifestyle-strip",
+      "blocks": {
+        "s1": {
+          "type": "image",
+          "settings": {
+            "asset": "lifestyle-uvshield-dermaboost-tennis.webp"
+          }
+        },
+        "s2": {
+          "type": "image",
+          "settings": {
+            "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp"
+          }
+        },
+        "s3": {
+          "type": "image",
+          "settings": {
+            "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp"
+          }
+        },
+        "s4": {
+          "type": "image",
+          "settings": {
+            "asset": "lifestyle-skinbiotic-cliffs.webp"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
     },
     "founder": {
       "type": "founder",
@@ -62,6 +95,9 @@
     },
     "email": {
       "type": "email-capture"
+    },
+    "video": {
+      "type": "video-vertical"
     }
   },
   "order": [
@@ -70,6 +106,7 @@
     "problem",
     "solution",
     "system",
+    "video",
     "lifestyle",
     "founder",
     "final",

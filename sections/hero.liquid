@@ -1,8 +1,14 @@
 {%- assign has_bg = false -%}
-{%- if section.settings.background_image != blank -%}{%- assign has_bg = true -%}{%- endif -%}
-<section class="hero scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+{%- if section.settings.background_image != blank or section.settings.background_asset != blank -%}{%- assign has_bg = true -%}{%- endif -%}
+<section class="hero{% if has_bg %} hero--bg{% endif %} scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   {%- if has_bg -%}
-    <div class="hero__bg">{{ section.settings.background_image | image_url: width: 2000 | image_tag: loading: 'eager', fetchpriority: 'high', alt: section.settings.background_image.alt, sizes: '100vw' }}</div>
+    <div class="hero__bg">
+      {%- if section.settings.background_image != blank -%}
+        {{ section.settings.background_image | image_url: width: 2000 | image_tag: loading: 'eager', fetchpriority: 'high', alt: section.settings.background_image.alt, sizes: '100vw' }}
+      {%- else -%}
+        <img src="{{ section.settings.background_asset | asset_url }}" alt="" width="1672" height="941" sizes="100vw" loading="eager" fetchpriority="high">
+      {%- endif -%}
+    </div>
   {%- endif -%}
   <div class="container">
     <div class="hero__grid{% if section.settings.image != blank %} hero__grid--split{% endif %}">
@@ -41,7 +47,8 @@
     { "type": "url", "id": "secondary_url", "label": "Secondary button link" },
     { "type": "image_picker", "id": "image", "label": "Product image (right)" },
     { "type": "text", "id": "image_alt", "label": "Image alt text" },
-    { "type": "image_picker", "id": "background_image", "label": "Background image (optional)" }
+    { "type": "image_picker", "id": "background_image", "label": "Background image (optional)" },
+    { "type": "text", "id": "background_asset", "label": "Fallback theme asset filename", "info": "Used only when no background image is picked above. Example: hero-banner-1.webp" }
   ],
   "presets": [{ "name": "Hero" }]
 }

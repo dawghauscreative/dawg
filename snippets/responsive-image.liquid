@@ -1,6 +1,6 @@
 {%- comment -%}
   Usage: {% render 'responsive-image', image: img, ratio: '4x5', sizes: '(min-width: 990px) 50vw, 100vw', loading: 'lazy', alt: 'text', widths: '480,720,960,1280' %}
-  Renders a flat placeholder block (no copy) when no image is set.
+  Renders a flat placeholder block (no copy) when no image is set. Optional asset: theme asset filename used when no image is picked.
 {%- endcomment -%}
 {%- assign img_widths = widths | default: '360,540,720,960,1280,1600' | split: ',' -%}
 {%- assign img_loading = loading | default: 'lazy' -%}
@@ -21,6 +21,10 @@
       height="{{ image.height }}"
       loading="{{ img_loading }}"
       {% if img_loading == 'eager' %}fetchpriority="high"{% endif %}>
+  </div>
+{%- elsif asset != blank -%}
+  <div class="media{% if ratio %} ratio-{{ ratio }}{% endif %}{% if class %} {{ class }}{% endif %}">
+    <img src="{{ asset | asset_url }}" alt="{{ alt | escape }}" width="{{ asset_width | default: 1122 }}" height="{{ asset_height | default: 1402 }}" sizes="{{ sizes | default: '100vw' }}" loading="{{ img_loading }}" {% if img_loading == 'eager' %}fetchpriority="high"{% endif %}>
   </div>
 {%- else -%}
   <div class="media media--ph{% if ratio %} ratio-{{ ratio }}{% endif %}{% if class %} {{ class }}{% endif %}" role="img" aria-label="{{ alt | escape }}"></div>

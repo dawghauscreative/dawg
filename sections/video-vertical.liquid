@@ -1,0 +1,66 @@
+{%- comment -%}
+  9:16 vertical video slot (home page and all 7 product pages).
+  Accepts a Shopify-hosted video OR a YouTube/Vimeo link. With neither set, shows a neutral 9:16 placeholder frame
+  (no copy) while "Show placeholder frame" is on. Turn that off to hide the slot until a video is added.
+  Compliance: the Bundle 2 physician-guidance notice format (lower-third vs voiced line) is NOT decided here.
+{%- endcomment -%}
+{%- liquid
+  assign has_video = false
+  if section.settings.video != blank or section.settings.video_url != blank
+    assign has_video = true
+  endif
+  assign has_text = false
+  if section.settings.heading != blank or section.settings.body != blank or section.settings.eyebrow != blank
+    assign has_text = true
+  endif
+-%}
+{%- if has_video or section.settings.show_placeholder -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="video-split{% if has_text %} video-split--text{% endif %}{% if section.settings.video_side == 'left' %} video-split--left{% endif %}">
+      {%- if has_text -%}
+        <div class="video-split__text">
+          {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+          {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
+            <div class="btn-row"><a class="btn btn--outline" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a></div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      <div class="video-frame ratio-9x16">
+        {%- if section.settings.video != blank -%}
+          {{- section.settings.video | video_tag: image_size: '720x', controls: true, preload: 'none', playsinline: true, class: 'video-frame__media', title: section.settings.video_title -}}
+        {%- elsif section.settings.video_url != blank -%}
+          {{- section.settings.video_url | external_video_tag: class: 'video-frame__media', loading: 'lazy', title: section.settings.video_title -}}
+        {%- else -%}
+          <div class="video-frame__placeholder" role="img" aria-label="{{ section.settings.video_title | escape }}">
+            <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="22"/><path d="M27 23.5 41 32 27 40.5Z"/></svg>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Video 9:16",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "header", "content": "Video (9:16 vertical)" },
+    { "type": "video", "id": "video", "label": "Shopify-hosted video", "info": "Upload a vertical 9:16 file. Takes priority over the link below." },
+    { "type": "video_url", "id": "video_url", "label": "YouTube or Vimeo link", "accept": ["youtube", "vimeo"] },
+    { "type": "text", "id": "video_title", "label": "Accessible title", "default": "Video", "info": "Read by screen readers. Describe the video." },
+    { "type": "checkbox", "id": "show_placeholder", "label": "Show placeholder frame when no video is set", "default": true, "info": "Turn off before launch if a video is not ready." },
+    { "type": "header", "content": "Text beside the video (optional)" },
+    { "type": "select", "id": "video_side", "label": "Video position (desktop)", "default": "right", "options": [{ "value": "right", "label": "Right" }, { "value": "left", "label": "Left" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text", "info": "Empty until approved copy is supplied." },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_url", "label": "Button link" }
+  ],
+  "presets": [{ "name": "Video 9:16" }]
+}
+{% endschema %}

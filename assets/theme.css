@@ -161,8 +161,9 @@ p { margin: 0; }
 .hero { position: relative; overflow: hidden; }
 .hero__grid { display: grid; gap: 48px; align-items: center; min-height: min(82vh, 820px); padding-block: clamp(56px, 8vw, 112px); }
 .hero__bg { position: absolute; inset: 0; z-index: 0; }
-.hero__bg img { width: 100%; height: 100%; object-fit: cover; }
-.hero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, color-mix(in srgb, var(--c-black) 88%, transparent) 20%, color-mix(in srgb, var(--c-black) 35%, transparent)); }
+.hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 70% center; }
+.hero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, color-mix(in srgb, var(--c-black) 82%, transparent) 10%, color-mix(in srgb, var(--c-black) 30%, transparent) 70%); }
+@media (min-width: 990px) { .hero__bg::after { background: linear-gradient(90deg, color-mix(in srgb, var(--c-black) 55%, transparent) 25%, transparent 60%); } }
 .hero .container { position: relative; z-index: 1; }
 .hero h1 { max-width: 14ch; }
 .hero .lede { margin-top: 1.5rem; }
@@ -242,8 +243,8 @@ p { margin: 0; }
 .steps { display: grid; gap: 24px; counter-reset: step; }
 .step { display: grid; gap: 24px; border: 1px solid var(--rule); background: var(--card); padding: clamp(20px, 3vw, 40px); align-items: center; }
 .step__num { font-family: var(--font-display); font-size: 1rem; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); }
-.step__media { aspect-ratio: 4 / 3; }
-@media (min-width: 750px) { .step { grid-template-columns: 220px 1fr; gap: 48px; } .step:nth-child(even) { grid-template-columns: 1fr 220px; } .step:nth-child(even) .step__media { order: 2; } }
+.step__media { width: 100%; max-width: 280px; }
+@media (min-width: 750px) { .step { grid-template-columns: 280px 1fr; gap: 64px; } .step:nth-child(even) { grid-template-columns: 1fr 280px; } .step:nth-child(even) .step__media { order: 2; justify-self: end; } }
 .stack-visual { display: flex; justify-content: center; gap: clamp(8px, 2vw, 24px); align-items: flex-end; }
 .stack-visual .media { width: min(30%, 220px); background: transparent; }
 .value-stack { display: grid; gap: 0; }
@@ -317,3 +318,25 @@ p { margin: 0; }
 
 .cart-layout { display: grid; gap: 48px; grid-template-columns: minmax(0, 1fr); align-items: start; }
 @media (min-width: 990px) { .cart-layout { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 72px; } .cart-summary { position: sticky; top: calc(var(--header-h) + 24px); } }
+
+/* 9:16 vertical video */
+.ratio-9x16 { aspect-ratio: 9 / 16; }
+.video-split { display: grid; gap: 40px; justify-items: center; }
+.video-frame { position: relative; width: 100%; max-width: 380px; overflow: hidden; background: var(--card); border: 1px solid var(--rule); }
+.video-frame__media, .video-frame iframe, .video-frame video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; display: block; }
+.video-frame__placeholder { position: absolute; inset: 0; display: grid; place-items: center; background: repeating-linear-gradient(135deg, transparent 0 14px, color-mix(in srgb, var(--fg) 4%, transparent) 14px 15px); }
+.video-frame__placeholder svg { width: 72px; height: 72px; fill: none; stroke: var(--accent); stroke-width: 1.25; stroke-linejoin: round; opacity: .75; }
+@media (min-width: 750px) {
+  .video-split--text { grid-template-columns: minmax(0, 1fr) minmax(0, 380px); gap: 80px; align-items: center; justify-items: stretch; }
+  .video-split--text .video-frame { justify-self: end; }
+  .video-split--left .video-split__text { order: 2; }
+  .video-split--left .video-frame { justify-self: start; order: 1; }
+}
+
+@media (max-width: 989px) {
+  .hero--bg { display: flex; flex-direction: column; }
+  .hero--bg .hero__bg { position: relative; inset: auto; height: 440px; }
+  .hero--bg .hero__bg img { object-position: 78% center; }
+  .hero--bg .hero__bg::after { background: linear-gradient(0deg, var(--c-black) 2%, transparent 55%); }
+  .hero--bg .hero__grid { min-height: 0; padding-block: 0 56px; margin-top: -84px; align-items: start; }
+}

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="site-footer__grid">
       <div>
-        <a class="site-header__logo" href="{{ routes.root_url }}">{{ shop.name }}</a>
+        <a class="site-header__logo" href="{{ routes.root_url }}"><img src="{{ 'alchemia-logo-white.png' | asset_url }}" alt="{{ shop.name | escape }}" width="200" height="26" style="width:200px;height:auto"></a>
         {%- if section.settings.about != blank -%}<p class="small" style="margin-top:16px;max-width:36ch">{{ section.settings.about }}</p>{%- endif -%}
         <address style="font-style:normal;margin-top:24px;display:grid;gap:6px">
           <span>{{ settings.mailing_address }}</span>

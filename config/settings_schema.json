@@ -85,7 +85,8 @@
       {
         "type": "image_picker",
         "id": "logo",
-        "label": "Logo image"
+        "label": "Logo image",
+        "info": "Optional override. Leave empty to use the white logotype bundled in the theme (assets/alchemia-logo-white.png). Use the white logo on dark. Do not recolour."
       },
       {
         "type": "range",
@@ -95,7 +96,7 @@
         "step": 10,
         "unit": "px",
         "label": "Logo width",
-        "default": 160
+        "default": 220
       },
       {
         "type": "text",
@@ -135,7 +136,8 @@
         "type": "textarea",
         "id": "fda_disclaimer_text",
         "label": "FDA disclaimer wording",
-        "info": "Standard supplement wording supplied by Reyshan. Nothing renders until this is filled in."
+        "info": "Wording as printed on the product labels. Reyshan/counsel to confirm. Required on every product page and the footer. Clear the field to hide it everywhere.",
+        "default": "These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."
       },
       {
         "type": "text",
@@ -149,6 +151,13 @@
         "id": "label_caution_text",
         "label": "Label caution line",
         "default": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+      },
+      {
+        "type": "text",
+        "id": "melanoma_line_text",
+        "label": "Melanoma research contribution line",
+        "default": "Your purchase contributes to melanoma research.",
+        "info": "Verified on all three product labels (UV Shield+, Skinbiotic+, Dermaboost+). Shown only where the block is added. No dollar or percentage figure is rendered. Clear the field to hide it everywhere."
       },
       {
         "type": "header",

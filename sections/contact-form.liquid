@@ -8,7 +8,8 @@
         <p class="small" style="margin-top:.5rem">{{ settings.mailing_address }}</p>
       </div>
       <div>
-        {%- form 'contact', id: 'ContactForm', class: 'form-grid' -%}
+        {%- form 'contact', id: 'ContactForm' -%}
+          <div class="form-grid">
           {%- if form.posted_successfully? -%}
             <p class="form-message">{{ section.settings.success_text }}</p>
           {%- else -%}
@@ -29,6 +30,7 @@
             <div class="field"><label for="Contact-body">Message</label><textarea id="Contact-body" name="contact[body]" required>{{ form.body }}</textarea></div>
             <div><button class="btn" type="submit">{{ section.settings.button_label }}</button></div>
           {%- endif -%}
+          </div>
         {%- endform -%}
       </div>
     </div>

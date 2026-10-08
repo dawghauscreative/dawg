@@ -59,7 +59,7 @@
 
             {%- when 'tagline' -%}
               {%- if product.metafields.custom.tagline != blank -%}
-                <p class="pdp__tagline" {{ block.shopify_attributes }}>{{ product.metafields.custom.tagline }}</p>
+                <p class="pdp__tagline" {{ block.shopify_attributes }}>{{ product.metafields.custom.tagline }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>
               {%- endif -%}
 
             {%- when 'reviews' -%}
@@ -121,6 +121,12 @@
                 <div class="trust-bar" {{ block.shopify_attributes }}>{{ trust_items }}</div>
               {%- endif -%}
 
+            {%- when 'melanoma' -%}
+              {%- comment -%} Only wording verified on the packaging. No amounts, no percentages. {%- endcomment -%}
+              {%- if settings.melanoma_line_text != blank -%}
+                <p class="small" {{ block.shopify_attributes }}>{{ settings.melanoma_line_text }}</p>
+              {%- endif -%}
+
             {%- when 'fda' -%}
               <div {{ block.shopify_attributes }}>{% render 'fda-disclaimer', dagger: true %}</div>
 
@@ -168,6 +174,7 @@
         { "type": "text", "id": "text_3", "label": "Text 3" }
       ]
     },
+    { "type": "melanoma", "name": "Melanoma research line", "limit": 1 },
     { "type": "fda", "name": "FDA dagger line", "limit": 1 },
     { "type": "@app" }
   ],
