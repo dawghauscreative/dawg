@@ -1,0 +1,53 @@
+{%- assign renewal_faq = false -%}
+{%- assign heading_tag = 'h2' -%}
+{%- if request.page_type == 'page' -%}{%- assign heading_tag = 'h1' -%}{%- endif -%}
+{%- if settings.show_renewal_timeline and settings.renewal_faq_answer != blank -%}{%- assign renewal_faq = true -%}{%- endif -%}
+{%- capture guarantee_faq -%}{%- render 'guarantee-badge', style: 'faq' -%}{%- endcapture -%}
+{%- if section.blocks.size > 0 or renewal_faq or guarantee_faq != blank -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container" style="max-width:960px">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, tag: heading_tag -%}
+    <div class="faq">
+      {%- if renewal_faq -%}
+        <details>
+          <summary>{{ settings.renewal_faq_question }}</summary>
+          <div class="faq__a">{{ settings.renewal_faq_answer }}</div>
+        </details>
+      {%- endif -%}
+      {%- for block in section.blocks -%}
+        {%- if block.settings.answer != blank -%}
+          <details {{ block.shopify_attributes }}>
+            <summary>{{ block.settings.question }}</summary>
+            <div class="faq__a">{{ block.settings.answer }}</div>
+          </details>
+        {%- endif -%}
+      {%- endfor -%}
+      {{ guarantee_faq }}
+    </div>
+  </div>
+</section>
+{%- elsif request.design_mode -%}
+<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] FAQ has no answered items and is hidden. The renewal entry appears once its answer is set in Theme settings.</div></section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Frequently asked questions" }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Question",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question" },
+        { "type": "richtext", "id": "answer", "label": "Answer", "info": "An item with no answer stays hidden." }
+      ]
+    }
+  ],
+  "presets": [{ "name": "FAQ" }]
+}
+{% endschema %}

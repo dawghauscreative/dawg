@@ -1,0 +1,10 @@
+{%- comment -%}
+  Empty and hidden by default. Renders only when content is non-blank AND slots are enabled.
+  The display format (lower-third vs voiced line) is NOT decided here. This is a plain text slot.
+  Usage: {% render 'compliance-slot', content: product.metafields.custom.compliance_slot %}
+{%- endcomment -%}
+{%- if settings.compliance_slots_enabled and content != blank -%}
+  <aside class="compliance-slot{% if settings.compliance_slot_show_rule %} compliance-slot--rule{% endif %}" role="note">
+    {%- if content.type == 'rich_text_field' -%}{{ content | metafield_tag }}{%- else -%}{{ content }}{%- endif -%}
+  </aside>
+{%- endif -%}

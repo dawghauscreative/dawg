@@ -1,0 +1,353 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Alchemia MD",
+    "theme_version": "1.0.0",
+    "theme_author": "Alchemia MD",
+    "theme_documentation_url": "https://alchemiamd.com",
+    "theme_support_url": "https://alchemiamd.com"
+  },
+  {
+    "name": "Brand colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_black",
+        "label": "Black",
+        "default": "#141414",
+        "info": "Primary dark background, text on light."
+      },
+      {
+        "type": "color",
+        "id": "color_gold",
+        "label": "Gold",
+        "default": "#C9A96E",
+        "info": "Accent, primary button on dark, thin rules."
+      },
+      {
+        "type": "color",
+        "id": "color_evergreen",
+        "label": "Evergreen",
+        "default": "#1A2E1F",
+        "info": "Secondary dark surface. Secondary use only."
+      },
+      {
+        "type": "color",
+        "id": "color_beige",
+        "label": "Beige",
+        "default": "#F5F0E8",
+        "info": "Light sections, text on dark."
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Body font (Adobe Fonts)"
+      },
+      {
+        "type": "text",
+        "id": "adobe_kit_url",
+        "label": "Adobe Fonts kit stylesheet URL",
+        "default": "https://use.typekit.net/qza3lbn.css",
+        "info": "BC Novatica CYR is served by Adobe Fonts and cannot be self-hosted. The Adobe subscription must stay active."
+      },
+      {
+        "type": "text",
+        "id": "body_font_family",
+        "label": "Body font-family (CSS)",
+        "default": "\"bc-novatica-cyr\", sans-serif"
+      },
+      {
+        "type": "header",
+        "content": "Display font"
+      },
+      {
+        "type": "text",
+        "id": "display_font_family",
+        "label": "Display font-family (CSS)",
+        "default": "\"Cormorant Garamond\", Georgia, serif"
+      },
+      {
+        "type": "text",
+        "id": "display_font_stylesheet_url",
+        "label": "Display font stylesheet URL",
+        "default": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap",
+        "info": "Cormorant Garamond from Google Fonts unless it is added to the Adobe kit. Clear this field if it is added to the kit."
+      }
+    ]
+  },
+  {
+    "name": "Brand & contact",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image"
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "min": 80,
+        "max": 280,
+        "step": 10,
+        "unit": "px",
+        "label": "Logo width",
+        "default": 160
+      },
+      {
+        "type": "text",
+        "id": "support_email",
+        "label": "Support email",
+        "default": "info@alchemiamd.com"
+      },
+      {
+        "type": "text",
+        "id": "mailing_address",
+        "label": "Mailing address",
+        "default": "PO Box 1556, Carmel, CA 93921",
+        "info": "PO Box only. Do not add a phone number, street address or support hours until provided."
+      },
+      {
+        "type": "url",
+        "id": "customer_portal_url",
+        "label": "Manage subscription link",
+        "info": "Customer portal link shown in the header. Leave blank to use the customer account page."
+      },
+      {
+        "type": "text",
+        "id": "manage_subscription_label",
+        "label": "Manage subscription label",
+        "default": "Manage subscription"
+      }
+    ]
+  },
+  {
+    "name": "Compliance",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Required on every product page and the footer"
+      },
+      {
+        "type": "textarea",
+        "id": "fda_disclaimer_text",
+        "label": "FDA disclaimer wording",
+        "info": "Standard supplement wording supplied by Reyshan. Nothing renders until this is filled in."
+      },
+      {
+        "type": "text",
+        "id": "fda_dagger",
+        "label": "Dagger mark",
+        "default": "\u2020",
+        "info": "Shown before the disclaimer in the product hero."
+      },
+      {
+        "type": "textarea",
+        "id": "label_caution_text",
+        "label": "Label caution line",
+        "default": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+      },
+      {
+        "type": "header",
+        "content": "Compliance slots (empty and hidden until approved)"
+      },
+      {
+        "type": "checkbox",
+        "id": "compliance_slots_enabled",
+        "label": "Allow compliance slots to render",
+        "default": true,
+        "info": "A slot only shows when it has content. Turn this off to hide every slot at once."
+      },
+      {
+        "type": "richtext",
+        "id": "compliance_pairing_notice",
+        "label": "Skinbiotic+ and Dermaboost+ pairing notice (cart)",
+        "info": "Physician-guidance notice. Wording and format not yet decided. Leave empty. Shown in the cart when both products are present. Product pages use the product metafield custom.compliance_slot."
+      },
+      {
+        "type": "header",
+        "content": "Product page slot labels"
+      },
+      {
+        "type": "checkbox",
+        "id": "compliance_slot_show_rule",
+        "label": "Draw a thin rule above a visible slot",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Your Renewal Timeline",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Copy approved by Reyshan Oct 8. FTC net-impression review is still pending. Do not publish this theme until the review clears. All timeline wording lives here so it can be reworded without touching templates. Keep it general-biology and expectation-setting, never a promised outcome."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_renewal_timeline",
+        "label": "Show Renewal Timeline everywhere",
+        "default": true,
+        "info": "Turn off to hide the module, the line beside the buy box and the FAQ entry on every page."
+      },
+      {
+        "type": "text",
+        "id": "renewal_heading",
+        "label": "Module heading",
+        "default": "Your Renewal Timeline"
+      },
+      {
+        "type": "textarea",
+        "id": "renewal_intro",
+        "label": "Module intro (optional)"
+      },
+      {
+        "type": "text",
+        "id": "renewal_phase_1_range",
+        "label": "Phase 1 range",
+        "default": "Weeks 1-4"
+      },
+      {
+        "type": "text",
+        "id": "renewal_phase_1_text",
+        "label": "Phase 1 text",
+        "default": "Cellular renewal begins"
+      },
+      {
+        "type": "text",
+        "id": "renewal_phase_2_range",
+        "label": "Phase 2 range",
+        "default": "Weeks 4-8"
+      },
+      {
+        "type": "text",
+        "id": "renewal_phase_2_text",
+        "label": "Phase 2 text",
+        "default": "Early changes may begin"
+      },
+      {
+        "type": "text",
+        "id": "renewal_phase_3_range",
+        "label": "Phase 3 range",
+        "default": "Weeks 8-12"
+      },
+      {
+        "type": "text",
+        "id": "renewal_phase_3_text",
+        "label": "Phase 3 text",
+        "default": "Full cycle completes"
+      },
+      {
+        "type": "textarea",
+        "id": "renewal_expectation_line",
+        "label": "Expectation line beside the buy box",
+        "info": "Empty until the approved wording is pasted in. Hidden when empty."
+      },
+      {
+        "type": "text",
+        "id": "renewal_faq_question",
+        "label": "FAQ question",
+        "default": "How long until I see results?"
+      },
+      {
+        "type": "richtext",
+        "id": "renewal_faq_answer",
+        "label": "FAQ answer",
+        "info": "Empty until the approved wording is pasted in. The FAQ entry is hidden when empty."
+      }
+    ]
+  },
+  {
+    "name": "Guarantee (hidden)",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "A 90-day guarantee is planned but hidden until Dr. Luna approves it. Every guarantee mention goes through the guarantee-badge snippet. The guarantee wording and terms do not exist yet and must not be written until approved. A 90-day guarantee beside the 90-day renewal copy needs the same FTC review."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_guarantee",
+        "label": "Show guarantee",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "guarantee_text",
+        "label": "Short guarantee line (trust bar, buy box, cart note)",
+        "info": "Add only after Dr. Luna and counsel approve. Nothing renders while empty."
+      },
+      {
+        "type": "text",
+        "id": "guarantee_faq_question",
+        "label": "FAQ question"
+      },
+      {
+        "type": "richtext",
+        "id": "guarantee_faq_answer",
+        "label": "FAQ answer"
+      },
+      {
+        "type": "text",
+        "id": "guarantee_refund_link_label",
+        "label": "Refund policy link label"
+      },
+      {
+        "type": "url",
+        "id": "guarantee_refund_link_url",
+        "label": "Refund policy link URL"
+      }
+    ]
+  },
+  {
+    "name": "Product pages",
+    "settings": [
+      {
+        "type": "text",
+        "id": "sticky_cta_label",
+        "label": "Sticky bar button label",
+        "default": "Choose your plan",
+        "info": "Scrolls to the buy box. It is never an add-to-cart or a Buy it now button."
+      },
+      {
+        "type": "checkbox",
+        "id": "buybox_fallback",
+        "label": "Staging only: show a basic Supply selector",
+        "default": false,
+        "info": "Only for testing before Supr offers are configured. Leave OFF in production. Supr owns the buy box. This never touches selling plans."
+      }
+    ]
+  },
+  {
+    "name": "Social & SEO",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "share_image",
+        "label": "Default social sharing image"
+      },
+      {
+        "type": "url",
+        "id": "social_instagram",
+        "label": "Instagram"
+      },
+      {
+        "type": "url",
+        "id": "social_tiktok",
+        "label": "TikTok"
+      },
+      {
+        "type": "url",
+        "id": "social_facebook",
+        "label": "Facebook"
+      },
+      {
+        "type": "url",
+        "id": "social_youtube",
+        "label": "YouTube"
+      }
+    ]
+  }
+]

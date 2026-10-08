@@ -1,0 +1,48 @@
+{%- assign has_bg = false -%}
+{%- if section.settings.background_image != blank -%}{%- assign has_bg = true -%}{%- endif -%}
+<section class="hero scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  {%- if has_bg -%}
+    <div class="hero__bg">{{ section.settings.background_image | image_url: width: 2000 | image_tag: loading: 'eager', fetchpriority: 'high', alt: section.settings.background_image.alt, sizes: '100vw' }}</div>
+  {%- endif -%}
+  <div class="container">
+    <div class="hero__grid{% if section.settings.image != blank %} hero__grid--split{% endif %}">
+      <div>
+        {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h1>{{ section.settings.heading }}</h1>
+        {%- if section.settings.body != blank -%}<div class="lede">{{ section.settings.body }}</div>{%- endif -%}
+        <div class="btn-row">
+          {%- if section.settings.primary_label != blank -%}
+            <a class="btn" href="{{ section.settings.primary_url | default: routes.collections_url }}">{{ section.settings.primary_label }}</a>
+          {%- endif -%}
+          {%- if section.settings.secondary_label != blank -%}
+            <a class="btn btn--outline" href="{{ section.settings.secondary_url | default: routes.root_url }}">{{ section.settings.secondary_label }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+      {%- if section.settings.image != blank -%}
+        <div>{% render 'responsive-image', image: section.settings.image, ratio: '4x5', sizes: '(min-width: 990px) 40vw, 100vw', loading: 'eager', alt: section.settings.image_alt %}</div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "div",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Internal Skin Defense for Life in the Sun" },
+    { "type": "richtext", "id": "body", "label": "Supporting text", "info": "Empty until approved copy is supplied." },
+    { "type": "text", "id": "primary_label", "label": "Primary button", "default": "Shop the System" },
+    { "type": "url", "id": "primary_url", "label": "Primary button link", "info": "Point at the hero bundle (Sun Safe System)." },
+    { "type": "text", "id": "secondary_label", "label": "Secondary button", "default": "Explore the Science" },
+    { "type": "url", "id": "secondary_url", "label": "Secondary button link" },
+    { "type": "image_picker", "id": "image", "label": "Product image (right)" },
+    { "type": "text", "id": "image_alt", "label": "Image alt text" },
+    { "type": "image_picker", "id": "background_image", "label": "Background image (optional)" }
+  ],
+  "presets": [{ "name": "Hero" }]
+}
+{% endschema %}

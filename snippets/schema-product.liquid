@@ -1,0 +1,31 @@
+{%- comment -%}
+  Product JSON-LD. Values come from Shopify product data. No claim language and no guarantee/return terms added here.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ shop.url | append: product.url | json }},
+  {%- if product.featured_media -%}
+  "image": {{ product.featured_media | image_url: width: 1200 | prepend: 'https:' | json }},
+  {%- endif -%}
+  "description": {{ product.description | strip_html | strip_newlines | truncate: 500 | json }},
+  {%- if product.vendor != blank -%}
+  "brand": { "@type": "Brand", "name": {{ product.vendor | json }} },
+  {%- endif -%}
+  "offers": [
+    {%- for variant in product.variants -%}
+    {
+      "@type": "Offer",
+      "name": {{ variant.title | json }},
+      "url": {{ shop.url | append: variant.url | json }},
+      "price": {{ variant.price | divided_by: 100.0 | json }},
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "availability": "{% if variant.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}"
+      {%- if variant.sku != blank -%}, "sku": {{ variant.sku | json }}{%- endif -%}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>

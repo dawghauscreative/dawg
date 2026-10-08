@@ -1,0 +1,39 @@
+{%- comment -%}
+  Email capture via Shopify customer form. SMS consent and Klaviyo are handled by Klaviyo embeds, not custom code.
+  Renders nothing unless a heading is set.
+{%- endcomment -%}
+{%- if section.settings.heading != blank -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container" style="max-width:720px;text-align:center">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body, center: true -%}
+    {%- form 'customer', id: 'EmailCapture' -%}
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      {%- if form.posted_successfully? -%}
+        <p class="form-message">{{ section.settings.success_text }}</p>
+      {%- else -%}
+        {%- if form.errors -%}<p class="form-message" role="alert">{{ form.errors | default_errors }}</p>{%- endif -%}
+        <div class="field" style="text-align:left">
+          <label for="EmailCapture-email">Email</label>
+          <input id="EmailCapture-email" type="email" name="contact[email]" autocomplete="email" required>
+        </div>
+        <div class="btn-row" style="justify-content:center"><button class="btn" type="submit">{{ section.settings.button_label }}</button></div>
+      {%- endif -%}
+    {%- endform -%}
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Email capture",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "info": "Empty = hidden." },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Subscribe" },
+    { "type": "text", "id": "success_text", "label": "Success message", "default": "Thank you." }
+  ],
+  "presets": [{ "name": "Email capture" }]
+}
+{% endschema %}

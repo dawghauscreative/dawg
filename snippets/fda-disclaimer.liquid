@@ -1,0 +1,9 @@
+{%- comment -%}
+  Standard supplement wording supplied by Reyshan, stored in settings.fda_disclaimer_text.
+  Renders nothing until filled in. Usage: {% render 'fda-disclaimer', dagger: true %}
+{%- endcomment -%}
+{%- if settings.fda_disclaimer_text != blank -%}
+  <p class="fda-line">{% if dagger %}<span aria-hidden="true">{{ settings.fda_dagger }}</span> {% endif %}{{ settings.fda_disclaimer_text }}</p>
+{%- elsif request.design_mode -%}
+  <p class="fda-line" style="outline:1px dashed #C9A96E;padding:6px">[Editor only] FDA disclaimer wording is not set. Add it in Theme settings &gt; Compliance. Required on every product page and the footer.</p>
+{%- endif -%}

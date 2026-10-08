@@ -1,0 +1,70 @@
+<footer class="site-footer" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <a class="site-header__logo" href="{{ routes.root_url }}">{{ shop.name }}</a>
+        {%- if section.settings.about != blank -%}<p class="small" style="margin-top:16px;max-width:36ch">{{ section.settings.about }}</p>{%- endif -%}
+        <address style="font-style:normal;margin-top:24px;display:grid;gap:6px">
+          <span>{{ settings.mailing_address }}</span>
+          <a href="mailto:{{ settings.support_email }}">{{ settings.support_email }}</a>
+        </address>
+        {%- assign has_social = false -%}
+        {%- if settings.social_instagram != blank or settings.social_tiktok != blank or settings.social_facebook != blank or settings.social_youtube != blank -%}{%- assign has_social = true -%}{%- endif -%}
+        {%- if has_social -%}
+          <ul style="margin-top:24px;grid-auto-flow:column;justify-content:start;gap:20px">
+            {%- if settings.social_instagram != blank -%}<li><a href="{{ settings.social_instagram }}" rel="noopener">Instagram</a></li>{%- endif -%}
+            {%- if settings.social_tiktok != blank -%}<li><a href="{{ settings.social_tiktok }}" rel="noopener">TikTok</a></li>{%- endif -%}
+            {%- if settings.social_facebook != blank -%}<li><a href="{{ settings.social_facebook }}" rel="noopener">Facebook</a></li>{%- endif -%}
+            {%- if settings.social_youtube != blank -%}<li><a href="{{ settings.social_youtube }}" rel="noopener">YouTube</a></li>{%- endif -%}
+          </ul>
+        {%- endif -%}
+      </div>
+
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          {%- for block in section.blocks -%}
+            {%- if block.settings.column == 'explore' -%}<li {{ block.shopify_attributes }}><a href="{{ block.settings.url }}">{{ block.settings.label }}</a></li>{%- endif -%}
+          {%- endfor -%}
+          <li><a href="{{ settings.customer_portal_url | default: routes.account_url }}">{{ settings.manage_subscription_label }}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          {%- for block in section.blocks -%}
+            {%- if block.settings.column == 'legal' -%}<li {{ block.shopify_attributes }}><a href="{{ block.settings.url }}">{{ block.settings.label }}</a></li>{%- endif -%}
+          {%- endfor -%}
+          <li>{% render 'guarantee-badge', style: 'refund' %}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__legal">
+      {%- render 'fda-disclaimer' -%}
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    { "type": "textarea", "id": "about", "label": "Short brand line (optional)" },
+    { "type": "paragraph", "content": "Mailing address and support email are in Theme settings. Footer carries the PO Box only. No phone number, street address or support hours until provided." }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Link" },
+        { "type": "url", "id": "url", "label": "URL" },
+        { "type": "select", "id": "column", "label": "Column", "options": [{ "value": "explore", "label": "Explore" }, { "value": "legal", "label": "Legal" }], "default": "legal" }
+      ]
+    }
+  ]
+}
+{% endschema %}

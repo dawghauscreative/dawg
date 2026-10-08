@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "main": {
+      "type": "pdp-faq",
+      "blocks": {
+        "q1": {
+          "type": "item",
+          "settings": {
+            "question": "Do these products replace sunscreen?"
+          }
+        },
+        "q2": {
+          "type": "item",
+          "settings": {
+            "question": "Are Alchemia MD products dermatologist-formulated?"
+          }
+        },
+        "q3": {
+          "type": "item",
+          "settings": {
+            "question": "Are they gluten-free?"
+          }
+        },
+        "q4": {
+          "type": "item",
+          "settings": {
+            "question": "What is the difference between an individual product and a system?"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "heading": "Frequently asked questions"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

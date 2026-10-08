@@ -1,0 +1,20 @@
+{%- comment -%} Open Graph / Twitter. Descriptions come from page data; no claim language is added by the theme. {%- endcomment -%}
+{%- assign og_title = page_title | default: shop.name -%}
+{%- assign og_image = nil -%}
+{%- if request.page_type == 'product' and product.featured_media -%}
+  {%- assign og_image = product.featured_media | image_url: width: 1200 -%}
+{%- elsif request.page_type == 'article' and article.image -%}
+  {%- assign og_image = article.image | image_url: width: 1200 -%}
+{%- elsif settings.share_image != blank -%}
+  {%- assign og_image = settings.share_image | image_url: width: 1200 -%}
+{%- endif -%}
+<meta property="og:site_name" content="{{ shop.name | escape }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:title" content="{{ og_title | escape }}">
+<meta property="og:type" content="{% if request.page_type == 'product' %}product{% elsif request.page_type == 'article' %}article{% else %}website{% endif %}">
+{%- if page_description != blank -%}<meta property="og:description" content="{{ page_description | escape }}">{%- endif -%}
+{%- if og_image -%}<meta property="og:image" content="https:{{ og_image }}">{%- endif -%}
+<meta name="twitter:card" content="{% if og_image %}summary_large_image{% else %}summary{% endif %}">
+<meta name="twitter:title" content="{{ og_title | escape }}">
+{%- if request.page_type == 'index' -%}{%- render 'schema-org' -%}{%- endif -%}
+{%- if request.page_type == 'product' -%}{%- render 'schema-product', product: product -%}{%- endif -%}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="{{ settings.color_black }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+    {%- if settings.adobe_kit_url != blank -%}
+      <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+      <link rel="stylesheet" href="{{ settings.adobe_kit_url }}">
+    {%- endif -%}
+    {%- if settings.display_font_stylesheet_url != blank -%}
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="{{ settings.display_font_stylesheet_url }}">
+    {%- endif -%}
+
+    {%- capture seo_title -%}
+      {%- if request.page_type == 'index' -%}
+        {{- page_title -}}
+      {%- else -%}
+        {{- page_title -}}
+        {%- if current_page != 1 %} &ndash; Page {{ current_page }}{%- endif -%}
+        {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{%- endunless -%}
+      {%- endif -%}
+    {%- endcapture -%}
+    <title>{{ seo_title | strip }}</title>
+    {%- if page_description != blank -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {%- render 'meta-tags' -%}
+
+    <style>
+      :root {
+        --c-black: {{ settings.color_black }};
+        --c-gold: {{ settings.color_gold }};
+        --c-evergreen: {{ settings.color_evergreen }};
+        --c-beige: {{ settings.color_beige }};
+        --font-body: {{ settings.body_font_family }};
+        --font-display: {{ settings.display_font_family }};
+      }
+    </style>
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+
+    {{ content_for_header }}
+  </head>
+
+  <body class="template-{{ request.page_type | handleize }}">
+    <a class="skip-link" href="#MainContent">{{ 'general.skip_to_content' | t }}</a>
+
+    {%- sections 'header-group' -%}
+
+    <main id="MainContent" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+
+    {%- sections 'footer-group' -%}
+
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+  </body>
+</html>

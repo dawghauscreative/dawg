@@ -1,0 +1,8 @@
+{%- comment -%} Usage: {% render 'section-head', eyebrow: e, heading: h, body: b, center: true, tag: 'h2' %} {%- endcomment -%}
+{%- if eyebrow != blank or heading != blank or body != blank -%}
+  <div class="section-head{% if center %} section-head--center{% endif %}">
+    {%- if eyebrow != blank -%}<span class="eyebrow">{{ eyebrow }}</span>{%- endif -%}
+    {%- if heading != blank -%}<{{ tag | default: 'h2' }}>{{ heading }}</{{ tag | default: 'h2' }}>{%- endif -%}
+    {%- if body != blank -%}<div class="lede prose" style="margin-top:1.25rem{% if center %};margin-inline:auto{% endif %}">{{ body }}</div>{%- endif -%}
+  </div>
+{%- endif -%}

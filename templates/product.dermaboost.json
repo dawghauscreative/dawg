@@ -1,0 +1,78 @@
+{
+  "sections": {
+    "main": {
+      "type": "pdp-main",
+      "blocks": {
+        "title": {
+          "type": "title"
+        },
+        "tagline": {
+          "type": "tagline"
+        },
+        "reviews": {
+          "type": "reviews"
+        },
+        "buy_buttons": {
+          "type": "buy_buttons"
+        },
+        "expectation": {
+          "type": "expectation"
+        },
+        "trust_bar": {
+          "type": "trust_bar"
+        },
+        "fda": {
+          "type": "fda"
+        }
+      },
+      "block_order": [
+        "title",
+        "tagline",
+        "reviews",
+        "buy_buttons",
+        "expectation",
+        "trust_bar",
+        "fda"
+      ]
+    },
+    "definition": {
+      "type": "pdp-definition"
+    },
+    "benefits": {
+      "type": "pdp-benefits"
+    },
+    "ingredients": {
+      "type": "pdp-ingredients"
+    },
+    "how": {
+      "type": "pdp-how-it-works"
+    },
+    "timeline": {
+      "type": "renewal-timeline"
+    },
+    "crosssell": {
+      "type": "pdp-crosssell"
+    },
+    "reviews": {
+      "type": "pdp-reviews"
+    },
+    "faq": {
+      "type": "pdp-faq"
+    },
+    "compliance": {
+      "type": "compliance-notice"
+    }
+  },
+  "order": [
+    "main",
+    "definition",
+    "benefits",
+    "ingredients",
+    "how",
+    "timeline",
+    "crosssell",
+    "reviews",
+    "faq",
+    "compliance"
+  ]
+}

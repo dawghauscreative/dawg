@@ -1,0 +1,30 @@
+{%- comment -%}
+  Your Renewal Timeline. All wording lives in Theme settings > Your Renewal Timeline (one place).
+  STATUS: copy approved by Reyshan Oct 8. FTC net-impression review PENDING. Do not publish the theme until it clears.
+{%- endcomment -%}
+{%- if settings.show_renewal_timeline -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="section-head">
+      <h2>{{ settings.renewal_heading }}</h2>
+      {%- if settings.renewal_intro != blank -%}<p class="lede" style="margin-top:1.25rem">{{ settings.renewal_intro }}</p>{%- endif -%}
+    </div>
+    <ol class="timeline" role="list">
+      <li><span class="timeline__range">{{ settings.renewal_phase_1_range }}</span><span class="timeline__text">{{ settings.renewal_phase_1_text }}</span></li>
+      <li><span class="timeline__range">{{ settings.renewal_phase_2_range }}</span><span class="timeline__text">{{ settings.renewal_phase_2_text }}</span></li>
+      <li><span class="timeline__range">{{ settings.renewal_phase_3_range }}</span><span class="timeline__text">{{ settings.renewal_phase_3_text }}</span></li>
+    </ol>
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Renewal Timeline",
+  "settings": [
+    { "type": "paragraph", "content": "Wording is in Theme settings > Your Renewal Timeline. Master switch is there too." },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] }
+  ],
+  "presets": [{ "name": "Renewal Timeline" }]
+}
+{% endschema %}

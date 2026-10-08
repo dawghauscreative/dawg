@@ -1,0 +1,104 @@
+{%- liquid
+  assign systems = 'sun-safe-system,skin-recovery-system,sun-resilience-system,complete-skin-defense-system' | split: ','
+  assign singles = 'uv-shield,skinbiotic,dermaboost' | split: ','
+  assign portal_url = settings.customer_portal_url | default: routes.account_url
+-%}
+
+<header class="site-header" {{ section.shopify_attributes }}>
+  <div class="container site-header__inner">
+    <a class="site-header__logo" href="{{ routes.root_url }}">
+      {%- if settings.logo != blank -%}
+        <img src="{{ settings.logo | image_url: width: 480 }}" alt="{{ shop.name | escape }}" width="{{ settings.logo_width }}" height="{{ settings.logo_width | divided_by: settings.logo.aspect_ratio | round }}" style="width:{{ settings.logo_width }}px">
+      {%- else -%}
+        {{ shop.name }}
+      {%- endif -%}
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li>
+          <details>
+            <summary>Shop</summary>
+            <div class="nav__panel">
+              <div>
+                <h2>Systems</h2>
+                <ul>
+                  {%- for handle in systems -%}
+                    {%- assign p = all_products[handle] -%}
+                    {%- if p.title != blank -%}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{%- endif -%}
+                  {%- endfor -%}
+                </ul>
+              </div>
+              <div>
+                <h2>Individual</h2>
+                <ul>
+                  {%- for handle in singles -%}
+                    {%- assign p = all_products[handle] -%}
+                    {%- if p.title != blank -%}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{%- endif -%}
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </div>
+          </details>
+        </li>
+        <li><a href="/pages/science">Science</a></li>
+        <li><a href="/pages/founder">Founder</a></li>
+        <li><a href="/pages/faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__tools">
+      <a class="site-header__portal" href="{{ portal_url }}">{{ settings.manage_subscription_label }}</a>
+      <a class="icon-btn" href="{{ routes.cart_url }}" aria-label="{{ 'general.cart' | t }}">
+        {% render 'icon', name: 'cart' %}
+        {%- if cart.item_count > 0 -%}<span class="cart-count">{{ cart.item_count }}</span>{%- endif -%}
+      </a>
+      <button class="icon-btn menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="MenuDrawer" aria-label="{{ 'general.menu' | t }}">
+        {% render 'icon', name: 'menu' %}
+      </button>
+    </div>
+  </div>
+
+  <div class="drawer" id="MenuDrawer" role="dialog" aria-modal="true" aria-label="{{ 'general.menu' | t }}">
+    <div class="drawer__bar">
+      <span class="site-header__logo">{{ shop.name }}</span>
+      <button class="icon-btn" type="button" data-menu-close aria-label="{{ 'general.close' | t }}">{% render 'icon', name: 'close' %}</button>
+    </div>
+    <nav aria-label="Mobile">
+      <ul>
+        <li>
+          <span class="drawer__label">Systems</span>
+          <ul>
+            {%- for handle in systems -%}
+              {%- assign p = all_products[handle] -%}
+              {%- if p.title != blank -%}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{%- endif -%}
+            {%- endfor -%}
+          </ul>
+          <span class="drawer__label">Individual</span>
+          <ul>
+            {%- for handle in singles -%}
+              {%- assign p = all_products[handle] -%}
+              {%- if p.title != blank -%}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </li>
+        <li><a href="/pages/science">Science</a></li>
+        <li><a href="/pages/founder">Founder</a></li>
+        <li><a href="/pages/faq">FAQ</a></li>
+        <li><a href="{{ portal_url }}">{{ settings.manage_subscription_label }}</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "One header only. Navigation follows the fixed product handles. Logo, portal link and label are in Theme settings."
+    }
+  ]
+}
+{% endschema %}

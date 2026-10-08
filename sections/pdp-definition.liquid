@@ -1,0 +1,22 @@
+{%- assign definition = product.metafields.custom.definition -%}
+{%- if definition != blank -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- if section.settings.eyebrow != blank -%}<span class="eyebrow" style="text-align:center">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    <p class="definition">{{ definition }}</p>
+  </div>
+</section>
+{%- elsif request.design_mode -%}
+<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] Definition is empty and hidden. Fill metafield custom.definition on this product.</div></section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Definition statement",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" }
+  ],
+  "presets": [{ "name": "Definition statement" }]
+}
+{% endschema %}

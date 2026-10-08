@@ -1,0 +1,78 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "primary_url": "/products/sun-safe-system",
+        "secondary_url": "/pages/science"
+      }
+    },
+    "category": {
+      "type": "category-statement"
+    },
+    "problem": {
+      "type": "problem"
+    },
+    "solution": {
+      "type": "solution"
+    },
+    "system": {
+      "type": "product-system",
+      "blocks": {
+        "p1": {
+          "type": "product",
+          "settings": {
+            "product": "uv-shield"
+          }
+        },
+        "p2": {
+          "type": "product",
+          "settings": {
+            "product": "skinbiotic"
+          }
+        },
+        "p3": {
+          "type": "product",
+          "settings": {
+            "product": "dermaboost"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ]
+    },
+    "lifestyle": {
+      "type": "lifestyle-strip"
+    },
+    "founder": {
+      "type": "founder",
+      "settings": {
+        "link_label": "Meet Dr. Luna",
+        "link_url": "/pages/founder"
+      }
+    },
+    "final": {
+      "type": "final-cta",
+      "settings": {
+        "product": "sun-safe-system"
+      }
+    },
+    "email": {
+      "type": "email-capture"
+    }
+  },
+  "order": [
+    "hero",
+    "category",
+    "problem",
+    "solution",
+    "system",
+    "lifestyle",
+    "founder",
+    "final",
+    "email"
+  ]
+}

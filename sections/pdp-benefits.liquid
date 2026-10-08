@@ -1,0 +1,33 @@
+{%- assign benefits = product.metafields.custom.benefits.value -%}
+{%- if benefits.size > 0 -%}
+{%- assign icons = 'shield,cell,molecule,layers' | split: ',' -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading -%}
+    <div class="cols cols--3">
+      {%- for benefit in benefits -%}
+        {%- assign icon_index = forloop.index0 | modulo: 4 -%}
+        {%- assign icon_name = icons[icon_index] -%}
+        <div class="benefit">
+          <span class="icon">{% render 'icon', name: icon_name %}</span>
+          <p>{{ benefit }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- elsif request.design_mode -%}
+<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] Benefits are empty and hidden. Fill metafield custom.benefits (label-consistent wording only).</div></section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Benefits",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Benefits" }
+  ],
+  "presets": [{ "name": "Benefits" }]
+}
+{% endschema %}

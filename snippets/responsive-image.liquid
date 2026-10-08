@@ -1,0 +1,27 @@
+{%- comment -%}
+  Usage: {% render 'responsive-image', image: img, ratio: '4x5', sizes: '(min-width: 990px) 50vw, 100vw', loading: 'lazy', alt: 'text', widths: '480,720,960,1280' %}
+  Renders a flat placeholder block (no copy) when no image is set.
+{%- endcomment -%}
+{%- assign img_widths = widths | default: '360,540,720,960,1280,1600' | split: ',' -%}
+{%- assign img_loading = loading | default: 'lazy' -%}
+{%- if image != blank -%}
+  {%- capture srcset -%}
+    {%- for w in img_widths -%}
+      {%- assign wi = w | times: 1 -%}
+      {%- if wi <= image.width -%}{{ image | image_url: width: wi }} {{ wi }}w{%- unless forloop.last -%}, {% endunless -%}{%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  <div class="media{% if ratio %} ratio-{{ ratio }}{% endif %}{% if class %} {{ class }}{% endif %}">
+    <img
+      src="{{ image | image_url: width: 960 }}"
+      {% if srcset != blank %}srcset="{{ srcset | strip | remove_last: ',' }}"{% endif %}
+      sizes="{{ sizes | default: '100vw' }}"
+      alt="{{ alt | default: image.alt | escape }}"
+      width="{{ image.width }}"
+      height="{{ image.height }}"
+      loading="{{ img_loading }}"
+      {% if img_loading == 'eager' %}fetchpriority="high"{% endif %}>
+  </div>
+{%- else -%}
+  <div class="media media--ph{% if ratio %} ratio-{{ ratio }}{% endif %}{% if class %} {{ class }}{% endif %}" role="img" aria-label="{{ alt | escape }}"></div>
+{%- endif -%}

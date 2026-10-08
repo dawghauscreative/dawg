@@ -1,0 +1,30 @@
+{%- paginate collection.products by 12 -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="section-head">
+      <h1>{{ collection.title }}</h1>
+      {%- if collection.description != blank -%}<div class="lede prose" style="margin-top:1.25rem">{{ collection.description }}</div>{%- endif -%}
+    </div>
+    {%- if collection.products.size == 0 -%}
+      <p class="lede">{{ section.settings.empty_text }}</p>
+    {%- else -%}
+      <div class="cols cols--3">
+        {%- for product in collection.products -%}
+          <div>{% render 'product-card', product: product %}</div>
+        {%- endfor -%}
+      </div>
+      {%- render 'pagination', paginate: paginate -%}
+    {%- endif -%}
+  </div>
+</section>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "Collection",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "empty_text", "label": "Empty collection text", "default": "No products found." }
+  ]
+}
+{% endschema %}

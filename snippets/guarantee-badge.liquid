@@ -1,0 +1,30 @@
+{%- comment -%}
+  The ONLY place a guarantee may be mentioned. With settings.show_guarantee off this outputs nothing.
+  No guarantee wording exists in the theme; all text comes from settings and is empty until approved.
+  Usage: {% render 'guarantee-badge', style: 'trust' %}
+  Styles: trust (trust bar cell), line (buy-box line), cart (cart note), refund (policy link)
+  FAQ items use {% render 'guarantee-badge', style: 'faq' %} and print a <details> row.
+{%- endcomment -%}
+{%- if settings.show_guarantee -%}
+  {%- case style -%}
+    {%- when 'trust' -%}
+      {%- if settings.guarantee_text != blank -%}
+        <div>{% render 'icon', name: 'shield' %}<span>{{ settings.guarantee_text }}</span></div>
+      {%- endif -%}
+    {%- when 'line' -%}
+      {%- if settings.guarantee_text != blank -%}<p class="small">{{ settings.guarantee_text }}</p>{%- endif -%}
+    {%- when 'cart' -%}
+      {%- if settings.guarantee_text != blank -%}<p class="small">{{ settings.guarantee_text }}</p>{%- endif -%}
+    {%- when 'refund' -%}
+      {%- if settings.guarantee_refund_link_label != blank and settings.guarantee_refund_link_url != blank -%}
+        <a class="text-link" href="{{ settings.guarantee_refund_link_url }}">{{ settings.guarantee_refund_link_label }}</a>
+      {%- endif -%}
+    {%- when 'faq' -%}
+      {%- if settings.guarantee_faq_question != blank and settings.guarantee_faq_answer != blank -%}
+        <details>
+          <summary>{{ settings.guarantee_faq_question }}</summary>
+          <div class="faq__a">{{ settings.guarantee_faq_answer }}</div>
+        </details>
+      {%- endif -%}
+  {%- endcase -%}
+{%- endif -%}

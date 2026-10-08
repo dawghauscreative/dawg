@@ -1,0 +1,176 @@
+{%- comment -%}
+  Shared product hero for ALL 7 product pages. Differences come from product data (metafields)
+  and which blocks each template enables.
+
+  BUY BOX RULES (Supr owns the buy box):
+  - The widget sits INSIDE the form that posts to /cart/add. This form is a normal HTML form post:
+    no JS add-to-cart, no hand-built payload. The whole form (including any selling plan Supr adds) goes with it.
+  - We never write a selling_plan input. We never render a quantity input or a custom subscription picker.
+  - No dynamic checkout / Buy it now button.
+  - Supr's "Subscriptions + Bundles" app block, if added in the editor, is rendered inside the form.
+  - The Supr app embed (Theme editor > App embeds) must be ON for this theme.
+{%- endcomment -%}
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign form_id = 'product-form-' | append: section.id
+  assign featured = product.featured_media
+-%}
+
+<section class="pdp scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="pdp__grid">
+
+      <div class="pdp__gallery" data-gallery>
+        {%- if featured != blank -%}
+          <div class="media ratio-4x5">
+            <img
+              data-gallery-main
+              src="{{ featured | image_url: width: 1100 }}"
+              srcset="{{ featured | image_url: width: 600 }} 600w, {{ featured | image_url: width: 900 }} 900w, {{ featured | image_url: width: 1200 }} 1200w, {{ featured | image_url: width: 1600 }} 1600w"
+              sizes="(min-width: 990px) 56vw, 100vw"
+              alt="{{ featured.alt | default: product.title | escape }}"
+              width="{{ featured.width }}" height="{{ featured.height }}"
+              loading="eager" fetchpriority="high">
+          </div>
+          {%- if product.media.size > 1 -%}
+            <div class="pdp__thumbs">
+              {%- for media in product.media limit: 5 -%}
+                {%- if media.media_type == 'image' -%}
+                  <button type="button" data-thumb data-src="{{ media | image_url: width: 1100 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" aria-label="Show image {{ forloop.index }}" aria-current="{% if media.id == featured.id %}true{% else %}false{% endif %}">
+                    <img src="{{ media | image_url: width: 200 }}" alt="" width="100" height="100" loading="lazy">
+                  </button>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+        {%- else -%}
+          {% render 'responsive-image', image: nil, ratio: '4x5', alt: product.title %}
+        {%- endif -%}
+      </div>
+
+      <div class="pdp__info">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+
+            {%- when 'title' -%}
+              <div {{ block.shopify_attributes }}>
+                <h1 class="pdp__title">{{ product.title }}</h1>
+              </div>
+
+            {%- when 'tagline' -%}
+              {%- if product.metafields.custom.tagline != blank -%}
+                <p class="pdp__tagline" {{ block.shopify_attributes }}>{{ product.metafields.custom.tagline }}</p>
+              {%- endif -%}
+
+            {%- when 'reviews' -%}
+              {%- comment -%} Review summary slot. Renders nothing until a reviews app is on. {%- endcomment -%}
+              <div class="reviews-slot pdp__reviews" data-reviews-summary {{ block.shopify_attributes }}></div>
+
+            {%- when 'buy_buttons' -%}
+              <div class="buy-box" id="buy-box" {{ block.shopify_attributes }}>
+                {%- form 'product', product, id: form_id, class: 'buy-form', novalidate: 'novalidate' -%}
+                  <input type="hidden" name="product-id" value="{{ product.id }}">
+                  {%- if settings.buybox_fallback -%}
+                    {%- comment -%} Staging only. Plain variant radios. No selling plans. {%- endcomment -%}
+                    <fieldset class="fallback-supply">
+                      <legend class="visually-hidden">Supply</legend>
+                      {%- for variant in product.variants -%}
+                        <label>
+                          <input type="radio" name="id" value="{{ variant.id }}" {% if variant == current_variant %}checked{% endif %} {% unless variant.available %}disabled{% endunless %}>
+                          <span>{{ variant.title }}</span>
+                          <span>{% render 'price', variant: variant %}</span>
+                        </label>
+                      {%- endfor -%}
+                    </fieldset>
+                  {%- else -%}
+                    <input type="hidden" name="id" value="{{ current_variant.id }}">
+                  {%- endif -%}
+
+                  {%- comment -%} Supr app block(s), if placed in the theme editor, render inside the form. {%- endcomment -%}
+                  {%- for app_block in section.blocks -%}
+                    {%- if app_block.type == '@app' -%}{% render app_block %}{%- endif -%}
+                  {%- endfor -%}
+
+                  <button type="submit" name="add" class="btn btn--block" {% unless current_variant.available %}disabled aria-disabled="true"{% endunless %}>
+                    {%- if current_variant.available -%}{{ 'products.add_to_cart' | t }}{%- else -%}{{ 'products.sold_out' | t }}{%- endif -%}
+                  </button>
+                  {%- comment -%} Dynamic checkout buttons are intentionally NOT rendered on product pages. {%- endcomment -%}
+                {%- endform -%}
+                {%- render 'guarantee-badge', style: 'line' -%}
+              </div>
+
+            {%- when 'expectation' -%}
+              {%- if settings.show_renewal_timeline and settings.renewal_expectation_line != blank -%}
+                <p class="expectation" {{ block.shopify_attributes }}>{{ settings.renewal_expectation_line }}</p>
+              {%- elsif request.design_mode and settings.show_renewal_timeline -%}
+                <p class="expectation small" {{ block.shopify_attributes }}>[Editor only] Expectation line is empty. Paste the approved wording in Theme settings &gt; Your Renewal Timeline.</p>
+              {%- endif -%}
+
+            {%- when 'trust_bar' -%}
+              {%- capture trust_items -%}
+                {%- for i in (1..3) -%}
+                  {%- assign t_key = 'text_' | append: i -%}
+                  {%- assign i_key = 'icon_' | append: i -%}
+                  {%- if block.settings[t_key] != blank -%}
+                    <div>{% render 'icon', name: block.settings[i_key] %}<span>{{ block.settings[t_key] }}</span></div>
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- render 'guarantee-badge', style: 'trust' -%}
+              {%- endcapture -%}
+              {%- if trust_items contains '<div' -%}
+                <div class="trust-bar" {{ block.shopify_attributes }}>{{ trust_items }}</div>
+              {%- endif -%}
+
+            {%- when 'fda' -%}
+              <div {{ block.shopify_attributes }}>{% render 'fda-disclaimer', dagger: true %}</div>
+
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{%- comment -%}
+  Sticky CTA: a scroll-to-buy-box link. NOT an add-to-cart, NOT a Buy it now button, never submits a form.
+  Add to cart always goes through the main form above.
+{%- endcomment -%}
+<div class="sticky-cta" data-sticky-cta aria-hidden="true" inert>
+  <span class="sticky-cta__title">{{ product.title }}</span>
+  <a class="btn" href="#buy-box" data-sticky-scroll>{{ settings.sticky_cta_label }}</a>
+</div>
+
+{% schema %}
+{
+  "name": "Product hero",
+  "tag": "div",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] }
+  ],
+  "blocks": [
+    { "type": "title", "name": "Title", "limit": 1 },
+    { "type": "tagline", "name": "Tagline", "limit": 1 },
+    { "type": "reviews", "name": "Review summary slot", "limit": 1 },
+    { "type": "buy_buttons", "name": "Buy buttons", "limit": 1 },
+    { "type": "expectation", "name": "Expectation line", "limit": 1 },
+    {
+      "type": "trust_bar",
+      "name": "Trust bar",
+      "limit": 1,
+      "settings": [
+        { "type": "paragraph", "content": "Up to three items. Leave empty until copy is approved. The guarantee cell appears only when the guarantee is switched on in Theme settings." },
+        { "type": "select", "id": "icon_1", "label": "Icon 1", "default": "shield", "options": [{ "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
+        { "type": "text", "id": "text_1", "label": "Text 1" },
+        { "type": "select", "id": "icon_2", "label": "Icon 2", "default": "molecule", "options": [{ "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
+        { "type": "text", "id": "text_2", "label": "Text 2" },
+        { "type": "select", "id": "icon_3", "label": "Icon 3", "default": "cell", "options": [{ "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
+        { "type": "text", "id": "text_3", "label": "Text 3" }
+      ]
+    },
+    { "type": "fda", "name": "FDA dagger line", "limit": 1 },
+    { "type": "@app" }
+  ],
+  "presets": [{ "name": "Product hero" }]
+}
+{% endschema %}

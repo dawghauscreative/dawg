@@ -1,0 +1,23 @@
+{%- comment -%}
+  Compliance area on every PDP: product compliance slot (empty/hidden by default), label caution line, FDA disclaimer.
+  The slot format (lower-third vs voiced line) is not decided; this is only the on-page text slot.
+{%- endcomment -%}
+<section class="section--tight scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container" style="max-width:960px">
+    {%- render 'compliance-slot', content: product.metafields.custom.compliance_slot -%}
+    <div class="stack" style="--stack:.75rem;margin-top:2rem">
+      {%- render 'label-caution' -%}
+      {%- render 'fda-disclaimer', dagger: true -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Compliance notice",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] }
+  ],
+  "presets": [{ "name": "Compliance notice" }]
+}
+{% endschema %}

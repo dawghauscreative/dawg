@@ -1,0 +1,21 @@
+{%- comment -%}
+  Template for legal pages (Terms, Privacy, Refund, Shipping, Subscription terms, SMS terms and consent).
+  Content comes from the page body (Reyshan / counsel). Nothing is written here.
+{%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="legal">
+      <h1 style="font-size:clamp(2.2rem,4vw,3.4rem);margin-bottom:2rem">{{ page.title }}</h1>
+      <div class="prose" style="max-width:none">{{ page.content }}</div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Legal page",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] }
+  ]
+}
+{% endschema %}

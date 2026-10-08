@@ -1,0 +1,15 @@
+{
+  "general": {
+    "skip_to_content": "Skip to content",
+    "cart": "Cart",
+    "menu": "Menu",
+    "close": "Close",
+    "search": "Search"
+  },
+  "products": {
+    "add_to_cart": "Add to cart",
+    "sold_out": "Sold out",
+    "view_product": "View product",
+    "from": "From"
+  }
+}

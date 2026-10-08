@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "renewal-timeline"
+    },
+    "cta": {
+      "type": "final-cta",
+      "settings": {
+        "product": "sun-safe-system"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cta"
+  ]
+}

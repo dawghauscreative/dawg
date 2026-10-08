@@ -1,0 +1,29 @@
+{%- paginate blog.articles by 9 -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="section-head"><h1>{{ blog.title }}</h1></div>
+    <div class="cols cols--3">
+      {%- for article in blog.articles -%}
+        <a class="pcard" href="{{ article.url }}">
+          <div class="pcard__media" style="aspect-ratio:3/2">{% render 'responsive-image', image: article.image, ratio: '3x2', sizes: '(min-width: 750px) 33vw, 100vw', alt: article.title %}</div>
+          <div class="pcard__body">
+            <span class="small">{{ article.published_at | date: '%B %-d, %Y' }}</span>
+            <h2 class="pcard__title">{{ article.title }}</h2>
+            {%- if article.excerpt_or_content != blank -%}<p class="pcard__tagline">{{ article.excerpt_or_content | strip_html | truncate: 140 }}</p>{%- endif -%}
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+    {%- render 'pagination', paginate: paginate -%}
+  </div>
+</section>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "Blog",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] }
+  ]
+}
+{% endschema %}

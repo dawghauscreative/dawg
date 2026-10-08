@@ -1,0 +1,22 @@
+{%- comment -%}
+  Minimal line icons only. Usage: {% render 'icon', name: 'molecule' %}
+  Names: molecule, cell, shield, layers, cart, menu, close, arrow
+{%- endcomment -%}
+{%- case name -%}
+  {%- when 'molecule' -%}
+    <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="5"/><circle cx="9" cy="14" r="3.5"/><circle cx="39" cy="14" r="3.5"/><circle cx="24" cy="41" r="3.5"/><path d="M19.8 21.4 11.9 16M28.2 21.4l7.9-5.4M24 29v8.5"/></svg>
+  {%- when 'cell' -%}
+    <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 6c9 0 17 6 17 17 0 11-8 19-17 19S7 34 7 23C7 12 15 6 24 6Z"/><circle cx="24" cy="24" r="6"/><path d="M15 15c2-2 4-3 6-3.4M33 33c-2 2-4 3-6 3.4"/></svg>
+  {%- when 'shield' -%}
+    <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 5 8 11v12c0 10 7 17 16 20 9-3 16-10 16-20V11L24 5Z"/><path d="m17 24 5 5 9-10"/></svg>
+  {%- when 'layers' -%}
+    <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="m24 7 18 9-18 9-18-9 18-9Z"/><path d="m6 24 18 9 18-9"/><path d="m6 32 18 9 18-9"/></svg>
+  {%- when 'cart' -%}
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+  {%- when 'menu' -%}
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 8h16M4 16h16"/></svg>
+  {%- when 'close' -%}
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg>
+  {%- when 'arrow' -%}
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+{%- endcase -%}

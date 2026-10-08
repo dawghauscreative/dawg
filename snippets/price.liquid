@@ -1,0 +1,16 @@
+{%- comment -%}
+  Reads Shopify product data only. No hard-coded amounts, percentages or savings.
+  Usage: {% render 'price', product: product %}  or  {% render 'price', variant: variant %}
+{%- endcomment -%}
+{%- if variant != blank -%}
+  {%- if variant.compare_at_price > variant.price -%}
+    <s class="was-price">{{ variant.compare_at_price | money }}</s>
+  {%- endif -%}
+  <span class="price">{{ variant.price | money }}</span>
+{%- elsif product != blank -%}
+  {%- if product.price_varies -%}<span class="price-from">{{ 'products.from' | t }}</span> {% endif -%}
+  {%- if product.compare_at_price > product.price and product.price_varies == false -%}
+    <s class="was-price">{{ product.compare_at_price | money }}</s>
+  {%- endif -%}
+  <span class="price">{{ product.price | money }}</span>
+{%- endif -%}

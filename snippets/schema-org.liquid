@@ -1,0 +1,23 @@
+{%- comment -%} Organization JSON-LD. Identity only: no claims, no guarantee, no phone, no street address. {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ shop.name | json }},
+  "url": {{ shop.url | json }},
+  "email": {{ settings.support_email | json }}
+  {%- if settings.logo != blank -%},
+  "logo": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }}
+  {%- endif -%}
+  {%- capture socials_json -%}
+    {%- assign social_keys = 'social_instagram,social_tiktok,social_facebook,social_youtube' | split: ',' -%}
+    {%- for key in social_keys -%}
+      {%- assign u = settings[key] -%}
+      {%- if u != blank -%}{{ u | json }}|{%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- if socials_json != blank -%},
+  "sameAs": [{{ socials_json | strip | remove_last: '|' | replace: '|', ',' }}]
+  {%- endif -%}
+}
+</script>
