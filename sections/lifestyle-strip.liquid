@@ -1,15 +1,20 @@
 {%- assign shown = 0 -%}
 {%- for block in section.blocks -%}{%- if block.settings.image != blank or block.settings.asset != blank -%}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- if shown > 0 -%}
-<section class="section--tight scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
-    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading -%}
-    <div class="cols cols--4">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="cols cols--4" style="gap:16px">
       {%- for block in section.blocks -%}
         {%- if block.settings.image != blank or block.settings.asset != blank -%}
-          <figure style="margin:0" {{ block.shopify_attributes }}>
-            {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, ratio: '4x5', sizes: '(min-width: 750px) 25vw, 50vw', alt: block.settings.caption %}
-            {%- if block.settings.caption != blank -%}<figcaption class="small" style="margin-top:10px">{{ block.settings.caption }}</figcaption>{%- endif -%}
+          <figure class="lifestyle-tile" {{ block.shopify_attributes }}>
+            {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, ratio: '4x5', sizes: '(min-width: 990px) 25vw, 50vw', alt: block.settings.label %}
+            {%- if block.settings.label != blank or block.settings.caption != blank -%}
+              <figcaption class="lifestyle-tile__label">
+                {%- if block.settings.label != blank -%}<h3>{{ block.settings.label }}</h3>{%- endif -%}
+                {%- if block.settings.caption != blank -%}<p>{{ block.settings.caption }}</p>{%- endif -%}
+              </figcaption>
+            {%- endif -%}
           </figure>
         {%- endif -%}
       {%- endfor -%}
@@ -24,18 +29,20 @@
 {
   "name": "Lifestyle strip",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "band", "label": "Band (black to green)" }] },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" }
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" }
   ],
   "blocks": [
     {
       "type": "image",
-      "name": "Image",
+      "name": "Tile",
       "settings": [
-        { "type": "image_picker", "id": "image", "label": "Image", "info": "Activity, not posing. Photo list to be confirmed by Reyshan." },
+        { "type": "image_picker", "id": "image", "label": "Image", "info": "Activity, not posing." },
         { "type": "text", "id": "asset", "label": "Fallback theme asset filename", "info": "Used only when no image is picked." },
-        { "type": "text", "id": "caption", "label": "Caption" }
+        { "type": "text", "id": "label", "label": "Label (shown over the image)" },
+        { "type": "text", "id": "caption", "label": "Caption (shown under the label)" }
       ]
     }
   ],

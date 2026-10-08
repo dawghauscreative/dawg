@@ -3,9 +3,21 @@
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
     <div class="cols cols--3">
       {%- for block in section.blocks -%}
-        <div {{ block.shopify_attributes }}>{% render 'product-card', product: block.settings.product %}</div>
+        <div {{ block.shopify_attributes }}>{% render 'product-card', product: block.settings.product, role: block.settings.role %}</div>
       {%- endfor -%}
     </div>
+    {%- assign bundle = section.settings.bundle_product -%}
+    {%- if bundle != blank -%}
+      {%- assign parts = bundle.metafields.custom.bundle_components.value -%}
+      <div class="bundle-panel">
+        <div>
+          {%- if section.settings.bundle_eyebrow != blank -%}<span class="eyebrow" style="margin-bottom:.6rem">{{ section.settings.bundle_eyebrow }}</span>{%- endif -%}
+          <h3>{{ bundle.title }}</h3>
+          {%- if parts.size > 0 -%}<p>{% for c in parts %}{{ c.title }}{% unless forloop.last %} + {% endunless %}{% endfor %}</p>{%- elsif bundle.metafields.custom.tagline != blank -%}<p>{{ bundle.metafields.custom.tagline }}</p>{%- endif -%}
+        </div>
+        <a class="btn" href="{{ bundle.url }}">{{ section.settings.bundle_button_label }}</a>
+      </div>
+    {%- endif -%}
     {%- if section.settings.link_label != blank -%}
       <div class="btn-row" style="justify-content:center;margin-top:56px">
         <a class="btn btn--outline" href="{{ section.settings.link_url | default: routes.collections_url }}">{{ section.settings.link_label }}</a>
@@ -22,11 +34,16 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "header", "content": "Bundle panel (optional)" },
+    { "type": "product", "id": "bundle_product", "label": "Bundle", "info": "Hero bundle is Sun Safe System. Title and components are read from product data." },
+    { "type": "text", "id": "bundle_eyebrow", "label": "Panel eyebrow" },
+    { "type": "text", "id": "bundle_button_label", "label": "Panel button label", "default": "Shop the System" },
+    { "type": "header", "content": "Link button" },
     { "type": "text", "id": "link_label", "label": "Link button label" },
     { "type": "url", "id": "link_url", "label": "Link button URL" }
   ],
   "blocks": [
-    { "type": "product", "name": "Product", "settings": [{ "type": "product", "id": "product", "label": "Product" }] }
+    { "type": "product", "name": "Product", "settings": [{ "type": "product", "id": "product", "label": "Product" }, { "type": "text", "id": "role", "label": "Role badge", "info": "Optional short tag above the title, for example Protect, Balance or Restore." }] }
   ],
   "max_blocks": 4,
   "presets": [{ "name": "Product system", "blocks": [{ "type": "product" }, { "type": "product" }, { "type": "product" }] }]

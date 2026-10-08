@@ -61,3 +61,11 @@ Not in the brief's metafield list: `custom.tier1_citations` (the brief refers to
 Run `docs/check-banned.sh . ~/.alchemia-private-banned.txt` before handoff. The private manufacturer-name list lives outside the repo; `docs/private-banned.TEMPLATE.txt` shows the format.
 BLOCK hits that remain by design are code identifiers and editor-only labels for the hidden offer (`show_guarantee`, `guarantee-badge`, `guarantee_*` settings). They never render while the switch is off. Add them to `ALLOW` in the script if a clean exit code is wanted.
 REVIEW hits to keep checking by hand: the label-verified melanoma line, the founder story, "board-certified".
+
+## Finish layer (ported from the original theme)
+
+Rebuilt on brand tokens, not copied: scroll fade-up reveal (off for reduced motion and in the editor), header blur/shadow and hide-on-scroll-down, underline-grow nav links, framed product cards with hover zoom and role badges, bundle panel, trust strip, overlay-label lifestyle tiles, full-bleed founder split, black-to-Emerald bands with gold hairlines, gold newsletter band in the footer, numbered bundle steps.
+Home flow: hero, trust strip, product system + bundle panel, statement, problem, solution, 16:9 reel, lifestyle, founder, science, mission band, closing CTA.
+Media comes from the store's own Files via `shopify://shop_images/...` and `shopify://files/videos/...` (golf, tennis, sailing and beach photos; the `hf_20260503_005659...mp4` reel). Bundled theme assets are the fallback if a file reference does not resolve.
+Not carried over on purpose: "Natural" and "Gluten-free" (unverified), outcome wording such as "Protection for every round", the percentage-of-proceeds line and the "save up to 20%" cart note (figures), the sunscreen Q&As that tripped the block list, the cart drawer and quick add (Supr owns the buy box).
+`headline_weight` (Theme settings > Typography) switches headlines between Regular and Semibold/Bold.

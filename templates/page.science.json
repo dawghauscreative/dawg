@@ -18,12 +18,37 @@
             "title": "Transparency",
             "text": "Alchemia MD brings the same attentive care to its formulas that Dr. Luna brings to every patient. All ingredients are disclosed and each formula's purpose is explained in plain language."
           }
+        },
+        "c3": {
+          "type": "card",
+          "settings": {
+            "icon": "cell",
+            "title": "Multi-ingredient formulas",
+            "text": "Designed to reduce supplement overload and simplify daily use."
+          }
+        },
+        "c4": {
+          "type": "card",
+          "settings": {
+            "icon": "shield",
+            "title": "Daily skin support",
+            "text": "Created for consistent use as part of a long-term skin health routine."
+          }
         }
       },
       "block_order": [
         "c1",
-        "c2"
-      ]
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "heading_tag": "h1",
+        "eyebrow": "Science and formulation",
+        "heading": "Formulated with purpose.",
+        "body": "<p>Every ingredient is selected for a specific role in supporting skin health, resilience, balance, or recovery.</p>"
+      }
     },
     "system": {
       "type": "product-system",

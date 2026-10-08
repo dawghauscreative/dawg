@@ -1,35 +1,33 @@
 {%- if section.blocks.size > 0 -%}
-<section class="section--tight scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
-  <div class="container">
-    <div class="cols cols--{% if section.blocks.size > 3 %}4{% elsif section.blocks.size == 2 %}2{% else %}3{% endif %}" style="gap:24px;text-align:center">
-      {%- for block in section.blocks -%}
-        <div style="display:grid;justify-items:center;gap:12px" {{ block.shopify_attributes }}>
-          <span class="icon">{% render 'icon', name: block.settings.icon %}</span>
-          <span class="eyebrow" style="margin:0">{{ block.settings.text }}</span>
-        </div>
-      {%- endfor -%}
-    </div>
+<section class="scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="trust-strip" style="--cols:{{ section.blocks.size }}">
+    {%- for block in section.blocks -%}
+      <div {{ block.shopify_attributes }}>
+        {%- if block.settings.icon != 'none' -%}<span class="icon">{% render 'icon', name: block.settings.icon %}</span>{%- endif -%}
+        <span>{{ block.settings.text }}</span>
+      </div>
+    {%- endfor -%}
   </div>
 </section>
 {%- endif -%}
 
 {% schema %}
 {
-  "name": "Trust bar",
+  "name": "Trust strip",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "beige", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "band", "label": "Band (black to green)" }] }
   ],
   "blocks": [
     {
       "type": "item",
       "name": "Item",
       "settings": [
-        { "type": "select", "id": "icon", "label": "Icon", "default": "shield", "options": [{ "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
-        { "type": "text", "id": "text", "label": "Text" }
+        { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [{ "value": "none", "label": "None" }, { "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
+        { "type": "text", "id": "text", "label": "Text", "info": "Verified facts only (label or brand wording)." }
       ]
     }
   ],
-  "max_blocks": 4,
-  "presets": [{ "name": "Trust bar" }]
+  "max_blocks": 5,
+  "presets": [{ "name": "Trust strip" }]
 }
 {% endschema %}

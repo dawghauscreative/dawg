@@ -1,6 +1,6 @@
 {%- comment -%}
   Cards link to the product page. NO add-to-cart button, no quick add (it would add a one-time single at full price).
-  Usage: {% render 'product-card', product: p %}
+  Usage: {% render 'product-card', product: p, role: 'Protect' %} (role is optional)
 {%- endcomment -%}
 {%- if product != blank -%}
   <a class="pcard" href="{{ product.url }}">
@@ -10,6 +10,7 @@
       {%- render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 750px) 33vw, 100vw', alt: product.title -%}
     </div>
     <div class="pcard__body">
+      {%- if role != blank -%}<span class="role-badge">{{ role }}</span>{%- endif -%}
       <h3 class="pcard__title">{{ product.title }}</h3>
       {%- if product.metafields.custom.tagline != blank -%}
         <p class="pcard__tagline">{{ product.metafields.custom.tagline }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>

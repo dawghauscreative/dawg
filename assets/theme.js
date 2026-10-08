@@ -74,4 +74,37 @@
       sticky.classList.add('is-visible');
     }
   }
+
+  // Header: scrolled state + hide on scroll down / show on scroll up
+  var header = document.querySelector('.site-header');
+  if (header) {
+    var lastY = window.scrollY, ticking = false;
+    var onScroll = function () {
+      var y = window.scrollY;
+      header.classList.toggle('is-scrolled', y > 8);
+      var drawerOpen = drawer && drawer.classList.contains('is-open');
+      var navOpen = header.querySelector('.nav details[open]');
+      if (!drawerOpen && !navOpen && y > 240 && y > lastY + 6) header.classList.add('is-hidden');
+      else if (y < lastY - 6 || y <= 240) header.classList.remove('is-hidden');
+      lastY = y; ticking = false;
+    };
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+    header.addEventListener('focusin', function () { header.classList.remove('is-hidden'); });
+    onScroll();
+  }
+
+  // Scroll reveal. Skipped for reduced motion, in the theme editor, and without IntersectionObserver.
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var inEditor = window.Shopify && window.Shopify.designMode;
+  if ('IntersectionObserver' in window && !reduce && !inEditor) {
+    var targets = document.querySelectorAll('main .section > .container > *, main .section--tight > .container > *, main .cols > *, main .steps > *, main .faq > details, main .bundle-panel, main .founder-split__copy, main .founder-split__media');
+    if (targets.length) {
+      document.documentElement.classList.add('reveal-on');
+      var io2 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-visible'); io2.unobserve(en.target); } });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+      targets.forEach(function (el, i) { el.classList.add('reveal'); el.style.transitionDelay = ((i % 4) * 70) + 'ms'; io2.observe(el); });
+      setTimeout(function () { document.querySelectorAll('.reveal:not(.is-visible)').forEach(function (el) { el.classList.add('is-visible'); }); }, 4000);
+    }
+  }
 })();

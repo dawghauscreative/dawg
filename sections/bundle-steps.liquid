@@ -12,7 +12,7 @@
         <article class="step">
           <div class="step__media">{% render 'responsive-image', image: c.featured_media, ratio: '4x5', sizes: '220px', alt: c.title %}</div>
           <div class="stack" style="--stack:.75rem">
-            <span class="step__num">{{ section.settings.step_label }} {{ forloop.index }}</span>
+            <span class="step__num"><span class="step__badge">{{ forloop.index }}</span>{{ section.settings.step_label }} {{ forloop.index }}</span>
             <h3>{{ c.title }}</h3>
             {%- if c.metafields.custom.tagline != blank -%}<p>{{ c.metafields.custom.tagline }}</p>{%- endif -%}
             <a class="text-link" href="{{ c.url }}">View product</a>

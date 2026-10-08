@@ -90,6 +90,27 @@
         "info": "Brand Guidelines: BC Novatica SemiBold, never all caps. The kit serves weights 400 and 700 only, so semibold maps to 700."
       },
       {
+        "type": "select",
+        "id": "headline_weight",
+        "label": "Headline weight",
+        "default": "600",
+        "options": [
+          {
+            "value": "400",
+            "label": "Regular (400)"
+          },
+          {
+            "value": "600",
+            "label": "Semibold (600, uses 700 until the kit includes it)"
+          },
+          {
+            "value": "700",
+            "label": "Bold (700)"
+          }
+        ],
+        "info": "Brand Guidelines call for BC Novatica SemiBold. Use Regular for a lighter, more editorial look."
+      },
+      {
         "type": "header",
         "content": "Body copy: Dejanire Text"
       },

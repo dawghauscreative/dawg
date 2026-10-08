@@ -13,7 +13,8 @@
     "cta": {
       "type": "final-cta",
       "settings": {
-        "product": "sun-safe-system"
+        "product": "sun-safe-system",
+        "color_scheme": "band"
       }
     },
     "alchemy": {
@@ -35,10 +36,19 @@
         "color_scheme": "dark",
         "body": "<p>Instead of something to be fixed or perfected, it is a dynamic living system to be supported. Skin is always seeking balance, and always capable of returning to it.</p>"
       }
+    },
+    "category": {
+      "type": "category-statement",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Our mission",
+        "statement": "To transform skin health from the inside out. We are guided by dermatological science and the philosophy that balance is a practice, not a destination."
+      }
     }
   },
   "order": [
     "main",
+    "category",
     "alchemy",
     "purpose",
     "cta"

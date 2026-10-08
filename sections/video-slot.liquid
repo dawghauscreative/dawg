@@ -35,7 +35,11 @@
 
       <div class="video-frame {{ ratio_class }} {{ frame_class }}">
         {%- if section.settings.video != blank -%}
-          {{- section.settings.video | video_tag: image_size: '720x', controls: true, preload: 'none', playsinline: true, class: 'video-frame__media', title: section.settings.video_title -}}
+          {%- if section.settings.autoplay -%}
+            {{- section.settings.video | video_tag: image_size: '1280x', autoplay: true, loop: true, muted: true, controls: false, playsinline: true, class: 'video-frame__media', title: section.settings.video_title -}}
+          {%- else -%}
+            {{- section.settings.video | video_tag: image_size: '1280x', controls: true, preload: 'none', playsinline: true, class: 'video-frame__media', title: section.settings.video_title -}}
+          {%- endif -%}
         {%- elsif section.settings.video_url != blank -%}
           {{- section.settings.video_url | external_video_tag: class: 'video-frame__media', loading: 'lazy', title: section.settings.video_title -}}
         {%- else -%}
@@ -58,6 +62,7 @@
     { "type": "header", "content": "Video" },
     { "type": "video", "id": "video", "label": "Shopify-hosted video", "info": "Upload a file that matches the aspect ratio above. Takes priority over the link below." },
     { "type": "video_url", "id": "video_url", "label": "YouTube or Vimeo link", "accept": ["youtube", "vimeo"] },
+    { "type": "checkbox", "id": "autoplay", "label": "Autoplay, muted and looping (no controls)", "default": false, "info": "For short hero reels. Shopify-hosted video only." },
     { "type": "text", "id": "video_title", "label": "Accessible title", "default": "Video", "info": "Read by screen readers. Describe the video." },
     { "type": "checkbox", "id": "show_placeholder", "label": "Show placeholder frame when no video is set", "default": true, "info": "Turn off before launch if a video is not ready." },
     { "type": "header", "content": "Text beside the video (optional)" },

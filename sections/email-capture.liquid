@@ -1,24 +1,32 @@
 {%- comment -%}
-  Email capture via Shopify customer form. SMS consent and Klaviyo are handled by Klaviyo embeds, not custom code.
+  Email capture via Shopify customer form. SMS consent and Klaviyo are handled by Klaviyo embeds, not custom checkout code.
   Renders nothing unless a heading is set.
 {%- endcomment -%}
 {%- if section.settings.heading != blank -%}
-<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
-  <div class="container" style="max-width:720px;text-align:center">
-    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body, center: true -%}
-    {%- form 'customer', id: 'EmailCapture' -%}
-      <input type="hidden" name="contact[tags]" value="newsletter">
-      {%- if form.posted_successfully? -%}
-        <p class="form-message">{{ section.settings.success_text }}</p>
-      {%- else -%}
-        {%- if form.errors -%}<p class="form-message" role="alert">{{ form.errors | default_errors }}</p>{%- endif -%}
-        <div class="field" style="text-align:left">
-          <label for="EmailCapture-email">Email</label>
-          <input id="EmailCapture-email" type="email" name="contact[email]" autocomplete="email" required>
-        </div>
-        <div class="btn-row" style="justify-content:center"><button class="btn" type="submit">{{ section.settings.button_label }}</button></div>
-      {%- endif -%}
-    {%- endform -%}
+<section class="section--tight scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="newsletter">
+      <div>
+        {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2 style="font-size:clamp(1.7rem,3vw,2.4rem)">{{ section.settings.heading }}</h2>
+        {%- if section.settings.body != blank -%}<div style="margin-top:.9rem">{{ section.settings.body }}</div>{%- endif -%}
+      </div>
+      {%- form 'customer', id: 'EmailCapture' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        {%- if form.posted_successfully? -%}
+          <p class="form-message">{{ section.settings.success_text }}</p>
+        {%- else -%}
+          {%- if form.errors -%}<p class="form-message" role="alert">{{ form.errors | default_errors }}</p>{%- endif -%}
+          <div class="newsletter__form">
+            <div class="field">
+              <label for="EmailCapture-email" class="visually-hidden">Email</label>
+              <input id="EmailCapture-email" type="email" name="contact[email]" autocomplete="email" placeholder="{{ section.settings.placeholder }}" required>
+            </div>
+            <button class="btn" type="submit">{{ section.settings.button_label }}</button>
+          </div>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
   </div>
 </section>
 {%- endif -%}
@@ -27,10 +35,11 @@
 {
   "name": "Email capture",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "gold", "options": [{ "value": "gold", "label": "Gold band" }, { "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading", "info": "Empty = hidden." },
     { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "placeholder", "label": "Email placeholder", "default": "Enter your email address" },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Subscribe" },
     { "type": "text", "id": "success_text", "label": "Success message", "default": "Thank you." }
   ],

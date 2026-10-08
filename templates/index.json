@@ -1,35 +1,105 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero": {
       "type": "hero",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "",
+        "eyebrow": "Dermatologist founded",
         "heading": "Internal Skin Defense for Life in the Sun",
-        "body": "",
+        "body": "<p>Dermatologist-formulated supplements designed to support skin health and resilience from within.</p>",
         "primary_label": "Shop the System",
         "primary_url": "/products/sun-safe-system",
         "secondary_label": "Explore the Science",
         "secondary_url": "/pages/science",
         "image_alt": "",
-        "background_asset": "hero-banner-1.webp"
+        "background_asset": "hero-banner-1.webp",
+        "trust_line": "Dermatologist developed\nFounded by Dr. Mia Luna"
       }
     },
-    "category": {
-      "type": "category-statement",
+    "trust": {
+      "type": "trust-bar",
       "settings": {
-        "color_scheme": "light",
-        "eyebrow": "Our mission",
-        "statement": "To transform skin health from the inside out. We are guided by dermatological science and the philosophy that balance is a practice, not a destination."
+        "color_scheme": "beige"
+      },
+      "blocks": {
+        "t1": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "text": "Dermatologist developed"
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "text": "Founded by Dr. Mia Luna"
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "text": "Your purchase contributes to melanoma research"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    },
+    "system": {
+      "type": "product-system",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Protect. Balance. Restore.",
+        "heading": "The Alchemia MD Skin Defense System",
+        "body": "<p>Three targeted formulas. One complete daily system for skin health from within.</p>",
+        "bundle_product": "sun-safe-system",
+        "bundle_button_label": "Shop the System"
+      },
+      "blocks": {
+        "p1": {
+          "type": "product",
+          "settings": {
+            "product": "uv-shield",
+            "role": "Protect"
+          }
+        },
+        "p2": {
+          "type": "product",
+          "settings": {
+            "product": "skinbiotic",
+            "role": "Balance"
+          }
+        },
+        "p3": {
+          "type": "product",
+          "settings": {
+            "product": "dermaboost",
+            "role": "Restore"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ]
+    },
+    "statement": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "beige",
+        "align": "center",
+        "width": "narrow",
+        "heading": "Not traditional skincare. Not a generic supplement.",
+        "heading_tag": "h2",
+        "body": "<p>Alchemia MD creates dermatologist-formulated supplements designed to support skin health from within. Each formula is built for a specific role, helping simplify the daily supplement routine with targeted, multi-ingredient support.</p>",
+        "button_label": "Shop internal skin defense",
+        "button_url": "/products/sun-safe-system"
       }
     },
     "problem": {
@@ -81,87 +151,60 @@
         "body": "<p>Each formula translates Dr. Mia Luna's expertise into practical daily support for the skin's natural resilience.</p><p>The result is a purposeful routine that fits real life and helps people stay consistent with their long-term skin health.</p>"
       }
     },
-    "system": {
-      "type": "product-system",
-      "blocks": {
-        "p1": {
-          "type": "product",
-          "settings": {
-            "product": "uv-shield"
-          }
-        },
-        "p2": {
-          "type": "product",
-          "settings": {
-            "product": "skinbiotic"
-          }
-        },
-        "p3": {
-          "type": "product",
-          "settings": {
-            "product": "dermaboost"
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3"
-      ],
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "",
-        "body": "",
-        "link_label": "",
-        "link_url": ""
-      }
-    },
     "video": {
       "type": "video-slot",
       "settings": {
         "color_scheme": "dark",
+        "aspect": "16x9",
         "video": "shopify://files/videos/hf_20260503_005659_fe87e28d-6747-4371-9806-17accfc37fd7.mp4",
-        "video_url": "",
-        "video_title": "Video",
-        "show_placeholder": true,
-        "video_side": "right",
-        "eyebrow": "",
-        "heading": "",
-        "body": "",
-        "button_label": "",
-        "button_url": ""
+        "autoplay": true,
+        "video_title": "Alchemia MD",
+        "show_placeholder": true
       }
     },
     "lifestyle": {
       "type": "lifestyle-strip",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Life in the sun",
+        "heading": "Built for the way you live outdoors.",
+        "body": "<p>For long rounds, days on the water, court time, coastal travel, outdoor dining, and daily exposure.</p>"
+      },
       "blocks": {
         "s1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/back-lit-young-female-multiracial-tennis-players-w-2026-03-25-03-18-19-utc_Large_33af3979-5b4a-46c2-b954-2bdaed9743dc.jpg",
             "asset": "lifestyle-uvshield-dermaboost-tennis.webp",
-            "caption": ""
+            "label": "Tennis",
+            "caption": "Court time"
           }
         },
         "s2": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/family-sailing-at-sunset-on-luxury-boat-2026-03-27-00-33-51-utc_Large_d9a9c705-5243-4f08-b80c-a7a620ca8241.jpg",
             "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp",
-            "caption": ""
+            "label": "Yachting",
+            "caption": "Days on the water"
           }
         },
         "s3": {
           "type": "image",
           "settings": {
-            "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
-            "caption": ""
+            "image": "shopify://shop_images/silhouette-of-golfers-hit-sweeping-and-keep-golf-c-2026-03-19-02-22-18-utc_Large_602982b3-bc47-4fbb-a744-8ba4faa4f081.jpg",
+            "asset": "lifestyle-skinbiotic-cliffs.webp",
+            "label": "Golf",
+            "caption": "Long rounds"
           }
         },
         "s4": {
           "type": "image",
           "settings": {
-            "asset": "lifestyle-skinbiotic-cliffs.webp",
-            "caption": ""
+            "image": "shopify://shop_images/portrait-of-a-beautiful-woman-on-the-beach-at-suns-2026-03-25-06-30-52-utc_Large_88f1f284-5829-4cad-b407-ec1cdccd5ce2.jpg",
+            "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
+            "label": "Beach",
+            "caption": "Coastal travel"
           }
         }
       },
@@ -170,26 +213,84 @@
         "s2",
         "s3",
         "s4"
-      ],
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": ""
-      }
+      ]
     },
     "founder": {
       "type": "founder",
       "settings": {
         "color_scheme": "dark",
+        "image_side": "right",
         "image_asset": "founder-portrait.webp",
-        "image_alt": "Dr. Mia Luna",
-        "image_side": "left",
-        "eyebrow": "",
-        "heading": "Dr. Mia Luna",
-        "credentials": "Board-certified dermatologist",
-        "body": "<p>As someone who personally takes supplements, Dr. Luna began to consider the possibilities. What if the most beneficial ingredients for skin health could exist within one effective, convenient formula?</p>",
-        "link_label": "Meet Dr. Luna",
+        "eyebrow": "Dermatologist founded",
+        "heading": "Formulated by a dermatologist. Built from a personal mission.",
+        "credentials": "",
+        "body": "<p>Alchemia MD was founded by Dr. Mia Luna, a board-certified dermatologist whose commitment to skin health began after losing her mother to melanoma in childhood.</p><p>After years of clinical practice, Dr. Luna saw the same problem repeatedly: patients wanted natural, trustworthy ways to support their skin, but were left managing long lists of individual supplements.</p>",
+        "link_label": "Read Dr. Luna's story",
         "link_url": "/pages/founder"
+      }
+    },
+    "science": {
+      "type": "science-grid",
+      "settings": {
+        "color_scheme": "light",
+        "heading_tag": "h2",
+        "eyebrow": "Science and formulation",
+        "heading": "Formulated with purpose.",
+        "body": "<p>Every ingredient is selected for a specific role in supporting skin health, resilience, balance, or recovery.</p>"
+      },
+      "blocks": {
+        "c1": {
+          "type": "card",
+          "settings": {
+            "icon": "molecule",
+            "title": "Integrity",
+            "text": "Every ingredient is carefully chosen, based on a clear understanding of its purpose. Precise, intentional dosing ensures that every ingredient has a defined role."
+          }
+        },
+        "c2": {
+          "type": "card",
+          "settings": {
+            "icon": "layers",
+            "title": "Transparency",
+            "text": "Alchemia MD brings the same attentive care to its formulas that Dr. Luna brings to every patient. All ingredients are disclosed and each formula's purpose is explained in plain language."
+          }
+        },
+        "c3": {
+          "type": "card",
+          "settings": {
+            "icon": "cell",
+            "title": "Multi-ingredient formulas",
+            "text": "Designed to reduce supplement overload and simplify daily use."
+          }
+        },
+        "c4": {
+          "type": "card",
+          "settings": {
+            "icon": "shield",
+            "title": "Daily skin support",
+            "text": "Created for consistent use as part of a long-term skin health routine."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ]
+    },
+    "mission": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "band",
+        "align": "center",
+        "width": "narrow",
+        "eyebrow": "Mission",
+        "heading": "Every purchase supports a larger mission.",
+        "heading_tag": "h2",
+        "body": "<p>Your purchase contributes to melanoma research.</p>",
+        "button_label": "Learn about our mission",
+        "button_url": "/pages/founder"
       }
     },
     "final": {
@@ -197,34 +298,23 @@
       "settings": {
         "color_scheme": "green",
         "product": "sun-safe-system",
-        "eyebrow": "",
-        "heading": "",
-        "body": "",
+        "eyebrow": "Begin the routine",
         "button_label": "Shop the System"
-      }
-    },
-    "email": {
-      "type": "email-capture",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "",
-        "body": "",
-        "button_label": "Subscribe",
-        "success_text": "Thank you."
       }
     }
   },
   "order": [
     "hero",
-    "category",
+    "trust",
+    "system",
+    "statement",
     "problem",
     "solution",
-    "system",
     "video",
     "lifestyle",
     "founder",
-    "final",
-    "email"
+    "science",
+    "mission",
+    "final"
   ]
 }
