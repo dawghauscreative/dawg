@@ -477,3 +477,19 @@ body { letter-spacing: .01em; line-height: 1.7; }
 .password__foot { margin-top: 2rem; opacity: .75; }
 
 .price-placeholder { margin: 12px 0 0; padding: 10px 14px; border: 1px dashed var(--c-gold); color: var(--c-beige); }
+
+/* Content layer: description, facts panel, ingredient amounts, featured card */
+.desc-grid { display: grid; gap: 3rem; align-items: start; }
+@media (min-width: 990px) { .desc-grid { grid-template-columns: 1.15fr 1fr; gap: 5rem; } .desc-grid--single { grid-template-columns: minmax(0, 52rem); } }
+.desc-body p { margin: 0 0 1.1rem; }
+.desc-body strong { color: var(--fg); }
+.facts-panel { border: 1px solid var(--rule); background: var(--card, transparent); padding: 1.75rem 1.75rem 1.25rem; }
+.facts-panel h3 { margin: 0 0 1rem; font-size: 1.25rem; padding-bottom: .75rem; border-bottom: 1px solid var(--rule); }
+.facts-panel ul { list-style: none; margin: 0 0 1rem; padding: 0; }
+.facts-panel li { padding: .55rem 0; border-bottom: 1px solid color-mix(in srgb, var(--rule) 55%, transparent); }
+.facts-panel li:last-child { border-bottom: 0; }
+.facts-panel p { margin: 0 0 .75rem; }
+.ingredient__amount { font-family: var(--font-callout); letter-spacing: .06em; color: var(--accent); margin: .15rem 0 .6rem; font-size: .95rem; }
+.lib__title { margin: 0 0 1.5rem; display: flex; align-items: center; gap: .9rem; flex-wrap: wrap; }
+.lib__title a { color: inherit; }
+.pcard-wrap--featured .pcard { border-color: var(--c-gold); box-shadow: 0 0 0 1px var(--c-gold); }

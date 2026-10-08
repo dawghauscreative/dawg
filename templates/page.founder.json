@@ -7,7 +7,8 @@
         "image_asset": "founder-portrait.webp",
         "credentials": "Board-certified dermatologist",
         "eyebrow": "Founder",
-        "body": "<p>Alchemia MD was born from a deeply personal loss. As a child, Mia lost her mother to melanoma. It was a weight that no child should ever have to carry. Driven by the desire to help others avoid that same loss, she allowed grief to shape her purpose. She believed that, with the right education and preventative care, families could protect the time they have together. That unwavering truth guided her through medical school, and she became board-certified dermatologist, Dr. Mia Luna.</p><p>Throughout her years in practice, a few things became clear: patients were increasingly seeking natural options to support their skin health; she was writing the same list of supplements over and over; and there was no single solution that brought it all together.</p><p>As someone who personally takes supplements, Dr. Luna began to consider the possibilities. What if the most beneficial ingredients for skin health could exist within one effective, convenient formula?</p>"
+        "body": "<p>Alchemia MD was born from a deeply personal loss. As a child, Mia lost her mother to melanoma. It was a weight that no child should ever have to carry. Driven by the desire to help others avoid that same loss, she allowed grief to shape her purpose. She believed that, with the right education and preventative care, families could protect the time they have together. That unwavering truth guided her through medical school, and she became board-certified dermatologist, Dr. Mia Luna.</p><p>Throughout her years in practice, a few things became clear: patients were increasingly seeking natural options to support their skin health; she was writing the same list of supplements over and over; and there was no single solution that brought it all together.</p><p>As someone who personally takes supplements, Dr. Luna began to consider the possibilities. What if the most beneficial ingredients for skin health could exist within one effective, convenient formula?</p>",
+        "heading": "A dermatologist's mission beyond the clinic."
       }
     },
     "cta": {
@@ -44,10 +45,78 @@
         "eyebrow": "Our mission",
         "statement": "To transform skin health from the inside out. We are guided by dermatological science and the philosophy that balance is a practice, not a destination."
       }
+    },
+    "path": {
+      "type": "problem",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "Her path",
+        "heading": "From personal loss to a different way of thinking about skin.",
+        "body": ""
+      },
+      "blocks": {
+        "pt1": {
+          "type": "point",
+          "settings": {
+            "icon": "none",
+            "title": "01  Childhood",
+            "text": "As a child, Mia lost her mother to melanoma. That loss shaped her purpose."
+          }
+        },
+        "pt2": {
+          "type": "point",
+          "settings": {
+            "icon": "none",
+            "title": "02  Medicine",
+            "text": "She pursued medicine, driven by the belief that education and preventative care help families protect the time they have together."
+          }
+        },
+        "pt3": {
+          "type": "point",
+          "settings": {
+            "icon": "none",
+            "title": "03  Dermatology",
+            "text": "She became a board-certified dermatologist and built her clinical expertise."
+          }
+        },
+        "pt4": {
+          "type": "point",
+          "settings": {
+            "icon": "none",
+            "title": "04  The patient need",
+            "text": "In practice, patients kept asking for natural, evidence-informed ways to support their skin."
+          }
+        },
+        "pt5": {
+          "type": "point",
+          "settings": {
+            "icon": "none",
+            "title": "05  The idea",
+            "text": "Why were patients being handed lists of disconnected supplements instead of a coherent system?"
+          }
+        },
+        "pt6": {
+          "type": "point",
+          "settings": {
+            "icon": "none",
+            "title": "06  Alchemia MD",
+            "text": "A platform for dermatologist-led skin-health education and supplementation."
+          }
+        }
+      },
+      "block_order": [
+        "pt1",
+        "pt2",
+        "pt3",
+        "pt4",
+        "pt5",
+        "pt6"
+      ]
     }
   },
   "order": [
     "main",
+    "path",
     "category",
     "alchemy",
     "purpose",

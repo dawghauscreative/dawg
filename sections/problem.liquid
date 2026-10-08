@@ -5,7 +5,7 @@
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
     {%- if section.blocks.size > 0 -%}
-      <div class="cols cols--{% if section.blocks.size > 3 %}4{% elsif section.blocks.size == 2 %}2{% else %}3{% endif %}">
+      <div class="cols cols--{% if section.blocks.size == 6 %}3{% elsif section.blocks.size > 3 %}4{% elsif section.blocks.size == 2 %}2{% else %}3{% endif %}">
         {%- for block in section.blocks -%}
           <div class="benefit{% if block.settings.icon == 'none' and block.settings.title == blank %} benefit--quote{% endif %}" {{ block.shopify_attributes }}>
             {%- if block.settings.icon != 'none' -%}<span class="icon">{% render 'icon', name: block.settings.icon %}</span>{%- endif -%}

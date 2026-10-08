@@ -12,6 +12,7 @@
           {%- endif -%}
           {%- if ingredient.role.value != blank -%}<span class="ingredient__role">{{ ingredient.role.value }}</span>{%- endif -%}
           <h3>{{ ingredient.name.value }}</h3>
+          {%- if ingredient.amount.value != blank -%}<p class="ingredient__amount">{{ ingredient.amount.value }}</p>{%- endif -%}
           {%- if ingredient.description.value != blank -%}<p>{{ ingredient.description.value }}</p>{%- endif -%}
         </article>
       {%- endfor -%}

@@ -4,10 +4,10 @@
       "type": "hero",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Dermatologist founded",
+        "eyebrow": "Dermatologist-formulated skin health",
         "heading": "Internal Skin Defense for Life in the Sun",
-        "body": "<p>Dermatologist-formulated supplements designed to support skin health and resilience from within.</p>",
-        "primary_label": "Shop the System",
+        "body": "<p>Skin is a living system. Alchemia MD supports it from within with dermatologist-formulated supplements designed for protection, balance, and resilience.</p>",
+        "primary_label": "Shop the Sun Safe System",
         "primary_url": "/products/sun-safe-system",
         "secondary_label": "Explore the Science",
         "secondary_url": "/pages/science",
@@ -55,10 +55,8 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "Protect. Balance. Restore.",
-        "heading": "The Alchemia MD Skin Defense System",
-        "body": "<p>Three targeted formulas. One complete daily system for skin health from within.</p>",
-        "bundle_product": "sun-safe-system",
-        "bundle_button_label": "Shop the System"
+        "heading": "Three formulas. Three roles.",
+        "body": "<p>Each Alchemia MD formula is built around a defined role in supporting skin health from within.</p>"
       },
       "blocks": {
         "p1": {
@@ -95,11 +93,11 @@
         "color_scheme": "beige",
         "align": "center",
         "width": "narrow",
-        "heading": "Not traditional skincare. Not a generic supplement.",
+        "heading": "Skin Health Goes Deeper Than the Surface",
         "heading_tag": "h2",
-        "body": "<p>Alchemia MD creates dermatologist-formulated supplements designed to support skin health from within. Each formula is built for a specific role, helping simplify the daily supplement routine with targeted, multi-ingredient support.</p>",
-        "button_label": "Shop internal skin defense",
-        "button_url": "/products/sun-safe-system"
+        "body": "<p>Topical care protects the outside. Nutrition, microbiome health, antioxidant support, and internal balance influence the systems beneath it.</p><p>Alchemia MD brings dermatological thinking into daily supplementation.</p>",
+        "button_label": "What Is Internal Skin Defense?",
+        "button_url": "/pages/science"
       }
     },
     "problem": {
@@ -109,24 +107,24 @@
           "type": "point",
           "settings": {
             "icon": "none",
-            "title": "",
-            "text": "Patients were increasingly seeking natural options to support their skin health."
+            "title": "Too many bottles",
+            "text": "Consumers are left combining multiple individual supplements without a clear system."
           }
         },
         "pt2": {
           "type": "point",
           "settings": {
             "icon": "none",
-            "title": "",
-            "text": "She was writing the same list of supplements over and over."
+            "title": "Generic beauty formulas",
+            "text": "Most supplements are designed around broad beauty positioning rather than defined roles in skin health."
           }
         },
         "pt3": {
           "type": "point",
           "settings": {
             "icon": "none",
-            "title": "",
-            "text": "There was no single solution that brought it all together."
+            "title": "Too little clinical guidance",
+            "text": "People want evidence and transparency, not mystery blends and trend-driven claims."
           }
         }
       },
@@ -137,8 +135,8 @@
       ],
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "Why Alchemia MD began",
-        "heading": "Throughout her years in practice, a few things became clear:",
+        "eyebrow": "The problem",
+        "heading": "The supplement market makes skin health more complicated than it needs to be.",
         "body": ""
       }
     },
@@ -146,9 +144,9 @@
       "type": "solution",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Alchemia MD gives people a clear, trusted way to care for their skin from the inside out.",
-        "body": "<p>Each formula translates Dr. Mia Luna's expertise into practical daily support for the skin's natural resilience.</p><p>The result is a purposeful routine that fits real life and helps people stay consistent with their long-term skin health.</p>"
+        "eyebrow": "The solution",
+        "heading": "A more intentional way to support skin.",
+        "body": "<p><strong>Protect</strong> with UV Shield+. <strong>Balance</strong> with Skinbiotic+. <strong>Restore</strong> with Dermaboost+.</p><p>Three targeted formulas, each with a specific role. Use them individually, or combine them into a system based on your routine.</p>"
       }
     },
     "video": {
@@ -167,8 +165,8 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "Life in the sun",
-        "heading": "Built for the way you live outdoors.",
-        "body": "<p>For long rounds, days on the water, court time, coastal travel, outdoor dining, and daily exposure.</p>"
+        "heading": "Made for life outdoors.",
+        "body": "<p>Golf, tennis, sailing, beach days and travel. Alchemia MD is for people who live actively, with daily internal support alongside sunscreen and smart sun habits.</p>"
       },
       "blocks": {
         "s1": {
@@ -221,11 +219,11 @@
         "color_scheme": "dark",
         "image_side": "right",
         "image_asset": "founder-portrait.webp",
-        "eyebrow": "Dermatologist founded",
-        "heading": "Formulated by a dermatologist. Built from a personal mission.",
+        "eyebrow": "Founded by a dermatologist",
+        "heading": "From personal loss to a different way of thinking about skin.",
         "credentials": "",
-        "body": "<p>Alchemia MD was founded by Dr. Mia Luna, a board-certified dermatologist whose commitment to skin health began after losing her mother to melanoma in childhood.</p><p>After years of clinical practice, Dr. Luna saw the same problem repeatedly: patients wanted natural, trustworthy ways to support their skin, but were left managing long lists of individual supplements.</p>",
-        "link_label": "Read Dr. Luna's story",
+        "body": "<p>Dr. Mia Luna's path to dermatology began after losing her mother to melanoma as a child.</p><p>Years later, in practice, she repeatedly saw patients looking for trusted, natural ways to support their skin from within. Alchemia MD grew from that need.</p>",
+        "link_label": "Meet Dr. Mia Luna",
         "link_url": "/pages/founder"
       }
     },
@@ -234,41 +232,41 @@
       "settings": {
         "color_scheme": "light",
         "heading_tag": "h2",
-        "eyebrow": "Science and formulation",
-        "heading": "Formulated with purpose.",
-        "body": "<p>Every ingredient is selected for a specific role in supporting skin health, resilience, balance, or recovery.</p>"
+        "eyebrow": "The science",
+        "heading": "Every ingredient has a reason.",
+        "body": "<p>Explore how nutrition, antioxidant support, the microbiome and cellular renewal contribute to skin health.</p>"
       },
       "blocks": {
         "c1": {
           "type": "card",
           "settings": {
             "icon": "molecule",
-            "title": "Integrity",
-            "text": "Every ingredient is carefully chosen, based on a clear understanding of its purpose. Precise, intentional dosing ensures that every ingredient has a defined role."
+            "title": "Clinical evidence",
+            "text": "Ingredients are selected with published research in mind."
           }
         },
         "c2": {
           "type": "card",
           "settings": {
             "icon": "layers",
-            "title": "Transparency",
-            "text": "Alchemia MD brings the same attentive care to its formulas that Dr. Luna brings to every patient. All ingredients are disclosed and each formula's purpose is explained in plain language."
+            "title": "Transparent formulations",
+            "text": "Every ingredient and amount is listed on the label and on each product page."
           }
         },
         "c3": {
           "type": "card",
           "settings": {
             "icon": "cell",
-            "title": "Multi-ingredient formulas",
-            "text": "Designed to reduce supplement overload and simplify daily use."
+            "title": "Defined ingredient roles",
+            "text": "Each ingredient is chosen for a specific role in supporting skin health."
           }
         },
         "c4": {
           "type": "card",
           "settings": {
             "icon": "shield",
-            "title": "Daily skin support",
-            "text": "Created for consistent use as part of a long-term skin health routine."
+            "title": "Dermatologist-led formulation",
+            "text": "Developed under the guidance of board-certified dermatologist Dr. Mia Luna."
           }
         }
       },
@@ -299,17 +297,69 @@
         "color_scheme": "green",
         "product": "sun-safe-system",
         "eyebrow": "Begin the routine",
-        "button_label": "Shop the System"
+        "button_label": "Explore the Sun Safe System",
+        "heading": "Start with the Sun Safe System.",
+        "body": "<p>Two dermatologist-formulated products designed to support skin exposed to life outdoors and the internal systems connected to skin health.</p>"
       }
+    },
+    "systems": {
+      "type": "product-system",
+      "settings": {
+        "color_scheme": "green",
+        "columns": "4",
+        "eyebrow": "Systems",
+        "heading": "Build the routine that fits your skin.",
+        "body": "<p>Find the level of internal skin support that fits your routine.</p>",
+        "link_label": "Compare all systems",
+        "link_url": "/collections/bundles"
+      },
+      "blocks": {
+        "s1": {
+          "type": "product",
+          "settings": {
+            "product": "sun-safe-system",
+            "role": "Protect + Balance",
+            "featured": true
+          }
+        },
+        "s2": {
+          "type": "product",
+          "settings": {
+            "product": "skin-recovery-system",
+            "role": "Balance + Restore"
+          }
+        },
+        "s3": {
+          "type": "product",
+          "settings": {
+            "product": "sun-resilience-system",
+            "role": "Protect + Restore"
+          }
+        },
+        "s4": {
+          "type": "product",
+          "settings": {
+            "product": "complete-skin-defense-system",
+            "role": "Protect + Balance + Restore"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
     }
   },
   "order": [
     "hero",
     "trust",
-    "system",
     "statement",
     "problem",
     "solution",
+    "system",
+    "systems",
     "video",
     "lifestyle",
     "founder",

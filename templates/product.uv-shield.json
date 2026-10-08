@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -95,7 +86,63 @@
     },
     "faq": {
       "type": "pdp-faq",
-      "settings": {}
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Questions",
+        "heading": "Frequently asked questions"
+      },
+      "blocks": {
+        "q1": {
+          "type": "item",
+          "settings": {
+            "question": "How does UV Shield+ fit with sunscreen?",
+            "answer": "UV Shield+ is made to be used alongside your sunscreen, protective clothing and shade. It is not a sunscreen and does not replace sun protection."
+          }
+        },
+        "q2": {
+          "type": "item",
+          "settings": {
+            "question": "How do I take UV Shield+?",
+            "answer": "Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water."
+          }
+        },
+        "q3": {
+          "type": "item",
+          "settings": {
+            "question": "How long does one bottle last?",
+            "answer": "One bottle lasts 30 days at the daily serving and 15 days at the enhanced serving."
+          }
+        },
+        "q4": {
+          "type": "item",
+          "settings": {
+            "question": "What is in UV Shield+?",
+            "answer": "Each serving (2 capsules) contains niacin (as niacinamide), Polypodium leucotomos, EGCG from green tea leaf extract, spirulina and trans-resveratrol. The full Supplement Facts are on this page."
+          }
+        },
+        "q5": {
+          "type": "item",
+          "settings": {
+            "question": "Who is UV Shield+ designed for?",
+            "answer": "People who spend time outdoors, such as golfers, tennis players, boaters, beachgoers, travelers and outdoor athletes."
+          }
+        },
+        "q6": {
+          "type": "item",
+          "settings": {
+            "question": "Should I check with my healthcare professional first?",
+            "answer": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ]
     },
     "compliance": {
       "type": "compliance-notice",
@@ -104,11 +151,16 @@
     "video": {
       "type": "video-slot",
       "settings": {}
+    },
+    "description": {
+      "type": "pdp-description",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "definition",
+    "description",
     "video",
     "benefits",
     "ingredients",

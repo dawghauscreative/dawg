@@ -1,0 +1,65 @@
+{%- comment -%}
+  Product description from the Shopify product (Admin > Products > Description). Nothing is written here.
+  - Internal HTML comments are stripped so notes never reach the page source.
+  - The opening bold line (it repeats the tagline) is dropped.
+  - A "Supplement Facts" block in the description is lifted into its own panel. Directions, caution and the FDA
+    statement stay in the description store-side but are shown by their own theme sections, so they are cut here.
+{%- endcomment -%}
+{%- liquid
+  assign segs = product.description | split: '<!--'
+  assign clean = segs[0]
+  for seg in segs offset: 1
+    assign tail = seg | split: '-->' | last
+    assign clean = clean | append: tail
+  endfor
+
+  assign pieces = clean | split: '<h3>'
+  assign intro = pieces[0]
+  assign facts = ''
+  for piece in pieces offset: 1
+    if piece contains 'Supplement Facts</h3>'
+      assign facts = piece | remove: 'Supplement Facts</h3>'
+    endif
+  endfor
+
+  assign desc_heading = section.settings.heading | default: product.title
+  assign paras = intro | split: '</p>'
+  assign body = ''
+  for para in paras offset: 1
+    if para contains '<p'
+      assign body = body | append: para | append: '</p>'
+    endif
+  endfor
+-%}
+{%- if body != blank -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <div class="desc-grid{% if facts == blank %} desc-grid--single{% endif %}">
+      <div>
+        {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: desc_heading -%}
+        <div class="prose desc-body">{{ body }}</div>
+      </div>
+      {%- if facts != blank -%}
+        <aside class="facts-panel" aria-label="Supplement Facts">
+          <h3>Supplement Facts</h3>
+          <div class="prose">{{ facts }}</div>
+        </aside>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+{%- elsif request.design_mode -%}
+<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] The product description is empty and hidden. Add it in Shopify admin.</div></section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product description",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "About this formula" },
+    { "type": "text", "id": "heading", "label": "Heading", "info": "Blank = product title." }
+  ],
+  "presets": [{ "name": "Product description" }]
+}
+{% endschema %}

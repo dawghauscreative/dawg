@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -103,7 +94,55 @@
     },
     "faq": {
       "type": "pdp-faq",
-      "settings": {}
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Questions",
+        "heading": "Frequently asked questions"
+      },
+      "blocks": {
+        "q1": {
+          "type": "item",
+          "settings": {
+            "question": "What is included in the Sun Resilience System?",
+            "answer": "One UV Shield+ (60 capsules) and one Dermaboost+ (60 capsules)."
+          }
+        },
+        "q2": {
+          "type": "item",
+          "settings": {
+            "question": "Why combine these two formulas?",
+            "answer": "UV Shield+ and Dermaboost+ overlap in antioxidant support: UV Shield+ is aimed at skin exposed to the environment, and Dermaboost+ adds immune-supportive nutrition for skin resilience.†"
+          }
+        },
+        "q3": {
+          "type": "item",
+          "settings": {
+            "question": "How do I take the products in this system?",
+            "answer": "Take each product as directed on its label. The directions for both are shown on this page."
+          }
+        },
+        "q4": {
+          "type": "item",
+          "settings": {
+            "question": "How does the system fit with sunscreen?",
+            "answer": "UV Shield+ is made to be used alongside your sunscreen, protective clothing and shade. It is not a sunscreen and does not replace sun protection."
+          }
+        },
+        "q5": {
+          "type": "item",
+          "settings": {
+            "question": "Should I check with my healthcare professional first?",
+            "answer": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ]
     },
     "compliance": {
       "type": "compliance-notice",
@@ -112,11 +151,16 @@
     "video": {
       "type": "video-slot",
       "settings": {}
+    },
+    "description": {
+      "type": "pdp-description",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "definition",
+    "description",
     "video",
     "steps",
     "value",

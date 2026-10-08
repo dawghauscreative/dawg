@@ -74,3 +74,20 @@ Home flow: hero, trust strip, product system + bundle panel, statement, problem,
 Media comes from the store's own Files via `shopify://shop_images/...` and `shopify://files/videos/...` (golf, tennis, sailing and beach photos; the `hf_20260503_005659...mp4` reel). Bundled theme assets are the fallback if a file reference does not resolve.
 Not carried over on purpose: "Natural" and "Gluten-free" (unverified), outcome wording such as "Protection for every round", the percentage-of-proceeds line and the "save up to 20%" cart note (figures), the sunscreen Q&As that tripped the block list, the cart drawer and quick add (Supr owns the buy box).
 `headline_weight` (Theme settings > Typography) switches headlines between Regular and Semibold/Bold.
+
+## Content layer (all copy needs counsel review before publishing)
+
+Sources: Blueprint V2 (home, systems, FAQ, science, founder structure), printed labels (Supplement Facts amounts, taglines, directions, caution), the products' own Shopify descriptions. The internal research PDF was NOT used for consumer copy (it carries disease-specific and outcome language). No figures, no Tier 2 links, no manufacturer name.
+
+Store data written through the connector (editable in Shopify admin, not in the theme):
+- 20 `ingredient` metaobjects (name, amount per label, role, short descriptive line) attached to UV Shield+, Skinbiotic+ and Dermaboost+ via `custom.ingredients`. The definition gained an `amount` field.
+- `custom.definition` and `custom.benefits` on all 7 products; new `custom.summary` (card line) on all 7; SEO title/description on all 7; Systems / Individual Products / All Products collection descriptions (the "Bundles" collection is now titled "Systems", handle unchanged).
+
+Theme: new `pdp-description` section renders each product's Shopify description (intro text plus a Supplement Facts panel; internal HTML comments are stripped so notes never reach page source), `ingredient-library` section for the Science page, ingredient amounts on cards, card summary line, 4-up "Systems" row on the home page, product FAQs on all 7 PDPs, FAQ page grouped by topic, Science page sections 1-7, founder path.
+
+Open items found while writing content (decide before launch):
+1. Skinbiotic+ description states "30 billion CFU". The label Supplement Facts shows a 215 mg blend with no CFU line, so that figure is unverified. Remove it or confirm.
+2. The Skinbiotic+, Skin Recovery and Complete System descriptions carry internal notes (open questions 8.2 and 8.5) about a physician-guidance caution for people on immunosuppressant medication. Still unresolved. Use the `custom.compliance_slot` metafield once wording is approved; nothing was invented.
+3. "Clinical evidence" is a card title on the home page (from the blueprint). Counsel to confirm wording.
+4. Not built (no approved articles or images): home "Education" guide row, blog articles, Life-in-the-Sun tiles for running, cycling and travel, Tier 1 citations, FAQ categories for Subscriptions billing and Shipping.
+5. Blueprint V2 lists a different palette (Gold #C9A96E, Evergreen #1A2E1F, Beige #F5F0E8) and fonts (Cormorant Garamond display, BC Novatica body) than Brand Guidelines V1. Theme still uses V1 and current fonts; fonts are on hold per Reyshan.
