@@ -1,0 +1,54 @@
+<section class="sci-hero scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container sci-hero__grid">
+    <div class="sci-hero__copy">
+      {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h1>{{ section.settings.heading }}</h1>
+      <div class="lede prose">{{ section.settings.body }}</div>
+      <div class="btn-row">
+        {%- if section.settings.primary_label != blank -%}<a class="btn" href="{{ section.settings.primary_url | default: '#' }}">{{ section.settings.primary_label }}</a>{%- endif -%}
+        {%- if section.settings.secondary_label != blank -%}<a class="btn btn--outline" href="{{ section.settings.secondary_url | default: '#' }}">{{ section.settings.secondary_label }}</a>{%- endif -%}
+      </div>
+      {%- if section.settings.trust_line != blank -%}<p class="trust-line sci-hero__trust">{{ section.settings.trust_line }}</p>{%- endif -%}
+    </div>
+    <div class="sci-hero__art" aria-hidden="true">
+      {%- if section.settings.image != blank -%}
+        {% render 'responsive-image', image: section.settings.image, ratio: '4x5', sizes: '(min-width: 990px) 40vw, 100vw', loading: 'eager', alt: '' %}
+      {%- else -%}
+        <svg viewBox="0 0 520 560" fill="none" xmlns="http://www.w3.org/2000/svg" class="sci-art">
+          <g stroke="var(--c-gold)" stroke-width="14" opacity=".09"><circle cx="260" cy="280" r="214"/><path d="M36 280h448"/></g>
+          <g stroke="var(--c-gold)" stroke-width="1.2">
+            <circle cx="260" cy="280" r="176" opacity=".55"/>
+            <circle cx="260" cy="280" r="128" opacity=".35"/>
+            <circle cx="260" cy="280" r="56" opacity=".8" fill="var(--c-gold)" fill-opacity=".08"/>
+            <path d="M110 170 190 110 300 95 395 160 430 270 390 390 300 455 190 440 110 360 85 260Z" opacity=".5"/>
+            <path d="M110 170 200 230 190 340 110 360M190 110 200 230 320 210 300 95M395 160 320 210 300 330 390 390M430 270 320 210M300 455 300 330 190 340 190 440M85 260 200 230" opacity=".35"/>
+          </g>
+          <g fill="var(--c-gold)">
+            <circle cx="110" cy="170" r="5"/><circle cx="190" cy="110" r="4"/><circle cx="300" cy="95" r="6"/><circle cx="395" cy="160" r="4"/><circle cx="430" cy="270" r="6"/>
+            <circle cx="390" cy="390" r="4"/><circle cx="300" cy="455" r="5"/><circle cx="190" cy="440" r="4"/><circle cx="110" cy="360" r="6"/><circle cx="85" cy="260" r="4"/>
+            <circle cx="200" cy="230" r="3.5" opacity=".8"/><circle cx="320" cy="210" r="3.5" opacity=".8"/><circle cx="300" cy="330" r="3.5" opacity=".8"/><circle cx="190" cy="340" r="3.5" opacity=".8"/>
+          </g>
+        </svg>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Science hero",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "primary_label", "label": "Primary button label" },
+    { "type": "url", "id": "primary_url", "label": "Primary button link" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary button label" },
+    { "type": "url", "id": "secondary_url", "label": "Secondary button link" },
+    { "type": "text", "id": "trust_line", "label": "Trust line" },
+    { "type": "image_picker", "id": "image", "label": "Image (optional)", "info": "Replaces the built-in abstract cell graphic. Microscopic or abstract imagery, no bottles." }
+  ],
+  "presets": [{ "name": "Science hero" }]
+}
+{% endschema %}

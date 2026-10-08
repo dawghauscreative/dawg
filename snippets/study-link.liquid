@@ -1,0 +1,9 @@
+{%- comment -%}
+  Public citation link to a research_study metaobject. Renders nothing unless the study is marked
+  "Approved for public display". Usage: {% render 'study-link', handle: 'study-handle', label: 'optional' %}
+{%- endcomment -%}
+{%- assign st = shop.metaobjects.research_study[handle] -%}
+{%- if st != blank and st.public_approved.value == true and st.pubmed_url.value != blank -%}
+  {%- assign link_text = label | default: st.title.value -%}
+  <a class="study-link" href="{{ st.pubmed_url.value }}" rel="noopener" target="_blank">{{ link_text }} <span aria-hidden="true">&nearr;</span></a>
+{%- endif -%}

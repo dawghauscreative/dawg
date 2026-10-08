@@ -1,0 +1,52 @@
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="sci-map">
+      <svg class="sci-venn" viewBox="0 0 520 470" role="img" aria-label="Three overlapping circles: Protect, Balance and Restore" fill="none">
+        <g stroke="var(--c-gold)" stroke-width="1.5">
+          <circle cx="260" cy="160" r="120" fill="var(--c-gold)" fill-opacity=".09"/>
+          <circle cx="175" cy="300" r="120" fill="var(--c-gold)" fill-opacity=".09"/>
+          <circle cx="345" cy="300" r="120" fill="var(--c-gold)" fill-opacity=".09"/>
+        </g>
+        <g fill="currentColor" font-family="var(--font-display)" text-anchor="middle">
+          <text x="260" y="108" font-size="26">Protect</text>
+          <text x="260" y="134" font-size="13" font-family="var(--font-body)" letter-spacing="2" opacity=".75">UV SHIELD+</text>
+          <text x="120" y="330" font-size="26">Balance</text>
+          <text x="120" y="356" font-size="13" font-family="var(--font-body)" letter-spacing="2" opacity=".75">SKINBIOTIC+</text>
+          <text x="400" y="330" font-size="26">Restore</text>
+          <text x="400" y="356" font-size="13" font-family="var(--font-body)" letter-spacing="2" opacity=".75">DERMABOOST+</text>
+          <text x="260" y="262" font-size="14" font-family="var(--font-body)" letter-spacing="2" opacity=".8">ONE</text>
+          <text x="260" y="282" font-size="14" font-family="var(--font-body)" letter-spacing="2" opacity=".8">SYSTEM</text>
+        </g>
+      </svg>
+      <div class="sci-map__pairs">
+        {%- for block in section.blocks -%}
+          <article class="sci-pair" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title }}</h3>
+            {%- if block.settings.subtitle != blank -%}<p class="sci-pair__sub">{{ block.settings.subtitle }}</p>{%- endif -%}
+            <div class="prose">{{ block.settings.text }}</div>
+          </article>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- if section.settings.caption != blank -%}<p class="sci-caption">{{ section.settings.caption }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Science system map",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "textarea", "id": "caption", "label": "Caption" }
+  ],
+  "blocks": [
+    { "type": "pair", "name": "Pairing", "settings": [{ "type": "text", "id": "title", "label": "Title" }, { "type": "text", "id": "subtitle", "label": "Subtitle" }, { "type": "richtext", "id": "text", "label": "Text" }] }
+  ],
+  "max_blocks": 5,
+  "presets": [{ "name": "Science system map" }]
+}
+{% endschema %}

@@ -1,205 +1,694 @@
 {
   "sections": {
-    "main": {
-      "type": "science-grid",
+    "hero": {
+      "type": "science-hero",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Dermatological science, from within",
+        "heading": "The Science of Internal Skin Health",
+        "body": "<p>Skin is not an isolated surface. It is a living organ influenced by nutrition, environmental exposure, immune signaling, oxidative stress, the intestinal microbiome, and the integrity of its own barrier.</p><p>Alchemia MD formulates around those interconnected systems.</p><p>Every ingredient is selected for a defined purpose and evaluated against published research. The goal is not to replace topical skincare or sun protection. It is to add evidence-informed nutritional support to a complete skin-health routine.</p>",
+        "primary_label": "Explore the research",
+        "primary_url": "#research",
+        "secondary_label": "Meet the formulas",
+        "secondary_url": "/collections/individual-products",
+        "trust_line": "Dermatologist-formulated · Ingredient-transparent · Research-informed"
+      }
+    },
+    "standard": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Our standard",
+        "heading": "Research first. Claims second.",
+        "columns": "4",
+        "show_images": false,
+        "body": "<p>Not all scientific evidence is equal. Alchemia MD evaluates ingredients using the totality of available research, with greater weight given to controlled human studies and systematic reviews than to laboratory or animal findings.</p>",
+        "note": "<p><strong>Ingredient research is not the same as finished-product clinical testing.</strong> Research presented on this page describes published studies on individual ingredients or biological pathways. Unless specifically stated otherwise, these studies were not conducted on Alchemia MD finished products.</p>",
+        "anchor": "research"
+      },
       "blocks": {
-        "c1": {
+        "b1": {
           "type": "card",
           "settings": {
-            "icon": "molecule",
-            "title": "Integrity",
-            "text": "Every ingredient is carefully chosen, based on a clear understanding of its purpose. Precise, intentional dosing ensures that every ingredient has a defined role."
+            "number": "01",
+            "title": "Human clinical research",
+            "text": "<p>Randomized controlled trials and other controlled human studies provide the most directly relevant evidence for how an ingredient may behave in people.</p>"
           }
         },
-        "c2": {
+        "b2": {
           "type": "card",
           "settings": {
-            "icon": "layers",
-            "title": "Transparency",
-            "text": "Alchemia MD brings the same attentive care to its formulas that Dr. Luna brings to every patient. All ingredients are disclosed and each formula's purpose is explained in plain language."
+            "number": "02",
+            "title": "Systematic reviews",
+            "text": "<p>Reviews and meta-analyses help determine whether findings remain consistent across multiple studies.</p>"
           }
         },
-        "c3": {
+        "b3": {
           "type": "card",
           "settings": {
-            "icon": "cell",
-            "title": "Multi-ingredient formulas",
-            "text": "Designed to reduce supplement overload and simplify daily use."
+            "number": "03",
+            "title": "Mechanistic research",
+            "text": "<p>Cellular and biochemical studies help explain how an ingredient may influence pathways involved in skin barrier function, oxidative stress, microbiome signaling, or other biological processes.</p>"
           }
         },
-        "c4": {
+        "b4": {
+          "type": "card",
+          "settings": {
+            "number": "04",
+            "title": "Emerging evidence",
+            "text": "<p>Promising early research is described as exactly that: promising, but not definitive.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "foundations": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "The biology",
+        "heading": "Skin health is a system.",
+        "columns": "4",
+        "show_images": true
+      },
+      "blocks": {
+        "b1": {
           "type": "card",
           "settings": {
             "icon": "shield",
-            "title": "Daily skin support",
-            "text": "Created for consistent use as part of a long-term skin health routine."
+            "title": "Environmental stress",
+            "text": "<p>UV and other environmental exposures can influence oxidative stress and cellular responses in skin.</p><p>Research on ingredients such as nicotinamide and Polypodium leucotomos has examined biological responses to UV exposure in human volunteers.</p>",
+            "tag": "UV-response biology",
+            "study": "yiasemides-nicotinamide-2009"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "icon": "layers",
+            "title": "Skin barrier",
+            "text": "<p>The outer skin barrier depends heavily on lipids including ceramides, free fatty acids, and cholesterol.</p><p>Experimental research has shown that nicotinamide can increase synthesis of several of these lipids in keratinocytes.</p>",
+            "tag": "Epidermal barrier biology",
+            "study": "tanno-nicotinamide-barrier-2000"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "icon": "cell",
+            "title": "Gut–skin axis",
+            "text": "<p>The intestine and skin communicate through microbial metabolites, immune signaling, barrier integrity, and other systemic pathways.</p><p>The gut-skin axis is an active area of research, although the clinical effects of probiotics remain strain- and formulation-specific.</p>",
+            "tag": "Microbiome and skin communication",
+            "study": "szanto-gut-skin-2019"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "icon": "molecule",
+            "title": "Antioxidant and nutritional support",
+            "text": "<p>Different antioxidants and micronutrients act through different biological mechanisms.</p><p>Rather than relying on one compound, Alchemia MD formulas combine ingredients selected to provide complementary nutritional and biochemical roles.</p>",
+            "tag": "Multi-pathway support"
           }
         }
       },
       "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4"
-      ],
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "uv": {
+      "type": "science-formula",
       "settings": {
         "color_scheme": "dark",
-        "heading_tag": "h1",
-        "eyebrow": "The science",
-        "heading": "The science behind skin health from within.",
-        "body": "<p>Dermatology does not end at the surface. Explore how nutrition, antioxidant pathways, the microbiome and cellular renewal contribute to skin health.</p>"
-      }
-    },
-    "system": {
-      "type": "product-system",
+        "role": "Protect",
+        "heading": "UV Shield+",
+        "subhead": "Nutritional support for skin exposed to life outdoors.",
+        "intro": "<p>UV Shield+ combines five ingredients selected around different aspects of environmental and oxidative-stress biology.</p><p>The formulation rationale is coverage of several different biological pathways, rather than one single proven ingredient pair.</p>",
+        "ingredients": "Niacinamide\nPolypodium leucotomos\nTrans-resveratrol\nGreen tea polyphenols / EGCG\nSpirulina",
+        "product": "uv-shield",
+        "image": "shopify://shop_images/uv-shield-2-five-actives.png",
+        "image_alt": "UV Shield+ five actives",
+        "image_caption": "Ingredient slide",
+        "note": "<p>Research presented here describes studies on individual ingredients, not on UV Shield+ as a finished product. UV Shield+ is not a sunscreen and does not replace sun protection.</p>"
+      },
       "blocks": {
-        "p1": {
-          "type": "product",
+        "b1": {
+          "type": "research_card",
           "settings": {
-            "product": "uv-shield"
+            "name": "Niacinamide",
+            "subtitle": "Vitamin B3",
+            "evidence": "Human study + mechanistic research",
+            "why": "<p>Nicotinamide takes part in cellular energy metabolism and has been studied in relation to UV-response biology and skin barrier function.</p>",
+            "shows": "<p>A randomized, double-blind crossover study in healthy volunteers found that oral nicotinamide reduced UV-induced suppression of a measured skin immune response at the doses studied.</p><p>Separate laboratory and topical research found that nicotinamide increased synthesis of ceramides, free fatty acids, and cholesterol involved in epidermal barrier function.</p>",
+            "context": "<p>The barrier-lipid study included cell-culture and topical application research. It is not proof that oral UV Shield+ produces the same effect.</p>",
+            "studies": "yiasemides-nicotinamide-2009, tanno-nicotinamide-barrier-2000"
           }
         },
-        "p2": {
-          "type": "product",
+        "b2": {
+          "type": "research_card",
           "settings": {
-            "product": "skinbiotic"
+            "name": "Polypodium leucotomos",
+            "subtitle": "Fern-derived botanical extract",
+            "evidence": "Human clinical research",
+            "why": "<p>Polypodium leucotomos has been studied as an oral botanical in relation to skin responses to ultraviolet exposure.</p>",
+            "shows": "<p>In a randomized, double-blind, placebo-controlled study of healthy adults, oral Polypodium leucotomos was evaluated for UV-response endpoints over the study period.</p><p>Earlier human research also evaluated oral Polypodium leucotomos in experimentally UV-exposed skin, and newer controlled studies have continued to investigate it in healthy volunteers.</p>",
+            "studies": "nestor-polypodium-rct, middelkamp-hup-polypodium, faisal-uva-2026"
           }
         },
-        "p3": {
-          "type": "product",
+        "b3": {
+          "type": "research_card",
           "settings": {
-            "product": "dermaboost"
+            "name": "Trans-resveratrol",
+            "subtitle": "Polyphenol",
+            "evidence": "Human clinical research",
+            "why": "<p>Resveratrol is a polyphenol studied for antioxidant, cellular-signaling, and skin-related effects.</p>",
+            "shows": "<p>A randomized, placebo-controlled study in women aged 40 and older evaluated oral and topical trans-resveratrol over eight weeks and measured several skin parameters, including moisture, elasticity and sebum.</p>",
+            "context": "<p>The dose and study design differ from UV Shield+. It supports ingredient rationale rather than establishing finished-product efficacy.</p>",
+            "studies": "rao-resveratrol-2025"
+          }
+        },
+        "b4": {
+          "type": "research_card",
+          "settings": {
+            "name": "Green tea polyphenols / EGCG",
+            "subtitle": "Catechins",
+            "evidence": "Human clinical research: mixed",
+            "mixed": true,
+            "why": "<p>Green tea catechins have antioxidant properties and have been studied in connection with skin exposed to environmental stress.</p>",
+            "shows_label": "Research context",
+            "shows": "<p>Human research on oral green tea polyphenols has produced mixed results. A two-year randomized placebo-controlled study found some interim changes in selected clinical parameters but did not find oral green tea polyphenols superior to placebo for overall clinical or histologic photoaging outcomes after 24 months.</p>",
+            "language": "We include mixed and null findings on purpose.",
+            "studies": "green-tea-two-year-trial"
+          }
+        },
+        "b5": {
+          "type": "research_card",
+          "settings": {
+            "name": "Spirulina",
+            "subtitle": "Blue-green algae",
+            "evidence": "Emerging / preclinical",
+            "why": "<p>Spirulina contains proteins, minerals, carotenoids, and phycocyanin, and contributes a different nutritional and antioxidant profile from the formula's polyphenols.</p>",
+            "language": "Included for its nutritional and antioxidant profile while human skin-specific research continues to develop."
           }
         }
       },
       "block_order": [
-        "p1",
-        "p2",
-        "p3"
-      ],
-      "settings": {
-        "heading": "Three formulas. Three roles.",
-        "color_scheme": "dark",
-        "eyebrow": "Protect. Balance. Restore."
-      }
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
     },
-    "statement": {
-      "type": "rich-text",
+    "skin": {
+      "type": "science-formula",
+      "settings": {
+        "color_scheme": "light",
+        "role": "Balance",
+        "heading": "Skinbiotic+",
+        "subhead": "Synbiotic support built around the gut–skin connection.",
+        "intro": "<p>Skinbiotic+ pairs a fermentable prebiotic with multiple microbial strains.</p><p>The formulation rationale is the prebiotic and probiotic pairing, and the complementary ecological roles of different organisms.</p>",
+        "ingredients": "Organic inulin\nLactobacillus plantarum\nBifidobacterium lactis\nLactobacillus rhamnosus\nBifidobacterium bifidum\nAkkermansia muciniphila",
+        "product": "skinbiotic",
+        "image": "shopify://shop_images/sk09.png",
+        "image_alt": "What's inside Skinbiotic+",
+        "image_caption": "Ingredient slide",
+        "feature_title": "What is the gut–skin axis?",
+        "feature_body": "<p>The gut-skin axis describes communication between the intestinal environment and the skin through pathways that can include microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support, but probiotic outcomes cannot be generalized across every strain or every product. Reviews consistently emphasize variability between organisms, populations, doses, and clinical endpoints.</p>",
+        "feature_studies": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019",
+        "feature_image": "shopify://shop_images/sk10.png",
+        "feature_show_frame": true,
+        "note": "<p>Research presented here describes studies on individual strains and ingredients, not on Skinbiotic+ as a finished product.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "research_card",
+          "settings": {
+            "name": "Inulin",
+            "subtitle": "Prebiotic fiber",
+            "evidence": "Established prebiotic biology",
+            "why": "<p>Inulin is a fermentable carbohydrate that can serve as food for certain intestinal microorganisms. Its role in Skinbiotic+ is foundational: it forms the prebiotic side of a synbiotic formulation.</p>"
+          }
+        },
+        "b2": {
+          "type": "research_card",
+          "settings": {
+            "name": "Lactobacillus plantarum",
+            "subtitle": "Probiotic strain",
+            "evidence": "Human clinical research: strain-specific",
+            "why": "<p>Different strains of the same species can behave differently.</p>",
+            "shows": "<p>A randomized, double-blind, placebo-controlled trial involving 110 adults evaluated Lactobacillus plantarum HY7714 for 12 weeks and reported changes in several measured skin parameters.</p>",
+            "context": "<p>This evidence is specific to the HY7714 strain. It does not prove identical outcomes for every L. plantarum strain.</p>",
+            "studies": "lee-hy7714-2015"
+          }
+        },
+        "b3": {
+          "type": "research_card",
+          "settings": {
+            "name": "Lactobacillus and Bifidobacterium species",
+            "subtitle": "Probiotic strains",
+            "evidence": "Review-level evidence",
+            "why": "<p>Different microorganisms occupy different ecological niches and produce different metabolites. The formula rationale is broader microbiome support rather than assuming every species provides the same function.</p>",
+            "shows_label": "Research context",
+            "shows": "<p>Clinical reviews of probiotic interventions in dermatology point to potential effects through gut-skin signaling, but repeatedly note substantial heterogeneity across strains, formulations, study populations, and outcomes.</p>",
+            "studies": "gao-probiotics-gut-skin-2023, probiotic-clinical-review-2026"
+          }
+        },
+        "b4": {
+          "type": "research_card",
+          "settings": {
+            "name": "Akkermansia muciniphila",
+            "subtitle": "Next-generation probiotic",
+            "evidence": "Emerging",
+            "why": "<p>Akkermansia is an emerging microbiome organism studied extensively in intestinal barrier and metabolic biology. Its skin-specific evidence is primarily emerging and preclinical.</p>",
+            "language": "Included as a next-generation microbiome component while human skin-specific research continues to develop."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "derma": {
+      "type": "science-formula",
+      "settings": {
+        "color_scheme": "green",
+        "role": "Restore",
+        "heading": "Dermaboost+",
+        "subhead": "Multi-nutrient support for antioxidant, immune, and skin-resilience pathways.",
+        "intro": "<p>Dermaboost+ brings together eight ingredients with complementary roles.</p><p>The formulation rationale describes several plausible complementary relationships, such as quercetin with curcumin, quercetin with vitamin C, and vitamin C with zinc. These are complementary mechanisms, not proven clinical synergy of the finished formula.</p>",
+        "ingredients": "Niacinamide\nVitamin D3\nVitamin C\nZinc\nQuercetin\nOptimized curcumin\nOlive leaf extract\nAstaxanthin",
+        "product": "dermaboost",
+        "image": "shopify://shop_images/dermaboost-2-inside.png",
+        "image_alt": "What's inside Dermaboost+",
+        "image_caption": "Ingredient slide",
+        "note": "<p>Research presented here describes studies on individual ingredients, not on Dermaboost+ as a finished product.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "research_card",
+          "settings": {
+            "name": "Astaxanthin",
+            "subtitle": "Carotenoid",
+            "evidence": "Systematic review + human clinical research",
+            "why": "<p>Astaxanthin is a carotenoid studied for antioxidant activity and skin-related endpoints.</p>",
+            "shows": "<p>A systematic review and meta-analysis of randomized human studies found significant pooled effects for moisture and elasticity, while the effect on wrinkle depth was not statistically significant compared with placebo.</p><p>A separate randomized controlled study evaluated oral astaxanthin during a 16-week period of seasonal environmental stress.</p>",
+            "studies": "zhou-astaxanthin-meta-analysis-2021, tominaga-astaxanthin-2017"
+          }
+        },
+        "b2": {
+          "type": "research_card",
+          "settings": {
+            "name": "Curcumin",
+            "subtitle": "Optimized extract",
+            "evidence": "Human pharmacokinetic research",
+            "why": "<p>Curcumin has been widely investigated for its effects on cellular signaling and oxidative-stress pathways. The formulation uses an optimized form because conventional curcumin has limited oral bioavailability.</p>",
+            "shows_label": "Research context",
+            "shows": "<p>Published pharmacokinetic reviews have compared enhanced-bioavailability curcumin preparations with conventional curcumin. Claims about bioavailability should remain formulation-specific and measured rather than assumed.</p>",
+            "studies": "jamwal-curcumin-pk-review, curcumin-independent-pk"
+          }
+        },
+        "b3": {
+          "type": "research_card",
+          "settings": {
+            "name": "Vitamin C + zinc",
+            "subtitle": "Essential nutrients",
+            "evidence": "Established nutritional physiology",
+            "why": "<p>These are essential nutrients with established physiological roles. Vitamin C participates in collagen biosynthesis and antioxidant systems. Zinc acts as a cofactor for numerous enzymes and contributes to normal immune and cellular functions.</p>"
+          }
+        },
+        "b4": {
+          "type": "research_card",
+          "settings": {
+            "name": "Quercetin",
+            "subtitle": "Plant flavonoid",
+            "evidence": "Human pharmacokinetics + mechanistic research",
+            "why": "<p>Quercetin is a plant flavonoid studied for antioxidant and cellular-signaling properties.</p>",
+            "shows_label": "Research context",
+            "shows": "<p>Human pharmacokinetic studies confirm oral absorption of quercetin-containing preparations, while much of the skin-specific mechanistic rationale remains derived from laboratory research.</p>",
+            "studies": "quercetin-human-pk"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "systems": {
+      "type": "science-system-map",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Systems",
+        "heading": "Different pathways. One skin-health system.",
+        "body": "<p>The strongest formulation argument is not that one ingredient does everything. It is the opposite: different ingredients and products address different parts of a larger biological system.</p>",
+        "caption": "This systems model represents formulation rationale. It does not mean the combination itself has been studied in human trials as an Alchemia MD finished-product regimen."
+      },
+      "blocks": {
+        "b1": {
+          "type": "pair",
+          "settings": {
+            "title": "UV Shield+ + Skinbiotic+",
+            "subtitle": "Environmental + microbiome",
+            "text": "<p>The two formulas operate through different upstream mechanisms: one emphasizes environmental and oxidative-stress pathways, the other targets the intestinal microbial environment. Complementary support from two different biological directions.</p>"
+          }
+        },
+        "b2": {
+          "type": "pair",
+          "settings": {
+            "title": "UV Shield+ + Dermaboost+",
+            "subtitle": "Environmental + systemic nutritional support",
+            "text": "<p>These formulas share antioxidant-related ingredients but use different ingredient combinations and pathway emphasis. This is the most prominent two-product overlap in oxidative-stress and immune-response biology.</p>"
+          }
+        },
+        "b3": {
+          "type": "pair",
+          "settings": {
+            "title": "Skinbiotic+ + Dermaboost+",
+            "subtitle": "Microbiome + nutritional support",
+            "text": "<p>Skinbiotic+ is oriented toward the gut and microbial interface, while Dermaboost+ contains nutrients and plant compounds selected around broader antioxidant and immune-support pathways.</p>"
+          }
+        },
+        "b4": {
+          "type": "pair",
+          "settings": {
+            "title": "All three: Protect. Balance. Restore.",
+            "subtitle": "The complete system",
+            "text": "<p>The complete system spans environmental stress, the intestinal microbiome, and systemic oxidative and immune pathways, with overlap between formulas rather than identical roles.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "spotlight": {
+      "type": "science-spotlight",
       "settings": {
         "color_scheme": "beige",
-        "align": "center",
-        "width": "narrow",
-        "heading": "Formulation logic before ingredient hype.",
-        "heading_tag": "h2",
-        "body": "<p>Every ingredient should serve a clear role in supporting skin health, resilience, balance, or recovery.</p>",
-        "eyebrow": "07 Formula philosophy"
+        "eyebrow": "Research spotlight",
+        "heading": "Research worth reading.",
+        "show_images": true
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "study": "nestor-polypodium-rct",
+            "kicker": "Human UV biology",
+            "headline": "Oral Polypodium leucotomos in healthy adults",
+            "text": "Randomized, placebo-controlled research examining UV-response endpoints."
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "study": "faisal-uva-2026",
+            "kicker": "New research: 2026",
+            "headline": "Nicotinamide and Polypodium leucotomos after UVA exposure",
+            "text": "Randomized intraindividual human trial."
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "study": "tanno-nicotinamide-barrier-2000",
+            "kicker": "Skin barrier biology",
+            "headline": "Nicotinamide and epidermal barrier lipids",
+            "text": "Mechanistic research involving ceramide and other lipid synthesis."
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "study": "gao-probiotics-gut-skin-2023",
+            "kicker": "Gut–skin axis",
+            "headline": "The role of probiotics in skin health",
+            "text": "Review covering microbiome-skin communication and probiotic research."
+          }
+        },
+        "b5": {
+          "type": "card",
+          "settings": {
+            "study": "lee-hy7714-2015",
+            "kicker": "Probiotic clinical research",
+            "headline": "Lactobacillus plantarum HY7714",
+            "text": "Randomized, double-blind, placebo-controlled human study."
+          }
+        },
+        "b6": {
+          "type": "card",
+          "settings": {
+            "study": "zhou-astaxanthin-meta-analysis-2021",
+            "kicker": "Astaxanthin",
+            "headline": "Systematic review and meta-analysis",
+            "text": "Evaluation of randomized human research examining skin-ageing parameters."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    "table": {
+      "type": "science-evidence-table",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Transparency",
+        "heading": "What we know, and what we don't.",
+        "legend": "Dots show the maturity of the evidence, not the effect of any Alchemia MD product."
+      },
+      "blocks": {
+        "b1": {
+          "type": "row",
+          "settings": {
+            "area": "Nicotinamide",
+            "evidence": "Human + mechanistic",
+            "level": "3",
+            "interpretation": "Strong ingredient-level rationale; study dose and endpoint matter."
+          }
+        },
+        "b2": {
+          "type": "row",
+          "settings": {
+            "area": "Polypodium leucotomos",
+            "evidence": "Multiple human UV studies",
+            "level": "3",
+            "interpretation": "Meaningful human evidence for UV-response endpoints."
+          }
+        },
+        "b3": {
+          "type": "row",
+          "settings": {
+            "area": "Resveratrol",
+            "evidence": "Human + mechanistic",
+            "level": "3",
+            "interpretation": "Promising skin research; formulation and dose vary."
+          }
+        },
+        "b4": {
+          "type": "row",
+          "settings": {
+            "area": "Green tea polyphenols",
+            "evidence": "Human + mechanistic",
+            "level": "2",
+            "interpretation": "Biologically interesting; human results are mixed."
+          }
+        },
+        "b5": {
+          "type": "row",
+          "settings": {
+            "area": "Spirulina",
+            "evidence": "Primarily preclinical for skin",
+            "level": "1",
+            "interpretation": "Emerging, not definitive."
+          }
+        },
+        "b6": {
+          "type": "row",
+          "settings": {
+            "area": "Gut–skin axis",
+            "evidence": "Growing human + mechanistic literature",
+            "level": "2",
+            "interpretation": "Strong biological rationale; clinical results remain strain-specific."
+          }
+        },
+        "b7": {
+          "type": "row",
+          "settings": {
+            "area": "L. plantarum",
+            "evidence": "Strain-specific human trials",
+            "level": "2",
+            "interpretation": "Cannot generalize one strain's results to all strains."
+          }
+        },
+        "b8": {
+          "type": "row",
+          "settings": {
+            "area": "Akkermansia",
+            "evidence": "Emerging / largely preclinical for skin",
+            "level": "1",
+            "interpretation": "Promising area requiring more human research."
+          }
+        },
+        "b9": {
+          "type": "row",
+          "settings": {
+            "area": "Astaxanthin",
+            "evidence": "RCTs + meta-analysis",
+            "level": "3",
+            "interpretation": "Human evidence exists for selected measured skin parameters."
+          }
+        },
+        "b10": {
+          "type": "row",
+          "settings": {
+            "area": "Curcumin",
+            "evidence": "Extensive mechanistic + pharmacokinetic evidence",
+            "level": "2",
+            "interpretation": "Bioavailability and formulation materially matter."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10"
+      ]
+    },
+    "boundaries": {
+      "type": "science-boundaries",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Transparency",
+        "heading": "Good science has boundaries.",
+        "not_items": "A supplement can stand in for sunscreen.\nTaking a supplement makes prolonged sun exposure safe.\nEvery ingredient study proves the same result at every dose.\nResearch on one probiotic strain automatically applies to another.\nA study of an isolated ingredient proves the finished formula produces the same outcome.\nLaboratory findings are equivalent to randomized human trials.\nSupplements are intended to diagnose, treat, cure, or prevent any disease.",
+        "does_text": "<p>There is published science supporting the biological rationale behind the ingredients and pathways used in Alchemia MD formulations.</p><p>That is the level at which this page makes the case.</p>"
+      }
+    },
+    "sunscreen": {
+      "type": "science-sunscreen",
+      "settings": {
+        "color_scheme": "green",
+        "heading": "Internal support is one layer.",
+        "body": "<p>Alchemia MD is designed to complement, not replace, a complete sun-safety routine.</p>",
+        "items": "Broad-spectrum sunscreen\nProtective clothing\nShade\nHats and sunglasses\nAppropriate reapplication\nRoutine dermatologic care",
+        "callout": "A supplement is not sun protection."
+      }
+    },
+    "library": {
+      "type": "science-library",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Research library",
+        "heading": "Every study we cite.",
+        "body": "<p>Filter by topic or search by ingredient. Studies describe individual ingredients or biological pathways, not Alchemia MD finished products.</p>"
+      }
+    },
+    "philosophy": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Formulation philosophy",
+        "heading": "Why we formulate in systems.",
+        "columns": "4",
+        "show_images": false
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "number": "01",
+            "title": "Different biological roles",
+            "text": "<p>No single ingredient governs skin health.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "number": "02",
+            "title": "Complementary mechanisms",
+            "text": "<p>Ingredients are selected to provide different nutritional or biological functions rather than simply increasing the number on the label.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "number": "03",
+            "title": "Defined formulas",
+            "text": "<p><strong>UV Shield+: Protect.</strong> Environmental and antioxidant support.</p><p><strong>Skinbiotic+: Balance.</strong> Microbiome and gut-skin support.</p><p><strong>Dermaboost+: Restore.</strong> Antioxidant, nutritional, and immune support.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "number": "04",
+            "title": "Full transparency",
+            "text": "<p>You should know what is in a formula and why it is there.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "mia": {
+      "type": "founder",
+      "settings": {
+        "color_scheme": "dark",
+        "image_side": "left",
+        "image_asset": "founder-portrait.webp",
+        "eyebrow": "Dermatologist-led",
+        "heading": "Science should make skin health easier to understand, not harder.",
+        "body": "<p>The purpose of Alchemia MD is not to overwhelm people with studies. It is to take what we know about skin biology, nutrition, and prevention and translate it into a routine people can actually understand and follow.</p>",
+        "link_label": "Meet Dr. Mia Luna",
+        "link_url": "/pages/founder"
       }
     },
     "cta": {
       "type": "final-cta",
       "settings": {
         "color_scheme": "band",
-        "product": "sun-safe-system",
-        "eyebrow": "Begin the routine",
-        "button_label": "Shop the System"
+        "eyebrow": "Next step",
+        "heading": "Build your internal skin health routine.",
+        "body": "<p>Understand what each formula is designed to support and choose the level of support that fits your routine.</p>",
+        "button_label": "Explore the products",
+        "button_url": "/collections/individual-products",
+        "secondary_label": "Explore the systems",
+        "secondary_url": "/collections/bundles",
+        "note": "Alchemia MD supplements complement, but do not replace, sunscreen, appropriate sun-protective behavior, or professional medical care."
       }
-    },
-    "living": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "beige",
-        "align": "left",
-        "width": "narrow",
-        "eyebrow": "01",
-        "heading": "Skin is a living system.",
-        "heading_tag": "h2",
-        "body": "<p>Skin is a living organ that renews itself continuously. What you eat, how you live and the environment you move through all shape how it looks and feels. Alchemia MD approaches skin health as a daily practice rather than a one-time effort.</p>"
-      }
-    },
-    "environment": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "dark",
-        "align": "left",
-        "width": "narrow",
-        "eyebrow": "02",
-        "heading": "Environmental stress.",
-        "heading_tag": "h2",
-        "body": "<p>Sun, wind, travel and daily life place steady demands on skin. Topical care and sun protection remain essential. Internal nutritional support is one more layer of a thoughtful routine, never a replacement for sun protection.</p>"
-      }
-    },
-    "antioxidant": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "light",
-        "align": "left",
-        "width": "narrow",
-        "eyebrow": "03",
-        "heading": "Antioxidant support.",
-        "heading_tag": "h2",
-        "body": "<p>Antioxidants are compounds that help neutralize free radicals, which the body produces naturally and which are also generated by environmental exposure. Several Alchemia MD ingredients, including vitamin C, EGCG, trans-resveratrol and astaxanthin, are valued for their antioxidant properties.</p>"
-      }
-    },
-    "gut": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "green",
-        "align": "left",
-        "width": "narrow",
-        "eyebrow": "04",
-        "heading": "The gut-skin axis.",
-        "heading_tag": "h2",
-        "body": "<p>Researchers study how the gut microbiome and the skin influence one another. Skinbiotic+ is a synbiotic, pairing a prebiotic fiber with probiotic strains, designed around that connection.</p>"
-      }
-    },
-    "immune": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "dark",
-        "align": "left",
-        "width": "narrow",
-        "eyebrow": "05",
-        "heading": "Immune balance.",
-        "heading_tag": "h2",
-        "body": "<p>The immune system plays a role in how skin looks and feels. Dermaboost+ pairs nutrients that contribute to normal immune function, such as vitamin D and zinc, with antioxidants.</p>"
-      }
-    },
-    "library": {
-      "type": "ingredient-library",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "06",
-        "heading": "The ingredient library.",
-        "body": "<p>Every ingredient and amount, exactly as it appears on the label.</p>"
-      },
-      "blocks": {
-        "l1": {
-          "type": "product",
-          "settings": {
-            "product": "uv-shield",
-            "role": "Protect"
-          }
-        },
-        "l2": {
-          "type": "product",
-          "settings": {
-            "product": "skinbiotic",
-            "role": "Balance"
-          }
-        },
-        "l3": {
-          "type": "product",
-          "settings": {
-            "product": "dermaboost",
-            "role": "Restore"
-          }
-        }
-      },
-      "block_order": [
-        "l1",
-        "l2",
-        "l3"
-      ]
     },
     "compliance": {
       "type": "compliance-notice",
@@ -207,15 +696,20 @@
     }
   },
   "order": [
-    "main",
-    "living",
-    "environment",
-    "antioxidant",
-    "gut",
-    "immune",
+    "hero",
+    "standard",
+    "foundations",
+    "uv",
+    "skin",
+    "derma",
+    "systems",
+    "spotlight",
+    "table",
+    "boundaries",
+    "sunscreen",
     "library",
-    "statement",
-    "system",
+    "philosophy",
+    "mia",
     "cta",
     "compliance"
   ]

@@ -1,0 +1,65 @@
+{%- comment -%}
+  Generic numbered / icon card grid for the Science page (evidence standard, four foundations, formulation philosophy).
+  Cards can carry an optional image (placeholder frame when "Show image frames" is on) and one optional citation.
+{%- endcomment -%}
+{%- if section.blocks.size > 0 -%}
+<section class="section scheme-{{ section.settings.color_scheme }}"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="cols cols--auto4 sci-cards sci-cards--{{ section.settings.columns }}">
+      {%- for block in section.blocks -%}
+        <article class="sci-card" {{ block.shopify_attributes }}>
+          {%- if section.settings.show_images -%}
+            {% render 'responsive-image', image: block.settings.image, ratio: '3x2', sizes: '(min-width: 990px) 25vw, 100vw', alt: block.settings.title %}
+          {%- endif -%}
+          <div class="sci-card__body">
+            {%- if block.settings.number != blank -%}<span class="sci-card__num">{{ block.settings.number }}</span>{%- endif -%}
+            {%- if block.settings.icon != 'none' -%}<span class="icon">{% render 'icon', name: block.settings.icon %}</span>{%- endif -%}
+            <h3>{{ block.settings.title }}</h3>
+            <div class="sci-card__text">{{ block.settings.text }}</div>
+            {%- if block.settings.tag != blank -%}<p class="sci-card__tag"><span>Research area</span> {{ block.settings.tag }}</p>{%- endif -%}
+            {%- if block.settings.study != blank -%}
+              {%- assign study_handle = block.settings.study | strip -%}
+              {% render 'study-link', handle: study_handle, label: 'Read the research' %}
+            {%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.note != blank -%}<div class="sci-note prose">{{ section.settings.note }}</div>{%- endif -%}
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Science cards",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }, { "value": "beige", "label": "Warm beige" }] },
+    { "type": "text", "id": "anchor", "label": "Anchor id (optional)", "info": "Lets a button link to this section, e.g. research." },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "select", "id": "columns", "label": "Cards per row (desktop)", "default": "4", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }] },
+    { "type": "checkbox", "id": "show_images", "label": "Show image frames", "default": false, "info": "Shows an image on each card. Cards without an image show a placeholder frame." },
+    { "type": "richtext", "id": "note", "label": "Bottom note" }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Number (optional)" },
+        { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [{ "value": "none", "label": "None" }, { "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "richtext", "id": "text", "label": "Text" },
+        { "type": "text", "id": "tag", "label": "Research area tag" },
+        { "type": "text", "id": "study", "label": "Citation (study handle)", "info": "Handle of a Research study entry. Shows only when that study is approved for public display." },
+        { "type": "image_picker", "id": "image", "label": "Image" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Science cards", "blocks": [{ "type": "card" }, { "type": "card" }, { "type": "card" }, { "type": "card" }] }]
+}
+{% endschema %}

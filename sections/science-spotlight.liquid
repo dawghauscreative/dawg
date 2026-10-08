@@ -1,0 +1,51 @@
+{%- comment -%} Editorial cards for featured research. A card whose study is not approved for public display is skipped. {%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="cols cols--3 sci-spot">
+      {%- for block in section.blocks -%}
+        {%- assign handle = block.settings.study | strip -%}
+        {%- assign st = shop.metaobjects.research_study[handle] -%}
+        {%- if st != blank and st.public_approved.value == true -%}
+          <article class="sci-spotcard" {{ block.shopify_attributes }}>
+            {%- if section.settings.show_images -%}{% render 'responsive-image', image: block.settings.image, ratio: '3x2', sizes: '(min-width: 990px) 30vw, 100vw', alt: block.settings.headline %}{%- endif -%}
+            <div class="sci-spotcard__body">
+              <span class="eyebrow">{{ block.settings.kicker }}</span>
+              <h3>{{ block.settings.headline }}</h3>
+              <p>{{ block.settings.text }}</p>
+              {% render 'study-link', handle: handle, label: 'Read on PubMed' %}
+            </div>
+          </article>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Research spotlight",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }, { "value": "beige", "label": "Warm beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "checkbox", "id": "show_images", "label": "Show image frames", "default": true }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Spotlight card",
+      "settings": [
+        { "type": "text", "id": "study", "label": "Study handle" },
+        { "type": "text", "id": "kicker", "label": "Kicker" },
+        { "type": "text", "id": "headline", "label": "Headline" },
+        { "type": "textarea", "id": "text", "label": "Short description" },
+        { "type": "image_picker", "id": "image", "label": "Image" }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [{ "name": "Research spotlight" }]
+}
+{% endschema %}

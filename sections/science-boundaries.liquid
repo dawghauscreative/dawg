@@ -1,0 +1,33 @@
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="sci-bounds">
+      <div class="sci-bounds__col">
+        <h3>{{ section.settings.not_heading }}</h3>
+        {%- assign items = section.settings.not_items | newline_to_br | split: '<br />' -%}
+        <ul class="sci-x">{%- for item in items -%}{%- assign item_text = item | strip -%}{%- if item_text != blank -%}<li>{{ item_text }}</li>{%- endif -%}{%- endfor -%}</ul>
+      </div>
+      <div class="sci-bounds__col sci-bounds__col--does">
+        <h3>{{ section.settings.does_heading }}</h3>
+        <div class="prose">{{ section.settings.does_text }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Science boundaries",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "not_heading", "label": "Left heading", "default": "These studies do not mean:" },
+    { "type": "textarea", "id": "not_items", "label": "Left list (one per line)" },
+    { "type": "text", "id": "does_heading", "label": "Right heading", "default": "What they do mean:" },
+    { "type": "richtext", "id": "does_text", "label": "Right text" }
+  ],
+  "presets": [{ "name": "Science boundaries" }]
+}
+{% endschema %}

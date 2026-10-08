@@ -108,3 +108,34 @@
     }
   }
 })();
+
+/* Research library: filter chips + search (no network, filters the rendered list) */
+(function () {
+  document.querySelectorAll('[data-library]').forEach(function (lib) {
+    var chips = lib.querySelectorAll('[data-filter]');
+    var entries = lib.querySelectorAll('.sci-entry');
+    var search = lib.querySelector('[data-search]');
+    var empty = lib.querySelector('[data-empty]');
+    var active = 'all';
+    function apply() {
+      var q = (search && search.value || '').toLowerCase().trim();
+      var shown = 0;
+      entries.forEach(function (el) {
+        var cats = (el.getAttribute('data-cats') || '').split('|');
+        var okCat = active === 'all' || cats.indexOf(active) !== -1;
+        var okText = !q || (el.getAttribute('data-text') || '').indexOf(q) !== -1;
+        el.hidden = !(okCat && okText);
+        if (!el.hidden) shown++;
+      });
+      if (empty) empty.hidden = shown !== 0;
+    }
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        active = chip.getAttribute('data-filter');
+        chips.forEach(function (c) { var on = c === chip; c.classList.toggle('is-active', on); c.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+        apply();
+      });
+    });
+    if (search) search.addEventListener('input', apply);
+  });
+})();
