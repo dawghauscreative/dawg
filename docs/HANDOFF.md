@@ -16,14 +16,16 @@ No theme was created in the store by this build. Either connect this branch with
 Colours: Black `#141414`, Charcoal `#212121`, Emerald `#132D22`, Evergreen `#2D3D2D`, Gold `#C18C31`, Beige `#DEBC8C`, Gray `#AFAFAF`, White. All are Theme settings.
 Schemes per section: Black, Evergreen-family (uses Emerald for contrast with gold text), White, Beige. Body copy is Gray on dark, per the guide.
 Type: headlines BC Novatica (kit serves 400/700, so semibold renders 700, never all caps), body **Dejanire Text**, callouts Roboto tracked caps.
-**Action:** add Dejanire Text to the Adobe Fonts kit `qza3lbn` and confirm its CSS family name in Theme settings > Typography. Until then body falls back to Georgia.
+**Fonts on hold** (see Known gaps). Current fonts stay as they are; body falls back to Georgia until the Adobe kit carries the body font.
 
 ## Buy box rules (Supr owns it)
 
 - `sections/pdp-main.liquid` posts a plain HTML form to `/cart/add`. No JS add-to-cart, no hand-built payload, no `selling_plan` input, no quantity input, no dynamic checkout.
 - Sticky bar is a scroll-to-buy-box link ("Choose your plan"), never an add-to-cart.
 - Cards (home, collection, search, cross-sell) link to the product page and have no add-to-cart.
-- Staging-only: Theme settings > Product pages > "basic Supply selector". Leave OFF in production.
+- **One default variant per product. No "Supply" variants** (Shopify stock is tracked per variant, so a 3-Month variant would not deduct real bottle counts).
+- The four purchase options are configured by Reyshan in the Supr dashboard, not in the theme: Monthly Subscription (default, qty 1, selling plan), 3-Month Subscription (Supr 90-day plan, "+5% 3-Month Bonus" badge, pending Supr confirmation), One-Time 3-Month Supply (same variant, qty 3, no selling plan, price from an automatic Shopify quantity discount to be created after final pricing), One-Time Single Supply (qty 1, no selling plan). The theme only keeps the widget inside the `/cart/add` form with the app embed ON.
+- Until the quantity discount exists, `show_three_month_placeholder` (Theme settings > Product pages, default ON) shows a clearly marked placeholder under the buy box. Turn it OFF when the discount is live. Prices are provisional; none are hard-coded.
 - Prices are read from Shopify data. Nothing is hard-coded: no prices, percentages, savings or variant IDs.
 - The base price block (`show_base_price`) is OFF by default because Supr's widget shows pricing.
 
@@ -51,14 +53,17 @@ Not in the brief's metafield list: `custom.tier1_citations` (the brief refers to
 
 ## Known gaps (see the build notes for owners)
 
-- Products currently have a single "Default Title" variant. The brief calls for "Single Supply" / "3-Month Supply" (option "Supply") before Supr offers are configured.
-- Navigation is built from the fixed product handles, so no menu needs creating. Footer and legal links point at `/pages/terms`, `/pages/privacy`, `/pages/refund`, `/pages/shipping`, `/pages/subscription-terms`, `/pages/sms-terms`. Create those pages with the `page.legal` template once content exists.
+- Products keep their single "Default Title" variant by decision (see Buy box rules). Do not add Supply variants.
+- Navigation is built from the fixed product handles, so no menu needs creating. Footer legal links point at the store policies (`/policies/terms-of-service`, `privacy-policy`, `refund-policy`) plus draft pages `/pages/shipping`, `/pages/subscription-terms`, `/pages/sms-terms` (unpublished, empty, `page.legal` template: publish once counsel supplies text) and `/pages/data-sharing-opt-out`.
+- Fonts are on HOLD: keep the current setup. The brand guide says Dejanire Text for body; the locked decision was BC Novatica CYR plus Cormorant Garamond. Reyshan is confirming which is right. Do not change fonts until told.
+- Reviews: Judge.me is skipped for now (no reviews yet; post-launch). The Reviews section renders nothing until an app block is added.
+- Old HOME, SYSTEM, ABOUT and "Copy of HOME" pages are left untouched. Reyshan removes them after the new theme is live and nothing links to them.
 - No 301 redirects needed: the site has never been live.
 - Customer account templates are not included (new customer accounts assumed). A branded password page is included (`layout/password.liquid`, `templates/password.json`).
 
 ## Copy check (docs/check-banned.sh)
 
-Run `docs/check-banned.sh . ~/.alchemia-private-banned.txt` before handoff. The private manufacturer-name list lives outside the repo; `docs/private-banned.TEMPLATE.txt` shows the format.
+Run `docs/check-banned.sh . ~/.alchemia-private-banned.txt` before handoff. Reyshan creates the private manufacturer-name list herself, outside the repo; the manufacturer name never goes in the repo; `docs/private-banned.TEMPLATE.txt` shows the format.
 BLOCK hits that remain by design are code identifiers and editor-only labels for the hidden offer (`show_guarantee`, `guarantee-badge`, `guarantee_*` settings). They never render while the switch is off. Add them to `ALLOW` in the script if a clean exit code is wanted.
 REVIEW hits to keep checking by hand: the label-verified melanoma line, the founder story, "board-certified".
 

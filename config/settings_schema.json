@@ -396,10 +396,16 @@
       },
       {
         "type": "checkbox",
-        "id": "buybox_fallback",
-        "label": "Staging only: show a basic Supply selector",
-        "default": false,
-        "info": "Only for testing before Supr offers are configured. Leave OFF in production. Supr owns the buy box. This never touches selling plans."
+        "id": "show_three_month_placeholder",
+        "label": "Show provisional-price note under the buy box",
+        "default": true,
+        "info": "Clearly marked placeholder for the One-Time 3-Month Supply price, whose automatic Shopify quantity discount does not exist yet. Turn OFF once the discount is live. Prices are provisional."
+      },
+      {
+        "type": "textarea",
+        "id": "three_month_placeholder_text",
+        "label": "Provisional-price note text",
+        "default": "[PLACEHOLDER] One-Time 3-Month Supply price pending final pricing. Prices shown are provisional."
       }
     ]
   },

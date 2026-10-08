@@ -6,6 +6,8 @@
   - The widget sits INSIDE the form that posts to /cart/add. This form is a normal HTML form post:
     no JS add-to-cart, no hand-built payload. The whole form (including any selling plan Supr adds) goes with it.
   - We never write a selling_plan input. We never render a quantity input or a custom subscription picker.
+  - Each product keeps ONE default variant (no "Supply" variants: stock is tracked per variant). The four options
+    (Monthly, 3-Month subscription, One-Time 3-Month qty 3, One-Time Single) are configured in the Supr dashboard.
   - No dynamic checkout / Buy it now button.
   - Supr's "Subscriptions + Bundles" app block, if added in the editor, is rendered inside the form.
   - The Supr app embed (Theme editor > App embeds) must be ON for this theme.
@@ -78,21 +80,8 @@
               <div class="buy-box" id="buy-box" {{ block.shopify_attributes }}>
                 {%- form 'product', product, id: form_id, class: 'buy-form', novalidate: 'novalidate' -%}
                   <input type="hidden" name="product-id" value="{{ product.id }}">
-                  {%- if settings.buybox_fallback -%}
-                    {%- comment -%} Staging only. Plain variant radios. No selling plans. {%- endcomment -%}
-                    <fieldset class="fallback-supply">
-                      <legend class="visually-hidden">Supply</legend>
-                      {%- for variant in product.variants -%}
-                        <label>
-                          <input type="radio" name="id" value="{{ variant.id }}" {% if variant == current_variant %}checked{% endif %} {% unless variant.available %}disabled{% endunless %}>
-                          <span>{{ variant.title }}</span>
-                          <span>{% render 'price', variant: variant %}</span>
-                        </label>
-                      {%- endfor -%}
-                    </fieldset>
-                  {%- else -%}
-                    <input type="hidden" name="id" value="{{ current_variant.id }}">
-                  {%- endif -%}
+                  {%- comment -%} One default variant per product. Supr's widget supplies the plan/quantity choices; this input is only the variant it posts. {%- endcomment -%}
+                  <input type="hidden" name="id" value="{{ current_variant.id }}">
 
                   {%- comment -%} Supr app block(s), if placed in the theme editor, render inside the form. {%- endcomment -%}
                   {%- for app_block in section.blocks -%}
@@ -104,6 +93,9 @@
                   </button>
                   {%- comment -%} Dynamic checkout buttons are intentionally NOT rendered on product pages. {%- endcomment -%}
                 {%- endform -%}
+                {%- if settings.show_three_month_placeholder and settings.three_month_placeholder_text != blank -%}
+                  <p class="price-placeholder small" role="note">{{ settings.three_month_placeholder_text }}</p>
+                {%- endif -%}
                 {%- render 'guarantee-badge', style: 'line' -%}
               </div>
 

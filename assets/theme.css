@@ -208,9 +208,6 @@ p { margin: 0; }
 .buy-box { border-top: 1px solid var(--rule); padding-top: 1.5rem; scroll-margin-top: calc(var(--header-h) + 24px); }
 .buy-box form > * + * { margin-top: 1rem; }
 .buy-box .btn--block { margin-top: 1.25rem; }
-.fallback-supply { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
-.fallback-supply label { display: flex; justify-content: space-between; gap: 12px; border: 1px solid var(--rule); padding: 14px 16px; cursor: pointer; }
-.fallback-supply input:checked + span { color: var(--c-gold); }
 .expectation { border-left: 1px solid var(--c-gold); padding-left: 16px; font-size: .95rem; opacity: .92; }
 .trust-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 16px 0; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; text-align: center; }
 .trust-bar > * { display: grid; justify-items: center; gap: 8px; }
@@ -478,3 +475,5 @@ body { letter-spacing: .01em; line-height: 1.7; }
 .password__form input[type="password"] { flex: 1 1 14rem; min-height: 3rem; padding: 0 1rem; background: transparent; border: 1px solid var(--c-gray); color: inherit; font: inherit; border-radius: 0; }
 .password__form .form-error { flex-basis: 100%; margin: 0; color: var(--c-beige); }
 .password__foot { margin-top: 2rem; opacity: .75; }
+
+.price-placeholder { margin: 12px 0 0; padding: 10px 14px; border: 1px dashed var(--c-gold); color: var(--c-beige); }
