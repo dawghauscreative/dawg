@@ -1,7 +1,11 @@
 {
   "sections": {
     "main": {
-      "type": "contact-form"
+      "type": "contact-form",
+      "settings": {
+        "image": "shopify://shop_images/AMD_CONTACT.png",
+        "asset": "hero-banner-3.webp"
+      }
     }
   },
   "order": [

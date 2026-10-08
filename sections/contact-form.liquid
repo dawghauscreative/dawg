@@ -6,6 +6,9 @@
         {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body, tag: 'h1' -%}
         <p><a href="mailto:{{ settings.support_email }}">{{ settings.support_email }}</a></p>
         <p class="small" style="margin-top:.5rem">{{ settings.mailing_address }}</p>
+        {%- if section.settings.image != blank or section.settings.asset != blank -%}
+          <div style="margin-top:2.5rem">{% render 'responsive-image', image: section.settings.image, asset: section.settings.asset, asset_width: 1672, asset_height: 941, ratio: '16x9', sizes: '(min-width: 990px) 40vw, 100vw', alt: '' %}</div>
+        {%- endif -%}
       </div>
       <div>
         {%- form 'contact', id: 'ContactForm' -%}
@@ -45,6 +48,8 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Contact" },
     { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "image_picker", "id": "image", "label": "Image (optional)" },
+    { "type": "text", "id": "asset", "label": "Fallback theme asset filename", "info": "Used only when no image is picked." },
     { "type": "text", "id": "inquiry_types", "label": "Inquiry types (comma separated)", "default": "Product, Order, Wholesale/Retail, Dermatology Office, Media, Partnership, General" },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Send" },
     { "type": "text", "id": "success_text", "label": "Success message", "default": "Thank you. We will be in touch." }

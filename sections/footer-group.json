@@ -5,54 +5,6 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "l1": {
-          "type": "link",
-          "settings": {
-            "label": "Terms of Service",
-            "url": "/pages/terms",
-            "column": "legal"
-          }
-        },
-        "l2": {
-          "type": "link",
-          "settings": {
-            "label": "Privacy Policy",
-            "url": "/pages/privacy",
-            "column": "legal"
-          }
-        },
-        "l3": {
-          "type": "link",
-          "settings": {
-            "label": "Refund Policy",
-            "url": "/pages/refund",
-            "column": "legal"
-          }
-        },
-        "l4": {
-          "type": "link",
-          "settings": {
-            "label": "Shipping Policy",
-            "url": "/pages/shipping",
-            "column": "legal"
-          }
-        },
-        "l5": {
-          "type": "link",
-          "settings": {
-            "label": "Subscription Terms",
-            "url": "/pages/subscription-terms",
-            "column": "legal"
-          }
-        },
-        "l6": {
-          "type": "link",
-          "settings": {
-            "label": "SMS Terms",
-            "url": "/pages/sms-terms",
-            "column": "legal"
-          }
-        },
         "c1": {
           "type": "link",
           "settings": {
@@ -84,6 +36,70 @@
             "url": "/pages/contact",
             "column": "explore"
           }
+        },
+        "c5": {
+          "type": "link",
+          "settings": {
+            "label": "News",
+            "url": "/blogs/news",
+            "column": "explore"
+          }
+        },
+        "l1": {
+          "type": "link",
+          "settings": {
+            "label": "Terms of Service",
+            "url": "/policies/terms-of-service",
+            "column": "legal"
+          }
+        },
+        "l2": {
+          "type": "link",
+          "settings": {
+            "label": "Privacy Policy",
+            "url": "/policies/privacy-policy",
+            "column": "legal"
+          }
+        },
+        "l3": {
+          "type": "link",
+          "settings": {
+            "label": "Refund Policy",
+            "url": "/policies/refund-policy",
+            "column": "legal"
+          }
+        },
+        "l4": {
+          "type": "link",
+          "settings": {
+            "label": "Shipping Policy",
+            "url": "/pages/shipping",
+            "column": "legal"
+          }
+        },
+        "l5": {
+          "type": "link",
+          "settings": {
+            "label": "Subscription Terms",
+            "url": "/pages/subscription-terms",
+            "column": "legal"
+          }
+        },
+        "l6": {
+          "type": "link",
+          "settings": {
+            "label": "SMS Terms",
+            "url": "/pages/sms-terms",
+            "column": "legal"
+          }
+        },
+        "l7": {
+          "type": "link",
+          "settings": {
+            "label": "Your Privacy Choices",
+            "url": "/pages/data-sharing-opt-out",
+            "column": "legal"
+          }
         }
       },
       "block_order": [
@@ -91,12 +107,14 @@
         "c2",
         "c3",
         "c4",
+        "c5",
         "l1",
         "l2",
         "l3",
         "l4",
         "l5",
-        "l6"
+        "l6",
+        "l7"
       ],
       "settings": {}
     },

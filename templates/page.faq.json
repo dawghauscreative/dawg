@@ -3,13 +3,6 @@
     "main": {
       "type": "pdp-faq",
       "blocks": {
-        "q1": {
-          "type": "item",
-          "settings": {
-            "question": "How do Alchemia MD products fit with sunscreen?",
-            "answer": "<p>UV Shield+ is designed to work alongside your sunscreen, not replace it. Alchemia MD complements your existing skincare and sun safety routines by adding a powerful layer of support from within.</p>"
-          }
-        },
         "q2": {
           "type": "item",
           "settings": {
@@ -17,26 +10,76 @@
             "answer": "<p>Alchemia MD was founded by board-certified dermatologist Dr. Mia Luna, and our supplements are dermatologist-formulated.</p>"
           }
         },
+        "q4a": {
+          "type": "item",
+          "settings": {
+            "question": "Who is Alchemia MD for?",
+            "answer": "<p>Alchemia MD is designed for adults who want daily internal skin health support, especially people with active, sun-exposed lifestyles such as golf, tennis, boating, beach days, and travel.</p>"
+          }
+        },
+        "q5a": {
+          "type": "item",
+          "settings": {
+            "question": "How do I take Alchemia MD supplements?",
+            "answer": "<p>Take each product as directed on its label, and use it consistently as part of your daily routine. Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
+          }
+        },
+        "q6a": {
+          "type": "item",
+          "settings": {
+            "question": "What is the difference between an individual product and a system?",
+            "answer": "<p>An individual product is a single formula. A system combines complementary formulas into one daily routine, so you can start with what you need and add to it over time.</p>"
+          }
+        },
+        "q7a": {
+          "type": "item",
+          "settings": {
+            "question": "Can I take more than one product together?",
+            "answer": "<p>Yes. The products are designed to work together as a daily routine. Follow the suggested use listed on each product label.</p>"
+          }
+        },
+        "q1": {
+          "type": "item",
+          "settings": {
+            "question": "How do Alchemia MD products fit with sunscreen?",
+            "answer": "<p>UV Shield+ is designed to work alongside your sunscreen, not replace it. Alchemia MD complements your existing skincare and sun safety routines by adding a powerful layer of support from within.</p>"
+          }
+        },
+        "q8a": {
+          "type": "item",
+          "settings": {
+            "question": "How do I manage my subscription?",
+            "answer": "<p>Use the Manage subscription link in the site header or footer.</p>"
+          }
+        },
+        "q9a": {
+          "type": "item",
+          "settings": {
+            "question": "How can I contact Alchemia MD?",
+            "answer": "<p>Email info@alchemiamd.com or use the form on the Contact page.</p>"
+          }
+        },
         "q3": {
           "type": "item",
           "settings": {
             "question": "Are they gluten-free?"
           }
-        },
-        "q4": {
-          "type": "item",
-          "settings": {
-            "question": "What is the difference between an individual product and a system?"
-          }
         }
       },
       "block_order": [
-        "q1",
         "q2",
-        "q3",
-        "q4"
+        "q4a",
+        "q5a",
+        "q6a",
+        "q7a",
+        "q1",
+        "q8a",
+        "q9a",
+        "q3"
       ],
       "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Questions",
         "heading": "Frequently asked questions"
       }
     }

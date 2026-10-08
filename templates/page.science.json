@@ -78,12 +78,35 @@
         "p3"
       ],
       "settings": {
-        "heading": ""
+        "heading": "The Alchemia MD Skin Defense System",
+        "color_scheme": "dark"
+      }
+    },
+    "statement": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "beige",
+        "align": "center",
+        "width": "narrow",
+        "heading": "Formulation logic before ingredient hype.",
+        "heading_tag": "h2",
+        "body": "<p>Every ingredient should serve a clear role in supporting skin health, resilience, balance, or recovery.</p>"
+      }
+    },
+    "cta": {
+      "type": "final-cta",
+      "settings": {
+        "color_scheme": "band",
+        "product": "sun-safe-system",
+        "eyebrow": "Begin the routine",
+        "button_label": "Shop the System"
       }
     }
   },
   "order": [
     "main",
-    "system"
+    "statement",
+    "system",
+    "cta"
   ]
 }

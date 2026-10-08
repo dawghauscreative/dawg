@@ -54,7 +54,7 @@ Not in the brief's metafield list: `custom.tier1_citations` (the brief refers to
 - Products currently have a single "Default Title" variant. The brief calls for "Single Supply" / "3-Month Supply" (option "Supply") before Supr offers are configured.
 - Navigation is built from the fixed product handles, so no menu needs creating. Footer and legal links point at `/pages/terms`, `/pages/privacy`, `/pages/refund`, `/pages/shipping`, `/pages/subscription-terms`, `/pages/sms-terms`. Create those pages with the `page.legal` template once content exists.
 - No 301 redirects needed: the site has never been live.
-- Customer account templates and password page are not included (new customer accounts / default password page assumed).
+- Customer account templates are not included (new customer accounts assumed). A branded password page is included (`layout/password.liquid`, `templates/password.json`).
 
 ## Copy check (docs/check-banned.sh)
 

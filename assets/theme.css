@@ -467,3 +467,14 @@ body { letter-spacing: .01em; line-height: 1.7; }
 /* Text-only points read as pull-quotes */
 .benefit--quote p { font-family: var(--font-display); font-size: clamp(1.15rem, 1.7vw, 1.5rem); line-height: 1.4; color: var(--c-white); }
 .scheme-light .benefit--quote p, .scheme-beige .benefit--quote p { color: var(--c-black); }
+
+/* Password page */
+.password { min-height: 100vh; display: flex; align-items: center; text-align: center; }
+.password__inner { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; padding-block: 4rem; }
+.password__logo { width: min(320px, 70vw); height: auto; }
+.password__heading { margin: 1rem 0 0; }
+.password__text { max-width: 36rem; margin: 0; }
+.password__form { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; width: min(28rem, 100%); }
+.password__form input[type="password"] { flex: 1 1 14rem; min-height: 3rem; padding: 0 1rem; background: transparent; border: 1px solid var(--c-gray); color: inherit; font: inherit; border-radius: 0; }
+.password__form .form-error { flex-basis: 100%; margin: 0; color: var(--c-beige); }
+.password__foot { margin-top: 2rem; opacity: .75; }
