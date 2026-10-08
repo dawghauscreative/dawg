@@ -6,13 +6,15 @@
         "q1": {
           "type": "item",
           "settings": {
-            "question": "Do these products replace sunscreen?"
+            "question": "Do these products replace sunscreen?",
+            "answer": "<p>No. UV Shield+ is designed to work alongside your sunscreen, not replace it. Alchemia MD complements your existing skincare and sun safety routines by adding a powerful layer of support from within.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
-            "question": "Are Alchemia MD products dermatologist-formulated?"
+            "question": "Are Alchemia MD products dermatologist-formulated?",
+            "answer": "<p>Alchemia MD was founded by board-certified dermatologist Dr. Mia Luna, and our supplements are dermatologist-formulated.</p>"
           }
         },
         "q3": {

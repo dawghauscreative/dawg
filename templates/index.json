@@ -9,13 +9,53 @@
       }
     },
     "category": {
-      "type": "category-statement"
+      "type": "category-statement",
+      "settings": {
+        "eyebrow": "Our mission",
+        "statement": "To transform skin health from the inside out. We are guided by dermatological science and the philosophy that balance is a practice, not a destination."
+      }
     },
     "problem": {
-      "type": "problem"
+      "type": "problem",
+      "settings": {
+        "eyebrow": "Why Alchemia MD began",
+        "heading": "Throughout her years in practice, a few things became clear:"
+      },
+      "blocks": {
+        "pt1": {
+          "type": "point",
+          "settings": {
+            "icon": "none",
+            "text": "Patients were increasingly seeking natural options to support their skin health."
+          }
+        },
+        "pt2": {
+          "type": "point",
+          "settings": {
+            "icon": "none",
+            "text": "She was writing the same list of supplements over and over."
+          }
+        },
+        "pt3": {
+          "type": "point",
+          "settings": {
+            "icon": "none",
+            "text": "There was no single solution that brought it all together."
+          }
+        }
+      },
+      "block_order": [
+        "pt1",
+        "pt2",
+        "pt3"
+      ]
     },
     "solution": {
-      "type": "solution"
+      "type": "solution",
+      "settings": {
+        "heading": "Alchemia MD gives people a clear, trusted way to care for their skin from the inside out.",
+        "body": "<p>Each formula translates Dr. Mia Luna's expertise into practical daily support for the skin's natural resilience.</p><p>The result is a purposeful routine that fits real life and helps people stay consistent with their long-term skin health.</p>"
+      }
     },
     "system": {
       "type": "product-system",
@@ -84,7 +124,10 @@
       "type": "founder",
       "settings": {
         "link_label": "Meet Dr. Luna",
-        "link_url": "/pages/founder"
+        "link_url": "/pages/founder",
+        "image_asset": "founder-portrait.webp",
+        "credentials": "Board-certified dermatologist",
+        "body": "<p>As someone who personally takes supplements, Dr. Luna began to consider the possibilities. What if the most beneficial ingredients for skin health could exist within one effective, convenient formula?</p>"
       }
     },
     "final": {

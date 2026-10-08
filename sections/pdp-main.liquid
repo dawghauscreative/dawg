@@ -44,7 +44,9 @@
             </div>
           {%- endif -%}
         {%- else -%}
-          {% render 'responsive-image', image: nil, ratio: '4x5', alt: product.title %}
+          {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
+          {%- assign fallback_asset = fallback_capture | strip -%}
+          {% render 'responsive-image', asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 990px) 56vw, 100vw', loading: 'eager', alt: product.title %}
         {%- endif -%}
       </div>
 
@@ -112,7 +114,7 @@
                   {%- assign t_key = 'text_' | append: i -%}
                   {%- assign i_key = 'icon_' | append: i -%}
                   {%- if block.settings[t_key] != blank -%}
-                    <div>{% render 'icon', name: block.settings[i_key] %}<span>{{ block.settings[t_key] }}</span></div>
+                    <div><span class="icon">{% render 'icon', name: block.settings[i_key] %}</span><span>{{ block.settings[t_key] }}</span></div>
                   {%- endif -%}
                 {%- endfor -%}
                 {%- render 'guarantee-badge', style: 'trust' -%}
@@ -152,7 +154,7 @@
   "name": "Product hero",
   "tag": "div",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] }
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],
   "blocks": [
     { "type": "title", "name": "Title", "limit": 1 },

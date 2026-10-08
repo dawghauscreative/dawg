@@ -9,7 +9,7 @@
   {%- case style -%}
     {%- when 'trust' -%}
       {%- if settings.guarantee_text != blank -%}
-        <div>{% render 'icon', name: 'shield' %}<span>{{ settings.guarantee_text }}</span></div>
+        <div><span class="icon">{% render 'icon', name: 'shield' %}</span><span>{{ settings.guarantee_text }}</span></div>
       {%- endif -%}
     {%- when 'line' -%}
       {%- if settings.guarantee_text != blank -%}<p class="small">{{ settings.guarantee_text }}</p>{%- endif -%}

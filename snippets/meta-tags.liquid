@@ -7,6 +7,8 @@
   {%- assign og_image = article.image | image_url: width: 1200 -%}
 {%- elsif settings.share_image != blank -%}
   {%- assign og_image = settings.share_image | image_url: width: 1200 -%}
+{%- else -%}
+  {%- assign og_image = 'hero-banner-1.webp' | asset_url -%}
 {%- endif -%}
 <meta property="og:site_name" content="{{ shop.name | escape }}">
 <meta property="og:url" content="{{ canonical_url }}">

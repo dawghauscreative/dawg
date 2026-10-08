@@ -3,7 +3,11 @@
     "main": {
       "type": "founder",
       "settings": {
-        "link_label": ""
+        "link_label": "",
+        "image_asset": "founder-portrait.webp",
+        "credentials": "Board-certified dermatologist",
+        "eyebrow": "Founder",
+        "body": "<p>Alchemia MD was born from a deeply personal loss. As a child, Mia lost her mother to melanoma. It was a weight that no child should ever have to carry. Driven by the desire to help others avoid that same loss, she allowed grief to shape her purpose. She believed that, with the right education and preventative care, families could protect the time they have together. That unwavering truth guided her through medical school, and she became board-certified dermatologist, Dr. Mia Luna.</p><p>Throughout her years in practice, a few things became clear: patients were increasingly seeking natural options to support their skin health; she was writing the same list of supplements over and over; and there was no single solution that brought it all together.</p><p>As someone who personally takes supplements, Dr. Luna began to consider the possibilities. What if the most beneficial ingredients for skin health could exist within one effective, convenient formula?</p>"
       }
     },
     "cta": {
@@ -11,10 +15,32 @@
       "settings": {
         "product": "sun-safe-system"
       }
+    },
+    "alchemy": {
+      "type": "rich-text",
+      "settings": {
+        "eyebrow": "Modern alchemy",
+        "heading": "Alchemy is transformation through balance.",
+        "heading_tag": "h2",
+        "color_scheme": "light",
+        "body": "<p>Centuries ago, alchemists sought to turn lead into gold. We believe lasting change begins by supporting the body from within.</p>"
+      }
+    },
+    "purpose": {
+      "type": "rich-text",
+      "settings": {
+        "eyebrow": "Our purpose",
+        "heading": "To change the way people understand their skin.",
+        "heading_tag": "h2",
+        "color_scheme": "dark",
+        "body": "<p>Instead of something to be fixed or perfected, it is a dynamic living system to be supported. Skin is always seeking balance, and always capable of returning to it.</p>"
+      }
     }
   },
   "order": [
     "main",
+    "alchemy",
+    "purpose",
     "cta"
   ]
 }

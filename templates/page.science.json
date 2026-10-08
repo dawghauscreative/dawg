@@ -1,7 +1,29 @@
 {
   "sections": {
     "main": {
-      "type": "science-grid"
+      "type": "science-grid",
+      "blocks": {
+        "c1": {
+          "type": "card",
+          "settings": {
+            "icon": "molecule",
+            "title": "Integrity",
+            "text": "Every ingredient is carefully chosen, based on a clear understanding of its purpose. Precise, intentional dosing ensures that every ingredient has a defined role."
+          }
+        },
+        "c2": {
+          "type": "card",
+          "settings": {
+            "icon": "layers",
+            "title": "Transparency",
+            "text": "Alchemia MD brings the same attentive care to its formulas that Dr. Luna brings to every patient. All ingredients are disclosed and each formula's purpose is explained in plain language."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2"
+      ]
     },
     "system": {
       "type": "product-system",

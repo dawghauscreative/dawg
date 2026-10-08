@@ -2,7 +2,7 @@
   <div class="container">
     <div class="cols cols--2" style="align-items:center">
       <div{% if section.settings.image_side == 'right' %} style="order:2"{% endif %}>
-        {% render 'responsive-image', image: section.settings.image, ratio: '4x5', sizes: '(min-width: 990px) 40vw, 100vw', alt: section.settings.image_alt %}
+        {% render 'responsive-image', image: section.settings.image, asset: section.settings.image_asset, asset_width: 1122, asset_height: 1402, ratio: '4x5', sizes: '(min-width: 990px) 40vw, 100vw', alt: section.settings.image_alt %}
       </div>
       <div>
         {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
@@ -21,8 +21,9 @@
 {
   "name": "Founder",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
     { "type": "image_picker", "id": "image", "label": "Portrait", "info": "Dr. Mia Luna. Final photo to be confirmed by Reyshan." },
+    { "type": "text", "id": "image_asset", "label": "Fallback theme asset filename", "info": "Used only when no portrait is picked above." },
     { "type": "text", "id": "image_alt", "label": "Image alt text", "default": "Dr. Mia Luna" },
     { "type": "select", "id": "image_side", "label": "Image side", "default": "left", "options": [{ "value": "left", "label": "Left" }, { "value": "right", "label": "Right" }] },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },

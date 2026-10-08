@@ -8,35 +8,63 @@
     "theme_support_url": "https://alchemiamd.com"
   },
   {
-    "name": "Brand colors",
+    "name": "Brand colors (Brand Guidelines V1)",
     "settings": [
       {
         "type": "color",
         "id": "color_black",
-        "label": "Black",
+        "label": "Alchemia Black",
         "default": "#141414",
-        "info": "Primary dark background, text on light."
+        "info": "Primary dark background. 100K black."
       },
       {
         "type": "color",
-        "id": "color_gold",
-        "label": "Gold",
-        "default": "#C9A96E",
-        "info": "Accent, primary button on dark, thin rules."
+        "id": "color_charcoal",
+        "label": "Charcoal",
+        "default": "#212121",
+        "info": "Cards and raised surfaces on black."
+      },
+      {
+        "type": "color",
+        "id": "color_emerald",
+        "label": "Emerald",
+        "default": "#132D22",
+        "info": "Deep green section background."
       },
       {
         "type": "color",
         "id": "color_evergreen",
         "label": "Evergreen",
-        "default": "#1A2E1F",
-        "info": "Secondary dark surface. Secondary use only."
+        "default": "#2D3D2D",
+        "info": "Secondary green. Cards on Emerald."
+      },
+      {
+        "type": "color",
+        "id": "color_gold",
+        "label": "Gold",
+        "default": "#C18C31",
+        "info": "Accent, primary button, thin rules."
       },
       {
         "type": "color",
         "id": "color_beige",
         "label": "Beige",
-        "default": "#F5F0E8",
-        "info": "Light sections, text on dark."
+        "default": "#DEBC8C",
+        "info": "Warm accent band."
+      },
+      {
+        "type": "color",
+        "id": "color_gray",
+        "label": "Gray",
+        "default": "#AFAFAF",
+        "info": "Body copy on dark backgrounds."
+      },
+      {
+        "type": "color",
+        "id": "color_white",
+        "label": "White",
+        "default": "#FFFFFF",
+        "info": "Headlines on dark, light sections."
       }
     ]
   },
@@ -45,37 +73,49 @@
     "settings": [
       {
         "type": "header",
-        "content": "Body font (Adobe Fonts)"
+        "content": "Headlines: BC Novatica (Adobe Fonts)"
       },
       {
         "type": "text",
         "id": "adobe_kit_url",
         "label": "Adobe Fonts kit stylesheet URL",
         "default": "https://use.typekit.net/qza3lbn.css",
-        "info": "BC Novatica CYR is served by Adobe Fonts and cannot be self-hosted. The Adobe subscription must stay active."
+        "info": "Not self-hostable. The Adobe subscription must stay active. Add Dejanire Text to this kit for body copy."
+      },
+      {
+        "type": "text",
+        "id": "display_font_family",
+        "label": "Headline font-family (CSS)",
+        "default": "\"bc-novatica-cyr\", sans-serif",
+        "info": "Brand Guidelines: BC Novatica SemiBold, never all caps. The kit serves weights 400 and 700 only, so semibold maps to 700."
+      },
+      {
+        "type": "header",
+        "content": "Body copy: Dejanire Text"
       },
       {
         "type": "text",
         "id": "body_font_family",
         "label": "Body font-family (CSS)",
-        "default": "\"bc-novatica-cyr\", sans-serif"
+        "default": "\"dejanire-text\", Georgia, serif",
+        "info": "Dejanire Text Regular and Italic (Retype Foundry, also on Adobe Fonts). Add it to the kit above and confirm the CSS family name. Falls back to Georgia until then."
       },
       {
         "type": "header",
-        "content": "Display font"
+        "content": "Callouts and subheaders: Roboto"
       },
       {
         "type": "text",
-        "id": "display_font_family",
-        "label": "Display font-family (CSS)",
-        "default": "\"Cormorant Garamond\", Georgia, serif"
+        "id": "callout_font_family",
+        "label": "Callout font-family (CSS)",
+        "default": "Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "info": "Small caps feel, generous tracking. Regular, Medium, Bold."
       },
       {
         "type": "text",
-        "id": "display_font_stylesheet_url",
-        "label": "Display font stylesheet URL",
-        "default": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap",
-        "info": "Cormorant Garamond from Google Fonts unless it is added to the Adobe kit. Clear this field if it is added to the kit."
+        "id": "callout_font_stylesheet_url",
+        "label": "Callout font stylesheet URL",
+        "default": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       }
     ]
   },
@@ -97,6 +137,12 @@
         "unit": "px",
         "label": "Logo width",
         "default": 220
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon",
+        "info": "Optional override. The theme bundles the Brand Guidelines favicon (logomark in Gray, thicker lines)."
       },
       {
         "type": "text",

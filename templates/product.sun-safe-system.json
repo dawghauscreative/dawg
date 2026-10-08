@@ -19,7 +19,11 @@
           "type": "expectation"
         },
         "trust_bar": {
-          "type": "trust_bar"
+          "type": "trust_bar",
+          "settings": {
+            "icon_1": "shield",
+            "text_1": "Dermatologist developed"
+          }
         },
         "fda": {
           "type": "fda"

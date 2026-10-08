@@ -12,10 +12,16 @@
       <link rel="preconnect" href="https://use.typekit.net" crossorigin>
       <link rel="stylesheet" href="{{ settings.adobe_kit_url }}">
     {%- endif -%}
-    {%- if settings.display_font_stylesheet_url != blank -%}
+    {%- if settings.callout_font_stylesheet_url != blank -%}
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="stylesheet" href="{{ settings.display_font_stylesheet_url }}">
+      <link rel="stylesheet" href="{{ settings.callout_font_stylesheet_url }}">
+    {%- endif -%}
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 96 }}">
+    {%- else -%}
+      <link rel="icon" type="image/png" href="{{ 'favicon.png' | asset_url }}">
     {%- endif -%}
 
     {%- capture seo_title -%}
@@ -37,11 +43,16 @@
     <style>
       :root {
         --c-black: {{ settings.color_black }};
-        --c-gold: {{ settings.color_gold }};
+        --c-charcoal: {{ settings.color_charcoal }};
+        --c-emerald: {{ settings.color_emerald }};
         --c-evergreen: {{ settings.color_evergreen }};
+        --c-gold: {{ settings.color_gold }};
         --c-beige: {{ settings.color_beige }};
-        --font-body: {{ settings.body_font_family }};
+        --c-gray: {{ settings.color_gray }};
+        --c-white: {{ settings.color_white }};
         --font-display: {{ settings.display_font_family }};
+        --font-body: {{ settings.body_font_family }};
+        --font-callout: {{ settings.callout_font_family }};
       }
     </style>
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">

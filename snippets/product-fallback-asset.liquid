@@ -1,0 +1,13 @@
+{%- comment -%}
+  Theme-bundled lifestyle render used ONLY when a product has no media of its own.
+  Usage: {% capture fallback %}{% render 'product-fallback-asset', handle: product.handle %}{% endcapture %}
+{%- endcomment -%}
+{%- case handle -%}
+  {%- when 'uv-shield' -%}lifestyle-uvshield-rocks.webp
+  {%- when 'skinbiotic' -%}lifestyle-skinbiotic-cliffs.webp
+  {%- when 'dermaboost' -%}lifestyle-dermaboost-yacht.webp
+  {%- when 'sun-safe-system' -%}lifestyle-uvshield-skinbiotic-sailboat.webp
+  {%- when 'skin-recovery-system' -%}lifestyle-skinbiotic-dermaboost-sunset.webp
+  {%- when 'sun-resilience-system' -%}lifestyle-uvshield-dermaboost-tennis.webp
+  {%- when 'complete-skin-defense-system' -%}lifestyle-all-three-yacht.webp
+{%- endcase -%}

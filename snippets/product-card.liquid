@@ -5,7 +5,9 @@
 {%- if product != blank -%}
   <a class="pcard" href="{{ product.url }}">
     <div class="pcard__media">
-      {%- render 'responsive-image', image: product.featured_media, ratio: '4x5', sizes: '(min-width: 750px) 33vw, 100vw', alt: product.title -%}
+      {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
+      {%- assign fallback_asset = fallback_capture | strip -%}
+      {%- render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 750px) 33vw, 100vw', alt: product.title -%}
     </div>
     <div class="pcard__body">
       <h3 class="pcard__title">{{ product.title }}</h3>

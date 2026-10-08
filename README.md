@@ -11,6 +11,13 @@ No theme was created in the store by this build. Either connect this branch with
 2. Add the optional "Subscriptions + Bundles" app block inside the **Buy buttons** area of the product hero if exact placement is wanted. It renders inside the `/cart/add` form.
 3. Upload the logo only if overriding the bundled white logotype (Theme settings > Brand & contact).
 
+## Design tokens and type (Brand Guidelines V1 wins over the brief)
+
+Colours: Black `#141414`, Charcoal `#212121`, Emerald `#132D22`, Evergreen `#2D3D2D`, Gold `#C18C31`, Beige `#DEBC8C`, Gray `#AFAFAF`, White. All are Theme settings.
+Schemes per section: Black, Evergreen-family (uses Emerald for contrast with gold text), White, Beige. Body copy is Gray on dark, per the guide.
+Type: headlines BC Novatica (kit serves 400/700, so semibold renders 700, never all caps), body **Dejanire Text**, callouts Roboto tracked caps.
+**Action:** add Dejanire Text to the Adobe Fonts kit `qza3lbn` and confirm its CSS family name in Theme settings > Typography. Until then body falls back to Georgia.
+
 ## Buy box rules (Supr owns it)
 
 - `sections/pdp-main.liquid` posts a plain HTML form to `/cart/add`. No JS add-to-cart, no hand-built payload, no `selling_plan` input, no quantity input, no dynamic checkout.
@@ -30,6 +37,11 @@ No theme was created in the store by this build. Either connect this branch with
 | `melanoma_line_text` | label wording | Verified on all three product labels. No amounts shown. |
 | Video 9:16 `show_placeholder` | ON | Neutral frame on home and all 7 product pages. Add a video or switch off before launch. |
 
+## Copy and image sources
+
+Copy that is filled in comes only from Brand Guidelines V1 (founder story, mission, purpose, value proposition, transparency/integrity values, sunscreen and dermatologist FAQ answers) and the printed labels (taglines, directions, FDA statement, "Dermatologist developed", melanoma line). **Counsel review pending** on all of it, especially the founder story's melanoma reference. Benefits, definitions, ingredients, gluten-free and system-vs-single answers stay empty: the internal benefits guide says consumer claims need legal clearance first.
+Images: theme assets provide defaults (hero banner, lifestyle strip, founder portrait, and a lifestyle render per product used only when a product has no media). The editor's image pickers override all of them. Logo: bundled transparent white logotype and Gray favicon per the guide.
+
 ## Product data (created through the Shopify connector)
 
 Metafields `custom.tagline, definition, benefits, ingredients, how_it_works, bundle_components, crosssell_products, compliance_slot, tier1_citations` and the `ingredient` metaobject exist.
@@ -40,5 +52,5 @@ Not in the brief's metafield list: `custom.tier1_citations` (the brief refers to
 
 - Products currently have a single "Default Title" variant. The brief calls for "Single Supply" / "3-Month Supply" (option "Supply") before Supr offers are configured.
 - Navigation is built from the fixed product handles, so no menu needs creating. Footer and legal links point at `/pages/terms`, `/pages/privacy`, `/pages/refund`, `/pages/shipping`, `/pages/subscription-terms`, `/pages/sms-terms`. Create those pages with the `page.legal` template once content exists.
-- 301 redirects from old handles are not created: the old-handle list is needed (the brief gives `dermaboost-1` only as an example).
+- No 301 redirects needed: the site has never been live.
 - Customer account templates and password page are not included (new customer accounts / default password page assumed).
