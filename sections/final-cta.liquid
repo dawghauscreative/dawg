@@ -1,14 +1,21 @@
 {%- assign p = section.settings.product -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
-  <div class="container" style="text-align:center">
-    {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
-    <h2 style="max-width:18ch;margin-inline:auto">{{ section.settings.heading | default: p.title }}</h2>
-    {%- if section.settings.body != blank -%}<div class="lede" style="margin:1.5rem auto 0">{{ section.settings.body }}</div>{%- endif -%}
-    <div class="btn-row" style="justify-content:center">
-      <a class="btn" href="{{ section.settings.button_url | default: p.url | default: routes.collections_url }}">{{ section.settings.button_label }}</a>
-      {%- if section.settings.secondary_label != blank -%}<a class="btn btn--outline" href="{{ section.settings.secondary_url | default: routes.collections_url }}">{{ section.settings.secondary_label }}</a>{%- endif -%}
+  {%- assign has_image = false -%}
+  {%- if section.settings.image != blank or section.settings.asset != blank -%}{%- assign has_image = true -%}{%- endif -%}
+  <div class="container{% if has_image %} final-split{% endif %}" style="{% unless has_image %}text-align:center{% endunless %}">
+    <div class="final-split__copy">
+      {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2{% unless has_image %} style="max-width:18ch;margin-inline:auto"{% endunless %}>{{ section.settings.heading | default: p.title }}</h2>
+      {%- if section.settings.body != blank -%}<div class="lede" style="margin:1.5rem {% unless has_image %}auto{% endunless %} 0">{{ section.settings.body }}</div>{%- endif -%}
+      <div class="btn-row"{% unless has_image %} style="justify-content:center"{% endunless %}>
+        <a class="btn" href="{{ section.settings.button_url | default: p.url | default: routes.collections_url }}">{{ section.settings.button_label }}</a>
+        {%- if section.settings.secondary_label != blank -%}<a class="btn btn--outline" href="{{ section.settings.secondary_url | default: routes.collections_url }}">{{ section.settings.secondary_label }}</a>{%- endif -%}
+      </div>
+      {%- if section.settings.note != blank -%}<p class="small" style="margin:2rem {% unless has_image %}auto{% endunless %} 0;max-width:58ch">{{ section.settings.note }}</p>{%- endif -%}
     </div>
-    {%- if section.settings.note != blank -%}<p class="small" style="margin:2rem auto 0;max-width:58ch">{{ section.settings.note }}</p>{%- endif -%}
+    {%- if has_image -%}
+      <div class="final-split__media{% if section.settings.light_panel %} feature-split__media--panel{% endif %}">{% render 'responsive-image', image: section.settings.image, asset: section.settings.asset, asset_width: 1400, asset_height: 787, ratio: '16x9', sizes: '(min-width: 990px) 50vw, 100vw', alt: p.title %}</div>
+    {%- endif -%}
   </div>
 </section>
 
@@ -25,7 +32,10 @@
     { "type": "url", "id": "button_url", "label": "Button link", "info": "Blank = the bundle's page." },
     { "type": "text", "id": "secondary_label", "label": "Second button label" },
     { "type": "url", "id": "secondary_url", "label": "Second button link" },
-    { "type": "text", "id": "note", "label": "Small note under the buttons" }
+    { "type": "text", "id": "note", "label": "Small note under the buttons" },
+    { "type": "image_picker", "id": "image", "label": "Image (optional)", "info": "Adds a split layout with the image beside the text." },
+    { "type": "text", "id": "asset", "label": "Fallback theme asset filename" },
+    { "type": "checkbox", "id": "light_panel", "label": "Show image on a light panel", "default": false }
   ],
   "presets": [{ "name": "Final CTA" }]
 }

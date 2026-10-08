@@ -1,152 +1,141 @@
 {
   "sections": {
     "hero": {
-      "type": "hero",
+      "type": "home-hero",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Dermatologist-formulated skin health",
+        "eyebrow": "Dermatologist-formulated internal skin support",
         "heading": "Internal Skin Defense for Life in the Sun",
-        "body": "<p>Skin is a living system. Alchemia MD supports it from within with dermatologist-formulated supplements designed for protection, balance, and resilience.</p>",
+        "body": "<p>Skin health is shaped by more than what happens on the surface.</p><p>Alchemia MD creates dermatologist-formulated supplements designed to support skin from within, through targeted nutritional support for environmental stress, gut-skin balance, and daily resilience.</p>",
         "primary_label": "Shop the Sun Safe System",
         "primary_url": "/products/sun-safe-system",
         "secondary_label": "Explore the Science",
         "secondary_url": "/pages/science",
-        "image_alt": "",
-        "background_asset": "hero-banner-1.webp",
-        "trust_line": "Dermatologist developed\nFounded by Dr. Mia Luna"
+        "trust": "Dermatologist-formulated\nResearch-informed\nFull ingredient transparency",
+        "product": "sun-safe-system",
+        "asset": "system-sun-safe.webp"
       }
     },
-    "trust": {
-      "type": "trust-bar",
-      "settings": {
-        "color_scheme": "beige"
-      },
-      "blocks": {
-        "t1": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "text": "Dermatologist developed"
-          }
-        },
-        "t2": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "text": "Founded by Dr. Mia Luna"
-          }
-        },
-        "t3": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "text": "Your purchase contributes to melanoma research"
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3"
-      ]
-    },
-    "system": {
-      "type": "product-system",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Protect. Balance. Restore.",
-        "heading": "Three formulas. Three roles.",
-        "body": "<p>Each Alchemia MD formula is built around a defined role in supporting skin health from within.</p>"
-      },
-      "blocks": {
-        "p1": {
-          "type": "product",
-          "settings": {
-            "product": "uv-shield",
-            "role": "Protect"
-          }
-        },
-        "p2": {
-          "type": "product",
-          "settings": {
-            "product": "skinbiotic",
-            "role": "Balance"
-          }
-        },
-        "p3": {
-          "type": "product",
-          "settings": {
-            "product": "dermaboost",
-            "role": "Restore"
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3"
-      ]
-    },
-    "statement": {
+    "category": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "beige",
+        "color_scheme": "light",
         "align": "center",
         "width": "narrow",
-        "heading": "Skin Health Goes Deeper Than the Surface",
+        "eyebrow": "A different way to think about skin",
+        "heading": "Skin health is more than a surface routine.",
         "heading_tag": "h2",
-        "body": "<p>Topical care protects the outside. Nutrition, microbiome health, antioxidant support, and internal balance influence the systems beneath it.</p><p>Alchemia MD brings dermatological thinking into daily supplementation.</p>",
-        "button_label": "What Is Internal Skin Defense?",
-        "button_url": "/pages/science"
+        "body": "<p>Skin is a living, dynamic system.</p><p>It responds to what happens outside the body, but also to nutrition, oxidative stress, immune signaling, the microbiome, and daily lifestyle.</p><p>Alchemia MD was built around a simple idea:</p><p><strong>Support skin from the inside out.</strong></p>",
+        "button_label": "What is internal skin defense?",
+        "button_url": "/blogs/news/what-is-internal-skin-defense-alchemia-md"
       }
     },
     "problem": {
-      "type": "problem",
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Why Alchemia MD exists",
+        "heading": "The supplement aisle wasn't built for skin.",
+        "columns": "3",
+        "show_images": false
+      },
       "blocks": {
-        "pt1": {
-          "type": "point",
+        "b1": {
+          "type": "card",
           "settings": {
-            "icon": "none",
-            "title": "Too many bottles",
-            "text": "Consumers are left combining multiple individual supplements without a clear system."
+            "number": "01",
+            "kicker": "Too many bottles",
+            "title": "Fragmented routines",
+            "text": "<p>People trying to support their skin are often left combining multiple individual supplements without a clear system or defined purpose.</p>"
           }
         },
-        "pt2": {
-          "type": "point",
+        "b2": {
+          "type": "card",
           "settings": {
-            "icon": "none",
-            "title": "Generic beauty formulas",
-            "text": "Most supplements are designed around broad beauty positioning rather than defined roles in skin health."
+            "number": "02",
+            "kicker": "Too much noise",
+            "title": "Trend-driven formulas",
+            "text": "<p>The category is crowded with vague beauty claims, proprietary blends, and products designed around trends instead of transparent formulation logic.</p>"
           }
         },
-        "pt3": {
-          "type": "point",
+        "b3": {
+          "type": "card",
           "settings": {
-            "icon": "none",
-            "title": "Too little clinical guidance",
-            "text": "People want evidence and transparency, not mystery blends and trend-driven claims."
+            "number": "03",
+            "kicker": "Too little guidance",
+            "title": "Missing dermatological context",
+            "text": "<p>Consumers want to understand what they are taking, why it is included, and how it fits into a complete skin-health routine.</p>"
           }
         }
       },
       "block_order": [
-        "pt1",
-        "pt2",
-        "pt3"
-      ],
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "roles": {
+      "type": "role-columns",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The problem",
-        "heading": "The supplement market makes skin health more complicated than it needs to be.",
-        "body": ""
-      }
+        "eyebrow": "The system",
+        "heading": "Protect. Balance. Restore.",
+        "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.</p><p>Each formula can stand on its own. The systems combine them when complementary support makes sense.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "role",
+          "settings": {
+            "product": "uv-shield",
+            "role": "Protect",
+            "tagline": "Outdoor support for resilient skin.",
+            "text": "Designed around nutritional and antioxidant support for people who spend significant time outdoors.",
+            "cta": "Explore UV Shield+"
+          }
+        },
+        "b2": {
+          "type": "role",
+          "settings": {
+            "product": "skinbiotic",
+            "role": "Balance",
+            "tagline": "Essential gut care for skin health.",
+            "text": "A synbiotic approach designed around the connection between the intestinal microbiome and skin wellness.",
+            "cta": "Explore Skinbiotic+"
+          }
+        },
+        "b3": {
+          "type": "role",
+          "settings": {
+            "product": "dermaboost",
+            "role": "Restore",
+            "tagline": "Immune support for calm, balanced skin.",
+            "text": "A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.",
+            "cta": "Explore Dermaboost+"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
     },
-    "solution": {
-      "type": "solution",
+    "featured": {
+      "type": "feature-split",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "The solution",
-        "heading": "A more intentional way to support skin.",
-        "body": "<p><strong>Protect</strong> with UV Shield+. <strong>Balance</strong> with Skinbiotic+. <strong>Restore</strong> with Dermaboost+.</p><p>Three targeted formulas, each with a specific role. Use them individually, or combine them into a system based on your routine.</p>"
+        "image_side": "right",
+        "eyebrow": "Start here",
+        "heading": "Meet the Sun Safe System",
+        "subhead": "Protect + Balance",
+        "body": "<p>For people who spend their lives outdoors, the Sun Safe System pairs two targeted formulas:</p><p><strong>UV Shield+</strong> supports skin exposed to daily environmental and UV-related stress.</p><p><strong>Skinbiotic+</strong> supports the gut-skin connection and internal balance.</p><p>Together, they create a simple daily routine built for life outdoors.</p>",
+        "product": "sun-safe-system",
+        "primary_label": "Explore the Sun Safe System",
+        "secondary_label": "See all systems",
+        "secondary_url": "/collections/bundles",
+        "asset": "system-sun-safe.webp",
+        "ratio": "16x9",
+        "light_panel": true
       }
     },
     "video": {
@@ -160,287 +149,438 @@
         "show_placeholder": true
       }
     },
+    "finder": {
+      "type": "system-finder",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Choose your routine",
+        "heading": "Find the system that fits your goals."
+      },
+      "blocks": {
+        "b1": {
+          "type": "system",
+          "settings": {
+            "product": "sun-safe-system",
+            "roles": "Protect + Balance",
+            "best_for": "Active outdoor lifestyles and customers looking for environmental support plus gut-skin balance.",
+            "cta": "Explore Sun Safe",
+            "asset": "system-sun-safe.webp",
+            "featured": true
+          }
+        },
+        "b2": {
+          "type": "system",
+          "settings": {
+            "product": "skin-recovery-system",
+            "roles": "Balance + Restore",
+            "best_for": "Customers focused on gut-skin balance and broader nutritional support for calm, resilient skin.",
+            "cta": "Explore Skin Recovery",
+            "asset": "system-skin-recovery.webp"
+          }
+        },
+        "b3": {
+          "type": "system",
+          "settings": {
+            "product": "sun-resilience-system",
+            "roles": "Protect + Restore",
+            "best_for": "Customers looking to pair environmental support with broader antioxidant and immune-supportive nutrition.",
+            "cta": "Explore Sun Resilience",
+            "asset": "system-sun-resilience.webp"
+          }
+        },
+        "b4": {
+          "type": "system",
+          "settings": {
+            "product": "complete-skin-defense-system",
+            "roles": "Protect + Balance + Restore",
+            "best_for": "Customers who already understand the three roles and want the most comprehensive Alchemia MD routine.",
+            "cta": "Explore Complete Skin Defense",
+            "asset": "system-complete.webp"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
     "lifestyle": {
       "type": "lifestyle-strip",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Life in the sun",
-        "heading": "Made for life outdoors.",
-        "body": "<p>Golf, tennis, sailing, beach days and travel. Alchemia MD is for people who live actively, with daily internal support alongside sunscreen and smart sun habits.</p>"
+        "columns": "3",
+        "eyebrow": "Built for life outdoors",
+        "heading": "Keep living in the sun.",
+        "body": "<p>Alchemia MD is built for people who do not want to choose between caring for their skin and living the life they love.</p>",
+        "statement": "Sun exposure is part of life. Supporting your skin should be too."
       },
       "blocks": {
-        "t1": {
+        "b1": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/silhouette-of-golfers-hit-sweeping-and-keep-golf-c-2026-03-19-02-22-18-utc_Large_602982b3-bc47-4fbb-a744-8ba4faa4f081.jpg",
             "asset": "lifestyle-skinbiotic-cliffs.webp",
             "label": "Golf",
-            "caption": "Long rounds"
+            "caption": "For the long round."
           }
         },
-        "t2": {
+        "b2": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/back-lit-young-female-multiracial-tennis-players-w-2026-03-25-03-18-19-utc_Large_33af3979-5b4a-46c2-b954-2bdaed9743dc.jpg",
             "asset": "lifestyle-uvshield-dermaboost-tennis.webp",
             "label": "Tennis",
-            "caption": "Court time"
+            "caption": "For hours on court."
           }
         },
-        "t3": {
+        "b3": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/family-sailing-at-sunset-on-luxury-boat-2026-03-27-00-33-51-utc_Large_d9a9c705-5243-4f08-b80c-a7a620ca8241.jpg",
             "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp",
             "label": "Sailing",
-            "caption": "Days on the water"
+            "caption": "For long days on the water."
           }
         },
-        "t4": {
+        "b4": {
           "type": "image",
           "settings": {
-            "label": "Running",
-            "caption": "Early miles"
+            "label": "Running + Cycling",
+            "caption": "For miles under open sky."
           }
         },
-        "t5": {
-          "type": "image",
-          "settings": {
-            "label": "Cycling",
-            "caption": "Long rides"
-          }
-        },
-        "t6": {
+        "b5": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/portrait-of-a-beautiful-woman-on-the-beach-at-suns-2026-03-25-06-30-52-utc_Large_88f1f284-5829-4cad-b407-ec1cdccd5ce2.jpg",
             "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
-            "label": "Beach",
-            "caption": "Coastal days"
+            "label": "Beach + Travel",
+            "caption": "For the places worth going."
           }
         },
-        "t7": {
+        "b6": {
           "type": "image",
           "settings": {
-            "label": "Travel",
-            "caption": "Time away"
+            "label": "Outdoor living",
+            "caption": "For ordinary days spent outside."
           }
         }
       },
       "block_order": [
-        "t1",
-        "t2",
-        "t3",
-        "t4",
-        "t5",
-        "t6",
-        "t7"
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
       ]
     },
-    "founder": {
-      "type": "founder",
+    "layers": {
+      "type": "layer-stack",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Layered protection",
+        "heading": "Skin support works in layers.",
+        "callout": "Alchemia MD is designed to complement—not replace—your sunscreen and sun-safety routine."
+      },
+      "blocks": {
+        "b1": {
+          "type": "layer",
+          "settings": {
+            "short": "Sunscreen",
+            "title": "Sunscreen",
+            "text": "Broad-spectrum topical protection remains essential."
+          }
+        },
+        "b2": {
+          "type": "layer",
+          "settings": {
+            "short": "Smart sun habits",
+            "title": "Smart sun habits",
+            "text": "Shade, protective clothing, appropriate reapplication, and routine dermatologic care."
+          }
+        },
+        "b3": {
+          "type": "layer",
+          "settings": {
+            "short": "Internal support",
+            "title": "Internal support",
+            "text": "Nutrition and supplementation can support biological systems involved in skin health."
+          }
+        },
+        "b4": {
+          "type": "layer",
+          "settings": {
+            "short": "Consistency",
+            "title": "Consistency",
+            "text": "Long-term routines matter more than occasional intervention."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "science": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "Science, without the mystery",
+        "heading": "Every ingredient has a reason.",
+        "columns": "4",
+        "show_images": false,
+        "body": "<p>Alchemia MD formulations are built around published ingredient research and defined biological roles.</p><p>We do not ask you to trust a proprietary mystery blend. We show you what is in the formula, why it is there, and what the research actually supports.</p>",
+        "button_label": "Explore the Science",
+        "button_url": "/pages/science"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "icon": "shield",
+            "title": "Environmental stress",
+            "text": "<p>Explore research around skin responses to daily environmental exposure.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "icon": "cell",
+            "title": "Gut–skin axis",
+            "text": "<p>Understand the relationship between the intestinal microbiome and skin biology.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "icon": "molecule",
+            "title": "Antioxidant support",
+            "text": "<p>Learn how different nutrients and plant compounds play distinct roles in oxidative-stress biology.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "icon": "layers",
+            "title": "Skin barrier",
+            "text": "<p>Explore the nutritional and biological systems involved in maintaining skin integrity.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "research": {
+      "type": "science-spotlight",
       "settings": {
         "color_scheme": "dark",
-        "image_side": "right",
+        "eyebrow": "Research strip",
+        "heading": "Research worth reading.",
+        "show_images": false,
+        "link_label": "View research →"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "study": "yiasemides-nicotinamide-2009",
+            "kicker": "Research",
+            "headline": "Nicotinamide",
+            "text": "Human research examining skin responses to ultraviolet exposure."
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "study": "nestor-polypodium-rct",
+            "kicker": "Research",
+            "headline": "Polypodium leucotomos",
+            "text": "Human clinical research around UV-response biology."
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "study": "gao-probiotics-gut-skin-2023",
+            "kicker": "Research",
+            "headline": "Gut–skin axis",
+            "text": "Published research on microbiome-skin communication."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "mia": {
+      "type": "founder",
+      "settings": {
+        "color_scheme": "light",
+        "image_side": "left",
         "image_asset": "founder-portrait.webp",
-        "eyebrow": "Founded by a dermatologist",
-        "heading": "From personal loss to a different way of thinking about skin.",
+        "eyebrow": "Founded by a board-certified dermatologist",
+        "heading": "It started with a question she kept hearing from patients.",
         "credentials": "",
-        "body": "<p>Dr. Mia Luna's path to dermatology began after losing her mother to melanoma as a child.</p><p>Years later, in practice, she repeatedly saw patients looking for trusted, natural ways to support their skin from within. Alchemia MD grew from that need.</p>",
+        "body": "<p>Dr. Mia Luna's path to dermatology began after losing her mother to melanoma as a child.</p><p>Years later, in clinical practice, another pattern became clear: patients increasingly wanted natural ways to support their skin health, and she found herself recommending many of the same individual supplements again and again.</p><p>The question became: <em>Why wasn't there a trusted, dermatologist-formulated system that brought those ideas together?</em></p><p>That question became Alchemia MD.</p>",
         "link_label": "Meet Dr. Mia Luna",
         "link_url": "/pages/founder"
       }
     },
-    "science": {
-      "type": "science-grid",
+    "philosophy": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "dark",
+        "align": "center",
+        "width": "narrow",
+        "salt_symbol": true,
+        "eyebrow": "Modern alchemy",
+        "heading": "Balance is a practice.",
+        "heading_tag": "h2",
+        "body": "<p>Alchemy was historically the pursuit of transformation through balance. Alchemia MD carries that idea into modern skin health.</p><p>Skin is always changing. It renews, adapts, responds, and rebuilds.</p><p>The goal is not perfect skin. The goal is to support the systems that help skin remain balanced, resilient, and vital through the changing demands of life.</p>"
+      }
+    },
+    "trust": {
+      "type": "science-cards",
       "settings": {
         "color_scheme": "light",
-        "heading_tag": "h2",
-        "eyebrow": "The science",
-        "heading": "Every ingredient has a reason.",
-        "body": "<p>Explore how nutrition, antioxidant support, the microbiome and cellular renewal contribute to skin health.</p>"
+        "eyebrow": "Why trust Alchemia MD",
+        "heading": "Built around standards, not trends.",
+        "columns": "4",
+        "show_images": false
       },
       "blocks": {
-        "c1": {
+        "b1": {
           "type": "card",
           "settings": {
             "icon": "molecule",
-            "title": "Clinical evidence",
-            "text": "Ingredients are selected with published research in mind."
+            "title": "Integrity",
+            "text": "<p>Ingredients are selected based on evidence and formulation purpose.</p>"
           }
         },
-        "c2": {
+        "b2": {
           "type": "card",
           "settings": {
             "icon": "layers",
-            "title": "Transparent formulations",
-            "text": "Every ingredient and amount is listed on the label and on each product page."
+            "title": "Transparency",
+            "text": "<p>Clear ingredients. Clear reasoning. No mystery positioning.</p>"
           }
         },
-        "c3": {
-          "type": "card",
-          "settings": {
-            "icon": "cell",
-            "title": "Defined ingredient roles",
-            "text": "Each ingredient is chosen for a specific role in supporting skin health."
-          }
-        },
-        "c4": {
+        "b3": {
           "type": "card",
           "settings": {
             "icon": "shield",
-            "title": "Dermatologist‑led formulation",
-            "text": "Developed under the guidance of board-certified dermatologist Dr. Mia Luna."
+            "title": "Prevention",
+            "text": "<p>Education and proactive skin-health habits are part of the brand, not an afterthought.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "icon": "cell",
+            "title": "Purpose",
+            "text": "<p>The brand was created from a personal mission extending beyond the product itself.</p>"
           }
         }
       },
       "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4"
-      ]
-    },
-    "mission": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "band",
-        "align": "center",
-        "width": "narrow",
-        "eyebrow": "Mission",
-        "heading": "Every purchase supports a larger mission.",
-        "heading_tag": "h2",
-        "body": "<p>Your purchase contributes to melanoma research.</p>",
-        "button_label": "Learn about our mission",
-        "button_url": "/pages/founder"
-      }
-    },
-    "final": {
-      "type": "final-cta",
-      "settings": {
-        "color_scheme": "green",
-        "product": "sun-safe-system",
-        "eyebrow": "Begin the routine",
-        "button_label": "Explore the Sun Safe System",
-        "heading": "Start with the Sun Safe System.",
-        "body": "<p>Two dermatologist-formulated products designed to support skin exposed to life outdoors and the internal systems connected to skin health.</p>"
-      }
-    },
-    "systems": {
-      "type": "product-system",
-      "settings": {
-        "color_scheme": "green",
-        "columns": "4",
-        "eyebrow": "Systems",
-        "heading": "Build the routine that fits your skin.",
-        "body": "<p>Find the level of internal skin support that fits your routine.</p>",
-        "link_label": "Compare all systems",
-        "link_url": "/collections/bundles"
-      },
-      "blocks": {
-        "s1": {
-          "type": "product",
-          "settings": {
-            "product": "sun-safe-system",
-            "role": "Protect + Balance",
-            "featured": true
-          }
-        },
-        "s2": {
-          "type": "product",
-          "settings": {
-            "product": "skin-recovery-system",
-            "role": "Balance + Restore"
-          }
-        },
-        "s3": {
-          "type": "product",
-          "settings": {
-            "product": "sun-resilience-system",
-            "role": "Protect + Restore"
-          }
-        },
-        "s4": {
-          "type": "product",
-          "settings": {
-            "product": "complete-skin-defense-system",
-            "role": "Protect + Balance + Restore"
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4"
+        "b1",
+        "b2",
+        "b3",
+        "b4"
       ]
     },
     "education": {
       "type": "education-grid",
       "settings": {
         "color_scheme": "beige",
-        "eyebrow": "Education",
-        "heading": "Understand your skin from the inside out.",
-        "body": "<p>Dermatologist-led guides to the science behind skin health from within.</p>",
-        "link_label": "Explore skin health guides",
-        "link_url": "/blogs/news"
+        "eyebrow": "Dermatologist-led education",
+        "heading": "Understand your skin from the inside out."
       },
       "blocks": {
-        "g1": {
+        "b1": {
           "type": "guide",
           "settings": {
             "title": "What Is Internal Skin Defense?",
+            "text": "Skin health is shaped by more than what happens on the surface.",
             "link": "/blogs/news/what-is-internal-skin-defense-alchemia-md"
           }
         },
-        "g2": {
+        "b2": {
           "type": "guide",
           "settings": {
-            "title": "The Gut-Skin Connection"
+            "title": "What Is the Gut-Skin Axis?",
+            "text": "How the intestinal environment and skin communicate."
           }
         },
-        "g3": {
+        "b3": {
           "type": "guide",
           "settings": {
-            "title": "Supporting Skin Through Daily Sun Exposure"
-          }
-        },
-        "g4": {
-          "type": "guide",
-          "settings": {
-            "title": "Understanding Skin Renewal"
-          }
-        },
-        "g5": {
-          "type": "guide",
-          "settings": {
-            "title": "How Antioxidants Support Skin Health"
+            "title": "Why Consistency Matters in Skin Health",
+            "text": "Understanding renewal, daily habits, and realistic expectations."
           }
         }
       },
       "block_order": [
-        "g1",
-        "g2",
-        "g3",
-        "g4",
-        "g5"
+        "b1",
+        "b2",
+        "b3"
       ]
+    },
+    "email": {
+      "type": "email-capture",
+      "settings": {
+        "color_scheme": "green",
+        "heading": "Skin health, explained clearly.",
+        "body": "<p>Get dermatologist-led education, ingredient research, product guidance, and Alchemia MD updates delivered to your inbox.</p>",
+        "placeholder": "Email address",
+        "button_label": "Join Alchemia MD",
+        "success_text": "Thank you for joining Alchemia MD."
+      }
+    },
+    "final": {
+      "type": "final-cta",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Begin with the hero system",
+        "heading": "Built for life in the sun.",
+        "body": "<p>Start with UV Shield+ and Skinbiotic+ together in the Sun Safe System: a two-step routine designed to support environmental resilience and internal balance.</p>",
+        "product": "sun-safe-system",
+        "button_label": "Explore the Sun Safe System",
+        "secondary_label": "Shop all products",
+        "secondary_url": "/collections/all",
+        "asset": "system-sun-safe.webp",
+        "light_panel": true
+      }
     }
   },
   "order": [
     "hero",
-    "trust",
-    "statement",
+    "category",
     "problem",
-    "solution",
-    "system",
-    "systems",
+    "roles",
+    "featured",
     "video",
+    "finder",
     "lifestyle",
-    "founder",
+    "layers",
     "science",
+    "research",
+    "mia",
+    "philosophy",
+    "trust",
     "education",
-    "mission",
+    "email",
     "final"
   ]
 }

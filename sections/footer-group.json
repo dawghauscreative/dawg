@@ -21,6 +21,14 @@
             "column": "shop"
           }
         },
+        "s3": {
+          "type": "link",
+          "settings": {
+            "label": "Shop All",
+            "url": "/collections/all",
+            "column": "shop"
+          }
+        },
         "c1": {
           "type": "link",
           "settings": {
@@ -32,24 +40,24 @@
         "c2": {
           "type": "link",
           "settings": {
-            "label": "Education",
-            "url": "/blogs/news",
+            "label": "Founder",
+            "url": "/pages/founder",
             "column": "learn"
           }
         },
         "c3": {
           "type": "link",
           "settings": {
-            "label": "FAQ",
-            "url": "/pages/faq",
+            "label": "Education",
+            "url": "/blogs/news",
             "column": "learn"
           }
         },
         "c4": {
           "type": "link",
           "settings": {
-            "label": "Founder",
-            "url": "/pages/founder",
+            "label": "FAQ",
+            "url": "/pages/faq",
             "column": "learn"
           }
         },
@@ -121,6 +129,7 @@
       "block_order": [
         "s1",
         "s2",
+        "s3",
         "c1",
         "c2",
         "c3",
@@ -143,7 +152,8 @@
         "heading": "Stay informed. Stay empowered.",
         "button_label": "Subscribe",
         "placeholder": "Enter your email address",
-        "success_text": "Thank you for subscribing."
+        "success_text": "Thank you for subscribing.",
+        "hide_on_home": true
       }
     }
   },

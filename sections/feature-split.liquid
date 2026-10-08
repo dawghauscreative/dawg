@@ -1,0 +1,43 @@
+{%- comment -%} Two-column feature: copy beside a large visual. Visual can sit on a light panel so real product renders on white stay accurate. {%- endcomment -%}
+{%- assign fp = section.settings.product -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container feature-split feature-split--{{ section.settings.image_side }}">
+    <div class="feature-split__copy">
+      {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+      {%- if section.settings.subhead != blank -%}<p class="feature-split__sub">{{ section.settings.subhead }}</p>{%- endif -%}
+      <div class="prose">{{ section.settings.body }}</div>
+      <div class="btn-row">
+        {%- if section.settings.primary_label != blank -%}<a class="btn" href="{{ section.settings.primary_url | default: fp.url }}">{{ section.settings.primary_label }}</a>{%- endif -%}
+        {%- if section.settings.secondary_label != blank -%}<a class="btn btn--outline" href="{{ section.settings.secondary_url | default: routes.collections_url }}">{{ section.settings.secondary_label }}</a>{%- endif -%}
+      </div>
+    </div>
+    <div class="feature-split__media{% if section.settings.light_panel %} feature-split__media--panel{% endif %}">
+      {% render 'responsive-image', image: section.settings.image, asset: section.settings.asset, asset_width: 1400, asset_height: 787, ratio: section.settings.ratio, sizes: '(min-width: 990px) 50vw, 100vw', alt: fp.title %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Feature split",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "select", "id": "image_side", "label": "Image side", "default": "right", "options": [{ "value": "right", "label": "Right" }, { "value": "left", "label": "Left" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "text", "id": "subhead", "label": "Subheadline" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "product", "id": "product", "label": "Product", "info": "Default destination for the primary button." },
+    { "type": "text", "id": "primary_label", "label": "Primary button label" },
+    { "type": "url", "id": "primary_url", "label": "Primary button link" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary button label" },
+    { "type": "url", "id": "secondary_url", "label": "Secondary button link" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "asset", "label": "Fallback theme asset filename" },
+    { "type": "select", "id": "ratio", "label": "Image shape", "default": "16x9", "options": [{ "value": "16x9", "label": "Wide (16:9)" }, { "value": "4x5", "label": "Portrait (4:5)" }, { "value": "1x1", "label": "Square" }] },
+    { "type": "checkbox", "id": "light_panel", "label": "Show image on a light panel", "default": false, "info": "For product renders on a white background." }
+  ],
+  "presets": [{ "name": "Feature split" }]
+}
+{% endschema %}

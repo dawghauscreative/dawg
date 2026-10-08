@@ -1,0 +1,53 @@
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="cols cols--3 role-cols">
+      {%- for block in section.blocks -%}
+        {%- assign p = block.settings.product -%}
+        {%- if p != blank -%}
+          <article class="role-col" {{ block.shopify_attributes }}>
+            <a class="role-col__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
+              {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
+              {%- assign fallback_asset = fallback_capture | strip -%}
+              {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
+            </a>
+            <div class="role-col__body">
+              <span class="role-badge">{{ block.settings.role }}</span>
+              <h3>{{ p.title }}</h3>
+              {%- if block.settings.tagline != blank -%}<p class="role-col__tagline">{{ block.settings.tagline }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>{%- endif -%}
+              {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
+              <a class="btn btn--outline" href="{{ p.url }}">{{ block.settings.cta }}</a>
+            </div>
+          </article>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Role columns",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Intro" }
+  ],
+  "blocks": [
+    {
+      "type": "role",
+      "name": "Role",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" },
+        { "type": "text", "id": "role", "label": "Role (Protect, Balance, Restore)" },
+        { "type": "text", "id": "tagline", "label": "Positioning line" },
+        { "type": "textarea", "id": "text", "label": "Description" },
+        { "type": "text", "id": "cta", "label": "Button label" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [{ "name": "Role columns", "blocks": [{ "type": "role" }, { "type": "role" }, { "type": "role" }] }]
+}
+{% endschema %}

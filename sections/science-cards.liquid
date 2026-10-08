@@ -14,6 +14,7 @@
           {%- endif -%}
           <div class="sci-card__body">
             {%- if block.settings.number != blank -%}<span class="sci-card__num">{{ block.settings.number }}</span>{%- endif -%}
+            {%- if block.settings.kicker != blank -%}<span class="sci-card__kicker">{{ block.settings.kicker }}</span>{%- endif -%}
             {%- if block.settings.icon != 'none' -%}<span class="icon">{% render 'icon', name: block.settings.icon %}</span>{%- endif -%}
             <h3>{{ block.settings.title }}</h3>
             <div class="sci-card__text">{{ block.settings.text }}</div>
@@ -27,6 +28,9 @@
       {%- endfor -%}
     </div>
     {%- if section.settings.note != blank -%}<div class="sci-note prose">{{ section.settings.note }}</div>{%- endif -%}
+    {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
+      <div class="btn-row" style="justify-content:center;margin-top:56px"><a class="btn" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a></div>
+    {%- endif -%}
   </div>
 </section>
 {%- endif -%}
@@ -42,7 +46,9 @@
     { "type": "richtext", "id": "body", "label": "Text" },
     { "type": "select", "id": "columns", "label": "Cards per row (desktop)", "default": "4", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }] },
     { "type": "checkbox", "id": "show_images", "label": "Show image frames", "default": false, "info": "Shows an image on each card. Cards without an image show a placeholder frame." },
-    { "type": "richtext", "id": "note", "label": "Bottom note" }
+    { "type": "richtext", "id": "note", "label": "Bottom note" },
+    { "type": "text", "id": "button_label", "label": "Button label (optional)" },
+    { "type": "url", "id": "button_url", "label": "Button link" }
   ],
   "blocks": [
     {
@@ -50,6 +56,7 @@
       "name": "Card",
       "settings": [
         { "type": "text", "id": "number", "label": "Number (optional)" },
+        { "type": "text", "id": "kicker", "label": "Kicker (small label above the title)" },
         { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [{ "value": "none", "label": "None" }, { "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
         { "type": "text", "id": "title", "label": "Title" },
         { "type": "richtext", "id": "text", "label": "Text" },

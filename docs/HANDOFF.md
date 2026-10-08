@@ -118,3 +118,16 @@ Decisions and flags:
 ## Why product descriptions were missing (fixed)
 
 Shopify rejects a whole JSON template if any `richtext` setting is plain text. The FAQ answers were plain text, so 8 templates silently failed to sync and the draft theme kept the old versions. Always wrap richtext values in `<p>`. Also: Sun Resilience, Skin Recovery and Complete Skin Defense had no template suffix, so they used the generic product template; fixed in the product settings.
+
+## Homepage rebuilt from the Full Homepage Blueprint (Oct 2026)
+
+17 sections in blueprint order: Home hero (Sun Safe System), category statement, problem cards, Protect/Balance/Restore columns, featured Sun Safe System, system finder (four cards using the four system renders), lifestyle (6 tiles), layered protection, science preview, research strip (approved studies only), Dr. Mia, "Balance is a practice" with salt symbol, trust pillars, education (3 guides), email capture, final CTA. Announcement bar and 4-column footer (Shop All added) updated; mobile header is hamburger left, logo centred, cart right.
+
+Decisions to confirm:
+- The 16:9 video slot you asked for earlier is kept between the featured system and the finder (not in the blueprint). Delete the "video" section on the home template if unwanted.
+- Dropped from the old home: trust-bar strip and the "Every purchase supports a larger mission" melanoma band (not in the blueprint). The label line still appears on each product page.
+- Protect/Balance/Restore positioning lines ("Outdoor support for resilient skin", "Essential gut care for skin health", "Immune support for calm, balanced skin") come from the blueprint and differ from the current label taglines ("Daily support for active, sun-ready skin" etc.). Align one to the other.
+- Hero image: uses the Sun Safe System product's first media in Shopify (pick another in the section if needed). System finder, featured and final CTA use the clean system renders (`system-*.webp` assets).
+- Education cards 2 and 3 show "Coming soon" until their articles are published (drafts exist: "What Is the Gut-Skin Axis?" and "Why Consistency Matters in Skin Health"). Paste the article URL into each card when live.
+- Lifestyle: "Running + Cycling" and "Outdoor living" are placeholder frames awaiting photos.
+- The blueprint's blog URL `/blogs/education/...` was mapped to the real handle `/blogs/news/...`.

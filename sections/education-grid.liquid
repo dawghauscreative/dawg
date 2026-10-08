@@ -6,7 +6,7 @@
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
-    <div class="cols cols--auto4 edu-grid">
+    <div class="cols {% if section.blocks.size == 3 %}cols--3{% else %}cols--auto4 edu-grid{% endif %}">
       {%- for block in section.blocks -%}
         {%- assign has_link = false -%}
         {%- if block.settings.link != blank -%}{%- assign has_link = true -%}{%- endif -%}

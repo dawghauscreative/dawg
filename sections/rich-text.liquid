@@ -1,6 +1,9 @@
 {%- if section.settings.heading != blank or section.settings.body != blank -%}
-<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
-  <div class="container" style="max-width:{% if section.settings.width == 'narrow' %}760px{% else %}1100px{% endif %}{% if section.settings.align == 'center' %};text-align:center{% endif %}">
+<section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.salt_symbol %} has-salt{% endif %}" {{ section.shopify_attributes }}>
+  {%- if section.settings.salt_symbol -%}
+    <svg class="salt-symbol" viewBox="0 0 400 400" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="10"><circle cx="200" cy="200" r="170"/><path d="M10 200h380"/></svg>
+  {%- endif -%}
+  <div class="container" style="position:relative;max-width:{% if section.settings.width == 'narrow' %}760px{% else %}1100px{% endif %}{% if section.settings.align == 'center' %};text-align:center{% endif %}">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, tag: section.settings.heading_tag, center: section.settings.align -%}
     {%- if section.settings.body != blank -%}<div class="prose"{% if section.settings.align == 'center' %} style="margin-inline:auto"{% endif %}>{{ section.settings.body }}</div>{%- endif -%}
     {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
@@ -19,6 +22,7 @@
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "band", "label": "Band (black to green)" }] },
     { "type": "select", "id": "align", "label": "Alignment", "default": "left", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Centered" }] },
     { "type": "select", "id": "width", "label": "Width", "default": "narrow", "options": [{ "value": "narrow", "label": "Narrow" }, { "value": "wide", "label": "Wide" }] },
+    { "type": "checkbox", "id": "salt_symbol", "label": "Oversized salt symbol behind the text", "default": false },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "select", "id": "heading_tag", "label": "Heading level", "default": "h2", "options": [{ "value": "h1", "label": "H1" }, { "value": "h2", "label": "H2" }] },

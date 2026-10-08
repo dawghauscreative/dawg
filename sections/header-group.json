@@ -2,8 +2,19 @@
   "name": "Header",
   "type": "header",
   "sections": {
-    "announcement": { "type": "announcement-bar", "settings": {} },
-    "header": { "type": "header", "settings": {} }
+    "announcement": {
+      "type": "announcement-bar",
+      "settings": {
+        "text": "Dermatologist-formulated skin health from within."
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {}
+    }
   },
-  "order": ["announcement", "header"]
+  "order": [
+    "announcement",
+    "header"
+  ]
 }

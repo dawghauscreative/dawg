@@ -13,7 +13,7 @@
               <span class="eyebrow">{{ block.settings.kicker }}</span>
               <h3>{{ block.settings.headline }}</h3>
               <p>{{ block.settings.text }}</p>
-              {% render 'study-link', handle: handle, label: 'Read on PubMed' %}
+              {% render 'study-link', handle: handle, label: section.settings.link_label %}
             </div>
           </article>
         {%- endif -%}
@@ -30,7 +30,8 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "checkbox", "id": "show_images", "label": "Show image frames", "default": true }
+    { "type": "checkbox", "id": "show_images", "label": "Show image frames", "default": true },
+    { "type": "text", "id": "link_label", "label": "Link label", "default": "Read on PubMed" }
   ],
   "blocks": [
     {

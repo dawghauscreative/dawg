@@ -1,0 +1,50 @@
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="cols cols--auto4 finder">
+      {%- for block in section.blocks -%}
+        {%- assign p = block.settings.product -%}
+        {%- if p != blank -%}
+          <article class="finder-card{% if block.settings.featured %} finder-card--featured{% endif %}" {{ block.shopify_attributes }}>
+            <a class="finder-card__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">{% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, asset_width: 1400, asset_height: 787, ratio: '16x9', sizes: '(min-width: 990px) 25vw, 100vw', alt: p.title %}</a>
+            <div class="finder-card__body">
+              <h3>{{ p.title }}</h3>
+              <p class="finder-card__roles">{{ block.settings.roles }}</p>
+              <p><strong>Best for:</strong> {{ block.settings.best_for }}</p>
+              <a class="btn btn--outline" href="{{ p.url }}">{{ block.settings.cta }}</a>
+            </div>
+          </article>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "System finder",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" }
+  ],
+  "blocks": [
+    {
+      "type": "system",
+      "name": "System",
+      "settings": [
+        { "type": "product", "id": "product", "label": "System" },
+        { "type": "text", "id": "roles", "label": "Roles (e.g. Protect + Balance)" },
+        { "type": "textarea", "id": "best_for", "label": "Best for" },
+        { "type": "text", "id": "cta", "label": "Button label" },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "asset", "label": "Fallback theme asset filename" },
+        { "type": "checkbox", "id": "featured", "label": "Emphasise this card", "default": false }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "System finder", "blocks": [{ "type": "system" }, { "type": "system" }, { "type": "system" }, { "type": "system" }] }]
+}
+{% endschema %}
