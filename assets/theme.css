@@ -629,3 +629,9 @@ h1, h2, h3, h4 { font-variant-numeric: lining-nums; }
 .sci-card__text p + p { margin-top: .75rem; }
 .pdp__desc { margin: 1.1rem 0 .5rem; }
 .pdp__desc p { font-size: 1.02rem; line-height: 1.7; }
+
+.sci-rcard--media { grid-template-columns: 1fr; }
+.sci-rcard__media { width: 150px; }
+.sci-rcard__main { display: grid; gap: 18px; align-content: start; min-width: 0; }
+@media (min-width: 640px) { .sci-rcard--media { grid-template-columns: 150px minmax(0, 1fr); gap: 28px; } }
+.ingredient .media { margin-bottom: 4px; }

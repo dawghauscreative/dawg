@@ -20,6 +20,7 @@
             <div class="cols cols--3">
               {%- for ingredient in items -%}
                 <article class="ingredient">
+                  {% render 'responsive-image', image: ingredient.image.value, ratio: '4x5', sizes: '(min-width: 750px) 30vw, 100vw', alt: ingredient.name.value %}
                   {%- if ingredient.role.value != blank -%}<span class="ingredient__role">{{ ingredient.role.value }}</span>{%- endif -%}
                   <h4>{{ ingredient.name.value }}</h4>
                   {%- if ingredient.amount.value != blank -%}<p class="ingredient__amount">{{ ingredient.amount.value }}</p>{%- endif -%}

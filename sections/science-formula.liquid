@@ -43,7 +43,11 @@
 
     <div class="cols cols--2 sci-research">
       {%- for block in section.blocks -%}
-        <article class="sci-rcard{% if block.settings.mixed %} sci-rcard--mixed{% endif %}" {{ block.shopify_attributes }}>
+        <article class="sci-rcard{% if block.settings.mixed %} sci-rcard--mixed{% endif %}{% if section.settings.show_card_images %} sci-rcard--media{% endif %}" {{ block.shopify_attributes }}>
+          {%- if section.settings.show_card_images -%}
+            <div class="sci-rcard__media">{% render 'responsive-image', image: block.settings.image, ratio: '4x5', sizes: '160px', alt: block.settings.name %}</div>
+          {%- endif -%}
+          <div class="sci-rcard__main">
           <header>
             <div>
               <h3>{{ block.settings.name }}</h3>
@@ -61,6 +65,7 @@
               {%- for h in s_handles -%}{%- assign h_clean = h | strip -%}<li>{% render 'study-link', handle: h_clean %}</li>{%- endfor -%}
             </ul>
           {%- endif -%}
+          </div>
         </article>
       {%- endfor -%}
     </div>
@@ -89,6 +94,7 @@
     { "type": "text", "id": "feature_studies", "label": "Citations (study handles, comma separated)" },
     { "type": "image_picker", "id": "feature_image", "label": "Image" },
     { "type": "checkbox", "id": "feature_show_frame", "label": "Show image frame when empty", "default": true },
+    { "type": "checkbox", "id": "show_card_images", "label": "Show an image slot on every ingredient card", "default": true, "info": "Cards without an image show a placeholder frame. Use the ingredient slide or a macro image." },
     { "type": "header", "content": "Footer" },
     { "type": "richtext", "id": "note", "label": "Note" }
   ],
@@ -106,6 +112,7 @@
         { "type": "text", "id": "language", "label": "Public language line" },
         { "type": "richtext", "id": "context", "label": "Important context" },
         { "type": "text", "id": "studies", "label": "Citations (study handles, comma separated)" },
+        { "type": "image_picker", "id": "image", "label": "Ingredient image" },
         { "type": "checkbox", "id": "mixed", "label": "Mixed or null findings", "default": false }
       ]
     }
