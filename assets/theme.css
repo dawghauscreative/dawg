@@ -926,3 +926,11 @@ body.template-blog.is-filtered main > .shopify-section:not(:has(.blog-listing)) 
 /* Sub-headings inside merged rich-text sections */
 .prose h3 { font-size: 1.45rem; margin: 2em 0 .4em; }
 .prose em { font-style: italic; }
+
+/* Skin Edu cards with photography */
+.edu-card--media { padding: 0; }
+.edu-card--media .edu-card__img { display: block; }
+.edu-card--media .edu-card__img .media { border: 0; border-bottom: 1px solid var(--rule); }
+.edu-card__text { display: grid; gap: 12px; align-content: start; padding: clamp(22px, 2.6vw, 30px); flex: 1; }
+.edu-card--media { display: flex; flex-direction: column; }
+.edu-card--media .edu-card__meta { text-transform: uppercase; letter-spacing: .16em; font-weight: 700; }

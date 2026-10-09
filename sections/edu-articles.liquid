@@ -13,7 +13,15 @@
         {%- if ah != blank -%}{%- assign akey = section.settings.blog_handle | append: '/' | append: ah -%}{%- assign a = articles[akey] -%}{%- endif -%}
         {%- assign href = block.settings.url -%}
         {%- if a != blank -%}{%- assign href = a.url -%}{%- endif -%}
-        <article class="edu-card{% if href == blank %} edu-card--soon{% endif %}" {{ block.shopify_attributes }}>
+        {%- assign has_media = false -%}
+        {%- if block.settings.image != blank or block.settings.asset != blank -%}{%- assign has_media = true -%}{%- endif -%}
+        <article class="edu-card{% if href == blank %} edu-card--soon{% endif %}{% if has_media %} edu-card--media{% endif %}" {{ block.shopify_attributes }}>
+          {%- if has_media -%}
+            {%- if href != blank -%}<a class="edu-card__img" href="{{ href }}" tabindex="-1" aria-hidden="true">{%- else -%}<div class="edu-card__img">{%- endif -%}
+              {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, ratio: '4x5', sizes: '(min-width: 1000px) 30vw, (min-width: 750px) 45vw, 100vw', alt: block.settings.title %}
+            {%- if href != blank -%}</a>{%- else -%}</div>{%- endif -%}
+          {%- endif -%}
+          <div class="edu-card__text">
           {%- if block.settings.category != blank -%}<span class="role-badge">{{ block.settings.category }}</span>{%- endif -%}
           <h3>{%- if href != blank -%}<a href="{{ href }}">{{ block.settings.title }}</a>{%- else -%}{{ block.settings.title }}{%- endif -%}</h3>
           {%- if block.settings.teaser != blank -%}<p>{{ block.settings.teaser }}</p>{%- endif -%}
@@ -21,6 +29,7 @@
             {%- if a != blank -%}<span>{% render 'read-time', article: a %}</span>{%- endif -%}
             {%- if href != blank -%}<a class="text-link" href="{{ href }}">{{ block.settings.cta_label | default: 'Read article' }} &rarr;</a>{%- else -%}<span class="edu-card__soon">Coming soon</span>{%- endif -%}
           </p>
+          </div>
         </article>
       {%- endfor -%}
     </div>
@@ -49,6 +58,8 @@
       "type": "article",
       "name": "Article card",
       "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image (4:5)" },
+        { "type": "text", "id": "asset", "label": "Or theme asset filename", "info": "Used when no image is picked." },
         { "type": "text", "id": "category", "label": "Category label" },
         { "type": "text", "id": "title", "label": "Title" },
         { "type": "textarea", "id": "teaser", "label": "Teaser (1 to 2 sentences)" },

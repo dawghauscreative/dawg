@@ -96,7 +96,7 @@
     "latest": {
       "type": "edu-articles",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "anchor": "latest",
         "eyebrow": "Latest",
         "heading": "New from Skin Edu",
@@ -106,27 +106,29 @@
         "b1": {
           "type": "article",
           "settings": {
-            "category": "Skin science",
-            "title": "Why Skin Health Goes Deeper Than the Surface",
-            "teaser": "Skin responds to nutrition, the environment, and daily habits, not only to what is applied to the surface."
+            "asset": "edu-card-internal-skin-defense.webp",
+            "title": "What Is Internal Skin Defense?",
+            "teaser": "Skin health is shaped by more than what happens on the surface.",
+            "article": "what-is-internal-skin-defense-alchemia-md",
+            "cta_label": "Read the guide"
           }
         },
         "b2": {
           "type": "article",
           "settings": {
-            "category": "Sun + environment",
-            "title": "What Happens to Skin During Everyday Sun Exposure?",
-            "teaser": "A plain-language look at how everyday outdoor exposure interacts with skin, and why layered habits matter.",
-            "article": "supporting-skin-through-daily-sun-exposure"
+            "asset": "edu-card-gut-skin-axis.webp",
+            "title": "What Is the Gut-Skin Axis?",
+            "teaser": "How the intestinal environment and skin communicate.",
+            "article": "what-is-the-gut-skin-axis"
           }
         },
         "b3": {
           "type": "article",
           "settings": {
-            "category": "Gut + skin",
-            "title": "What Is the Gut-Skin Axis?",
-            "teaser": "How the intestinal environment and the skin communicate, and what the research can and cannot say.",
-            "article": "what-is-the-gut-skin-axis"
+            "asset": "edu-card-consistency.webp",
+            "title": "Why Consistency Matters in Skin Health",
+            "teaser": "Understanding renewal, daily habits, and realistic expectations.",
+            "article": "why-consistency-matters-in-skin-health"
           }
         }
       },
