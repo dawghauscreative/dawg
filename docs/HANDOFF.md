@@ -257,3 +257,7 @@ Notes:
 - "Do I need all three products?" is worded "Do I need every formula?" (banned list). The blueprint pull quote "not because you are told you need all three" is allowlisted as written.
 - The mission line wording must be confirmed against packaging before launch.
 - The existing Shopify media ("four compartments", "inside-out") has not been reviewed visually; check for "ultimate protection"-style wording and disease imagery.
+
+## Home page hero restored (Oct 9 2026)
+
+At the owner's request the home page opening banner is the original `hero` section again (three bottles on the rock, "Internal Skin Defense for Life in the Sun", Shop the Sun Safe System / Explore the Science, Dermatologist developed / Founded by Dr. Mia Luna). The blueprint's `home-hero` section is still in the theme if you want it back: swap the first section on the Home template. Navigation is unchanged (mobile: hamburger left, logo centre, cart right).

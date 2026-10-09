@@ -1,19 +1,19 @@
 {
   "sections": {
     "hero": {
-      "type": "home-hero",
+      "type": "hero",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Dermatologist-formulated internal skin support",
+        "eyebrow": "Dermatologist-formulated skin health",
         "heading": "Internal Skin Defense for Life in the Sun",
-        "body": "<p>Skin health is shaped by more than what happens on the surface.</p><p>Alchemia MD creates dermatologist-formulated supplements designed to support skin from within, through targeted nutritional support for environmental stress, gut-skin balance, and daily resilience.</p>",
+        "body": "<p>Skin is a living system. Alchemia MD supports it from within with dermatologist-formulated supplements designed for protection, balance, and resilience.</p>",
         "primary_label": "Shop the Sun Safe System",
         "primary_url": "/products/sun-safe-system",
         "secondary_label": "Explore the Science",
         "secondary_url": "/pages/science",
-        "trust": "Dermatologist-formulated\nResearch-informed\nFull ingredient transparency",
-        "product": "sun-safe-system",
-        "asset": "system-sun-safe.webp"
+        "image_alt": "",
+        "background_asset": "hero-banner-1.webp",
+        "trust_line": "Dermatologist developed\nFounded by Dr. Mia Luna"
       }
     },
     "category": {
