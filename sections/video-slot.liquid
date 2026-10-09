@@ -21,7 +21,7 @@
   endif
 -%}
 {%- if has_video or section.settings.show_placeholder -%}
-<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+<section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.tight_top %} section--flush-top{% endif %}" {{ section.shopify_attributes }}>
   <div class="container">
     <div class="video-split{% if has_text %} video-split--text{% endif %}{% if section.settings.video_side == 'left' %} video-split--left{% endif %}{% if frame_class != blank %} video-split--wide{% endif %}">
       {%- if has_text -%}
@@ -62,6 +62,7 @@
     { "type": "header", "content": "Video" },
     { "type": "video", "id": "video", "label": "Shopify-hosted video", "info": "Upload a file that matches the aspect ratio above. Takes priority over the link below." },
     { "type": "video_url", "id": "video_url", "label": "YouTube or Vimeo link", "accept": ["youtube", "vimeo"] },
+    { "type": "checkbox", "id": "tight_top", "label": "Remove the top spacing", "default": false, "info": "Use when this slot sits directly under another section with the same colour." },
     { "type": "checkbox", "id": "autoplay", "label": "Autoplay, muted and looping (no controls)", "default": false, "info": "For short hero reels. Shopify-hosted video only." },
     { "type": "text", "id": "video_title", "label": "Accessible title", "default": "Video", "info": "Read by screen readers. Describe the video." },
     { "type": "checkbox", "id": "show_placeholder", "label": "Show placeholder frame when no video is set", "default": true, "info": "Turn off before launch if a video is not ready." },

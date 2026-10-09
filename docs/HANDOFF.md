@@ -271,3 +271,5 @@ Home hero fix (Oct 9 2026): with a wide headline font the original hero's copy r
 Home hero crop fix (Oct 9 2026): on desktop the hero is as tall as the banner image's own proportions (56% of the width, capped) and the image is pinned to the top, so the gold arch and all three bottles show in full. Very wide monitors trim only the bottom (rock and reflection).
 
 Home trust strip restyled (Oct 9 2026): slim dark strip under the hero (was a tall tan band) with gold hairlines, small gold icons and evenly spaced items; single column on phones. Same three statements; change them or the icons on the "trust_strip" section of the Home template.
+
+Home intro video (Oct 9 2026): a 16:9 video slot now sits directly under "Skin health is more than a surface routine." (section "intro_video" on the Home template; same colour as the text above, no gap). It shows the placeholder frame until you add a video: upload one or paste a YouTube/Vimeo link in the section settings. The slot further down the page (between the featured system and the finder) is unchanged.

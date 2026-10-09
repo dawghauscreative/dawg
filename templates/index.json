@@ -610,12 +610,24 @@
         "button_label": "Learn about our mission",
         "button_url": "/pages/founder"
       }
+    },
+    "intro_video": {
+      "type": "video-slot",
+      "settings": {
+        "color_scheme": "light",
+        "aspect": "16x9",
+        "autoplay": false,
+        "video_title": "What is internal skin defense?",
+        "show_placeholder": true,
+        "tight_top": true
+      }
     }
   },
   "order": [
     "hero",
     "trust_strip",
     "category",
+    "intro_video",
     "problem",
     "roles",
     "featured",
