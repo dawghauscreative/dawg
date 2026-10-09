@@ -159,7 +159,7 @@ New/extended pieces: `split-compare` section (prebiotic + probiotic), `product-a
 Decisions and notes:
 - Tagline stays the label wording ("Daily probiotic for gut and skin health"), not the blueprint's "Essential Gut Care for Skin Health".
 - Amounts are label amounts only: inulin 500 mg; strains show "Part of the 215 mg probiotic blend". No CFU number is printed.
-- Bifidobacterium lactis has no slide, so its card shows the placeholder frame. Akkermansia carries an "Emerging research" badge.
+- Bifidobacterium lactis now uses the four slides you added (theme assets `slide-d23-1..4.webp`, originals in `source-images/ingredient-slides/day-23-b-lactis/`). The artwork is stamped "DAY 22 / 4" on all four, which duplicates the L. rhamnosus day; regenerate with the right day number when convenient. Akkermansia carries an "Emerging research" badge.
 - The product compliance slot is left empty and hidden. The Skin Recovery System card has an optional compliance line (blank) for when that wording is approved.
 - Hero gallery uses the product media already in Shopify (sk01 to sk13). Check the order against the blueprint (jar photos, what's inside, gut-skin axis, barrier, science) and that none of the infographics shows disease imagery.
 - Research cards cite only approved studies (Gao 2023, Szanto 2019, Lee HY7714 2015). The audience cards, benefit cards and FAQ answers were written to the label and the approved Skinbiotic+ language; review the wording.

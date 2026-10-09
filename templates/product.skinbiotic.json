@@ -210,7 +210,8 @@
             "role": "Probiotic",
             "text": "<p>A Bifidobacterium species included for its role in the intestinal microbial community alongside the other organisms.</p>",
             "link_label": "See the research",
-            "link_url": "/pages/science#skinbiotic"
+            "link_url": "/pages/science#skinbiotic",
+            "slide_set": "d23"
           }
         },
         "b4": {
