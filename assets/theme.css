@@ -828,5 +828,7 @@ h1, h2, h3, h4 { font-variant-numeric: lining-nums; }
   .hero--bg .hero__grid > div:first-child { max-width: min(600px, 48%); }
   .hero--bg h1 { font-size: clamp(2.6rem, 4.6vw, 4.4rem); max-width: 12ch; }
   .hero--bg .lede { max-width: 38ch; }
-  .hero__bg img { object-position: 82% center; }
+  /* match the banner's own proportions (1672x941) so the arch and bottles are never cropped */
+  .hero--bg .hero__grid { min-height: clamp(560px, 56.3vw, 940px); }
+  .hero__bg img { object-position: center top; }
 }
