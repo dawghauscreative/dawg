@@ -8,7 +8,7 @@
     <div class="stack" style="--stack:.75rem;margin-top:2rem">
       {%- if section.settings.extra_line != blank -%}<p class="small">{{ section.settings.extra_line }}</p>{%- endif -%}
       {%- render 'label-caution' -%}
-      {%- render 'fda-disclaimer', dagger: true -%}
+      {%- if section.settings.fda_text != blank -%}<p class="fda-line"><span aria-hidden="true">{{ settings.fda_dagger }}</span> {{ section.settings.fda_text }}</p>{%- else -%}{%- render 'fda-disclaimer', dagger: true -%}{%- endif -%}
     </div>
   </div>
 </section>
@@ -18,6 +18,7 @@
   "name": "Compliance notice",
   "settings": [
     { "type": "text", "id": "extra_line", "label": "Extra line (e.g. sunscreen statement)" },
+    { "type": "textarea", "id": "fda_text", "label": "FDA wording override (optional)", "info": "Blank = the standard wording in Theme settings > Compliance. Use for pages that cover several products." },
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],
   "presets": [{ "name": "Compliance notice" }]

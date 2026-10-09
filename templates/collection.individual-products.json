@@ -1,0 +1,490 @@
+{
+  "sections": {
+    "hero": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "dark",
+        "image_side": "right",
+        "eyebrow": "Individual formulas",
+        "heading": "Three targeted ways to support skin from within.",
+        "heading_tag": "h1",
+        "body": "<p>Alchemia MD’s individual formulas are designed around three distinct roles in skin health:</p><p><strong>Protect. Balance. Restore.</strong></p><p>Choose the formula that best matches your current routine, or explore the systems if you want complementary support across more than one area.</p>",
+        "primary_label": "Find your formula ↓",
+        "primary_url": "#choose",
+        "secondary_label": "Explore the systems",
+        "secondary_url": "/collections/bundles",
+        "asset": "individual-three-formulas.webp",
+        "ratio": "16x9",
+        "light_panel": true
+      }
+    },
+    "roles": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Where to begin",
+        "heading": "Start with the role that fits you.",
+        "columns": "3",
+        "show_images": false
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "kicker": "Protect",
+            "title": "UV Shield+",
+            "text": "<p>For people focused on outdoor exposure, environmental stress, and daily skin resilience.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "kicker": "Balance",
+            "title": "Skinbiotic+",
+            "text": "<p>For people focused on gut health, microbiome balance, and the gut-skin connection.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "kicker": "Restore",
+            "title": "Dermaboost+",
+            "text": "<p>For people focused on antioxidant, immune, and nutritional support for calm, resilient skin.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "selector": {
+      "type": "product-selector",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "Individual formulas",
+        "heading": "Choose your formula",
+        "plan_heading": "Choose your plan"
+      },
+      "blocks": {
+        "b1": {
+          "type": "formula",
+          "settings": {
+            "product": "uv-shield",
+            "role": "Protect",
+            "description": "A dermatologist-formulated daily supplement built around five ingredients selected for complementary nutritional and antioxidant roles related to environmental and UV-associated skin stress.",
+            "support_areas": "Environmental stress\nAntioxidant support\nSkin resilience\nOutdoor lifestyle support",
+            "best_for": "Golf\nTennis\nSailing\nRunning\nCycling\nBeach\nTravel\nEveryday outdoor living",
+            "choose_label": "Choose UV Shield+",
+            "plan_heading": "Choose your UV Shield+ plan",
+            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
+          }
+        },
+        "b2": {
+          "type": "formula",
+          "settings": {
+            "product": "skinbiotic",
+            "role": "Balance",
+            "description": "A dermatologist-formulated synbiotic combining organic inulin with multiple probiotic organisms to support gut health, microbiome balance, and the gut-skin connection.",
+            "support_areas": "Gut-skin connection\nMicrobiome balance\nSynbiotic support\nDaily internal balance",
+            "best_for": "Customers already interested in probiotics\nGut-health-focused routines\nMicrobiome support\nInternal skin-health routines",
+            "choose_label": "Choose Skinbiotic+",
+            "plan_heading": "Choose your Skinbiotic+ plan",
+            "plan_copy": "Build gut-skin support into a consistent daily routine."
+          }
+        },
+        "b3": {
+          "type": "formula",
+          "settings": {
+            "product": "dermaboost",
+            "role": "Restore",
+            "description": "A dermatologist-formulated daily supplement combining vitamins, minerals, carotenoids, and botanical polyphenols selected for antioxidant, nutritional, and normal immune-support roles.",
+            "support_areas": "Antioxidant support\nNormal immune function\nNutritional skin support\nSkin resilience",
+            "best_for": "Broader daily nutritional support\nAntioxidant-focused routines\nImmune-supportive nutrition\nLong-term skin resilience",
+            "choose_label": "Choose Dermaboost+",
+            "plan_heading": "Choose your Dermaboost+ plan",
+            "plan_copy": "Choose the replenishment schedule that fits your daily skin-health routine."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "compare": {
+      "type": "compare-table",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Compare",
+        "heading": "Which formula is right for me?",
+        "col_1": "UV Shield+",
+        "col_2": "Skinbiotic+",
+        "col_3": "Dermaboost+"
+      },
+      "blocks": {
+        "b1": {
+          "type": "row",
+          "settings": {
+            "label": "Role",
+            "a": "Protect",
+            "b": "Balance",
+            "c": "Restore"
+          }
+        },
+        "b2": {
+          "type": "row",
+          "settings": {
+            "label": "Primary focus",
+            "a": "Environmental support",
+            "b": "Gut-skin support",
+            "c": "Nutritional + immune support"
+          }
+        },
+        "b3": {
+          "type": "row",
+          "settings": {
+            "label": "Format",
+            "a": "Capsules",
+            "b": "Capsules",
+            "c": "Capsules"
+          }
+        },
+        "b4": {
+          "type": "row",
+          "settings": {
+            "label": "Daily use",
+            "a": "Yes",
+            "b": "Yes",
+            "c": "Yes"
+          }
+        },
+        "b5": {
+          "type": "row",
+          "settings": {
+            "label": "Best fit",
+            "a": "Outdoor lifestyle",
+            "b": "Gut/microbiome focus",
+            "c": "Broader resilience support"
+          }
+        },
+        "b6": {
+          "type": "row",
+          "settings": {
+            "label": "Used in systems",
+            "a": "Sun Safe, Sun Resilience, Complete",
+            "b": "Sun Safe, Skin Recovery, Complete",
+            "c": "Skin Recovery, Sun Resilience, Complete"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    "edu_uv": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "light",
+        "image_side": "right",
+        "eyebrow": "Protect",
+        "heading": "UV Shield+",
+        "product": "uv-shield",
+        "asset": "lifestyle-uvshield-rocks.webp",
+        "ratio": "16x9",
+        "body": "<p>UV Shield+ combines niacinamide, Polypodium leucotomos, trans-resveratrol, EGCG, and spirulina.</p><p>These ingredients are selected to cover multiple complementary aspects of environmental, antioxidant, and UV-response biology.</p><p><strong>Best starting point if:</strong></p><ul><li>You spend significant time outdoors</li><li>Environmental exposure is your primary concern</li><li>You want targeted antioxidant support</li><li>You want a supplement designed to complement your sun-safe routine</li></ul>",
+        "primary_label": "Explore UV Shield+"
+      }
+    },
+    "edu_skin": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "green",
+        "image_side": "left",
+        "eyebrow": "Balance",
+        "heading": "Skinbiotic+",
+        "product": "skinbiotic",
+        "asset": "lifestyle-skinbiotic-cliffs.webp",
+        "ratio": "16x9",
+        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula.</p><p>Research describes the gut-skin axis as involving short-chain fatty acid production, immune signaling, barrier integrity, and microbiome composition.</p><p><strong>Best starting point if:</strong></p><ul><li>Gut health is already part of your wellness routine</li><li>You are interested in microbiome support</li><li>You want to focus on the gut-skin connection</li><li>You prefer a simple one-capsule daily routine</li></ul>",
+        "primary_label": "Explore Skinbiotic+"
+      }
+    },
+    "edu_derma": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "dark",
+        "image_side": "right",
+        "eyebrow": "Restore",
+        "heading": "Dermaboost+",
+        "product": "dermaboost",
+        "asset": "lifestyle-dermaboost-yacht.webp",
+        "ratio": "16x9",
+        "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients in one formula.</p><p>The ingredient research includes antioxidant, nutritional, and immune-related biological rationale for the ingredient mix.</p><p><strong>Best starting point if:</strong></p><ul><li>You want broader daily nutritional skin support</li><li>Antioxidant support is a priority</li><li>You want nutrients associated with normal immune function</li><li>You want a more comprehensive single-formula routine</li></ul>",
+        "primary_label": "Explore Dermaboost+"
+      }
+    },
+    "start": {
+      "type": "start-paths",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Not sure?",
+        "heading": "Not sure where to start?",
+        "line": "Want support across more than one area?",
+        "button_label": "Explore the systems",
+        "button_url": "/collections/bundles"
+      },
+      "blocks": {
+        "b1": {
+          "type": "path",
+          "settings": {
+            "statement": "I spend a lot of time outdoors",
+            "product": "uv-shield",
+            "label": "Start with UV Shield+"
+          }
+        },
+        "b2": {
+          "type": "path",
+          "settings": {
+            "statement": "I’m focused on gut health + skin",
+            "product": "skinbiotic",
+            "label": "Start with Skinbiotic+"
+          }
+        },
+        "b3": {
+          "type": "path",
+          "settings": {
+            "statement": "I want broader daily skin resilience support",
+            "product": "dermaboost",
+            "label": "Start with Dermaboost+"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "systems": {
+      "type": "system-finder",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Looking for more than one role?",
+        "heading": "Build a system instead.",
+        "best_for_label": "",
+        "button_label": "Explore all systems",
+        "button_url": "/collections/bundles"
+      },
+      "blocks": {
+        "b1": {
+          "type": "system",
+          "settings": {
+            "product": "sun-safe-system",
+            "roles": "Protect + Balance",
+            "best_for": "UV Shield+ + Skinbiotic+",
+            "cta": "Explore Sun Safe System",
+            "asset": "system-sun-safe.webp"
+          }
+        },
+        "b2": {
+          "type": "system",
+          "settings": {
+            "product": "skin-recovery-system",
+            "roles": "Balance + Restore",
+            "best_for": "Skinbiotic+ + Dermaboost+",
+            "cta": "Explore Skin Recovery System",
+            "asset": "system-skin-recovery.webp",
+            "note": ""
+          }
+        },
+        "b3": {
+          "type": "system",
+          "settings": {
+            "product": "sun-resilience-system",
+            "roles": "Protect + Restore",
+            "best_for": "UV Shield+ + Dermaboost+",
+            "cta": "Explore Sun Resilience System",
+            "asset": "system-sun-resilience.webp"
+          }
+        },
+        "b4": {
+          "type": "system",
+          "settings": {
+            "product": "complete-skin-defense-system",
+            "roles": "Protect + Balance + Restore",
+            "best_for": "All three.",
+            "cta": "Explore Complete Skin Defense",
+            "asset": "system-complete.webp"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "science": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "The science",
+        "heading": "Understand what you’re taking.",
+        "columns": "3",
+        "show_images": false,
+        "button_label": "Explore the science",
+        "button_url": "/pages/science"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Ingredient research",
+            "text": "<p>Why each ingredient is included.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Internal skin defense",
+            "text": "<p>How nutrition fits into a broader skin-health routine.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Formula philosophy",
+            "text": "<p>Why Alchemia MD uses targeted multi-ingredient formulations.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "founder": {
+      "type": "founder",
+      "settings": {
+        "color_scheme": "light",
+        "image_side": "left",
+        "image_asset": "founder-portrait.webp",
+        "eyebrow": "Dermatologist-founded",
+        "heading": "A more intentional supplement routine.",
+        "credentials": "",
+        "body": "<p>Alchemia MD began with a recurring problem Dr. Mia Luna saw in practice: patients wanted natural, evidence-informed ways to support their skin but were often left managing disconnected supplements with no clear system.</p><p>The individual formulas were created to give each major support role a defined place in the routine.</p><p><strong>UV Shield+</strong> Protect.</p><p><strong>Skinbiotic+</strong> Balance.</p><p><strong>Dermaboost+</strong> Restore.</p>",
+        "link_label": "Meet Dr. Mia Luna",
+        "link_url": "/pages/founder"
+      }
+    },
+    "faq": {
+      "type": "pdp-faq",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Questions",
+        "heading": "Frequently asked questions",
+        "heading_tag": "h2",
+        "show_renewal_faq": false
+      },
+      "blocks": {
+        "b1": {
+          "type": "item",
+          "settings": {
+            "question": "Can I buy each formula individually?",
+            "answer": "<p>Yes. UV Shield+, Skinbiotic+, and Dermaboost+ are each available independently.</p>"
+          }
+        },
+        "b2": {
+          "type": "item",
+          "settings": {
+            "question": "Do I need every formula?",
+            "answer": "<p>No. Each formula is designed to stand on its own. Systems combine formulas for customers who want support across multiple areas.</p>"
+          }
+        },
+        "b3": {
+          "type": "item",
+          "settings": {
+            "question": "Can I subscribe to an individual product?",
+            "answer": "<p>Yes. Choose a formula on this page, then choose your plan to see the available subscription and one-time purchase options.</p>"
+          }
+        },
+        "b4": {
+          "type": "item",
+          "settings": {
+            "question": "What subscription options are available?",
+            "answer": "<p>Each formula offers a monthly subscription, a three-month subscription, and one-time supply options. The current plan options are shown when you choose your plan.</p>"
+          }
+        },
+        "b5": {
+          "type": "item",
+          "settings": {
+            "question": "Which product should I start with?",
+            "answer": "<p>Choose based on your main priority: Protect with UV Shield+, Balance with Skinbiotic+, or Restore with Dermaboost+.</p>"
+          }
+        },
+        "b6": {
+          "type": "item",
+          "settings": {
+            "question": "Can I switch from a single product to a system later?",
+            "answer": "<p>Yes. The individual formulas are the foundation of the Alchemia MD systems.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    "compliance": {
+      "type": "compliance-notice",
+      "settings": {
+        "color_scheme": "dark",
+        "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
+        "extra_line": "UV Shield+ does not replace sunscreen."
+      }
+    },
+    "final": {
+      "type": "final-cta",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Protect. Balance. Restore.",
+        "heading": "Start with the formula that fits your routine.",
+        "body": "<p>Three dermatologist-formulated ways to support skin from within.</p>",
+        "button_label": "Choose your formula",
+        "button_url": "#choose",
+        "secondary_label": "Explore the systems",
+        "secondary_url": "/collections/bundles"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "roles",
+    "selector",
+    "compare",
+    "edu_uv",
+    "edu_skin",
+    "edu_derma",
+    "start",
+    "systems",
+    "science",
+    "founder",
+    "faq",
+    "compliance",
+    "final"
+  ]
+}

@@ -1,0 +1,104 @@
+{%- comment -%}
+  Guided purchase landing: three formula cards, then one plan area for the chosen formula.
+
+  PURCHASE RULES (Supr owns the buy box):
+  - No add-to-cart, no quick add, no subscription picker and no selling_plan is written anywhere in this section.
+  - "Choose" selects a formula and reveals its plan area; the plan button opens that product's own page at #buy-box,
+    where the native product form and the Supr widget live. Without JavaScript the Choose buttons go straight there.
+  - Pricing, discounts and badges come from Supr / Shopify on the product page, never from this page.
+{%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }} selector" id="choose" data-selector {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="selector__cards" role="group" aria-label="{{ section.settings.heading | escape }}">
+      {%- for block in section.blocks -%}
+        {%- assign p = block.settings.product -%}
+        {%- if p != blank -%}
+          <article class="sel-card" data-sel-card="{{ p.handle }}" {{ block.shopify_attributes }}>
+            <a class="sel-card__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
+              {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
+              {%- assign fallback_asset = fallback_capture | strip -%}
+              {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
+            </a>
+            <div class="sel-card__body">
+              <span class="role-badge">{{ block.settings.role }}</span>
+              <h3>{{ p.title }}</h3>
+              {%- assign tag_line = p.metafields.custom.tagline -%}
+              {%- if tag_line != blank -%}<p class="sel-card__tagline">{{ tag_line }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>{%- endif -%}
+              {%- if block.settings.description != blank -%}<p>{{ block.settings.description }}</p>{%- endif -%}
+              {%- if block.settings.support_areas != blank -%}
+                <h4>Key support areas</h4>
+                <ul class="sel-list">{%- assign items = block.settings.support_areas | newline_to_br | split: '<br />' -%}{%- for it in items -%}{%- assign t = it | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
+              {%- endif -%}
+              {%- if block.settings.best_for != blank -%}
+                <h4>Best for</h4>
+                <ul class="sel-list">{%- assign items = block.settings.best_for | newline_to_br | split: '<br />' -%}{%- for it in items -%}{%- assign t = it | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
+              {%- endif -%}
+              <div class="btn-row">
+                <a class="btn" href="{{ p.url }}#buy-box" data-sel-choose="{{ p.handle }}" aria-controls="plan-{{ p.handle }}">{{ block.settings.choose_label | default: 'Choose' }}</a>
+                <a class="btn btn--outline" href="{{ p.url }}">{{ block.settings.learn_label | default: 'Learn more' }}</a>
+              </div>
+            </div>
+          </article>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="selector__plan" id="plan" data-sel-plan tabindex="-1" aria-live="polite">
+      <h2 class="selector__plan-title">{{ section.settings.plan_heading }}</h2>
+      <p class="selector__empty" data-sel-empty>{{ section.settings.empty_text }}</p>
+      {%- for block in section.blocks -%}
+        {%- assign p = block.settings.product -%}
+        {%- if p != blank -%}
+          <div class="sel-panel" id="plan-{{ p.handle }}" data-sel-panel="{{ p.handle }}" hidden>
+            <h3>{{ block.settings.plan_heading }}</h3>
+            <p>{{ block.settings.plan_copy }}</p>
+            <div class="btn-row"><a class="btn" href="{{ p.url }}#buy-box">{{ block.settings.plan_button | default: 'Choose your plan' }}</a></div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if section.settings.expectation != blank -%}<p class="expectation sel-expectation">{{ section.settings.expectation }}</p>{%- endif -%}
+      {%- if section.settings.trust_items != blank -%}
+        <ul class="sel-trust">{%- assign titems = section.settings.trust_items | newline_to_br | split: '<br />' -%}{%- for it in titems -%}{%- assign t = it | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product selector",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Choose your formula" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "header", "content": "Plan area" },
+    { "type": "paragraph", "content": "Choosing a formula reveals its plan area, and its button opens the product page at the purchase box. Pricing and plan options are never set here." },
+    { "type": "text", "id": "plan_heading", "label": "Plan area heading", "default": "Choose your plan" },
+    { "type": "text", "id": "empty_text", "label": "Text before a formula is chosen", "default": "Select a formula above to see purchase options." },
+    { "type": "text", "id": "expectation", "label": "Expectation line", "default": "Skin support is gradual. Consistent daily use matters." },
+    { "type": "textarea", "id": "trust_items", "label": "Trust strip (one per line)", "default": "Dermatologist-formulated\nResearch-informed\nFull ingredient transparency\nDesigned for daily use" }
+  ],
+  "blocks": [
+    {
+      "type": "formula",
+      "name": "Formula",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" },
+        { "type": "text", "id": "role", "label": "Role (Protect, Balance, Restore)" },
+        { "type": "textarea", "id": "description", "label": "Short description" },
+        { "type": "textarea", "id": "support_areas", "label": "Key support areas (one per line)" },
+        { "type": "textarea", "id": "best_for", "label": "Best for (one per line)" },
+        { "type": "text", "id": "choose_label", "label": "Choose button label" },
+        { "type": "text", "id": "learn_label", "label": "Learn more button label", "default": "Learn more" },
+        { "type": "text", "id": "plan_heading", "label": "Plan area heading when chosen" },
+        { "type": "text", "id": "plan_copy", "label": "Plan area copy when chosen" },
+        { "type": "text", "id": "plan_button", "label": "Plan button label", "default": "Choose your plan" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [{ "name": "Product selector", "blocks": [{ "type": "formula" }, { "type": "formula" }, { "type": "formula" }] }]
+}
+{% endschema %}

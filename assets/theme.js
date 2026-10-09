@@ -139,3 +139,31 @@
     if (search) search.addEventListener('input', apply);
   });
 })();
+
+/* Individual products selector: reveals the chosen formula's plan area. Without JS the Choose buttons link
+   straight to the product page purchase box. Nothing here touches the cart or any selling plan. */
+(function () {
+  document.querySelectorAll('[data-selector]').forEach(function (root) {
+    var cards = root.querySelectorAll('[data-sel-card]');
+    var panels = root.querySelectorAll('[data-sel-panel]');
+    var empty = root.querySelector('[data-sel-empty]');
+    var plan = root.querySelector('[data-sel-plan]');
+    function choose(handle) {
+      cards.forEach(function (c) { c.classList.toggle('is-selected', c.getAttribute('data-sel-card') === handle); });
+      panels.forEach(function (p) { p.hidden = p.getAttribute('data-sel-panel') !== handle; });
+      if (empty) empty.hidden = true;
+      if (plan) {
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        plan.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+        plan.focus({ preventScroll: true });
+      }
+    }
+    root.querySelectorAll('[data-sel-choose]').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        if (!plan) return;
+        e.preventDefault();
+        choose(btn.getAttribute('data-sel-choose'));
+      });
+    });
+  });
+})();

@@ -1,6 +1,6 @@
 {%- assign renewal_faq = false -%}
 {%- assign heading_tag = section.settings.heading_tag | default: 'h2' -%}
-{%- if settings.show_renewal_timeline and settings.renewal_faq_answer != blank -%}{%- assign renewal_faq = true -%}{%- endif -%}
+{%- if settings.show_renewal_timeline and settings.renewal_faq_answer != blank and section.settings.show_renewal_faq -%}{%- assign renewal_faq = true -%}{%- endif -%}
 {%- capture guarantee_faq -%}{%- render 'guarantee-badge', style: 'faq' -%}{%- endcapture -%}
 {%- if section.blocks.size > 0 or renewal_faq or guarantee_faq != blank -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
@@ -34,6 +34,7 @@
   "name": "FAQ",
   "settings": [
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
+    { "type": "checkbox", "id": "show_renewal_faq", "label": "Include the \"How long until I see results?\" entry", "default": true },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "select", "id": "heading_tag", "label": "Heading level", "default": "h2", "options": [{ "value": "h1", "label": "H1 (page title)" }, { "value": "h2", "label": "H2" }] },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Frequently asked questions" }

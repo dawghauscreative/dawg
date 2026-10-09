@@ -181,3 +181,17 @@ Decisions and notes:
 - The negation list on "What the science does not say" and the "Does Dermaboost+ treat inflammation?" FAQ are allowlisted in `docs/check-banned.sh`.
 - The product compliance slot is empty and hidden. The Skin Recovery card has a blank optional compliance line for when that wording is approved.
 - The old "How long does one bottle last?" FAQ and the old Longvida mention in the FAQ were dropped (not in the blueprint).
+
+## Individual Products landing page (blueprint, Oct 9 2026)
+
+`templates/collection.individual-products.json` is assigned to the existing collection `individual-products` (the header's "Individual" link already points to it; collection template suffix and SEO were set in Shopify). Sections: hero (three formulas, equal weight, H1), Protect/Balance/Restore strip, product selector with plan area and trust strip, comparison table (no prices), three education blocks, "Not sure where to start?", four-system upsell, science strip, founder, FAQ (renewal entry switched off), compliance (plural FDA wording and the UV sunscreen line), final CTA.
+
+**Purchase flow, the one decision to confirm:** I could not verify that Supr can bind to a different product on a collection/page template, and the rules forbid rebuilding its payload, so I shipped the blueprint's fallback. Choosing a formula highlights its card and reveals one plan area (heading, copy, expectation line, trust strip); the plan button opens that product's page at `#buy-box`, where the native form and Supr widget live. Without JavaScript the Choose buttons go straight to `#buy-box`. Nothing on this page adds to cart, writes a selling plan, or shows a price. If Supr confirms an on-page binding works, the plan area in `sections/product-selector.liquid` is where a native product form would go.
+
+New/extended: `product-selector`, `compare-table`, `start-paths` sections; `feature-split` (heading level), `system-finder` (section button), `pdp-faq` (renewal entry toggle), `compliance-notice` (FDA wording override); asset `individual-three-formulas.webp` (the three clean renders on white, composed from `source-images/product-renders`).
+
+Notes:
+- Selector cards use the label taglines from each product's `custom.tagline`, not the blueprint's "Outdoor Support for Resilient Skin" / "Essential Gut Care for Skin Health" / "Immune Support for Calm, Balanced Skin".
+- The blueprint question "Do I need all three?" is worded "Do I need every formula?" (the banned list blocks the original phrasing).
+- Format row says "Capsules" for all three (Skinbiotic+ is also capsules).
+- Education blocks use the lifestyle renders as images; swap in the editor if you prefer product photos.
