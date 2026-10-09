@@ -7,7 +7,11 @@
         <article class="compare__side" {{ block.shopify_attributes }}>
           <span class="compare__kicker">{{ block.settings.kicker }}</span>
           <h3>{{ block.settings.name }}</h3>
-          <p>{{ block.settings.text }}</p>
+          {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
+          {%- if block.settings.items != blank -%}
+            <ul class="compare__list">{%- assign items = block.settings.items | newline_to_br | split: '<br />' -%}{%- for it in items -%}{%- assign t = it | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
+          {%- endif -%}
+          {%- if block.settings.focus != blank -%}<p class="compare__focus"><strong>Primary focus</strong> {{ block.settings.focus }}</p>{%- endif -%}
         </article>
         {%- if forloop.first -%}<span class="compare__plus" aria-hidden="true">+</span>{%- endif -%}
       {%- endfor -%}
@@ -27,7 +31,7 @@
     { "type": "text", "id": "center", "label": "Centre statement" }
   ],
   "blocks": [
-    { "type": "side", "name": "Side", "settings": [{ "type": "text", "id": "kicker", "label": "Label" }, { "type": "text", "id": "name", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" }] }
+    { "type": "side", "name": "Side", "settings": [{ "type": "text", "id": "kicker", "label": "Label" }, { "type": "text", "id": "name", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" }, { "type": "textarea", "id": "items", "label": "List (one per line)" }, { "type": "text", "id": "focus", "label": "Primary focus line" }] }
   ],
   "max_blocks": 2,
   "presets": [{ "name": "Split compare", "blocks": [{ "type": "side" }, { "type": "side" }] }]

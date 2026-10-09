@@ -5,10 +5,28 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "eyebrow": "Protect + Balance"
+          }
         },
         "tagline": {
           "type": "tagline",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text": "<p>The Sun Safe System pairs UV Shield+ and Skinbiotic+ in one dermatologist-formulated daily routine.</p><p>UV Shield+ is built around nutritional and antioxidant support for skin exposed to environmental and UV-related stress. Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection.</p><p>Together, they create a simple two-step system for people who spend significant time outdoors and want to support skin from both the environmental and internal sides of the equation.</p>"
+          }
+        },
+        "bullets": {
+          "type": "bullets",
+          "settings": {
+            "items": "Supports skin exposed to environmental and UV-related stress†\nSupports the gut-skin connection†\nProvides antioxidant and microbiome support†\nSimplifies two targeted formulas into one daily system\nDesigned for active, sun-exposed lifestyles\nDermatologist-formulated"
+          }
+        },
+        "price": {
+          "type": "price",
           "settings": {}
         },
         "reviews": {
@@ -21,29 +39,33 @@
         },
         "expectation": {
           "type": "expectation",
-          "settings": {}
+          "settings": {
+            "text": "Skin support is gradual. Consistent daily use matters."
+          }
         },
         "trust_bar": {
           "type": "trust_bar",
           "settings": {
             "icon_1": "shield",
-            "text_1": "Dermatologist developed"
+            "text_1": "Dermatologist-formulated",
+            "icon_2": "molecule",
+            "text_2": "Research-informed",
+            "icon_3": "layers",
+            "text_3": "Full ingredient transparency"
           }
         },
-        "fda": {
-          "type": "fda",
-          "settings": {}
+        "note": {
+          "type": "note",
+          "settings": {
+            "text": "The Sun Safe System complements sunscreen and smart sun habits. It does not replace them."
+          }
         },
         "melanoma": {
           "type": "melanoma",
           "settings": {}
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "description": {
-          "type": "description",
+        "fda": {
+          "type": "fda",
           "settings": {}
         }
       },
@@ -51,131 +73,711 @@
         "title",
         "tagline",
         "description",
+        "bullets",
         "price",
         "reviews",
         "buy_buttons",
         "expectation",
         "trust_bar",
+        "note",
         "melanoma",
         "fda"
       ],
-      "settings": {}
+      "settings": {
+        "gallery_assets": "system-sun-safe.webp,slide-d01-1.webp,slide-d11-1.webp,lifestyle-uvshield-skinbiotic-sailboat.webp"
+      }
     },
     "definition": {
-      "type": "pdp-definition",
+      "type": "split-compare",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "What it is",
+        "heading": "Two complementary forms of internal skin support.",
+        "body": "<p>The Sun Safe System combines two formulas with different primary roles.</p><p>It is not built around taking more products for the sake of taking more products. It is built around combining two different biological support strategies in one routine.</p>",
+        "center": "Protect the routine. Balance the system."
+      },
+      "blocks": {
+        "b1": {
+          "type": "side",
+          "settings": {
+            "kicker": "Protect",
+            "name": "UV Shield+",
+            "text": "Nutritional and antioxidant support for skin exposed to life outdoors."
+          }
+        },
+        "b2": {
+          "type": "side",
+          "settings": {
+            "kicker": "Balance",
+            "name": "Skinbiotic+",
+            "text": "Synbiotic support for gut health and the gut-skin connection."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
+    },
+    "video": {
+      "type": "video-slot",
       "settings": {}
     },
-    "steps": {
-      "type": "bundle-steps",
-      "settings": {}
+    "why": {
+      "type": "flow-steps",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "System logic",
+        "heading": "Why pair UV Shield+ with Skinbiotic+?",
+        "body": "<p>UV Shield+ primarily targets nutritional and antioxidant pathways relevant to environmental stress. Skinbiotic+ primarily targets the gut and microbial environment.</p><p>These are different starting points, which is exactly why the pairing makes sense. The two products operate through different upstream mechanisms that may converge on broader systemic signaling.</p>",
+        "note": "This diagram represents formulation rationale. It does not mean the finished system has been clinically tested as a combined regimen."
+      },
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "kicker": "UV Shield+",
+            "label": "Environmental exposure"
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "kicker": "UV Shield+",
+            "label": "Antioxidant + nutritional support"
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "kicker": "Skinbiotic+",
+            "label": "Gut + microbiome support"
+          }
+        },
+        "b4": {
+          "type": "step",
+          "settings": {
+            "kicker": "Combined routine",
+            "label": "Broader internal balance"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
     },
-    "value": {
-      "type": "bundle-value-stack",
-      "settings": {}
+    "step1": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "green",
+        "image_side": "right",
+        "eyebrow": "Step 1",
+        "heading": "UV Shield+",
+        "subhead": "Daily support for active, sun-ready skin",
+        "product": "uv-shield",
+        "asset": "lifestyle-uvshield-rocks.webp",
+        "ratio": "16x9",
+        "body": "<p>UV Shield+ combines five ingredients selected for complementary nutritional and antioxidant roles:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Trans-resveratrol</li><li>Spirulina</li></ul><p>The formula’s strength lies in covering several aspects of environmental and oxidative-stress biology rather than depending on one single mechanism.</p><p><strong>Key support areas:</strong> environmental stress, antioxidant support, skin resilience, outdoor lifestyle support.</p>",
+        "primary_label": "Explore UV Shield+"
+      }
     },
-    "benefits": {
-      "type": "pdp-benefits",
-      "settings": {}
+    "step2": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "light",
+        "image_side": "left",
+        "eyebrow": "Step 2",
+        "heading": "Skinbiotic+",
+        "subhead": "Daily probiotic for gut and skin health",
+        "product": "skinbiotic",
+        "asset": "lifestyle-skinbiotic-cliffs.webp",
+        "ratio": "16x9",
+        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection.</p><p>The formulation rationale focuses on prebiotic support, multi-organism microbiome support, and complementary microbial roles.</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.</p>",
+        "primary_label": "Explore Skinbiotic+"
+      }
     },
-    "ingredients": {
-      "type": "pdp-ingredients",
-      "settings": {}
+    "layers": {
+      "type": "layer-stack",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "The bigger picture",
+        "heading": "Skin support works in layers.",
+        "body": "<p>A complete routine has more than one layer.</p>",
+        "callout": "The Sun Safe System belongs inside a complete skin-health routine, not instead of one."
+      },
+      "blocks": {
+        "b1": {
+          "type": "layer",
+          "settings": {
+            "short": "Layer 1",
+            "title": "Topical protection",
+            "text": "Broad-spectrum sunscreen."
+          }
+        },
+        "b2": {
+          "type": "layer",
+          "settings": {
+            "short": "Layer 2",
+            "title": "Smart sun habits",
+            "text": "Protective clothing, hats, shade, and reapplication."
+          }
+        },
+        "b3": {
+          "type": "layer",
+          "settings": {
+            "short": "Layer 3",
+            "title": "Internal support",
+            "text": "Nutrition and targeted supplementation."
+          }
+        },
+        "b4": {
+          "type": "layer",
+          "settings": {
+            "short": "Layer 4",
+            "title": "Consistency",
+            "text": "Long-term habits practiced daily."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "environment": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "light",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Outdoor skin biology",
+        "heading": "Outdoor exposure is more than a surface event.",
+        "heading_tag": "h2",
+        "body": "<p>Sunlight and environmental exposure can influence oxidative stress and other cellular responses in skin.</p><p>UV Shield+ is formulated around nutritional and antioxidant support for those internal systems.</p>",
+        "quote": "Internal support does not replace external protection."
+      }
+    },
+    "gut": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "green",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Internal balance",
+        "heading": "The gut and skin communicate.",
+        "heading_tag": "h2",
+        "body": "<p>The gut-skin axis refers to biological communication between the intestinal environment and the skin through pathways involving:</p><ul><li>Microbial metabolites</li><li>Immune signaling</li><li>Barrier integrity</li><li>Nutrient metabolism</li></ul><p>Skinbiotic+ is designed to support the intestinal side of that relationship. It is a synbiotic formula combining inulin with multiple probiotic organisms selected around gut and skin-related biological rationale.</p>"
+      }
+    },
+    "formula": {
+      "type": "split-compare",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "What’s inside",
+        "heading": "Two formulas. Complementary roles."
+      },
+      "blocks": {
+        "b1": {
+          "type": "side",
+          "settings": {
+            "kicker": "Protect",
+            "name": "UV Shield+",
+            "items": "Niacinamide\nPolypodium leucotomos\nEGCG\nTrans-resveratrol\nSpirulina",
+            "focus": "Environmental and antioxidant support."
+          }
+        },
+        "b2": {
+          "type": "side",
+          "settings": {
+            "kicker": "Balance",
+            "name": "Skinbiotic+",
+            "items": "Organic inulin\nLactobacillus plantarum\nBifidobacterium lactis\nLactobacillus rhamnosus\nBifidobacterium bifidum\nAkkermansia muciniphila Akk11®",
+            "focus": "Gut-skin and microbiome support."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
     },
     "how": {
-      "type": "pdp-how-it-works",
-      "settings": {}
+      "type": "system-directions",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Daily routine",
+        "heading": "How to take the Sun Safe System",
+        "body": "<p>Use each product exactly according to its own label.</p>",
+        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+      },
+      "blocks": {
+        "b1": {
+          "type": "product",
+          "settings": {
+            "product": "uv-shield"
+          }
+        },
+        "b2": {
+          "type": "product",
+          "settings": {
+            "product": "skinbiotic"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
     },
     "timeline": {
       "type": "renewal-timeline",
-      "settings": {}
+      "settings": {
+        "color_scheme": "green"
+      }
     },
-    "crosssell": {
-      "type": "pdp-crosssell",
-      "settings": {}
+    "who": {
+      "type": "lifestyle-strip",
+      "settings": {
+        "color_scheme": "light",
+        "columns": "3",
+        "eyebrow": "Built for life outdoors",
+        "heading": "Designed for people who spend time in the sun.",
+        "statement": "The Sun Safe System is not about avoiding the sun. It is about supporting your skin while continuing to live the life you enjoy."
+      },
+      "blocks": {
+        "b1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/silhouette-of-golfers-hit-sweeping-and-keep-golf-c-2026-03-19-02-22-18-utc_Large_602982b3-bc47-4fbb-a744-8ba4faa4f081.jpg",
+            "asset": "lifestyle-skinbiotic-cliffs.webp",
+            "label": "Golf",
+            "caption": "Long rounds and repeated outdoor exposure."
+          }
+        },
+        "b2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/back-lit-young-female-multiracial-tennis-players-w-2026-03-25-03-18-19-utc_Large_33af3979-5b4a-46c2-b954-2bdaed9743dc.jpg",
+            "asset": "lifestyle-uvshield-dermaboost-tennis.webp",
+            "label": "Tennis",
+            "caption": "Court time, heat, and active outdoor routines."
+          }
+        },
+        "b3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/family-sailing-at-sunset-on-luxury-boat-2026-03-27-00-33-51-utc_Large_d9a9c705-5243-4f08-b80c-a7a620ca8241.jpg",
+            "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp",
+            "label": "Sailing + boating",
+            "caption": "Open-sky and reflected-light environments."
+          }
+        },
+        "b4": {
+          "type": "image",
+          "settings": {
+            "label": "Running + cycling",
+            "caption": "Consistent outdoor training."
+          }
+        },
+        "b5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/portrait-of-a-beautiful-woman-on-the-beach-at-suns-2026-03-25-06-30-52-utc_Large_88f1f284-5829-4cad-b407-ec1cdccd5ce2.jpg",
+            "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
+            "label": "Beach + travel",
+            "caption": "High-exposure leisure and travel environments."
+          }
+        },
+        "b6": {
+          "type": "image",
+          "settings": {
+            "label": "Everyday outdoor life",
+            "caption": "Walking, gardening, commuting, dining, and time outside."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    "supports": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "dark",
+        "heading": "Four areas of daily support.",
+        "columns": "4",
+        "show_images": false,
+        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Environmental support†",
+            "text": "<p>UV Shield+ provides targeted nutritional and antioxidant support.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Gut-skin support†",
+            "text": "<p>Skinbiotic+ supports the microbiome and gut-skin connection.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Antioxidant support†",
+            "text": "<p>UV Shield+ includes multiple antioxidant and botanical ingredients.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "Routine consistency",
+            "text": "<p>Two complementary formulas in one defined system.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "research": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "The research",
+        "heading": "Why these two formulas?",
+        "columns": "4",
+        "show_images": false,
+        "button_label": "Explore the Sun Safe science",
+        "button_url": "/pages/science"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Niacinamide + Polypodium",
+            "study": "nestor-polypodium-rct",
+            "text": "<p>Research relevant to environmental and UV-response biology.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "EGCG + resveratrol",
+            "study": "rao-resveratrol-2025",
+            "text": "<p>Polyphenol antioxidant and cell-signaling research.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Synbiotics",
+            "study": "lee-hy7714-2015",
+            "text": "<p>Research around prebiotic and probiotic support.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "Gut-skin axis",
+            "study": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019",
+            "text": "<p>Research on microbiome-skin communication.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "claims": {
+      "type": "science-boundaries",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Transparency",
+        "heading": "Good science has boundaries.",
+        "not_heading": "The Sun Safe System does not claim to:",
+        "not_items": "Replace sunscreen\nPrevent sunburn\nMake prolonged sun exposure safe\nPrevent skin cancer\nReverse existing sun damage\nTreat a skin disease\nGuarantee clearer skin\nGuarantee a visible result by a specific date\nProve that the two-product system itself has been clinically tested",
+        "does_heading": "What it is",
+        "does_text": "<p>A dermatologist-formulated two-product system designed to provide complementary environmental and gut-skin support.</p>"
+      }
+    },
+    "sunscreen": {
+      "type": "science-sunscreen",
+      "settings": {
+        "color_scheme": "green",
+        "heading": "Keep the sunscreen.",
+        "body": "<p>The Sun Safe System is intended to complement a complete sun-health routine. Continue to use:</p>",
+        "items": "Broad-spectrum sunscreen\nProtective clothing\nHats and sunglasses\nShade\nReapplication\nRoutine dermatologic care",
+        "callout": "Internal supplementation is not oral sunscreen."
+      }
+    },
+    "compare": {
+      "type": "compare-table",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Compare systems",
+        "heading": "Is Sun Safe the right system for you?",
+        "col_1": "Roles",
+        "col_2": "Includes",
+        "col_3": "Best fit",
+        "button_label": "Compare all systems",
+        "button_url": "/pages/systems"
+      },
+      "blocks": {
+        "b1": {
+          "type": "row",
+          "settings": {
+            "label": "Sun Safe",
+            "a": "Protect + Balance",
+            "b": "UV Shield+ + Skinbiotic+",
+            "c": "Outdoor lifestyle + gut-skin support"
+          }
+        },
+        "b2": {
+          "type": "row",
+          "settings": {
+            "label": "Skin Recovery",
+            "a": "Balance + Restore",
+            "b": "Skinbiotic+ + Dermaboost+",
+            "c": "Gut-skin + broader nutritional support"
+          }
+        },
+        "b3": {
+          "type": "row",
+          "settings": {
+            "label": "Sun Resilience",
+            "a": "Protect + Restore",
+            "b": "UV Shield+ + Dermaboost+",
+            "c": "Outdoor + broader antioxidant support"
+          }
+        },
+        "b4": {
+          "type": "row",
+          "settings": {
+            "label": "Complete Skin Defense",
+            "a": "Protect + Balance + Restore",
+            "b": "All three",
+            "c": "Most comprehensive routine"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "upgrade": {
+      "type": "start-paths",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Want a different combination?",
+        "heading": "Build around your priorities."
+      },
+      "blocks": {
+        "b1": {
+          "type": "path",
+          "settings": {
+            "statement": "Want Protect + Restore?",
+            "product": "sun-resilience-system",
+            "label": "Explore Sun Resilience System"
+          }
+        },
+        "b2": {
+          "type": "path",
+          "settings": {
+            "statement": "Want Balance + Restore?",
+            "product": "skin-recovery-system",
+            "label": "Explore Skin Recovery System"
+          }
+        },
+        "b3": {
+          "type": "path",
+          "settings": {
+            "statement": "Want all three roles?",
+            "product": "complete-skin-defense-system",
+            "label": "Explore Complete Skin Defense"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "founder": {
+      "type": "founder",
+      "settings": {
+        "color_scheme": "dark",
+        "image_side": "left",
+        "image_asset": "founder-portrait.webp",
+        "eyebrow": "Dermatologist-formulated",
+        "heading": "Built to simplify a more complete skin-health routine.",
+        "credentials": "",
+        "body": "<p>Alchemia MD was created after Dr. Mia Luna repeatedly saw patients trying to piece together natural, evidence-informed skin-health support from disconnected supplements.</p><p>The Sun Safe System brings two distinct areas of support into one defined routine: <strong>Protect + Balance.</strong></p>",
+        "link_label": "Meet Dr. Mia Luna",
+        "link_url": "/pages/founder"
+      }
     },
     "reviews": {
       "type": "pdp-reviews",
-      "settings": {}
+      "settings": {
+        "color_scheme": "light",
+        "heading": "What customers are saying"
+      }
     },
     "faq": {
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "Questions",
-        "heading": "Frequently asked questions"
+        "heading": "Frequently asked questions",
+        "heading_tag": "h2"
       },
       "blocks": {
-        "q1": {
+        "b1": {
           "type": "item",
           "settings": {
-            "question": "What is included in the Sun Safe System?",
-            "answer": "<p>One UV Shield+ (60 capsules) and one Skinbiotic+ (30 capsules).</p>"
+            "question": "What is the Sun Safe System?",
+            "answer": "<p>The Sun Safe System combines UV Shield+ and Skinbiotic+ in a two-product routine designed to support environmental skin resilience and the gut-skin connection.</p>"
           }
         },
-        "q2": {
+        "b2": {
           "type": "item",
           "settings": {
-            "question": "Why combine these two formulas?",
-            "answer": "<p>UV Shield+ provides antioxidant and nutritional support for skin exposed to the environment, while Skinbiotic+ supports the gut-skin connection. Together they pair support for the skin you expose to the sun with the internal systems connected to skin health.†</p>"
+            "question": "What products are included?",
+            "answer": "<p>UV Shield+ and Skinbiotic+.</p>"
           }
         },
-        "q3": {
+        "b3": {
           "type": "item",
           "settings": {
-            "question": "How do I take the products in this system?",
-            "answer": "<p>Take each product as directed on its label. The directions for both are shown on this page.</p>"
+            "question": "Why are these two products paired?",
+            "answer": "<p>They focus on different areas of internal support: UV Shield+ emphasizes environmental and antioxidant support, while Skinbiotic+ emphasizes microbiome and gut-skin support.</p>"
           }
         },
-        "q4": {
+        "b4": {
           "type": "item",
           "settings": {
-            "question": "How does the system fit with sunscreen?",
-            "answer": "<p>UV Shield+ is made to be used alongside your sunscreen, protective clothing and shade. It is not a sunscreen and does not replace sun protection.</p>"
+            "question": "Does the Sun Safe System replace sunscreen?",
+            "answer": "<p>No. It is designed to complement sunscreen and smart sun habits, not replace them.</p>"
           }
         },
-        "q5": {
+        "b5": {
           "type": "item",
           "settings": {
-            "question": "Should I check with my healthcare professional first?",
-            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
+            "question": "Does it prevent sunburn?",
+            "answer": "<p>No.</p>"
+          }
+        },
+        "b6": {
+          "type": "item",
+          "settings": {
+            "question": "How do I take the system?",
+            "answer": "<p>Take each product according to its own label directions. UV Shield+: Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water. Skinbiotic+: Take one (1) capsule daily with water.</p>"
+          }
+        },
+        "b7": {
+          "type": "item",
+          "settings": {
+            "question": "Can I buy the products individually?",
+            "answer": "<p>Yes. Both UV Shield+ and Skinbiotic+ are available separately.</p>"
+          }
+        },
+        "b8": {
+          "type": "item",
+          "settings": {
+            "question": "Can I subscribe to the Sun Safe System?",
+            "answer": "<p>Yes. The plan options in the purchase box show the current subscription and one-time purchase options.</p>"
+          }
+        },
+        "b9": {
+          "type": "item",
+          "settings": {
+            "question": "Is this the same as Complete Skin Defense?",
+            "answer": "<p>No. Sun Safe contains UV Shield+ and Skinbiotic+. Complete Skin Defense also includes Dermaboost+.</p>"
           }
         }
       },
       "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5"
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9"
       ]
     },
     "compliance": {
       "type": "compliance-notice",
-      "settings": {}
+      "settings": {
+        "color_scheme": "dark",
+        "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
+        "extra_line": "The Sun Safe System is not a replacement for sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
+      }
     },
-    "video": {
-      "type": "video-slot",
-      "settings": {}
-    },
-    "description": {
-      "type": "pdp-description",
-      "settings": {}
+    "final": {
+      "type": "final-cta",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Protect + Balance",
+        "heading": "Build internal skin support into your daily routine.",
+        "body": "<p>UV Shield+ and Skinbiotic+ bring environmental support and gut-skin balance together in one dermatologist-formulated system built for life outdoors.</p>",
+        "button_label": "Choose your plan",
+        "button_url": "#buy-box",
+        "secondary_label": "Explore the science",
+        "secondary_url": "/pages/science"
+      }
     }
   },
   "order": [
     "main",
     "definition",
-    "description",
     "video",
-    "steps",
-    "value",
-    "benefits",
-    "ingredients",
+    "why",
+    "step1",
+    "step2",
+    "layers",
+    "environment",
+    "gut",
+    "formula",
     "how",
     "timeline",
-    "crosssell",
+    "who",
+    "supports",
+    "research",
+    "claims",
+    "sunscreen",
+    "compare",
+    "upgrade",
+    "founder",
     "reviews",
     "faq",
-    "compliance"
+    "compliance",
+    "final"
   ]
 }

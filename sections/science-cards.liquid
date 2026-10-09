@@ -20,8 +20,8 @@
             <div class="sci-card__text">{{ block.settings.text }}</div>
             {%- if block.settings.tag != blank -%}<p class="sci-card__tag"><span>Research area</span> {{ block.settings.tag }}</p>{%- endif -%}
             {%- if block.settings.study != blank -%}
-              {%- assign study_handle = block.settings.study | strip -%}
-              {% render 'study-link', handle: study_handle, label: 'Read the research' %}
+              {%- assign study_handles = block.settings.study | split: ',' -%}
+              {%- for sh in study_handles -%}{%- assign study_handle = sh | strip -%}{% render 'study-link', handle: study_handle, label: 'Read the research' %}{%- endfor -%}
             {%- endif -%}
           </div>
         </article>

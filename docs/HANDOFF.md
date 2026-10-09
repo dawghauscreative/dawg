@@ -209,3 +209,16 @@ Notes:
 - The "How long until I see results?" entry and the Renewal Timeline come from Theme settings, not page text.
 - The existing `bundles` collection (and the main-menu entries "THE SYSTEM" etc. in Shopify navigation) are untouched; the theme header does not use the menu for these.
 - Copy for the three "Why combine them?" blocks paraphrases the synergy assessment without the internal "inflammatory" wording.
+
+## Sun Safe System product page (blueprint, Oct 9 2026)
+
+`templates/product.sun-safe-system.json` rebuilt to the blueprint (24 sections incl. the video slot): hero + Supr buy box, definition (Protect / Balance), why these two (four-step rationale flow with the "not clinically tested as a combined regimen" caption), Step 1 UV Shield+, Step 2 Skinbiotic+, four layers of skin support, outdoor biology, gut-skin, formula overview, how to use (label directions pulled live from each product), renewal timeline (centralized), six lifestyle cards, four support areas, research preview, what the science does not say, "Keep the sunscreen", system comparison, upgrade path (Sun Resilience, Skin Recovery, Complete, none presented as better), founder, reviews, FAQ (9 + centralized results answer), compliance, final CTA. The existing sticky "Choose your plan" bar (scroll to buy box, never add to cart) is unchanged. Shopify: SEO title/description set, `custom.tagline` set to "Daily internal skin support for life in the sun" (it was empty).
+
+New/extended: `split-compare` (list and primary-focus lines; used for the definition and the split-screen formula overview), `compare-table` (optional button), `system-directions` grid now auto-fits two products. Bug fix: `science-cards` only handled a single study handle; a comma-separated list showed no link at all (this affected the Skinbiotic+, Dermaboost+ research cards). It now renders one link per handle.
+
+Notes:
+- Product-page tagline for UV Shield+ and Skinbiotic+ inside the step blocks stays the label wording.
+- Gallery: the five existing Shopify images come first, then four theme assets (system render, UV and inulin title slides, sailboat lifestyle). Check that the existing Sun Safe media ("pairing supports", "inside and out") carries no sunburn or UV-protection wording.
+- The skinbiotic-specific compliance wording goes in `custom.compliance_slot` on this product when approved; it is empty and hidden now.
+- The "UV blocking / sunburn / cancer prevention" guidance in the blueprint is not on the page except inside the "does not claim" list; the phrases are allowlisted in `docs/check-banned.sh` ("oral sunscreen" appears only in the required callout).
+- The existing UV Shield+ biology intro (layer-stack) still mentions inflammatory signaling; consider rewording it for consistency with the newer pages.
