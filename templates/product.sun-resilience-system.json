@@ -369,7 +369,8 @@
           "type": "image",
           "settings": {
             "label": "Running + cycling",
-            "caption": "Frequent outdoor training."
+            "caption": "Frequent outdoor training.",
+            "asset": "lifestyle-running-cycling.webp"
           }
         },
         "b5": {
