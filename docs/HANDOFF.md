@@ -143,3 +143,9 @@ Notes:
 - Gallery: the five existing product images come first, then the five ingredient title slides (theme assets) are appended via `gallery_assets`. The existing UV Shield+ media includes the "UV-stress timeline" image; the blueprint bars any before/during/after-sun or DNA-repair graphic, so check that image and remove it from the product media in Shopify if it is one.
 - The required negation phrases (e.g. "does not replace sunscreen", "not intended to prevent sunburn") are allowlisted in `docs/check-banned.sh`.
 - Research links on this page go to `/pages/science#uv-shield` only (no Tier 2 links).
+
+## "How long until I see results?" (Oct 9, 2026)
+
+The answer now lives in Theme settings > Your Renewal Timeline > FAQ answer and appears first in the FAQ on every product page. It explains a full renewal cycle of about 12 weeks (roughly 90 days) matching the Weeks 1-4 / 4-8 / 8-12 timeline, and why: the formulas are multi-ingredient and act through several complementary pathways that build with steady use. It states experiences vary, results are not guaranteed, and the products do not replace sunscreen.
+
+Important: the Synergy Assessment does NOT state a 90-day figure or any timeline. It supports the "why" only in the sense that each formula covers several different biological pathways. The 12-week / 90-day framing comes from the approved Renewal Timeline, which is still pending FTC net-impression review. The Benefits guide mentions 6 to 12 weeks only for UV-induced redness endpoints (and a null 3-month green tea study), which are deliberately not cited. Do not publish until the FTC review clears.
