@@ -164,3 +164,20 @@ Decisions and notes:
 - Hero gallery uses the product media already in Shopify (sk01 to sk13). Check the order against the blueprint (jar photos, what's inside, gut-skin axis, barrier, science) and that none of the infographics shows disease imagery.
 - Research cards cite only approved studies (Gao 2023, Szanto 2019, Lee HY7714 2015). The audience cards, benefit cards and FAQ answers were written to the label and the approved Skinbiotic+ language; review the wording.
 - "Does Skinbiotic+ replace sunscreen?" is allowlisted in `docs/check-banned.sh` (answer is No).
+
+## Dermaboost+ product page (blueprint, Oct 9 2026)
+
+`templates/product.dermaboost.json` rebuilt to the Dermaboost+ blueprint (23 sections): hero + Supr buy box, definition, video slot, what "Restore" means (Protect / Balance / Restore), antioxidant biology, eight-ingredient formula cards, formulation-logic network, immune biology, barrier + nutrition, collagen, how to use (label directions word for word + caution), renewal timeline (centralized), who it is for (5), what it supports (4), research preview (4), what the science does not say, system cross-sell (Skin Recovery, Sun Resilience), founder, reviews, FAQ (7 + the centralized results answer), compliance, final CTA. SEO set in Shopify from the blueprint. The Science page Dermaboost+ section has anchor `dermaboost`; every research link and CTA goes there.
+
+New/extended pieces: `ingredient-network` section (up to 8 nodes on a ring, pairings join node numbers; used here), `product-actives` (columns 3 or 4). Fixed a bug in `rich-text`: the heading was always centred even when the section was set to left alignment (affects the UV, Skinbiotic+, Dermaboost+ and Founder pages; home sections are set to centre and are unchanged).
+
+Decisions and notes:
+- Tagline stays the label wording ("Daily immune support for calm, balanced skin"), not the blueprint's "Immune Support for Calm, Balanced Skin".
+- Amounts are the labeled amounts ("250 mg NE", "25 mcg (1,000 IU)", etc.). The blueprint's "250 mg per 2-capsule serving" is shown as "per serving" (the label serving is two capsules).
+- Curcumin is named "Optimized curcumin" on this page. The branded name is not used in page copy, filenames or alt text. It still appears in three places you should decide on: the Shopify ingredient record's name field ("Longvida® optimized curcumin extract", used by other product pages), the curcumin ingredient slide (day 21 artwork prints the brand in its title, so it is NOT used on this page; the curcumin card shows the placeholder frame), and the Science page Dermaboost+ curcumin card, which still uses that slide. The repo's source-images folder for day 21 was renamed to `day-21-curcumin`. The snippet `ingredient-slide-asset.liquid` still maps the Shopify record handle (`longvida-curcumin`); that handle is the Shopify record's own handle.
+- Slides used on the formula cards: niacinamide (d12), vitamin D3 (d14), vitamin C (d15), zinc (d16), quercetin (d17). Curcumin, olive leaf and astaxanthin have no usable slide, so they show placeholder frames.
+- Gallery: the five existing Shopify product images come first, then five theme assets are appended (Skin Recovery and Sun Resilience system renders, niacinamide, vitamin D3, vitamin C slides). Check the existing Shopify images for before/after or disease-style imagery ("three defense compartments" and "barrier and comfort support" are unreviewed).
+- Research cards cite approved studies only (astaxanthin x2, curcumin pharmacokinetic review). The quercetin and independent curcumin studies are held (`public_approved` off), so those links do not show.
+- The negation list on "What the science does not say" and the "Does Dermaboost+ treat inflammation?" FAQ are allowlisted in `docs/check-banned.sh`.
+- The product compliance slot is empty and hidden. The Skin Recovery card has a blank optional compliance line for when that wording is approved.
+- The old "How long does one bottle last?" FAQ and the old Longvida mention in the FAQ were dropped (not in the blueprint).

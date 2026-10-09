@@ -35,7 +35,7 @@ Uploaded Oct 8, 2026 to the wrong branch (`claude/refactor-shopify-hero-section-
 | 18 | trans-resveratrol |
 | 19 | egcg |
 | 20 | spirulina |
-| 21 | longvida-curcumin |
+| 21 | curcumin |
 | 22 | lactobacillus-rhamnosus |
 | 23 | b-lactis (added Oct 9, WebP; the artwork is stamped "DAY 22 / 4" in error) |
 

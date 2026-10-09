@@ -1,10 +1,12 @@
+{%- assign head_center = false -%}
+{%- if section.settings.align == 'center' -%}{%- assign head_center = true -%}{%- endif -%}
 {%- if section.settings.heading != blank or section.settings.body != blank -%}
 <section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.salt_symbol %} has-salt{% endif %}" {{ section.shopify_attributes }}>
   {%- if section.settings.salt_symbol -%}
     <svg class="salt-symbol" viewBox="0 0 400 400" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="10"><circle cx="200" cy="200" r="170"/><path d="M10 200h380"/></svg>
   {%- endif -%}
   <div class="container" style="position:relative;max-width:{% if section.settings.width == 'narrow' %}760px{% else %}1100px{% endif %}{% if section.settings.align == 'center' %};text-align:center{% endif %}">
-    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, tag: section.settings.heading_tag, center: section.settings.align -%}
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, tag: section.settings.heading_tag, center: head_center -%}
     {%- if section.settings.body != blank -%}<div class="prose"{% if section.settings.align == 'center' %} style="margin-inline:auto"{% endif %}>{{ section.settings.body }}</div>{%- endif -%}
     {%- if section.settings.quote != blank -%}<p class="pull-quote"{% if section.settings.align == 'center' %} style="margin-inline:auto"{% endif %}>{{ section.settings.quote }}</p>{%- endif -%}
     {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}

@@ -5,10 +5,28 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "eyebrow": "Restore"
+          }
         },
         "tagline": {
           "type": "tagline",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text": "<p>Dermaboost+ is a dermatologist-formulated daily supplement built around nutrients, antioxidants, and botanicals selected to support immune function, antioxidant defenses, and long-term skin resilience.</p><p>The formula combines eight active ingredients with complementary nutritional roles, including niacinamide, vitamin D3, vitamin C, zinc, quercetin, curcumin, olive leaf extract, and astaxanthin.</p>"
+          }
+        },
+        "bullets": {
+          "type": "bullets",
+          "settings": {
+            "items": "Supports normal immune function†\nProvides broad antioxidant support†\nSupports calm, balanced skin†\nSupports skin resilience from within†\nCombines vitamins, minerals, carotenoids, and botanical polyphenols\nDermatologist-formulated for daily use"
+          }
+        },
+        "price": {
+          "type": "price",
           "settings": {}
         },
         "reviews": {
@@ -21,29 +39,23 @@
         },
         "expectation": {
           "type": "expectation",
-          "settings": {}
+          "settings": {
+            "text": "Skin support is gradual. Consistent daily use matters."
+          }
         },
         "trust_bar": {
           "type": "trust_bar",
           "settings": {
             "icon_1": "shield",
-            "text_1": "Dermatologist developed"
+            "text_1": "Dermatologist-formulated",
+            "icon_2": "molecule",
+            "text_2": "Research-informed",
+            "icon_3": "layers",
+            "text_3": "Full ingredient transparency"
           }
         },
         "fda": {
           "type": "fda",
-          "settings": {}
-        },
-        "melanoma": {
-          "type": "melanoma",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "description": {
-          "type": "description",
           "settings": {}
         }
       },
@@ -51,121 +63,695 @@
         "title",
         "tagline",
         "description",
+        "bullets",
         "price",
         "reviews",
         "buy_buttons",
         "expectation",
         "trust_bar",
-        "melanoma",
         "fda"
       ],
-      "settings": {}
+      "settings": {
+        "gallery_assets": "system-skin-recovery.webp,system-sun-resilience.webp,slide-d12-1.webp,slide-d14-1.webp,slide-d15-1.webp"
+      }
     },
     "definition": {
-      "type": "pdp-definition",
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "light",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "What it is",
+        "heading": "Daily nutritional support for skin resilience.",
+        "heading_tag": "h2",
+        "body": "<p>Dermaboost+ brings together vitamins, minerals, carotenoids, and botanical polyphenols selected for complementary roles in antioxidant defense, normal immune function, and skin-health biology.</p><p>Rather than relying on one ingredient, the formula is structured around multiple pathways.</p>",
+        "quote": "Restore is not about reversing time. It is about supporting resilience."
+      }
+    },
+    "video": {
+      "type": "video-slot",
       "settings": {}
     },
-    "benefits": {
-      "type": "pdp-benefits",
-      "settings": {}
+    "role": {
+      "type": "layer-stack",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "The role",
+        "heading": "Restore means supporting the systems skin relies on.",
+        "body": "<p>Skin is constantly responding to:</p><ul><li>Environmental stress</li><li>Normal oxidative processes</li><li>Nutritional demands</li><li>Immune signaling</li><li>Daily renewal</li></ul><p>“Restore” does not mean repairing every form of damage or reversing aging. Within the Alchemia MD system, it means providing nutritional support for the biological systems involved in maintaining calm, balanced, resilient skin.</p>",
+        "callout": "Protect responds to exposure. Balance supports the gut and internal balance. Restore supports antioxidant, nutritional, and immune pathways."
+      },
+      "blocks": {
+        "b1": {
+          "type": "layer",
+          "settings": {
+            "short": "Protect",
+            "title": "Protect",
+            "text": "Respond to environmental exposure."
+          }
+        },
+        "b2": {
+          "type": "layer",
+          "settings": {
+            "short": "Balance",
+            "title": "Balance",
+            "text": "Support gut-skin and internal balance."
+          }
+        },
+        "b3": {
+          "type": "layer",
+          "settings": {
+            "short": "Restore",
+            "title": "Restore",
+            "text": "Support antioxidant, nutritional, and immune pathways involved in everyday skin resilience."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
     },
-    "ingredients": {
-      "type": "pdp-ingredients",
-      "settings": {}
+    "antioxidant": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "green",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Antioxidant biology",
+        "heading": "Oxidative stress is not one single pathway.",
+        "heading_tag": "h2",
+        "body": "<p>Reactive molecules are produced as part of normal metabolism and can also increase in response to environmental stress. The body relies on multiple antioxidant systems to maintain balance.</p><p>That is one reason Dermaboost+ does not depend on a single antioxidant. Its formulation includes several chemically distinct compounds:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>Different compounds can behave differently within cellular environments, which is the rationale for combining multiple nutritional and botanical sources rather than positioning one ingredient as a complete solution.</p>",
+        "quote": "Antioxidant support is part of normal nutritional physiology, not a promise to eliminate oxidative stress."
+      }
+    },
+    "formula": {
+      "type": "product-actives",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "The formula",
+        "heading": "Eight ingredients. Complementary roles.",
+        "columns": "4"
+      },
+      "blocks": {
+        "b1": {
+          "type": "active",
+          "settings": {
+            "name": "Niacinamide",
+            "amount": "250 mg NE per serving",
+            "role": "Cellular + barrier support",
+            "slide_set": "d12",
+            "text": "<p>Niacinamide is a form of vitamin B3 involved in cellular energy metabolism and skin-related biological processes.</p><p>Within Dermaboost+, it contributes a nutritional mechanism distinct from the formula’s botanical polyphenols and carotenoids.</p>",
+            "link_label": "Explore niacinamide research",
+            "link_url": "/pages/science#dermaboost"
+          }
+        },
+        "b2": {
+          "type": "active",
+          "settings": {
+            "name": "Vitamin D3",
+            "amount": "25 mcg (1,000 IU) per serving",
+            "role": "Normal immune function",
+            "slide_set": "d14",
+            "text": "<p>Vitamin D plays established physiological roles in immune regulation and numerous cellular processes.</p><p>Dermaboost+ includes vitamin D3 as part of its broader nutritional support strategy.</p>",
+            "link_label": "Explore vitamin D research",
+            "link_url": "/pages/science#dermaboost"
+          }
+        },
+        "b3": {
+          "type": "active",
+          "settings": {
+            "name": "Vitamin C",
+            "amount": "45 mg per serving",
+            "role": "Antioxidant + collagen-related nutrition",
+            "slide_set": "d15",
+            "text": "<p>Vitamin C is an essential nutrient and antioxidant. It also serves as a required cofactor in normal collagen synthesis.</p><p>Its role in Dermaboost+ is foundational nutritional support.</p>",
+            "link_label": "Explore vitamin C research",
+            "link_url": "/pages/science#dermaboost"
+          }
+        },
+        "b4": {
+          "type": "active",
+          "settings": {
+            "name": "Zinc",
+            "amount": "5 mg per serving",
+            "role": "Immune + cellular support",
+            "slide_set": "d16",
+            "text": "<p>Zinc is an essential mineral involved in normal immune function, protein synthesis, DNA synthesis, and numerous enzyme systems.</p><p>Within the formula, it complements vitamin C and vitamin D as part of the nutritional foundation.</p>",
+            "link_label": "Explore zinc research",
+            "link_url": "/pages/science#dermaboost"
+          }
+        },
+        "b5": {
+          "type": "active",
+          "settings": {
+            "name": "Quercetin",
+            "amount": "250 mg per serving",
+            "role": "Polyphenol antioxidant support",
+            "slide_set": "d17",
+            "text": "<p>Quercetin is a plant flavonoid studied for antioxidant activity and cellular-signaling effects.</p><p>Within Dermaboost+, it contributes a different polyphenolic profile from curcumin and olive leaf extract.</p>",
+            "link_label": "Explore quercetin research",
+            "link_url": "/pages/science#dermaboost"
+          }
+        },
+        "b6": {
+          "type": "active",
+          "settings": {
+            "name": "Optimized curcumin",
+            "amount": "300 mg per serving",
+            "role": "Botanical antioxidant support",
+            "text": "<p>Curcumin is a botanical polyphenol widely studied for antioxidant and cell-signaling activity.</p><p>The formulation uses an optimized form to address curcumin’s naturally limited oral bioavailability.</p>",
+            "link_label": "Explore curcumin research",
+            "link_url": "/pages/science#dermaboost"
+          }
+        },
+        "b7": {
+          "type": "active",
+          "settings": {
+            "name": "Olive leaf extract",
+            "amount": "150 mg per serving",
+            "role": "Polyphenol support",
+            "text": "<p>Olive leaf contains polyphenols including oleuropein.</p><p>Within Dermaboost+, it adds another botanical source of antioxidant and signaling-related activity to the formula’s broader nutrient network.</p>",
+            "link_label": "Explore olive leaf research",
+            "link_url": "/pages/science#dermaboost"
+          }
+        },
+        "b8": {
+          "type": "active",
+          "settings": {
+            "name": "Astaxanthin",
+            "amount": "4 mg per serving",
+            "role": "Carotenoid antioxidant support",
+            "text": "<p>Astaxanthin is a carotenoid antioxidant studied in human research involving several skin-related parameters.</p><p>It provides a structurally different antioxidant component from the vitamins and polyphenols in Dermaboost+.</p>",
+            "link_label": "Explore astaxanthin research",
+            "link_url": "/pages/science#dermaboost"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ]
+    },
+    "together": {
+      "type": "ingredient-network",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Formulation logic",
+        "heading": "Complementary support, not ingredient stacking.",
+        "nodes": "Niacinamide, Vitamin D3, Vitamin C, Zinc, Quercetin, Curcumin, Olive leaf, Astaxanthin",
+        "center_top": "DERMA",
+        "center_bottom": "BOOST+",
+        "caption": "This section describes formulation rationale based on ingredient biology. It does not mean Dermaboost+ as a finished formula has been clinically proven to produce these combined outcomes."
+      },
+      "blocks": {
+        "b1": {
+          "type": "pair",
+          "settings": {
+            "title": "Quercetin + Curcumin",
+            "text": "<p>Two botanical polyphenols with overlapping but distinct cellular-signaling and antioxidant properties.</p>",
+            "from": 5,
+            "to": 6
+          }
+        },
+        "b2": {
+          "type": "pair",
+          "settings": {
+            "title": "Curcumin + Vitamin D3",
+            "text": "<p>Nutritional and botanical support with different roles in immune and cellular physiology.</p>",
+            "from": 6,
+            "to": 2
+          }
+        },
+        "b3": {
+          "type": "pair",
+          "settings": {
+            "title": "Quercetin + Vitamin C",
+            "text": "<p>Two chemically different antioxidant systems.</p>",
+            "from": 5,
+            "to": 3
+          }
+        },
+        "b4": {
+          "type": "pair",
+          "settings": {
+            "title": "Quercetin + Astaxanthin",
+            "text": "<p>A flavonoid plus a carotenoid, providing structurally distinct antioxidant support.</p>",
+            "from": 5,
+            "to": 8
+          }
+        },
+        "b5": {
+          "type": "pair",
+          "settings": {
+            "title": "Curcumin + Olive leaf",
+            "text": "<p>Two botanical polyphenol sources with different constituent profiles.</p>",
+            "from": 6,
+            "to": 7
+          }
+        },
+        "b6": {
+          "type": "pair",
+          "settings": {
+            "title": "Vitamin C + Zinc",
+            "text": "<p>Essential nutrients with complementary roles in normal cellular, immune, and skin-related physiology.</p>",
+            "from": 3,
+            "to": 4
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    "immune": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "light",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Immune biology",
+        "heading": "Skin is part of the immune system’s front line.",
+        "heading_tag": "h2",
+        "body": "<p>Skin is not simply a covering. It contains immune cells and participates in communication between the body and the outside environment. Normal immune function therefore matters to skin health.</p><p>Dermaboost+ includes nutrients with established roles in normal immune physiology, including:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li></ul><p>alongside antioxidant and botanical compounds selected for complementary nutritional support.</p>",
+        "quote": "Supporting normal immune function is not the same as treating immune-mediated disease."
+      }
+    },
+    "barrier": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "green",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Barrier support",
+        "heading": "Healthy skin depends on more than moisture.",
+        "heading_tag": "h2",
+        "body": "<p>The skin barrier relies on:</p><ul><li>Organized lipids</li><li>Normal keratinocyte function</li><li>Adequate nutrition</li><li>Hydration</li><li>Normal cellular turnover</li></ul><p>Niacinamide, vitamin C, zinc, and other nutrients in Dermaboost+ have biological roles connected to these broader systems. This is education about those roles; Dermaboost+ is not a barrier product and does not make barrier claims.</p>"
+      }
+    },
+    "collagen": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "light",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Structural support",
+        "heading": "Collagen requires nutritional support.",
+        "heading_tag": "h2",
+        "body": "<p>Collagen is one of the primary structural proteins in skin. Vitamin C is required for normal collagen synthesis.</p><p>Other Dermaboost+ ingredients have been investigated in relation to oxidative pathways that can influence skin structure. That research describes biology; it is not a promise about specific outcomes.</p>",
+        "quote": "Support for normal biology, without overpromising outcomes."
+      }
     },
     "how": {
       "type": "pdp-how-it-works",
-      "settings": {}
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Daily routine",
+        "heading": "How to take Dermaboost+"
+      }
+    },
+    "routine": {
+      "type": "flow-steps",
+      "settings": {
+        "color_scheme": "dark",
+        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
+      },
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "kicker": "Daily",
+            "label": "2 capsules, once daily"
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "kicker": "Enhanced support",
+            "label": "Follow the labeled direction above."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
     },
     "timeline": {
       "type": "renewal-timeline",
-      "settings": {}
+      "settings": {
+        "color_scheme": "green"
+      }
     },
-    "crosssell": {
-      "type": "pdp-crosssell",
-      "settings": {}
+    "who": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Daily resilience",
+        "heading": "Built for people thinking beyond surface-level skincare.",
+        "columns": "3",
+        "show_images": false
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "The long-term skin health customer",
+            "text": "<p>Focused on maintaining healthy-looking, resilient skin over time.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "The wellness-focused customer",
+            "text": "<p>Already prioritizes nutrition, sleep, movement, and daily supplementation.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "The active lifestyle customer",
+            "text": "<p>Wants broader nutritional support alongside an active, outdoor routine.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "The ingredient researcher",
+            "text": "<p>Reads labels and wants to understand why each ingredient is included.</p>"
+          }
+        },
+        "b5": {
+          "type": "card",
+          "settings": {
+            "title": "The routine builder",
+            "text": "<p>Wants a targeted formula instead of managing numerous disconnected supplements.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
+    },
+    "supports": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "dark",
+        "heading": "One formula. Four areas of support.",
+        "columns": "4",
+        "show_images": false,
+        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Antioxidant support†",
+            "text": "<p>A combination of vitamins, carotenoids, and botanical polyphenols.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Normal immune function†",
+            "text": "<p>Nutrients including vitamin D3, vitamin C, and zinc support normal immune physiology.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Skin resilience†",
+            "text": "<p>Nutritional support designed around the systems skin relies on every day.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "Daily balance",
+            "text": "<p>A repeatable supplement routine rather than a short-term rescue product.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "research": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "The research",
+        "heading": "Why these ingredients?",
+        "columns": "4",
+        "show_images": false,
+        "button_label": "Explore Dermaboost+ research",
+        "button_url": "/pages/science#dermaboost"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Astaxanthin",
+            "tag": "Human + meta-analytic",
+            "study": "zhou-astaxanthin-meta-analysis-2021, tominaga-astaxanthin-2017",
+            "text": "<p>Human research and meta-analytic evidence involving selected skin parameters.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Curcumin",
+            "tag": "Mechanistic + pharmacokinetic",
+            "study": "jamwal-curcumin-pk-review",
+            "text": "<p>Extensive mechanistic research and human pharmacokinetic research.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Vitamin C + Zinc",
+            "tag": "Established physiology",
+            "text": "<p>Essential nutrients with established physiological roles.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "Quercetin",
+            "tag": "Pharmacokinetic + mechanistic",
+            "study": "quercetin-human-pk",
+            "text": "<p>Human pharmacokinetic and mechanistic research involving antioxidant and signaling pathways.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "claims": {
+      "type": "science-boundaries",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Transparency",
+        "heading": "Good science has boundaries.",
+        "not_heading": "Dermaboost+ does not claim to:",
+        "not_items": "Treat inflammatory skin disease\nTreat autoimmune conditions\nCure eczema\nTreat psoriasis\nEliminate inflammation\nReverse aging\nRebuild damaged skin\nGuarantee clearer skin\nReplace medical treatment\nDiagnose, treat, cure, or prevent disease",
+        "does_heading": "What it is",
+        "does_text": "<p>A dermatologist-formulated dietary supplement designed to provide targeted nutritional, antioxidant, and immune support as part of a broader skin-health routine.</p>"
+      }
+    },
+    "systems": {
+      "type": "system-finder",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Build your routine",
+        "heading": "Dermaboost+ can stand alone, or become part of a system.",
+        "best_for_label": ""
+      },
+      "blocks": {
+        "b1": {
+          "type": "system",
+          "settings": {
+            "product": "skin-recovery-system",
+            "roles": "Balance + Restore",
+            "best_for": "Skinbiotic+ + Dermaboost+. Pairs microbiome-focused support with broader antioxidant, nutritional, and immune support.",
+            "cta": "Explore Skin Recovery System",
+            "asset": "system-skin-recovery.webp",
+            "note": ""
+          }
+        },
+        "b2": {
+          "type": "system",
+          "settings": {
+            "product": "sun-resilience-system",
+            "roles": "Protect + Restore",
+            "best_for": "UV Shield+ + Dermaboost+. Pairs environmental support with broader antioxidant and immune-supportive nutrition.",
+            "cta": "Explore Sun Resilience System",
+            "asset": "system-sun-resilience.webp"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
+    },
+    "founder": {
+      "type": "founder",
+      "settings": {
+        "color_scheme": "light",
+        "image_side": "left",
+        "image_asset": "founder-portrait.webp",
+        "eyebrow": "Dermatologist-formulated",
+        "heading": "Built around what skin needs to function well.",
+        "credentials": "",
+        "body": "<p>Alchemia MD was created to bring dermatological thinking into supplementation.</p><p>Dermaboost+ reflects that philosophy by combining nutrients and botanicals selected for defined roles rather than relying on an undisclosed blend.</p><p>The goal is not perfect skin. It is to provide a transparent, research-informed way to support the biological systems involved in long-term skin health.</p>",
+        "link_label": "Meet Dr. Mia Luna",
+        "link_url": "/pages/founder"
+      }
     },
     "reviews": {
       "type": "pdp-reviews",
-      "settings": {}
+      "settings": {
+        "color_scheme": "light",
+        "heading": "What customers are saying"
+      }
     },
     "faq": {
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "Questions",
-        "heading": "Frequently asked questions"
+        "heading": "Frequently asked questions",
+        "heading_tag": "h2"
       },
       "blocks": {
-        "q1": {
+        "b1": {
+          "type": "item",
+          "settings": {
+            "question": "What is Dermaboost+?",
+            "answer": "<p>Dermaboost+ is a dermatologist-formulated dietary supplement combining vitamins, minerals, carotenoids, and botanical polyphenols selected to support normal immune function, antioxidant defenses, and skin resilience.</p>"
+          }
+        },
+        "b2": {
+          "type": "item",
+          "settings": {
+            "question": "What does “Restore” mean?",
+            "answer": "<p>Within the Alchemia MD system, Restore refers to supporting the nutritional, antioxidant, and immune systems involved in maintaining calm, balanced, resilient skin. It does not mean reversing aging or repairing every form of skin damage.</p>"
+          }
+        },
+        "b3": {
+          "type": "item",
+          "settings": {
+            "question": "What ingredients are in Dermaboost+?",
+            "answer": "<p>Dermaboost+ contains niacinamide, vitamin D3, vitamin C, zinc, quercetin, curcumin, olive leaf extract, and astaxanthin. See the formula section above for the labeled amounts.</p>"
+          }
+        },
+        "b4": {
+          "type": "item",
+          "settings": {
+            "question": "Does Dermaboost+ treat inflammation?",
+            "answer": "<p>No. Dermaboost+ is a dietary supplement and is not intended to diagnose, treat, cure, or prevent inflammatory disease.</p>"
+          }
+        },
+        "b5": {
           "type": "item",
           "settings": {
             "question": "How do I take Dermaboost+?",
             "answer": "<p>Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water.</p>"
           }
         },
-        "q2": {
+        "b6": {
           "type": "item",
           "settings": {
-            "question": "What is in Dermaboost+?",
-            "answer": "<p>Each serving (2 capsules) contains vitamin C, vitamin D (from lichen), niacin (as niacinamide), zinc, Longvida® optimized curcumin extract, quercetin, olive leaf extract and astaxanthin. The full Supplement Facts are on this page.</p>"
+            "question": "Can I take Dermaboost+ by itself?",
+            "answer": "<p>Yes. Dermaboost+ is available as a standalone formula and is also included in the Skin Recovery System and Sun Resilience System.</p>"
           }
         },
-        "q3": {
+        "b7": {
           "type": "item",
           "settings": {
-            "question": "How long does one bottle last?",
-            "answer": "<p>One bottle lasts 30 days at the daily serving and 15 days at the enhanced serving.</p>"
-          }
-        },
-        "q4": {
-          "type": "item",
-          "settings": {
-            "question": "Where does Dermaboost+ fit in the Alchemia MD system?",
-            "answer": "<p>Dermaboost+ is the Restore step: daily immune support and antioxidant nutrition for calm, balanced skin.†</p>"
-          }
-        },
-        "q5": {
-          "type": "item",
-          "settings": {
-            "question": "Should I check with my healthcare professional first?",
-            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
+            "question": "Is Dermaboost+ part of Complete Skin Defense?",
+            "answer": "<p>Yes. Dermaboost+ is the Restore component of the Complete Skin Defense System. You do not need every formula; each one can be used on its own.</p>"
           }
         }
       },
       "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5"
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
       ]
     },
     "compliance": {
       "type": "compliance-notice",
-      "settings": {}
+      "settings": {
+        "color_scheme": "dark",
+        "extra_line": ""
+      }
     },
-    "video": {
-      "type": "video-slot",
-      "settings": {}
-    },
-    "description": {
-      "type": "pdp-description",
-      "settings": {}
+    "final": {
+      "type": "final-cta",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Restore",
+        "heading": "Support calm, balanced, resilient skin from within.",
+        "body": "<p>Eight targeted nutrients and botanicals. One dermatologist-formulated daily routine designed around antioxidant support, normal immune function, and long-term skin resilience.</p>",
+        "button_label": "Choose your plan",
+        "button_url": "#buy-box",
+        "secondary_label": "Explore the science",
+        "secondary_url": "/pages/science#dermaboost"
+      }
     }
   },
   "order": [
     "main",
     "definition",
-    "description",
     "video",
-    "benefits",
-    "ingredients",
+    "role",
+    "antioxidant",
+    "formula",
+    "together",
+    "immune",
+    "barrier",
+    "collagen",
     "how",
+    "routine",
     "timeline",
-    "crosssell",
+    "who",
+    "supports",
+    "research",
+    "claims",
+    "systems",
+    "founder",
     "reviews",
     "faq",
-    "compliance"
+    "compliance",
+    "final"
   ]
 }

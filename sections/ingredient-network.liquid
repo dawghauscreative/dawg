@@ -1,0 +1,81 @@
+{%- comment -%}
+  Formulation-logic network: up to eight ingredient nodes on a ring joined by the complementary pairs listed beside it.
+  Nodes are comma separated, clockwise from the top. Each pairing block joins two node numbers.
+{%- endcomment -%}
+{%- assign pts = '320,70|440,120|490,240|440,360|320,410|200,360|150,240|200,120' | split: '|' -%}
+{%- assign names = section.settings.nodes | split: ',' -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="sci-map">
+      <svg class="sci-venn" viewBox="0 0 640 480" role="img" aria-label="Ingredients joined by complementary relationships" fill="none">
+        <g stroke="var(--c-gold)" stroke-width="1.4" opacity=".7">
+          {%- for block in section.blocks -%}
+            {%- assign ai = block.settings.from | minus: 1 -%}
+            {%- assign bi = block.settings.to | minus: 1 -%}
+            {%- assign a = pts[ai] | split: ',' -%}
+            {%- assign b = pts[bi] | split: ',' -%}
+            <path d="M{{ a[0] }} {{ a[1] }}L{{ b[0] }} {{ b[1] }}"/>
+          {%- endfor -%}
+        </g>
+        <circle cx="320" cy="240" r="50" stroke="var(--c-gold)" stroke-width="1.2" fill="var(--c-gold)" fill-opacity=".1"/>
+        <g fill="currentColor" font-family="var(--font-body)" text-anchor="middle" letter-spacing="1.5">
+          <text x="320" y="238" font-size="12" font-weight="700">{{ section.settings.center_top }}</text><text x="320" y="254" font-size="12" font-weight="700">{{ section.settings.center_bottom }}</text>
+        </g>
+        {%- for n in names limit: 8 -%}
+          {%- assign p = pts[forloop.index0] | split: ',' -%}
+          {%- assign px = p[0] | plus: 0 -%}
+          {%- assign py = p[1] | plus: 0 -%}
+          <circle cx="{{ px }}" cy="{{ py }}" r="8" fill="var(--c-gold)"/>
+          {%- if px < 300 -%}
+            <text x="{{ px | minus: 18 }}" y="{{ py | plus: 6 }}" text-anchor="end" fill="currentColor" font-family="var(--font-display)" font-size="19">{{ n | strip }}</text>
+          {%- elsif px > 340 -%}
+            <text x="{{ px | plus: 18 }}" y="{{ py | plus: 6 }}" text-anchor="start" fill="currentColor" font-family="var(--font-display)" font-size="19">{{ n | strip }}</text>
+          {%- else -%}
+            {%- if py < 240 -%}{%- assign ty = py | minus: 22 -%}{%- else -%}{%- assign ty = py | plus: 30 -%}{%- endif -%}
+            <text x="{{ px }}" y="{{ ty }}" text-anchor="middle" fill="currentColor" font-family="var(--font-display)" font-size="19">{{ n | strip }}</text>
+          {%- endif -%}
+        {%- endfor -%}
+      </svg>
+      <div class="sci-map__pairs">
+        {%- for block in section.blocks -%}
+          <article class="sci-pair" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title }}</h3>
+            <div class="prose">{{ block.settings.text }}</div>
+          </article>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- if section.settings.caption != blank -%}<p class="sci-caption">{{ section.settings.caption }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ingredient network",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "nodes", "label": "Ingredient names (comma separated, up to 8, clockwise from the top)" },
+    { "type": "text", "id": "center_top", "label": "Centre label, line 1" },
+    { "type": "text", "id": "center_bottom", "label": "Centre label, line 2" },
+    { "type": "textarea", "id": "caption", "label": "Caption" }
+  ],
+  "blocks": [
+    {
+      "type": "pair",
+      "name": "Pairing",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "richtext", "id": "text", "label": "Text" },
+        { "type": "range", "id": "from", "label": "Joins node", "min": 1, "max": 8, "step": 1, "default": 1 },
+        { "type": "range", "id": "to", "label": "to node", "min": 1, "max": 8, "step": 1, "default": 2 }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Ingredient network" }]
+}
+{% endschema %}

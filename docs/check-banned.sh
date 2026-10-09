@@ -6,7 +6,7 @@ PRIVATE="${2:-$HOME/.alchemia-private-banned.txt}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 EXCL=(--exclude-dir=.git --exclude-dir=node_modules --exclude=banned-*.txt --exclude=check-banned.sh --exclude-dir=docs --exclude-dir=source-images)
 # Lines containing the approved FDA disclaimer are allowed to use treat/cure/prevent/diagnose.
-ALLOW='evaluated by the Food and Drug Administration|diagnose, treat, cure, or prevent any disease|not intended to diagnose|goal is not perfect skin|does not replace sunscreen|Does UV Shield\+ replace sunscreen|not intended to prevent sunburn|Does UV Shield\+ prevent sunburn|Does Skinbiotic\+ replace sunscreen|as clinically tested for these combined outcomes|Replace sunscreen\\nPrevent sunburn'
+ALLOW='evaluated by the Food and Drug Administration|diagnose, treat, cure, or prevent any disease|not intended to diagnose|goal is not perfect skin|does not replace sunscreen|Does UV Shield\+ replace sunscreen|not intended to prevent sunburn|Does UV Shield\+ prevent sunburn|Does Skinbiotic\+ replace sunscreen|Treat inflammatory skin disease\\nTreat autoimmune|Does Dermaboost\+ treat inflammation|not the same as treating immune-mediated disease|has been clinically proven to produce these combined outcomes|as clinically tested for these combined outcomes|Replace sunscreen\\nPrevent sunburn'
 fail=0
 echo "=== BLOCK (must be zero, except allowlisted lines) ==="
 out=$(grep -rIniE "${EXCL[@]}" -f "$HERE/banned-block.txt" "$THEME" | grep -viE "$ALLOW")
