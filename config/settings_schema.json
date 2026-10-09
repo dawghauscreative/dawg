@@ -111,8 +111,7 @@
         "type": "text",
         "id": "adobe_kit_url",
         "label": "Adobe Fonts kit stylesheet URL",
-        "default": "",
-        "info": "Kit qza3lbn serves weights 400 and 700 plus italics. The Adobe subscription must stay active."
+        "info": "Optional. Leave empty (Inter and Playfair load from Google Fonts). Paste an Adobe Fonts kit URL here only if you switch back to Adobe fonts."
       },
       {
         "type": "text",
