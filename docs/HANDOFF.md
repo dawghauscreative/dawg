@@ -261,3 +261,7 @@ Notes:
 ## Home page hero restored (Oct 9 2026)
 
 At the owner's request the home page opening banner is the original `hero` section again (three bottles on the rock, "Internal Skin Defense for Life in the Sun", Shop the Sun Safe System / Explore the Science, Dermatologist developed / Founded by Dr. Mia Luna). The blueprint's `home-hero` section is still in the theme if you want it back: swap the first section on the Home template. Navigation is unchanged (mobile: hamburger left, logo centre, cart right).
+
+## Lifestyle images now 4:5 (Oct 9 2026)
+
+The seven lifestyle renders are 4:5 originals, so every step / education block that used them at 16:9 (Sun Safe, Sun Resilience, Skin Recovery, Complete Skin Defense and Individual Products pages) now uses the 4:5 shape and shows the whole image. The clean system renders (white background, 16:9) keep their wide shape. `feature-split` now sets the image's width/height from the chosen shape.

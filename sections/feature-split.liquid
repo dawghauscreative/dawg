@@ -13,7 +13,8 @@
       </div>
     </div>
     <div class="feature-split__media{% if section.settings.light_panel %} feature-split__media--panel{% endif %}">
-      {% render 'responsive-image', image: section.settings.image, asset: section.settings.asset, asset_width: 1400, asset_height: 787, ratio: section.settings.ratio, sizes: '(min-width: 990px) 50vw, 100vw', alt: fp.title %}
+      {%- if section.settings.ratio == '4x5' -%}{%- assign fs_w = 1122 -%}{%- assign fs_h = 1402 -%}{%- else -%}{%- assign fs_w = 1400 -%}{%- assign fs_h = 787 -%}{%- endif -%}
+      {% render 'responsive-image', image: section.settings.image, asset: section.settings.asset, asset_width: fs_w, asset_height: fs_h, ratio: section.settings.ratio, sizes: '(min-width: 990px) 50vw, 100vw', alt: fp.title %}
     </div>
   </div>
 </section>
