@@ -522,7 +522,8 @@
           "settings": {
             "title": "What Is the Gut-Skin Axis?",
             "text": "How the intestinal environment and skin communicate.",
-            "asset": "edu-card-gut-skin-axis.webp"
+            "asset": "edu-card-gut-skin-axis.webp",
+            "link": "/blogs/skin-edu/what-is-the-gut-skin-axis"
           }
         },
         "b3": {
@@ -530,7 +531,8 @@
           "settings": {
             "title": "Why Consistency Matters in Skin Health",
             "text": "Understanding renewal, daily habits, and realistic expectations.",
-            "asset": "edu-card-consistency.webp"
+            "asset": "edu-card-consistency.webp",
+            "link": "/blogs/skin-edu/why-consistency-matters-in-skin-health"
           }
         }
       },
