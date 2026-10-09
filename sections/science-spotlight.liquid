@@ -8,7 +8,7 @@
         {%- assign st = shop.metaobjects.research_study[handle] -%}
         {%- if st != blank and st.public_approved.value == true -%}
           <article class="sci-spotcard" {{ block.shopify_attributes }}>
-            {%- if section.settings.show_images -%}{% render 'responsive-image', image: block.settings.image, ratio: '3x2', sizes: '(min-width: 990px) 30vw, 100vw', alt: block.settings.headline %}{%- endif -%}
+            {%- if section.settings.show_images -%}{% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, asset_width: 1200, asset_height: 800, ratio: '3x2', sizes: '(min-width: 990px) 30vw, 100vw', alt: block.settings.headline %}{%- endif -%}
             <div class="sci-spotcard__body">
               <span class="eyebrow">{{ block.settings.kicker }}</span>
               <h3>{{ block.settings.headline }}</h3>
@@ -42,7 +42,8 @@
         { "type": "text", "id": "kicker", "label": "Kicker" },
         { "type": "text", "id": "headline", "label": "Headline" },
         { "type": "textarea", "id": "text", "label": "Short description" },
-        { "type": "image_picker", "id": "image", "label": "Image" }
+        { "type": "image_picker", "id": "image", "label": "Image (3:2)" },
+        { "type": "text", "id": "asset", "label": "Or theme asset filename", "info": "Used when no image is picked." }
       ]
     }
   ],

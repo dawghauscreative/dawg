@@ -451,7 +451,8 @@
             "study": "nestor-polypodium-rct",
             "kicker": "Human UV biology",
             "headline": "Oral Polypodium leucotomos in healthy adults",
-            "text": "Randomized, placebo-controlled research examining UV-response endpoints."
+            "text": "Randomized, placebo-controlled research examining UV-response endpoints.",
+            "asset": "research-spot-sun-hat.webp"
           }
         },
         "b2": {
@@ -469,7 +470,8 @@
             "study": "tanno-nicotinamide-barrier-2000",
             "kicker": "Skin barrier biology",
             "headline": "Nicotinamide and epidermal barrier lipids",
-            "text": "Mechanistic research involving ceramide and other lipid synthesis."
+            "text": "Mechanistic research involving ceramide and other lipid synthesis.",
+            "asset": "research-spot-skin-barrier.webp"
           }
         },
         "b4": {
@@ -478,7 +480,8 @@
             "study": "gao-probiotics-gut-skin-2023",
             "kicker": "Gut–skin axis",
             "headline": "The role of probiotics in skin health",
-            "text": "Review covering microbiome-skin communication and probiotic research."
+            "text": "Review covering microbiome-skin communication and probiotic research.",
+            "asset": "research-spot-microbiome.webp"
           }
         },
         "b5": {
@@ -487,7 +490,8 @@
             "study": "lee-hy7714-2015",
             "kicker": "Probiotic clinical research",
             "headline": "Lactobacillus plantarum HY7714",
-            "text": "Randomized, double-blind, placebo-controlled human study."
+            "text": "Randomized, double-blind, placebo-controlled human study.",
+            "asset": "research-spot-probiotics.webp"
           }
         },
         "b6": {
@@ -496,7 +500,8 @@
             "study": "zhou-astaxanthin-meta-analysis-2021",
             "kicker": "Astaxanthin",
             "headline": "Systematic review and meta-analysis",
-            "text": "Evaluation of randomized human research examining skin-ageing parameters."
+            "text": "Evaluation of randomized human research examining skin-ageing parameters.",
+            "asset": "research-spot-antioxidants.webp"
           }
         }
       },
