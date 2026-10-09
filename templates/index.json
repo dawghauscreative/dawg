@@ -513,21 +513,24 @@
           "settings": {
             "title": "What Is Internal Skin Defense?",
             "text": "Skin health is shaped by more than what happens on the surface.",
-            "link": "/blogs/skin-edu/what-is-internal-skin-defense-alchemia-md"
+            "link": "/blogs/skin-edu/what-is-internal-skin-defense-alchemia-md",
+            "asset": "edu-card-internal-skin-defense.webp"
           }
         },
         "b2": {
           "type": "guide",
           "settings": {
             "title": "What Is the Gut-Skin Axis?",
-            "text": "How the intestinal environment and skin communicate."
+            "text": "How the intestinal environment and skin communicate.",
+            "asset": "edu-card-gut-skin-axis.webp"
           }
         },
         "b3": {
           "type": "guide",
           "settings": {
             "title": "Why Consistency Matters in Skin Health",
-            "text": "Understanding renewal, daily habits, and realistic expectations."
+            "text": "Understanding renewal, daily habits, and realistic expectations.",
+            "asset": "edu-card-consistency.webp"
           }
         }
       },
