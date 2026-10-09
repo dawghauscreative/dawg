@@ -1,7 +1,7 @@
 {%- comment -%}
   Shop All card. Discovery and plan routing only: no add to cart, no form, no quick add, no purchase widget.
   Every figure comes from the product: image, title, "from" price. The button opens the product page.
-  Params: product, role, descriptor, button_text, cue, badge, slot, rel_1, rel_2, rel_3, size ('featured' | 'system' | 'single'), heading_tag
+  Params: product, role, descriptor, button_text, cue, badge, rel_1, rel_2, rel_3, size ('featured' | 'system' | 'single'), heading_tag
 {%- endcomment -%}
 {%- if product != blank -%}
   {%- assign tag = heading_tag | default: 'h3' -%}
@@ -27,7 +27,6 @@
         {%- if product.price_varies -%}<span class="shopcard__from">From</span> <span>{{ product.price_min | money }}</span>{%- else -%}<span>{{ product.price | money }}</span>{%- endif -%}
         {%- if cue != blank -%}<span class="shopcard__cue">{{ cue }}</span>{%- endif -%}
       </p>
-      {%- if slot != blank -%}<p class="shopcard__slot" data-compliance-slot>{{ slot }}</p>{%- endif -%}
       <a class="btn shopcard__btn" href="{{ product.url }}">{{ button_text | default: 'Choose your plan' }}<span class="visually-hidden"> for {{ product.title }}</span></a>
       {%- if rel_1 != blank or rel_2 != blank or rel_3 != blank -%}
         {%- assign rel_first = true -%}

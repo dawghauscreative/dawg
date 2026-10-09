@@ -908,7 +908,6 @@ body.template-blog.is-filtered main > .shopify-section:not(:has(.blog-listing)) 
 .shopcard__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: 4px 0 0; padding-top: 14px; border-top: 1px solid var(--rule); font-family: var(--font-callout); font-size: 1.05rem; font-weight: 700; }
 .shopcard__from { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; opacity: .8; }
 .shopcard__cue { font-size: .82rem; font-weight: 400; opacity: .85; }
-.shopcard__slot { margin: 0; font-size: .85rem; padding: 10px 12px; border: 1px dashed var(--rule); }
 .shopcard__btn { margin-top: auto; justify-content: center; width: 100%; text-align: center; }
 .shopcard__also { margin: 6px 0 0; font-size: .85rem; opacity: .9; }
 .shopcard__also a { color: inherit; text-underline-offset: 3px; }

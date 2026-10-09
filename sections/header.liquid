@@ -23,7 +23,7 @@
       <ul>
         <li>
           <details>
-            <summary><a class="nav__shoplink" href="{{ shop_all_url }}">Shop</a></summary>
+            <summary><a class="nav__shoplink" href="{{ shop_all_url }}">Shop All</a></summary>
             <div class="nav__panel">
               <div>
                 <h2>{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}">Systems</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}">Systems</a>{% else %}Systems{% endif %}</h2>
@@ -69,7 +69,7 @@
     </div>
     <nav aria-label="Mobile">
       <ul>
-        <li><a href="{{ shop_all_url }}">Shop all</a></li>
+        <li><a href="{{ shop_all_url }}">Shop All</a></li>
         <li>
           <span class="drawer__label">{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}" style="font-size:inherit;padding:0">Systems</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}" style="font-size:inherit;padding:0">Systems</a>{% else %}Systems{% endif %}</span>
           <ul>

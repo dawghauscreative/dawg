@@ -35,8 +35,7 @@
             "product": "sun-resilience-system",
             "role": "Protect + Restore",
             "descriptor": "Environmental support with broader antioxidant and nutritional support.",
-            "button_text": "Choose your plan",
-            "compliance_slot": ""
+            "button_text": "Choose your plan"
           }
         },
         "skin_recovery": {
@@ -45,8 +44,7 @@
             "product": "skin-recovery-system",
             "role": "Balance + Restore",
             "descriptor": "Gut-skin balance with broader nutritional and immune support.",
-            "button_text": "Choose your plan",
-            "compliance_slot": ""
+            "button_text": "Choose your plan"
           }
         },
         "complete": {
@@ -57,8 +55,7 @@
             "descriptor": "The most comprehensive Alchemia MD routine.",
             "show_label": true,
             "label_text": "Advanced option",
-            "button_text": "Choose your plan",
-            "compliance_slot": ""
+            "button_text": "Choose your plan"
           }
         }
       },
@@ -87,8 +84,7 @@
             "related_1": "sun-safe-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan",
-            "compliance_slot": ""
+            "button_text": "Choose your plan"
           }
         },
         "skinbiotic": {
@@ -100,8 +96,7 @@
             "related_1": "sun-safe-system",
             "related_2": "skin-recovery-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan",
-            "compliance_slot": ""
+            "button_text": "Choose your plan"
           }
         },
         "dermaboost": {
@@ -113,8 +108,7 @@
             "related_1": "skin-recovery-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan",
-            "compliance_slot": ""
+            "button_text": "Choose your plan"
           }
         }
       },
