@@ -7,7 +7,8 @@
   <div class="container">
     <div class="section-head">
       <h2>{{ settings.renewal_heading }}</h2>
-      {%- if settings.renewal_intro != blank -%}<p class="lede" style="margin-top:1.25rem">{{ settings.renewal_intro }}</p>{%- endif -%}
+      {%- assign intro_text = section.settings.intro | default: settings.renewal_intro -%}
+      {%- if intro_text != blank -%}<p class="lede" style="margin-top:1.25rem">{{ intro_text }}</p>{%- endif -%}
     </div>
     <ol class="timeline" role="list">
       <li><span class="timeline__range">{{ settings.renewal_phase_1_range }}</span><span class="timeline__text">{{ settings.renewal_phase_1_text }}</span></li>
@@ -23,6 +24,7 @@
   "name": "Renewal Timeline",
   "settings": [
     { "type": "paragraph", "content": "Wording is in Theme settings > Your Renewal Timeline. Master switch is there too." },
+    { "type": "text", "id": "intro", "label": "Supporting copy override", "info": "Blank = the intro in Theme settings." },
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],
   "presets": [{ "name": "Renewal Timeline" }]

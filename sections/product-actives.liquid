@@ -18,7 +18,8 @@
           <div class="active-card__body">
             <span class="active-card__role">{{ block.settings.role }}</span>
             <h3>{{ block.settings.name }}</h3>
-            <p class="active-card__amount">{{ block.settings.amount }}</p>
+            {%- if block.settings.amount != blank -%}<p class="active-card__amount">{{ block.settings.amount }}</p>{%- endif -%}
+            {%- if block.settings.badge != blank -%}<p class="active-card__badge">{{ block.settings.badge }}</p>{%- endif -%}
             <div class="active-card__text">{{ block.settings.text }}</div>
             {%- if block.settings.link_label != blank -%}<a class="text-link" href="{{ block.settings.link_url | default: '/pages/science' }}">{{ block.settings.link_label }}</a>{%- endif -%}
           </div>
@@ -43,7 +44,8 @@
       "name": "Active ingredient",
       "settings": [
         { "type": "text", "id": "name", "label": "Ingredient" },
-        { "type": "text", "id": "amount", "label": "Amount (as labeled)" },
+        { "type": "text", "id": "amount", "label": "Amount (as labeled)", "info": "Leave empty when the label shows no separate amount." },
+        { "type": "text", "id": "badge", "label": "Evidence label (optional)" },
         { "type": "text", "id": "role", "label": "Role" },
         { "type": "richtext", "id": "text", "label": "Education copy" },
         { "type": "text", "id": "slide_set", "label": "Ingredient slide set (e.g. d02)" },

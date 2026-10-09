@@ -135,10 +135,11 @@
               </div>
 
             {%- when 'expectation' -%}
-              {%- if settings.show_renewal_timeline and settings.renewal_expectation_line != blank -%}
-                <p class="expectation" {{ block.shopify_attributes }}>{{ settings.renewal_expectation_line }}</p>
+              {%- assign expect_line = block.settings.text | default: settings.renewal_expectation_line -%}
+              {%- if settings.show_renewal_timeline and expect_line != blank -%}
+                <p class="expectation" {{ block.shopify_attributes }}>{{ expect_line }}</p>
               {%- elsif request.design_mode and settings.show_renewal_timeline -%}
-                <p class="expectation small" {{ block.shopify_attributes }}>[Editor only] Expectation line is empty. Paste the approved wording in Theme settings &gt; Your Renewal Timeline.</p>
+                <p class="expectation small" {{ block.shopify_attributes }}>[Editor only] Expectation line is empty. Add it on this block or in Theme settings &gt; Your Renewal Timeline.</p>
               {%- endif -%}
 
             {%- when 'trust_bar' -%}
@@ -199,7 +200,7 @@
     { "type": "price", "name": "Price", "limit": 1 },
     { "type": "reviews", "name": "Review summary slot", "limit": 1 },
     { "type": "buy_buttons", "name": "Buy buttons", "limit": 1 },
-    { "type": "expectation", "name": "Expectation line", "limit": 1 },
+    { "type": "expectation", "name": "Expectation line", "limit": 1, "settings": [{ "type": "text", "id": "text", "label": "Override text", "info": "Blank = the line in Theme settings > Your Renewal Timeline." }] },
     {
       "type": "trust_bar",
       "name": "Trust bar",

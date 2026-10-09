@@ -232,7 +232,8 @@
         "feature_studies": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019",
         "feature_image": "shopify://shop_images/sk10.png",
         "feature_show_frame": true,
-        "note": "<p>Research presented here describes studies on individual strains and ingredients, not on Skinbiotic+ as a finished product.</p>"
+        "note": "<p>Research presented here describes studies on individual strains and ingredients, not on Skinbiotic+ as a finished product.</p>",
+        "anchor": "skinbiotic"
       },
       "blocks": {
         "b1": {

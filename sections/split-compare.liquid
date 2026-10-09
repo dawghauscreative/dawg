@@ -1,0 +1,35 @@
+{%- comment -%} Two-sided concept (e.g. prebiotic + probiotics = synbiotic) with a centre statement. {%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="compare">
+      {%- for block in section.blocks limit: 2 -%}
+        <article class="compare__side" {{ block.shopify_attributes }}>
+          <span class="compare__kicker">{{ block.settings.kicker }}</span>
+          <h3>{{ block.settings.name }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </article>
+        {%- if forloop.first -%}<span class="compare__plus" aria-hidden="true">+</span>{%- endif -%}
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.center != blank -%}<p class="compare__center">{{ section.settings.center }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Split compare",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "center", "label": "Centre statement" }
+  ],
+  "blocks": [
+    { "type": "side", "name": "Side", "settings": [{ "type": "text", "id": "kicker", "label": "Label" }, { "type": "text", "id": "name", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" }] }
+  ],
+  "max_blocks": 2,
+  "presets": [{ "name": "Split compare", "blocks": [{ "type": "side" }, { "type": "side" }] }]
+}
+{% endschema %}

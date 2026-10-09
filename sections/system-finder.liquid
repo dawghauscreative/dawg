@@ -11,6 +11,7 @@
               <h3>{{ p.title }}</h3>
               <p class="finder-card__roles">{{ block.settings.roles }}</p>
               <p>{% if section.settings.best_for_label != blank %}<strong>{{ section.settings.best_for_label }}</strong> {% endif %}{{ block.settings.best_for }}</p>
+              {%- if block.settings.note != blank -%}<p class="small">{{ block.settings.note }}</p>{%- endif -%}
               <a class="btn btn--outline" href="{{ p.url }}">{{ block.settings.cta }}</a>
             </div>
           </article>
@@ -38,6 +39,7 @@
         { "type": "product", "id": "product", "label": "System" },
         { "type": "text", "id": "roles", "label": "Roles (e.g. Protect + Balance)" },
         { "type": "textarea", "id": "best_for", "label": "Best for" },
+        { "type": "text", "id": "note", "label": "Compliance line (optional)", "info": "Empty = hidden. Use for a system-specific statement once approved." },
         { "type": "text", "id": "cta", "label": "Button label" },
         { "type": "image_picker", "id": "image", "label": "Image" },
         { "type": "text", "id": "asset", "label": "Fallback theme asset filename" },

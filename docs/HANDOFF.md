@@ -149,3 +149,18 @@ Notes:
 The answer now lives in Theme settings > Your Renewal Timeline > FAQ answer and appears first in the FAQ on every product page. It explains a full renewal cycle of about 12 weeks (roughly 90 days) matching the Weeks 1-4 / 4-8 / 8-12 timeline, and why: the formulas are multi-ingredient and act through several complementary pathways that build with steady use. It states experiences vary, results are not guaranteed, and the products do not replace sunscreen.
 
 Note: the Synergy Assessment does not state a 90-day figure or any timeline; the 12-week / 90-day framing comes from the approved Renewal Timeline. The Benefits guide mentions 6 to 12 weeks only for UV-induced redness endpoints (and a null 3-month green tea study), which are deliberately not cited.
+
+## Skinbiotic+ product page (blueprint, Oct 9 2026)
+
+`templates/product.skinbiotic.json` rebuilt to the Skinbiotic+ blueprint (23 sections): hero + Supr buy box, definition, video slot, gut-skin axis, synbiotic design, six-component formula cards, formulation logic, microbiome 101, short-chain fatty acids, barrier connection, how to use (label directions word for word), renewal timeline, who it is for (5 cards), what it supports (4), research preview, what the science does not say, system cross-sell, founder, reviews, FAQ (8 + the centralized results answer), compliance, final CTA. SEO set in Shopify (title and description from the blueprint).
+
+New/extended pieces: `split-compare` section (prebiotic + probiotic), `product-actives` (optional `badge`, empty amount hidden), `pdp-main` expectation block (text override), `renewal-timeline` (intro override), `system-finder` (optional per-card compliance line, empty = hidden). The Science page Skinbiotic+ section now has anchor `skinbiotic` (the research CTA and final CTA link to `/pages/science#skinbiotic`).
+
+Decisions and notes:
+- Tagline stays the label wording ("Daily probiotic for gut and skin health"), not the blueprint's "Essential Gut Care for Skin Health".
+- Amounts are label amounts only: inulin 500 mg; strains show "Part of the 215 mg probiotic blend". No CFU number is printed.
+- Bifidobacterium lactis has no slide, so its card shows the placeholder frame. Akkermansia carries an "Emerging research" badge.
+- The product compliance slot is left empty and hidden. The Skin Recovery System card has an optional compliance line (blank) for when that wording is approved.
+- Hero gallery uses the product media already in Shopify (sk01 to sk13). Check the order against the blueprint (jar photos, what's inside, gut-skin axis, barrier, science) and that none of the infographics shows disease imagery.
+- Research cards cite only approved studies (Gao 2023, Szanto 2019, Lee HY7714 2015). The audience cards, benefit cards and FAQ answers were written to the label and the approved Skinbiotic+ language; review the wording.
+- "Does Skinbiotic+ replace sunscreen?" is allowlisted in `docs/check-banned.sh` (answer is No).
