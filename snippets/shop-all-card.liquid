@@ -1,0 +1,42 @@
+{%- comment -%}
+  Shop All card. Discovery and plan routing only: no add to cart, no form, no quick add, no purchase widget.
+  Every figure comes from the product: image, title, "from" price. The button opens the product page.
+  Params: product, role, descriptor, button_text, cue, badge, slot, rel_1, rel_2, rel_3, size ('featured' | 'system' | 'single'), heading_tag
+{%- endcomment -%}
+{%- if product != blank -%}
+  {%- assign tag = heading_tag | default: 'h3' -%}
+  {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
+  {%- assign fallback_asset = fallback_capture | strip -%}
+  {%- assign card_alt = product.featured_image.alt | default: product.title -%}
+  {%- assign card_ratio = '4x5' -%}
+  {%- if size == 'featured' -%}{%- assign card_ratio = '1x1' -%}{%- endif -%}
+  <article class="shopcard shopcard--{{ size | default: 'system' }}">
+    <a class="shopcard__media" href="{{ product.url }}" tabindex="-1" aria-hidden="true">
+      {% render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}
+    </a>
+    <div class="shopcard__body">
+      {%- if role != blank or badge != blank -%}
+        <p class="shopcard__labels">
+          {%- if role != blank -%}<span class="shopcard__role">{{ role }}</span>{%- endif -%}
+          {%- if badge != blank -%}<span class="shopcard__badge">{{ badge }}</span>{%- endif -%}
+        </p>
+      {%- endif -%}
+      <{{ tag }} class="shopcard__title"><a href="{{ product.url }}">{{ product.title }}</a></{{ tag }}>
+      {%- if descriptor != blank -%}<p class="shopcard__text">{{ descriptor }}</p>{%- endif -%}
+      <p class="shopcard__price">
+        {%- if product.price_varies -%}<span class="shopcard__from">From</span> <span>{{ product.price_min | money }}</span>{%- else -%}<span>{{ product.price | money }}</span>{%- endif -%}
+        {%- if cue != blank -%}<span class="shopcard__cue">{{ cue }}</span>{%- endif -%}
+      </p>
+      {%- if slot != blank -%}<p class="shopcard__slot" data-compliance-slot>{{ slot }}</p>{%- endif -%}
+      <a class="btn shopcard__btn" href="{{ product.url }}">{{ button_text | default: 'Choose your plan' }}<span class="visually-hidden"> for {{ product.title }}</span></a>
+      {%- if rel_1 != blank or rel_2 != blank or rel_3 != blank -%}
+        {%- assign rel_first = true -%}
+        <p class="shopcard__also">Also in:
+          {%- if rel_1 != blank %} <a href="{{ rel_1.url }}">{{ rel_1.title | remove: ' System' }}</a>{%- assign rel_first = false -%}{%- endif -%}
+          {%- if rel_2 != blank -%}{%- unless rel_first %} &middot;{% endunless %} <a href="{{ rel_2.url }}">{{ rel_2.title | remove: ' System' }}</a>{%- assign rel_first = false -%}{%- endif -%}
+          {%- if rel_3 != blank -%}{%- unless rel_first %} &middot;{% endunless %} <a href="{{ rel_3.url }}">{{ rel_3.title | remove: ' System' }}</a>{%- endif -%}
+        </p>
+      {%- endif -%}
+    </div>
+  </article>
+{%- endif -%}

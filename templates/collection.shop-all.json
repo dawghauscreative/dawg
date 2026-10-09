@@ -1,0 +1,146 @@
+{
+  "sections": {
+    "header": {
+      "type": "shop-all-header",
+      "settings": {
+        "color_scheme": "dark",
+        "align": "left",
+        "eyebrow": "Shop Alchemia MD",
+        "heading": "Find the Routine That Fits You",
+        "body": "Explore dermatologist-formulated individual formulas and multi-product systems designed around distinct roles in daily skin support."
+      }
+    },
+    "featured": {
+      "type": "shop-all-featured-system",
+      "settings": {
+        "color_scheme": "green",
+        "product": "sun-safe-system",
+        "role": "Protect + Balance",
+        "descriptor": "Environmental support paired with gut-skin balance.",
+        "button_text": "Choose your plan",
+        "subscribe_cue": "Subscribe & save available"
+      }
+    },
+    "systems": {
+      "type": "shop-all-system-grid",
+      "settings": {
+        "color_scheme": "dark",
+        "heading": "More systems",
+        "subscribe_cue": "Subscribe & save available"
+      },
+      "blocks": {
+        "sun_resilience": {
+          "type": "system",
+          "settings": {
+            "product": "sun-resilience-system",
+            "role": "Protect + Restore",
+            "descriptor": "Environmental support with broader antioxidant and nutritional support.",
+            "button_text": "Choose your plan",
+            "compliance_slot": ""
+          }
+        },
+        "skin_recovery": {
+          "type": "system",
+          "settings": {
+            "product": "skin-recovery-system",
+            "role": "Balance + Restore",
+            "descriptor": "Gut-skin balance with broader nutritional and immune support.",
+            "button_text": "Choose your plan",
+            "compliance_slot": ""
+          }
+        },
+        "complete": {
+          "type": "system",
+          "settings": {
+            "product": "complete-skin-defense-system",
+            "role": "Protect + Balance + Restore",
+            "descriptor": "The most comprehensive Alchemia MD routine.",
+            "show_label": true,
+            "label_text": "Advanced option",
+            "button_text": "Choose your plan",
+            "compliance_slot": ""
+          }
+        }
+      },
+      "block_order": [
+        "sun_resilience",
+        "skin_recovery",
+        "complete"
+      ]
+    },
+    "singles": {
+      "type": "shop-all-product-grid",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Individual formulas",
+        "heading": "Start with one role",
+        "body": "Choose the formula that matches your current priority, then explore the systems that pair it with complementary support.",
+        "subscribe_cue": "Subscribe & save available"
+      },
+      "blocks": {
+        "uv_shield": {
+          "type": "formula",
+          "settings": {
+            "product": "uv-shield",
+            "role": "Protect",
+            "descriptor": "Outdoor support for resilient skin.",
+            "related_1": "sun-safe-system",
+            "related_2": "sun-resilience-system",
+            "related_3": "complete-skin-defense-system",
+            "button_text": "Choose your plan",
+            "compliance_slot": ""
+          }
+        },
+        "skinbiotic": {
+          "type": "formula",
+          "settings": {
+            "product": "skinbiotic",
+            "role": "Balance",
+            "descriptor": "Essential gut care for skin health.",
+            "related_1": "sun-safe-system",
+            "related_2": "skin-recovery-system",
+            "related_3": "complete-skin-defense-system",
+            "button_text": "Choose your plan",
+            "compliance_slot": ""
+          }
+        },
+        "dermaboost": {
+          "type": "formula",
+          "settings": {
+            "product": "dermaboost",
+            "role": "Restore",
+            "descriptor": "Immune support for calm, balanced skin.",
+            "related_1": "skin-recovery-system",
+            "related_2": "sun-resilience-system",
+            "related_3": "complete-skin-defense-system",
+            "button_text": "Choose your plan",
+            "compliance_slot": ""
+          }
+        }
+      },
+      "block_order": [
+        "uv_shield",
+        "skinbiotic",
+        "dermaboost"
+      ]
+    },
+    "compare": {
+      "type": "final-cta",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Not sure where to start?",
+        "heading": "Compare the Alchemia MD systems",
+        "body": "",
+        "button_label": "Explore systems",
+        "button_url": "/pages/systems"
+      }
+    }
+  },
+  "order": [
+    "header",
+    "featured",
+    "systems",
+    "singles",
+    "compare"
+  ]
+}

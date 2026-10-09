@@ -2,6 +2,8 @@
   assign systems = 'sun-safe-system,skin-recovery-system,sun-resilience-system,complete-skin-defense-system' | split: ','
   assign singles = 'uv-shield,skinbiotic,dermaboost' | split: ','
   assign portal_url = settings.customer_portal_url | default: routes.account_url
+  assign shop_all = collections['shop-all'] | default: collections['frontpage']
+  assign shop_all_url = shop_all.url | default: routes.all_products_collection_url
 -%}
 
 <header class="site-header" {{ section.shopify_attributes }}>
@@ -21,7 +23,7 @@
       <ul>
         <li>
           <details>
-            <summary>Shop</summary>
+            <summary><a class="nav__shoplink" href="{{ shop_all_url }}">Shop</a></summary>
             <div class="nav__panel">
               <div>
                 <h2>{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}">Systems</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}">Systems</a>{% else %}Systems{% endif %}</h2>
@@ -67,6 +69,7 @@
     </div>
     <nav aria-label="Mobile">
       <ul>
+        <li><a href="{{ shop_all_url }}">Shop all</a></li>
         <li>
           <span class="drawer__label">{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}" style="font-size:inherit;padding:0">Systems</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}" style="font-size:inherit;padding:0">Systems</a>{% else %}Systems{% endif %}</span>
           <ul>

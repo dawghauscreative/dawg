@@ -1,0 +1,32 @@
+{%- comment -%} The featured system card (Sun Safe System by default). Plan routing only. {%- endcomment -%}
+{%- if section.settings.product != blank -%}
+<section class="section--tight scheme-{{ section.settings.color_scheme }} shop-featured" {{ section.shopify_attributes }}>
+  <div class="container">
+    {% render 'shop-all-card',
+      product: section.settings.product,
+      role: section.settings.role,
+      descriptor: section.settings.descriptor,
+      button_text: section.settings.button_text,
+      cue: section.settings.subscribe_cue,
+      size: 'featured',
+      heading_tag: 'h2' %}
+  </div>
+</section>
+{%- elsif request.design_mode -%}
+<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] Choose the featured system in this section's settings.</div></section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Shop All featured system",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "product", "id": "product", "label": "Featured system" },
+    { "type": "text", "id": "role", "label": "Role label", "default": "Protect + Balance" },
+    { "type": "textarea", "id": "descriptor", "label": "Descriptor", "default": "Environmental support paired with gut-skin balance." },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Choose your plan" },
+    { "type": "text", "id": "subscribe_cue", "label": "Subscribe cue (no percentages)", "default": "Subscribe & save available" }
+  ],
+  "presets": [{ "name": "Shop All featured system" }]
+}
+{% endschema %}

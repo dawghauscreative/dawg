@@ -1,0 +1,21 @@
+<section class="section scheme-{{ section.settings.color_scheme }} shop-head shop-head--{{ section.settings.align }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    <h1>{{ section.settings.heading | default: collection.title }}</h1>
+    {%- if section.settings.body != blank -%}<p class="lede">{{ section.settings.body }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shop All header",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "select", "id": "align", "label": "Text alignment", "default": "left", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Centred" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Shop Alchemia MD" },
+    { "type": "text", "id": "heading", "label": "Heading (page title)", "default": "Find the Routine That Fits You" },
+    { "type": "textarea", "id": "body", "label": "Supporting line", "default": "Explore dermatologist-formulated individual formulas and multi-product systems designed around distinct roles in daily skin support." }
+  ],
+  "presets": [{ "name": "Shop All header" }]
+}
+{% endschema %}
