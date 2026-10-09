@@ -222,3 +222,13 @@ Notes:
 - The skinbiotic-specific compliance wording goes in `custom.compliance_slot` on this product when approved; it is empty and hidden now.
 - The "UV blocking / sunburn / cancer prevention" guidance in the blueprint is not on the page except inside the "does not claim" list; the phrases are allowlisted in `docs/check-banned.sh` ("oral sunscreen" appears only in the required callout).
 - The existing UV Shield+ biology intro (layer-stack) still mentions inflammatory signaling; consider rewording it for consistency with the newer pages.
+
+## Sun Resilience System product page (blueprint, Oct 9 2026)
+
+`templates/product.sun-resilience-system.json` rebuilt to the blueprint (27 sections incl. the video slot): hero + Supr buy box, definition (Protect / Restore, "intentionally more overlapping than Sun Safe"), why these two (with three complementarity cards and the "not a clinically tested finished-product regimen" caption), Step 1 UV Shield+, Step 2 Dermaboost+, antioxidant biology, "not all antioxidants work the same way", immune biology, resilience, formula overview, intentional overlap, how to use (label directions live from each product), renewal timeline (centralized), six lifestyle cards (skiing is a placeholder frame), four support areas, research preview, what the science does not say, "Keep the sunscreen", comparison, alternative routes, founder, reviews, FAQ (10 + centralized results answer), compliance, final CTA. Existing sticky "Choose your plan" bar unchanged. Shopify: SEO set; `custom.tagline` set to "Comprehensive internal support for skin that lives outdoors" (it was empty). No new sections were needed.
+
+Notes:
+- The existing Shopify media for this product includes an image alt-named "before, during and after the sun" and an "antioxidant support" graphic: the blueprint bars before/after sun imagery, so check those and remove or reorder in Shopify. The page appends the system render, the UV and niacinamide title slides and the tennis lifestyle image after the existing five.
+- Step blocks keep the label taglines for UV Shield+ and Dermaboost+.
+- "Higher niacinamide emphasis" under UV Shield+ contributions is from the blueprint (UV Shield+ 500 mg vs Dermaboost+ 250 mg NE on the labels).
+- Allowlist additions in `docs/check-banned.sh`: "Does Sun Resilience replace sunscreen" and the "clinically tested finished-product regimen" caption.
