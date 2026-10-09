@@ -248,7 +248,8 @@
           "type": "image",
           "settings": {
             "label": "Running + Cycling",
-            "caption": "For miles under open sky."
+            "caption": "For miles under open sky.",
+            "asset": "lifestyle-running-cycling-duo.webp"
           }
         },
         "b5": {
@@ -264,7 +265,8 @@
           "type": "image",
           "settings": {
             "label": "Outdoor living",
-            "caption": "For ordinary days spent outside."
+            "caption": "For ordinary days spent outside.",
+            "asset": "lifestyle-outdoor-living.webp"
           }
         }
       },
