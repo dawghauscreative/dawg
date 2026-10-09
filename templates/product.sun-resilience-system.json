@@ -214,20 +214,7 @@
         "eyebrow": "The biology",
         "heading": "Outdoor life creates more than one type of stress.",
         "heading_tag": "h2",
-        "body": "<p>Environmental exposure can contribute to oxidative stress in skin. The body responds through multiple antioxidant systems, which is why the Sun Resilience System uses chemically different ingredients rather than relying on one antioxidant.</p><p>Across both formulas, the system includes:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Resveratrol</li><li>Spirulina</li><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Zinc</li></ul>",
-        "quote": "Antioxidant support does not mean blocking UV radiation or replacing sunscreen."
-      }
-    },
-    "roles": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "green",
-        "align": "left",
-        "width": "wide",
-        "eyebrow": "Formulation philosophy",
-        "heading": "Not all antioxidants work the same way.",
-        "heading_tag": "h2",
-        "body": "<p>A polyphenol is not the same as a vitamin. A carotenoid is not the same as a mineral. Different compounds have different chemical structures, cellular locations, and biological roles. That is the formulation rationale behind Sun Resilience.</p><p><strong>UV Shield+</strong> leans heavily on botanical polyphenols and environmental-stress support.</p><p><strong>Dermaboost+</strong> adds vitamins, minerals, carotenoids, and broader botanical support.</p>",
+        "body": "<p>Environmental exposure can contribute to oxidative stress in skin. The body responds through multiple antioxidant systems, which is why the Sun Resilience System uses chemically different ingredients rather than relying on one antioxidant.</p><p>Across both formulas, the system includes:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Resveratrol</li><li>Spirulina</li><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Zinc</li></ul><p><em>Antioxidant support does not mean blocking UV radiation or replacing sunscreen.</em></p><h3>Not all antioxidants work the same way.</h3><p>A polyphenol is not the same as a vitamin. A carotenoid is not the same as a mineral. Different compounds have different chemical structures, cellular locations, and biological roles. That is the formulation rationale behind Sun Resilience.</p><p><strong>UV Shield+</strong> leans heavily on botanical polyphenols and environmental-stress support.</p><p><strong>Dermaboost+</strong> adds vitamins, minerals, carotenoids, and broader botanical support.</p>",
         "quote": "Complementary does not mean identical."
       }
     },
@@ -240,20 +227,7 @@
         "eyebrow": "Immune biology",
         "heading": "Skin is an immune-active organ.",
         "heading_tag": "h2",
-        "body": "<p>Skin participates in the body’s interaction with the external environment. Normal immune function therefore matters to broader skin health.</p><p>Dermaboost+ contributes nutrients such as:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li></ul><p>which have established roles in normal immune physiology.</p>",
-        "quote": "Supporting normal immune function is not the same as treating immune-mediated disease."
-      }
-    },
-    "resilience": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "dark",
-        "align": "left",
-        "width": "wide",
-        "eyebrow": "Resilience",
-        "heading": "Resilience is the goal, not perfection.",
-        "heading_tag": "h2",
-        "body": "<p>Skin is constantly:</p><ul><li>Renewing</li><li>Responding</li><li>Adapting</li><li>Maintaining barrier function</li><li>Interacting with the environment</li></ul><p>The Sun Resilience System is built around supporting those everyday processes from two directions: <strong>environmental support</strong> with UV Shield+ and <strong>broader nutritional support</strong> with Dermaboost+.</p>"
+        "body": "<p>Skin participates in the body’s interaction with the external environment. Normal immune function therefore matters to broader skin health.</p><p>Dermaboost+ contributes nutrients such as:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li></ul><p>which have established roles in normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating immune-mediated disease.</em></p><h3>Resilience is the goal, not perfection.</h3><p>Skin is constantly:</p><ul><li>Renewing</li><li>Responding</li><li>Adapting</li><li>Maintaining barrier function</li><li>Interacting with the environment</li></ul><p>The Sun Resilience System is built around supporting those everyday processes from two directions: <strong>environmental support</strong> with UV Shield+ and <strong>broader nutritional support</strong> with Dermaboost+.</p>"
       }
     },
     "formula": {
@@ -784,9 +758,7 @@
     "step1",
     "step2",
     "antioxidant",
-    "roles",
     "immune",
-    "resilience",
     "formula",
     "overlap",
     "how",

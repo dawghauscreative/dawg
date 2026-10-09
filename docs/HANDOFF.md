@@ -306,3 +306,8 @@ Quick add: not built. When Supr confirms collection-page support and a test orde
 ## Fonts switched to Playfair Display + Inter (Oct 9 2026)
 
 At the owner's request the theme fonts are now Playfair Display for headlines (regular weight) and Inter for body, buttons and labels, both from Google Fonts (Theme settings > Typography; the old Cormorant Garamond and BC Novatica CYR values are gone from the defaults). The Adobe kit URL default is blank, so the Adobe stylesheet is no longer loaded; paste the kit URL and the font names back into those settings to return to the Blueprint V2 pair. Playfair runs wider than Cormorant, so flow diagrams now wrap instead of overflowing; spot-checked on the home, product, systems, individual, Shop All and Skin Edu pages at phone, tablet and desktop widths with wide stand-in fonts (the QA preview cannot load Google fonts, so check the real fonts in the theme preview).
+
+## Shopify sync notes (fonts + system pages)
+- Shopify rejects any JSON template with more than 25 sections, and rejects settings_schema.json with a blank text `default`. GitHub sync fails silently and leaves the previous theme file in place (this is why the new fonts and three system pages did not appear in the preview).
+- Sun Resilience, Skin Recovery and Complete Skin Defense were trimmed to exactly 25 sections by merging adjacent narrative sections (sub-headings are `<h3>` in the merged rich-text). Keep every product/page template at 25 sections or fewer.
+- To check sync: compare the theme file `checksumMd5` (Admin API `theme.files`) against `md5sum` of the local file.

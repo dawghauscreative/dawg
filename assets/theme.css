@@ -922,3 +922,7 @@ body.template-blog.is-filtered main > .shopify-section:not(:has(.blog-listing)) 
 @media (min-width: 750px) { .flow { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); } }
 .flow__step { min-width: 0; padding-inline: 14px; }
 .flow__label { overflow-wrap: anywhere; hyphens: auto; }
+
+/* Sub-headings inside merged rich-text sections */
+.prose h3 { font-size: 1.45rem; margin: 2em 0 .4em; }
+.prose em { font-style: italic; }

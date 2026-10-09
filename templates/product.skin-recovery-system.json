@@ -276,20 +276,7 @@
         "eyebrow": "Microbiome biology",
         "heading": "The microbiome does more than digest food.",
         "heading_tag": "h2",
-        "body": "<p>Intestinal microorganisms interact with the body through:</p><ul><li>Metabolites</li><li>Barrier signaling</li><li>Nutrient processing</li><li>Immune communication</li></ul><p>Skinbiotic+ supports the microbial environment through prebiotic fiber and multiple probiotic organisms. Dermaboost+ contributes nutrients associated with normal immune physiology.</p>",
-        "quote": "Supporting normal immune function is not the same as treating an immune-mediated skin condition."
-      }
-    },
-    "antioxidant": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "dark",
-        "align": "left",
-        "width": "wide",
-        "eyebrow": "Antioxidant biology",
-        "heading": "Broader support beyond the microbiome.",
-        "heading_tag": "h2",
-        "body": "<p>Dermaboost+ expands the system beyond gut support through a combination of:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.</p>"
+        "body": "<p>Intestinal microorganisms interact with the body through:</p><ul><li>Metabolites</li><li>Barrier signaling</li><li>Nutrient processing</li><li>Immune communication</li></ul><p>Skinbiotic+ supports the microbial environment through prebiotic fiber and multiple probiotic organisms. Dermaboost+ contributes nutrients associated with normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating an immune-mediated skin condition.</em></p><h3>Broader support beyond the microbiome.</h3><p>Dermaboost+ expands the system beyond gut support through a combination of:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.</p>"
       }
     },
     "formula": {
@@ -789,7 +776,6 @@
     "gutskin",
     "systemic",
     "microbiome",
-    "antioxidant",
     "formula",
     "versus",
     "how",

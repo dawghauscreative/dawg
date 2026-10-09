@@ -146,7 +146,7 @@
         "eyebrow": "The advanced routine",
         "heading": "Complete Skin Defense is for the customer who already understands the system.",
         "heading_tag": "h2",
-        "body": "<p>It is best suited to customers who:</p><ul><li>Already understand Protect / Balance / Restore</li><li>Want support across all three areas</li><li>Prefer one comprehensive daily routine</li><li>Are comfortable taking multiple supplements consistently</li><li>May already use one or more Alchemia MD products</li><li>Want to consolidate into the broadest Alchemia MD system</li></ul>"
+        "body": "<p>It is best suited to customers who:</p><ul><li>Already understand Protect / Balance / Restore</li><li>Want support across all three areas</li><li>Prefer one comprehensive daily routine</li><li>Are comfortable taking multiple supplements consistently</li><li>May already use one or more Alchemia MD products</li><li>Want to consolidate into the broadest Alchemia MD system</li><li>Value transparent ingredients and clearly defined formula roles</li></ul>"
       }
     },
     "step1": {
@@ -247,33 +247,20 @@
         "eyebrow": "Formulation philosophy",
         "heading": "Different roles are more useful than redundant bottles.",
         "heading_tag": "h2",
-        "body": "<p>Complete Skin Defense is not about stacking more ingredients simply to make a bigger formula. The system is structured around three different support roles.</p><p><strong>Protect</strong> Environmental support.</p><p><strong>Balance</strong> Gut-skin and microbiome support.</p><p><strong>Restore</strong> Broader nutritional and normal immune support.</p>",
-        "quote": "The value is in the combination of different roles, not in taking the greatest number of capsules possible."
-      }
-    },
-    "system": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "dark",
-        "align": "left",
-        "width": "wide",
-        "eyebrow": "The bigger picture",
-        "heading": "Skin health is connected to the rest of the body.",
-        "heading_tag": "h2",
-        "body": "<p>Skin is not an isolated surface. Its biology is influenced by:</p><ul><li>Environmental exposure</li><li>Nutrient availability</li><li>Oxidative stress</li><li>Immune signaling</li><li>Microbiome-related pathways</li><li>Barrier function</li><li>Normal cellular renewal</li></ul><p>Complete Skin Defense is the broadest expression of the Alchemia MD philosophy that skin should be supported as part of a larger biological system.</p>"
+        "body": "<p>Complete Skin Defense is not about stacking more ingredients simply to make a bigger formula. The system is structured around three different support roles.</p><p><strong>Protect</strong> Environmental support.</p><p><strong>Balance</strong> Gut-skin and microbiome support.</p><p><strong>Restore</strong> Broader nutritional and normal immune support.</p><p><em>The value is in the combination of different roles, not in taking the greatest number of capsules possible.</em></p><h3>Skin health is connected to the rest of the body.</h3><p>Skin is not an isolated surface. Its biology is influenced by:</p><ul><li>Environmental exposure</li><li>Nutrient availability</li><li>Oxidative stress</li><li>Immune signaling</li><li>Microbiome-related pathways</li><li>Barrier function</li><li>Normal cellular renewal</li></ul><p>Complete Skin Defense is the broadest expression of the Alchemia MD philosophy that skin should be supported as part of a larger biological system.</p>"
       }
     },
     "environment": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "dark",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Protect",
-        "heading": "Support for life outdoors.",
+        "eyebrow": "Protect + Restore",
+        "heading": "Support for life outdoors, and broader nutrition.",
         "heading_tag": "h2",
-        "body": "<p>UV Shield+ provides the system’s primary environmental-support role. Dermaboost+ contributes additional antioxidant and nutritional compounds.</p>",
-        "quote": "Complete Skin Defense does not replace sunscreen."
+        "body": "<p>UV Shield+ provides the system’s primary environmental-support role. Dermaboost+ contributes additional antioxidant and nutritional compounds.</p><p><em>Complete Skin Defense does not replace sunscreen.</em></p><h3>Broader nutritional support.</h3><p>Dermaboost+ adds:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute nutritional, antioxidant, and normal immune-supportive roles.</p>",
+        "quote": "Supporting normal immune function is not the same as treating autoimmune or inflammatory disease."
       }
     },
     "gut": {
@@ -306,19 +293,6 @@
         "b1",
         "b2"
       ]
-    },
-    "nutrition": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "dark",
-        "align": "left",
-        "width": "wide",
-        "eyebrow": "Restore",
-        "heading": "Broader nutritional support.",
-        "heading_tag": "h2",
-        "body": "<p>Dermaboost+ adds:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute nutritional, antioxidant, and normal immune-supportive roles.</p>",
-        "quote": "Supporting normal immune function is not the same as treating autoimmune or inflammatory disease."
-      }
     },
     "ingredients": {
       "type": "split-compare",
@@ -403,60 +377,6 @@
         "color_scheme": "green"
       }
     },
-    "who": {
-      "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "The complete routine",
-        "heading": "Designed for customers ready for all three roles.",
-        "columns": "3",
-        "show_images": false
-      },
-      "blocks": {
-        "b1": {
-          "type": "card",
-          "settings": {
-            "title": "The existing Alchemia MD customer",
-            "text": "<p>Already understands the individual formulas.</p>"
-          }
-        },
-        "b2": {
-          "type": "card",
-          "settings": {
-            "title": "The comprehensive-routine customer",
-            "text": "<p>Wants environmental, gut-skin, and broader nutritional support together.</p>"
-          }
-        },
-        "b3": {
-          "type": "card",
-          "settings": {
-            "title": "The routine simplifier",
-            "text": "<p>Would rather follow one defined system than assemble disconnected supplements.</p>"
-          }
-        },
-        "b4": {
-          "type": "card",
-          "settings": {
-            "title": "The evidence-oriented customer",
-            "text": "<p>Values transparent ingredients and clearly defined formula roles.</p>"
-          }
-        },
-        "b5": {
-          "type": "card",
-          "settings": {
-            "title": "The consistency-focused customer",
-            "text": "<p>Comfortable building supplementation into a long-term daily routine.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5"
-      ]
-    },
     "supports": {
       "type": "science-cards",
       "settings": {
@@ -511,53 +431,6 @@
         "b5"
       ]
     },
-    "different": {
-      "type": "science-cards",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "The upgrade",
-        "heading": "Complete Skin Defense is broader, not automatically better.",
-        "columns": "4",
-        "show_images": false,
-        "body": "<p>The two-product systems are designed around specific combinations of support. Complete Skin Defense is for the customer who wants all three. It is a broader routine, not the only “correct” routine.</p>"
-      },
-      "blocks": {
-        "b1": {
-          "type": "card",
-          "settings": {
-            "title": "Sun Safe System",
-            "text": "<p>Protect + Balance.</p>"
-          }
-        },
-        "b2": {
-          "type": "card",
-          "settings": {
-            "title": "Skin Recovery System",
-            "text": "<p>Balance + Restore.</p>"
-          }
-        },
-        "b3": {
-          "type": "card",
-          "settings": {
-            "title": "Sun Resilience System",
-            "text": "<p>Protect + Restore.</p>"
-          }
-        },
-        "b4": {
-          "type": "card",
-          "settings": {
-            "title": "Complete Skin Defense",
-            "text": "<p>Protect + Balance + Restore.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ]
-    },
     "compare": {
       "type": "compare-table",
       "settings": {
@@ -568,7 +441,8 @@
         "col_2": "Products",
         "col_3": "Primary focus",
         "button_label": "Compare all systems",
-        "button_url": "/pages/systems"
+        "button_url": "/pages/systems",
+        "body": "<p>The two-product systems are designed around specific combinations of support. Complete Skin Defense is for the customer who wants all three. It is a broader routine, not the only “correct” routine.</p>"
       },
       "blocks": {
         "b1": {
@@ -860,16 +734,12 @@
     "step3",
     "domains",
     "why",
-    "system",
-    "environment",
     "gut",
-    "nutrition",
+    "environment",
     "ingredients",
     "how",
     "timeline",
-    "who",
     "supports",
-    "different",
     "compare",
     "research",
     "claims",
