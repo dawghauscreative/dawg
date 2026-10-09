@@ -6,6 +6,7 @@
   <div class="container" style="max-width:960px">
     {%- render 'compliance-slot', content: product.metafields.custom.compliance_slot -%}
     <div class="stack" style="--stack:.75rem;margin-top:2rem">
+      {%- if section.settings.extra_line != blank -%}<p class="small">{{ section.settings.extra_line }}</p>{%- endif -%}
       {%- render 'label-caution' -%}
       {%- render 'fda-disclaimer', dagger: true -%}
     </div>
@@ -16,6 +17,7 @@
 {
   "name": "Compliance notice",
   "settings": [
+    { "type": "text", "id": "extra_line", "label": "Extra line (e.g. sunscreen statement)" },
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],
   "presets": [{ "name": "Compliance notice" }]

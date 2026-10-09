@@ -42,7 +42,7 @@
         var srcset = thumb.getAttribute('data-srcset');
         if (!main) return;
         main.src = src;
-        if (srcset) main.srcset = srcset;
+        if (srcset) { main.srcset = srcset; } else { main.removeAttribute('srcset'); }
         gallery.querySelectorAll('[data-thumb]').forEach(function (t) { t.setAttribute('aria-current', 'false'); });
         thumb.setAttribute('aria-current', 'true');
       });

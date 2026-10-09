@@ -34,13 +34,20 @@
               width="{{ featured.width }}" height="{{ featured.height }}"
               loading="eager" fetchpriority="high">
           </div>
-          {%- if product.media.size > 1 -%}
+          {%- assign extra_assets = section.settings.gallery_assets | split: ',' -%}
+          {%- if product.media.size > 1 or extra_assets.size > 0 -%}
             <div class="pdp__thumbs">
-              {%- for media in product.media limit: 5 -%}
+              {%- for media in product.media limit: 10 -%}
                 {%- if media.media_type == 'image' -%}
                   <button type="button" data-thumb data-src="{{ media | image_url: width: 1100 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" aria-label="Show image {{ forloop.index }}" aria-current="{% if media.id == featured.id %}true{% else %}false{% endif %}">
                     <img src="{{ media | image_url: width: 200 }}" alt="" width="100" height="100" loading="lazy">
                   </button>
+                {%- endif -%}
+              {%- endfor -%}
+              {%- for asset_name in extra_assets -%}
+                {%- assign asset_clean = asset_name | strip -%}
+                {%- if asset_clean != blank -%}
+                  <button type="button" data-thumb data-src="{{ asset_clean | asset_url }}" aria-label="Show graphic {{ forloop.index }}" aria-current="false"><img src="{{ asset_clean | asset_url }}" alt="" width="100" height="125" loading="lazy"></button>
                 {%- endif -%}
               {%- endfor -%}
             </div>
@@ -58,6 +65,7 @@
 
             {%- when 'title' -%}
               <div {{ block.shopify_attributes }}>
+                {%- if block.settings.eyebrow != blank -%}<span class="eyebrow">{{ block.settings.eyebrow }}</span>{%- endif -%}
                 <h1 class="pdp__title">{{ product.title }}</h1>
               </div>
 
@@ -82,7 +90,16 @@
                   assign d_short = d_para | append: '</p>'
                 endfor
               -%}
-              {%- if d_short != blank -%}<div class="pdp__desc prose" {{ block.shopify_attributes }}>{{ d_short }}</div>{%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <div class="pdp__desc prose" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              {%- elsif d_short != blank -%}<div class="pdp__desc prose" {{ block.shopify_attributes }}>{{ d_short }}</div>{%- endif -%}
+
+            {%- when 'bullets' -%}
+              {%- assign bullet_list = block.settings.items | newline_to_br | split: '<br />' -%}
+              <ul class="pdp__bullets" {{ block.shopify_attributes }}>{%- for b in bullet_list -%}{%- assign b_text = b | strip -%}{%- if b_text != blank -%}<li>{{ b_text }}</li>{%- endif -%}{%- endfor -%}</ul>
+
+            {%- when 'note' -%}
+              {%- if block.settings.text != blank -%}<p class="pdp__note small" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>{%- endif -%}
 
             {%- when 'price' -%}
               {%- comment -%} Base price read from Shopify data. Hide with Theme settings > Product pages once Supr's widget shows pricing. {%- endcomment -%}
@@ -170,12 +187,15 @@
   "name": "Product hero",
   "tag": "div",
   "settings": [
+    { "type": "text", "id": "gallery_assets", "label": "Extra gallery graphics (theme asset filenames, comma separated)", "info": "Appended after the product media, e.g. slide-d01-1.webp, slide-d02-1.webp" },
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],
   "blocks": [
-    { "type": "title", "name": "Title", "limit": 1 },
+    { "type": "title", "name": "Title", "limit": 1, "settings": [{ "type": "text", "id": "eyebrow", "label": "Eyebrow (above the title)" }] },
     { "type": "tagline", "name": "Tagline", "limit": 1 },
-    { "type": "description", "name": "Short description", "limit": 1 },
+    { "type": "description", "name": "Short description", "limit": 1, "settings": [{ "type": "richtext", "id": "text", "label": "Override text", "info": "Blank = first paragraph of the Shopify product description." }] },
+    { "type": "bullets", "name": "Benefit bullets", "limit": 1, "settings": [{ "type": "textarea", "id": "items", "label": "Bullets (one per line)" }] },
+    { "type": "note", "name": "Small note", "settings": [{ "type": "text", "id": "text", "label": "Text" }] },
     { "type": "price", "name": "Price", "limit": 1 },
     { "type": "reviews", "name": "Review summary slot", "limit": 1 },
     { "type": "buy_buttons", "name": "Buy buttons", "limit": 1 },

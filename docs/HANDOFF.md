@@ -131,3 +131,15 @@ Decisions to confirm:
 - Education cards 2 and 3 show "Coming soon" until their articles are published (drafts exist: "What Is the Gut-Skin Axis?" and "Why Consistency Matters in Skin Health"). Paste the article URL into each card when live.
 - Lifestyle: "Running + Cycling" and "Outdoor living" are placeholder frames awaiting photos.
 - The blueprint's blog URL `/blogs/education/...` was mapped to the real handle `/blogs/news/...`.
+
+## UV Shield+ product page (blueprint, Oct 9 2026)
+
+`templates/product.uv-shield.json` rebuilt to the UV Shield+ blueprint flow (hero + Supr buy box, definition, why sun-exposed skin needs support, five-active cards, ingredient web, oxidative stress, skin barrier, how to use + routine, renewal timeline, who it is for, sunscreen companion, research preview, what it does not claim, system cross-sell, founder, reviews, FAQ, compliance, final CTA). New reusable sections: `product-actives`, `ingredient-web`, `flow-steps`; extended `pdp-main` (eyebrow, short-description override, benefit bullets, small note, extra gallery graphics), `rich-text` (pull quote), `layer-stack` (intro), `system-finder` (label), `compliance-notice` (extra line).
+
+Notes:
+- Tagline stays the label wording ("Daily support for active, sun-ready skin"), not the blueprint's "Outdoor Support for Resilient Skin", per the earlier decision.
+- The renewal expectation line and timeline supporting copy are now defaults in Theme settings > Your Renewal Timeline. FTC net-impression clearance is still pending; the "How long until I see results?" FAQ answer is left empty on purpose.
+- The 16:9 video slot stays after the definition (earlier request); the blueprint does not list it.
+- Gallery: the five existing product images come first, then the five ingredient title slides (theme assets) are appended via `gallery_assets`. The existing UV Shield+ media includes the "UV-stress timeline" image; the blueprint bars any before/during/after-sun or DNA-repair graphic, so check that image and remove it from the product media in Shopify if it is one.
+- The required negation phrases (e.g. "does not replace sunscreen", "not intended to prevent sunburn") are allowlisted in `docs/check-banned.sh`.
+- Research links on this page go to `/pages/science#uv-shield` only (no Tier 2 links).

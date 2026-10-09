@@ -1,0 +1,35 @@
+{%- comment -%} Simple left-to-right flow graphic with optional intro, takeaway and note. {%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <ol class="flow">
+      {%- for block in section.blocks -%}
+        <li class="flow__step" {{ block.shopify_attributes }}>
+          {%- if block.settings.kicker != blank -%}<span class="flow__kicker">{{ block.settings.kicker }}</span>{%- endif -%}
+          <span class="flow__label">{{ block.settings.label }}</span>
+        </li>
+      {%- endfor -%}
+    </ol>
+    {%- if section.settings.takeaway != blank -%}<p class="layers__callout">{{ section.settings.takeaway }}</p>{%- endif -%}
+    {%- if section.settings.note != blank -%}<p class="small" style="margin-top:1.5rem;max-width:70ch">{{ section.settings.note }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Flow steps",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "takeaway", "label": "Takeaway" },
+    { "type": "text", "id": "note", "label": "Small note" }
+  ],
+  "blocks": [
+    { "type": "step", "name": "Step", "settings": [{ "type": "text", "id": "kicker", "label": "Small label" }, { "type": "text", "id": "label", "label": "Step" }] }
+  ],
+  "max_blocks": 5,
+  "presets": [{ "name": "Flow steps", "blocks": [{ "type": "step" }, { "type": "step" }, { "type": "step" }] }]
+}
+{% endschema %}

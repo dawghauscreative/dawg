@@ -137,7 +137,8 @@
         "image": "shopify://shop_images/uv-shield-2-five-actives.png",
         "image_alt": "UV Shield+ five actives",
         "image_caption": "Ingredient slide",
-        "note": "<p>Research presented here describes studies on individual ingredients, not on UV Shield+ as a finished product. UV Shield+ is not a sunscreen and does not replace sun protection.</p>"
+        "note": "<p>Research presented here describes studies on individual ingredients, not on UV Shield+ as a finished product. UV Shield+ is not a sunscreen and does not replace sun protection.</p>",
+        "anchor": "uv-shield"
       },
       "blocks": {
         "b1": {

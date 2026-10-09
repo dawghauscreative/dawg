@@ -3,7 +3,7 @@
   Citations come from research_study metaobjects by handle and only appear when approved for public display.
   Ingredient research is not finished-product testing. Nothing is written here.
 {%- endcomment -%}
-<section class="section scheme-{{ section.settings.color_scheme }} sci-formula" {{ section.shopify_attributes }}>
+<section class="section scheme-{{ section.settings.color_scheme }} sci-formula"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
   <div class="container">
     <div class="sci-formula__head">
       <div>
@@ -92,6 +92,7 @@
   "name": "Science formula",
   "settings": [
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }, { "value": "beige", "label": "Warm beige" }] },
+    { "type": "text", "id": "anchor", "label": "Anchor id (optional)", "info": "Lets other pages link to this section, e.g. uv-shield." },
     { "type": "text", "id": "role", "label": "Role (Protect, Balance, Restore)" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "text", "id": "subhead", "label": "Subheadline" },

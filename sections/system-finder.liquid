@@ -10,7 +10,7 @@
             <div class="finder-card__body">
               <h3>{{ p.title }}</h3>
               <p class="finder-card__roles">{{ block.settings.roles }}</p>
-              <p><strong>Best for:</strong> {{ block.settings.best_for }}</p>
+              <p>{% if section.settings.best_for_label != blank %}<strong>{{ section.settings.best_for_label }}</strong> {% endif %}{{ block.settings.best_for }}</p>
               <a class="btn btn--outline" href="{{ p.url }}">{{ block.settings.cta }}</a>
             </div>
           </article>
@@ -27,7 +27,8 @@
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" }
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "best_for_label", "label": "Label before each description", "default": "Best for:", "info": "Leave empty to show the description only." }
   ],
   "blocks": [
     {

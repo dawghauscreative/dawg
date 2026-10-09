@@ -1,0 +1,52 @@
+{%- comment -%} Formulation-logic diagram for UV Shield+: five ingredient nodes joined by the complementary pairs listed beside it. {%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="sci-map">
+      <svg class="sci-venn" viewBox="0 0 520 480" role="img" aria-label="Five ingredients joined by complementary relationships" fill="none">
+        <g stroke="var(--c-gold)" stroke-width="1.2" opacity=".55">
+          <path d="M260 70 422 188M260 70 360 378M260 70 160 378M98 188 422 188M98 188 360 378M98 188 160 378M422 188 160 378M422 188 360 378M160 378 360 378"/>
+        </g>
+        <circle cx="260" cy="240" r="46" stroke="var(--c-gold)" stroke-width="1.2" fill="var(--c-gold)" fill-opacity=".1"/>
+        <g fill="currentColor" font-family="var(--font-body)" text-anchor="middle" letter-spacing="1.5">
+          <text x="260" y="238" font-size="12" font-weight="700">UV</text><text x="260" y="254" font-size="12" font-weight="700">SHIELD+</text>
+        </g>
+        <g fill="var(--c-gold)"><circle cx="260" cy="70" r="8"/><circle cx="422" cy="188" r="8"/><circle cx="360" cy="378" r="8"/><circle cx="160" cy="378" r="8"/><circle cx="98" cy="188" r="8"/></g>
+        <g fill="currentColor" font-family="var(--font-display)" font-size="19" text-anchor="middle">
+          <text x="260" y="48">Niacinamide</text>
+          <text x="440" y="164" text-anchor="start" dx="-18">Polypodium</text>
+          <text x="360" y="408">EGCG</text>
+          <text x="160" y="408">Resveratrol</text>
+          <text x="80" y="164" text-anchor="end" dx="18">Spirulina</text>
+        </g>
+      </svg>
+      <div class="sci-map__pairs">
+        {%- for block in section.blocks -%}
+          <article class="sci-pair" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title }}</h3>
+            <div class="prose">{{ block.settings.text }}</div>
+          </article>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- if section.settings.caption != blank -%}<p class="sci-caption">{{ section.settings.caption }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ingredient web",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "textarea", "id": "caption", "label": "Caption" }
+  ],
+  "blocks": [
+    { "type": "pair", "name": "Pairing", "settings": [{ "type": "text", "id": "title", "label": "Title" }, { "type": "richtext", "id": "text", "label": "Text" }] }
+  ],
+  "max_blocks": 6,
+  "presets": [{ "name": "Ingredient web" }]
+}
+{% endschema %}

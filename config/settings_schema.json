@@ -276,7 +276,8 @@
       {
         "type": "textarea",
         "id": "renewal_intro",
-        "label": "Module intro (optional)"
+        "label": "Module intro (optional)",
+        "default": "Skin renewal is gradual. Daily supplementation should be understood as part of a consistent routine rather than an immediate intervention."
       },
       {
         "type": "text",
@@ -318,7 +319,8 @@
         "type": "textarea",
         "id": "renewal_expectation_line",
         "label": "Expectation line beside the buy box",
-        "info": "Empty until the approved wording is pasted in. Hidden when empty."
+        "info": "Empty until the approved wording is pasted in. Hidden when empty.",
+        "default": "Skin renewal is gradual. Consistent daily use matters."
       },
       {
         "type": "text",
