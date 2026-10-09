@@ -822,3 +822,11 @@ h1, h2, h3, h4 { font-variant-numeric: lining-nums; }
 .domains__item h3 { font-size: clamp(1.4rem, 2vw, 1.75rem); }
 .domains__item p { font-size: .95rem; }
 .domains__item strong { font-family: var(--font-callout); font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-right: .4em; }
+
+/* Original home hero: keep the copy clear of the bottles on wide screens, whatever font is loaded */
+@media (min-width: 990px) {
+  .hero--bg .hero__grid > div:first-child { max-width: min(600px, 48%); }
+  .hero--bg h1 { font-size: clamp(2.6rem, 4.6vw, 4.4rem); max-width: 12ch; }
+  .hero--bg .lede { max-width: 38ch; }
+  .hero__bg img { object-position: 82% center; }
+}

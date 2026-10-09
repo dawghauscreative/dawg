@@ -265,3 +265,5 @@ At the owner's request the home page opening banner is the original `hero` secti
 ## Lifestyle images now 4:5 (Oct 9 2026)
 
 The seven lifestyle renders are 4:5 originals, so every step / education block that used them at 16:9 (Sun Safe, Sun Resilience, Skin Recovery, Complete Skin Defense and Individual Products pages) now uses the 4:5 shape and shows the whole image. The clean system renders (white background, 16:9) keep their wide shape. `feature-split` now sets the image's width/height from the chosen shape.
+
+Home hero fix (Oct 9 2026): with a wide headline font the original hero's copy ran under the bottles. On desktop the copy column is now capped (about half the width), the headline is a little smaller and the image sits further right. Tested at 1100 to 1920 px with a deliberately wide bold font. Fonts are unchanged (Theme settings > Typography).
