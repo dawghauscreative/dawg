@@ -832,3 +832,13 @@ h1, h2, h3, h4 { font-variant-numeric: lining-nums; }
   .hero--bg .hero__grid { min-height: clamp(560px, 56.3vw, 940px); }
   .hero__bg img { object-position: center top; }
 }
+
+/* Trust strip: slim, evenly spaced, gold accents */
+.trust-strip { border-block: 1px solid var(--rule); }
+.trust-strip > div { min-height: 0; padding: 22px 18px; gap: 12px; font-size: .78rem; letter-spacing: .18em; line-height: 1.5; border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+.trust-strip .icon { width: 22px; height: 22px; color: var(--accent); flex: none; }
+.scheme-dark .trust-strip, .scheme-green .trust-strip { background: color-mix(in srgb, var(--c-gold) 6%, var(--bg)); }
+@media (min-width: 750px) { .trust-strip > div { padding: 26px 20px; letter-spacing: .14em; } .trust-strip > div:first-child { border-left: 0; } }
+.trust-strip .icon, .trust-strip .icon svg { opacity: 1; color: var(--c-gold); }
+@media (max-width: 749px) { .trust-strip { grid-template-columns: 1fr; } .trust-strip > div { justify-content: flex-start; padding: 16px 22px; border-right: 0; text-align: left; } }
+@media (min-width: 750px) { .trust-strip > div { font-size: .72rem; } }

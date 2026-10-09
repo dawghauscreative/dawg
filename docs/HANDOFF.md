@@ -269,3 +269,5 @@ The seven lifestyle renders are 4:5 originals, so every step / education block t
 Home hero fix (Oct 9 2026): with a wide headline font the original hero's copy ran under the bottles. On desktop the copy column is now capped (about half the width), the headline is a little smaller and the image sits further right. Tested at 1100 to 1920 px with a deliberately wide bold font. Fonts are unchanged (Theme settings > Typography).
 
 Home hero crop fix (Oct 9 2026): on desktop the hero is as tall as the banner image's own proportions (56% of the width, capped) and the image is pinned to the top, so the gold arch and all three bottles show in full. Very wide monitors trim only the bottom (rock and reflection).
+
+Home trust strip restyled (Oct 9 2026): slim dark strip under the hero (was a tall tan band) with gold hairlines, small gold icons and evenly spaced items; single column on phones. Same three statements; change them or the icons on the "trust_strip" section of the Home template.

@@ -566,27 +566,27 @@
     "trust_strip": {
       "type": "trust-bar",
       "settings": {
-        "color_scheme": "beige"
+        "color_scheme": "dark"
       },
       "blocks": {
         "t1": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "shield",
             "text": "Dermatologist developed"
           }
         },
         "t2": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "layers",
             "text": "Founded by Dr. Mia Luna"
           }
         },
         "t3": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "cell",
             "text": "Your purchase contributes to melanoma research"
           }
         }
