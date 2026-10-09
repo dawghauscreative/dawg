@@ -1,0 +1,4 @@
+{%- comment -%} Usage: {% render 'read-time', article: a %}. Rough reading time from the article body (about 220 words a minute). {%- endcomment -%}
+{%- assign rt_words = article.content | strip_html | split: ' ' | size -%}
+{%- assign rt_mins = rt_words | divided_by: 220 | plus: 1 -%}
+{{- rt_mins | floor }} min read

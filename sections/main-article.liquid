@@ -1,18 +1,55 @@
-<article class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+{%- comment -%}
+  Skin Edu article template. Header (category, title, deck, reviewed by, dates, read time, image), narrow body,
+  research box, references, related formula, disclaimer. The box, references and related formula come from article
+  metafields; each part is hidden when empty. No add-to-cart anywhere.
+{%- endcomment -%}
+{%- assign mf = article.metafields.custom -%}
+{%- assign rel = mf.related_product.value | default: section.settings.product -%}
+{%- assign cat = '' -%}
+{%- assign skip_tags = 'beginner,advanced,uv-shield,skinbiotic,dermaboost' | split: ',' -%}
+{%- for tg in article.tags -%}{%- unless skip_tags contains tg or cat != blank -%}{%- assign cat = tg -%}{%- endunless -%}{%- endfor -%}
+<article class="section scheme-{{ section.settings.color_scheme }} edu-article" {{ section.shopify_attributes }}>
   <div class="container">
-    <header style="max-width:860px;margin:0 auto 3rem;text-align:center">
-      <span class="eyebrow">{{ article.published_at | date: '%B %-d, %Y' }}</span>
-      <h1 style="font-size:clamp(2.2rem,4.6vw,4rem)">{{ article.title }}</h1>
+    <header class="edu-article__head">
+      {%- if cat != blank -%}<a class="role-badge" href="{{ blog.url }}/tagged/{{ cat | handleize }}">{{ cat | replace: '-', ' ' }}</a>{%- endif -%}
+      <h1>{{ article.title }}</h1>
+      {%- if article.excerpt != blank -%}<p class="edu-article__deck">{{ article.excerpt | strip_html }}</p>{%- endif -%}
+      <p class="edu-article__byline">{{ section.settings.reviewed_by }}</p>
+      <p class="edu-article__meta">
+        <span>Published {{ article.published_at | date: '%B %-d, %Y' }}</span>
+        {%- if article.updated_at != article.created_at -%}<span>Updated {{ article.updated_at | date: '%B %-d, %Y' }}</span>{%- endif -%}
+        <span>{% render 'read-time', article: article %}</span>
+      </p>
     </header>
-    {%- if article.image -%}<div style="max-width:1100px;margin:0 auto 3rem">{% render 'responsive-image', image: article.image, ratio: '16x9', sizes: '(min-width: 1100px) 1100px, 100vw', loading: 'eager', alt: article.title %}</div>{%- endif -%}
-    <div class="article-body">{{ article.content }}</div>
+    {%- if article.image -%}<div class="edu-article__image">{% render 'responsive-image', image: article.image, ratio: '16x9', sizes: '(min-width: 1100px) 1100px, 100vw', loading: 'eager', alt: article.title %}</div>{%- endif -%}
 
-    {%- if section.settings.product != blank -%}
-      <aside class="card" style="max-width:70ch;margin:4rem auto 0;display:grid;gap:1rem">
-        <div class="pcard__title">{{ section.settings.product.title }}</div>
-        <div><a class="btn" href="{{ section.settings.product.url }}">{{ section.settings.cta_label }}</a></div>
-      </aside>
-    {%- endif -%}
+    <div class="edu-article__col">
+      <div class="article-body">{{ article.content }}</div>
+
+      {%- if mf.know != blank or mf.learning != blank or mf.not_mean != blank -%}
+        <aside class="edu-box" aria-label="Research summary">
+          {%- if mf.know != blank -%}<div><h2>What we know</h2>{{ mf.know | metafield_tag }}</div>{%- endif -%}
+          {%- if mf.learning != blank -%}<div><h2>What we’re still learning</h2>{{ mf.learning | metafield_tag }}</div>{%- endif -%}
+          {%- if mf.not_mean != blank -%}<div><h2>What this does not mean</h2>{{ mf.not_mean | metafield_tag }}</div>{%- endif -%}
+        </aside>
+      {%- endif -%}
+
+      {%- if mf.references != blank -%}
+        <section class="edu-refs"><h2>References</h2>{{ mf.references | metafield_tag }}</section>
+      {%- endif -%}
+
+      {%- if rel != blank -%}
+        <aside class="edu-related">
+          <span class="eyebrow">Related formula</span>
+          <h2>{{ rel.title }}</h2>
+          <p>Built around ingredients discussed in this article.</p>
+          <a class="btn" href="{{ rel.url }}">Explore {{ rel.title }}</a>
+          <div class="edu-related__fda">{%- render 'fda-disclaimer', dagger: true -%}</div>
+        </aside>
+      {%- endif -%}
+
+      <p class="edu-article__disclaimer small">{{ section.settings.disclaimer }}</p>
+    </div>
   </div>
 </article>
 
@@ -21,8 +58,9 @@
   "name": "Article",
   "settings": [
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
-    { "type": "product", "id": "product", "label": "Product CTA insert", "info": "Shown after the article. No add-to-cart: links to the product page." },
-    { "type": "text", "id": "cta_label", "label": "CTA label", "default": "Shop the System" }
+    { "type": "text", "id": "reviewed_by", "label": "Reviewed-by line", "default": "Reviewed by Dr. Mia Luna, Board-Certified Dermatologist" },
+    { "type": "textarea", "id": "disclaimer", "label": "Article disclaimer", "default": "This article is for educational purposes only and is not a substitute for individualized medical advice. Speak with your healthcare professional about questions specific to your health." },
+    { "type": "product", "id": "product", "label": "Default related formula", "info": "Used when an article has no related-product metafield. Links to the product page only." }
   ]
 }
 {% endschema %}

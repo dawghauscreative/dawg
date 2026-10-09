@@ -67,7 +67,7 @@
     {{ content_for_header }}
   </head>
 
-  <body class="template-{{ request.page_type | handleize }}">
+  <body class="template-{{ request.page_type | handleize }}{% if current_tags.size > 0 %} is-filtered{% endif %}">
     <a class="skip-link" href="#MainContent">{{ 'general.skip_to_content' | t }}</a>
 
     {%- sections 'header-group' -%}

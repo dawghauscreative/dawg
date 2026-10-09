@@ -167,3 +167,33 @@
     });
   });
 })();
+
+/* Skin Edu ingredient search and formula filter (filters the rendered cards only) */
+(function () {
+  document.querySelectorAll('[data-edu-ingredients]').forEach(function (root) {
+    var cards = root.querySelectorAll('[data-edu-ing]');
+    var chips = root.querySelectorAll('[data-edu-filter]');
+    var search = root.querySelector('[data-edu-search]');
+    var empty = root.querySelector('[data-edu-empty]');
+    var active = 'all';
+    function apply() {
+      var q = (search && search.value || '').toLowerCase().trim();
+      var shown = 0;
+      cards.forEach(function (el) {
+        var okF = active === 'all' || (el.getAttribute('data-formulas') || '').indexOf(active) !== -1;
+        var okT = !q || (el.getAttribute('data-text') || '').indexOf(q) !== -1;
+        el.hidden = !(okF && okT);
+        if (!el.hidden) shown++;
+      });
+      if (empty) empty.hidden = shown !== 0;
+    }
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        active = chip.getAttribute('data-edu-filter');
+        chips.forEach(function (c) { var on = c === chip; c.classList.toggle('is-active', on); c.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+        apply();
+      });
+    });
+    if (search) search.addEventListener('input', apply);
+  });
+})();

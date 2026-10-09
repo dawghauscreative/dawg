@@ -1,0 +1,33 @@
+<section class="section scheme-{{ section.settings.color_scheme }}" id="topics" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="cols cols--3 edu-topics">
+      {%- for block in section.blocks -%}
+        {%- assign t = block.settings.tag | strip -%}
+        <a class="edu-topic" href="{% if t != blank %}/blogs/{{ section.settings.blog_handle }}/tagged/{{ t }}{% else %}#all-articles{% endif %}" {{ block.shopify_attributes }}>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+          <span class="edu-topic__go">Browse &rarr;</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Skin Edu topics",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "blog_handle", "label": "Blog handle", "default": "skin-edu" }
+  ],
+  "blocks": [
+    { "type": "topic", "name": "Topic", "settings": [{ "type": "text", "id": "title", "label": "Title" }, { "type": "text", "id": "tag", "label": "Article tag (e.g. gut-skin)" }, { "type": "textarea", "id": "text", "label": "Text" }] }
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Skin Edu topics" }]
+}
+{% endschema %}

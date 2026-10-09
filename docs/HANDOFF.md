@@ -273,3 +273,21 @@ Home hero crop fix (Oct 9 2026): on desktop the hero is as tall as the banner im
 Home trust strip restyled (Oct 9 2026): slim dark strip under the hero (was a tall tan band) with gold hairlines, small gold icons and evenly spaced items; single column on phones. Same three statements; change them or the icons on the "trust_strip" section of the Home template.
 
 Home intro video (Oct 9 2026): a 16:9 video slot now sits directly under "Skin health is more than a surface routine." (section "intro_video" on the Home template; same colour as the text above, no gap). It shows the placeholder frame until you add a video: upload one or paste a YouTube/Vimeo link in the section settings. The slot further down the page (between the featured system and the finder) is unchanged.
+
+## Skin Edu (blog / education hub, Oct 9 2026)
+
+The blog is now **Skin Edu** at `/blogs/skin-edu` (handle changed from `news`, with a redirect; theme links updated). Nav: "Skin Edu" added to the theme header and drawer (after Science), the footer "Learn" column, and the Shopify main menu item "EDU" renamed "SKIN EDU" (same blog link). SEO title and description set on the blog.
+
+`templates/blog.json` is the hub: hero (H1 Skin Edu), featured article, six topic tiles, latest, Skin Health 101, Sun + Environment, Gut + Skin, searchable ingredient library (16 cards, filter by formula), Ask the Derm, Research Explained, formula education (understated, low on the page), outdoor life, Dr. Mia's picks, all articles, email sign-up ("Join Skin Edu", no discount), final CTA. One blog filtered by tags: the topic tiles and "all articles" chips go to `/blogs/skin-edu/tagged/<tag>`, where the rest of the hub hides and only the filtered list shows.
+
+Article cards name an article by handle: they become links as soon as that article is published in the blog and show "Coming soon" until then. Read time is calculated from the real article, never invented. Four cards are already wired (gut-skin axis x3, sun exposure, consistency) but those articles are still drafts (unpublished) with placeholder summaries; publish them in Content > Blog posts once edited. The featured card points at handle `what-is-internal-skin-health`, which does not exist yet; the existing published article is "What Is Internal Skin Defense?" (handle `what-is-internal-skin-defense-alchemia-md`), so either retitle/rehandle it or write the new one. Until then the button reads "Browse all articles".
+
+Article template (`sections/main-article.liquid`): category, title, deck (the article excerpt), "Reviewed by Dr. Mia Luna, Board-Certified Dermatologist" (editable), published and updated dates, read time, image, narrow reading column, then optional research box, references, related formula and the disclaimer. New article metafields (Settings > Custom data > Articles): What we know, What we're still learning, What this does not mean, References (public-approved Tier 1 citations only), Related formula (product). Each part is hidden when empty; the related-formula card includes the shared FDA line. Write articles in this shape: The short answer, what it means, why it matters, what the research says, what it does not say, practical takeaway.
+
+Tags created on the six existing articles (skin-science, gut-skin, sun-environment, nutrition-wellness, beginner). Use this tag set going forward: skin-science, sun-environment, gut-skin, ingredients, nutrition-wellness, ask-the-derm, research-explained, outdoor-life, uv-shield, skinbiotic, dermaboost, beginner, advanced.
+
+Notes:
+- Blueprint titles reworded for the banned list: "Can Every Probiotic Be Treated the Same?" is "Is Every Probiotic the Same?". "Does Nutrition Replace Sunscreen?" is allowlisted (the answer is No).
+- The 20 launch articles are not written; only the hub, template and structure are built.
+- Teasers were written only where the blueprint gave none and the card needs one (the three "latest" cards); all other cards are title-only or use the blueprint's descriptions.
+- The featured visual is an empty frame (abstract skin biology, never a bottle) until you add an image.

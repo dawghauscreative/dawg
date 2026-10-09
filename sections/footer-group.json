@@ -48,8 +48,8 @@
         "c3": {
           "type": "link",
           "settings": {
-            "label": "Education",
-            "url": "/blogs/news",
+            "label": "Skin Edu",
+            "url": "/blogs/skin-edu",
             "column": "learn"
           }
         },

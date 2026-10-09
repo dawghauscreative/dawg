@@ -1,0 +1,47 @@
+<section class="section scheme-{{ section.settings.color_scheme }}" id="ingredients" data-edu-ingredients {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="sci-lib__controls">
+      <label class="visually-hidden" for="edu-ing-search-{{ section.id }}">Search ingredients</label>
+      <input id="edu-ing-search-{{ section.id }}" class="sci-lib__search" type="search" placeholder="Search ingredients" data-edu-search>
+      <div class="sci-lib__filters" role="group" aria-label="Filter by formula">
+        <button type="button" class="sci-chip is-active" data-edu-filter="all" aria-pressed="true">All</button>
+        {%- assign formulas = section.settings.formulas | split: ',' -%}
+        {%- for f in formulas -%}{%- assign fl = f | strip -%}<button type="button" class="sci-chip" data-edu-filter="{{ fl | downcase }}" aria-pressed="false">{{ fl }}</button>{%- endfor -%}
+      </div>
+    </div>
+    <div class="cols cols--auto4 edu-cards edu-cards--4">
+      {%- for block in section.blocks -%}
+        <article class="edu-card" data-edu-ing data-formulas="{{ block.settings.formulas | downcase }}" data-text="{{ block.settings.name | append: ' ' | append: block.settings.text | append: ' ' | append: block.settings.formulas | downcase | escape }}" {{ block.shopify_attributes }}>
+          <h3>{{ block.settings.name }}</h3>
+          <p>{{ block.settings.text }}</p>
+          <p class="edu-card__meta"><span class="edu-card__soon">{{ block.settings.formulas }}</span></p>
+        </article>
+      {%- endfor -%}
+    </div>
+    <p class="sci-lib__empty" data-edu-empty hidden>No ingredients match your search.</p>
+    {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
+      <div class="btn-row" style="justify-content:center;margin-top:48px"><a class="btn" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a></div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Skin Edu ingredients",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "formulas", "label": "Filter chips (comma separated)", "default": "UV Shield+, Skinbiotic+, Dermaboost+" },
+    { "type": "text", "id": "button_label", "label": "Button label (optional)" },
+    { "type": "url", "id": "button_url", "label": "Button link" }
+  ],
+  "blocks": [
+    { "type": "ingredient", "name": "Ingredient", "settings": [{ "type": "text", "id": "name", "label": "Ingredient" }, { "type": "textarea", "id": "text", "label": "Text" }, { "type": "text", "id": "formulas", "label": "Where it appears (e.g. UV Shield+ / Dermaboost+)" }] }
+  ],
+  "max_blocks": 24,
+  "presets": [{ "name": "Skin Edu ingredients" }]
+}
+{% endschema %}
