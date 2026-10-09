@@ -10,7 +10,7 @@
 <section class="section scheme-{{ section.settings.color_scheme }} selector" id="choose" data-selector {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
-    <div class="selector__cards" role="group" aria-label="{{ section.settings.heading | escape }}">
+    <div class="selector__cards selector__cards--{{ section.settings.card_columns }}" role="group" aria-label="{{ section.settings.heading | escape }}">
       {%- for block in section.blocks -%}
         {%- assign p = block.settings.product -%}
         {%- if p != blank -%}
@@ -18,13 +18,18 @@
             <a class="sel-card__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
               {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
               {%- assign fallback_asset = fallback_capture | strip -%}
-              {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
+              {%- if block.settings.asset != blank -%}
+                {% render 'responsive-image', asset: block.settings.asset, asset_width: 1400, asset_height: 787, ratio: section.settings.media_ratio, sizes: '(min-width: 990px) 45vw, 100vw', alt: p.title %}
+              {%- else -%}
+                {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: section.settings.media_ratio, sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
+              {%- endif -%}
             </a>
             <div class="sel-card__body">
               <span class="role-badge">{{ block.settings.role }}</span>
               <h3>{{ p.title }}</h3>
+              {%- if block.settings.includes != blank -%}<p class="sel-card__includes"><strong>Includes</strong> {{ block.settings.includes }}</p>{%- endif -%}
               {%- assign tag_line = p.metafields.custom.tagline -%}
-              {%- if tag_line != blank -%}<p class="sel-card__tagline">{{ tag_line }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>{%- endif -%}
+              {%- if tag_line != blank and section.settings.show_tagline -%}<p class="sel-card__tagline">{{ tag_line }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>{%- endif -%}
               {%- if block.settings.description != blank -%}<p>{{ block.settings.description }}</p>{%- endif -%}
               {%- if block.settings.support_areas != blank -%}
                 <h4>Key support areas</h4>
@@ -54,6 +59,7 @@
             <h3>{{ block.settings.plan_heading }}</h3>
             <p>{{ block.settings.plan_copy }}</p>
             <div class="btn-row"><a class="btn" href="{{ p.url }}#buy-box">{{ block.settings.plan_button | default: 'Choose your plan' }}</a></div>
+            {%- render 'compliance-slot', content: p.metafields.custom.compliance_slot -%}
           </div>
         {%- endif -%}
       {%- endfor -%}
@@ -73,6 +79,9 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Choose your formula" },
     { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "select", "id": "card_columns", "label": "Cards per row", "default": "3", "options": [{ "value": "3", "label": "3" }, { "value": "2", "label": "2 (four cards)" }] },
+    { "type": "select", "id": "media_ratio", "label": "Card image shape", "default": "4x5", "options": [{ "value": "4x5", "label": "Portrait (4:5)" }, { "value": "16x9", "label": "Wide (16:9)" }] },
+    { "type": "checkbox", "id": "show_tagline", "label": "Show each product's tagline", "default": true },
     { "type": "header", "content": "Plan area" },
     { "type": "paragraph", "content": "Choosing a formula reveals its plan area, and its button opens the product page at the purchase box. Pricing and plan options are never set here." },
     { "type": "text", "id": "plan_heading", "label": "Plan area heading", "default": "Choose your plan" },
@@ -87,6 +96,8 @@
       "settings": [
         { "type": "product", "id": "product", "label": "Product" },
         { "type": "text", "id": "role", "label": "Role (Protect, Balance, Restore)" },
+        { "type": "text", "id": "includes", "label": "Includes (systems)" },
+        { "type": "text", "id": "asset", "label": "Theme asset image (overrides product media)" },
         { "type": "textarea", "id": "description", "label": "Short description" },
         { "type": "textarea", "id": "support_areas", "label": "Key support areas (one per line)" },
         { "type": "textarea", "id": "best_for", "label": "Best for (one per line)" },
@@ -98,7 +109,7 @@
       ]
     }
   ],
-  "max_blocks": 3,
+  "max_blocks": 4,
   "presets": [{ "name": "Product selector", "blocks": [{ "type": "formula" }, { "type": "formula" }, { "type": "formula" }] }]
 }
 {% endschema %}

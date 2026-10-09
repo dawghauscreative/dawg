@@ -195,3 +195,17 @@ Notes:
 - The blueprint question "Do I need all three?" is worded "Do I need every formula?" (the banned list blocks the original phrasing).
 - Format row says "Capsules" for all three (Skinbiotic+ is also capsules).
 - Education blocks use the lifestyle renders as images; swap in the editor if you prefer product photos.
+
+## Systems landing page (blueprint, Oct 9 2026)
+
+`templates/page.systems.json` on a new Shopify page `/pages/systems` (page created, published, template suffix `systems`, SEO title and description set from the blueprint). It is a guided funnel, not a collection grid: hero (Sun Safe strongest in the composed `systems-hero.webp`), Protect/Balance/Restore framework, four-system selector with plan area and trust strip, comparison table, four system education blocks (Sun Safe, Skin Recovery, Sun Resilience, Complete with the "not the universal starting point" note), four-path finder, why systems exist, label directions, renewal timeline (centralized), science preview, founder, FAQ (centralized results answer first), compliance, final CTA.
+
+Purchase flow: identical to the Individual Products page (see that section). Choose a system, see its plan area, then the plan button opens that system's product page at `#buy-box` where the native form and Supr widget live. Nothing here adds to cart, writes a selling plan, or shows a price. The plan area also renders the chosen system's own `custom.compliance_slot` (empty and hidden today), so the Skin Recovery compliance wording goes into that metafield on the Skin Recovery System product when approved.
+
+New/extended: `system-directions` (reads each product's `custom.how_it_works` word for word), `product-selector` (two-per-row layout, wide card images, "Includes" line, theme-asset images, tagline toggle, product compliance slot in the plan area, up to four cards), `start-paths` (two-per-row). Links that pointed at `/collections/bundles` (home, Science, Individual Products, footer) now point to `/pages/systems`; the header "Systems" link uses the page when it exists.
+
+Notes:
+- The sunscreen line names the three systems ("Sun Safe, Sun Resilience, and Complete Skin Defense do not replace sunscreen...") so Skin Recovery is excluded; the phrase is allowlisted in `docs/check-banned.sh`.
+- The "How long until I see results?" entry and the Renewal Timeline come from Theme settings, not page text.
+- The existing `bundles` collection (and the main-menu entries "THE SYSTEM" etc. in Shopify navigation) are untouched; the theme header does not use the menu for these.
+- Copy for the three "Why combine them?" blocks paraphrases the synergy assessment without the internal "inflammatory" wording.

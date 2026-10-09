@@ -24,7 +24,7 @@
             <summary>Shop</summary>
             <div class="nav__panel">
               <div>
-                <h2>{% if collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}">Systems</a>{% else %}Systems{% endif %}</h2>
+                <h2>{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}">Systems</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}">Systems</a>{% else %}Systems{% endif %}</h2>
                 <ul>
                   {%- for handle in systems -%}
                     {%- assign p = all_products[handle] -%}
@@ -67,7 +67,7 @@
     <nav aria-label="Mobile">
       <ul>
         <li>
-          <span class="drawer__label">{% if collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}" style="font-size:inherit;padding:0">Systems</a>{% else %}Systems{% endif %}</span>
+          <span class="drawer__label">{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}" style="font-size:inherit;padding:0">Systems</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}" style="font-size:inherit;padding:0">Systems</a>{% else %}Systems{% endif %}</span>
           <ul>
             {%- for handle in systems -%}
               {%- assign p = all_products[handle] -%}

@@ -723,7 +723,7 @@
         "button_label": "Explore the products",
         "button_url": "/collections/individual-products",
         "secondary_label": "Explore the systems",
-        "secondary_url": "/collections/bundles",
+        "secondary_url": "/pages/systems",
         "note": "Alchemia MD supplements complement, but do not replace, sunscreen, appropriate sun-protective behavior, or professional medical care."
       }
     },

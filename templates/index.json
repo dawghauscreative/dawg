@@ -132,7 +132,7 @@
         "product": "sun-safe-system",
         "primary_label": "Explore the Sun Safe System",
         "secondary_label": "See all systems",
-        "secondary_url": "/collections/bundles",
+        "secondary_url": "/pages/systems",
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
         "light_panel": true

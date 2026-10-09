@@ -9,7 +9,7 @@
           "type": "link",
           "settings": {
             "label": "Systems",
-            "url": "/collections/bundles",
+            "url": "/pages/systems",
             "column": "shop"
           }
         },

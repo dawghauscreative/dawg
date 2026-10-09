@@ -12,7 +12,7 @@
         "primary_label": "Find your formula ↓",
         "primary_url": "#choose",
         "secondary_label": "Explore the systems",
-        "secondary_url": "/collections/bundles",
+        "secondary_url": "/pages/systems",
         "asset": "individual-three-formulas.webp",
         "ratio": "16x9",
         "light_panel": true
@@ -239,7 +239,7 @@
         "heading": "Not sure where to start?",
         "line": "Want support across more than one area?",
         "button_label": "Explore the systems",
-        "button_url": "/collections/bundles"
+        "button_url": "/pages/systems"
       },
       "blocks": {
         "b1": {
@@ -281,7 +281,7 @@
         "heading": "Build a system instead.",
         "best_for_label": "",
         "button_label": "Explore all systems",
-        "button_url": "/collections/bundles"
+        "button_url": "/pages/systems"
       },
       "blocks": {
         "b1": {
@@ -467,7 +467,7 @@
         "button_label": "Choose your formula",
         "button_url": "#choose",
         "secondary_label": "Explore the systems",
-        "secondary_url": "/collections/bundles"
+        "secondary_url": "/pages/systems"
       }
     }
   },
