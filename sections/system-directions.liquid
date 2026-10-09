@@ -17,6 +17,7 @@
       {%- endfor -%}
     </div>
     {%- if section.settings.note != blank -%}<p class="small" style="margin-top:2rem">{{ section.settings.note }}</p>{%- endif -%}
+    {%- if section.settings.show_slot -%}{%- render 'compliance-slot', content: product.metafields.custom.compliance_slot -%}{%- endif -%}
   </div>
 </section>
 
@@ -28,7 +29,8 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "text", "id": "note", "label": "Note under the directions" }
+    { "type": "text", "id": "note", "label": "Note under the directions" },
+    { "type": "checkbox", "id": "show_slot", "label": "Show the product compliance slot here", "default": false, "info": "Empty and hidden until content is added to the product's compliance slot." }
   ],
   "blocks": [
     { "type": "product", "name": "Product", "settings": [{ "type": "product", "id": "product", "label": "Product" }] }

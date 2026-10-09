@@ -166,6 +166,9 @@
             {%- when 'fda' -%}
               <div {{ block.shopify_attributes }}>{% render 'fda-disclaimer', dagger: true %}</div>
 
+            {%- when 'compliance_slot' -%}
+              <div {{ block.shopify_attributes }}>{% render 'compliance-slot', content: product.metafields.custom.compliance_slot %}</div>
+
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -217,6 +220,7 @@
     },
     { "type": "melanoma", "name": "Melanoma research line", "limit": 1 },
     { "type": "fda", "name": "FDA dagger line", "limit": 1 },
+    { "type": "compliance_slot", "name": "Product compliance slot", "limit": 1 },
     { "type": "@app" }
   ],
   "presets": [{ "name": "Product hero" }]

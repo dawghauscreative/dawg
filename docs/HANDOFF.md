@@ -232,3 +232,15 @@ Notes:
 - Step blocks keep the label taglines for UV Shield+ and Dermaboost+.
 - "Higher niacinamide emphasis" under UV Shield+ contributions is from the blueprint (UV Shield+ 500 mg vs Dermaboost+ 250 mg NE on the labels).
 - Allowlist additions in `docs/check-banned.sh`: "Does Sun Resilience replace sunscreen" and the "clinically tested finished-product regimen" caption.
+
+## Skin Recovery System product page (blueprint, Oct 9 2026)
+
+`templates/product.skin-recovery-system.json` rebuilt to the blueprint (26 sections incl. the video slot): hero + Supr buy box, definition (Balance / Restore), why these two (five rationale cards with the "not a clinically tested finished-product regimen" caption), Step 1 Skinbiotic+, Step 2 Dermaboost+, gut-skin connection, gut-to-systemic, microbiome + immune, antioxidant biology, formula overview, "not the same as Sun Safe", how to use (label directions live from each product), renewal timeline (centralized), five audience cards, four support areas, research preview, what the science does not say, comparison, alternative routes, founder, reviews, FAQ (9 + centralized results answer), compliance, final CTA. Existing sticky "Choose your plan" bar unchanged. Shopify: SEO set; `custom.tagline` set to "Gut-skin balance meets daily resilience" (it was empty).
+
+Compliance slot for the Skinbiotic+ + Dermaboost+ pairing: the single product metafield `custom.compliance_slot` on the Skin Recovery System product (empty and hidden today). New `compliance_slot` block in `pdp-main` (hero) and a "show slot" checkbox on `system-directions` (how to use) place it in three spots (hero, how to use, compliance area) as the blueprint asks; once text is entered it appears in all three, so remove the block / untick the box where you only want it once. The Systems and Individual Products pages also show it in their plan area for the chosen product.
+
+Notes:
+- Skinbiotic+ and Dermaboost+ taglines inside the step blocks stay the label wording.
+- Allowlist additions in `docs/check-banned.sh` for the required negations ("Treat acne ..." list, "not the same as treating an immune-mediated skin condition", "The goal is not to treat a condition", "Is this a treatment for inflammatory skin conditions").
+- Skipped on purpose: the blueprint's "eliminate inflammation" negation as a sentence in the antioxidant section (the banned list blocks it outside the "does not claim" list).
+- Existing Shopify media for this product (spa-setting hero, "inside-out support") has not been reviewed visually; check for disease imagery or inflammation wording.

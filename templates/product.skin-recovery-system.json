@@ -5,10 +5,28 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "eyebrow": "Balance + Restore"
+          }
         },
         "tagline": {
           "type": "tagline",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text": "<p>The Skin Recovery System combines Skinbiotic+ and Dermaboost+ in one dermatologist-formulated daily routine.</p><p>Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection. Dermaboost+ provides broader antioxidant, nutritional, and normal immune support through vitamins, minerals, carotenoids, and botanical polyphenols.</p><p>Together, they create a two-step system designed for customers who want to support skin from the gut outward while also strengthening the broader nutritional foundation skin relies on.</p>"
+          }
+        },
+        "bullets": {
+          "type": "bullets",
+          "settings": {
+            "items": "Supports the gut-skin connection†\nSupports microbiome balance†\nProvides broad antioxidant support†\nSupports normal immune function†\nSupports daily skin resilience†\nCombines two complementary formulas\nDermatologist-formulated"
+          }
+        },
+        "price": {
+          "type": "price",
           "settings": {}
         },
         "reviews": {
@@ -21,29 +39,31 @@
         },
         "expectation": {
           "type": "expectation",
-          "settings": {}
+          "settings": {
+            "text": "Skin support is gradual. Consistent daily use matters."
+          }
         },
         "trust_bar": {
           "type": "trust_bar",
           "settings": {
             "icon_1": "shield",
-            "text_1": "Dermatologist developed"
+            "text_1": "Dermatologist-formulated",
+            "icon_2": "molecule",
+            "text_2": "Research-informed",
+            "icon_3": "layers",
+            "text_3": "Full ingredient transparency"
           }
-        },
-        "fda": {
-          "type": "fda",
-          "settings": {}
         },
         "melanoma": {
           "type": "melanoma",
           "settings": {}
         },
-        "price": {
-          "type": "price",
+        "fda": {
+          "type": "fda",
           "settings": {}
         },
-        "description": {
-          "type": "description",
+        "compliance_slot": {
+          "type": "compliance_slot",
           "settings": {}
         }
       },
@@ -51,123 +71,739 @@
         "title",
         "tagline",
         "description",
+        "bullets",
         "price",
         "reviews",
         "buy_buttons",
         "expectation",
         "trust_bar",
         "melanoma",
-        "fda"
+        "fda",
+        "compliance_slot"
       ],
-      "settings": {}
+      "settings": {
+        "gallery_assets": "system-skin-recovery.webp,slide-d11-1.webp,slide-d15-1.webp,lifestyle-skinbiotic-dermaboost-sunset.webp"
+      }
     },
     "definition": {
-      "type": "pdp-definition",
+      "type": "split-compare",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "What it is",
+        "heading": "A two-step routine for internal balance and resilience.",
+        "body": "<p>The Skin Recovery System combines two formulas with different primary roles.</p><p>The combination is biologically complementary because one formula is centered on the gut and microbial environment and the other on broader systemic nutritional and antioxidant pathways.</p>",
+        "center": "Balance the gut. Support the systems skin relies on."
+      },
+      "blocks": {
+        "b1": {
+          "type": "side",
+          "settings": {
+            "kicker": "Balance",
+            "name": "Skinbiotic+",
+            "text": "Supports gut health, microbiome balance, and the gut-skin connection."
+          }
+        },
+        "b2": {
+          "type": "side",
+          "settings": {
+            "kicker": "Restore",
+            "name": "Dermaboost+",
+            "text": "Provides broader antioxidant, nutritional, and normal immune support."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
+    },
+    "video": {
+      "type": "video-slot",
       "settings": {}
     },
-    "steps": {
-      "type": "bundle-steps",
-      "settings": {}
+    "why": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "dark",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "System logic",
+        "heading": "Why pair Skinbiotic+ with Dermaboost+?",
+        "heading_tag": "h2",
+        "body": "<p>The two products begin in different places.</p><p><strong>Skinbiotic+</strong> focuses on the gut, microbiome, prebiotic support, and microbial signaling.</p><p><strong>Dermaboost+</strong> focuses on vitamins, minerals, botanicals, carotenoids, antioxidant support, and normal immune function.</p><p>Together they form a gut-to-systemic strategy, with potentially complementary roles across:</p>"
+      }
     },
-    "value": {
-      "type": "bundle-value-stack",
-      "settings": {}
+    "why_areas": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "dark",
+        "columns": "3",
+        "show_images": false,
+        "note": "<p>This section describes formulation rationale. The combined Skin Recovery System has not been established here as a clinically tested finished-product regimen.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "number": "01",
+            "title": "Microbiome biology"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "number": "02",
+            "title": "Intestinal barrier support"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "number": "03",
+            "title": "Immune-related signaling"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "number": "04",
+            "title": "Oxidative-stress biology"
+          }
+        },
+        "b5": {
+          "type": "card",
+          "settings": {
+            "number": "05",
+            "title": "Broader nutritional support"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
     },
-    "benefits": {
-      "type": "pdp-benefits",
-      "settings": {}
+    "step1": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "green",
+        "image_side": "right",
+        "eyebrow": "Step 1",
+        "heading": "Skinbiotic+",
+        "subhead": "Daily probiotic for gut and skin health",
+        "product": "skinbiotic",
+        "asset": "lifestyle-skinbiotic-cliffs.webp",
+        "ratio": "16x9",
+        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection. Its formula includes:</p><ul><li>Organic inulin</li><li>Lactobacillus plantarum</li><li>Bifidobacterium lactis</li><li>Lactobacillus rhamnosus</li><li>Bifidobacterium bifidum</li><li>Akkermansia muciniphila Akk11®</li></ul><p>The formulation rationale is the prebiotic and probiotic pairing, and the different ecological roles of the organisms.</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.</p>",
+        "primary_label": "Explore Skinbiotic+"
+      }
     },
-    "ingredients": {
-      "type": "pdp-ingredients",
-      "settings": {}
+    "step2": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "light",
+        "image_side": "left",
+        "eyebrow": "Step 2",
+        "heading": "Dermaboost+",
+        "subhead": "Daily immune support for calm, balanced skin",
+        "product": "dermaboost",
+        "asset": "lifestyle-dermaboost-yacht.webp",
+        "ratio": "16x9",
+        "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients selected for broader nutritional, antioxidant, and normal immune-supportive roles. The formula includes:</p><ul><li>Niacinamide</li><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf extract</li><li>Astaxanthin</li></ul><p>The formulation rationale identifies several complementary ingredient relationships, including quercetin + curcumin, quercetin + vitamin C, quercetin + astaxanthin, curcumin + olive leaf, and vitamin C + zinc.</p><p><strong>Key support areas:</strong> antioxidant support, normal immune function, nutritional skin support, daily skin resilience.</p>",
+        "primary_label": "Explore Dermaboost+"
+      }
+    },
+    "gutskin": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "dark",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "The biology",
+        "heading": "The gut and skin are part of a larger system.",
+        "heading_tag": "h2",
+        "body": "<p>The gut-skin axis refers to biological communication between the intestinal environment and the skin. Research in this area looks at pathways involving:</p><ul><li>Microbial metabolites</li><li>Intestinal barrier integrity</li><li>Immune signaling</li><li>Nutrient metabolism</li><li>Microbiome composition</li></ul><p>Skinbiotic+ is designed around the gut side of that relationship. The gut is one part of the picture; not every skin concern is connected to it.</p>"
+      }
+    },
+    "systemic": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "System thinking",
+        "heading": "Different starting points. Complementary support.",
+        "columns": "3",
+        "show_images": false,
+        "body": "<p>Skinbiotic+ begins with the intestinal environment. Dermaboost+ adds broader nutritional and antioxidant support. Together, the system is designed around a simple idea:</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Gut-side support",
+            "text": "<p>Microbiome + synbiotic support.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Systemic nutritional support",
+            "text": "<p>Vitamins, minerals, polyphenols, and carotenoids.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Shared goal",
+            "text": "<p>Support the broader internal systems connected to skin health.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "microbiome": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "light",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Microbiome biology",
+        "heading": "The microbiome does more than digest food.",
+        "heading_tag": "h2",
+        "body": "<p>Intestinal microorganisms interact with the body through:</p><ul><li>Metabolites</li><li>Barrier signaling</li><li>Nutrient processing</li><li>Immune communication</li></ul><p>Skinbiotic+ supports the microbial environment through prebiotic fiber and multiple probiotic organisms. Dermaboost+ contributes nutrients associated with normal immune physiology.</p>",
+        "quote": "Supporting normal immune function is not the same as treating an immune-mediated skin condition."
+      }
+    },
+    "antioxidant": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "dark",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Antioxidant biology",
+        "heading": "Broader support beyond the microbiome.",
+        "heading_tag": "h2",
+        "body": "<p>Dermaboost+ expands the system beyond gut support through a combination of:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.</p>"
+      }
+    },
+    "formula": {
+      "type": "split-compare",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "What’s inside",
+        "heading": "Two formulas. Two different starting points."
+      },
+      "blocks": {
+        "b1": {
+          "type": "side",
+          "settings": {
+            "kicker": "Balance",
+            "name": "Skinbiotic+",
+            "items": "Organic inulin\nLactobacillus plantarum\nBifidobacterium lactis\nLactobacillus rhamnosus\nBifidobacterium bifidum\nAkkermansia muciniphila Akk11®",
+            "focus": "Gut-skin + microbiome support."
+          }
+        },
+        "b2": {
+          "type": "side",
+          "settings": {
+            "kicker": "Restore",
+            "name": "Dermaboost+",
+            "items": "Niacinamide\nVitamin D3\nVitamin C\nZinc\nQuercetin\nCurcumin\nOlive leaf extract\nAstaxanthin",
+            "focus": "Antioxidant + nutritional + normal immune support."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
+    },
+    "versus": {
+      "type": "split-compare",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "Choose by priority",
+        "heading": "Skin Recovery is not the same as Sun Safe.",
+        "center": "Choose Skin Recovery when environmental exposure is not the main reason you are building the system."
+      },
+      "blocks": {
+        "b1": {
+          "type": "side",
+          "settings": {
+            "kicker": "Protect + Balance",
+            "name": "Sun Safe System",
+            "text": "UV Shield+ + Skinbiotic+",
+            "focus": "Environmental support + gut-skin balance."
+          }
+        },
+        "b2": {
+          "type": "side",
+          "settings": {
+            "kicker": "Balance + Restore",
+            "name": "Skin Recovery System",
+            "text": "Skinbiotic+ + Dermaboost+",
+            "focus": "Gut-skin balance + broader nutritional resilience."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
     },
     "how": {
-      "type": "pdp-how-it-works",
-      "settings": {}
+      "type": "system-directions",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Daily routine",
+        "heading": "How to take the Skin Recovery System",
+        "body": "<p>Follow each product label separately.</p>",
+        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.",
+        "show_slot": true
+      },
+      "blocks": {
+        "b1": {
+          "type": "product",
+          "settings": {
+            "product": "skinbiotic"
+          }
+        },
+        "b2": {
+          "type": "product",
+          "settings": {
+            "product": "dermaboost"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
     },
     "timeline": {
       "type": "renewal-timeline",
-      "settings": {}
+      "settings": {
+        "color_scheme": "green"
+      }
     },
-    "crosssell": {
-      "type": "pdp-crosssell",
-      "settings": {}
+    "who": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Internal balance",
+        "heading": "Built for customers looking beyond surface-level skincare.",
+        "columns": "3",
+        "show_images": false
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "The gut-skin customer",
+            "text": "<p>Already interested in digestion, probiotics, or microbiome health.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "The wellness-focused customer",
+            "text": "<p>Wants broader internal support as part of a daily routine.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "The ingredient researcher",
+            "text": "<p>Values transparent formulas and defined ingredient roles.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "The skin-resilience customer",
+            "text": "<p>Focused on long-term support rather than short-term cosmetic fixes.</p>"
+          }
+        },
+        "b5": {
+          "type": "card",
+          "settings": {
+            "title": "The routine simplifier",
+            "text": "<p>Wants two complementary formulas instead of piecing together multiple unrelated supplements.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
+    },
+    "supports": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "dark",
+        "heading": "Four areas of daily support.",
+        "columns": "4",
+        "show_images": false,
+        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Gut-skin support†",
+            "text": "<p>Skinbiotic+ supports the microbiome and gut-skin connection.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Synbiotic support†",
+            "text": "<p>Prebiotic fiber + probiotic organisms.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Antioxidant support†",
+            "text": "<p>Dermaboost+ provides multiple vitamins, carotenoids, and botanical polyphenols.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "Normal immune function†",
+            "text": "<p>Dermaboost+ includes vitamin D3, vitamin C, and zinc.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "research": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "The research",
+        "heading": "Why these two formulas?",
+        "columns": "4",
+        "show_images": false,
+        "button_label": "Explore the Skin Recovery science",
+        "button_url": "/pages/science"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Synbiotic biology",
+            "study": "lee-hy7714-2015",
+            "text": "<p>Prebiotic + probiotic rationale.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Gut-skin axis",
+            "study": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019",
+            "text": "<p>Microbiome-skin communication.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Antioxidant support",
+            "study": "zhou-astaxanthin-meta-analysis-2021, jamwal-curcumin-pk-review",
+            "text": "<p>Polyphenols, carotenoids, and vitamins.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "Immune nutrition",
+            "text": "<p>Vitamin D3, vitamin C, and zinc.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "claims": {
+      "type": "science-boundaries",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Transparency",
+        "heading": "Good science has boundaries.",
+        "not_heading": "The Skin Recovery System does not claim to:",
+        "not_items": "Treat acne\nTreat eczema\nTreat psoriasis\nTreat rosacea\nTreat autoimmune disease\nEliminate inflammation\nCure gut problems\nGuarantee clearer skin\nGuarantee visible results\nProve the finished two-product system has been clinically tested\nReplace medical care",
+        "does_heading": "What it is",
+        "does_text": "<p>A dermatologist-formulated two-product system designed to support the gut-skin connection together with broader antioxidant, nutritional, and normal immune pathways.</p>"
+      }
+    },
+    "compare": {
+      "type": "compare-table",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Compare systems",
+        "heading": "Is Skin Recovery right for you?",
+        "col_1": "Roles",
+        "col_2": "Includes",
+        "col_3": "Best fit",
+        "button_label": "Compare all systems",
+        "button_url": "/pages/systems"
+      },
+      "blocks": {
+        "b1": {
+          "type": "row",
+          "settings": {
+            "label": "Sun Safe",
+            "a": "Protect + Balance",
+            "b": "UV Shield+ + Skinbiotic+",
+            "c": "Outdoor + gut-skin support"
+          }
+        },
+        "b2": {
+          "type": "row",
+          "settings": {
+            "label": "Skin Recovery",
+            "a": "Balance + Restore",
+            "b": "Skinbiotic+ + Dermaboost+",
+            "c": "Gut-skin + broader nutritional support"
+          }
+        },
+        "b3": {
+          "type": "row",
+          "settings": {
+            "label": "Sun Resilience",
+            "a": "Protect + Restore",
+            "b": "UV Shield+ + Dermaboost+",
+            "c": "Outdoor + broader antioxidant support"
+          }
+        },
+        "b4": {
+          "type": "row",
+          "settings": {
+            "label": "Complete Skin Defense",
+            "a": "Protect + Balance + Restore",
+            "b": "All three",
+            "c": "Most comprehensive routine"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "alternatives": {
+      "type": "start-paths",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Build around your priorities",
+        "heading": "Need a different combination?"
+      },
+      "blocks": {
+        "b1": {
+          "type": "path",
+          "settings": {
+            "statement": "Want outdoor + gut-skin support?",
+            "product": "sun-safe-system",
+            "label": "Explore Sun Safe System"
+          }
+        },
+        "b2": {
+          "type": "path",
+          "settings": {
+            "statement": "Want outdoor + restore?",
+            "product": "sun-resilience-system",
+            "label": "Explore Sun Resilience System"
+          }
+        },
+        "b3": {
+          "type": "path",
+          "settings": {
+            "statement": "Want all three roles?",
+            "product": "complete-skin-defense-system",
+            "label": "Explore Complete Skin Defense"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "founder": {
+      "type": "founder",
+      "settings": {
+        "color_scheme": "dark",
+        "image_side": "left",
+        "image_asset": "founder-portrait.webp",
+        "eyebrow": "Dermatologist-formulated",
+        "heading": "Built to connect the systems skin depends on.",
+        "credentials": "",
+        "body": "<p>Alchemia MD was created around the idea that skin health is not isolated from the rest of the body.</p><p>The Skin Recovery System reflects that philosophy by pairing gut-focused support with broader nutritional and antioxidant support.</p><p>The goal is not to treat a condition. It is to create a clearer, more intentional internal skin-health routine.</p>",
+        "link_label": "Meet Dr. Mia Luna",
+        "link_url": "/pages/founder"
+      }
     },
     "reviews": {
       "type": "pdp-reviews",
-      "settings": {}
+      "settings": {
+        "color_scheme": "light",
+        "heading": "What customers are saying"
+      }
     },
     "faq": {
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "Questions",
-        "heading": "Frequently asked questions"
+        "heading": "Frequently asked questions",
+        "heading_tag": "h2"
       },
       "blocks": {
-        "q1": {
+        "b1": {
           "type": "item",
           "settings": {
-            "question": "What is included in the Skin Recovery System?",
-            "answer": "<p>One Skinbiotic+ (30 capsules) and one Dermaboost+ (60 capsules).</p>"
+            "question": "What is the Skin Recovery System?",
+            "answer": "<p>The Skin Recovery System combines Skinbiotic+ and Dermaboost+ in a two-product daily routine designed to support gut-skin balance together with broader antioxidant, nutritional, and normal immune support.</p>"
           }
         },
-        "q2": {
+        "b2": {
           "type": "item",
           "settings": {
-            "question": "Why combine these two formulas?",
-            "answer": "<p>Skinbiotic+ supports gut and microbiome balance, while Dermaboost+ provides antioxidant and immune-supportive nutrition. Together they pair internal balance with nutritional support for calm, resilient skin.†</p>"
+            "question": "What products are included?",
+            "answer": "<p>Skinbiotic+ and Dermaboost+.</p>"
           }
         },
-        "q3": {
+        "b3": {
           "type": "item",
           "settings": {
-            "question": "How do I take the products in this system?",
-            "answer": "<p>Take each product as directed on its label. The directions for both are shown on this page.</p>"
+            "question": "Why are these two formulas paired?",
+            "answer": "<p>Skinbiotic+ focuses primarily on gut and microbiome support, while Dermaboost+ adds broader antioxidant, nutritional, and normal immune-supportive pathways. Together they form a complementary gut-to-systemic strategy.</p>"
           }
         },
-        "q4": {
+        "b4": {
           "type": "item",
           "settings": {
-            "question": "Should I check with my healthcare professional first?",
-            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
+            "question": "Is this a treatment for inflammatory skin conditions?",
+            "answer": "<p>No. The system is not intended to diagnose, treat, cure, or prevent any disease or medical skin condition.</p>"
+          }
+        },
+        "b5": {
+          "type": "item",
+          "settings": {
+            "question": "How do I take the system?",
+            "answer": "<p>Follow each product label. Skinbiotic+: Take one (1) capsule daily with water. Dermaboost+: Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water.</p>"
+          }
+        },
+        "b6": {
+          "type": "item",
+          "settings": {
+            "question": "Can I buy Skinbiotic+ or Dermaboost+ separately?",
+            "answer": "<p>Yes. Both products are available individually.</p>"
+          }
+        },
+        "b7": {
+          "type": "item",
+          "settings": {
+            "question": "Can I subscribe to Skin Recovery?",
+            "answer": "<p>Yes. The plan options in the purchase box show the currently configured subscription and one-time options.</p>"
+          }
+        },
+        "b8": {
+          "type": "item",
+          "settings": {
+            "question": "How is this different from Sun Safe?",
+            "answer": "<p>Sun Safe combines Protect + Balance. Skin Recovery combines Balance + Restore.</p>"
+          }
+        },
+        "b9": {
+          "type": "item",
+          "settings": {
+            "question": "How is it different from Complete Skin Defense?",
+            "answer": "<p>Complete Skin Defense contains all three foundational formulas. Skin Recovery contains Skinbiotic+ and Dermaboost+ only.</p>"
           }
         }
       },
       "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4"
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9"
       ]
     },
     "compliance": {
       "type": "compliance-notice",
-      "settings": {}
+      "settings": {
+        "color_scheme": "dark",
+        "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease."
+      }
     },
-    "video": {
-      "type": "video-slot",
-      "settings": {}
-    },
-    "description": {
-      "type": "pdp-description",
-      "settings": {}
+    "final": {
+      "type": "final-cta",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Balance + Restore",
+        "heading": "Support skin from the gut out.",
+        "body": "<p>Skinbiotic+ and Dermaboost+ combine microbiome-focused support with broader antioxidant, nutritional, and normal immune support in one dermatologist-formulated routine.</p>",
+        "button_label": "Choose your plan",
+        "button_url": "#buy-box",
+        "secondary_label": "Explore the science",
+        "secondary_url": "/pages/science"
+      }
     }
   },
   "order": [
     "main",
     "definition",
-    "description",
     "video",
-    "steps",
-    "value",
-    "benefits",
-    "ingredients",
+    "why",
+    "why_areas",
+    "step1",
+    "step2",
+    "gutskin",
+    "systemic",
+    "microbiome",
+    "antioxidant",
+    "formula",
+    "versus",
     "how",
     "timeline",
-    "crosssell",
+    "who",
+    "supports",
+    "research",
+    "claims",
+    "compare",
+    "alternatives",
+    "founder",
     "reviews",
     "faq",
-    "compliance"
+    "compliance",
+    "final"
   ]
 }
