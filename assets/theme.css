@@ -918,3 +918,7 @@ body.template-blog.is-filtered main > .shopify-section:not(:has(.blog-listing)) 
 
 .nav__shoplink { color: inherit; text-decoration: none; }
 .nav summary .nav__shoplink { padding: 0; }
+.flow { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 750px) { .flow { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); } }
+.flow__step { min-width: 0; padding-inline: 14px; }
+.flow__label { overflow-wrap: anywhere; hyphens: auto; }
