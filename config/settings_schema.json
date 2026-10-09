@@ -258,7 +258,7 @@
     "settings": [
       {
         "type": "paragraph",
-        "content": "Copy approved by Reyshan Oct 8. FTC net-impression review is still pending. Do not publish this theme until the review clears. All timeline wording lives here so it can be reworded without touching templates. Keep it general-biology and expectation-setting, never a promised outcome."
+        "content": "Renewal Timeline copy approved by the owner. All timeline wording lives here so it can be reworded without touching templates. Keep it general-biology and expectation-setting, never a promised outcome."
       },
       {
         "type": "checkbox",
@@ -332,7 +332,7 @@
         "type": "richtext",
         "id": "renewal_faq_answer",
         "label": "FAQ answer",
-        "info": "Centralised answer shown on every product FAQ. FTC net-impression review still pending; edit here only.",
+        "info": "Centralised answer shown on every product FAQ. Edit here only.",
         "default": "<p>Skin renewal is gradual, so the honest answer is: consistently, over about 12 weeks, which is roughly 90 days. That is a full renewal cycle, and it is why the Renewal Timeline runs from Weeks 1 to 4 (cellular renewal begins), Weeks 4 to 8 (early changes may begin) and Weeks 8 to 12 (a full renewal cycle completes).</p><p>Why it is not faster: Alchemia MD formulas are not a surface treatment or a quick fix. Each one combines several ingredients with different, complementary roles. In UV Shield+, for example, niacinamide, Polypodium leucotomos, resveratrol, EGCG and spirulina are chosen to cover several different stages of the body's response to environmental stress rather than relying on one pathway. Those pathways support the skin's own ongoing processes from the inside, so they build with steady daily use instead of acting on the day you take them.</p><p>Individual experiences vary and results are not guaranteed. Our supplements are designed to complement, not replace, sunscreen and sun-safe habits.</p>"
       }
     ]

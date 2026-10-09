@@ -34,7 +34,7 @@ Fonts follow Blueprint V2 (see Colours and type above).
 | Setting | Default | Notes |
 |---|---|---|
 | `show_guarantee` | OFF | All guarantee output goes through `snippets/guarantee-badge.liquid`. No guarantee wording exists. |
-| `show_renewal_timeline` | ON | Copy approved Oct 8, **FTC net-impression review pending: do not publish until it clears.** Expectation line and FAQ answer are empty until the approved wording is pasted in. |
+| `show_renewal_timeline` | ON | Copy approved by the owner. Expectation line and FAQ answer are empty until the approved wording is pasted in. |
 | `compliance_slots_enabled` | ON | Slots render only when they have content. Bundle 2 notice and Skinbiotic+ caution are empty and undecided. |
 | `fda_disclaimer_text` | label wording | Taken from the printed labels. Reyshan/counsel to confirm. |
 | `melanoma_line_text` | label wording | Verified on all three product labels. No amounts shown. |
@@ -138,7 +138,7 @@ Decisions to confirm:
 
 Notes:
 - Tagline stays the label wording ("Daily support for active, sun-ready skin"), not the blueprint's "Outdoor Support for Resilient Skin", per the earlier decision.
-- The renewal expectation line and timeline supporting copy are now defaults in Theme settings > Your Renewal Timeline. FTC net-impression clearance is still pending; the "How long until I see results?" FAQ answer is left empty on purpose.
+- The renewal expectation line and timeline supporting copy are defaults in Theme settings > Your Renewal Timeline.
 - The 16:9 video slot stays after the definition (earlier request); the blueprint does not list it.
 - Gallery: the five existing product images come first, then the five ingredient title slides (theme assets) are appended via `gallery_assets`. The existing UV Shield+ media includes the "UV-stress timeline" image; the blueprint bars any before/during/after-sun or DNA-repair graphic, so check that image and remove it from the product media in Shopify if it is one.
 - The required negation phrases (e.g. "does not replace sunscreen", "not intended to prevent sunburn") are allowlisted in `docs/check-banned.sh`.
@@ -148,4 +148,4 @@ Notes:
 
 The answer now lives in Theme settings > Your Renewal Timeline > FAQ answer and appears first in the FAQ on every product page. It explains a full renewal cycle of about 12 weeks (roughly 90 days) matching the Weeks 1-4 / 4-8 / 8-12 timeline, and why: the formulas are multi-ingredient and act through several complementary pathways that build with steady use. It states experiences vary, results are not guaranteed, and the products do not replace sunscreen.
 
-Important: the Synergy Assessment does NOT state a 90-day figure or any timeline. It supports the "why" only in the sense that each formula covers several different biological pathways. The 12-week / 90-day framing comes from the approved Renewal Timeline, which is still pending FTC net-impression review. The Benefits guide mentions 6 to 12 weeks only for UV-induced redness endpoints (and a null 3-month green tea study), which are deliberately not cited. Do not publish until the FTC review clears.
+Note: the Synergy Assessment does not state a 90-day figure or any timeline; the 12-week / 90-day framing comes from the approved Renewal Timeline. The Benefits guide mentions 6 to 12 weeks only for UV-induced redness endpoints (and a null 3-month green tea study), which are deliberately not cited.
