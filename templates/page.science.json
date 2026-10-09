@@ -316,7 +316,8 @@
             "evidence": "Systematic review + human clinical research",
             "why": "<p>Astaxanthin is a carotenoid studied for antioxidant activity and skin-related endpoints.</p>",
             "shows": "<p>A systematic review and meta-analysis of randomized human studies found significant pooled effects for moisture and elasticity, while the effect on wrinkle depth was not statistically significant compared with placebo.</p><p>A separate randomized controlled study evaluated oral astaxanthin during a 16-week period of seasonal environmental stress.</p>",
-            "studies": "zhou-astaxanthin-meta-analysis-2021, tominaga-astaxanthin-2017"
+            "studies": "zhou-astaxanthin-meta-analysis-2021, tominaga-astaxanthin-2017",
+            "slide_set": "d24"
           }
         },
         "b2": {

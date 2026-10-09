@@ -245,7 +245,8 @@
             "role": "Carotenoid antioxidant support",
             "text": "<p>Astaxanthin is a carotenoid antioxidant studied in human research involving several skin-related parameters.</p><p>It provides a structurally different antioxidant component from the vitamins and polyphenols in Dermaboost+.</p>",
             "link_label": "Explore astaxanthin research",
-            "link_url": "/pages/science#dermaboost"
+            "link_url": "/pages/science#dermaboost",
+            "slide_set": "d24"
           }
         }
       },
