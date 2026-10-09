@@ -1,0 +1,29 @@
+{%- comment -%}
+  Mission block. The contribution wording comes only from Theme settings > melanoma line (verify against packaging).
+  No amounts, no percentages. Hidden when that setting is empty.
+{%- endcomment -%}
+{%- if settings.melanoma_line_text != blank -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container" style="max-width:760px;text-align:center">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, center: true -%}
+    <p class="lede" style="margin-inline:auto">{{ settings.melanoma_line_text }}</p>
+    {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
+      <div class="btn-row" style="justify-content:center"><a class="btn btn--outline" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a></div>
+    {%- endif -%}
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Mission line",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "text", "id": "button_label", "label": "Button label (optional)" },
+    { "type": "url", "id": "button_url", "label": "Button link" }
+  ],
+  "presets": [{ "name": "Mission line" }]
+}
+{% endschema %}

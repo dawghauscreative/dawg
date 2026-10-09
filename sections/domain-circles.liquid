@@ -1,0 +1,54 @@
+{%- comment -%} Three overlapping circles (three biological domains) with the primary and supporting formula for each. {%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="domains">
+      <svg class="domains__svg" viewBox="0 0 520 480" role="img" aria-label="Three overlapping domains" fill="none">
+        {%- assign cx = '260,160|180,300|340,300' | split: '|' -%}
+        <g stroke="var(--c-gold)" stroke-width="1.4" fill="var(--c-gold)" fill-opacity=".08">
+          {%- for block in section.blocks limit: 3 -%}{%- assign c = cx[forloop.index0] | split: ',' -%}<circle cx="{{ c[0] }}" cy="{{ c[1] }}" r="120"/>{%- endfor -%}
+        </g>
+        <g fill="currentColor" font-family="var(--font-display)" font-size="18" text-anchor="middle">
+          {%- for block in section.blocks limit: 3 -%}
+            {%- assign c = cx[forloop.index0] | split: ',' -%}
+            {%- assign tx = c[0] | plus: 0 -%}
+            {%- if forloop.index == 1 -%}{%- assign ty = c[1] | minus: 62 -%}{%- else -%}{%- assign ty = c[1] | plus: 70 -%}{%- endif -%}
+            {%- if forloop.index == 2 -%}{%- assign tx = tx | minus: 38 -%}{%- elsif forloop.index == 3 -%}{%- assign tx = tx | plus: 38 -%}{%- endif -%}
+            <text x="{{ tx }}" y="{{ ty }}">{{ block.settings.short }}</text>
+          {%- endfor -%}
+        </g>
+        <circle cx="260" cy="248" r="34" fill="var(--c-gold)" fill-opacity=".18" stroke="var(--c-gold)" stroke-width="1.2"/>
+        <text x="260" y="252" text-anchor="middle" fill="currentColor" font-family="var(--font-body)" font-size="10" font-weight="700" letter-spacing="1.5">{{ section.settings.center }}</text>
+      </svg>
+      <div class="domains__list">
+        {%- for block in section.blocks -%}
+          <article class="domains__item" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title }}</h3>
+            <p><strong>Primary</strong> {{ block.settings.primary }}</p>
+            <p><strong>Supporting</strong> {{ block.settings.supporting }}</p>
+          </article>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- if section.settings.caption != blank -%}<p class="sci-caption">{{ section.settings.caption }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Domain circles",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" },
+    { "type": "text", "id": "center", "label": "Centre label", "default": "COMPLETE" },
+    { "type": "textarea", "id": "caption", "label": "Caption" }
+  ],
+  "blocks": [
+    { "type": "domain", "name": "Domain", "settings": [{ "type": "text", "id": "short", "label": "Short label (inside the circle)" }, { "type": "text", "id": "title", "label": "Title" }, { "type": "text", "id": "primary", "label": "Primary formula" }, { "type": "text", "id": "supporting", "label": "Supporting formula(s)" }] }
+  ],
+  "max_blocks": 3,
+  "presets": [{ "name": "Domain circles" }]
+}
+{% endschema %}

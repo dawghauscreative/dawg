@@ -5,10 +5,28 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "eyebrow": "Protect + Balance + Restore"
+          }
         },
         "tagline": {
           "type": "tagline",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text": "<p>The Complete Skin Defense System brings together all three Alchemia MD formulas in one dermatologist-formulated daily routine.</p><p><strong>UV Shield+</strong> supports skin exposed to environmental and UV-related stress. <strong>Skinbiotic+</strong> supports gut health, microbiome balance, and the gut-skin connection. <strong>Dermaboost+</strong> adds broader antioxidant, nutritional, and normal immune support.</p><p>Together, the system spans the three primary areas of the Alchemia MD framework: <strong>Protect. Balance. Restore.</strong></p>"
+          }
+        },
+        "bullets": {
+          "type": "bullets",
+          "settings": {
+            "items": "Supports skin exposed to environmental stress†\nSupports gut-skin balance†\nSupports microbiome health†\nProvides broad antioxidant support†\nSupports normal immune function†\nSupports daily skin resilience†\nCombines all three Alchemia MD roles in one routine\nDermatologist-formulated"
+          }
+        },
+        "price": {
+          "type": "price",
           "settings": {}
         },
         "reviews": {
@@ -21,29 +39,37 @@
         },
         "expectation": {
           "type": "expectation",
-          "settings": {}
+          "settings": {
+            "text": "Skin support is gradual. Consistent daily use matters."
+          }
         },
         "trust_bar": {
           "type": "trust_bar",
           "settings": {
             "icon_1": "shield",
-            "text_1": "Dermatologist developed"
+            "text_1": "Dermatologist-formulated",
+            "icon_2": "molecule",
+            "text_2": "Research-informed",
+            "icon_3": "layers",
+            "text_3": "Full ingredient transparency"
           }
         },
-        "fda": {
-          "type": "fda",
-          "settings": {}
+        "note": {
+          "type": "note",
+          "settings": {
+            "text": "Complete Skin Defense complements sunscreen and smart sun habits. It does not replace them."
+          }
         },
         "melanoma": {
           "type": "melanoma",
           "settings": {}
         },
-        "price": {
-          "type": "price",
+        "fda": {
+          "type": "fda",
           "settings": {}
         },
-        "description": {
-          "type": "description",
+        "compliance_slot": {
+          "type": "compliance_slot",
           "settings": {}
         }
       },
@@ -51,131 +77,808 @@
         "title",
         "tagline",
         "description",
+        "bullets",
         "price",
         "reviews",
         "buy_buttons",
         "expectation",
         "trust_bar",
+        "note",
         "melanoma",
-        "fda"
+        "fda",
+        "compliance_slot"
       ],
-      "settings": {}
+      "settings": {
+        "gallery_assets": "system-complete.webp,slide-d01-1.webp,slide-d11-1.webp,slide-d12-1.webp,lifestyle-all-three-yacht.webp"
+      }
     },
     "definition": {
-      "type": "pdp-definition",
+      "type": "split-compare",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "What it is",
+        "heading": "Three distinct roles. One complete routine.",
+        "body": "<p>Complete Skin Defense integrates all three foundational Alchemia MD formulas.</p><p>This is the broadest routine in the Alchemia MD line, but broader does not automatically mean better for every customer.</p>",
+        "center": "Choose the complete system when you want all three roles, not because you are told you need all three."
+      },
+      "blocks": {
+        "b1": {
+          "type": "side",
+          "settings": {
+            "kicker": "Protect",
+            "name": "UV Shield+",
+            "text": "Environmental and antioxidant support."
+          }
+        },
+        "b2": {
+          "type": "side",
+          "settings": {
+            "kicker": "Balance",
+            "name": "Skinbiotic+",
+            "text": "Gut-skin and microbiome support."
+          }
+        },
+        "b3": {
+          "type": "side",
+          "settings": {
+            "kicker": "Restore",
+            "name": "Dermaboost+",
+            "text": "Broader antioxidant, nutritional, and normal immune support."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "video": {
+      "type": "video-slot",
       "settings": {}
     },
-    "steps": {
-      "type": "bundle-steps",
-      "settings": {}
+    "whofor": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "dark",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "The advanced routine",
+        "heading": "Complete Skin Defense is for the customer who already understands the system.",
+        "heading_tag": "h2",
+        "body": "<p>It is best suited to customers who:</p><ul><li>Already understand Protect / Balance / Restore</li><li>Want support across all three areas</li><li>Prefer one comprehensive daily routine</li><li>Are comfortable taking multiple supplements consistently</li><li>May already use one or more Alchemia MD products</li><li>Want to consolidate into the broadest Alchemia MD system</li></ul>"
+      }
     },
-    "value": {
-      "type": "bundle-value-stack",
-      "settings": {}
+    "step1": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "green",
+        "image_side": "right",
+        "eyebrow": "Step 1",
+        "heading": "UV Shield+",
+        "subhead": "Daily support for active, sun-ready skin",
+        "product": "uv-shield",
+        "asset": "lifestyle-uvshield-rocks.webp",
+        "ratio": "16x9",
+        "body": "<p>UV Shield+ combines five ingredients selected for complementary nutritional and antioxidant roles relevant to environmental and UV-associated skin stress:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Trans-resveratrol</li><li>Spirulina</li></ul><p>Its formula is designed around several different biological pathways rather than relying on a single antioxidant or botanical.</p><p><strong>Primary support areas:</strong> environmental stress, antioxidant support, outdoor lifestyle support, daily skin resilience.</p>",
+        "primary_label": "Explore UV Shield+"
+      }
     },
-    "benefits": {
-      "type": "pdp-benefits",
-      "settings": {}
+    "step2": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "light",
+        "image_side": "left",
+        "eyebrow": "Step 2",
+        "heading": "Skinbiotic+",
+        "subhead": "Daily probiotic for gut and skin health",
+        "product": "skinbiotic",
+        "asset": "lifestyle-skinbiotic-cliffs.webp",
+        "ratio": "16x9",
+        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula built around gut health, microbiome support, and the gut-skin connection. Its formula includes:</p><ul><li>Organic inulin</li><li>Lactobacillus plantarum</li><li>Bifidobacterium lactis</li><li>Lactobacillus rhamnosus</li><li>Bifidobacterium bifidum</li><li>Akkermansia muciniphila Akk11®</li></ul><p>The formulation rationale is prebiotic support and multiple complementary microbial roles.</p><p><strong>Primary support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, internal balance.</p>",
+        "primary_label": "Explore Skinbiotic+"
+      }
+    },
+    "step3": {
+      "type": "feature-split",
+      "settings": {
+        "color_scheme": "dark",
+        "image_side": "right",
+        "eyebrow": "Step 3",
+        "heading": "Dermaboost+",
+        "subhead": "Daily immune support for calm, balanced skin",
+        "product": "dermaboost",
+        "asset": "lifestyle-dermaboost-yacht.webp",
+        "ratio": "16x9",
+        "body": "<p>Dermaboost+ adds broader nutritional support through vitamins, minerals, carotenoids, and botanical polyphenols. The formula includes:</p><ul><li>Niacinamide</li><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf extract</li><li>Astaxanthin</li></ul><p>Its role in the system is broader antioxidant, nutritional, and normal immune support.</p><p><strong>Primary support areas:</strong> antioxidant support, normal immune function, nutritional skin support, daily skin resilience.</p>",
+        "primary_label": "Explore Dermaboost+"
+      }
+    },
+    "domains": {
+      "type": "domain-circles",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "System logic",
+        "heading": "Three different starting points.",
+        "center": "COMPLETE",
+        "caption": "This diagram represents formulation rationale. The Complete Skin Defense System as a finished three-product regimen has not been established here as clinically tested for combined outcomes."
+      },
+      "blocks": {
+        "b1": {
+          "type": "domain",
+          "settings": {
+            "short": "Environmental",
+            "title": "Environmental / UV-related stress",
+            "primary": "UV Shield+",
+            "supporting": "Dermaboost+"
+          }
+        },
+        "b2": {
+          "type": "domain",
+          "settings": {
+            "short": "Gut microbial",
+            "title": "Gut microbial environment",
+            "primary": "Skinbiotic+",
+            "supporting": "Dermaboost+"
+          }
+        },
+        "b3": {
+          "type": "domain",
+          "settings": {
+            "short": "Oxidative + immune",
+            "title": "Broader oxidative + immune-related pathways",
+            "primary": "Dermaboost+",
+            "supporting": "UV Shield+ + Skinbiotic+"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "why": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "light",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Formulation philosophy",
+        "heading": "Different roles are more useful than redundant bottles.",
+        "heading_tag": "h2",
+        "body": "<p>Complete Skin Defense is not about stacking more ingredients simply to make a bigger formula. The system is structured around three different support roles.</p><p><strong>Protect</strong> Environmental support.</p><p><strong>Balance</strong> Gut-skin and microbiome support.</p><p><strong>Restore</strong> Broader nutritional and normal immune support.</p>",
+        "quote": "The value is in the combination of different roles, not in taking the greatest number of capsules possible."
+      }
+    },
+    "system": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "dark",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "The bigger picture",
+        "heading": "Skin health is connected to the rest of the body.",
+        "heading_tag": "h2",
+        "body": "<p>Skin is not an isolated surface. Its biology is influenced by:</p><ul><li>Environmental exposure</li><li>Nutrient availability</li><li>Oxidative stress</li><li>Immune signaling</li><li>Microbiome-related pathways</li><li>Barrier function</li><li>Normal cellular renewal</li></ul><p>Complete Skin Defense is the broadest expression of the Alchemia MD philosophy that skin should be supported as part of a larger biological system.</p>"
+      }
+    },
+    "environment": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "green",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Protect",
+        "heading": "Support for life outdoors.",
+        "heading_tag": "h2",
+        "body": "<p>UV Shield+ provides the system’s primary environmental-support role. Dermaboost+ contributes additional antioxidant and nutritional compounds.</p>",
+        "quote": "Complete Skin Defense does not replace sunscreen."
+      }
+    },
+    "gut": {
+      "type": "split-compare",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Balance",
+        "heading": "Support the gut-skin connection.",
+        "body": "<p>Skinbiotic+ provides the system’s microbiome-focused role. The purpose is to support the intestinal environment and gut-skin biology, without implying that every skin concern originates in the gut.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "side",
+          "settings": {
+            "kicker": "Prebiotic",
+            "name": "Organic inulin",
+            "text": "Fermentable fiber that can serve as food for certain intestinal microorganisms."
+          }
+        },
+        "b2": {
+          "type": "side",
+          "settings": {
+            "kicker": "Probiotics",
+            "name": "Multiple microbial organisms",
+            "text": "Five probiotic organisms selected for complementary ecological roles."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2"
+      ]
+    },
+    "nutrition": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "dark",
+        "align": "left",
+        "width": "wide",
+        "eyebrow": "Restore",
+        "heading": "Broader nutritional support.",
+        "heading_tag": "h2",
+        "body": "<p>Dermaboost+ adds:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute nutritional, antioxidant, and normal immune-supportive roles.</p>",
+        "quote": "Supporting normal immune function is not the same as treating autoimmune or inflammatory disease."
+      }
     },
     "ingredients": {
-      "type": "pdp-ingredients",
-      "settings": {}
+      "type": "split-compare",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "What’s inside",
+        "heading": "Three formulas. Defined roles.",
+        "button_label": "Explore the ingredient science",
+        "button_url": "/pages/science"
+      },
+      "blocks": {
+        "b1": {
+          "type": "side",
+          "settings": {
+            "kicker": "Protect",
+            "name": "UV Shield+",
+            "items": "Niacinamide\nPolypodium leucotomos\nEGCG\nTrans-resveratrol\nSpirulina"
+          }
+        },
+        "b2": {
+          "type": "side",
+          "settings": {
+            "kicker": "Balance",
+            "name": "Skinbiotic+",
+            "items": "Organic inulin\nLactobacillus plantarum\nBifidobacterium lactis\nLactobacillus rhamnosus\nBifidobacterium bifidum\nAkkermansia muciniphila Akk11®"
+          }
+        },
+        "b3": {
+          "type": "side",
+          "settings": {
+            "kicker": "Restore",
+            "name": "Dermaboost+",
+            "items": "Niacinamide\nVitamin D3\nVitamin C\nZinc\nQuercetin\nCurcumin\nOlive leaf extract\nAstaxanthin"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
     },
     "how": {
-      "type": "pdp-how-it-works",
-      "settings": {}
+      "type": "system-directions",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Daily routine",
+        "heading": "How to take Complete Skin Defense",
+        "body": "<p>Each formula retains its own labeled directions.</p>",
+        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.",
+        "show_slot": true
+      },
+      "blocks": {
+        "b1": {
+          "type": "product",
+          "settings": {
+            "product": "uv-shield"
+          }
+        },
+        "b2": {
+          "type": "product",
+          "settings": {
+            "product": "skinbiotic"
+          }
+        },
+        "b3": {
+          "type": "product",
+          "settings": {
+            "product": "dermaboost"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
     },
     "timeline": {
       "type": "renewal-timeline",
-      "settings": {}
+      "settings": {
+        "color_scheme": "green"
+      }
     },
-    "crosssell": {
-      "type": "pdp-crosssell",
-      "settings": {}
+    "who": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "The complete routine",
+        "heading": "Designed for customers ready for all three roles.",
+        "columns": "3",
+        "show_images": false
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "The existing Alchemia MD customer",
+            "text": "<p>Already understands the individual formulas.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "The comprehensive-routine customer",
+            "text": "<p>Wants environmental, gut-skin, and broader nutritional support together.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "The routine simplifier",
+            "text": "<p>Would rather follow one defined system than assemble disconnected supplements.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "The evidence-oriented customer",
+            "text": "<p>Values transparent ingredients and clearly defined formula roles.</p>"
+          }
+        },
+        "b5": {
+          "type": "card",
+          "settings": {
+            "title": "The consistency-focused customer",
+            "text": "<p>Comfortable building supplementation into a long-term daily routine.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
+    },
+    "supports": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "dark",
+        "heading": "Five areas of support.",
+        "columns": "3",
+        "show_images": false,
+        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Environmental support†",
+            "text": "<p>Primarily UV Shield+.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Gut-skin support†",
+            "text": "<p>Primarily Skinbiotic+.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Antioxidant support†",
+            "text": "<p>Primarily UV Shield+ + Dermaboost+.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "Normal immune function†",
+            "text": "<p>Primarily Dermaboost+.</p>"
+          }
+        },
+        "b5": {
+          "type": "card",
+          "settings": {
+            "title": "Daily skin resilience†",
+            "text": "<p>The combined system architecture.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
+    },
+    "different": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "The upgrade",
+        "heading": "Complete Skin Defense is broader, not automatically better.",
+        "columns": "4",
+        "show_images": false,
+        "body": "<p>The two-product systems are designed around specific combinations of support. Complete Skin Defense is for the customer who wants all three. It is a broader routine, not the only “correct” routine.</p>"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Sun Safe System",
+            "text": "<p>Protect + Balance.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Skin Recovery System",
+            "text": "<p>Balance + Restore.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Sun Resilience System",
+            "text": "<p>Protect + Restore.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "Complete Skin Defense",
+            "text": "<p>Protect + Balance + Restore.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "compare": {
+      "type": "compare-table",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Compare",
+        "heading": "Compare the Alchemia MD systems.",
+        "col_1": "Roles",
+        "col_2": "Products",
+        "col_3": "Primary focus",
+        "button_label": "Compare all systems",
+        "button_url": "/pages/systems"
+      },
+      "blocks": {
+        "b1": {
+          "type": "row",
+          "settings": {
+            "label": "Sun Safe",
+            "a": "Protect + Balance",
+            "b": "UV Shield+ + Skinbiotic+",
+            "c": "Outdoor + gut-skin"
+          }
+        },
+        "b2": {
+          "type": "row",
+          "settings": {
+            "label": "Skin Recovery",
+            "a": "Balance + Restore",
+            "b": "Skinbiotic+ + Dermaboost+",
+            "c": "Gut-skin + broader nutrition"
+          }
+        },
+        "b3": {
+          "type": "row",
+          "settings": {
+            "label": "Sun Resilience",
+            "a": "Protect + Restore",
+            "b": "UV Shield+ + Dermaboost+",
+            "c": "Outdoor + antioxidant/nutritional"
+          }
+        },
+        "b4": {
+          "type": "row",
+          "settings": {
+            "label": "Complete Skin Defense",
+            "a": "Protect + Balance + Restore",
+            "b": "All three",
+            "c": "Broadest Alchemia MD routine"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "research": {
+      "type": "science-cards",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "The research",
+        "heading": "One system. Multiple areas of biology.",
+        "columns": "3",
+        "show_images": false,
+        "button_label": "Explore the science",
+        "button_url": "/pages/science"
+      },
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "title": "Environmental stress",
+            "study": "nestor-polypodium-rct, middelkamp-hup-polypodium",
+            "text": "<p>UV Shield+ research.</p>"
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "title": "Antioxidants",
+            "study": "zhou-astaxanthin-meta-analysis-2021, rao-resveratrol-2025",
+            "text": "<p>Polyphenols, carotenoids, vitamins.</p>"
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "title": "Gut-skin axis",
+            "study": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019",
+            "text": "<p>Skinbiotic+ research.</p>"
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "title": "Synbiotic support",
+            "study": "lee-hy7714-2015",
+            "text": "<p>Prebiotic + probiotic biology.</p>"
+          }
+        },
+        "b5": {
+          "type": "card",
+          "settings": {
+            "title": "Immune nutrition",
+            "text": "<p>Vitamin D3, vitamin C, zinc.</p>"
+          }
+        },
+        "b6": {
+          "type": "card",
+          "settings": {
+            "title": "Skin resilience",
+            "study": "tanno-nicotinamide-barrier-2000",
+            "text": "<p>Nutritional and barrier-related biology.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    "claims": {
+      "type": "science-boundaries",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Transparency",
+        "heading": "Good science has boundaries.",
+        "not_heading": "Complete Skin Defense does not claim to:",
+        "not_items": "Replace sunscreen\nPrevent sunburn\nPrevent skin cancer\nReverse sun damage\nTreat acne\nTreat eczema\nTreat psoriasis\nTreat rosacea\nTreat autoimmune disease\nEliminate inflammation\nReverse aging\nGuarantee visible results\nBe clinically proven as a three-product combination unless such testing is completed",
+        "does_heading": "What it is",
+        "does_text": "<p>A dermatologist-formulated three-product system combining environmental, microbiome, antioxidant, nutritional, and normal immune support.</p>"
+      }
+    },
+    "sunscreen": {
+      "type": "science-sunscreen",
+      "settings": {
+        "color_scheme": "green",
+        "heading": "Keep the sunscreen.",
+        "body": "<p>Complete Skin Defense is internal support. It should be used alongside:</p>",
+        "items": "Broad-spectrum sunscreen\nProtective clothing\nHats and sunglasses\nShade\nAppropriate reapplication\nRoutine dermatologic care",
+        "callout": "Internal support does not replace external protection."
+      }
+    },
+    "founder": {
+      "type": "founder",
+      "settings": {
+        "color_scheme": "dark",
+        "image_side": "left",
+        "image_asset": "founder-portrait.webp",
+        "eyebrow": "Dermatologist-formulated",
+        "heading": "The full expression of the Alchemia MD approach.",
+        "credentials": "",
+        "body": "<p>Alchemia MD began with Dr. Mia Luna asking why patients seeking natural skin-health support were left assembling long lists of disconnected supplements.</p><p>Complete Skin Defense brings the entire Alchemia MD framework together: <strong>Protect. Balance. Restore.</strong></p><p>Not because every customer needs every formula, but because customers who want broader internal support should be able to understand exactly what each part of their routine contributes.</p>",
+        "link_label": "Meet Dr. Mia Luna",
+        "link_url": "/pages/founder"
+      }
+    },
+    "mission": {
+      "type": "mission-line",
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "A larger purpose",
+        "heading": "Built around more than products."
+      }
     },
     "reviews": {
       "type": "pdp-reviews",
-      "settings": {}
+      "settings": {
+        "color_scheme": "light",
+        "heading": "What customers are saying"
+      }
     },
     "faq": {
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "Questions",
-        "heading": "Frequently asked questions"
+        "heading": "Frequently asked questions",
+        "heading_tag": "h2"
       },
       "blocks": {
-        "q1": {
+        "b1": {
           "type": "item",
           "settings": {
-            "question": "What is included in the Complete Skin Defense System?",
-            "answer": "<p>One UV Shield+ (60 capsules), one Skinbiotic+ (30 capsules) and one Dermaboost+ (60 capsules).</p>"
+            "question": "What is Complete Skin Defense?",
+            "answer": "<p>Complete Skin Defense combines UV Shield+, Skinbiotic+, and Dermaboost+ into the full Protect + Balance + Restore Alchemia MD routine.</p>"
           }
         },
-        "q2": {
+        "b2": {
           "type": "item",
           "settings": {
-            "question": "Can I start with just one product?",
-            "answer": "<p>Yes. Each formula has its own role and you can start with one. The Complete Skin Defense System is the most comprehensive Alchemia MD routine, for people who already understand the individual roles and want all three together.</p>"
+            "question": "What products are included?",
+            "answer": "<p>UV Shield+, Skinbiotic+, and Dermaboost+.</p>"
           }
         },
-        "q3": {
+        "b3": {
           "type": "item",
           "settings": {
-            "question": "How do I take the products in this system?",
-            "answer": "<p>Take each product as directed on its label. The directions for all three are shown on this page.</p>"
+            "question": "Do I need every formula?",
+            "answer": "<p>No. Each formula can stand on its own, and Alchemia MD also offers targeted two-product systems. Complete Skin Defense is intended for customers who want support across all three Alchemia MD roles.</p>"
           }
         },
-        "q4": {
+        "b4": {
           "type": "item",
           "settings": {
-            "question": "How does the system fit with sunscreen?",
-            "answer": "<p>UV Shield+ is made to be used alongside your sunscreen, protective clothing and shade. It is not a sunscreen and does not replace sun protection.</p>"
+            "question": "What does Protect + Balance + Restore mean?",
+            "answer": "<p>Protect: environmental and antioxidant support. Balance: gut-skin and microbiome support. Restore: broader nutritional, antioxidant, and normal immune support.</p>"
           }
         },
-        "q5": {
+        "b5": {
           "type": "item",
           "settings": {
-            "question": "Should I check with my healthcare professional first?",
-            "answer": "<p>Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>"
+            "question": "Is Complete Skin Defense better than the two-product systems?",
+            "answer": "<p>It is broader, but that does not automatically make it the best fit for every customer.</p>"
+          }
+        },
+        "b6": {
+          "type": "item",
+          "settings": {
+            "question": "Does the system replace sunscreen?",
+            "answer": "<p>No.</p>"
+          }
+        },
+        "b7": {
+          "type": "item",
+          "settings": {
+            "question": "Does it prevent sunburn?",
+            "answer": "<p>No.</p>"
+          }
+        },
+        "b8": {
+          "type": "item",
+          "settings": {
+            "question": "How do I take the products?",
+            "answer": "<p>Follow the individual label directions. UV Shield+: Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water. Skinbiotic+: Take one (1) capsule daily with water. Dermaboost+: Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water.</p>"
+          }
+        },
+        "b9": {
+          "type": "item",
+          "settings": {
+            "question": "Can I subscribe to Complete Skin Defense?",
+            "answer": "<p>Yes. The plan options in the purchase box show the current subscription and one-time purchase options.</p>"
+          }
+        },
+        "b10": {
+          "type": "item",
+          "settings": {
+            "question": "Can I start with a smaller system and upgrade later?",
+            "answer": "<p>Yes. Starting with a smaller system and building up is a normal customer journey.</p>"
           }
         }
       },
       "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5"
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10"
       ]
     },
     "compliance": {
       "type": "compliance-notice",
-      "settings": {}
+      "settings": {
+        "color_scheme": "dark",
+        "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
+        "extra_line": "Complete Skin Defense is not a replacement for sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
+      }
     },
-    "video": {
-      "type": "video-slot",
-      "settings": {}
-    },
-    "description": {
-      "type": "pdp-description",
-      "settings": {}
+    "final": {
+      "type": "final-cta",
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Protect + Balance + Restore",
+        "heading": "The full Alchemia MD routine.",
+        "body": "<p>Three dermatologist-formulated products. Three distinct roles. One comprehensive daily system for customers who want the broadest Alchemia MD approach to internal skin support.</p>",
+        "button_label": "Choose your plan",
+        "button_url": "#buy-box",
+        "secondary_label": "Explore the science",
+        "secondary_url": "/pages/science"
+      }
     }
   },
   "order": [
     "main",
     "definition",
-    "description",
     "video",
-    "steps",
-    "value",
-    "benefits",
+    "whofor",
+    "step1",
+    "step2",
+    "step3",
+    "domains",
+    "why",
+    "system",
+    "environment",
+    "gut",
+    "nutrition",
     "ingredients",
     "how",
     "timeline",
-    "crosssell",
+    "who",
+    "supports",
+    "different",
+    "compare",
+    "research",
+    "claims",
+    "sunscreen",
+    "founder",
+    "mission",
     "reviews",
     "faq",
-    "compliance"
+    "compliance",
+    "final"
   ]
 }

@@ -812,3 +812,13 @@ h1, h2, h3, h4 { font-variant-numeric: lining-nums; }
 .compare__list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; background: var(--accent); }
 .compare__focus { margin-top: 10px; font-size: .95rem; }
 .compare__focus strong { font-family: var(--font-callout); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-right: .4em; }
+
+@media (min-width: 850px) { .compare--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; } }
+.domains { display: grid; gap: 48px; align-items: center; }
+@media (min-width: 990px) { .domains { grid-template-columns: 1fr 1fr; gap: 80px; } }
+.domains__svg { width: 100%; max-width: 520px; height: auto; margin-inline: auto; color: var(--fg); }
+.domains__list { display: grid; gap: 22px; }
+.domains__item { padding-left: 22px; border-left: 1px solid var(--accent); display: grid; gap: 6px; }
+.domains__item h3 { font-size: clamp(1.4rem, 2vw, 1.75rem); }
+.domains__item p { font-size: .95rem; }
+.domains__item strong { font-family: var(--font-callout); font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-right: .4em; }

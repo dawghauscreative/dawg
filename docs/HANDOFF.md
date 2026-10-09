@@ -244,3 +244,16 @@ Notes:
 - Allowlist additions in `docs/check-banned.sh` for the required negations ("Treat acne ..." list, "not the same as treating an immune-mediated skin condition", "The goal is not to treat a condition", "Is this a treatment for inflammatory skin conditions").
 - Skipped on purpose: the blueprint's "eliminate inflammation" negation as a sentence in the antioxidant section (the banned list blocks it outside the "does not claim" list).
 - Existing Shopify media for this product (spa-setting hero, "inside-out support") has not been reviewed visually; check for disease imagery or inflammation wording.
+
+## Complete Skin Defense System product page (blueprint, Oct 9 2026)
+
+`templates/product.complete-skin-defense-system.json` rebuilt to the blueprint (29 sections incl. the video slot): hero + Supr buy box, definition (three roles; "broader does not automatically mean better"), who this system is for (advanced routine, no "everyone needs all three" wording), Steps 1 to 3, three-domain circles with primary/supporting formulas and the "not clinically tested for combined outcomes" caption, why systems matter, skin is a system, Protect / Balance / Restore education, three-column ingredient overview, how to use (label directions live from each product, plus the pairing compliance slot), renewal timeline (centralized), five audience cards, five support areas, "broader, not automatically better", comparison, six research cards, what the science does not say, "Keep the sunscreen", founder, mission, reviews, FAQ (10 + centralized results answer), compliance, final CTA. Existing sticky "Choose your plan" bar unchanged. Shopify: SEO set; `custom.tagline` set to "The most comprehensive Alchemia MD routine" (it was empty).
+
+New/extended: `domain-circles` (three-circle diagram), `mission-line` (renders only the central melanoma line from Theme settings; hidden when that setting is empty; no amounts or percentages), `split-compare` (three columns plus optional button).
+
+Notes:
+- The Complete discount interaction with Supr is not touched in theme code (open item stays open).
+- The pairing compliance slot is the `custom.compliance_slot` metafield on this product (empty, hidden); it can show in the hero, how to use and compliance area (see the Skin Recovery notes).
+- "Do I need all three products?" is worded "Do I need every formula?" (banned list). The blueprint pull quote "not because you are told you need all three" is allowlisted as written.
+- The mission line wording must be confirmed against packaging before launch.
+- The existing Shopify media ("four compartments", "inside-out") has not been reviewed visually; check for "ultimate protection"-style wording and disease imagery.
