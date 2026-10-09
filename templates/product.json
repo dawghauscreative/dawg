@@ -36,7 +36,11 @@
           "type": "trust_bar",
           "settings": {
             "icon_1": "shield",
-            "text_1": "Dermatologist developed"
+            "text_1": "Dermatologist-formulated",
+            "icon_2": "molecule",
+            "text_2": "Research-informed",
+            "icon_3": "layers",
+            "text_3": "Full ingredient transparency"
           }
         },
         "fda": {

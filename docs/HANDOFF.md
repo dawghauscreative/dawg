@@ -291,3 +291,5 @@ Notes:
 - The 20 launch articles are not written; only the hub, template and structure are built.
 - Teasers were written only where the blueprint gave none and the card needs one (the three "latest" cards); all other cards are title-only or use the blueprint's descriptions.
 - The featured visual is an empty frame (abstract skin biology, never a bottle) until you add an image.
+
+Trust bar on every product page (Oct 9 2026): all seven product pages and the default product template now show the same three items under the buy box (Dermatologist-formulated, Research-informed, Full ingredient transparency, each with its icon). The default template had only one, and Skinbiotic+ said "Synbiotic formula" in the middle slot (now "Research-informed" at the owner's request). The trust bar block also carries these three as its defaults, so a new product template shows all three automatically.
