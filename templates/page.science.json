@@ -84,7 +84,8 @@
             "title": "Environmental stress",
             "text": "<p>UV and other environmental exposures can influence oxidative stress and cellular responses in skin.</p><p>Research on ingredients such as nicotinamide and Polypodium leucotomos has examined biological responses to UV exposure in human volunteers.</p>",
             "tag": "UV-response biology",
-            "study": "yiasemides-nicotinamide-2009"
+            "study": "yiasemides-nicotinamide-2009",
+            "asset": "science-system-environment.webp"
           }
         },
         "b2": {
@@ -94,7 +95,8 @@
             "title": "Skin barrier",
             "text": "<p>The outer skin barrier depends heavily on lipids including ceramides, free fatty acids, and cholesterol.</p><p>Experimental research has shown that nicotinamide can increase synthesis of several of these lipids in keratinocytes.</p>",
             "tag": "Epidermal barrier biology",
-            "study": "tanno-nicotinamide-barrier-2000"
+            "study": "tanno-nicotinamide-barrier-2000",
+            "asset": "science-system-barrier.webp"
           }
         },
         "b3": {
@@ -104,7 +106,8 @@
             "title": "Gut–skin axis",
             "text": "<p>The intestine and skin communicate through microbial metabolites, immune signaling, barrier integrity, and other systemic pathways.</p><p>The gut-skin axis is an active area of research, although the clinical effects of probiotics remain strain- and formulation-specific.</p>",
             "tag": "Microbiome and skin communication",
-            "study": "szanto-gut-skin-2019"
+            "study": "szanto-gut-skin-2019",
+            "asset": "science-system-gut-skin.webp"
           }
         },
         "b4": {
@@ -113,7 +116,8 @@
             "icon": "molecule",
             "title": "Antioxidant and nutritional support",
             "text": "<p>Different antioxidants and micronutrients act through different biological mechanisms.</p><p>Rather than relying on one compound, Alchemia MD formulas combine ingredients selected to provide complementary nutritional and biochemical roles.</p>",
-            "tag": "Multi-pathway support"
+            "tag": "Multi-pathway support",
+            "asset": "science-system-antioxidant.webp"
           }
         }
       },
