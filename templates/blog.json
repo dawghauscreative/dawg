@@ -391,7 +391,8 @@
           "settings": {
             "name": "Niacinamide",
             "text": "What it is, why it is used, and what the research examines.",
-            "formulas": "UV Shield+ / Dermaboost+"
+            "formulas": "UV Shield+ / Dermaboost+",
+            "link": "/pages/science#niacinamide"
           }
         },
         "b2": {
@@ -399,7 +400,8 @@
           "settings": {
             "name": "Polypodium leucotomos",
             "text": "What it is, why dermatology researchers study it, and how it relates to environmental exposure.",
-            "formulas": "UV Shield+"
+            "formulas": "UV Shield+",
+            "link": "/pages/science#polypodium-leucotomos"
           }
         },
         "b3": {
@@ -407,7 +409,8 @@
           "settings": {
             "name": "EGCG",
             "text": "Green-tea polyphenol biology.",
-            "formulas": "UV Shield+"
+            "formulas": "UV Shield+",
+            "link": "/pages/science#egcg"
           }
         },
         "b4": {
@@ -415,7 +418,8 @@
           "settings": {
             "name": "Resveratrol",
             "text": "Plant-polyphenol research.",
-            "formulas": "UV Shield+"
+            "formulas": "UV Shield+",
+            "link": "/pages/science#resveratrol"
           }
         },
         "b5": {
@@ -423,7 +427,8 @@
           "settings": {
             "name": "Spirulina",
             "text": "Nutritional and antioxidant profile.",
-            "formulas": "UV Shield+"
+            "formulas": "UV Shield+",
+            "link": "/pages/science#spirulina"
           }
         },
         "b6": {
@@ -431,7 +436,8 @@
           "settings": {
             "name": "Inulin",
             "text": "Prebiotic-fiber biology.",
-            "formulas": "Skinbiotic+"
+            "formulas": "Skinbiotic+",
+            "link": "/pages/science#inulin"
           }
         },
         "b7": {
@@ -439,7 +445,8 @@
           "settings": {
             "name": "Lactobacillus",
             "text": "Probiotic biology and why strain specificity matters.",
-            "formulas": "Skinbiotic+"
+            "formulas": "Skinbiotic+",
+            "link": "/pages/science#lactobacillus"
           }
         },
         "b8": {
@@ -447,7 +454,8 @@
           "settings": {
             "name": "Bifidobacterium",
             "text": "Microbiome and intestinal-health research.",
-            "formulas": "Skinbiotic+"
+            "formulas": "Skinbiotic+",
+            "link": "/pages/science#bifidobacterium"
           }
         },
         "b9": {
@@ -455,7 +463,8 @@
           "settings": {
             "name": "Akkermansia",
             "text": "Emerging microbiome science.",
-            "formulas": "Skinbiotic+"
+            "formulas": "Skinbiotic+",
+            "link": "/pages/science#akkermansia"
           }
         },
         "b10": {
@@ -463,7 +472,8 @@
           "settings": {
             "name": "Vitamin D3",
             "text": "Normal physiological and immune roles.",
-            "formulas": "Dermaboost+"
+            "formulas": "Dermaboost+",
+            "link": "/pages/science#vitamin-d3"
           }
         },
         "b11": {
@@ -471,7 +481,8 @@
           "settings": {
             "name": "Vitamin C",
             "text": "Antioxidant physiology and normal collagen synthesis.",
-            "formulas": "Dermaboost+"
+            "formulas": "Dermaboost+",
+            "link": "/pages/science#vitamin-c"
           }
         },
         "b12": {
@@ -479,7 +490,8 @@
           "settings": {
             "name": "Zinc",
             "text": "Essential mineral biology.",
-            "formulas": "Dermaboost+"
+            "formulas": "Dermaboost+",
+            "link": "/pages/science#zinc"
           }
         },
         "b13": {
@@ -487,7 +499,8 @@
           "settings": {
             "name": "Quercetin",
             "text": "Flavonoid biology.",
-            "formulas": "Dermaboost+"
+            "formulas": "Dermaboost+",
+            "link": "/pages/science#quercetin"
           }
         },
         "b14": {
@@ -495,7 +508,8 @@
           "settings": {
             "name": "Curcumin",
             "text": "Botanical polyphenol research and bioavailability.",
-            "formulas": "Dermaboost+"
+            "formulas": "Dermaboost+",
+            "link": "/pages/science#curcumin"
           }
         },
         "b15": {
@@ -503,7 +517,8 @@
           "settings": {
             "name": "Olive leaf",
             "text": "Polyphenol profile and research.",
-            "formulas": "Dermaboost+"
+            "formulas": "Dermaboost+",
+            "link": "/pages/science#dermaboost"
           }
         },
         "b16": {
@@ -511,7 +526,8 @@
           "settings": {
             "name": "Astaxanthin",
             "text": "Carotenoid antioxidant research.",
-            "formulas": "Dermaboost+"
+            "formulas": "Dermaboost+",
+            "link": "/pages/science#astaxanthin"
           }
         }
       },

@@ -155,7 +155,8 @@
             "shows": "<p>A randomized, double-blind crossover study in healthy volunteers found that oral nicotinamide reduced UV-induced suppression of a measured skin immune response at the doses studied.</p><p>Separate laboratory and topical research found that nicotinamide increased synthesis of ceramides, free fatty acids, and cholesterol involved in epidermal barrier function.</p>",
             "context": "<p>The barrier-lipid study included cell-culture and topical application research. It is not proof that oral UV Shield+ produces the same effect.</p>",
             "studies": "yiasemides-nicotinamide-2009, tanno-nicotinamide-barrier-2000",
-            "slide_set": "d02"
+            "slide_set": "d02",
+            "anchor": "niacinamide"
           }
         },
         "b2": {
@@ -167,7 +168,8 @@
             "why": "<p>Polypodium leucotomos has been studied as an oral botanical in relation to skin responses to ultraviolet exposure.</p>",
             "shows": "<p>In a randomized, double-blind, placebo-controlled study of healthy adults, oral Polypodium leucotomos was evaluated for UV-response endpoints over the study period.</p><p>Earlier human research also evaluated oral Polypodium leucotomos in experimentally UV-exposed skin, and newer controlled studies have continued to investigate it in healthy volunteers.</p>",
             "studies": "nestor-polypodium-rct, middelkamp-hup-polypodium, faisal-uva-2026",
-            "slide_set": "d01"
+            "slide_set": "d01",
+            "anchor": "polypodium-leucotomos"
           }
         },
         "b3": {
@@ -180,7 +182,8 @@
             "shows": "<p>A randomized, placebo-controlled study in women aged 40 and older evaluated oral and topical trans-resveratrol over eight weeks and measured several skin parameters, including moisture, elasticity and sebum.</p>",
             "context": "<p>The dose and study design differ from UV Shield+. It supports ingredient rationale rather than establishing finished-product efficacy.</p>",
             "studies": "rao-resveratrol-2025",
-            "slide_set": "d04"
+            "slide_set": "d04",
+            "anchor": "resveratrol"
           }
         },
         "b4": {
@@ -195,7 +198,8 @@
             "shows": "<p>Human research on oral green tea polyphenols has produced mixed results. A two-year randomized placebo-controlled study found some interim changes in selected clinical parameters but did not find oral green tea polyphenols superior to placebo for overall clinical or histologic photoaging outcomes after 24 months.</p>",
             "language": "We include mixed and null findings on purpose.",
             "studies": "green-tea-two-year-trial",
-            "slide_set": "d03"
+            "slide_set": "d03",
+            "anchor": "egcg"
           }
         },
         "b5": {
@@ -206,7 +210,8 @@
             "evidence": "Emerging / preclinical",
             "why": "<p>Spirulina contains proteins, minerals, carotenoids, and phycocyanin, and contributes a different nutritional and antioxidant profile from the formula's polyphenols.</p>",
             "language": "Included for its nutritional and antioxidant profile while human skin-specific research continues to develop.",
-            "slide_set": "d05"
+            "slide_set": "d05",
+            "anchor": "spirulina"
           }
         }
       },
@@ -247,7 +252,8 @@
             "subtitle": "Prebiotic fiber",
             "evidence": "Established prebiotic biology",
             "why": "<p>Inulin is a fermentable carbohydrate that can serve as food for certain intestinal microorganisms. Its role in Skinbiotic+ is foundational: it forms the prebiotic side of a synbiotic formulation.</p>",
-            "slide_set": "d11"
+            "slide_set": "d11",
+            "anchor": "inulin"
           }
         },
         "b2": {
@@ -260,7 +266,8 @@
             "shows": "<p>A randomized, double-blind, placebo-controlled trial involving 110 adults evaluated Lactobacillus plantarum HY7714 for 12 weeks and reported changes in several measured skin parameters.</p>",
             "context": "<p>This evidence is specific to the HY7714 strain. It does not prove identical outcomes for every L. plantarum strain.</p>",
             "studies": "lee-hy7714-2015",
-            "slide_set": "d07"
+            "slide_set": "d07",
+            "anchor": "lactobacillus"
           }
         },
         "b3": {
@@ -273,7 +280,8 @@
             "shows_label": "Research context",
             "shows": "<p>Clinical reviews of probiotic interventions in dermatology point to potential effects through gut-skin signaling, but repeatedly note substantial heterogeneity across strains, formulations, study populations, and outcomes.</p>",
             "studies": "gao-probiotics-gut-skin-2023, probiotic-clinical-review-2026",
-            "slide_set": "d08"
+            "slide_set": "d08",
+            "anchor": "bifidobacterium"
           }
         },
         "b4": {
@@ -284,7 +292,8 @@
             "evidence": "Emerging",
             "why": "<p>Akkermansia is an emerging microbiome organism studied extensively in intestinal barrier and metabolic biology. Its skin-specific evidence is primarily emerging and preclinical.</p>",
             "language": "Included as a next-generation microbiome component while human skin-specific research continues to develop.",
-            "slide_set": "d06"
+            "slide_set": "d06",
+            "anchor": "akkermansia"
           }
         }
       },
@@ -321,7 +330,8 @@
             "why": "<p>Astaxanthin is a carotenoid studied for antioxidant activity and skin-related endpoints.</p>",
             "shows": "<p>A systematic review and meta-analysis of randomized human studies found significant pooled effects for moisture and elasticity, while the effect on wrinkle depth was not statistically significant compared with placebo.</p><p>A separate randomized controlled study evaluated oral astaxanthin during a 16-week period of seasonal environmental stress.</p>",
             "studies": "zhou-astaxanthin-meta-analysis-2021, tominaga-astaxanthin-2017",
-            "slide_set": "d24"
+            "slide_set": "d24",
+            "anchor": "astaxanthin"
           }
         },
         "b2": {
@@ -334,7 +344,8 @@
             "shows_label": "Research context",
             "shows": "<p>Published pharmacokinetic reviews have compared enhanced-bioavailability curcumin preparations with conventional curcumin. Claims about bioavailability should remain formulation-specific and measured rather than assumed.</p>",
             "studies": "jamwal-curcumin-pk-review, curcumin-independent-pk",
-            "slide_set": "d21"
+            "slide_set": "d21",
+            "anchor": "curcumin"
           }
         },
         "b3": {
@@ -344,7 +355,8 @@
             "subtitle": "Essential nutrient",
             "evidence": "Established nutritional physiology",
             "why": "<p>Vitamin C is an essential nutrient with established physiological roles. It participates in collagen biosynthesis and antioxidant systems.</p>",
-            "slide_set": "d15"
+            "slide_set": "d15",
+            "anchor": "vitamin-c"
           }
         },
         "b4": {
@@ -357,7 +369,8 @@
             "shows_label": "Research context",
             "shows": "<p>Human pharmacokinetic studies confirm oral absorption of quercetin-containing preparations, while much of the skin-specific mechanistic rationale remains derived from laboratory research.</p>",
             "studies": "quercetin-human-pk",
-            "slide_set": "d17"
+            "slide_set": "d17",
+            "anchor": "quercetin"
           }
         },
         "bz": {
@@ -367,7 +380,8 @@
             "subtitle": "Essential mineral",
             "evidence": "Established nutritional physiology",
             "why": "<p>Zinc is an essential mineral that acts as a cofactor for numerous enzymes and contributes to normal immune and cellular functions.</p>",
-            "slide_set": "d16"
+            "slide_set": "d16",
+            "anchor": "zinc"
           }
         },
         "bd": {
@@ -377,7 +391,8 @@
             "subtitle": "Cholecalciferol, from lichen",
             "evidence": "Established nutritional physiology",
             "why": "<p>Vitamin D is an essential nutrient that contributes to normal immune function. The form used here is plant-derived, from lichen.</p>",
-            "slide_set": "d14"
+            "slide_set": "d14",
+            "anchor": "vitamin-d3"
           }
         }
       },

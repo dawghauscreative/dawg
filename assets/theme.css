@@ -941,3 +941,8 @@ body.template-blog.is-filtered main > .shopify-section:not(:has(.blog-listing)) 
 /* Skin Edu ingredient library: the search and formula filter hide cards with the hidden attribute,
    which the card's display:grid was overriding, so nothing ever disappeared. */
 .edu-card[hidden], .sci-lib__empty[hidden] { display: none !important; }
+
+/* Ingredient library cards link to their Science page card; leave room under the sticky header */
+.sci-rcard[id] { scroll-margin-top: 110px; }
+a.edu-card[data-edu-ing] { text-decoration: none; color: inherit; }
+a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline-offset: 3px; }

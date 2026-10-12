@@ -43,7 +43,7 @@
 
     <div class="sci-research{% if section.settings.show_card_images %} sci-research--wide{% endif %}">
       {%- for block in section.blocks -%}
-        <article class="sci-rcard{% if block.settings.mixed %} sci-rcard--mixed{% endif %}{% if section.settings.show_card_images %} sci-rcard--media{% endif %}" {{ block.shopify_attributes }}>
+        <article class="sci-rcard{% if block.settings.mixed %} sci-rcard--mixed{% endif %}{% if section.settings.show_card_images %} sci-rcard--media{% endif %}"{% if block.settings.anchor != blank %} id="{{ block.settings.anchor | handleize }}"{% endif %} {{ block.shopify_attributes }}>
           {%- if section.settings.show_card_images -%}
             {%- assign slide_set = block.settings.slide_set | strip -%}
             <div class="sci-rcard__media"{% if slide_set != blank %} data-gallery{% endif %}>
@@ -127,6 +127,7 @@
         { "type": "text", "id": "language", "label": "Public language line" },
         { "type": "richtext", "id": "context", "label": "Important context" },
         { "type": "text", "id": "studies", "label": "Citations (study handles, comma separated)" },
+        { "type": "text", "id": "anchor", "label": "Card anchor (for links such as /pages/science#niacinamide)" },
         { "type": "text", "id": "slide_set", "label": "Ingredient slide set", "info": "Slide set key, e.g. d02 for assets slide-d02-1 to slide-d02-4. Shows the four slides as a gallery. Leave empty to use the image picker below." },
         { "type": "image_picker", "id": "image", "label": "Ingredient image" },
         { "type": "checkbox", "id": "mixed", "label": "Mixed or null findings", "default": false }
