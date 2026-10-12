@@ -84,9 +84,7 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "slide-d01-1.webp,slide-d12-1.webp,lifestyle-uvshield-dermaboost-tennis.webp",
-        "enhanced_products": "uv-shield",
-        "enhanced_text": "<p>Enhanced Support is the enhanced direction printed on the label. The label gives two ways to take it: the daily direction, and an enhanced direction.</p><p>The Enhanced options in the purchase box include additional product so you have enough supply to follow the enhanced direction. They are an option, not a requirement. The daily direction is the standard way to take it.</p><p>Not sure which direction is right for you? Ask your healthcare professional.</p>"
+        "gallery_assets": "slide-d01-1.webp,slide-d12-1.webp,lifestyle-uvshield-dermaboost-tennis.webp"
       }
     },
     "definition": {

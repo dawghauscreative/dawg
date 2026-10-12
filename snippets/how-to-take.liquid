@@ -4,10 +4,13 @@
   for the product handles listed in enhanced_products, and the supply line only when one of them is shown and the
   page's custom.supply_line metafield has text. Everything is empty and hidden when there is nothing to show.
   An optional explainer (enhanced_heading + enhanced_text) shows under the directions only when Enhanced Support blocks show.
-  Usage: {% render 'how-to-take', product: product, heading: 'How to take it', enhanced_products: 'uv-shield' %}
+  Config comes from product metafields: custom.enhanced_products (handles, comma separated; empty = label text only) and
+  custom.enhanced_explainer (rich text), plus custom.supply_line. Usage: {% render 'how-to-take', product: product %}
 {%- endcomment -%}
 {%- assign components = product.metafields.custom.bundle_components.value -%}
-{%- assign enhanced_list = enhanced_products | replace: ' ', '' | downcase | split: ',' -%}
+{%- assign heading = 'How to take it' -%}
+{%- assign enhanced_heading = 'What is Enhanced Support?' -%}
+{%- assign enhanced_list = product.metafields.custom.enhanced_products.value | replace: ' ', '' | downcase | split: ',' -%}
 {%- assign has_text = false -%}
 {%- assign shows_enhanced = false -%}
 {%- if components != blank -%}
@@ -35,10 +38,10 @@
     {%- if enhanced_list contains product.handle -%}{%- assign item_enhanced = true -%}{%- endif -%}
     {%- render 'how-to-take-item', p: product, show_title: false, show_enhanced: item_enhanced -%}
   {%- endif -%}
-  {%- if shows_enhanced and enhanced_text != blank -%}
+  {%- if shows_enhanced and product.metafields.custom.enhanced_explainer != blank -%}
     <div class="how-to-take__explainer">
-      {%- if enhanced_heading != blank -%}<h3>{{ enhanced_heading }}</h3>{%- endif -%}
-      <div class="prose">{{ enhanced_text }}</div>
+      <h3>{{ enhanced_heading }}</h3>
+      <div class="prose">{{ product.metafields.custom.enhanced_explainer | metafield_tag }}</div>
     </div>
   {%- endif -%}
   {%- if shows_enhanced and product.metafields.custom.supply_line != blank -%}
