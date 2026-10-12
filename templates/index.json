@@ -82,7 +82,7 @@
         "video": "shopify://files/videos/AMD TEST WELCOME SCRAP.mov",
         "video_url": "",
         "tight_top": true,
-        "autoplay": false,
+        "autoplay": true,
         "video_title": "What is internal skin defense?",
         "show_placeholder": true,
         "video_side": "right",
