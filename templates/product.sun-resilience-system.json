@@ -84,7 +84,9 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "slide-d01-1.webp,slide-d12-1.webp,lifestyle-uvshield-dermaboost-tennis.webp"
+        "gallery_assets": "slide-d01-1.webp,slide-d12-1.webp,lifestyle-uvshield-dermaboost-tennis.webp",
+        "gallery_note_heading": "What is Enhanced Support?",
+        "gallery_note": "<p>Each Alchemia MD label gives a standard daily direction and an enhanced-support direction. The Enhanced plans include additional product so you have enough supply to follow the enhanced-support directions printed on the labels.</p><p>All plans include the same two formulas: UV Shield+ and Dermaboost+. Choose the one that fits how you take them. Always follow the directions on each product label, and talk with your healthcare professional before starting if you are pregnant, nursing, taking any medications, or have a medical condition.</p>"
       }
     },
     "definition": {
