@@ -1,5 +1,5 @@
 {%- comment -%}
-  Shared product hero for ALL 7 product pages. Differences come from product data (metafields)
+  Shared product hero for ALL 7 product pages (includes the How to take it card under the gallery). Differences come from product data (metafields)
   and which blocks each template enables.
 
   BUY BOX RULES (Supr owns the buy box):
@@ -53,7 +53,7 @@
             </div>
           {%- endif -%}
           {%- if section.settings.show_how_to_take -%}
-            {%- render 'how-to-take', product: product, heading: section.settings.how_to_take_heading, enhanced_products: section.settings.enhanced_products -%}
+            {%- render 'how-to-take', product: product, heading: section.settings.how_to_take_heading, enhanced_products: section.settings.enhanced_products, enhanced_heading: section.settings.enhanced_heading, enhanced_text: section.settings.enhanced_text -%}
           {%- endif -%}
         {%- else -%}
           {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
@@ -194,9 +194,11 @@
   "name": "Product hero",
   "tag": "div",
   "settings": [
-    { "type": "checkbox", "id": "show_how_to_take", "label": "Show \"How to take it\" under the gallery", "default": true, "info": "Label directions, word for word, from each product's directions field. Empty and hidden if there are none." },
+    { "type": "checkbox", "id": "show_how_to_take", "label": "Show How to take it under the gallery", "default": true, "info": "Label directions, word for word, from each product's directions field. Empty and hidden if there are none." },
     { "type": "text", "id": "how_to_take_heading", "label": "How to take it: heading", "default": "How to take it" },
     { "type": "text", "id": "enhanced_products", "label": "Show Enhanced Support blocks for these products (handles, comma separated)", "info": "Only for products whose label has an enhanced direction, on pages that offer Enhanced options in the subscription app. Leave empty to show the label directions only." },
+    { "type": "text", "id": "enhanced_heading", "label": "Enhanced Support explainer: heading", "default": "What is Enhanced Support?" },
+    { "type": "richtext", "id": "enhanced_text", "label": "Enhanced Support explainer: text", "info": "Shows under the directions only when Enhanced Support blocks show. No prices, quantities or claims here." },
     { "type": "text", "id": "gallery_assets", "label": "Extra gallery graphics (theme asset filenames, comma separated)", "info": "Appended after the product media, e.g. slide-d01-1.webp, slide-d02-1.webp" },
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],

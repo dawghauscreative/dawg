@@ -3,6 +3,7 @@
   custom.directions (a bundle reads its components, so the copy lives in one place). Enhanced Support blocks show only
   for the product handles listed in enhanced_products, and the supply line only when one of them is shown and the
   page's custom.supply_line metafield has text. Everything is empty and hidden when there is nothing to show.
+  An optional explainer (enhanced_heading + enhanced_text) shows under the directions only when Enhanced Support blocks show.
   Usage: {% render 'how-to-take', product: product, heading: 'How to take it', enhanced_products: 'uv-shield' %}
 {%- endcomment -%}
 {%- assign components = product.metafields.custom.bundle_components.value -%}
@@ -33,6 +34,12 @@
     {%- assign item_enhanced = false -%}
     {%- if enhanced_list contains product.handle -%}{%- assign item_enhanced = true -%}{%- endif -%}
     {%- render 'how-to-take-item', p: product, show_title: false, show_enhanced: item_enhanced -%}
+  {%- endif -%}
+  {%- if shows_enhanced and enhanced_text != blank -%}
+    <div class="how-to-take__explainer">
+      {%- if enhanced_heading != blank -%}<h3>{{ enhanced_heading }}</h3>{%- endif -%}
+      <div class="prose">{{ enhanced_text }}</div>
+    </div>
   {%- endif -%}
   {%- if shows_enhanced and product.metafields.custom.supply_line != blank -%}
     <p class="how-to-take__supply">{{ product.metafields.custom.supply_line.value | escape }}</p>

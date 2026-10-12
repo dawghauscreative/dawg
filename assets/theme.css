@@ -967,3 +967,8 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .how-to-take__grid .eyebrow { display: block; margin-bottom: .35rem; }
 .how-to-take__supply { color: var(--muted, inherit); opacity: .9; }
 .how-to-take__caution { opacity: .8; }
+
+.how-to-take__explainer { padding-top: 6px; border-top: 1px solid var(--rule); }
+.how-to-take__explainer h3 { font-size: 1.15rem; margin: .9rem 0 .5rem; }
+.how-to-take__explainer .prose { font-size: .95rem; max-width: none; }
+.how-to-take__explainer .prose p + p { margin-top: .8em; }
