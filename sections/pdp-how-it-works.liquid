@@ -1,25 +1,28 @@
 {%- comment -%}
-  Directions are label text, word for word, from metafield custom.how_it_works. Nothing is added here.
+  Directions are label text, word for word, from metafield custom.directions (falls back to custom.how_it_works). Nothing is added here.
   Bundles show each component's own directions (read from the component product).
 {%- endcomment -%}
 {%- assign components = product.metafields.custom.bundle_components.value -%}
-{%- assign own = product.metafields.custom.how_it_works -%}
+{%- capture own_text -%}{%- render 'product-directions', p: product -%}{%- endcapture -%}
+{%- assign own_text = own_text | strip -%}
 {%- assign any_text = false -%}
-{%- if own != blank -%}{%- assign any_text = true -%}{%- endif -%}
-{%- for c in components -%}{%- if c.metafields.custom.how_it_works != blank -%}{%- assign any_text = true -%}{%- endif -%}{%- endfor -%}
+{%- if own_text != blank -%}{%- assign any_text = true -%}{%- endif -%}
+{%- for c in components -%}{%- capture ct -%}{%- render 'product-directions', p: c -%}{%- endcapture -%}{%- if ct != blank -%}{%- assign any_text = true -%}{%- endif -%}{%- endfor -%}
 {%- if any_text -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading -%}
     <div class="stack" style="--stack:2.5rem">
-      {%- if own != blank -%}
-        <div class="directions">{{ own.value | newline_to_br }}</div>
+      {%- if own_text != blank -%}
+        <div class="directions">{{ own_text | escape | newline_to_br }}</div>
       {%- endif -%}
       {%- for c in components -%}
-        {%- if c.metafields.custom.how_it_works != blank -%}
+        {%- capture ct -%}{%- render 'product-directions', p: c -%}{%- endcapture -%}
+        {%- assign ct = ct | strip -%}
+        {%- if ct != blank -%}
           <div class="directions">
             <h3 style="margin-bottom:.75rem">{{ c.title }}</h3>
-            <p>{{ c.metafields.custom.how_it_works.value | newline_to_br }}</p>
+            <p>{{ ct | escape | newline_to_br }}</p>
           </div>
         {%- endif -%}
       {%- endfor -%}
@@ -27,7 +30,7 @@
   </div>
 </section>
 {%- elsif request.design_mode -%}
-<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] Directions are empty and hidden. Fill metafield custom.how_it_works with the label directions, word for word.</div></section>
+<section class="section--tight scheme-dark" {{ section.shopify_attributes }}><div class="container small">[Editor only] Directions are empty and hidden. Fill metafield custom.directions with the label directions, word for word.</div></section>
 {%- endif -%}
 
 {% schema %}

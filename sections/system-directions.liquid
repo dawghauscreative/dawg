@@ -1,5 +1,5 @@
 {%- comment -%}
-  Label directions for each included product, read word for word from custom.how_it_works on that product.
+  Label directions for each included product, read word for word from custom.directions on that product (falls back to custom.how_it_works).
   Nothing is combined or rewritten here. A product with empty directions is hidden.
 {%- endcomment -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
@@ -8,11 +8,15 @@
     <div class="directions-grid">
       {%- for block in section.blocks -%}
         {%- assign p = block.settings.product -%}
-        {%- if p != blank and p.metafields.custom.how_it_works != blank -%}
-          <article {{ block.shopify_attributes }}>
-            <h3>{{ p.title }}</h3>
-            <p>{{ p.metafields.custom.how_it_works.value | newline_to_br }}</p>
-          </article>
+        {%- if p != blank -%}
+          {%- capture dir_text -%}{%- render 'product-directions', p: p -%}{%- endcapture -%}
+          {%- assign dir_text = dir_text | strip -%}
+          {%- if dir_text != blank -%}
+            <article {{ block.shopify_attributes }}>
+              <h3>{{ p.title }}</h3>
+              <p>{{ dir_text | escape | newline_to_br }}</p>
+            </article>
+          {%- endif -%}
         {%- endif -%}
       {%- endfor -%}
     </div>

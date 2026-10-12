@@ -1,0 +1,23 @@
+{%- comment -%}
+  One product's directions inside the "How to take it" card. If Enhanced Support is on for this product and its
+  label has an enhanced direction, the label text is shown as two blocks (Daily Support, Enhanced Support);
+  otherwise the label text is shown as is. The two blocks are just the label sentence cut at "For enhanced support,",
+  so together they read exactly like the label. Static content: nothing here reads or changes the purchase options.
+{%- endcomment -%}
+{%- capture dir_text -%}{%- render 'product-directions', p: p -%}{%- endcapture -%}
+{%- assign dir_text = dir_text | strip -%}
+{%- if dir_text != blank -%}
+  <div class="how-to-take__item">
+    {%- if show_title -%}<h3>{{ p.title }}</h3>{%- endif -%}
+    {%- assign enhanced_marker = 'For enhanced support, ' -%}
+    {%- if show_enhanced and dir_text contains enhanced_marker -%}
+      {%- assign dir_parts = dir_text | split: enhanced_marker -%}
+      <div class="how-to-take__grid">
+        <div><span class="eyebrow">Daily Support</span><p>{{ dir_parts[0] | strip | escape }}</p></div>
+        <div><span class="eyebrow">Enhanced Support</span><p>{{ enhanced_marker | append: dir_parts[1] | strip | escape }}</p></div>
+      </div>
+    {%- else -%}
+      <p>{{ dir_text | escape | newline_to_br }}</p>
+    {%- endif -%}
+  </div>
+{%- endif -%}

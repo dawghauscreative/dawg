@@ -1,0 +1,7 @@
+{%- comment -%}
+  Prints a product's label directions as plain text, word for word. Reads custom.directions (rich text) and
+  falls back to the older custom.how_it_works text if the new field is empty. Nothing is added or reworded.
+  Usage: {%- capture dir_text -%}{%- render 'product-directions', p: some_product -%}{%- endcapture -%}
+{%- endcomment -%}
+{%- assign dir_mf = p.metafields.custom.directions -%}
+{%- if dir_mf != blank -%}{{- dir_mf | metafield_text -}}{%- else -%}{{- p.metafields.custom.how_it_works.value -}}{%- endif -%}

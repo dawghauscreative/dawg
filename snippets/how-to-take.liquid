@@ -1,0 +1,42 @@
+{%- comment -%}
+  "How to take it" card under the product gallery. Label directions come word for word from each product's
+  custom.directions (a bundle reads its components, so the copy lives in one place). Enhanced Support blocks show only
+  for the product handles listed in enhanced_products, and the supply line only when one of them is shown and the
+  page's custom.supply_line metafield has text. Everything is empty and hidden when there is nothing to show.
+  Usage: {% render 'how-to-take', product: product, heading: 'How to take it', enhanced_products: 'uv-shield' %}
+{%- endcomment -%}
+{%- assign components = product.metafields.custom.bundle_components.value -%}
+{%- assign enhanced_list = enhanced_products | replace: ' ', '' | downcase | split: ',' -%}
+{%- assign has_text = false -%}
+{%- assign shows_enhanced = false -%}
+{%- if components != blank -%}
+  {%- for c in components -%}
+    {%- capture t -%}{%- render 'product-directions', p: c -%}{%- endcapture -%}
+    {%- if t != blank -%}{%- assign has_text = true -%}{%- endif -%}
+    {%- if enhanced_list contains c.handle and t contains 'For enhanced support, ' -%}{%- assign shows_enhanced = true -%}{%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- capture t -%}{%- render 'product-directions', p: product -%}{%- endcapture -%}
+  {%- if t != blank -%}{%- assign has_text = true -%}{%- endif -%}
+  {%- if enhanced_list contains product.handle and t contains 'For enhanced support, ' -%}{%- assign shows_enhanced = true -%}{%- endif -%}
+{%- endif -%}
+{%- if has_text -%}
+<aside class="how-to-take">
+  {%- if heading != blank -%}<h2>{{ heading }}</h2>{%- endif -%}
+  {%- if components != blank -%}
+    {%- for c in components -%}
+      {%- assign item_enhanced = false -%}
+      {%- if enhanced_list contains c.handle -%}{%- assign item_enhanced = true -%}{%- endif -%}
+      {%- render 'how-to-take-item', p: c, show_title: true, show_enhanced: item_enhanced -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign item_enhanced = false -%}
+    {%- if enhanced_list contains product.handle -%}{%- assign item_enhanced = true -%}{%- endif -%}
+    {%- render 'how-to-take-item', p: product, show_title: false, show_enhanced: item_enhanced -%}
+  {%- endif -%}
+  {%- if shows_enhanced and product.metafields.custom.supply_line != blank -%}
+    <p class="how-to-take__supply">{{ product.metafields.custom.supply_line.value | escape }}</p>
+  {%- endif -%}
+  <p class="how-to-take__caution small">Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.</p>
+</aside>
+{%- endif -%}
