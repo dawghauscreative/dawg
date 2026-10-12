@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -23,17 +32,14 @@
         "eyebrow": "Featured",
         "heading": "What Is Internal Skin Health?",
         "deck": "Topical skincare is only one part of the picture. Learn how nutrition, oxidative stress, the microbiome, immune signaling, and the environment interact with the skin from within.",
+        "blog_handle": "skin-edu",
         "article": "what-is-internal-skin-health",
-        "cta_label": "Read the article"
+        "cta_label": "Read the article",
+        "image": "shopify://shop_images/alchemia-brand-guidelines-p033-image03_7b4538b1-d652-4fe6-b39e-449fb41b8e76.png"
       }
     },
     "topics": {
       "type": "edu-topics",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "Browse",
-        "heading": "Explore Skin Edu"
-      },
       "blocks": {
         "b1": {
           "type": "topic",
@@ -91,25 +97,27 @@
         "b4",
         "b5",
         "b6"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "Browse",
+        "heading": "Explore Skin Edu",
+        "body": "",
+        "blog_handle": "skin-edu"
+      }
     },
     "latest": {
       "type": "edu-articles",
-      "settings": {
-        "color_scheme": "light",
-        "anchor": "latest",
-        "eyebrow": "Latest",
-        "heading": "New from Skin Edu",
-        "columns": "3"
-      },
       "blocks": {
         "b1": {
           "type": "article",
           "settings": {
             "asset": "edu-card-internal-skin-defense.webp",
+            "category": "",
             "title": "What Is Internal Skin Defense?",
             "teaser": "Skin health is shaped by more than what happens on the surface.",
             "article": "what-is-internal-skin-defense-alchemia-md",
+            "url": "",
             "cta_label": "Read the guide"
           }
         },
@@ -117,18 +125,24 @@
           "type": "article",
           "settings": {
             "asset": "edu-card-gut-skin-axis.webp",
+            "category": "",
             "title": "What Is the Gut-Skin Axis?",
             "teaser": "How the intestinal environment and skin communicate.",
-            "article": "what-is-the-gut-skin-axis"
+            "article": "what-is-the-gut-skin-axis",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b3": {
           "type": "article",
           "settings": {
             "asset": "edu-card-consistency.webp",
+            "category": "",
             "title": "Why Consistency Matters in Skin Health",
             "teaser": "Understanding renewal, daily habits, and realistic expectations.",
-            "article": "why-consistency-matters-in-skin-health"
+            "article": "why-consistency-matters-in-skin-health",
+            "url": "",
+            "cta_label": "Read article"
           }
         }
       },
@@ -136,67 +150,92 @@
         "b1",
         "b2",
         "b3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "anchor": "latest",
+        "eyebrow": "Latest",
+        "heading": "New from Skin Edu",
+        "body": "",
+        "columns": "3",
+        "blog_handle": "skin-edu",
+        "button_label": "",
+        "button_url": ""
+      }
     },
     "start": {
       "type": "edu-articles",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "Skin health 101",
-        "heading": "New to internal skin health? Start here.",
-        "columns": "3",
-        "button_label": "Explore Skin Health 101",
-        "button_url": "/blogs/skin-edu/tagged/beginner"
-      },
       "blocks": {
         "b1": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "01",
             "title": "Skin Is a Living System",
-            "teaser": "How skin continually renews, adapts, and responds to its environment."
+            "teaser": "How skin continually renews, adapts, and responds to its environment.",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b2": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "02",
             "title": "What Does “Skin Health From Within” Actually Mean?",
-            "teaser": "The relationship between nutrition and normal skin biology."
+            "teaser": "The relationship between nutrition and normal skin biology.",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b3": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "03",
             "title": "Oxidative Stress, Explained Simply",
-            "teaser": "What oxidative stress is and why antioxidant systems matter."
+            "teaser": "What oxidative stress is and why antioxidant systems matter.",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b4": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "04",
             "title": "What Is the Skin Barrier?",
-            "teaser": "A dermatologist-level concept explained without jargon."
+            "teaser": "A dermatologist-level concept explained without jargon.",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b5": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "05",
             "title": "The Gut-Skin Axis, Explained",
             "teaser": "How the intestinal environment and skin communicate.",
-            "article": "what-is-the-gut-skin-axis"
+            "article": "what-is-the-gut-skin-axis",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b6": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "06",
             "title": "Why Consistency Matters More Than Quick Fixes",
             "teaser": "How daily routines fit into long-term skin support.",
-            "article": "why-consistency-matters-in-skin-health"
+            "article": "why-consistency-matters-in-skin-health",
+            "url": "",
+            "cta_label": "Read article"
           }
         }
       },
@@ -207,73 +246,116 @@
         "b4",
         "b5",
         "b6"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "anchor": "",
+        "eyebrow": "Skin health 101",
+        "heading": "New to internal skin health? Start here.",
+        "body": "",
+        "columns": "3",
+        "blog_handle": "skin-edu",
+        "button_label": "Explore Skin Health 101",
+        "button_url": "/blogs/skin-edu/tagged/beginner"
+      }
     },
     "sun": {
       "type": "edu-articles",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "Sun + environment",
-        "heading": "Understand the environment your skin lives in.",
-        "columns": "4",
-        "button_label": "Explore Sun + Environment",
-        "button_url": "/blogs/skin-edu/tagged/sun-environment"
-      },
       "blocks": {
         "b1": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Sun + environment",
-            "title": "How Does UV Exposure Affect Skin?"
+            "title": "How Does UV Exposure Affect Skin?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b2": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Sun + environment",
-            "title": "UVA vs. UVB: What’s the Difference?"
+            "title": "UVA vs. UVB: What’s the Difference?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b3": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Sun + environment",
-            "title": "Sunscreen 101: What Broad Spectrum Actually Means"
+            "title": "Sunscreen 101: What Broad Spectrum Actually Means",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b4": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Sun + environment",
-            "title": "Why Sunscreen Is Still Essential"
+            "title": "Why Sunscreen Is Still Essential",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b5": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Sun + environment",
-            "title": "What Is Oxidative Stress in Skin?"
+            "title": "What Is Oxidative Stress in Skin?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b6": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Sun + environment",
-            "title": "Sun Protection Beyond Sunscreen"
+            "title": "Sun Protection Beyond Sunscreen",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b7": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Sun + environment",
-            "title": "Does Nutrition Replace Sunscreen?"
+            "title": "Does Nutrition Replace Sunscreen?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b8": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Sun + environment",
-            "title": "What Outdoor Athletes Should Know About Skin Health"
+            "title": "What Outdoor Athletes Should Know About Skin Health",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         }
       },
@@ -286,81 +368,128 @@
         "b6",
         "b7",
         "b8"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "anchor": "",
+        "eyebrow": "Sun + environment",
+        "heading": "Understand the environment your skin lives in.",
+        "body": "",
+        "columns": "4",
+        "blog_handle": "skin-edu",
+        "button_label": "Explore Sun + Environment",
+        "button_url": "/blogs/skin-edu/tagged/sun-environment"
+      }
     },
     "gut": {
       "type": "edu-articles",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "Gut + skin",
-        "heading": "Your skin does not exist in isolation.",
-        "columns": "4",
-        "button_label": "Explore Gut + Skin",
-        "button_url": "/blogs/skin-edu/tagged/gut-skin"
-      },
       "blocks": {
         "b1": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gut + skin",
             "title": "What Is the Gut-Skin Axis?",
-            "article": "what-is-the-gut-skin-axis"
+            "teaser": "",
+            "article": "what-is-the-gut-skin-axis",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b2": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gut + skin",
-            "title": "What Is the Microbiome?"
+            "title": "What Is the Microbiome?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b3": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gut + skin",
-            "title": "Prebiotic vs. Probiotic: What’s the Difference?"
+            "title": "Prebiotic vs. Probiotic: What’s the Difference?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b4": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gut + skin",
-            "title": "What Is a Synbiotic?"
+            "title": "What Is a Synbiotic?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b5": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gut + skin",
-            "title": "What Are Short-Chain Fatty Acids?"
+            "title": "What Are Short-Chain Fatty Acids?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b6": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gut + skin",
-            "title": "How Gut Microbes Communicate With the Body"
+            "title": "How Gut Microbes Communicate With the Body",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b7": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gut + skin",
-            "title": "What Does “Microbiome Balance” Actually Mean?"
+            "title": "What Does “Microbiome Balance” Actually Mean?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b8": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gut + skin",
-            "title": "Is Every Probiotic the Same?"
+            "title": "Is Every Probiotic the Same?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b9": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gut + skin",
-            "title": "What Is Akkermansia?"
+            "title": "What Is Akkermansia?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         }
       },
@@ -374,17 +503,21 @@
         "b7",
         "b8",
         "b9"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "anchor": "",
+        "eyebrow": "Gut + skin",
+        "heading": "Your skin does not exist in isolation.",
+        "body": "",
+        "columns": "4",
+        "blog_handle": "skin-edu",
+        "button_label": "Explore Gut + Skin",
+        "button_url": "/blogs/skin-edu/tagged/gut-skin"
+      }
     },
     "ingredients": {
       "type": "edu-ingredients",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Know what you’re taking",
-        "heading": "The ingredient library",
-        "button_label": "Browse all ingredients",
-        "button_url": "/pages/science"
-      },
       "blocks": {
         "b1": {
           "type": "ingredient",
@@ -392,7 +525,8 @@
             "name": "Niacinamide",
             "text": "What it is, why it is used, and what the research examines.",
             "formulas": "UV Shield+ / Dermaboost+",
-            "link": "/pages/science#niacinamide"
+            "link": "/pages/science#niacinamide",
+            "link_label": "See the research"
           }
         },
         "b2": {
@@ -401,7 +535,8 @@
             "name": "Polypodium leucotomos",
             "text": "What it is, why dermatology researchers study it, and how it relates to environmental exposure.",
             "formulas": "UV Shield+",
-            "link": "/pages/science#polypodium-leucotomos"
+            "link": "/pages/science#polypodium-leucotomos",
+            "link_label": "See the research"
           }
         },
         "b3": {
@@ -410,7 +545,8 @@
             "name": "EGCG",
             "text": "Green-tea polyphenol biology.",
             "formulas": "UV Shield+",
-            "link": "/pages/science#egcg"
+            "link": "/pages/science#egcg",
+            "link_label": "See the research"
           }
         },
         "b4": {
@@ -419,7 +555,8 @@
             "name": "Resveratrol",
             "text": "Plant-polyphenol research.",
             "formulas": "UV Shield+",
-            "link": "/pages/science#resveratrol"
+            "link": "/pages/science#resveratrol",
+            "link_label": "See the research"
           }
         },
         "b5": {
@@ -428,7 +565,8 @@
             "name": "Spirulina",
             "text": "Nutritional and antioxidant profile.",
             "formulas": "UV Shield+",
-            "link": "/pages/science#spirulina"
+            "link": "/pages/science#spirulina",
+            "link_label": "See the research"
           }
         },
         "b6": {
@@ -437,7 +575,8 @@
             "name": "Inulin",
             "text": "Prebiotic-fiber biology.",
             "formulas": "Skinbiotic+",
-            "link": "/pages/science#inulin"
+            "link": "/pages/science#inulin",
+            "link_label": "See the research"
           }
         },
         "b7": {
@@ -446,7 +585,8 @@
             "name": "Lactobacillus",
             "text": "Probiotic biology and why strain specificity matters.",
             "formulas": "Skinbiotic+",
-            "link": "/pages/science#lactobacillus"
+            "link": "/pages/science#lactobacillus",
+            "link_label": "See the research"
           }
         },
         "b8": {
@@ -455,7 +595,8 @@
             "name": "Bifidobacterium",
             "text": "Microbiome and intestinal-health research.",
             "formulas": "Skinbiotic+",
-            "link": "/pages/science#bifidobacterium"
+            "link": "/pages/science#bifidobacterium",
+            "link_label": "See the research"
           }
         },
         "b9": {
@@ -464,7 +605,8 @@
             "name": "Akkermansia",
             "text": "Emerging microbiome science.",
             "formulas": "Skinbiotic+",
-            "link": "/pages/science#akkermansia"
+            "link": "/pages/science#akkermansia",
+            "link_label": "See the research"
           }
         },
         "b10": {
@@ -473,7 +615,8 @@
             "name": "Vitamin D3",
             "text": "Normal physiological and immune roles.",
             "formulas": "Dermaboost+",
-            "link": "/pages/science#vitamin-d3"
+            "link": "/pages/science#vitamin-d3",
+            "link_label": "See the research"
           }
         },
         "b11": {
@@ -482,7 +625,8 @@
             "name": "Vitamin C",
             "text": "Antioxidant physiology and normal collagen synthesis.",
             "formulas": "Dermaboost+",
-            "link": "/pages/science#vitamin-c"
+            "link": "/pages/science#vitamin-c",
+            "link_label": "See the research"
           }
         },
         "b12": {
@@ -491,7 +635,8 @@
             "name": "Zinc",
             "text": "Essential mineral biology.",
             "formulas": "Dermaboost+",
-            "link": "/pages/science#zinc"
+            "link": "/pages/science#zinc",
+            "link_label": "See the research"
           }
         },
         "b13": {
@@ -500,7 +645,8 @@
             "name": "Quercetin",
             "text": "Flavonoid biology.",
             "formulas": "Dermaboost+",
-            "link": "/pages/science#quercetin"
+            "link": "/pages/science#quercetin",
+            "link_label": "See the research"
           }
         },
         "b14": {
@@ -509,7 +655,8 @@
             "name": "Curcumin",
             "text": "Botanical polyphenol research and bioavailability.",
             "formulas": "Dermaboost+",
-            "link": "/pages/science#curcumin"
+            "link": "/pages/science#curcumin",
+            "link_label": "See the research"
           }
         },
         "b15": {
@@ -518,7 +665,8 @@
             "name": "Olive leaf",
             "text": "Polyphenol profile and research.",
             "formulas": "Dermaboost+",
-            "link": "/pages/science#dermaboost"
+            "link": "/pages/science#dermaboost",
+            "link_label": "See the research"
           }
         },
         "b16": {
@@ -527,7 +675,8 @@
             "name": "Astaxanthin",
             "text": "Carotenoid antioxidant research.",
             "formulas": "Dermaboost+",
-            "link": "/pages/science#astaxanthin"
+            "link": "/pages/science#astaxanthin",
+            "link_label": "See the research"
           }
         }
       },
@@ -548,80 +697,126 @@
         "b14",
         "b15",
         "b16"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "Know what you’re taking",
+        "heading": "The ingredient library",
+        "body": "",
+        "formulas": "UV Shield+, Skinbiotic+, Dermaboost+",
+        "button_label": "Browse all ingredients",
+        "button_url": "/pages/science"
+      }
     },
     "ask": {
       "type": "edu-articles",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "Ask Dr. Mia",
-        "heading": "Questions you’d ask your dermatologist.",
-        "columns": "4",
-        "button_label": "Read Ask the Derm",
-        "button_url": "/blogs/skin-edu/tagged/ask-the-derm"
-      },
       "blocks": {
         "b1": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Ask Dr. Mia",
-            "title": "Do I Really Need Sunscreen Every Day?"
+            "title": "Do I Really Need Sunscreen Every Day?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b2": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Ask Dr. Mia",
-            "title": "Can Supplements Replace a Good Diet?"
+            "title": "Can Supplements Replace a Good Diet?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b3": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Ask Dr. Mia",
-            "title": "Does Skin Really Renew Every 28 Days?"
+            "title": "Does Skin Really Renew Every 28 Days?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b4": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Ask Dr. Mia",
-            "title": "Should I Take Multiple Skin Supplements?"
+            "title": "Should I Take Multiple Skin Supplements?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b5": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Ask Dr. Mia",
-            "title": "Is More Antioxidant Support Always Better?"
+            "title": "Is More Antioxidant Support Always Better?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b6": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Ask Dr. Mia",
-            "title": "What Should I Look for on a Supplement Label?"
+            "title": "What Should I Look for on a Supplement Label?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b7": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Ask Dr. Mia",
-            "title": "How Long Should I Give a Skin-Health Routine?"
+            "title": "How Long Should I Give a Skin-Health Routine?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b8": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Ask Dr. Mia",
-            "title": "What Does Dermatologist-Formulated Actually Mean?"
+            "title": "What Does Dermatologist-Formulated Actually Mean?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b9": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Ask Dr. Mia",
-            "title": "What Is the Difference Between Evidence and Marketing?"
+            "title": "What Is the Difference Between Evidence and Marketing?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         }
       },
@@ -635,73 +830,116 @@
         "b7",
         "b8",
         "b9"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "anchor": "",
+        "eyebrow": "Ask Dr. Mia",
+        "heading": "Questions you’d ask your dermatologist.",
+        "body": "",
+        "columns": "4",
+        "blog_handle": "skin-edu",
+        "button_label": "Read Ask the Derm",
+        "button_url": "/blogs/skin-edu/tagged/ask-the-derm"
+      }
     },
     "research": {
       "type": "edu-articles",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Read the research without the jargon",
-        "heading": "Research, translated.",
-        "columns": "4",
-        "button_label": "Understand the research",
-        "button_url": "/blogs/skin-edu/tagged/research-explained"
-      },
       "blocks": {
         "b1": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Research explained",
-            "title": "What Does “Randomized Controlled Trial” Mean?"
+            "title": "What Does “Randomized Controlled Trial” Mean?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b2": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Research explained",
-            "title": "Human Study vs. Lab Study"
+            "title": "Human Study vs. Lab Study",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b3": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Research explained",
-            "title": "Why Dosage Matters"
+            "title": "Why Dosage Matters",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b4": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Research explained",
-            "title": "What Does “Statistically Significant” Mean?"
+            "title": "What Does “Statistically Significant” Mean?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b5": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Research explained",
-            "title": "Ingredient Study vs. Finished Formula Study"
+            "title": "Ingredient Study vs. Finished Formula Study",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b6": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Research explained",
-            "title": "Why One Probiotic Strain Does Not Prove Another Works"
+            "title": "Why One Probiotic Strain Does Not Prove Another Works",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b7": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Research explained",
-            "title": "What Is a Systematic Review?"
+            "title": "What Is a Systematic Review?",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b8": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Research explained",
-            "title": "Why Mixed Results Are Still Useful"
+            "title": "Why Mixed Results Are Still Useful",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         }
       },
@@ -714,23 +952,30 @@
         "b6",
         "b7",
         "b8"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "anchor": "",
+        "eyebrow": "Read the research without the jargon",
+        "heading": "Research, translated.",
+        "body": "",
+        "columns": "4",
+        "blog_handle": "skin-edu",
+        "button_label": "Understand the research",
+        "button_url": "/blogs/skin-edu/tagged/research-explained"
+      }
     },
     "formulas": {
       "type": "edu-articles",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "From education to routine",
-        "heading": "See how the science informs the formulas.",
-        "columns": "3"
-      },
       "blocks": {
         "b1": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Protect",
             "title": "UV Shield+",
             "teaser": "Learn why its five ingredients were selected and how they fit into environmental-support biology.",
+            "article": "",
             "url": "/products/uv-shield",
             "cta_label": "Explore UV Shield+"
           }
@@ -738,9 +983,11 @@
         "b2": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Balance",
             "title": "Skinbiotic+",
             "teaser": "Learn how its synbiotic formula fits into the gut-skin framework.",
+            "article": "",
             "url": "/products/skinbiotic",
             "cta_label": "Explore Skinbiotic+"
           }
@@ -748,9 +995,11 @@
         "b3": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Restore",
             "title": "Dermaboost+",
             "teaser": "Learn how its nutrient and botanical network fits into broader antioxidant and normal immune support.",
+            "article": "",
             "url": "/products/dermaboost",
             "cta_label": "Explore Dermaboost+"
           }
@@ -760,73 +1009,116 @@
         "b1",
         "b2",
         "b3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "anchor": "",
+        "eyebrow": "From education to routine",
+        "heading": "See how the science informs the formulas.",
+        "body": "",
+        "columns": "3",
+        "blog_handle": "skin-edu",
+        "button_label": "",
+        "button_url": ""
+      }
     },
     "outdoor": {
       "type": "edu-articles",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "Skin in the real world",
-        "heading": "Skin health for life outdoors.",
-        "columns": "4",
-        "button_label": "Explore outdoor life",
-        "button_url": "/blogs/skin-edu/tagged/outdoor-life"
-      },
       "blocks": {
         "b1": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Golf",
-            "title": "A Dermatologist’s Guide to Skin Health on the Golf Course"
+            "title": "A Dermatologist’s Guide to Skin Health on the Golf Course",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b2": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Tennis",
-            "title": "What Hours on Court Mean for Your Sun Routine"
+            "title": "What Hours on Court Mean for Your Sun Routine",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b3": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Sailing",
-            "title": "Sun, Water, and Reflected UV: What to Know"
+            "title": "Sun, Water, and Reflected UV: What to Know",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b4": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Cycling",
-            "title": "Building a Skin-Health Routine for Long Rides"
+            "title": "Building a Skin-Health Routine for Long Rides",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b5": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Running",
-            "title": "Sun Protection for Outdoor Runners"
+            "title": "Sun Protection for Outdoor Runners",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b6": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Skiing",
-            "title": "Why Cold Weather Does Not Mean No UV Exposure"
+            "title": "Why Cold Weather Does Not Mean No UV Exposure",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b7": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Travel",
-            "title": "How to Keep Your Skin Routine Consistent While Traveling"
+            "title": "How to Keep Your Skin Routine Consistent While Traveling",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b8": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "Gardening",
-            "title": "Everyday Outdoor Exposure Counts Too"
+            "title": "Everyday Outdoor Exposure Counts Too",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         }
       },
@@ -839,52 +1131,80 @@
         "b6",
         "b7",
         "b8"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "anchor": "",
+        "eyebrow": "Skin in the real world",
+        "heading": "Skin health for life outdoors.",
+        "body": "",
+        "columns": "4",
+        "blog_handle": "skin-edu",
+        "button_label": "Explore outdoor life",
+        "button_url": "/blogs/skin-edu/tagged/outdoor-life"
+      }
     },
     "picks": {
       "type": "edu-articles",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Curated by Dr. Mia",
-        "heading": "Worth reading.",
-        "columns": "3"
-      },
       "blocks": {
         "b1": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "01",
             "title": "What Is Internal Skin Health?",
-            "article": "what-is-internal-skin-health"
+            "teaser": "",
+            "article": "what-is-internal-skin-health",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b2": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "02",
-            "title": "Why Sunscreen Still Matters"
+            "title": "Why Sunscreen Still Matters",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b3": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "03",
             "title": "The Gut-Skin Axis, Explained",
-            "article": "what-is-the-gut-skin-axis"
+            "teaser": "",
+            "article": "what-is-the-gut-skin-axis",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b4": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "04",
-            "title": "How to Read a Supplement Label"
+            "title": "How to Read a Supplement Label",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         },
         "b5": {
           "type": "article",
           "settings": {
+            "asset": "",
             "category": "05",
-            "title": "Ingredient Study vs. Product Proof"
+            "title": "Ingredient Study vs. Product Proof",
+            "teaser": "",
+            "article": "",
+            "url": "",
+            "cta_label": "Read article"
           }
         }
       },
@@ -894,20 +1214,34 @@
         "b3",
         "b4",
         "b5"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "anchor": "",
+        "eyebrow": "Curated by Dr. Mia",
+        "heading": "Worth reading.",
+        "body": "",
+        "columns": "3",
+        "blog_handle": "skin-edu",
+        "button_label": "",
+        "button_url": ""
+      }
     },
     "all": {
       "type": "main-blog",
       "settings": {
         "color_scheme": "light",
         "eyebrow": "Skin Edu",
-        "heading": "All articles"
+        "heading": "All articles",
+        "empty_text": "New articles are on the way."
       }
     },
     "email": {
       "type": "email-capture",
       "settings": {
         "color_scheme": "green",
+        "hide_on_home": false,
+        "eyebrow": "",
         "heading": "Better skin decisions start with better information.",
         "body": "<p>Get dermatologist-led skin education, ingredient explainers, research breakdowns, and new Skin Edu articles delivered to your inbox.</p>",
         "placeholder": "Email address",
@@ -919,13 +1253,17 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
+        "product": "",
         "eyebrow": "Keep learning",
         "heading": "Understand the science behind your routine.",
         "body": "",
         "button_label": "Explore the science",
         "button_url": "/pages/science",
         "secondary_label": "Find your formula",
-        "secondary_url": "/collections/individual-products"
+        "secondary_url": "/collections/individual-products",
+        "note": "",
+        "asset": "",
+        "light_panel": false
       }
     }
   },
