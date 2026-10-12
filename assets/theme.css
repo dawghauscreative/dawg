@@ -937,3 +937,7 @@ body.template-blog.is-filtered main > .shopify-section:not(:has(.blog-listing)) 
 
 /* Portrait article images keep faces in frame when shown in the wide article header */
 .edu-article__image img { object-position: 50% 15%; }
+
+/* Skin Edu ingredient library: the search and formula filter hide cards with the hidden attribute,
+   which the card's display:grid was overriding, so nothing ever disappeared. */
+.edu-card[hidden], .sci-lib__empty[hidden] { display: none !important; }
