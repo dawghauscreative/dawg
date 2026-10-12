@@ -197,3 +197,45 @@
     if (search) search.addEventListener('input', apply);
   });
 })();
+
+/* Video slots: autoplay muted and looping while in view, with a button to turn sound on.
+   Respects reduced motion (no autoplay, normal controls) and pauses when scrolled out of view. */
+(function () {
+  var frames = document.querySelectorAll('.video-frame');
+  if (!frames.length) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  frames.forEach(function (frame) {
+    var video = frame.querySelector('video[autoplay], video[loop]');
+    var btn = frame.querySelector('[data-video-sound]');
+    if (!video || !btn) return;
+    var label = btn.querySelector('[data-video-sound-label]');
+    if (reduce) {
+      video.removeAttribute('autoplay');
+      video.pause();
+      video.controls = true;
+      return;
+    }
+    btn.hidden = false;
+    function sync() {
+      var on = !video.muted;
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.setAttribute('aria-label', on ? 'Turn sound off' : 'Turn sound on');
+      btn.classList.toggle('is-on', on);
+      if (label) label.textContent = on ? 'Sound off' : 'Sound on';
+    }
+    btn.addEventListener('click', function () {
+      video.muted = !video.muted;
+      if (!video.muted) { video.volume = 1; var p = video.play(); if (p && p.catch) p.catch(function () {}); }
+      sync();
+    });
+    sync();
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { var p = video.play(); if (p && p.catch) p.catch(function () {}); }
+          else video.pause();
+        });
+      }, { threshold: 0.25 }).observe(frame);
+    }
+  });
+})();

@@ -36,12 +36,27 @@
       <div class="video-frame {{ ratio_class }} {{ frame_class }}">
         {%- if section.settings.video != blank -%}
           {%- if section.settings.autoplay -%}
-            {{- section.settings.video | video_tag: image_size: '1280x', autoplay: true, loop: true, muted: true, controls: false, playsinline: true, class: 'video-frame__media', title: section.settings.video_title -}}
+            {{- section.settings.video | video_tag: image_size: '1280x', autoplay: true, loop: true, muted: true, controls: false, playsinline: true, preload: 'metadata', class: 'video-frame__media', title: section.settings.video_title -}}
+            <button type="button" class="video-sound" data-video-sound aria-pressed="false" aria-label="Turn sound on" hidden>
+              <svg class="video-sound__off" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="m16 9 5 6m0-6-5 6"/></svg>
+              <svg class="video-sound__on" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+              <span class="video-sound__label" data-video-sound-label>Sound on</span>
+            </button>
           {%- else -%}
             {{- section.settings.video | video_tag: image_size: '1280x', controls: true, preload: 'none', playsinline: true, class: 'video-frame__media', title: section.settings.video_title -}}
           {%- endif -%}
         {%- elsif section.settings.video_url != blank -%}
-          {{- section.settings.video_url | external_video_tag: class: 'video-frame__media', loading: 'lazy', title: section.settings.video_title -}}
+          {%- liquid
+            assign vid = section.settings.video_url.id
+            assign vtype = section.settings.video_url.type
+          -%}
+          {%- if section.settings.autoplay and vtype == 'youtube' -%}
+            <iframe class="video-frame__media" src="https://www.youtube.com/embed/{{ vid }}?autoplay=1&mute=1&loop=1&playlist={{ vid }}&playsinline=1&rel=0&modestbranding=1" title="{{ section.settings.video_title | escape }}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe>
+          {%- elsif section.settings.autoplay and vtype == 'vimeo' -%}
+            <iframe class="video-frame__media" src="https://player.vimeo.com/video/{{ vid }}?autoplay=1&muted=1&loop=1&playsinline=1&title=0&byline=0&portrait=0" title="{{ section.settings.video_title | escape }}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          {%- else -%}
+            {{- section.settings.video_url | external_video_tag: class: 'video-frame__media', loading: 'lazy', title: section.settings.video_title -}}
+          {%- endif -%}
         {%- else -%}
           <div class="video-frame__placeholder" role="img" aria-label="{{ section.settings.video_title | escape }}">
             <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="22"/><path d="M27 23.5 41 32 27 40.5Z"/></svg>
@@ -63,7 +78,7 @@
     { "type": "video", "id": "video", "label": "Shopify-hosted video", "info": "Upload a file that matches the aspect ratio above. Takes priority over the link below." },
     { "type": "video_url", "id": "video_url", "label": "YouTube or Vimeo link", "accept": ["youtube", "vimeo"] },
     { "type": "checkbox", "id": "tight_top", "label": "Remove the top spacing", "default": false, "info": "Use when this slot sits directly under another section with the same colour." },
-    { "type": "checkbox", "id": "autoplay", "label": "Autoplay, muted and looping (no controls)", "default": false, "info": "For short hero reels. Shopify-hosted video only." },
+    { "type": "checkbox", "id": "autoplay", "label": "Autoplay muted and looping, with a sound button", "default": true, "info": "Plays silently when in view; visitors can turn sound on. YouTube and Vimeo videos start muted and use their own volume control. Turn off to show normal play controls instead." },
     { "type": "text", "id": "video_title", "label": "Accessible title", "default": "Video", "info": "Read by screen readers. Describe the video." },
     { "type": "checkbox", "id": "show_placeholder", "label": "Show placeholder frame when no video is set", "default": true, "info": "Turn off before launch if a video is not ready." },
     { "type": "header", "content": "Text beside the video (optional)" },

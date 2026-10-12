@@ -946,3 +946,12 @@ body.template-blog.is-filtered main > .shopify-section:not(:has(.blog-listing)) 
 .sci-rcard[id] { scroll-margin-top: 110px; }
 a.edu-card[data-edu-ing] { text-decoration: none; color: inherit; }
 a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Video slot sound button (autoplay muted, tap to hear it) */
+.video-sound { position: absolute; right: 12px; bottom: 12px; z-index: 2; display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid rgba(255, 255, 255, .55); border-radius: 999px; background: rgba(0, 0, 0, .55); color: #fff; font-family: var(--font-callout); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; cursor: pointer; backdrop-filter: blur(6px); }
+.video-sound:hover, .video-sound:focus-visible { background: rgba(0, 0, 0, .78); }
+.video-sound[hidden] { display: none; }
+.video-sound svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.video-sound .video-sound__on { display: none; }
+.video-sound.is-on .video-sound__on { display: block; }
+.video-sound.is-on .video-sound__off { display: none; }

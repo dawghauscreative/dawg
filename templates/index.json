@@ -623,7 +623,7 @@
       "settings": {
         "color_scheme": "light",
         "aspect": "16x9",
-        "autoplay": false,
+        "autoplay": true,
         "video_title": "What is internal skin defense?",
         "show_placeholder": true,
         "tight_top": true
