@@ -21,7 +21,15 @@
             {%- if block.settings.tag != blank -%}<p class="sci-card__tag"><span>Research area</span> {{ block.settings.tag }}</p>{%- endif -%}
             {%- if block.settings.study != blank -%}
               {%- assign study_handles = block.settings.study | split: ',' -%}
-              {%- for sh in study_handles -%}{%- assign study_handle = sh | strip -%}{% render 'study-link', handle: study_handle, label: 'Read the research' %}{%- endfor -%}
+              {%- for sh in study_handles -%}
+                {%- assign study_handle = sh | strip -%}
+                {%- assign study_label = 'Read the research' -%}
+                {%- if study_handles.size > 1 -%}
+                  {%- assign study_obj = shop.metaobjects.research_study[study_handle] -%}
+                  {%- if study_obj.topic.value != blank -%}{%- assign study_label = 'Read the research: ' | append: study_obj.topic.value -%}{%- endif -%}
+                {%- endif -%}
+                {% render 'study-link', handle: study_handle, label: study_label %}
+              {%- endfor -%}
             {%- endif -%}
           </div>
         </article>

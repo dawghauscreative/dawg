@@ -337,3 +337,5 @@ Video slots autoplay muted (Oct 12): every video slot (home and all product page
 Complete Skin Defense gallery (Oct 12): removed the three-jars-on-white graphic (system-complete.webp) from the product gallery because the landscape image was cropped to the 4:5 frame, showing only a zoomed Skinbiotic+ jar. The image is still used on the Systems, Individual Products and home pages, where it fits.
 
 All product galleries (Oct 12): removed the wide system graphics (system-sun-safe, system-skin-recovery, system-sun-resilience, system-complete) from every product gallery, since the 4:5 gallery frame cropped them to a single zoomed jar. They remain on the Systems, Individual Products and home pages.
+
+Science page "Skin health is a system." (Oct 12): the Antioxidant and nutritional support card now has research links like the others, to two approved, link-checked studies of different antioxidant classes (rao-resveratrol-2025, a polyphenol; zhou-astaxanthin-meta-analysis-2021, a carotenoid). When a card lists more than one study, each link is labelled with its topic ("Read the research: Trans-resveratrol") so they are distinguishable.
