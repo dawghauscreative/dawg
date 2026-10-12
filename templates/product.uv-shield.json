@@ -82,7 +82,9 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "slide-d01-1.webp,slide-d02-1.webp,slide-d03-1.webp,slide-d04-1.webp,slide-d05-1.webp"
+        "gallery_assets": "slide-d01-1.webp,slide-d02-1.webp,slide-d03-1.webp,slide-d04-1.webp,slide-d05-1.webp",
+        "gallery_note_heading": "What is Enhanced Support?",
+        "gallery_note": "<p>The UV Shield+ label gives a standard daily direction and an enhanced-support direction. The Enhanced plans include additional product so you have enough supply to follow the enhanced-support direction printed on the label.</p><p>Choose the plan that fits how you take it. Always follow the directions on the product label, and talk with your healthcare professional before starting if you are pregnant, nursing, taking any medications, or have a medical condition.</p>"
       }
     },
     "definition": {
