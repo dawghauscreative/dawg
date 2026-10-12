@@ -955,3 +955,9 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .video-sound .video-sound__on { display: none; }
 .video-sound.is-on .video-sound__on { display: block; }
 .video-sound.is-on .video-sound__off { display: none; }
+
+/* Short explanation under the product gallery (e.g. what Enhanced Support means) */
+.pdp__gallery-note { margin-top: 28px; padding: 22px 24px; border: 1px solid var(--rule); background: var(--card); }
+.pdp__gallery-note h2 { font-size: 1.35rem; margin: 0 0 .6rem; }
+.pdp__gallery-note .prose { font-size: .95rem; max-width: none; }
+.pdp__gallery-note .prose p + p { margin-top: .8em; }

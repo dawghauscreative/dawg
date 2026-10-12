@@ -52,6 +52,12 @@
               {%- endfor -%}
             </div>
           {%- endif -%}
+          {%- if section.settings.gallery_note != blank -%}
+            <aside class="pdp__gallery-note">
+              {%- if section.settings.gallery_note_heading != blank -%}<h2>{{ section.settings.gallery_note_heading }}</h2>{%- endif -%}
+              <div class="prose">{{ section.settings.gallery_note }}</div>
+            </aside>
+          {%- endif -%}
         {%- else -%}
           {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
           {%- assign fallback_asset = fallback_capture | strip -%}
@@ -191,6 +197,8 @@
   "name": "Product hero",
   "tag": "div",
   "settings": [
+    { "type": "text", "id": "gallery_note_heading", "label": "Note under the gallery: heading", "info": "Optional. For a short explanation of a plan option, such as Enhanced Support. No prices or discounts here." },
+    { "type": "richtext", "id": "gallery_note", "label": "Note under the gallery: text" },
     { "type": "text", "id": "gallery_assets", "label": "Extra gallery graphics (theme asset filenames, comma separated)", "info": "Appended after the product media, e.g. slide-d01-1.webp, slide-d02-1.webp" },
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],
