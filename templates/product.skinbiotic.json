@@ -369,33 +369,6 @@
         "body": "<p>The skin barrier helps regulate water loss and acts as a boundary with the environment. Gut-skin research explores whether microbial signals and metabolites relate to barrier-supporting pathways.</p><p>This area is active and not settled. Skinbiotic+ is designed to support the intestinal environment; it is not a barrier product and does not make barrier claims.</p>"
       }
     },
-    "how": {
-      "type": "pdp-how-it-works",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Daily routine",
-        "heading": "How to take Skinbiotic+"
-      }
-    },
-    "routine": {
-      "type": "flow-steps",
-      "settings": {
-        "color_scheme": "dark",
-        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
-      },
-      "blocks": {
-        "b1": {
-          "type": "step",
-          "settings": {
-            "kicker": "Daily",
-            "label": "One (1) capsule with water."
-          }
-        }
-      },
-      "block_order": [
-        "b1"
-      ]
-    },
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
@@ -735,8 +708,6 @@
     "micro",
     "scfa",
     "barrier",
-    "how",
-    "routine",
     "timeline",
     "who",
     "supports",
