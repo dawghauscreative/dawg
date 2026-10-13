@@ -376,9 +376,9 @@
         "b5": {
           "type": "image",
           "settings": {
-            "label": "Everyday outdoor life",
-            "caption": "Walking, gardening, commuting, dining, and time outside.",
-            "asset": "lifestyle-outdoor-living.webp"
+            "label": "Skiing + mountain sports",
+            "caption": "Extended environmental exposure.",
+            "asset": "lifestyle-skiing.webp"
           }
         },
         "b6": {
