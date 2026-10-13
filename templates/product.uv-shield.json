@@ -419,7 +419,8 @@
           "type": "image",
           "settings": {
             "label": "Everyday outdoor life",
-            "caption": "Walking, gardening, dining, driving, and daily routines."
+            "caption": "Walking, gardening, dining, driving, and daily routines.",
+            "asset": "lifestyle-outdoor-living.webp"
           }
         }
       },

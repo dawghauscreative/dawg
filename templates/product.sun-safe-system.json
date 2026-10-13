@@ -398,7 +398,8 @@
           "type": "image",
           "settings": {
             "label": "Everyday outdoor life",
-            "caption": "Walking, gardening, commuting, dining, and time outside."
+            "caption": "Walking, gardening, commuting, dining, and time outside.",
+            "asset": "lifestyle-outdoor-living.webp"
           }
         }
       },
