@@ -1,0 +1,20 @@
+/*
+Theme Name: Independent Lasagna
+Theme URI: https://independentlasagna.com
+Author: Independent Lasagna Productions
+Author URI: https://independentlasagna.com
+Description: Custom theme for Independent Lasagna Productions — a food-and-travel-forward production company making original documentary series and client films about food, people, places, and culture. Modern, editorial redesign built from the ground up.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+Tested up to: 6.6
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: independent-lasagna
+Tags: one-column, custom-menu, custom-logo, featured-images, threaded-comments, translation-ready
+
+Independent Lasagna is not a subtheme; the stylesheet below is intentionally
+minimal — the real design system lives in assets/css/main.css and is loaded
+via wp_enqueue_style() in functions.php. This file exists to satisfy the
+WordPress theme header requirement.
+*/
