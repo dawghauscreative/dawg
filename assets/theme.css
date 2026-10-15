@@ -972,3 +972,6 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .how-to-take__explainer h3 { font-size: 1.15rem; margin: .9rem 0 .5rem; }
 .how-to-take__explainer .prose { font-size: .95rem; max-width: none; }
 .how-to-take__explainer .prose p + p { margin-top: .8em; }
+
+/* COA widget under the How to take it card */
+.coa-widget { margin-top: 24px; }

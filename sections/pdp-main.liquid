@@ -59,6 +59,7 @@
             </aside>
           {%- endif -%}
           {%- render 'how-to-take', product: product -%}
+          {%- render 'coa-widget', product: product -%}
         {%- else -%}
           {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
           {%- assign fallback_asset = fallback_capture | strip -%}

@@ -1,0 +1,14 @@
+{%- comment -%}
+  Certificate of analysis (COA) widget, shown right under the How to take it card (under the product gallery) on every product page.
+  TEMPORARY: it currently points at the example certificate below. To switch to the real one, set the product metafield
+  custom.coa_widget_id (Settings > Custom data > Products) to the real certificate id, or change coa_default_id here.
+  Set custom.coa_widget_id to "none" to hide the widget on a product. The widget script is hosted at the URL below.
+{%- endcomment -%}
+{%- assign coa_default_id = 'example-daily-foundation' -%}
+{%- assign coa_id = product.metafields.custom.coa_widget_id.value | default: coa_default_id | strip -%}
+{%- if coa_id != 'none' and coa_id != blank -%}
+<div class="coa-widget" aria-label="Certificate of analysis">
+  <div data-hs-coa="{{ coa_id | escape }}" data-theme="dark"></div>
+  <script src="https://dawghauscreative.github.io/HSCF_CERTS-MANAGER/hs-coa-widget.min.js"></script>
+</div>
+{%- endif -%}
