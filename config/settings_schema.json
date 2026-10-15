@@ -166,14 +166,15 @@
         "type": "text",
         "id": "support_email",
         "label": "Support email",
-        "default": "info@alchemiamd.com"
+        "default": "info@dermalchemistmd.com",
+        "info": "Matches the label."
       },
       {
         "type": "text",
         "id": "mailing_address",
         "label": "Mailing address",
-        "default": "PO Box 1556, Carmel, CA 93921",
-        "info": "PO Box only. Do not add a phone number, street address or support hours until provided."
+        "default": "3785 Via Nona Marie, Suite 108, PMB 1097, Carmel, CA 93923",
+        "info": "Matches the label. Do not add a phone number or support hours until provided."
       },
       {
         "type": "url",
