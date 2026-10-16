@@ -335,42 +335,6 @@
         "b3"
       ]
     },
-    "how": {
-      "type": "system-directions",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Daily routine",
-        "heading": "How to take Complete Skin Defense",
-        "body": "<p>Each formula retains its own labeled directions.</p>",
-        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.",
-        "show_slot": true
-      },
-      "blocks": {
-        "b1": {
-          "type": "product",
-          "settings": {
-            "product": "uv-shield"
-          }
-        },
-        "b2": {
-          "type": "product",
-          "settings": {
-            "product": "skinbiotic"
-          }
-        },
-        "b3": {
-          "type": "product",
-          "settings": {
-            "product": "dermaboost"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3"
-      ]
-    },
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
@@ -737,7 +701,6 @@
     "gut",
     "environment",
     "ingredients",
-    "how",
     "timeline",
     "supports",
     "compare",

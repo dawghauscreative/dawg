@@ -372,3 +372,6 @@ Tried moving "How to take it" above the Supr purchase box, then switched it back
 
 ### Mobile order for How to take it (Oct 16)
 Desktop is unchanged (card + COA widget under the gallery). On phones (<990px) the gallery-column copy is hidden and a second copy renders at the end of the info column, so the order is: gallery, title, description, buy box, then How to take it and the COA widget (`.pdp__extras--side` / `.pdp__extras--below` in `sections/pdp-main.liquid`, CSS in `assets/theme.css`). Edit the card's content in one place (product metafields and `snippets/how-to-take.liquid`); both copies follow.
+
+### Removed the duplicate "How to take" sections (Oct 16)
+The How to take it card under the gallery is now the only directions block on every product page. Removed the lower `how` section (and the `routine` daily-flow strip on UV Shield+ and Dermaboost+) from UV Shield+, Dermaboost+, Sun Safe, Sun Resilience, Skin Recovery and Complete Skin Defense, matching Skinbiotic+. The `pdp-how-it-works` and `system-directions` sections still exist in the theme for reuse.

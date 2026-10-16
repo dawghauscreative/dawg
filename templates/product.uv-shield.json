@@ -320,41 +320,6 @@
         "body": "<p>The skin barrier helps regulate water loss and acts as a physical interface with the outside world.</p><p>Skin-barrier biology involves lipids, proteins, hydration, and normal cellular turnover.</p><p>Niacinamide has been studied in relation to several aspects of barrier biology, which is one reason it serves as a foundational nutrient in the UV Shield+ formula.</p>"
       }
     },
-    "how": {
-      "type": "pdp-how-it-works",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "Daily routine",
-        "heading": "How to take UV Shield+"
-      }
-    },
-    "routine": {
-      "type": "flow-steps",
-      "settings": {
-        "color_scheme": "green",
-        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
-      },
-      "blocks": {
-        "b1": {
-          "type": "step",
-          "settings": {
-            "kicker": "Morning",
-            "label": "UV Shield+"
-          }
-        },
-        "b2": {
-          "type": "step",
-          "settings": {
-            "kicker": "Then",
-            "label": "Continue your normal sunscreen and sun-safety routine."
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2"
-      ]
-    },
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
@@ -658,8 +623,6 @@
     "together",
     "oxidative",
     "barrier",
-    "how",
-    "routine",
     "timeline",
     "who",
     "sunscreen",

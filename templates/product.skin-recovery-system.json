@@ -344,35 +344,6 @@
         "b2"
       ]
     },
-    "how": {
-      "type": "system-directions",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Daily routine",
-        "heading": "How to take the Skin Recovery System",
-        "body": "<p>Follow each product label separately.</p>",
-        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition.",
-        "show_slot": true
-      },
-      "blocks": {
-        "b1": {
-          "type": "product",
-          "settings": {
-            "product": "skinbiotic"
-          }
-        },
-        "b2": {
-          "type": "product",
-          "settings": {
-            "product": "dermaboost"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2"
-      ]
-    },
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
@@ -778,7 +749,6 @@
     "microbiome",
     "formula",
     "versus",
-    "how",
     "timeline",
     "who",
     "supports",

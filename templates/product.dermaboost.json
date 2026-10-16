@@ -375,41 +375,6 @@
         "quote": "Support for normal biology, without overpromising outcomes."
       }
     },
-    "how": {
-      "type": "pdp-how-it-works",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Daily routine",
-        "heading": "How to take Dermaboost+"
-      }
-    },
-    "routine": {
-      "type": "flow-steps",
-      "settings": {
-        "color_scheme": "dark",
-        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
-      },
-      "blocks": {
-        "b1": {
-          "type": "step",
-          "settings": {
-            "kicker": "Daily",
-            "label": "2 capsules, once daily"
-          }
-        },
-        "b2": {
-          "type": "step",
-          "settings": {
-            "kicker": "Enhanced support",
-            "label": "Follow the labeled direction above."
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2"
-      ]
-    },
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
@@ -741,8 +706,6 @@
     "immune",
     "barrier",
     "collagen",
-    "how",
-    "routine",
     "timeline",
     "who",
     "supports",

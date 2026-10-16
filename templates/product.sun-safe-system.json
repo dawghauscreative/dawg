@@ -306,34 +306,6 @@
         "b2"
       ]
     },
-    "how": {
-      "type": "system-directions",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Daily routine",
-        "heading": "How to take the Sun Safe System",
-        "body": "<p>Use each product exactly according to its own label.</p>",
-        "note": "Consult your healthcare professional before taking if you are pregnant, nursing, taking any medications or have a medical condition."
-      },
-      "blocks": {
-        "b1": {
-          "type": "product",
-          "settings": {
-            "product": "uv-shield"
-          }
-        },
-        "b2": {
-          "type": "product",
-          "settings": {
-            "product": "skinbiotic"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2"
-      ]
-    },
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
@@ -767,7 +739,6 @@
     "environment",
     "gut",
     "formula",
-    "how",
     "timeline",
     "who",
     "supports",
