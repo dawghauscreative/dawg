@@ -58,8 +58,10 @@
               <div class="prose">{{ section.settings.gallery_note }}</div>
             </aside>
           {%- endif -%}
-          {%- render 'how-to-take', product: product -%}
-          {%- render 'coa-widget', product: product -%}
+          <div class="pdp__extras pdp__extras--side">
+            {%- render 'how-to-take', product: product -%}
+            {%- render 'coa-widget', product: product -%}
+          </div>
         {%- else -%}
           {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
           {%- assign fallback_asset = fallback_capture | strip -%}
@@ -179,6 +181,13 @@
 
           {%- endcase -%}
         {%- endfor -%}
+        {%- comment -%} Phones: the card and COA widget follow the buy box. Desktop shows them under the gallery instead (the other copy is hidden by CSS). {%- endcomment -%}
+        {%- if featured != blank -%}
+          <div class="pdp__extras pdp__extras--below">
+            {%- render 'how-to-take', product: product -%}
+            {%- render 'coa-widget', product: product -%}
+          </div>
+        {%- endif -%}
       </div>
 
     </div>

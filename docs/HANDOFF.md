@@ -369,3 +369,6 @@ COA widget (Oct 15): the certificate of analysis widget (hosted script at dawgha
 
 ### How to take it placement (Oct 16)
 Tried moving "How to take it" above the Supr purchase box, then switched it back at the owner's request. It stays under the gallery thumbnails, followed by the COA widget (`sections/pdp-main.liquid`).
+
+### Mobile order for How to take it (Oct 16)
+Desktop is unchanged (card + COA widget under the gallery). On phones (<990px) the gallery-column copy is hidden and a second copy renders at the end of the info column, so the order is: gallery, title, description, buy box, then How to take it and the COA widget (`.pdp__extras--side` / `.pdp__extras--below` in `sections/pdp-main.liquid`, CSS in `assets/theme.css`). Edit the card's content in one place (product metafields and `snippets/how-to-take.liquid`); both copies follow.
