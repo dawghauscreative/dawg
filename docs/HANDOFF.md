@@ -367,5 +367,5 @@ Address and email (Oct 15 2026): the theme now matches the label. Mailing addres
 
 COA widget (Oct 15): the certificate of analysis widget (hosted script at dawghauscreative.github.io/HSCF_CERTS-MANAGER) shows on every product page directly under the How to take it card (snippets/coa-widget.liquid, one render line in pdp-main). TEMPORARY: it uses the example certificate id example-daily-foundation. To switch to the real certificates, set the product metafield custom.coa_widget_id on each product (Settings > Custom data > Products; enter none to hide it on a product), or change coa_default_id in the snippet. The widget lives in the gallery column, so it only shows when the product has a featured image (same as How to take it).
 
-### How to take it moved above the buy box (Oct 16)
-"How to take it" now renders in the right-hand info column directly above the Supr purchase box (`sections/pdp-main.liquid`, inside the `buy_buttons` block, before `.buy-box`). The COA widget stays under the gallery thumbnails. To move the card back, put the `{% render 'how-to-take', product: product %}` line back under the gallery (before the coa-widget render). No settings, metafields or Supr markup changed.
+### How to take it placement (Oct 16)
+Tried moving "How to take it" above the Supr purchase box, then switched it back at the owner's request. It stays under the gallery thumbnails, followed by the COA widget (`sections/pdp-main.liquid`).

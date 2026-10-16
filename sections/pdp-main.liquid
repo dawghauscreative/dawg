@@ -58,6 +58,7 @@
               <div class="prose">{{ section.settings.gallery_note }}</div>
             </aside>
           {%- endif -%}
+          {%- render 'how-to-take', product: product -%}
           {%- render 'coa-widget', product: product -%}
         {%- else -%}
           {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
@@ -119,7 +120,6 @@
               <div class="reviews-slot pdp__reviews" data-reviews-summary {{ block.shopify_attributes }}></div>
 
             {%- when 'buy_buttons' -%}
-              {%- render 'how-to-take', product: product -%}
               <div class="buy-box" id="buy-box" {{ block.shopify_attributes }}>
                 {%- form 'product', product, id: form_id, class: 'buy-form', novalidate: 'novalidate' -%}
                   <input type="hidden" name="product-id" value="{{ product.id }}">
