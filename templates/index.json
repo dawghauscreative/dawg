@@ -3,7 +3,7 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Internal Skin Defense for Life in the Sun",
         "body": "<p>Dermatologist-formulated support for skin, from within.</p>",
@@ -11,8 +11,9 @@
         "primary_url": "/collections/shop-all",
         "secondary_label": "Explore science",
         "secondary_url": "/pages/science",
-        "image_alt": "",
-        "background_asset": "product-3d-trio.webp"
+        "image_alt": "A couple relaxing outdoors at sunset",
+        "background_asset": "",
+        "image_asset": "lifestyle-outdoor-living.webp"
       }
     },
     "trust_strip": {
