@@ -1,3 +1,5 @@
+{%- assign has_split_image = false -%}
+{%- if section.settings.image != blank or section.settings.image_asset != blank -%}{%- assign has_split_image = true -%}{%- endif -%}
 {%- assign has_bg = false -%}
 {%- if section.settings.background_image != blank or section.settings.background_asset != blank -%}{%- assign has_bg = true -%}{%- endif -%}
 <section class="hero{% if has_bg %} hero--bg{% endif %} scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
@@ -11,7 +13,7 @@
     </div>
   {%- endif -%}
   <div class="container">
-    <div class="hero__grid{% if section.settings.image != blank %} hero__grid--split{% endif %}">
+    <div class="hero__grid{% if has_split_image %} hero__grid--split{% endif %}">
       <div>
         {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
         <h1>{{ section.settings.heading }}</h1>
@@ -31,8 +33,8 @@
           {%- endif -%}
         </div>
       </div>
-      {%- if section.settings.image != blank -%}
-        <div>{% render 'responsive-image', image: section.settings.image, ratio: '4x5', sizes: '(min-width: 990px) 40vw, 100vw', loading: 'eager', alt: section.settings.image_alt %}</div>
+      {%- if has_split_image -%}
+        <div>{% render 'responsive-image', image: section.settings.image, asset: section.settings.image_asset, ratio: '4x5', sizes: '(min-width: 990px) 40vw, 100vw', loading: 'eager', alt: section.settings.image_alt %}</div>
       {%- endif -%}
     </div>
   </div>
@@ -50,9 +52,10 @@
     { "type": "textarea", "id": "trust_line", "label": "Trust line (one item per line)", "info": "Shown as a gold slash-separated line under the text. Only verified facts." },
     { "type": "text", "id": "primary_label", "label": "Primary button", "default": "Shop the System" },
     { "type": "url", "id": "primary_url", "label": "Primary button link", "info": "Point at the hero bundle (Sun Safe System)." },
-    { "type": "text", "id": "secondary_label", "label": "Secondary button", "default": "Explore the Science" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary button", "default": "Explore science" },
     { "type": "url", "id": "secondary_url", "label": "Secondary button link" },
     { "type": "image_picker", "id": "image", "label": "Product image (right)" },
+    { "type": "text", "id": "image_asset", "label": "Or theme asset filename (right)", "info": "Used when no image is picked above. Example: lifestyle-outdoor-living.webp" },
     { "type": "text", "id": "image_alt", "label": "Image alt text" },
     { "type": "image_picker", "id": "background_image", "label": "Background image (optional)" },
     { "type": "text", "id": "background_asset", "label": "Fallback theme asset filename", "info": "Used only when no background image is picked above. Example: hero-banner-1.webp" }

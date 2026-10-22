@@ -105,7 +105,7 @@
     "why": {
       "type": "layer-stack",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "The biology",
         "heading": "Sun exposure is a daily reality.",
         "body": "<p>Your skin is a living organ constantly responding to the environment.</p><p>Outdoor exposure can influence oxidative stress, inflammatory signaling, cellular energy demands, and the skin's barrier systems.</p><p>That does not mean avoiding the outdoors. It means supporting skin through a layered routine:</p>",
@@ -146,7 +146,7 @@
     "formula": {
       "type": "product-actives",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "The formula",
         "heading": "Five ingredients. Five distinct roles."
       },
@@ -276,7 +276,7 @@
     "oxidative": {
       "type": "flow-steps",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Understanding the science",
         "heading": "What is oxidative stress?",
         "body": "<p>Oxidative stress describes an imbalance between reactive molecules and the body's antioxidant defenses.</p><p>Environmental exposure can contribute to reactive oxygen species in skin.</p><p>Antioxidants do not act like sunscreen. They work through internal biochemical pathways rather than blocking UV radiation at the skin surface.</p><p>That distinction matters.</p>",
@@ -323,7 +323,7 @@
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
-        "color_scheme": "dark"
+        "color_scheme": "light"
       }
     },
     "who": {
@@ -401,7 +401,7 @@
     "sunscreen": {
       "type": "science-sunscreen",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "heading": "Internal support is one layer.",
         "body": "<p>UV Shield+ is intended to complement a complete sun-health routine. Continue to use:</p>",
         "items": "Broad-spectrum sunscreen\nProtective clothing\nShade when appropriate\nHats and sunglasses\nReapplication\nRoutine dermatologic care",
@@ -411,7 +411,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "The research",
         "heading": "Why these ingredients?",
         "columns": "4",
@@ -471,7 +471,7 @@
     "systems": {
       "type": "system-finder",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Build your routine",
         "heading": "UV Shield+ can stand alone, or become part of a system.",
         "best_for_label": ""
@@ -527,7 +527,7 @@
     "faq": {
       "type": "pdp-faq",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Questions",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
@@ -596,14 +596,14 @@
     "compliance": {
       "type": "compliance-notice",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "extra_line": "UV Shield+ is not a replacement for sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
       }
     },
     "final": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Protect",
         "heading": "Support the skin that keeps up with your life.",
         "body": "<p>Five targeted ingredients. One dermatologist-formulated daily routine for people who spend their lives outdoors.</p>",

@@ -12,7 +12,7 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Dermatologist-formulated skin health",
         "heading": "Internal Skin Defense for Life in the Sun",
         "body": "<p>Skin is a living system. Alchemia MD supports it from within with dermatologist-formulated supplements designed for protection, balance, and resilience.</p>",
@@ -20,8 +20,9 @@
         "primary_url": "/products/sun-safe-system",
         "secondary_label": "Explore the Science",
         "secondary_url": "/pages/science",
-        "image_alt": "",
-        "background_asset": "hero-banner-1.webp"
+        "image_alt": "A couple relaxing outdoors at sunset",
+        "background_asset": "",
+        "image_asset": "lifestyle-outdoor-living.webp"
       }
     },
     "trust_strip": {
@@ -55,7 +56,7 @@
         "t3"
       ],
       "settings": {
-        "color_scheme": "dark"
+        "color_scheme": "light"
       }
     },
     "category": {
@@ -142,7 +143,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "anchor": "",
         "eyebrow": "Why Alchemia MD exists",
         "heading": "The supplement aisle wasn't built for skin.",
@@ -194,7 +195,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "The system",
         "heading": "Protect. Balance. Restore.",
         "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.</p><p>Each formula can stand on its own. The systems combine them when complementary support makes sense.</p>"
@@ -203,7 +204,7 @@
     "featured": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "image_side": "right",
         "eyebrow": "Start here",
         "heading": "Meet the Sun Safe System",
@@ -223,7 +224,7 @@
     "video": {
       "type": "video-slot",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "aspect": "16x9",
         "video": "shopify://files/videos/hf_20260503_005659_fe87e28d-6747-4371-9806-17accfc37fd7.mp4",
         "video_url": "",
@@ -372,7 +373,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Built for life outdoors",
         "heading": "Keep living in the sun.",
         "body": "<p>Alchemia MD is built for people who do not want to choose between caring for their skin and living the life they love.</p>",
@@ -493,7 +494,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "anchor": "",
         "eyebrow": "Science, without the mystery",
         "heading": "Every ingredient has a reason.",
@@ -545,7 +546,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Research strip",
         "heading": "Research worth reading.",
         "body": "",
@@ -571,7 +572,7 @@
     "philosophy": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "align": "center",
         "width": "narrow",
         "salt_symbol": true,
@@ -707,7 +708,7 @@
     "mission": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "band",
+        "color_scheme": "light",
         "align": "center",
         "width": "narrow",
         "salt_symbol": false,
@@ -736,7 +737,7 @@
     "final": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "product": "sun-safe-system",
         "eyebrow": "Begin with the hero system",
         "heading": "Built for life in the sun.",

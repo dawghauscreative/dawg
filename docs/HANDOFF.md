@@ -375,3 +375,6 @@ Desktop is unchanged (card + COA widget under the gallery). On phones (<990px) t
 
 ### Removed the duplicate "How to take" sections (Oct 16)
 The How to take it card under the gallery is now the only directions block on every product page. Removed the lower `how` section (and the `routine` daily-flow strip on UV Shield+ and Dermaboost+) from UV Shield+, Dermaboost+, Sun Safe, Sun Resilience, Skin Recovery and Complete Skin Defense, matching Skinbiotic+. The `pdp-how-it-works` and `system-directions` sections still exist in the theme for reuse.
+
+### Live build, light mode (branch `claude/alchemia-md-live-light-rqmk4u`, Oct 22)
+The current main build (original layout, copy, palette and fonts) with the same light-mode treatment as draft v3: Black and Emerald sections become the light scheme with a soft alternate band, buttons and accents use the dark green, header/footer/announcement bar stay dark. The home hero is the split hero with the sunset lifestyle photo (`image_asset`). Nothing from Stef's notes is applied here.

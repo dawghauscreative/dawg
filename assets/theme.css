@@ -977,3 +977,14 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 
 /* COA widget under the How to take it card */
 .coa-widget { margin-top: 24px; }
+
+/* ---------- Draft v3: light mode (white and soft beige page, dark header/footer and accent bands) ---------- */
+:root { --c-soft: color-mix(in srgb, var(--c-beige) 16%, var(--c-white)); }
+.scheme-light { --accent: var(--c-evergreen); --btn-bg: var(--c-emerald); --btn-fg: var(--c-white); --rule: color-mix(in srgb, var(--c-black) 16%, transparent); --card: var(--c-soft); }
+main .shopify-section:nth-of-type(even) > .scheme-light { --bg: var(--c-soft); --card: var(--c-white); }
+.scheme-light .eyebrow, .scheme-light .role-badge { color: var(--c-evergreen); }
+.scheme-light .pdp__price { color: var(--c-black) !important; }
+.scheme-light .trust-strip { background: transparent; }
+.scheme-light .showcase-card__descriptor, .scheme-light .showcase-card__price { color: var(--c-evergreen); }
+.scheme-light .showcase-card:hover .showcase-card__title { color: var(--c-evergreen); text-decoration: underline; }
+.scheme-light .media { background: var(--c-soft); }

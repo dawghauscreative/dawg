@@ -12,7 +12,7 @@
     "hero": {
       "type": "edu-hero",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Alchemia MD education",
         "title": "Skin Edu",
         "subtitle": "Dermatologist-led education for understanding your skin from the inside out.",
@@ -27,7 +27,7 @@
     "feature": {
       "type": "edu-feature",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "image_side": "right",
         "eyebrow": "Featured",
         "heading": "What Is Internal Skin Health?",
@@ -248,7 +248,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "anchor": "",
         "eyebrow": "Skin health 101",
         "heading": "New to internal skin health? Start here.",
@@ -505,7 +505,7 @@
         "b9"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "anchor": "",
         "eyebrow": "Gut + skin",
         "heading": "Your skin does not exist in isolation.",
@@ -699,7 +699,7 @@
         "b16"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Know what you’re taking",
         "heading": "The ingredient library",
         "body": "",
@@ -954,7 +954,7 @@
         "b8"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "anchor": "",
         "eyebrow": "Read the research without the jargon",
         "heading": "Research, translated.",
@@ -1011,7 +1011,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "anchor": "",
         "eyebrow": "From education to routine",
         "heading": "See how the science informs the formulas.",
@@ -1216,7 +1216,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "anchor": "",
         "eyebrow": "Curated by Dr. Mia",
         "heading": "Worth reading.",
@@ -1252,7 +1252,7 @@
     "final": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "product": "",
         "eyebrow": "Keep learning",
         "heading": "Understand the science behind your routine.",

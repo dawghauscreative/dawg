@@ -15,7 +15,7 @@
       "type": "final-cta",
       "settings": {
         "product": "sun-safe-system",
-        "color_scheme": "band"
+        "color_scheme": "light"
       }
     },
     "alchemy": {
@@ -34,7 +34,7 @@
         "eyebrow": "Our purpose",
         "heading": "To change the way people understand their skin.",
         "heading_tag": "h2",
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "body": "<p>Instead of something to be fixed or perfected, it is a dynamic living system to be supported. Skin is always seeking balance, and always capable of returning to it.</p>"
       }
     },
@@ -49,7 +49,7 @@
     "path": {
       "type": "problem",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "Her path",
         "heading": "From personal loss to a different way of thinking about skin.",
         "body": ""

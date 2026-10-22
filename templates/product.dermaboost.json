@@ -95,7 +95,7 @@
     "role": {
       "type": "layer-stack",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "The role",
         "heading": "Restore means supporting the systems skin relies on.",
         "body": "<p>Skin is constantly responding to:</p><ul><li>Environmental stress</li><li>Normal oxidative processes</li><li>Nutritional demands</li><li>Immune signaling</li><li>Daily renewal</li></ul><p>“Restore” does not mean repairing every form of damage or reversing aging. Within the Alchemia MD system, it means providing nutritional support for the biological systems involved in maintaining calm, balanced, resilient skin.</p>",
@@ -136,7 +136,7 @@
     "antioxidant": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "align": "left",
         "width": "wide",
         "eyebrow": "Antioxidant biology",
@@ -264,7 +264,7 @@
     "together": {
       "type": "ingredient-network",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Formulation logic",
         "heading": "Complementary support, not ingredient stacking.",
         "nodes": "Niacinamide, Vitamin D3, Vitamin C, Zinc, Quercetin, Curcumin, Olive leaf, Astaxanthin",
@@ -353,7 +353,7 @@
     "barrier": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "align": "left",
         "width": "wide",
         "eyebrow": "Barrier support",
@@ -378,7 +378,7 @@
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
-        "color_scheme": "green"
+        "color_scheme": "light"
       }
     },
     "who": {
@@ -438,7 +438,7 @@
     "supports": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "heading": "One formula. Four areas of support.",
         "columns": "4",
         "show_images": false,
@@ -484,7 +484,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "The research",
         "heading": "Why these ingredients?",
         "columns": "4",
@@ -551,7 +551,7 @@
     "systems": {
       "type": "system-finder",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Build your routine",
         "heading": "Dermaboost+ can stand alone, or become part of a system.",
         "best_for_label": ""
@@ -608,7 +608,7 @@
     "faq": {
       "type": "pdp-faq",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Questions",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
@@ -677,14 +677,14 @@
     "compliance": {
       "type": "compliance-notice",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "extra_line": ""
       }
     },
     "final": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Restore",
         "heading": "Support calm, balanced, resilient skin from within.",
         "body": "<p>Eight targeted nutrients and botanicals. One dermatologist-formulated daily routine designed around antioxidant support, normal immune function, and long-term skin resilience.</p>",
