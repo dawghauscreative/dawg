@@ -6,7 +6,7 @@
         "link_label": "",
         "image_asset": "founder-portrait.webp",
         "credentials": "Board-certified dermatologist",
-        "eyebrow": "Founder",
+        "eyebrow": "",
         "body": "<p>Alchemia MD emerged from a deeply personal mission, inspired by the loss of Dr. Luna's mother to melanoma in childhood. That loss created the desire to help others avoid the same loss. Dr. Luna found that one way she could contribute was by going to medical school, and she became a board-certified dermatologist.</p><p>Over the years, she found that patients were asking for natural options to improve their skin conditions, and she found herself writing lists of many of the same supplements repeatedly. As someone who takes supplements herself, she began to ask: isn't there a better way? Wouldn't it be powerful if supplements were available that contained multiple helpful ingredients in one serving, each with a specific role?</p><p>With the development of Alchemia MD, Dr. Luna is able to do just that. Your purchase contributes to melanoma research.</p><p>Alchemia MD is built for active people such as golfers and outdoor athletes. The company's vision extends beyond conventional product development: to transform the supplement industry with formulations consumers will eagerly incorporate into their daily routines. Its approach addresses the stigma surrounding sun protection while promoting education and contributing to melanoma research.</p>",
         "heading": "A dermatologist's mission beyond the clinic."
       }
@@ -21,7 +21,7 @@
     "alchemy": {
       "type": "rich-text",
       "settings": {
-        "eyebrow": "Modern alchemy",
+        "eyebrow": "",
         "heading": "Alchemy is transformation through balance.",
         "heading_tag": "h2",
         "color_scheme": "light",
@@ -31,7 +31,7 @@
     "purpose": {
       "type": "rich-text",
       "settings": {
-        "eyebrow": "Our purpose",
+        "eyebrow": "",
         "heading": "To change the way people understand their skin.",
         "heading_tag": "h2",
         "color_scheme": "dark",
@@ -42,7 +42,7 @@
       "type": "category-statement",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Our mission",
+        "eyebrow": "",
         "statement": "To transform skin health from the inside out. We are guided by dermatological science and the philosophy that balance is a practice, not a destination."
       }
     },
@@ -50,7 +50,7 @@
       "type": "problem",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "Her path",
+        "eyebrow": "",
         "heading": "From personal loss to a different way of thinking about skin.",
         "body": ""
       },

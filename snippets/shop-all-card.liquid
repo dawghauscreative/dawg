@@ -27,7 +27,7 @@
         {%- if product.price_varies -%}<span class="shopcard__from">From</span> <span>{{ product.price_min | money }}</span>{%- else -%}<span>{{ product.price | money }}</span>{%- endif -%}
         {%- if cue != blank -%}<span class="shopcard__cue">{{ cue }}</span>{%- endif -%}
       </p>
-      <a class="btn shopcard__btn" href="{{ product.url }}">{{ button_text | default: 'Choose your plan' }}<span class="visually-hidden"> for {{ product.title }}</span></a>
+      <a class="btn shopcard__btn" href="{{ product.url }}">{{ button_text | default: 'Choose a plan' }}<span class="visually-hidden"> for {{ product.title }}</span></a>
       {%- if rel_1 != blank or rel_2 != blank or rel_3 != blank -%}
         {%- assign rel_first = true -%}
         <p class="shopcard__also">Also in:

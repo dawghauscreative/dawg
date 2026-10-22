@@ -91,7 +91,7 @@
       "type": "split-compare",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "What it is",
+        "eyebrow": "",
         "heading": "Environmental support meets broader skin resilience.",
         "body": "<p>The Sun Resilience System combines two formulas with related but distinct roles.</p><p>The combination is intentionally more overlapping than Sun Safe: UV Shield+ and Dermaboost+ share more of their biological pathways, particularly oxidative-stress biology.</p>",
         "center": "Protect against the demands of outdoor life. Support the systems skin relies on to stay resilient."
@@ -129,7 +129,7 @@
         "color_scheme": "dark",
         "align": "left",
         "width": "wide",
-        "eyebrow": "System logic",
+        "eyebrow": "",
         "heading": "Why pair UV Shield+ with Dermaboost+?",
         "heading_tag": "h2",
         "body": "<p>Both formulas provide antioxidant-related support, but they approach the problem differently.</p><p><strong>UV Shield+</strong> is more specifically oriented toward environmental and UV-associated stress.</p><p><strong>Dermaboost+</strong> provides broader nutritional, antioxidant, and normal immune support.</p><p>The pairing is complementary in three main areas:</p>"
@@ -180,14 +180,14 @@
       "settings": {
         "color_scheme": "green",
         "image_side": "right",
-        "eyebrow": "Step 1",
+        "eyebrow": "",
         "heading": "UV Shield+",
         "subhead": "Daily support for active, sun-ready skin",
         "product": "uv-shield",
         "asset": "lifestyle-uvshield-rocks.webp",
         "ratio": "4x5",
         "body": "<p>UV Shield+ combines five ingredients selected for complementary nutritional and antioxidant roles:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Trans-resveratrol</li><li>Spirulina</li></ul><p>Its formulation is designed around broader coverage of environmental and oxidative-stress biology rather than reliance on one ingredient alone.</p><p><strong>Key support areas:</strong> environmental stress, antioxidant support, outdoor lifestyle support, skin resilience.</p>",
-        "primary_label": "Explore UV Shield+"
+        "primary_label": "Learn more"
       }
     },
     "step2": {
@@ -195,14 +195,14 @@
       "settings": {
         "color_scheme": "light",
         "image_side": "left",
-        "eyebrow": "Step 2",
+        "eyebrow": "",
         "heading": "Dermaboost+",
         "subhead": "Daily immune support for calm, balanced skin",
         "product": "dermaboost",
         "asset": "lifestyle-dermaboost-yacht.webp",
         "ratio": "4x5",
         "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients selected for broader nutritional, antioxidant, and normal immune-supportive roles:</p><ul><li>Niacinamide</li><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf extract</li><li>Astaxanthin</li></ul><p>The formulation rationale identifies several complementary pairings within Dermaboost+, including quercetin + curcumin, quercetin + vitamin C, quercetin + astaxanthin, curcumin + olive leaf, and vitamin C + zinc.</p><p><strong>Key support areas:</strong> antioxidant support, normal immune function, nutritional skin support, daily skin resilience.</p>",
-        "primary_label": "Explore Dermaboost+"
+        "primary_label": "Learn more"
       }
     },
     "antioxidant": {
@@ -211,7 +211,7 @@
         "color_scheme": "dark",
         "align": "left",
         "width": "wide",
-        "eyebrow": "The biology",
+        "eyebrow": "",
         "heading": "Outdoor life creates more than one type of stress.",
         "heading_tag": "h2",
         "body": "<p>Environmental exposure can contribute to oxidative stress in skin. The body responds through multiple antioxidant systems, which is why the Sun Resilience System uses chemically different ingredients rather than relying on one antioxidant.</p><p>Across both formulas, the system includes:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Resveratrol</li><li>Spirulina</li><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Zinc</li></ul><p><em>Antioxidant support does not mean blocking UV radiation or replacing sunscreen.</em></p><h3>Not all antioxidants work the same way.</h3><p>A polyphenol is not the same as a vitamin. A carotenoid is not the same as a mineral. Different compounds have different chemical structures, cellular locations, and biological roles. That is the formulation rationale behind Sun Resilience.</p><p><strong>UV Shield+</strong> leans heavily on botanical polyphenols and environmental-stress support.</p><p><strong>Dermaboost+</strong> adds vitamins, minerals, carotenoids, and broader botanical support.</p>",
@@ -224,7 +224,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Immune biology",
+        "eyebrow": "",
         "heading": "Skin is an immune-active organ.",
         "heading_tag": "h2",
         "body": "<p>Skin participates in the body’s interaction with the external environment. Normal immune function therefore matters to broader skin health.</p><p>Dermaboost+ contributes nutrients such as:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li></ul><p>which have established roles in normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating immune-mediated disease.</em></p><h3>Resilience is the goal, not perfection.</h3><p>Skin is constantly:</p><ul><li>Renewing</li><li>Responding</li><li>Adapting</li><li>Maintaining barrier function</li><li>Interacting with the environment</li></ul><p>The Sun Resilience System is built around supporting those everyday processes from two directions: <strong>environmental support</strong> with UV Shield+ and <strong>broader nutritional support</strong> with Dermaboost+.</p>"
@@ -234,7 +234,7 @@
       "type": "split-compare",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "What’s inside",
+        "eyebrow": "",
         "heading": "Two formulas. Broader pathway coverage."
       },
       "blocks": {
@@ -266,7 +266,7 @@
       "type": "split-compare",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "Complementary pathways",
+        "eyebrow": "",
         "heading": "Intentional overlap.",
         "body": "<p>The two formulas share broad antioxidant and cellular-support themes, but their ingredient networks are different.</p>",
         "center": "The goal is broader support, not duplication for duplication’s sake."
@@ -305,7 +305,7 @@
       "settings": {
         "color_scheme": "light",
         "columns": "3",
-        "eyebrow": "Built for active lives",
+        "eyebrow": "",
         "heading": "Designed for people who want broader outdoor skin support.",
         "statement": "The Sun Resilience System is not about avoiding outdoor life. It is built for people who want their skin-health routine to keep up with it."
       },
@@ -422,11 +422,11 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The research",
+        "eyebrow": "",
         "heading": "Why these two formulas?",
         "columns": "4",
         "show_images": false,
-        "button_label": "Explore the Sun Resilience science",
+        "button_label": "See science",
         "button_url": "/pages/science"
       },
       "blocks": {
@@ -473,7 +473,7 @@
       "type": "science-boundaries",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "The Sun Resilience System does not claim to:",
         "not_items": "Replace sunscreen\nPrevent sunburn\nPrevent skin cancer\nMake unlimited sun exposure safe\nReverse sun damage\nEliminate inflammation\nTreat autoimmune skin disease\nRepair every form of skin damage\nReverse aging\nGuarantee visible results\nProve the finished two-product system has been clinically tested",
@@ -495,12 +495,12 @@
       "type": "compare-table",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Compare systems",
+        "eyebrow": "",
         "heading": "Is Sun Resilience right for you?",
         "col_1": "Roles",
         "col_2": "Includes",
         "col_3": "Best fit",
-        "button_label": "Compare all systems",
+        "button_label": "Compare systems",
         "button_url": "/pages/systems"
       },
       "blocks": {
@@ -552,7 +552,7 @@
       "type": "start-paths",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Build around your priorities",
+        "eyebrow": "",
         "heading": "Need a different combination?"
       },
       "blocks": {
@@ -593,11 +593,11 @@
         "color_scheme": "dark",
         "image_side": "left",
         "image_asset": "founder-portrait.webp",
-        "eyebrow": "Dermatologist-formulated",
+        "eyebrow": "",
         "heading": "Built around intentional formulation.",
         "credentials": "",
         "body": "<p>Alchemia MD was created to make internal skin support more understandable and more deliberate.</p><p>Rather than asking customers to combine disconnected supplements on their own, each formula has a defined role, and each system brings those roles together only when the combination makes sense.</p><p>Sun Resilience pairs: <strong>Protect + Restore.</strong></p>",
-        "link_label": "Meet Dr. Mia Luna",
+        "link_label": "Meet Dr. Luna",
         "link_url": "/pages/founder"
       }
     },
@@ -612,7 +612,7 @@
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Questions",
+        "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
       },
@@ -713,12 +713,12 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Protect + Restore",
+        "eyebrow": "",
         "heading": "Broader internal support for life outdoors.",
         "body": "<p>UV Shield+ and Dermaboost+ combine targeted environmental support with broader antioxidant, nutritional, and normal immune support in one dermatologist-formulated system.</p>",
-        "button_label": "Choose your plan",
+        "button_label": "Choose a plan",
         "button_url": "#buy-box",
-        "secondary_label": "Explore the science",
+        "secondary_label": "Explore science",
         "secondary_url": "/pages/science"
       }
     }

@@ -17,7 +17,7 @@
         "product": "sun-safe-system",
         "role": "Protect + Balance",
         "descriptor": "Environmental support paired with gut-skin balance.",
-        "button_text": "Choose your plan",
+        "button_text": "Choose a plan",
         "subscribe_cue": "Subscribe & save available"
       }
     },
@@ -35,7 +35,7 @@
             "product": "sun-resilience-system",
             "role": "Protect + Restore",
             "descriptor": "Environmental support with broader antioxidant and nutritional support.",
-            "button_text": "Choose your plan"
+            "button_text": "Choose a plan"
           }
         },
         "skin_recovery": {
@@ -44,7 +44,7 @@
             "product": "skin-recovery-system",
             "role": "Balance + Restore",
             "descriptor": "Gut-skin balance with broader nutritional and immune support.",
-            "button_text": "Choose your plan"
+            "button_text": "Choose a plan"
           }
         },
         "complete": {
@@ -55,7 +55,7 @@
             "descriptor": "The most comprehensive Alchemia MD routine.",
             "show_label": true,
             "label_text": "Advanced option",
-            "button_text": "Choose your plan"
+            "button_text": "Choose a plan"
           }
         }
       },
@@ -69,7 +69,7 @@
       "type": "shop-all-product-grid",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Individual formulas",
+        "eyebrow": "",
         "heading": "Start with one role",
         "body": "Choose the formula that matches your current priority, then explore the systems that pair it with complementary support.",
         "subscribe_cue": "Subscribe & save available"
@@ -84,7 +84,7 @@
             "related_1": "sun-safe-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan"
+            "button_text": "Choose a plan"
           }
         },
         "skinbiotic": {
@@ -96,7 +96,7 @@
             "related_1": "sun-safe-system",
             "related_2": "skin-recovery-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan"
+            "button_text": "Choose a plan"
           }
         },
         "dermaboost": {
@@ -108,7 +108,7 @@
             "related_1": "skin-recovery-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan"
+            "button_text": "Choose a plan"
           }
         }
       },
@@ -122,7 +122,7 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Not sure where to start?",
+        "eyebrow": "",
         "heading": "Compare the Alchemia MD systems",
         "body": "",
         "button_label": "Explore systems",

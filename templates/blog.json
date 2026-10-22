@@ -18,7 +18,7 @@
         "subtitle": "Dermatologist-led education for understanding your skin from the inside out.",
         "heading": "Understand your skin. Then decide what it needs.",
         "body": "<p>Skin health is more than products.</p><p>It is biology, nutrition, environment, habits, and the choices you make every day.</p><p>Skin Edu translates dermatological science into clear, practical guidance so you can understand what affects your skin, evaluate what you are putting into your body, and build a routine with intention.</p>",
-        "primary_label": "Explore the latest",
+        "primary_label": "See the latest",
         "primary_url": "#latest",
         "secondary_label": "Browse by topic",
         "secondary_url": "#topics"
@@ -34,7 +34,7 @@
         "deck": "Topical skincare is only one part of the picture. Learn how nutrition, oxidative stress, the microbiome, immune signaling, and the environment interact with the skin from within.",
         "blog_handle": "skin-edu",
         "article": "what-is-internal-skin-health",
-        "cta_label": "Read the article",
+        "cta_label": "Read article",
         "image": "shopify://shop_images/alchemia-brand-guidelines-p033-image03_7b4538b1-d652-4fe6-b39e-449fb41b8e76.png"
       }
     },
@@ -100,7 +100,7 @@
       ],
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Browse",
+        "eyebrow": "",
         "heading": "Explore Skin Edu",
         "body": "",
         "blog_handle": "skin-edu"
@@ -154,7 +154,7 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "latest",
-        "eyebrow": "Latest",
+        "eyebrow": "",
         "heading": "New from Skin Edu",
         "body": "",
         "columns": "3",
@@ -250,12 +250,12 @@
       "settings": {
         "color_scheme": "green",
         "anchor": "",
-        "eyebrow": "Skin health 101",
+        "eyebrow": "",
         "heading": "New to internal skin health? Start here.",
         "body": "",
         "columns": "3",
         "blog_handle": "skin-edu",
-        "button_label": "Explore Skin Health 101",
+        "button_label": "Skin Health 101",
         "button_url": "/blogs/skin-edu/tagged/beginner"
       }
     },
@@ -372,12 +372,12 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "",
-        "eyebrow": "Sun + environment",
+        "eyebrow": "",
         "heading": "Understand the environment your skin lives in.",
         "body": "",
         "columns": "4",
         "blog_handle": "skin-edu",
-        "button_label": "Explore Sun + Environment",
+        "button_label": "Learn more",
         "button_url": "/blogs/skin-edu/tagged/sun-environment"
       }
     },
@@ -507,12 +507,12 @@
       "settings": {
         "color_scheme": "green",
         "anchor": "",
-        "eyebrow": "Gut + skin",
+        "eyebrow": "",
         "heading": "Your skin does not exist in isolation.",
         "body": "",
         "columns": "4",
         "blog_handle": "skin-edu",
-        "button_label": "Explore Gut + Skin",
+        "button_label": "Gut + Skin",
         "button_url": "/blogs/skin-edu/tagged/gut-skin"
       }
     },
@@ -526,7 +526,7 @@
             "text": "What it is, why it is used, and what the research examines.",
             "formulas": "UV Shield+ / Dermaboost+",
             "link": "/pages/science#niacinamide",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b2": {
@@ -536,7 +536,7 @@
             "text": "What it is, why dermatology researchers study it, and how it relates to environmental exposure.",
             "formulas": "UV Shield+",
             "link": "/pages/science#polypodium-leucotomos",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b3": {
@@ -546,7 +546,7 @@
             "text": "Green-tea polyphenol biology.",
             "formulas": "UV Shield+",
             "link": "/pages/science#egcg",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b4": {
@@ -556,7 +556,7 @@
             "text": "Plant-polyphenol research.",
             "formulas": "UV Shield+",
             "link": "/pages/science#resveratrol",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b5": {
@@ -566,7 +566,7 @@
             "text": "Nutritional and antioxidant profile.",
             "formulas": "UV Shield+",
             "link": "/pages/science#spirulina",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b6": {
@@ -576,7 +576,7 @@
             "text": "Prebiotic-fiber biology.",
             "formulas": "Skinbiotic+",
             "link": "/pages/science#inulin",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b7": {
@@ -586,7 +586,7 @@
             "text": "Probiotic biology and why strain specificity matters.",
             "formulas": "Skinbiotic+",
             "link": "/pages/science#lactobacillus",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b8": {
@@ -596,7 +596,7 @@
             "text": "Microbiome and intestinal-health research.",
             "formulas": "Skinbiotic+",
             "link": "/pages/science#bifidobacterium",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b9": {
@@ -606,7 +606,7 @@
             "text": "Emerging microbiome science.",
             "formulas": "Skinbiotic+",
             "link": "/pages/science#akkermansia",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b10": {
@@ -616,7 +616,7 @@
             "text": "Normal physiological and immune roles.",
             "formulas": "Dermaboost+",
             "link": "/pages/science#vitamin-d3",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b11": {
@@ -626,7 +626,7 @@
             "text": "Antioxidant physiology and normal collagen synthesis.",
             "formulas": "Dermaboost+",
             "link": "/pages/science#vitamin-c",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b12": {
@@ -636,7 +636,7 @@
             "text": "Essential mineral biology.",
             "formulas": "Dermaboost+",
             "link": "/pages/science#zinc",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b13": {
@@ -646,7 +646,7 @@
             "text": "Flavonoid biology.",
             "formulas": "Dermaboost+",
             "link": "/pages/science#quercetin",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b14": {
@@ -656,7 +656,7 @@
             "text": "Botanical polyphenol research and bioavailability.",
             "formulas": "Dermaboost+",
             "link": "/pages/science#curcumin",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b15": {
@@ -666,7 +666,7 @@
             "text": "Polyphenol profile and research.",
             "formulas": "Dermaboost+",
             "link": "/pages/science#dermaboost",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         },
         "b16": {
@@ -676,7 +676,7 @@
             "text": "Carotenoid antioxidant research.",
             "formulas": "Dermaboost+",
             "link": "/pages/science#astaxanthin",
-            "link_label": "See the research"
+            "link_label": "See research"
           }
         }
       },
@@ -700,11 +700,11 @@
       ],
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Know what you’re taking",
+        "eyebrow": "",
         "heading": "The ingredient library",
         "body": "",
         "formulas": "UV Shield+, Skinbiotic+, Dermaboost+",
-        "button_label": "Browse all ingredients",
+        "button_label": "All ingredients",
         "button_url": "/pages/science"
       }
     },
@@ -834,12 +834,12 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "",
-        "eyebrow": "Ask Dr. Mia",
+        "eyebrow": "",
         "heading": "Questions you’d ask your dermatologist.",
         "body": "",
         "columns": "4",
         "blog_handle": "skin-edu",
-        "button_label": "Read Ask the Derm",
+        "button_label": "Ask the Derm",
         "button_url": "/blogs/skin-edu/tagged/ask-the-derm"
       }
     },
@@ -956,12 +956,12 @@
       "settings": {
         "color_scheme": "dark",
         "anchor": "",
-        "eyebrow": "Read the research without the jargon",
+        "eyebrow": "",
         "heading": "Research, translated.",
         "body": "",
         "columns": "4",
         "blog_handle": "skin-edu",
-        "button_label": "Understand the research",
+        "button_label": "See research",
         "button_url": "/blogs/skin-edu/tagged/research-explained"
       }
     },
@@ -977,7 +977,7 @@
             "teaser": "Learn why its five ingredients were selected and how they fit into environmental-support biology.",
             "article": "",
             "url": "/products/uv-shield",
-            "cta_label": "Explore UV Shield+"
+            "cta_label": "Learn more"
           }
         },
         "b2": {
@@ -989,7 +989,7 @@
             "teaser": "Learn how its synbiotic formula fits into the gut-skin framework.",
             "article": "",
             "url": "/products/skinbiotic",
-            "cta_label": "Explore Skinbiotic+"
+            "cta_label": "Learn more"
           }
         },
         "b3": {
@@ -1001,7 +1001,7 @@
             "teaser": "Learn how its nutrient and botanical network fits into broader antioxidant and normal immune support.",
             "article": "",
             "url": "/products/dermaboost",
-            "cta_label": "Explore Dermaboost+"
+            "cta_label": "Learn more"
           }
         }
       },
@@ -1013,7 +1013,7 @@
       "settings": {
         "color_scheme": "green",
         "anchor": "",
-        "eyebrow": "From education to routine",
+        "eyebrow": "",
         "heading": "See how the science informs the formulas.",
         "body": "",
         "columns": "3",
@@ -1135,12 +1135,12 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "",
-        "eyebrow": "Skin in the real world",
+        "eyebrow": "",
         "heading": "Skin health for life outdoors.",
         "body": "",
         "columns": "4",
         "blog_handle": "skin-edu",
-        "button_label": "Explore outdoor life",
+        "button_label": "Outdoor life",
         "button_url": "/blogs/skin-edu/tagged/outdoor-life"
       }
     },
@@ -1218,7 +1218,7 @@
       "settings": {
         "color_scheme": "dark",
         "anchor": "",
-        "eyebrow": "Curated by Dr. Mia",
+        "eyebrow": "",
         "heading": "Worth reading.",
         "body": "",
         "columns": "3",
@@ -1231,7 +1231,7 @@
       "type": "main-blog",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Skin Edu",
+        "eyebrow": "",
         "heading": "All articles",
         "empty_text": "New articles are on the way."
       }
@@ -1254,12 +1254,12 @@
       "settings": {
         "color_scheme": "dark",
         "product": "",
-        "eyebrow": "Keep learning",
+        "eyebrow": "",
         "heading": "Understand the science behind your routine.",
         "body": "",
-        "button_label": "Explore the science",
+        "button_label": "Explore science",
         "button_url": "/pages/science",
-        "secondary_label": "Find your formula",
+        "secondary_label": "Find a formula",
         "secondary_url": "/collections/individual-products",
         "note": "",
         "asset": "",

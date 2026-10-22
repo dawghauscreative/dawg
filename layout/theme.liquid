@@ -49,7 +49,7 @@
       :root {
         --c-black: {{ settings.color_black }};
         --c-charcoal: {{ settings.color_charcoal }};
-        --c-emerald: {{ settings.color_evergreen }};
+        --c-emerald: {{ settings.color_emerald | default: '#132D22' }};
         --c-evergreen: {{ settings.color_evergreen }};
         --c-gold: {{ settings.color_gold }};
         --c-beige: {{ settings.color_beige }};

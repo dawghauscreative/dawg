@@ -58,7 +58,7 @@
           <div class="sel-panel" id="plan-{{ p.handle }}" data-sel-panel="{{ p.handle }}" hidden>
             <h3>{{ block.settings.plan_heading }}</h3>
             <p>{{ block.settings.plan_copy }}</p>
-            <div class="btn-row"><a class="btn" href="{{ p.url }}#buy-box">{{ block.settings.plan_button | default: 'Choose your plan' }}</a></div>
+            <div class="btn-row"><a class="btn" href="{{ p.url }}#buy-box">{{ block.settings.plan_button | default: 'Choose a plan' }}</a></div>
             {%- render 'compliance-slot', content: p.metafields.custom.compliance_slot -%}
           </div>
         {%- endif -%}
@@ -105,7 +105,7 @@
         { "type": "text", "id": "learn_label", "label": "Learn more button label", "default": "Learn more" },
         { "type": "text", "id": "plan_heading", "label": "Plan area heading when chosen" },
         { "type": "text", "id": "plan_copy", "label": "Plan area copy when chosen" },
-        { "type": "text", "id": "plan_button", "label": "Plan button label", "default": "Choose your plan" }
+        { "type": "text", "id": "plan_button", "label": "Plan button label", "default": "Choose a plan" }
       ]
     }
   ],

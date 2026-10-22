@@ -375,3 +375,16 @@ Desktop is unchanged (card + COA widget under the gallery). On phones (<990px) t
 
 ### Removed the duplicate "How to take" sections (Oct 16)
 The How to take it card under the gallery is now the only directions block on every product page. Removed the lower `how` section (and the `routine` daily-flow strip on UV Shield+ and Dermaboost+) from UV Shield+, Dermaboost+, Sun Safe, Sun Resilience, Skin Recovery and Complete Skin Defense, matching Skinbiotic+. The `pdp-how-it-works` and `system-directions` sections still exist in the theme for reuse.
+
+## Draft v2 (branch `claude/alchemia-md-draft-v2-rqmk4u`): applying Stef's notes (Oct 22)
+Built on a separate branch so the live theme is untouched. Connect it to an unpublished theme in Shopify (Online Store > Themes > Add theme > Connect from GitHub > this branch).
+
+Adopted from the notes:
+- Palette: Emerald #132D22 (new `color_emerald` setting), Evergreen #2D3D2D, Gold #C18C31, Beige #DEBC8C (tan), White #FFFFFF. New `evergreen` colour scheme.
+- Buttons: pill corners; secondary buttons (`.btn--outline`) now use the header-menu link style (gold hover, animated underline); every button label is 15 characters or fewer (124 labels shortened; defaults in sections updated).
+- Callouts: eyebrows kept only on product page titles, heroes and page headers (174 blanked).
+- Home page rebuilt to the template: hero, credential strip, two lifestyle splits, product showcase (three formulas, featured system, call-out), "Let's talk skin" cards, mailing list = 7 variable sections plus header and footer (was 20). New section `product-showcase`.
+- Product descriptors (Daily immune support / Daily skin probiotic / Daily sun support) are text on the home showcase tiles. Claims review with Dr. Luna pending.
+
+Not changed (owner decision): fonts and bundle names stay as in the main build.
+Not done yet: product pages (19 to 24 sections, target 8 variable), 40% copy cut, 3D product images, products-three-times rule, navigation changes from the template. Removed home content (problem, roles, finder, science, research, founder, philosophy, trust, mission, final CTA) still exists on the Science, Systems and Founder pages.

@@ -91,7 +91,7 @@
       "type": "split-compare",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "What it is",
+        "eyebrow": "",
         "heading": "Two complementary forms of internal skin support.",
         "body": "<p>The Sun Safe System combines two formulas with different primary roles.</p><p>It is not built around taking more products for the sake of taking more products. It is built around combining two different biological support strategies in one routine.</p>",
         "center": "Protect the routine. Balance the system."
@@ -127,7 +127,7 @@
       "type": "flow-steps",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "System logic",
+        "eyebrow": "",
         "heading": "Why pair UV Shield+ with Skinbiotic+?",
         "body": "<p>UV Shield+ primarily targets nutritional and antioxidant pathways relevant to environmental stress. Skinbiotic+ primarily targets the gut and microbial environment.</p><p>These are different starting points, which is exactly why the pairing makes sense. The two products operate through different upstream mechanisms that may converge on broader systemic signaling.</p>",
         "note": "This diagram represents formulation rationale. It does not mean the finished system has been clinically tested as a combined regimen."
@@ -174,14 +174,14 @@
       "settings": {
         "color_scheme": "green",
         "image_side": "right",
-        "eyebrow": "Step 1",
+        "eyebrow": "",
         "heading": "UV Shield+",
         "subhead": "Daily support for active, sun-ready skin",
         "product": "uv-shield",
         "asset": "lifestyle-uvshield-rocks.webp",
         "ratio": "4x5",
         "body": "<p>UV Shield+ combines five ingredients selected for complementary nutritional and antioxidant roles:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Trans-resveratrol</li><li>Spirulina</li></ul><p>The formula’s strength lies in covering several aspects of environmental and oxidative-stress biology rather than depending on one single mechanism.</p><p><strong>Key support areas:</strong> environmental stress, antioxidant support, skin resilience, outdoor lifestyle support.</p>",
-        "primary_label": "Explore UV Shield+"
+        "primary_label": "Learn more"
       }
     },
     "step2": {
@@ -189,21 +189,21 @@
       "settings": {
         "color_scheme": "light",
         "image_side": "left",
-        "eyebrow": "Step 2",
+        "eyebrow": "",
         "heading": "Skinbiotic+",
         "subhead": "Daily probiotic for gut and skin health",
         "product": "skinbiotic",
         "asset": "lifestyle-skinbiotic-cliffs.webp",
         "ratio": "4x5",
         "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection.</p><p>The formulation rationale focuses on prebiotic support, multi-organism microbiome support, and complementary microbial roles.</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.</p>",
-        "primary_label": "Explore Skinbiotic+"
+        "primary_label": "Learn more"
       }
     },
     "layers": {
       "type": "layer-stack",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "The bigger picture",
+        "eyebrow": "",
         "heading": "Skin support works in layers.",
         "body": "<p>A complete routine has more than one layer.</p>",
         "callout": "The Sun Safe System belongs inside a complete skin-health routine, not instead of one."
@@ -255,7 +255,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Outdoor skin biology",
+        "eyebrow": "",
         "heading": "Outdoor exposure is more than a surface event.",
         "heading_tag": "h2",
         "body": "<p>Sunlight and environmental exposure can influence oxidative stress and other cellular responses in skin.</p><p>UV Shield+ is formulated around nutritional and antioxidant support for those internal systems.</p>",
@@ -268,7 +268,7 @@
         "color_scheme": "green",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Internal balance",
+        "eyebrow": "",
         "heading": "The gut and skin communicate.",
         "heading_tag": "h2",
         "body": "<p>The gut-skin axis refers to biological communication between the intestinal environment and the skin through pathways involving:</p><ul><li>Microbial metabolites</li><li>Immune signaling</li><li>Barrier integrity</li><li>Nutrient metabolism</li></ul><p>Skinbiotic+ is designed to support the intestinal side of that relationship. It is a synbiotic formula combining inulin with multiple probiotic organisms selected around gut and skin-related biological rationale.</p>"
@@ -278,7 +278,7 @@
       "type": "split-compare",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "What’s inside",
+        "eyebrow": "",
         "heading": "Two formulas. Complementary roles."
       },
       "blocks": {
@@ -317,7 +317,7 @@
       "settings": {
         "color_scheme": "light",
         "columns": "3",
-        "eyebrow": "Built for life outdoors",
+        "eyebrow": "",
         "heading": "Designed for people who spend time in the sun.",
         "statement": "The Sun Safe System is not about avoiding the sun. It is about supporting your skin while continuing to live the life you enjoy."
       },
@@ -434,11 +434,11 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The research",
+        "eyebrow": "",
         "heading": "Why these two formulas?",
         "columns": "4",
         "show_images": false,
-        "button_label": "Explore the Sun Safe science",
+        "button_label": "See science",
         "button_url": "/pages/science"
       },
       "blocks": {
@@ -486,7 +486,7 @@
       "type": "science-boundaries",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "The Sun Safe System does not claim to:",
         "not_items": "Replace sunscreen\nPrevent sunburn\nMake prolonged sun exposure safe\nPrevent skin cancer\nReverse existing sun damage\nTreat a skin disease\nGuarantee clearer skin\nGuarantee a visible result by a specific date\nProve that the two-product system itself has been clinically tested",
@@ -508,12 +508,12 @@
       "type": "compare-table",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Compare systems",
+        "eyebrow": "",
         "heading": "Is Sun Safe the right system for you?",
         "col_1": "Roles",
         "col_2": "Includes",
         "col_3": "Best fit",
-        "button_label": "Compare all systems",
+        "button_label": "Compare systems",
         "button_url": "/pages/systems"
       },
       "blocks": {
@@ -565,7 +565,7 @@
       "type": "start-paths",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Want a different combination?",
+        "eyebrow": "",
         "heading": "Build around your priorities."
       },
       "blocks": {
@@ -606,11 +606,11 @@
         "color_scheme": "dark",
         "image_side": "left",
         "image_asset": "founder-portrait.webp",
-        "eyebrow": "Dermatologist-formulated",
+        "eyebrow": "",
         "heading": "Built to simplify a more complete skin-health routine.",
         "credentials": "",
         "body": "<p>Alchemia MD was created after Dr. Mia Luna repeatedly saw patients trying to piece together natural, evidence-informed skin-health support from disconnected supplements.</p><p>The Sun Safe System brings two distinct areas of support into one defined routine: <strong>Protect + Balance.</strong></p>",
-        "link_label": "Meet Dr. Mia Luna",
+        "link_label": "Meet Dr. Luna",
         "link_url": "/pages/founder"
       }
     },
@@ -625,7 +625,7 @@
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Questions",
+        "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
       },
@@ -718,12 +718,12 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Protect + Balance",
+        "eyebrow": "",
         "heading": "Build internal skin support into your daily routine.",
         "body": "<p>UV Shield+ and Skinbiotic+ bring environmental support and gut-skin balance together in one dermatologist-formulated system built for life outdoors.</p>",
-        "button_label": "Choose your plan",
+        "button_label": "Choose a plan",
         "button_url": "#buy-box",
-        "secondary_label": "Explore the science",
+        "secondary_label": "Explore science",
         "secondary_url": "/pages/science"
       }
     }

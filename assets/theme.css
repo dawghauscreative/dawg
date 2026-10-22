@@ -977,3 +977,36 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 
 /* COA widget under the How to take it card */
 .coa-widget { margin-top: 24px; }
+
+/* ---------- Draft v2: brand notes (palette, pill buttons, secondary link style, home showcase) ---------- */
+.scheme-evergreen { --bg: var(--c-evergreen); --fg: var(--c-white); --body: color-mix(in srgb, var(--c-white) 82%, var(--c-evergreen)); --accent: var(--c-beige); --rule: color-mix(in srgb, var(--c-beige) 45%, transparent); --btn-bg: var(--c-gold); --btn-fg: var(--c-black); --card: var(--c-white); background: var(--bg); color: var(--fg); }
+.scheme-evergreen p, .scheme-evergreen li { color: var(--body); }
+.scheme-evergreen h1, .scheme-evergreen h2, .scheme-evergreen h3, .scheme-evergreen h4 { color: var(--c-white); }
+.btn { border-radius: 999px; padding-inline: 2.2em; }
+.btn--outline { background: none; border: 0; border-radius: 0; min-height: 0; padding: 8px 0; color: var(--fg); position: relative; font-size: .74rem; letter-spacing: .18em; }
+.btn--outline::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
+.btn--outline:hover { background: none; color: var(--c-gold); }
+.btn--outline:hover::after, .btn--outline:focus-visible::after { transform: scaleX(1); }
+.scheme-light .btn--outline:hover, .scheme-beige .btn--outline:hover { color: var(--c-black); }
+.text-link { transition: color .2s, border-color .2s; }
+.text-link:hover { color: var(--c-gold); }
+.scheme-light .text-link:hover, .scheme-beige .text-link:hover { color: var(--c-black); }
+.newsletter__form .field input { border-radius: 999px; padding-inline: 22px; }
+
+.showcase__grid { display: grid; gap: 24px; }
+@media (min-width: 750px) { .showcase__grid--3, .showcase__grid--4 { grid-template-columns: repeat(3, minmax(0, 1fr)); } .showcase__grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.showcase-card { display: grid; gap: 16px; text-decoration: none; align-content: start; }
+.showcase-card__media .media { background: var(--c-beige); }
+.showcase-card__media img { object-fit: cover; }
+.showcase-card__descriptor { display: block; font-family: var(--font-callout); font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 6px; }
+.showcase-card__title { font-size: 1.15rem; }
+.showcase-card__price { font-family: var(--font-callout); font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin: 6px 0 0; }
+.showcase-card:hover .showcase-card__title { color: var(--c-gold); }
+.showcase__feature { display: grid; gap: 24px; margin-top: 32px; }
+@media (min-width: 750px) { .showcase__feature { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: stretch; } }
+.showcase__callout { display: grid; align-content: center; justify-items: start; gap: 24px; padding: clamp(28px, 4vw, 56px); background: var(--c-emerald); color: var(--c-white); }
+.showcase__callout h3 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); color: var(--c-white); }
+.scheme-evergreen .edu-card, .scheme-evergreen .edu-card h3, .scheme-evergreen .edu-card p { color: var(--c-black); }
+.scheme-evergreen .edu-card .text-link { border-bottom-color: var(--c-gold); }
+.scheme-evergreen .edu-card:hover .text-link { color: var(--c-gold); }
+.edu-card .text-link { justify-self: start; }

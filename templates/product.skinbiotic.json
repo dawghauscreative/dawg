@@ -77,7 +77,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "What it is",
+        "eyebrow": "",
         "heading": "A synbiotic for the gut-skin connection.",
         "heading_tag": "h2",
         "body": "<p>Skinbiotic+ combines a prebiotic with probiotic organisms in a single daily capsule. The prebiotic, organic inulin, is a fermentable fiber that can serve as food for certain intestinal microorganisms. The probiotic blend adds five organisms selected for their roles in gut ecology.</p><p>The formulation rationale is the pairing: fuel and organisms working together in the intestinal environment, where much of the conversation between gut and skin begins.</p>",
@@ -92,7 +92,7 @@
       "type": "flow-steps",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Understanding the science",
+        "eyebrow": "",
         "heading": "What is the gut-skin axis?",
         "body": "<p>The gut-skin axis describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
         "takeaway": "Skinbiotic+ is designed to support the gut side of that conversation."
@@ -141,7 +141,7 @@
       "type": "split-compare",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The design",
+        "eyebrow": "",
         "heading": "What makes it a synbiotic?",
         "body": "<p>A synbiotic pairs a prebiotic with probiotics. Each side has a different job, and the formula is built around having both.</p>",
         "center": "Prebiotic + probiotic = synbiotic."
@@ -173,7 +173,7 @@
       "type": "product-actives",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The formula",
+        "eyebrow": "",
         "heading": "Six components. Distinct roles.",
         "body": "<p>Organic inulin at 500 mg and a 215 mg probiotic blend, as listed on the label.</p>"
       },
@@ -186,7 +186,7 @@
             "role": "Prebiotic",
             "slide_set": "d11",
             "text": "<p>A fermentable fiber that serves as food for certain intestinal microorganisms. It forms the prebiotic foundation of the formula.</p>",
-            "link_label": "See the research",
+            "link_label": "See research",
             "link_url": "/pages/science#skinbiotic"
           }
         },
@@ -198,7 +198,7 @@
             "role": "Probiotic",
             "slide_set": "d07",
             "text": "<p>A widely studied species. Research is strain-specific, so findings on one strain are not assumed to apply to every L. plantarum.</p>",
-            "link_label": "See the research",
+            "link_label": "See research",
             "link_url": "/pages/science#skinbiotic"
           }
         },
@@ -209,7 +209,7 @@
             "amount": "Part of the 215 mg probiotic blend",
             "role": "Probiotic",
             "text": "<p>A Bifidobacterium species included for its role in the intestinal microbial community alongside the other organisms.</p>",
-            "link_label": "See the research",
+            "link_label": "See research",
             "link_url": "/pages/science#skinbiotic",
             "slide_set": "d23"
           }
@@ -222,7 +222,7 @@
             "role": "Probiotic",
             "slide_set": "d08",
             "text": "<p>A Lactobacillus species studied across many gut-health contexts. Different strains behave differently.</p>",
-            "link_label": "See the research",
+            "link_label": "See research",
             "link_url": "/pages/science#skinbiotic"
           }
         },
@@ -234,7 +234,7 @@
             "role": "Probiotic",
             "slide_set": "d10",
             "text": "<p>A Bifidobacterium species that is part of the human intestinal community, included to broaden the range of organisms in the formula.</p>",
-            "link_label": "See the research",
+            "link_label": "See research",
             "link_url": "/pages/science#skinbiotic"
           }
         },
@@ -247,7 +247,7 @@
             "role": "Probiotic",
             "slide_set": "d06",
             "text": "<p>A mucus-layer-associated organism that is an active area of microbiome research. The evidence is earlier-stage than for the other organisms.</p>",
-            "link_label": "See the research",
+            "link_label": "See research",
             "link_url": "/pages/science#skinbiotic"
           }
         }
@@ -265,7 +265,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Formulation logic",
+        "eyebrow": "",
         "heading": "How the formula works together.",
         "columns": "3",
         "show_images": false,
@@ -309,7 +309,7 @@
         "color_scheme": "dark",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Microbiome 101",
+        "eyebrow": "",
         "heading": "A community, not a single ingredient.",
         "heading_tag": "h2",
         "body": "<p>The intestinal microbiome is a community of trillions of microorganisms. It varies between people and shifts with diet, routine, and environment.</p><p>Balance in that community is a function of diversity, the fiber available to feed it, and the organisms present. That is why Skinbiotic+ is built as a pairing rather than a single probiotic.</p>"
@@ -319,7 +319,7 @@
       "type": "flow-steps",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "Short-chain fatty acids",
+        "eyebrow": "",
         "heading": "What fermentation produces.",
         "body": "<p>When gut microbes ferment dietary fibers such as inulin, they produce short-chain fatty acids, including acetate, propionate, and butyrate. These molecules are studied for their roles in intestinal and systemic signaling.</p>",
         "takeaway": "Short-chain fatty acids are one pathway researchers examine within the gut-skin axis."
@@ -363,7 +363,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "The barrier connection",
+        "eyebrow": "",
         "heading": "Where gut and skin research meet.",
         "heading_tag": "h2",
         "body": "<p>The skin barrier helps regulate water loss and acts as a boundary with the environment. Gut-skin research explores whether microbial signals and metabolites relate to barrier-supporting pathways.</p><p>This area is active and not settled. Skinbiotic+ is designed to support the intestinal environment; it is not a barrier product and does not make barrier claims.</p>"
@@ -379,7 +379,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Who it is for",
+        "eyebrow": "",
         "heading": "For people building a gut-conscious routine.",
         "columns": "3",
         "show_images": false
@@ -433,7 +433,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "What it supports",
+        "eyebrow": "",
         "heading": "What Skinbiotic+ is designed to support.",
         "columns": "4",
         "show_images": false,
@@ -480,11 +480,11 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The research",
+        "eyebrow": "",
         "heading": "Why these organisms?",
         "columns": "4",
         "show_images": false,
-        "button_label": "Explore the Skinbiotic+ research",
+        "button_label": "See research",
         "button_url": "/pages/science#skinbiotic"
       },
       "blocks": {
@@ -534,7 +534,7 @@
       "type": "science-boundaries",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "Skinbiotic+ is not intended to:",
         "not_items": "Replace professional medical care\nDeliver identical results for every person\nImply that every probiotic strain behaves the same\nWork on a fixed timeline\nTake the place of sunscreen or sun-safe habits",
@@ -546,7 +546,7 @@
       "type": "system-finder",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Build your routine",
+        "eyebrow": "",
         "heading": "Skinbiotic+ can stand alone, or become part of a system.",
         "best_for_label": ""
       },
@@ -584,11 +584,11 @@
         "color_scheme": "light",
         "image_side": "left",
         "image_asset": "founder-portrait.webp",
-        "eyebrow": "Dermatologist-formulated",
+        "eyebrow": "",
         "heading": "Created through a dermatologist's lens.",
         "credentials": "",
         "body": "<p>Alchemia MD was created to bring dermatological thinking to internal skin health, with transparent ingredients and careful claims.</p>",
-        "link_label": "Meet Dr. Mia Luna",
+        "link_label": "Meet Dr. Luna",
         "link_url": "/pages/founder"
       }
     },
@@ -603,7 +603,7 @@
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Questions",
+        "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
       },
@@ -687,12 +687,12 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Balance",
+        "eyebrow": "",
         "heading": "Support the conversation between gut and skin.",
         "body": "<p>Prebiotic fuel and five probiotic organisms in one daily capsule.</p>",
-        "button_label": "Choose your plan",
+        "button_label": "Choose a plan",
         "button_url": "#buy-box",
-        "secondary_label": "Explore the science",
+        "secondary_label": "Explore science",
         "secondary_url": "/pages/science#skinbiotic"
       }
     }

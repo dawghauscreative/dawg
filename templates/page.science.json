@@ -16,9 +16,9 @@
         "eyebrow": "Dermatological science, from within",
         "heading": "The Science of Internal Skin Health",
         "body": "<p>Skin is not an isolated surface. It is a living organ influenced by nutrition, environmental exposure, immune signaling, oxidative stress, the intestinal microbiome, and the integrity of its own barrier.</p><p>Alchemia MD formulates around those interconnected systems.</p><p>Every ingredient is selected for a defined purpose and evaluated against published research. The goal is not to replace topical skincare or sun protection. It is to add evidence-informed nutritional support to a complete skin-health routine.</p>",
-        "primary_label": "Explore the research",
+        "primary_label": "See research",
         "primary_url": "#research",
-        "secondary_label": "Meet the formulas",
+        "secondary_label": "View formulas",
         "secondary_url": "/collections/individual-products",
         "trust_line": "Dermatologist-formulated · Ingredient-transparent · Research-informed",
         "image": "shopify://shop_images/MIA_FOUNDER_AMD_PIC.png"
@@ -89,7 +89,7 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "research",
-        "eyebrow": "Our standard",
+        "eyebrow": "",
         "heading": "Research first. Claims second.",
         "body": "<p>Not all scientific evidence is equal. Alchemia MD evaluates ingredients using the totality of available research, with greater weight given to controlled human studies and systematic reviews than to laboratory or animal findings.</p>",
         "columns": "4",
@@ -164,7 +164,7 @@
       "settings": {
         "color_scheme": "green",
         "anchor": "",
-        "eyebrow": "The biology",
+        "eyebrow": "",
         "heading": "Skin health is a system.",
         "body": "",
         "columns": "4",
@@ -567,7 +567,7 @@
       ],
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Systems",
+        "eyebrow": "",
         "heading": "Different pathways. One skin-health system.",
         "body": "<p>The strongest formulation argument is not that one ingredient does everything. It is the opposite: different ingredients and products address different parts of a larger biological system.</p>",
         "caption": "This systems model represents formulation rationale. It does not mean the combination itself has been studied in human trials as an Alchemia MD finished-product regimen."
@@ -647,7 +647,7 @@
       ],
       "settings": {
         "color_scheme": "beige",
-        "eyebrow": "Research spotlight",
+        "eyebrow": "",
         "heading": "Research worth reading.",
         "body": "",
         "show_images": true,
@@ -762,7 +762,7 @@
       ],
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "What we know, and what we don't.",
         "body": "",
         "legend": "Dots show the maturity of the evidence, not the effect of any Alchemia MD product."
@@ -772,7 +772,7 @@
       "type": "science-boundaries",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "Good science has boundaries.",
         "body": "",
         "not_heading": "These studies do not mean:",
@@ -795,7 +795,7 @@
       "type": "science-library",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Research library",
+        "eyebrow": "",
         "heading": "Every study we cite.",
         "body": "<p>Filter by topic or search by ingredient. Studies describe individual ingredients or biological pathways, not Alchemia MD finished products.</p>",
         "filters": "Environmental / UV, Skin Barrier, Gut–Skin Axis, Probiotics, Antioxidants, Human Trials, Reviews",
@@ -867,7 +867,7 @@
       "settings": {
         "color_scheme": "dark",
         "anchor": "",
-        "eyebrow": "Formulation philosophy",
+        "eyebrow": "",
         "heading": "Why we formulate in systems.",
         "body": "",
         "columns": "4",
@@ -884,11 +884,11 @@
         "image_asset": "founder-portrait.webp",
         "image_alt": "Dr. Mia Luna",
         "image_side": "left",
-        "eyebrow": "Dermatologist-led",
+        "eyebrow": "",
         "heading": "Science should make skin health easier to understand, not harder.",
         "credentials": "",
         "body": "<p>The purpose of Alchemia MD is not to overwhelm people with studies. It is to take what we know about skin biology, nutrition, and prevention and translate it into a routine people can actually understand and follow.</p>",
-        "link_label": "Meet Dr. Mia Luna",
+        "link_label": "Meet Dr. Luna",
         "link_url": "/pages/founder"
       }
     },
@@ -897,12 +897,12 @@
       "settings": {
         "color_scheme": "band",
         "product": "",
-        "eyebrow": "Next step",
+        "eyebrow": "",
         "heading": "Build your internal skin health routine.",
         "body": "<p>Understand what each formula is designed to support and choose the level of support that fits your routine.</p>",
-        "button_label": "Explore the products",
+        "button_label": "View products",
         "button_url": "/collections/individual-products",
-        "secondary_label": "Explore the systems",
+        "secondary_label": "See systems",
         "secondary_url": "/pages/systems",
         "note": "Alchemia MD supplements complement, but do not replace, sunscreen, appropriate sun-protective behavior, or professional medical care.",
         "asset": "",

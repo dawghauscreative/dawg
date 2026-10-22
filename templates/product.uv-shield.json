@@ -91,7 +91,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "What it is",
+        "eyebrow": "",
         "heading": "Daily internal support for life outdoors.",
         "heading_tag": "h2",
         "body": "<p>UV Shield+ is built for the reality that outdoor life exposes skin to more than one type of stress.</p><p>The formula uses five ingredients with different nutritional and biochemical roles so the support is broader than a single antioxidant or botanical alone.</p>",
@@ -106,7 +106,7 @@
       "type": "layer-stack",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "The biology",
+        "eyebrow": "",
         "heading": "Sun exposure is a daily reality.",
         "body": "<p>Your skin is a living organ constantly responding to the environment.</p><p>Outdoor exposure can influence oxidative stress, inflammatory signaling, cellular energy demands, and the skin's barrier systems.</p><p>That does not mean avoiding the outdoors. It means supporting skin through a layered routine:</p>",
         "callout": "UV Shield+ belongs in the third layer. It does not replace the first."
@@ -147,7 +147,7 @@
       "type": "product-actives",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The formula",
+        "eyebrow": "",
         "heading": "Five ingredients. Five distinct roles."
       },
       "blocks": {
@@ -159,7 +159,7 @@
             "role": "Cellular + barrier support",
             "slide_set": "d02",
             "text": "<p>Niacinamide is a form of vitamin B3 involved in cellular energy metabolism and multiple skin-related biological processes.</p><p>Within UV Shield+, it provides a different mechanism from the formula's plant polyphenols, giving the formulation broader pathway coverage.</p>",
-            "link_label": "Explore Niacinamide research →",
+            "link_label": "See research →",
             "link_url": "/pages/science#uv-shield"
           }
         },
@@ -171,7 +171,7 @@
             "role": "Botanical environmental-stress support",
             "slide_set": "d01",
             "text": "<p>Polypodium leucotomos is a fern-derived botanical studied in relation to skin responses to ultraviolet exposure.</p><p>In the formula architecture, it contributes a different botanical and antioxidant profile from niacinamide and the polyphenols.</p>",
-            "link_label": "Explore Polypodium research →",
+            "link_label": "See research →",
             "link_url": "/pages/science#uv-shield"
           }
         },
@@ -183,7 +183,7 @@
             "role": "Polyphenol antioxidant support",
             "slide_set": "d03",
             "text": "<p>EGCG is a green-tea catechin studied for antioxidant and cell-signaling activity.</p><p>It is potentially complementary with Polypodium leucotomos and resveratrol across oxidative and inflammatory-response pathways.</p>",
-            "link_label": "Explore EGCG research →",
+            "link_label": "See research →",
             "link_url": "/pages/science#uv-shield"
           }
         },
@@ -195,7 +195,7 @@
             "role": "Polyphenol cellular support",
             "slide_set": "d04",
             "text": "<p>Resveratrol is a plant polyphenol with antioxidant and cell-signaling activity.</p><p>Within the formula, it contributes overlapping but distinct redox and signaling support alongside EGCG and Polypodium leucotomos.</p>",
-            "link_label": "Explore Resveratrol research →",
+            "link_label": "See research →",
             "link_url": "/pages/science#uv-shield"
           }
         },
@@ -207,7 +207,7 @@
             "role": "Nutritional antioxidant support",
             "slide_set": "d05",
             "text": "<p>Spirulina adds nutrient-derived antioxidant activity to the broader polyphenol and botanical network.</p><p>It is viewed as complementary rather than a stand-alone mechanism.</p>",
-            "link_label": "Explore Spirulina research →",
+            "link_label": "See research →",
             "link_url": "/pages/science#uv-shield"
           }
         }
@@ -224,7 +224,7 @@
       "type": "ingredient-web",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Formulation logic",
+        "eyebrow": "",
         "heading": "Why combine these ingredients?",
         "caption": "This section describes formulation rationale. UV Shield+ as a finished product has not been established here as clinically tested for these combined outcomes."
       },
@@ -277,7 +277,7 @@
       "type": "flow-steps",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Understanding the science",
+        "eyebrow": "",
         "heading": "What is oxidative stress?",
         "body": "<p>Oxidative stress describes an imbalance between reactive molecules and the body's antioxidant defenses.</p><p>Environmental exposure can contribute to reactive oxygen species in skin.</p><p>Antioxidants do not act like sunscreen. They work through internal biochemical pathways rather than blocking UV radiation at the skin surface.</p><p>That distinction matters.</p>",
         "takeaway": "UV Shield+ is formulated to support those internal systems, not to replace external protection."
@@ -314,7 +314,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Skin barrier 101",
+        "eyebrow": "",
         "heading": "Resilient skin starts with a functional barrier.",
         "heading_tag": "h2",
         "body": "<p>The skin barrier helps regulate water loss and acts as a physical interface with the outside world.</p><p>Skin-barrier biology involves lipids, proteins, hydration, and normal cellular turnover.</p><p>Niacinamide has been studied in relation to several aspects of barrier biology, which is one reason it serves as a foundational nutrient in the UV Shield+ formula.</p>"
@@ -331,7 +331,7 @@
       "settings": {
         "color_scheme": "light",
         "columns": "3",
-        "eyebrow": "Built for life outdoors",
+        "eyebrow": "",
         "heading": "Designed for people who spend time outside.",
         "statement": "UV Shield+ is not about avoiding life outdoors. It is about building a more complete skin-health routine around the life you already live."
       },
@@ -412,11 +412,11 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "The research",
+        "eyebrow": "",
         "heading": "Why these ingredients?",
         "columns": "4",
         "show_images": false,
-        "button_label": "Explore the UV Shield+ research",
+        "button_label": "See research",
         "button_url": "/pages/science#uv-shield"
       },
       "blocks": {
@@ -460,7 +460,7 @@
       "type": "science-boundaries",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "UV Shield+ is not intended to:",
         "not_items": "Replace sunscreen\nPrevent sunburn\nMake prolonged sun exposure safe\nDiagnose or treat a skin condition\nReverse existing UV damage\nPrevent disease\nGuarantee visible results",
@@ -472,7 +472,7 @@
       "type": "system-finder",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Build your routine",
+        "eyebrow": "",
         "heading": "UV Shield+ can stand alone, or become part of a system.",
         "best_for_label": ""
       },
@@ -509,11 +509,11 @@
         "color_scheme": "light",
         "image_side": "left",
         "image_asset": "founder-portrait.webp",
-        "eyebrow": "Dermatologist-formulated",
+        "eyebrow": "",
         "heading": "Created through a dermatologist's lens.",
         "credentials": "",
         "body": "<p>Alchemia MD was created to bring dermatological thinking into daily supplementation.</p><p>Rather than asking customers to piece together an assortment of individual supplements, each formula is designed around a defined skin-health role and a transparent ingredient rationale.</p>",
-        "link_label": "Meet Dr. Mia Luna",
+        "link_label": "Meet Dr. Luna",
         "link_url": "/pages/founder"
       }
     },
@@ -528,7 +528,7 @@
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Questions",
+        "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
       },
@@ -604,12 +604,12 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Protect",
+        "eyebrow": "",
         "heading": "Support the skin that keeps up with your life.",
         "body": "<p>Five targeted ingredients. One dermatologist-formulated daily routine for people who spend their lives outdoors.</p>",
-        "button_label": "Choose your plan",
+        "button_label": "Choose a plan",
         "button_url": "#buy-box",
-        "secondary_label": "Explore the science",
+        "secondary_label": "Explore science",
         "secondary_url": "/pages/science#uv-shield"
       }
     }

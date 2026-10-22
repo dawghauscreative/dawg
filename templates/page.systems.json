@@ -5,13 +5,13 @@
       "settings": {
         "color_scheme": "dark",
         "image_side": "right",
-        "eyebrow": "Alchemia MD systems",
+        "eyebrow": "",
         "heading": "Build the routine that fits your skin.",
         "heading_tag": "h1",
         "body": "<p>Alchemia MD systems combine complementary formulas into simple daily routines built around three roles:</p><p><strong>Protect. Balance. Restore.</strong></p><p>Choose two targeted areas of support, or move into the complete three-step routine once you know you want all three.</p>",
-        "primary_label": "Find your system ↓",
+        "primary_label": "Find a system ↓",
         "primary_url": "#choose",
-        "secondary_label": "Explore individual products",
+        "secondary_label": "View products",
         "secondary_url": "/collections/individual-products",
         "asset": "systems-hero.webp",
         "ratio": "16x9",
@@ -22,7 +22,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "The framework",
+        "eyebrow": "",
         "heading": "Three roles. Four ways to build your routine.",
         "columns": "3",
         "show_images": false
@@ -63,7 +63,7 @@
       "type": "product-selector",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "Systems",
+        "eyebrow": "",
         "heading": "Choose your system",
         "card_columns": "2",
         "media_ratio": "16x9",
@@ -148,7 +148,7 @@
       "type": "compare-table",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Compare",
+        "eyebrow": "",
         "heading": "Which system fits your routine?",
         "col_1": "Roles",
         "col_2": "Includes",
@@ -204,14 +204,14 @@
       "settings": {
         "color_scheme": "light",
         "image_side": "right",
-        "eyebrow": "Protect + Balance",
+        "eyebrow": "",
         "heading": "Sun Safe System",
         "product": "sun-safe-system",
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
         "light_panel": true,
         "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+</p><h3>What each product contributes</h3><p><strong>UV Shield+</strong> Environmental and antioxidant support for skin exposed to life outdoors.</p><p><strong>Skinbiotic+</strong> Synbiotic support for gut health and the gut-skin connection.</p><h3>Why combine them?</h3><p>The pair works through different upstream mechanisms: UV Shield+ emphasizes environmental and oxidative pathways, while Skinbiotic+ emphasizes the intestinal microbial environment.</p><h3>Best for</h3><p>People who spend significant time outdoors and want to pair environmental support with gut-skin balance.</p>",
-        "primary_label": "Explore Sun Safe System"
+        "primary_label": "View system"
       }
     },
     "edu_recovery": {
@@ -219,14 +219,14 @@
       "settings": {
         "color_scheme": "green",
         "image_side": "left",
-        "eyebrow": "Balance + Restore",
+        "eyebrow": "",
         "heading": "Skin Recovery System",
         "product": "skin-recovery-system",
         "asset": "system-skin-recovery.webp",
         "ratio": "16x9",
         "light_panel": true,
         "body": "<p><strong>Includes</strong> Skinbiotic+ + Dermaboost+</p><h3>What each product contributes</h3><p><strong>Skinbiotic+</strong> Gut and microbiome support.</p><p><strong>Dermaboost+</strong> Antioxidant, nutritional, and normal immune support.</p><h3>Why combine them?</h3><p>This combination is a complementary gut-to-systemic strategy: one formula works primarily at the gut and microbial interface while the other contributes broader nutritional and systemic support.</p><h3>Best for</h3><p>Customers who want gut-skin balance plus broader daily nutritional support.</p>",
-        "primary_label": "Explore Skin Recovery System"
+        "primary_label": "View system"
       }
     },
     "edu_resilience": {
@@ -234,14 +234,14 @@
       "settings": {
         "color_scheme": "dark",
         "image_side": "right",
-        "eyebrow": "Protect + Restore",
+        "eyebrow": "",
         "heading": "Sun Resilience System",
         "product": "sun-resilience-system",
         "asset": "system-sun-resilience.webp",
         "ratio": "16x9",
         "light_panel": true,
         "body": "<p><strong>Includes</strong> UV Shield+ + Dermaboost+</p><h3>What each product contributes</h3><p><strong>UV Shield+</strong> Environmental and UV-related support.</p><p><strong>Dermaboost+</strong> Broader antioxidant, nutritional, and normal immune support.</p><h3>Why combine them?</h3><p>This is the pairing with the strongest overlap in oxidative-pathway support, while the two formulas keep different primary roles.</p><h3>Best for</h3><p>Customers with active outdoor lifestyles who want environmental support plus broader nutritional resilience.</p>",
-        "primary_label": "Explore Sun Resilience System"
+        "primary_label": "View system"
       }
     },
     "edu_complete": {
@@ -249,14 +249,14 @@
       "settings": {
         "color_scheme": "light",
         "image_side": "left",
-        "eyebrow": "Protect + Balance + Restore",
+        "eyebrow": "",
         "heading": "Complete Skin Defense System",
         "product": "complete-skin-defense-system",
         "asset": "system-complete.webp",
         "ratio": "16x9",
         "light_panel": true,
         "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+ + Dermaboost+</p><h3>What the system covers</h3><p><strong>Protect</strong> Environmental and antioxidant support.</p><p><strong>Balance</strong> Gut-skin and microbiome support.</p><p><strong>Restore</strong> Nutritional, antioxidant, and normal immune support.</p><h3>Why combine all three?</h3><p>The three formulas are organized across three broad domains, each with a primary role and some complementary overlap:</p><ul><li>Environmental and UV stress</li><li>The gut microbial environment</li><li>Systemic oxidative and immune-related pathways</li></ul><h3>Important positioning</h3><p>This is not the universal starting point. It is the most comprehensive routine for customers who already know they want support across all three Alchemia MD roles.</p>",
-        "primary_label": "Explore Complete Skin Defense"
+        "primary_label": "View system"
       }
     },
     "finder": {
@@ -264,7 +264,7 @@
       "settings": {
         "color_scheme": "green",
         "columns": "2",
-        "eyebrow": "Not sure?",
+        "eyebrow": "",
         "heading": "Not sure which system to choose?"
       },
       "blocks": {
@@ -314,7 +314,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Formulation philosophy",
+        "eyebrow": "",
         "heading": "Systems are about complementary roles, not more bottles.",
         "heading_tag": "h2",
         "body": "<p>The point of an Alchemia MD system is not to take the largest number of products. It is to combine formulas when their primary roles support different parts of the same broader skin-health routine.</p><p><strong>Protect</strong> Environmental support.</p><p><strong>Balance</strong> Gut-skin support.</p><p><strong>Restore</strong> Nutritional and immune support.</p>",
@@ -325,7 +325,7 @@
       "type": "system-directions",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Daily routine",
+        "eyebrow": "",
         "heading": "A system is still a daily routine.",
         "body": "<p>Each product is taken according to its own label directions.</p>"
       },
@@ -365,11 +365,11 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Why the combinations make sense",
+        "eyebrow": "",
         "heading": "Built around complementary biology.",
         "columns": "4",
         "show_images": false,
-        "button_label": "Explore the science",
+        "button_label": "Explore science",
         "button_url": "/pages/science"
       },
       "blocks": {
@@ -415,11 +415,11 @@
         "color_scheme": "dark",
         "image_side": "left",
         "image_asset": "founder-portrait.webp",
-        "eyebrow": "Dermatologist-formulated",
+        "eyebrow": "",
         "heading": "A system should make skin health easier to understand.",
         "credentials": "",
         "body": "<p>Alchemia MD was created to reduce the confusion of disconnected supplement routines.</p><p>Each product has a defined role. Each system combines those roles intentionally.</p><p>The goal is not to convince every person to take everything. The goal is to make it clear what each formula does and help customers build a routine that fits their priorities.</p>",
-        "link_label": "Meet Dr. Mia Luna",
+        "link_label": "Meet Dr. Luna",
         "link_url": "/pages/founder"
       }
     },
@@ -427,7 +427,7 @@
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Questions",
+        "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
       },
@@ -496,12 +496,12 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Protect. Balance. Restore.",
+        "eyebrow": "",
         "heading": "Build the system that fits your routine.",
         "body": "<p>Choose the combination of dermatologist-formulated support that matches your priorities.</p>",
-        "button_label": "Choose your system",
+        "button_label": "Choose a system",
         "button_url": "#choose",
-        "secondary_label": "Shop individual products",
+        "secondary_label": "View products",
         "secondary_url": "/collections/individual-products"
       }
     }

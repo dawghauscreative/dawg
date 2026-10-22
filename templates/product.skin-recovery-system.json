@@ -89,7 +89,7 @@
       "type": "split-compare",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "What it is",
+        "eyebrow": "",
         "heading": "A two-step routine for internal balance and resilience.",
         "body": "<p>The Skin Recovery System combines two formulas with different primary roles.</p><p>The combination is biologically complementary because one formula is centered on the gut and microbial environment and the other on broader systemic nutritional and antioxidant pathways.</p>",
         "center": "Balance the gut. Support the systems skin relies on."
@@ -127,7 +127,7 @@
         "color_scheme": "dark",
         "align": "left",
         "width": "wide",
-        "eyebrow": "System logic",
+        "eyebrow": "",
         "heading": "Why pair Skinbiotic+ with Dermaboost+?",
         "heading_tag": "h2",
         "body": "<p>The two products begin in different places.</p><p><strong>Skinbiotic+</strong> focuses on the gut, microbiome, prebiotic support, and microbial signaling.</p><p><strong>Dermaboost+</strong> focuses on vitamins, minerals, botanicals, carotenoids, antioxidant support, and normal immune function.</p><p>Together they form a gut-to-systemic strategy, with potentially complementary roles across:</p>"
@@ -191,14 +191,14 @@
       "settings": {
         "color_scheme": "green",
         "image_side": "right",
-        "eyebrow": "Step 1",
+        "eyebrow": "",
         "heading": "Skinbiotic+",
         "subhead": "Daily probiotic for gut and skin health",
         "product": "skinbiotic",
         "asset": "lifestyle-skinbiotic-cliffs.webp",
         "ratio": "4x5",
         "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection. Its formula includes:</p><ul><li>Organic inulin</li><li>Lactobacillus plantarum</li><li>Bifidobacterium lactis</li><li>Lactobacillus rhamnosus</li><li>Bifidobacterium bifidum</li><li>Akkermansia muciniphila Akk11®</li></ul><p>The formulation rationale is the prebiotic and probiotic pairing, and the different ecological roles of the organisms.</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.</p>",
-        "primary_label": "Explore Skinbiotic+"
+        "primary_label": "Learn more"
       }
     },
     "step2": {
@@ -206,14 +206,14 @@
       "settings": {
         "color_scheme": "light",
         "image_side": "left",
-        "eyebrow": "Step 2",
+        "eyebrow": "",
         "heading": "Dermaboost+",
         "subhead": "Daily immune support for calm, balanced skin",
         "product": "dermaboost",
         "asset": "lifestyle-dermaboost-yacht.webp",
         "ratio": "4x5",
         "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients selected for broader nutritional, antioxidant, and normal immune-supportive roles. The formula includes:</p><ul><li>Niacinamide</li><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf extract</li><li>Astaxanthin</li></ul><p>The formulation rationale identifies several complementary ingredient relationships, including quercetin + curcumin, quercetin + vitamin C, quercetin + astaxanthin, curcumin + olive leaf, and vitamin C + zinc.</p><p><strong>Key support areas:</strong> antioxidant support, normal immune function, nutritional skin support, daily skin resilience.</p>",
-        "primary_label": "Explore Dermaboost+"
+        "primary_label": "Learn more"
       }
     },
     "gutskin": {
@@ -222,7 +222,7 @@
         "color_scheme": "dark",
         "align": "left",
         "width": "wide",
-        "eyebrow": "The biology",
+        "eyebrow": "",
         "heading": "The gut and skin are part of a larger system.",
         "heading_tag": "h2",
         "body": "<p>The gut-skin axis refers to biological communication between the intestinal environment and the skin. Research in this area looks at pathways involving:</p><ul><li>Microbial metabolites</li><li>Intestinal barrier integrity</li><li>Immune signaling</li><li>Nutrient metabolism</li><li>Microbiome composition</li></ul><p>Skinbiotic+ is designed around the gut side of that relationship. The gut is one part of the picture; not every skin concern is connected to it.</p>"
@@ -232,7 +232,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "System thinking",
+        "eyebrow": "",
         "heading": "Different starting points. Complementary support.",
         "columns": "3",
         "show_images": false,
@@ -273,7 +273,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Microbiome biology",
+        "eyebrow": "",
         "heading": "The microbiome does more than digest food.",
         "heading_tag": "h2",
         "body": "<p>Intestinal microorganisms interact with the body through:</p><ul><li>Metabolites</li><li>Barrier signaling</li><li>Nutrient processing</li><li>Immune communication</li></ul><p>Skinbiotic+ supports the microbial environment through prebiotic fiber and multiple probiotic organisms. Dermaboost+ contributes nutrients associated with normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating an immune-mediated skin condition.</em></p><h3>Broader support beyond the microbiome.</h3><p>Dermaboost+ expands the system beyond gut support through a combination of:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.</p>"
@@ -283,7 +283,7 @@
       "type": "split-compare",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "What’s inside",
+        "eyebrow": "",
         "heading": "Two formulas. Two different starting points."
       },
       "blocks": {
@@ -315,7 +315,7 @@
       "type": "split-compare",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "Choose by priority",
+        "eyebrow": "",
         "heading": "Skin Recovery is not the same as Sun Safe.",
         "center": "Choose Skin Recovery when environmental exposure is not the main reason you are building the system."
       },
@@ -354,7 +354,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Internal balance",
+        "eyebrow": "",
         "heading": "Built for customers looking beyond surface-level skincare.",
         "columns": "3",
         "show_images": false
@@ -454,11 +454,11 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The research",
+        "eyebrow": "",
         "heading": "Why these two formulas?",
         "columns": "4",
         "show_images": false,
-        "button_label": "Explore the Skin Recovery science",
+        "button_label": "See science",
         "button_url": "/pages/science"
       },
       "blocks": {
@@ -505,7 +505,7 @@
       "type": "science-boundaries",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "The Skin Recovery System does not claim to:",
         "not_items": "Treat acne\nTreat eczema\nTreat psoriasis\nTreat rosacea\nTreat autoimmune disease\nEliminate inflammation\nCure gut problems\nGuarantee clearer skin\nGuarantee visible results\nProve the finished two-product system has been clinically tested\nReplace medical care",
@@ -517,12 +517,12 @@
       "type": "compare-table",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Compare systems",
+        "eyebrow": "",
         "heading": "Is Skin Recovery right for you?",
         "col_1": "Roles",
         "col_2": "Includes",
         "col_3": "Best fit",
-        "button_label": "Compare all systems",
+        "button_label": "Compare systems",
         "button_url": "/pages/systems"
       },
       "blocks": {
@@ -574,7 +574,7 @@
       "type": "start-paths",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Build around your priorities",
+        "eyebrow": "",
         "heading": "Need a different combination?"
       },
       "blocks": {
@@ -615,11 +615,11 @@
         "color_scheme": "dark",
         "image_side": "left",
         "image_asset": "founder-portrait.webp",
-        "eyebrow": "Dermatologist-formulated",
+        "eyebrow": "",
         "heading": "Built to connect the systems skin depends on.",
         "credentials": "",
         "body": "<p>Alchemia MD was created around the idea that skin health is not isolated from the rest of the body.</p><p>The Skin Recovery System reflects that philosophy by pairing gut-focused support with broader nutritional and antioxidant support.</p><p>The goal is not to treat a condition. It is to create a clearer, more intentional internal skin-health routine.</p>",
-        "link_label": "Meet Dr. Mia Luna",
+        "link_label": "Meet Dr. Luna",
         "link_url": "/pages/founder"
       }
     },
@@ -634,7 +634,7 @@
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Questions",
+        "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
       },
@@ -726,12 +726,12 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Balance + Restore",
+        "eyebrow": "",
         "heading": "Support skin from the gut out.",
         "body": "<p>Skinbiotic+ and Dermaboost+ combine microbiome-focused support with broader antioxidant, nutritional, and normal immune support in one dermatologist-formulated routine.</p>",
-        "button_label": "Choose your plan",
+        "button_label": "Choose a plan",
         "button_url": "#buy-box",
-        "secondary_label": "Explore the science",
+        "secondary_label": "Explore science",
         "secondary_url": "/pages/science"
       }
     }

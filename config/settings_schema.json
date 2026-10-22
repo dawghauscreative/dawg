@@ -8,7 +8,7 @@
     "theme_support_url": "https://alchemiamd.com"
   },
   {
-    "name": "Brand colors (Blueprint V2)",
+    "name": "Brand colors (Draft v2)",
     "settings": [
       {
         "type": "color",
@@ -26,30 +26,37 @@
       },
       {
         "type": "color",
+        "id": "color_emerald",
+        "label": "Emerald",
+        "default": "#132D22",
+        "info": "Deepest green: mailing list, footer and green hero bands."
+      },
+      {
+        "type": "color",
         "id": "color_evergreen",
         "label": "Evergreen",
-        "default": "#1A2E1F",
-        "info": "Secondary dark surface. Use selectively."
+        "default": "#2D3D2D",
+        "info": "Secondary dark green surface (cards, alternating bands)."
       },
       {
         "type": "color",
         "id": "color_gold",
         "label": "Gold",
-        "default": "#C9A96E",
+        "default": "#C18C31",
         "info": "Accent, primary button on dark, thin rules, icon details."
       },
       {
         "type": "color",
         "id": "color_white",
-        "label": "Beige (primary light surface and text on dark)",
-        "default": "#F5F0E8"
+        "label": "White (light surface and text on dark)",
+        "default": "#FFFFFF"
       },
       {
         "type": "color",
         "id": "color_beige",
-        "label": "Warm beige (secondary band)",
-        "default": "#EDE3D2",
-        "info": "A slightly deeper tone of Beige for alternating light bands."
+        "label": "Beige (warm tan: product tiles and accent bands)",
+        "default": "#DEBC8C",
+        "info": "Brand Guidelines beige."
       },
       {
         "type": "color",
@@ -385,7 +392,7 @@
         "type": "text",
         "id": "sticky_cta_label",
         "label": "Sticky bar button label",
-        "default": "Choose your plan",
+        "default": "Choose a plan",
         "info": "Scrolls to the buy box. It is never an add-to-cart or a Buy it now button."
       },
       {
