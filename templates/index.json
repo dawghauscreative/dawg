@@ -12,7 +12,7 @@
         "secondary_label": "Explore science",
         "secondary_url": "/pages/science",
         "image_alt": "",
-        "background_asset": "hero-banner-1.webp"
+        "background_asset": "product-3d-trio.webp"
       }
     },
     "trust_strip": {
@@ -84,21 +84,24 @@
           "type": "formula",
           "settings": {
             "product": "dermaboost",
-            "descriptor": "Daily immune support"
+            "descriptor": "Daily immune support",
+            "asset": "product-3d-dermaboost.webp"
           }
         },
         "p2": {
           "type": "formula",
           "settings": {
             "product": "skinbiotic",
-            "descriptor": "Daily skin probiotic"
+            "descriptor": "Daily skin probiotic",
+            "asset": "product-3d-skinbiotic.webp"
           }
         },
         "p3": {
           "type": "formula",
           "settings": {
             "product": "uv-shield",
-            "descriptor": "Daily sun support"
+            "descriptor": "Daily sun support",
+            "asset": "product-3d-uv-shield.webp"
           }
         }
       },
@@ -110,11 +113,12 @@
       "settings": {
         "color_scheme": "dark",
         "heading": "Our products",
-        "featured_product": "sun-safe-system",
-        "featured_descriptor": "Protect + Balance",
+        "featured_product": "skin-recovery-system",
+        "featured_descriptor": "Gut + Skin",
         "callout_heading": "Discover the best combination for your lifestyle.",
         "callout_label": "Shop systems",
-        "callout_url": "/pages/systems"
+        "callout_url": "/pages/systems",
+        "featured_asset": "product-3d-skinbiotic-dermaboost.webp"
       }
     },
     "education": {

@@ -391,3 +391,6 @@ Not done yet: product pages (19 to 24 sections, target 8 variable), 40% copy cut
 
 ### Draft v2 fonts trial (Oct 22)
 Trial of Stef's type system, on the draft branch only: headlines BC Novatica Semibold (Adobe kit `qza3lbn`, family `bc-novatica-cyr`, Figtree fallback), body Newsreader as a STAND-IN for Dejanire Text (not licensed), callouts and buttons Roboto 400/500/700 uppercase. New `body_font_stylesheet_url` setting. If the Adobe kit does not list the preview domain or has no Semibold, headlines fall back to Figtree. The main build keeps Playfair Display + Inter.
+
+### 3D product renders in the draft v2 test theme (Oct 22)
+Five 3D renders (trio, Skinbiotic+ with Dermaboost+, and each single on tan/green) added as theme assets `product-3d-*.webp`. Used on the home page only in the test theme: hero background (trio), the three tan product tiles (single renders, zoomed with `.media--zoom`), and the featured system tile (now Skin Recovery System, which the duo render matches). Added to the matching product page galleries via `gallery_assets` (after the product media). Product images in Shopify admin were NOT changed (they are shared with the live theme); replace them there to change the main image and cards everywhere.

@@ -1010,3 +1010,4 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .scheme-evergreen .edu-card .text-link { border-bottom-color: var(--c-gold); }
 .scheme-evergreen .edu-card:hover .text-link { color: var(--c-gold); }
 .edu-card .text-link { justify-self: start; }
+.media--zoom img { transform: scale(1.5); }
