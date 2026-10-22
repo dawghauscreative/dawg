@@ -388,3 +388,6 @@ Adopted from the notes:
 
 Not changed (owner decision): fonts and bundle names stay as in the main build.
 Not done yet: product pages (19 to 24 sections, target 8 variable), 40% copy cut, 3D product images, products-three-times rule, navigation changes from the template. Removed home content (problem, roles, finder, science, research, founder, philosophy, trust, mission, final CTA) still exists on the Science, Systems and Founder pages.
+
+### Draft v2 fonts trial (Oct 22)
+Trial of Stef's type system, on the draft branch only: headlines BC Novatica Semibold (Adobe kit `qza3lbn`, family `bc-novatica-cyr`, Figtree fallback), body Newsreader as a STAND-IN for Dejanire Text (not licensed), callouts and buttons Roboto 400/500/700 uppercase. New `body_font_stylesheet_url` setting. If the Adobe kit does not list the preview domain or has no Semibold, headlines fall back to Figtree. The main build keeps Playfair Display + Inter.
