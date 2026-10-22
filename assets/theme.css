@@ -1022,3 +1022,4 @@ main .shopify-section:nth-of-type(even) > .scheme-light { --bg: var(--c-soft); -
 .scheme-light .showcase-card:hover .showcase-card__title { color: var(--c-evergreen); text-decoration: underline; }
 .scheme-light .media { background: var(--c-soft); }
 .showcase__callout .btn { --btn-bg: var(--c-gold); --btn-fg: var(--c-black); }
+.media--zoom img { transform: scale(1.5); }

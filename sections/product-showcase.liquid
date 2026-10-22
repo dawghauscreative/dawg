@@ -14,9 +14,13 @@
           {%- if p != blank -%}
             <a class="showcase-card" href="{{ p.url }}" {{ block.shopify_attributes }}>
               <div class="showcase-card__media">
-                {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
-                {%- assign fallback_asset = fallback_capture | strip -%}
-                {%- render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: '1x1', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title -%}
+                {%- if block.settings.asset != blank -%}
+                  {%- render 'responsive-image', asset: block.settings.asset, asset_width: 1800, asset_height: 1013, ratio: '1x1', class: 'media--zoom', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title -%}
+                {%- else -%}
+                  {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
+                  {%- assign fallback_asset = fallback_capture | strip -%}
+                  {%- render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: '1x1', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title -%}
+                {%- endif -%}
               </div>
               <div class="showcase-card__body">
                 {%- if block.settings.descriptor != blank -%}<span class="showcase-card__descriptor">{{ block.settings.descriptor }}</span>{%- endif -%}
@@ -32,9 +36,13 @@
       <div class="showcase__feature">
         <a class="showcase-card" href="{{ fp.url }}">
           <div class="showcase-card__media">
-            {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: fp.handle -%}{%- endcapture -%}
-            {%- assign fallback_asset = fallback_capture | strip -%}
-            {%- render 'responsive-image', image: fp.featured_media, asset: fallback_asset, ratio: '16x9', sizes: '(min-width: 990px) 40vw, 100vw', alt: fp.title -%}
+            {%- if section.settings.featured_asset != blank -%}
+              {%- render 'responsive-image', asset: section.settings.featured_asset, asset_width: 1800, asset_height: 1013, ratio: '16x9', sizes: '(min-width: 990px) 40vw, 100vw', alt: fp.title -%}
+            {%- else -%}
+              {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: fp.handle -%}{%- endcapture -%}
+              {%- assign fallback_asset = fallback_capture | strip -%}
+              {%- render 'responsive-image', image: fp.featured_media, asset: fallback_asset, ratio: '16x9', sizes: '(min-width: 990px) 40vw, 100vw', alt: fp.title -%}
+            {%- endif -%}
           </div>
           <div class="showcase-card__body">
             {%- if section.settings.featured_descriptor != blank -%}<span class="showcase-card__descriptor">{{ section.settings.featured_descriptor }}</span>{%- endif -%}
@@ -64,6 +72,7 @@
     { "type": "text", "id": "heading", "label": "Heading", "default": "Our products" },
     { "type": "product", "id": "featured_product", "label": "Featured system" },
     { "type": "text", "id": "featured_descriptor", "label": "Featured system descriptor" },
+    { "type": "text", "id": "featured_asset", "label": "Featured system image (theme asset filename)", "info": "Optional. Used instead of the product image." },
     { "type": "text", "id": "callout_heading", "label": "Call-out heading" },
     { "type": "text", "id": "callout_label", "label": "Call-out button (15 characters or fewer)" },
     { "type": "url", "id": "callout_url", "label": "Call-out button link" }
@@ -74,6 +83,7 @@
       "name": "Formula",
       "settings": [
         { "type": "product", "id": "product", "label": "Product" },
+        { "type": "text", "id": "asset", "label": "Image (theme asset filename)", "info": "Optional. Used instead of the product image." },
         { "type": "text", "id": "descriptor", "label": "Descriptor (small caps line)" }
       ]
     }

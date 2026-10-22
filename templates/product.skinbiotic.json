@@ -69,7 +69,9 @@
         "trust_bar",
         "fda"
       ],
-      "settings": {}
+      "settings": {
+        "gallery_assets": "product-3d-skinbiotic.webp"
+      }
     },
     "definition": {
       "type": "rich-text",
