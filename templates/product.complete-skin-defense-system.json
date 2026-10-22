@@ -140,7 +140,7 @@
     "whofor": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "align": "left",
         "width": "wide",
         "eyebrow": "",
@@ -152,7 +152,7 @@
     "step1": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "image_side": "right",
         "eyebrow": "",
         "heading": "UV Shield+",
@@ -182,7 +182,7 @@
     "step3": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "image_side": "right",
         "eyebrow": "",
         "heading": "Dermaboost+",
@@ -197,7 +197,7 @@
     "domains": {
       "type": "domain-circles",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Three different starting points.",
         "center": "COMPLETE",
@@ -253,7 +253,7 @@
     "environment": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "align": "left",
         "width": "wide",
         "eyebrow": "",
@@ -338,13 +338,13 @@
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
-        "color_scheme": "green"
+        "color_scheme": "light"
       }
     },
     "supports": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "heading": "Five areas of support.",
         "columns": "3",
         "show_images": false,
@@ -456,7 +456,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "One system. Multiple areas of biology.",
         "columns": "3",
@@ -537,7 +537,7 @@
     "sunscreen": {
       "type": "science-sunscreen",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "heading": "Keep the sunscreen.",
         "body": "<p>Complete Skin Defense is internal support. It should be used alongside:</p>",
         "items": "Broad-spectrum sunscreen\nProtective clothing\nHats and sunglasses\nShade\nAppropriate reapplication\nRoutine dermatologic care",
@@ -547,7 +547,7 @@
     "founder": {
       "type": "founder",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "image_side": "left",
         "image_asset": "founder-portrait.webp",
         "eyebrow": "",
@@ -576,7 +576,7 @@
     "faq": {
       "type": "pdp-faq",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
@@ -669,7 +669,7 @@
     "compliance": {
       "type": "compliance-notice",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
         "extra_line": "Complete Skin Defense is not a replacement for sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
       }
@@ -677,7 +677,7 @@
     "final": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "The full Alchemia MD routine.",
         "body": "<p>Three dermatologist-formulated products. Three distinct roles. One comprehensive daily system for customers who want the broadest Alchemia MD approach to internal skin support.</p>",

@@ -46,13 +46,13 @@
         "t3"
       ],
       "settings": {
-        "color_scheme": "dark"
+        "color_scheme": "light"
       }
     },
     "sun": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "image_side": "left",
         "heading": "For more days under the sun",
         "body": "<p>Some of life's best moments happen outside. Alchemia MD supports skin from within, as one layer of a sun-smart routine, so you can stay present for what matters.</p>",
@@ -66,7 +66,7 @@
     "balance": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "image_side": "right",
         "heading": "When trends chase perfect skin, we practice balance.",
         "body": "<p>Skin is a dynamic ecosystem that is always changing. We believe healthy skin starts with supporting the body from within.</p>",
@@ -108,7 +108,7 @@
         "p3"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "heading": "Our products",
         "featured_product": "sun-safe-system",
         "featured_descriptor": "Protect + Balance",

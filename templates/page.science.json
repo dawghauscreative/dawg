@@ -12,7 +12,7 @@
     "hero": {
       "type": "science-hero",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "Dermatological science, from within",
         "heading": "The Science of Internal Skin Health",
         "body": "<p>Skin is not an isolated surface. It is a living organ influenced by nutrition, environmental exposure, immune signaling, oxidative stress, the intestinal microbiome, and the integrity of its own barrier.</p><p>Alchemia MD formulates around those interconnected systems.</p><p>Every ingredient is selected for a defined purpose and evaluated against published research. The goal is not to replace topical skincare or sun protection. It is to add evidence-informed nutritional support to a complete skin-health routine.</p>",
@@ -162,7 +162,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "anchor": "",
         "eyebrow": "",
         "heading": "Skin health is a system.",
@@ -271,7 +271,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "anchor": "uv-shield",
         "role": "Protect",
         "heading": "UV Shield+",
@@ -504,7 +504,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "anchor": "dermaboost",
         "role": "Restore",
         "heading": "Dermaboost+",
@@ -566,7 +566,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Different pathways. One skin-health system.",
         "body": "<p>The strongest formulation argument is not that one ingredient does everything. It is the opposite: different ingredients and products address different parts of a larger biological system.</p>",
@@ -761,7 +761,7 @@
         "b10"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What we know, and what we don't.",
         "body": "",
@@ -784,7 +784,7 @@
     "sunscreen": {
       "type": "science-sunscreen",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "heading": "Internal support is one layer.",
         "body": "<p>Alchemia MD is designed to complement, not replace, a complete sun-safety routine.</p>",
         "items": "Broad-spectrum sunscreen\nProtective clothing\nShade\nHats and sunglasses\nAppropriate reapplication\nRoutine dermatologic care",
@@ -865,7 +865,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "anchor": "",
         "eyebrow": "",
         "heading": "Why we formulate in systems.",
@@ -880,7 +880,7 @@
     "mia": {
       "type": "founder",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "image_asset": "founder-portrait.webp",
         "image_alt": "Dr. Mia Luna",
         "image_side": "left",
@@ -895,7 +895,7 @@
     "cta": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "band",
+        "color_scheme": "light",
         "product": "",
         "eyebrow": "",
         "heading": "Build your internal skin health routine.",
@@ -914,7 +914,7 @@
       "settings": {
         "extra_line": "",
         "fda_text": "",
-        "color_scheme": "dark"
+        "color_scheme": "light"
       }
     }
   },

@@ -91,7 +91,7 @@
     "axis": {
       "type": "flow-steps",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What is the gut-skin axis?",
         "body": "<p>The gut-skin axis describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
@@ -140,7 +140,7 @@
     "synbiotic": {
       "type": "split-compare",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What makes it a synbiotic?",
         "body": "<p>A synbiotic pairs a prebiotic with probiotics. Each side has a different job, and the formula is built around having both.</p>",
@@ -172,7 +172,7 @@
     "formula": {
       "type": "product-actives",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Six components. Distinct roles.",
         "body": "<p>Organic inulin at 500 mg and a 215 mg probiotic blend, as listed on the label.</p>"
@@ -306,7 +306,7 @@
     "micro": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "align": "left",
         "width": "wide",
         "eyebrow": "",
@@ -318,7 +318,7 @@
     "scfa": {
       "type": "flow-steps",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What fermentation produces.",
         "body": "<p>When gut microbes ferment dietary fibers such as inulin, they produce short-chain fatty acids, including acetate, propionate, and butyrate. These molecules are studied for their roles in intestinal and systemic signaling.</p>",
@@ -372,7 +372,7 @@
     "timeline": {
       "type": "renewal-timeline",
       "settings": {
-        "color_scheme": "green"
+        "color_scheme": "light"
       }
     },
     "who": {
@@ -432,7 +432,7 @@
     "supports": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What Skinbiotic+ is designed to support.",
         "columns": "4",
@@ -479,7 +479,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Why these organisms?",
         "columns": "4",
@@ -545,7 +545,7 @@
     "systems": {
       "type": "system-finder",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Skinbiotic+ can stand alone, or become part of a system.",
         "best_for_label": ""
@@ -602,7 +602,7 @@
     "faq": {
       "type": "pdp-faq",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
@@ -679,14 +679,14 @@
     "compliance": {
       "type": "compliance-notice",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "extra_line": ""
       }
     },
     "final": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Support the conversation between gut and skin.",
         "body": "<p>Prebiotic fuel and five probiotic organisms in one daily capsule.</p>",

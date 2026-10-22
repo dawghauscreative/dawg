@@ -553,7 +553,7 @@ h1, h2, h3, h4 { font-variant-numeric: lining-nums; }
 .sci-rcard__sub { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; opacity: .7; margin-top: .25rem; }
 .sci-badge { font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; padding: .4rem .7rem; border: 1px solid var(--accent); color: var(--accent); white-space: normal; max-width: 22ch; text-align: right; }
 .sci-rcard--mixed .sci-badge { border-style: dashed; }
-.sci-rcard__row h4 { font-family: var(--font-callout); font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; opacity: .7; margin-bottom: .45rem; font-weight: 700; }
+.sci-rcard__row h4 { font-family: var(--font-body); font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; opacity: .7; margin-bottom: .45rem; font-weight: 700; }
 .sci-rcard__row p + p { margin-top: .75rem; }
 .sci-rcard__row--context { padding: 14px 16px; border-left: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 7%, transparent); }
 .sci-rcard__row--context p { font-size: .92rem; }
@@ -711,7 +711,7 @@ h1, h2, h3, h4 { font-variant-numeric: lining-nums; }
 @media (min-width: 990px) { .layers { grid-template-columns: 1fr 1.1fr; gap: 88px; } }
 .layers__stack { display: grid; gap: 10px; max-width: 460px; }
 .layers__bar { display: flex; align-items: center; gap: 14px; padding: 18px 22px; border: 1px solid var(--accent); background: color-mix(in srgb, var(--accent) calc(8% + var(--i) * 5%), transparent); margin-left: calc(var(--i) * 22px); font-family: var(--font-display); font-size: 1.35rem; }
-.layers__bar span { font-family: var(--font-callout); font-size: .72rem; letter-spacing: .18em; opacity: .65; }
+.layers__bar span { font-family: var(--font-body); font-size: .72rem; letter-spacing: .18em; opacity: .65; }
 .layers__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 26px; }
 .layers__list li { display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: start; }
 .layers__num { font-family: var(--font-display); font-size: 2.3rem; line-height: 1; color: var(--accent); }
@@ -1010,3 +1010,15 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .scheme-evergreen .edu-card .text-link { border-bottom-color: var(--c-gold); }
 .scheme-evergreen .edu-card:hover .text-link { color: var(--c-gold); }
 .edu-card .text-link { justify-self: start; }
+
+/* ---------- Draft v3: light mode (white and soft beige page, dark header/footer and accent bands) ---------- */
+:root { --c-soft: color-mix(in srgb, var(--c-beige) 16%, var(--c-white)); }
+.scheme-light { --accent: var(--c-evergreen); --btn-bg: var(--c-emerald); --btn-fg: var(--c-white); --rule: color-mix(in srgb, var(--c-black) 16%, transparent); --card: var(--c-soft); }
+main .shopify-section:nth-of-type(even) > .scheme-light { --bg: var(--c-soft); --card: var(--c-white); }
+.scheme-light .eyebrow, .scheme-light .role-badge { color: var(--c-evergreen); }
+.scheme-light .pdp__price { color: var(--c-black) !important; }
+.scheme-light .trust-strip { background: transparent; }
+.scheme-light .showcase-card__descriptor, .scheme-light .showcase-card__price { color: var(--c-evergreen); }
+.scheme-light .showcase-card:hover .showcase-card__title { color: var(--c-evergreen); text-decoration: underline; }
+.scheme-light .media { background: var(--c-soft); }
+.showcase__callout .btn { --btn-bg: var(--c-gold); --btn-fg: var(--c-black); }

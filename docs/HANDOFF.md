@@ -391,3 +391,6 @@ Not done yet: product pages (19 to 24 sections, target 8 variable), 40% copy cut
 
 ### Draft v2 fonts trial (Oct 22)
 Trial of Stef's type system, on the draft branch only: headlines BC Novatica Semibold (Adobe kit `qza3lbn`, family `bc-novatica-cyr`, Figtree fallback), body Newsreader as a STAND-IN for Dejanire Text (not licensed), callouts and buttons Roboto 400/500/700 uppercase. New `body_font_stylesheet_url` setting. If the Adobe kit does not list the preview domain or has no Semibold, headlines fall back to Figtree. The main build keeps Playfair Display + Inter.
+
+### Draft v3 (branch `claude/alchemia-md-draft-v3-light-rqmk4u`): light mode test (Oct 22)
+Same layout, palette and button changes as draft v2, but the page body is light: sections that were Black or Emerald now use White, with every second band a soft beige tint (`--c-soft`, CSS-only alternation in `main .shopify-section:nth-of-type(even)`). Header, footer, announcement bar, hero images, the mailing list, final CTA and the "Let's talk skin" band stay dark/green. Light-scheme buttons are Emerald with white text; light-scheme accents are Evergreen (gold is too low-contrast on white). Fonts are the original Playfair Display + Inter, so v3 changes colour mode only relative to the main build's type. Swap fonts in Theme settings > Typography.

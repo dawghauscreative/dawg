@@ -47,7 +47,7 @@
         "q5"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h1"
@@ -84,7 +84,7 @@
         "q3"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Systems",
         "heading_tag": "h2"
@@ -105,7 +105,7 @@
         "q1"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Sunscreen",
         "heading_tag": "h2"
