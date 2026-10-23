@@ -118,7 +118,7 @@
         "type": "text",
         "id": "body_font_family",
         "label": "Body font-family (CSS)",
-        "default": "\"dejanire-text\", \"adbe-dejanire-text\", Newsreader, Georgia, serif"
+        "default": "\"dejanire-text\", \"adbe-dejanire-text\", \"adobe-dejanire-text\", \"dejanire\", Newsreader, Georgia, serif"
       },
       {
         "type": "text",
