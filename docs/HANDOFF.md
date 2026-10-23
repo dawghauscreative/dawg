@@ -375,3 +375,6 @@ Desktop is unchanged (card + COA widget under the gallery). On phones (<990px) t
 
 ### Removed the duplicate "How to take" sections (Oct 16)
 The How to take it card under the gallery is now the only directions block on every product page. Removed the lower `how` section (and the `routine` daily-flow strip on UV Shield+ and Dermaboost+) from UV Shield+, Dermaboost+, Sun Safe, Sun Resilience, Skin Recovery and Complete Skin Defense, matching Skinbiotic+. The `pdp-how-it-works` and `system-directions` sections still exist in the theme for reuse.
+
+### Fonts change reverted (Oct 23)
+Stef's font set was applied to the main build and then reverted at the owner's request. The main build is back to its Oct 16 state: Playfair Display headlines (regular weight) and Inter body/buttons, both from Google Fonts. The test themes still carry their own font settings.
