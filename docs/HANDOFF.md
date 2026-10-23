@@ -390,3 +390,6 @@ Linked "Key ingredients" chips now sit under the home hero text and under the pr
 
 ### Rounded buttons (Oct 23)
 All theme buttons are now pill-shaped: `.btn` and its variants (primary, outline, secondary, block, sticky bar, shop cards, hero), the header "Manage subscription" button, pagination, the newsletter email field and the key-ingredient chips. Third-party app widgets (Supr, Judge.me, Klaviyo) keep their own button styling and are set in their apps. To undo, change `border-radius: 999px` back to `0` on `.btn` in `assets/theme.css` and remove the "Rounded buttons" block at the end.
+
+### Preview screenshot script (Oct 23)
+`docs/capture-previews.mjs` captures full-page desktop and phone screenshots of every page in each of the four design options (theme preview links). Run it on a computer with Node: `npm install playwright && npx playwright install chromium`, then `STORE_PASSWORD="..." node capture-previews.mjs`. Not run from the build environment (the storefront is unreachable there), so first run on a single page with `ONLY=3 PAGES=home`.
