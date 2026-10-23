@@ -65,19 +65,19 @@
     "settings": [
       {
         "type": "header",
-        "content": "Headlines: Playfair Display (Google Fonts)"
+        "content": "Headlines: BC Novatica Semibold (Adobe Fonts kit, with a sans fallback)"
       },
       {
         "type": "text",
         "id": "display_font_family",
         "label": "Headline font-family (CSS)",
-        "default": "\"Playfair Display\", Georgia, serif"
+        "default": "\"bc-novatica-cyr\", \"bc-novatica\", Figtree, \"Helvetica Neue\", Arial, sans-serif"
       },
       {
         "type": "text",
         "id": "display_font_stylesheet_url",
         "label": "Headline font stylesheet URL",
-        "default": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        "default": "https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap"
       },
       {
         "type": "select",
@@ -105,35 +105,42 @@
       },
       {
         "type": "header",
-        "content": "Body: Inter (Google Fonts, loaded through the callout stylesheet below). Adobe kit is optional."
+        "content": "Body: Dejanire Text (Adobe Fonts kit when available, otherwise Newsreader from Google Fonts as the fallback)."
       },
       {
         "type": "text",
         "id": "adobe_kit_url",
         "label": "Adobe Fonts kit stylesheet URL",
-        "info": "Optional. Leave empty (Inter and Playfair load from Google Fonts). Paste an Adobe Fonts kit URL here only if you switch back to Adobe fonts."
+        "default": "https://use.typekit.net/qza3lbn.css",
+        "info": "Adobe Fonts kit that provides BC Novatica (and Dejanire Text if added to the kit). Add the store domains to the kit."
       },
       {
         "type": "text",
         "id": "body_font_family",
         "label": "Body font-family (CSS)",
-        "default": "Inter, \"Helvetica Neue\", Arial, sans-serif"
+        "default": "\"dejanire-text\", \"adbe-dejanire-text\", \"adobe-dejanire-text\", \"dejanire\", Newsreader, Georgia, serif"
+      },
+      {
+        "type": "text",
+        "id": "body_font_stylesheet_url",
+        "label": "Body font stylesheet URL",
+        "default": "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
       },
       {
         "type": "header",
-        "content": "Callouts and buttons"
+        "content": "Callouts and buttons (Roboto)"
       },
       {
         "type": "text",
         "id": "callout_font_family",
         "label": "Callout font-family (CSS)",
-        "default": "Inter, \"Helvetica Neue\", Arial, sans-serif"
+        "default": "Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
       {
         "type": "text",
         "id": "callout_font_stylesheet_url",
         "label": "Callout font stylesheet URL (optional)",
-        "default": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        "default": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       }
     ]
   },
