@@ -383,4 +383,4 @@ Main build uses Stef's type system with the headline weight set to Regular (400)
 Dermaboost+ is never part of an enhanced product. Removed "For enhanced support, take two (2) capsules twice daily with water." for Dermaboost+ everywhere:
 - Theme: Dermaboost+ FAQ, Shop FAQ (bottle length and "How do I take UV Shield+ and Dermaboost+?"), and the Sun Resilience, Skin Recovery and Complete Skin Defense FAQ answers.
 - Shopify product data: Dermaboost+ `custom.directions` and `custom.how_it_works` metafields; Directions (and the "15 days at the enhanced serving" line) in the Dermaboost+, Sun Resilience, Skin Recovery and Complete Skin Defense descriptions.
-Still to confirm outside the theme: the Supr Enhanced options (Reyshan) on every system should add UV Shield+ only, never Dermaboost+, and the printed Dermaboost+ label should match.
+Confirmed by the owner (Oct 23): the Supr Enhanced options and the printed Dermaboost+ bottle labels are correct, so nothing further to change outside the theme.
