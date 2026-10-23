@@ -35,7 +35,7 @@
           "type": "item",
           "settings": {
             "question": "How long does one bottle last?",
-            "answer": "<p>UV Shield+ and Dermaboost+ contain 60 capsules, which last 30 days at the daily serving and 15 days at the enhanced serving. Skinbiotic+ contains 30 capsules, a 30-day supply at one capsule daily.</p>"
+            "answer": "<p>UV Shield+ contains 60 capsules, which last 30 days at the daily serving and 15 days at the enhanced serving. Dermaboost+ contains 60 capsules, a 30-day supply at the daily serving. Skinbiotic+ contains 30 capsules, a 30-day supply at one capsule daily.</p>"
           }
         }
       },
@@ -118,7 +118,7 @@
           "type": "item",
           "settings": {
             "question": "How do I take UV Shield+ and Dermaboost+?",
-            "answer": "<p>Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water.</p>"
+            "answer": "<p>UV Shield+: Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water. Dermaboost+: Take two (2) capsules once daily with water.</p>"
           }
         },
         "q2": {
