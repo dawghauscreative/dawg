@@ -1,0 +1,45 @@
+{%- comment -%}
+  Key ingredients: a short row of linked chips. Each chip links to its card on the Science page.
+  Products: metafield custom.key_ingredients (multi-line text, one "Label|science-anchor" per line, e.g. Niacinamide|niacinamide).
+  A system with no list of its own collects its components' lists (duplicates removed, at most 8).
+  Anywhere else: pass the same lines as items. Usage: {% render 'key-ingredients', product: product %} or {% render 'key-ingredients', items: section.settings.key_ingredients %}
+{%- endcomment -%}
+{%- assign ki_text = items -%}
+{%- if ki_text == blank and product != blank -%}
+  {%- assign ki_text = product.metafields.custom.key_ingredients.value -%}
+  {%- if ki_text == blank -%}
+    {%- assign ki_collected = '' -%}
+    {%- for ki_comp in product.metafields.custom.bundle_components.value -%}
+      {%- assign ki_comp_text = ki_comp.metafields.custom.key_ingredients.value -%}
+      {%- if ki_comp_text != blank -%}{%- assign ki_collected = ki_collected | append: ki_comp_text | newline_to_br | strip_newlines | append: '<br />' -%}{%- endif -%}
+    {%- endfor -%}
+    {%- assign ki_text = ki_collected -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if ki_text != blank -%}
+  {%- assign ki_lines = ki_text | newline_to_br | strip_newlines | split: '<br />' -%}
+  {%- assign ki_seen = '|' -%}
+  {%- assign ki_count = 0 -%}
+  {%- assign ki_science = pages['science'].url | default: '/pages/science' -%}
+  {%- capture ki_chips -%}
+    {%- for ki_line in ki_lines -%}
+      {%- assign ki_parts = ki_line | split: '|' -%}
+      {%- assign ki_label = ki_parts[0] | strip -%}
+      {%- assign ki_anchor = ki_parts[1] | strip -%}
+      {%- assign ki_marker = '|' | append: ki_anchor | append: '|' -%}
+      {%- if ki_label != blank and ki_anchor != blank and ki_count < 8 -%}
+        {%- unless ki_seen contains ki_marker -%}
+          {%- assign ki_seen = ki_seen | append: ki_anchor | append: '|' -%}
+          {%- assign ki_count = ki_count | plus: 1 -%}
+          <li><a class="ing-chip" href="{{ ki_science }}#{{ ki_anchor | escape }}">{{ ki_label | escape }}</a></li>
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- if ki_count > 0 -%}
+    <div class="key-ingredients">
+      <span class="key-ingredients__label">Key ingredients</span>
+      <ul class="key-ingredients__list">{{ ki_chips }}</ul>
+    </div>
+  {%- endif -%}
+{%- endif -%}

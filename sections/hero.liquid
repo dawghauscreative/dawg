@@ -16,6 +16,7 @@
         {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
         <h1>{{ section.settings.heading }}</h1>
         {%- if section.settings.body != blank -%}<div class="lede">{{ section.settings.body }}</div>{%- endif -%}
+        {%- if section.settings.key_ingredients != blank -%}{%- render 'key-ingredients', items: section.settings.key_ingredients -%}{%- endif -%}
         {%- if section.settings.trust_line != blank -%}
           {%- assign trust_items = section.settings.trust_line | newline_to_br | strip_newlines | split: '<br />' -%}
           <ul class="trust-line">
@@ -47,6 +48,7 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Internal Skin Defense for Life in the Sun" },
     { "type": "richtext", "id": "body", "label": "Supporting text", "info": "Empty until approved copy is supplied." },
+    { "type": "textarea", "id": "key_ingredients", "label": "Key ingredients (one per line: Label|science-anchor)", "info": "Shown as linked chips under the text. Each links to its card on the Science page, e.g. Niacinamide|niacinamide." },
     { "type": "textarea", "id": "trust_line", "label": "Trust line (one item per line)", "info": "Shown as a gold slash-separated line under the text. Only verified facts." },
     { "type": "text", "id": "primary_label", "label": "Primary button", "default": "Shop the System" },
     { "type": "url", "id": "primary_url", "label": "Primary button link", "info": "Point at the hero bundle (Sun Safe System)." },

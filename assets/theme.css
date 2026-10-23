@@ -977,3 +977,10 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 
 /* COA widget under the How to take it card */
 .coa-widget { margin-top: 24px; }
+
+/* ---------- Key ingredients (linked chips under the title / hero text) ---------- */
+.key-ingredients { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem .9rem; margin-top: 1.1rem; }
+.key-ingredients__label { font-family: var(--font-callout); font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; opacity: .75; }
+.key-ingredients__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .45rem .5rem; }
+.ing-chip { display: inline-block; padding: 5px 12px; border: 1px solid color-mix(in srgb, var(--accent, var(--c-gold)) 60%, transparent); color: inherit; text-decoration: none; font-size: .82rem; line-height: 1.3; transition: background .2s, color .2s, border-color .2s; }
+.ing-chip:hover, .ing-chip:focus-visible { background: var(--accent, var(--c-gold)); border-color: var(--accent, var(--c-gold)); color: var(--c-black); }

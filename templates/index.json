@@ -21,7 +21,8 @@
         "secondary_label": "Explore the Science",
         "secondary_url": "/pages/science",
         "image_alt": "",
-        "background_asset": "hero-banner-1.webp"
+        "background_asset": "hero-banner-1.webp",
+        "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin"
       }
     },
     "trust_strip": {
