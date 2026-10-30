@@ -263,120 +263,6 @@
         "b6"
       ]
     },
-    "together": {
-      "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "How the formula works together.",
-        "columns": "3",
-        "show_images": false,
-        "note": "<p>This describes formulation rationale. Skinbiotic+ as a finished product has not been established here as clinically tested for these combined outcomes.</p>"
-      },
-      "blocks": {
-        "b1": {
-          "type": "card",
-          "settings": {
-            "number": "01",
-            "title": "Fuel and organisms",
-            "text": "<p>Inulin supplies fermentable fiber while the probiotic blend supplies the organisms. The pairing is the design.</p>"
-          }
-        },
-        "b2": {
-          "type": "card",
-          "settings": {
-            "number": "02",
-            "title": "Different organisms, different roles",
-            "text": "<p>Species occupy different niches and produce different metabolites. The rationale is breadth, not assuming each organism does the same thing.</p>"
-          }
-        },
-        "b3": {
-          "type": "card",
-          "settings": {
-            "number": "03",
-            "title": "An emerging addition",
-            "text": "<p>Akkermansia muciniphila is included as an organism of active research interest, labeled as emerging research.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3"
-      ]
-    },
-    "micro": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "dark",
-        "align": "left",
-        "width": "wide",
-        "eyebrow": "",
-        "heading": "A community, not a single ingredient.",
-        "heading_tag": "h2",
-        "body": "<p>The intestinal microbiome is a community of trillions of microorganisms. It varies between people and shifts with diet, routine, and environment.</p><p>Balance in that community is a function of diversity, the fiber available to feed it, and the organisms present. That is why Skinbiotic+ is built as a pairing rather than a single probiotic.</p>"
-      }
-    },
-    "scfa": {
-      "type": "flow-steps",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "What fermentation produces.",
-        "body": "<p>When gut microbes ferment dietary fibers such as inulin, they produce short-chain fatty acids, including acetate, propionate, and butyrate. These molecules are studied for their roles in intestinal and systemic signaling.</p>",
-        "takeaway": "Short-chain fatty acids are one pathway researchers examine within the gut-skin axis."
-      },
-      "blocks": {
-        "b1": {
-          "type": "step",
-          "settings": {
-            "label": "Fiber (inulin)"
-          }
-        },
-        "b2": {
-          "type": "step",
-          "settings": {
-            "label": "Fermentation by gut organisms"
-          }
-        },
-        "b3": {
-          "type": "step",
-          "settings": {
-            "label": "Short-chain fatty acids"
-          }
-        },
-        "b4": {
-          "type": "step",
-          "settings": {
-            "label": "Signaling studied in gut-skin research"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ]
-    },
-    "barrier": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "light",
-        "align": "left",
-        "width": "wide",
-        "eyebrow": "",
-        "heading": "Where gut and skin research meet.",
-        "heading_tag": "h2",
-        "body": "<p>The skin barrier helps regulate water loss and acts as a boundary with the environment. Gut-skin research explores whether microbial signals and metabolites relate to barrier-supporting pathways.</p><p>This area is active and not settled. Skinbiotic+ is designed to support the intestinal environment; it is not a barrier product and does not make barrier claims.</p>"
-      }
-    },
-    "timeline": {
-      "type": "renewal-timeline",
-      "settings": {
-        "color_scheme": "green"
-      }
-    },
     "who": {
       "type": "science-cards",
       "settings": {
@@ -434,7 +320,7 @@
     "supports": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What Skinbiotic+ is designed to support.",
         "columns": "4",
@@ -481,7 +367,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Why these organisms?",
         "columns": "4",
@@ -692,11 +578,6 @@
     "axis",
     "synbiotic",
     "formula",
-    "together",
-    "micro",
-    "scfa",
-    "barrier",
-    "timeline",
     "who",
     "supports",
     "research",

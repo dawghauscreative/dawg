@@ -410,3 +410,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Melanoma research line removed from all product templates (and the mission-line section on Tria Prima). Theme setting kept for later use.
 - Bundle names in theme text: Outdoor Duo, Balance Duo, Tria Prima, Sun Resilience Duo (Shopify product titles already matched; handles/URLs unchanged).
 - Home hero headline set to semi-bold (600) via CSS; other headlines stay at the headline-weight setting.
+- Skinbiotic+ page (Heather's drawn markups): removed 'How the formula works together', 'A community, not a single ingredient', 'What fermentation produces', 'Where gut and skin research meet' and the Renewal Timeline; 'who', 'supports', 'research', 'claims' sections now share one light background. Other product pages not changed.
