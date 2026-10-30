@@ -13,7 +13,7 @@
       "type": "edu-hero",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Alchemia MD education",
+        "eyebrow": "",
         "title": "Skin Edu",
         "subtitle": "Dermatologist-led education for understanding your skin from the inside out.",
         "heading": "Understand your skin. Then decide what it needs.",
@@ -29,7 +29,7 @@
       "settings": {
         "color_scheme": "green",
         "image_side": "right",
-        "eyebrow": "Featured",
+        "eyebrow": "",
         "heading": "What Is Internal Skin Health?",
         "deck": "Topical skincare is only one part of the picture. Learn how nutrition, oxidative stress, the microbiome, immune signaling, and the environment interact with the skin from within.",
         "blog_handle": "skin-edu",
@@ -100,7 +100,7 @@
       ],
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Browse",
+        "eyebrow": "",
         "heading": "Explore Skin Edu",
         "body": "",
         "blog_handle": "skin-edu"
@@ -154,7 +154,7 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "latest",
-        "eyebrow": "Latest",
+        "eyebrow": "",
         "heading": "New from Skin Edu",
         "body": "",
         "columns": "3",
@@ -250,7 +250,7 @@
       "settings": {
         "color_scheme": "green",
         "anchor": "",
-        "eyebrow": "Skin health 101",
+        "eyebrow": "",
         "heading": "New to internal skin health? Start here.",
         "body": "",
         "columns": "3",
@@ -372,7 +372,7 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "",
-        "eyebrow": "Sun + environment",
+        "eyebrow": "",
         "heading": "Understand the environment your skin lives in.",
         "body": "",
         "columns": "4",
@@ -507,7 +507,7 @@
       "settings": {
         "color_scheme": "green",
         "anchor": "",
-        "eyebrow": "Gut + skin",
+        "eyebrow": "",
         "heading": "Your skin does not exist in isolation.",
         "body": "",
         "columns": "4",
@@ -700,7 +700,7 @@
       ],
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Know what you’re taking",
+        "eyebrow": "",
         "heading": "The ingredient library",
         "body": "",
         "formulas": "UV Shield+, Skinbiotic+, Dermaboost+",
@@ -834,7 +834,7 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "",
-        "eyebrow": "Ask Dr. Mia",
+        "eyebrow": "",
         "heading": "Questions you’d ask your dermatologist.",
         "body": "",
         "columns": "4",
@@ -956,7 +956,7 @@
       "settings": {
         "color_scheme": "dark",
         "anchor": "",
-        "eyebrow": "Read the research without the jargon",
+        "eyebrow": "",
         "heading": "Research, translated.",
         "body": "",
         "columns": "4",
@@ -1013,7 +1013,7 @@
       "settings": {
         "color_scheme": "green",
         "anchor": "",
-        "eyebrow": "From education to routine",
+        "eyebrow": "",
         "heading": "See how the science informs the formulas.",
         "body": "",
         "columns": "3",
@@ -1135,7 +1135,7 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "",
-        "eyebrow": "Skin in the real world",
+        "eyebrow": "",
         "heading": "Skin health for life outdoors.",
         "body": "",
         "columns": "4",
@@ -1218,7 +1218,7 @@
       "settings": {
         "color_scheme": "dark",
         "anchor": "",
-        "eyebrow": "Curated by Dr. Mia",
+        "eyebrow": "",
         "heading": "Worth reading.",
         "body": "",
         "columns": "3",
@@ -1231,7 +1231,7 @@
       "type": "main-blog",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Skin Edu",
+        "eyebrow": "",
         "heading": "All articles",
         "empty_text": "New articles are on the way."
       }
@@ -1254,7 +1254,7 @@
       "settings": {
         "color_scheme": "dark",
         "product": "",
-        "eyebrow": "Keep learning",
+        "eyebrow": "",
         "heading": "Understand the science behind your routine.",
         "body": "",
         "button_label": "Explore the science",

@@ -45,14 +45,6 @@
             "column": "learn"
           }
         },
-        "c3": {
-          "type": "link",
-          "settings": {
-            "label": "Skin Edu",
-            "url": "/blogs/skin-edu",
-            "column": "learn"
-          }
-        },
         "c4": {
           "type": "link",
           "settings": {
@@ -132,7 +124,6 @@
         "s3",
         "c1",
         "c2",
-        "c3",
         "c4",
         "u1",
         "u2",

@@ -1,29 +1,26 @@
 {%- comment -%}
-  Active ingredient cards for a product page: slide image, amount (as labeled), role, education copy and a research link.
+  Active ingredient dropdowns (FAQ style, no images) for a product page: amount (as labeled), role, education copy and a research link.
   Research links go to the Science page only. Amounts are the labeled amounts per serving.
 {%- endcomment -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
-    <div class="cols cols--{{ section.settings.columns | default: '3' }} actives">
+    <div class="actives actives--faq">
       {%- for block in section.blocks -%}
-        {%- assign slide_set = block.settings.slide_set | strip -%}
-        <article class="active-card" {{ block.shopify_attributes }}>
-          {%- if slide_set != blank -%}
-            {%- assign slide_file = 'slide-' | append: slide_set | append: '-1.webp' -%}
-            {% render 'responsive-image', image: block.settings.image, asset: slide_file, ratio: '4x5', sizes: '(min-width: 990px) 30vw, 100vw', alt: block.settings.name %}
-          {%- else -%}
-            {% render 'responsive-image', image: block.settings.image, ratio: '4x5', sizes: '(min-width: 990px) 30vw, 100vw', alt: block.settings.name %}
-          {%- endif -%}
-          <div class="active-card__body">
-            <span class="active-card__role">{{ block.settings.role }}</span>
-            <h3>{{ block.settings.name }}</h3>
-            {%- if block.settings.amount != blank -%}<p class="active-card__amount">{{ block.settings.amount }}</p>{%- endif -%}
+        <details class="active-faq" {{ block.shopify_attributes }}>
+          <summary>
+            <span class="active-faq__name">
+              {%- if block.settings.role != blank -%}<span class="active-card__role">{{ block.settings.role }}</span>{%- endif -%}
+              <h3>{{ block.settings.name }}</h3>
+            </span>
+            {%- if block.settings.amount != blank -%}<span class="active-card__amount">{{ block.settings.amount }}</span>{%- endif -%}
+          </summary>
+          <div class="active-faq__body">
             {%- if block.settings.badge != blank -%}<p class="active-card__badge">{{ block.settings.badge }}</p>{%- endif -%}
             <div class="active-card__text">{{ block.settings.text }}</div>
             {%- if block.settings.link_label != blank -%}<a class="text-link" href="{{ block.settings.link_url | default: '/pages/science' }}">{{ block.settings.link_label }}</a>{%- endif -%}
           </div>
-        </article>
+        </details>
       {%- endfor -%}
     </div>
   </div>

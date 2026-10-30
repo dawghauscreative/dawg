@@ -238,4 +238,21 @@
       }, { threshold: 0.25 }).observe(frame);
     }
   });
+  // Mobile back-to-top button: appears after scrolling, CSS hides it on desktop
+  var toTop = document.querySelector('[data-back-to-top]');
+  if (toTop) {
+    var toTopTick = false;
+    var toTopUpdate = function () {
+      toTopTick = false;
+      toTop.hidden = window.scrollY < 600;
+    };
+    window.addEventListener('scroll', function () {
+      if (!toTopTick) { toTopTick = true; requestAnimationFrame(toTopUpdate); }
+    }, { passive: true });
+    toTop.addEventListener('click', function () {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+    toTopUpdate();
+  }
 })();

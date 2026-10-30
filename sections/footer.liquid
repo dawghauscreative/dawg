@@ -4,10 +4,6 @@
       <div>
         <a class="site-header__logo" href="{{ routes.root_url }}"><img src="{{ 'alchemia-logo-white.png' | asset_url }}" alt="{{ shop.name | escape }}" width="200" height="26" style="width:200px;height:auto"></a>
         {%- if section.settings.about != blank -%}<p class="small" style="margin-top:16px;max-width:36ch">{{ section.settings.about }}</p>{%- endif -%}
-        <address style="font-style:normal;margin-top:24px;display:grid;gap:6px">
-          <span>{{ settings.mailing_address }}</span>
-          <a href="mailto:{{ settings.support_email }}">{{ settings.support_email }}</a>
-        </address>
         {%- assign has_social = false -%}
         {%- if settings.social_instagram != blank or settings.social_tiktok != blank or settings.social_facebook != blank or settings.social_youtube != blank -%}{%- assign has_social = true -%}{%- endif -%}
         {%- if has_social -%}

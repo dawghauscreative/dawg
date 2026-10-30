@@ -5,7 +5,7 @@
       "settings": {
         "color_scheme": "dark",
         "image_side": "right",
-        "eyebrow": "Individual formulas",
+        "eyebrow": "",
         "heading": "Three targeted ways to support skin from within.",
         "heading_tag": "h1",
         "body": "<p>Alchemia MD’s individual formulas are designed around three distinct roles in skin health:</p><p><strong>Protect. Balance. Restore.</strong></p><p>Choose the formula that best matches your current routine, or explore the systems if you want complementary support across more than one area.</p>",
@@ -22,7 +22,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Where to begin",
+        "eyebrow": "",
         "heading": "Start with the role that fits you.",
         "columns": "3",
         "show_images": false
@@ -63,7 +63,7 @@
       "type": "product-selector",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "Individual formulas",
+        "eyebrow": "",
         "heading": "Choose your formula",
         "plan_heading": "Choose your plan"
       },
@@ -118,7 +118,7 @@
       "type": "compare-table",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Compare",
+        "eyebrow": "",
         "heading": "Which formula is right for me?",
         "col_1": "UV Shield+",
         "col_2": "Skinbiotic+",
@@ -194,7 +194,7 @@
       "settings": {
         "color_scheme": "light",
         "image_side": "right",
-        "eyebrow": "Protect",
+        "eyebrow": "",
         "heading": "UV Shield+",
         "product": "uv-shield",
         "asset": "lifestyle-uvshield-rocks.webp",
@@ -208,7 +208,7 @@
       "settings": {
         "color_scheme": "green",
         "image_side": "left",
-        "eyebrow": "Balance",
+        "eyebrow": "",
         "heading": "Skinbiotic+",
         "product": "skinbiotic",
         "asset": "lifestyle-skinbiotic-cliffs.webp",
@@ -222,7 +222,7 @@
       "settings": {
         "color_scheme": "dark",
         "image_side": "right",
-        "eyebrow": "Restore",
+        "eyebrow": "",
         "heading": "Dermaboost+",
         "product": "dermaboost",
         "asset": "lifestyle-dermaboost-yacht.webp",
@@ -235,7 +235,7 @@
       "type": "start-paths",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Not sure?",
+        "eyebrow": "",
         "heading": "Not sure where to start?",
         "line": "Want support across more than one area?",
         "button_label": "Explore the systems",
@@ -277,7 +277,7 @@
       "type": "system-finder",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Looking for more than one role?",
+        "eyebrow": "",
         "heading": "Build a system instead.",
         "best_for_label": "",
         "button_label": "Explore all systems",
@@ -337,7 +337,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The science",
+        "eyebrow": "",
         "heading": "Understand what you’re taking.",
         "columns": "3",
         "show_images": false,
@@ -373,25 +373,11 @@
         "b3"
       ]
     },
-    "founder": {
-      "type": "founder",
-      "settings": {
-        "color_scheme": "light",
-        "image_side": "left",
-        "image_asset": "founder-portrait.webp",
-        "eyebrow": "Dermatologist-founded",
-        "heading": "A more intentional supplement routine.",
-        "credentials": "",
-        "body": "<p>Alchemia MD began with a recurring problem Dr. Mia Luna saw in practice: patients wanted natural, evidence-informed ways to support their skin but were often left managing disconnected supplements with no clear system.</p><p>The individual formulas were created to give each major support role a defined place in the routine.</p><p><strong>UV Shield+</strong> Protect.</p><p><strong>Skinbiotic+</strong> Balance.</p><p><strong>Dermaboost+</strong> Restore.</p>",
-        "link_label": "Meet Dr. Mia Luna",
-        "link_url": "/pages/founder"
-      }
-    },
     "faq": {
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Questions",
+        "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2",
         "show_renewal_faq": false
@@ -461,7 +447,7 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Protect. Balance. Restore.",
+        "eyebrow": "",
         "heading": "Start with the formula that fits your routine.",
         "body": "<p>Three dermatologist-formulated ways to support skin from within.</p>",
         "button_label": "Choose your formula",
@@ -482,7 +468,6 @@
     "start",
     "systems",
     "science",
-    "founder",
     "faq",
     "compliance",
     "final"

@@ -6,7 +6,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "eyebrow": "Restore"
+            "eyebrow": ""
           }
         },
         "tagline": {
@@ -72,7 +72,8 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "slide-d12-1.webp,slide-d14-1.webp,slide-d15-1.webp"
+        "gallery_assets": "slide-d12-1.webp,slide-d14-1.webp,slide-d15-1.webp",
+        "color_scheme": "green"
       }
     },
     "definition": {
@@ -81,7 +82,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "What it is",
+        "eyebrow": "",
         "heading": "Daily nutritional support for skin resilience.",
         "heading_tag": "h2",
         "body": "<p>Dermaboost+ brings together vitamins, minerals, carotenoids, and botanical polyphenols selected for complementary roles in antioxidant defense, normal immune function, and skin-health biology.</p><p>Rather than relying on one ingredient, the formula is structured around multiple pathways.</p>",
@@ -96,7 +97,7 @@
       "type": "layer-stack",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "The role",
+        "eyebrow": "",
         "heading": "Restore means supporting the systems skin relies on.",
         "body": "<p>Skin is constantly responding to:</p><ul><li>Environmental stress</li><li>Normal oxidative processes</li><li>Nutritional demands</li><li>Immune signaling</li><li>Daily renewal</li></ul><p>“Restore” does not mean repairing every form of damage or reversing aging. Within the Alchemia MD system, it means providing nutritional support for the biological systems involved in maintaining calm, balanced, resilient skin.</p>",
         "callout": "Protect responds to exposure. Balance supports the gut and internal balance. Restore supports antioxidant, nutritional, and immune pathways."
@@ -139,7 +140,7 @@
         "color_scheme": "green",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Antioxidant biology",
+        "eyebrow": "",
         "heading": "Oxidative stress is not one single pathway.",
         "heading_tag": "h2",
         "body": "<p>Reactive molecules are produced as part of normal metabolism and can also increase in response to environmental stress. The body relies on multiple antioxidant systems to maintain balance.</p><p>That is one reason Dermaboost+ does not depend on a single antioxidant. Its formulation includes several chemically distinct compounds:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>Different compounds can behave differently within cellular environments, which is the rationale for combining multiple nutritional and botanical sources rather than positioning one ingredient as a complete solution.</p>",
@@ -150,8 +151,8 @@
       "type": "product-actives",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "The formula",
-        "heading": "Eight ingredients. Complementary roles.",
+        "eyebrow": "",
+        "heading": "Ingredients",
         "columns": "4"
       },
       "blocks": {
@@ -265,7 +266,7 @@
       "type": "ingredient-network",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Formulation logic",
+        "eyebrow": "",
         "heading": "Complementary support, not ingredient stacking.",
         "nodes": "Niacinamide, Vitamin D3, Vitamin C, Zinc, Quercetin, Curcumin, Olive leaf, Astaxanthin",
         "center_top": "DERMA",
@@ -343,7 +344,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Immune biology",
+        "eyebrow": "",
         "heading": "Skin is part of the immune system’s front line.",
         "heading_tag": "h2",
         "body": "<p>Skin is not simply a covering. It contains immune cells and participates in communication between the body and the outside environment. Normal immune function therefore matters to skin health.</p><p>Dermaboost+ includes nutrients with established roles in normal immune physiology, including:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li></ul><p>alongside antioxidant and botanical compounds selected for complementary nutritional support.</p>",
@@ -356,7 +357,7 @@
         "color_scheme": "green",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Barrier support",
+        "eyebrow": "",
         "heading": "Healthy skin depends on more than moisture.",
         "heading_tag": "h2",
         "body": "<p>The skin barrier relies on:</p><ul><li>Organized lipids</li><li>Normal keratinocyte function</li><li>Adequate nutrition</li><li>Hydration</li><li>Normal cellular turnover</li></ul><p>Niacinamide, vitamin C, zinc, and other nutrients in Dermaboost+ have biological roles connected to these broader systems. This is education about those roles; Dermaboost+ is not a barrier product and does not make barrier claims.</p>"
@@ -368,7 +369,7 @@
         "color_scheme": "light",
         "align": "left",
         "width": "wide",
-        "eyebrow": "Structural support",
+        "eyebrow": "",
         "heading": "Collagen requires nutritional support.",
         "heading_tag": "h2",
         "body": "<p>Collagen is one of the primary structural proteins in skin. Vitamin C is required for normal collagen synthesis.</p><p>Other Dermaboost+ ingredients have been investigated in relation to oxidative pathways that can influence skin structure. That research describes biology; it is not a promise about specific outcomes.</p>",
@@ -385,7 +386,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Daily resilience",
+        "eyebrow": "",
         "heading": "Built for people thinking beyond surface-level skincare.",
         "columns": "3",
         "show_images": false
@@ -485,7 +486,7 @@
       "type": "science-cards",
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The research",
+        "eyebrow": "",
         "heading": "Why these ingredients?",
         "columns": "4",
         "show_images": false,
@@ -540,7 +541,7 @@
       "type": "science-boundaries",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "Dermaboost+ does not claim to:",
         "not_items": "Treat inflammatory skin disease\nTreat autoimmune conditions\nCure eczema\nTreat psoriasis\nEliminate inflammation\nReverse aging\nRebuild damaged skin\nGuarantee clearer skin\nReplace medical treatment\nDiagnose, treat, cure, or prevent disease",
@@ -552,7 +553,7 @@
       "type": "system-finder",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Build your routine",
+        "eyebrow": "",
         "heading": "Dermaboost+ can stand alone, or become part of a system.",
         "best_for_label": ""
       },
@@ -584,20 +585,6 @@
         "b2"
       ]
     },
-    "founder": {
-      "type": "founder",
-      "settings": {
-        "color_scheme": "light",
-        "image_side": "left",
-        "image_asset": "founder-portrait.webp",
-        "eyebrow": "Dermatologist-formulated",
-        "heading": "Built around what skin needs to function well.",
-        "credentials": "",
-        "body": "<p>Alchemia MD was created to bring dermatological thinking into supplementation.</p><p>Dermaboost+ reflects that philosophy by combining nutrients and botanicals selected for defined roles rather than relying on an undisclosed blend.</p><p>The goal is not perfect skin. It is to provide a transparent, research-informed way to support the biological systems involved in long-term skin health.</p>",
-        "link_label": "Meet Dr. Mia Luna",
-        "link_url": "/pages/founder"
-      }
-    },
     "reviews": {
       "type": "pdp-reviews",
       "settings": {
@@ -609,7 +596,7 @@
       "type": "pdp-faq",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Questions",
+        "eyebrow": "",
         "heading": "Frequently asked questions",
         "heading_tag": "h2"
       },
@@ -685,7 +672,7 @@
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Restore",
+        "eyebrow": "",
         "heading": "Support calm, balanced, resilient skin from within.",
         "body": "<p>Eight targeted nutrients and botanicals. One dermatologist-formulated daily routine designed around antioxidant support, normal immune function, and long-term skin resilience.</p>",
         "button_label": "Choose your plan",
@@ -712,7 +699,6 @@
     "research",
     "claims",
     "systems",
-    "founder",
     "reviews",
     "faq",
     "compliance",

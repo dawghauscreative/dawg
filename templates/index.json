@@ -13,7 +13,7 @@
       "type": "hero",
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Dermatologist-formulated skin health",
+        "eyebrow": "",
         "heading": "Internal Skin Defense for Life in the Sun",
         "body": "<p>Skin is a living system. Alchemia MD supports it from within with dermatologist-formulated supplements designed to protect, balance, and restore!</p>",
         "primary_label": "Shop the Sun Safe System",
@@ -66,7 +66,7 @@
         "align": "center",
         "width": "narrow",
         "salt_symbol": false,
-        "eyebrow": "A different way to think about skin",
+        "eyebrow": "",
         "heading": "Skin health is more than a surface routine.",
         "heading_tag": "h2",
         "body": "<p>Skin is a living, dynamic system.</p><p>It responds to what happens outside the body, but also to nutrition, oxidative stress, immune signaling, the microbiome, and daily lifestyle.</p><p>Alchemia MD was built around a simple idea:</p><p><strong>Support skin from the inside out.</strong></p>",
@@ -145,7 +145,7 @@
       "settings": {
         "color_scheme": "dark",
         "anchor": "",
-        "eyebrow": "Why Alchemia MD exists",
+        "eyebrow": "",
         "heading": "The supplement aisle wasn't built for skin.",
         "body": "",
         "columns": "3",
@@ -196,7 +196,7 @@
       ],
       "settings": {
         "color_scheme": "green",
-        "eyebrow": "The system",
+        "eyebrow": "",
         "heading": "Protect. Balance. Restore.",
         "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.</p><p>Each formula can stand on its own. The systems combine them when complementary support makes sense.</p>"
       }
@@ -206,7 +206,7 @@
       "settings": {
         "color_scheme": "dark",
         "image_side": "right",
-        "eyebrow": "Start here",
+        "eyebrow": "",
         "heading": "Meet the Sun Safe System",
         "heading_tag": "h2",
         "subhead": "Protect + Balance",
@@ -300,7 +300,7 @@
       ],
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Choose your routine",
+        "eyebrow": "",
         "heading": "Find the system that fits your goals.",
         "body": "",
         "button_label": "",
@@ -374,7 +374,7 @@
       ],
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Built for life outdoors",
+        "eyebrow": "",
         "heading": "Keep living in the sun.",
         "body": "<p>Alchemia MD is built for people who do not want to choose between caring for their skin and living the life they love.</p>",
         "columns": "3",
@@ -425,7 +425,7 @@
       ],
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Layered protection",
+        "eyebrow": "",
         "heading": "Skin support works in layers.",
         "body": "",
         "callout": "Alchemia MD is designed to complement—not replace—your sunscreen and sun-safety routine."
@@ -496,7 +496,7 @@
       "settings": {
         "color_scheme": "green",
         "anchor": "",
-        "eyebrow": "Science, without the mystery",
+        "eyebrow": "",
         "heading": "Every ingredient has a reason.",
         "body": "<p>Alchemia MD formulations are built around published ingredient research and defined biological roles.</p><p>We do not ask you to trust a proprietary mystery blend. We show you what is in the formula, why it is there, and what the research actually supports.</p>",
         "columns": "4",
@@ -514,7 +514,7 @@
           "settings": {
             "study": "yiasemides-nicotinamide-2009",
             "kicker": "Research",
-            "headline": "Nicotinamide",
+            "headline": "Niacinamide",
             "text": "Human research examining skin responses to ultraviolet exposure.",
             "asset": ""
           }
@@ -547,26 +547,11 @@
       ],
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Research strip",
+        "eyebrow": "",
         "heading": "Research worth reading.",
         "body": "",
         "show_images": false,
         "link_label": "View research →"
-      }
-    },
-    "mia": {
-      "type": "founder",
-      "settings": {
-        "color_scheme": "light",
-        "image_asset": "founder-portrait.webp",
-        "image_alt": "Dr. Mia Luna",
-        "image_side": "left",
-        "eyebrow": "Founded by a board-certified dermatologist",
-        "heading": "It started with a question she kept hearing from patients.",
-        "credentials": "",
-        "body": "<p>Dr. Mia Luna's path to dermatology began after losing her mother to melanoma as a child.</p><p>Years later, in clinical practice, another pattern became clear: patients increasingly wanted natural ways to support their skin health, and she found herself recommending many of the same individual supplements again and again.</p><p>The question became: <em>Why wasn't there a trusted, dermatologist-formulated system that brought those ideas together?</em></p><p>That question became Alchemia MD.</p>",
-        "link_label": "Meet Dr. Mia Luna",
-        "link_url": "/pages/founder"
       }
     },
     "philosophy": {
@@ -576,7 +561,7 @@
         "align": "center",
         "width": "narrow",
         "salt_symbol": true,
-        "eyebrow": "Modern alchemy",
+        "eyebrow": "",
         "heading": "Balance is a practice.",
         "heading_tag": "h2",
         "body": "<p>Alchemy was historically the pursuit of transformation through balance. Alchemia MD carries that idea into modern skin health.</p><p>Skin is always changing. It renews, adapts, responds, and rebuilds.</p><p>The goal is not perfect skin. The goal is to support the systems that help skin remain balanced, resilient, and vital through the changing demands of life.</p>",
@@ -650,7 +635,7 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "",
-        "eyebrow": "Why trust Alchemia MD",
+        "eyebrow": "",
         "heading": "Built around standards, not trends.",
         "body": "",
         "columns": "4",
@@ -698,7 +683,7 @@
       ],
       "settings": {
         "color_scheme": "beige",
-        "eyebrow": "Dermatologist-led education",
+        "eyebrow": "",
         "heading": "Understand your skin from the inside out.",
         "body": "",
         "link_label": "",
@@ -712,7 +697,7 @@
         "align": "center",
         "width": "narrow",
         "salt_symbol": false,
-        "eyebrow": "Mission",
+        "eyebrow": "",
         "heading": "Every purchase supports a larger mission.",
         "heading_tag": "h2",
         "body": "<p>Your purchase contributes to melanoma research.</p>",
@@ -739,7 +724,7 @@
       "settings": {
         "color_scheme": "dark",
         "product": "sun-safe-system",
-        "eyebrow": "Begin with the hero system",
+        "eyebrow": "",
         "heading": "Built for life in the sun.",
         "body": "<p>Start with UV Shield+ and Skinbiotic+ together in the Sun Safe System: a two-step routine designed to support environmental resilience and internal balance.</p>",
         "button_label": "Explore the Sun Safe System",
@@ -766,7 +751,6 @@
     "layers",
     "science",
     "research",
-    "mia",
     "philosophy",
     "trust",
     "education",

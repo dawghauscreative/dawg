@@ -6,12 +6,14 @@
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
-    <div class="cols {% if section.blocks.size == 3 %}cols--3{% else %}cols--auto4 edu-grid{% endif %}">
+    <div class="cols {% if section.blocks.size == 3 or section.blocks.size == 6 %}cols--3{% else %}cols--auto4 edu-grid{% endif %}">
       {%- for block in section.blocks -%}
         {%- assign has_link = false -%}
         {%- if block.settings.link != blank -%}{%- assign has_link = true -%}{%- endif -%}
         <{% if has_link %}a href="{{ block.settings.link }}"{% else %}div{% endif %} class="edu-card{% unless has_link %} edu-card--soon{% endunless %}{% if block.settings.image != blank or block.settings.asset != blank %} edu-card--media{% endif %}" {{ block.shopify_attributes }}>
-          {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, ratio: '4x5', sizes: '(min-width: 990px) 20vw, 50vw', alt: block.settings.title %}
+          {%- if block.settings.image != blank or block.settings.asset != blank -%}
+  {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, ratio: '4x5', sizes: '(min-width: 990px) 20vw, 50vw', alt: block.settings.title %}
+          {%- endif -%}
           <div class="edu-card__body">
             <h3>{{ block.settings.title }}</h3>
             {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}

@@ -393,3 +393,14 @@ All theme buttons are now pill-shaped: `.btn` and its variants (primary, outline
 
 ### Preview screenshot script (Oct 23)
 `docs/capture-previews.mjs` captures full-page desktop and phone screenshots of every page in each of the four design options (theme preview links). Run it on a computer with Node: `npm install playwright && npx playwright install chromium`, then `STORE_PASSWORD="..." node capture-previews.mjs`. Not run from the build environment (the storefront is unreachable there), so first run on a single page with `ONLY=3 PAGES=home`.
+
+## Client review round (Heather, Frame.io) — Oct 30
+Applied on the live branch (backup: branch `claude/backup-live-theme-2026-10-30`, Shopify theme 168605122795):
+- Eyebrows (small text above headlines) blanked site-wide; schema defaults removed.
+- Header full width (logo left, menu centered, cart/portal right); Skin Edu removed from header, drawer and footer; Skin Edu topic cards now live on the Science page (`learn` section).
+- Footer address/email removed (kept on Contact page).
+- Mobile back-to-top button (layout/theme.liquid, theme.js, theme.css) — mobile only (<750px).
+- Founder sections removed from every template except the Founder page (Mia image only there).
+- Science: plain evergreen hero (no image/art), formula cards are collapsed FAQ-style dropdowns without images, research spotlight pages 3 at a time, subtitles sentence-case, headline sizes +5pt, "nicotinamide" -> "niacinamide" in visible text (study handles unchanged).
+- PDP: evergreen background, ingredient cards -> "Ingredients" dropdowns, no images.
+Held for owner decision: daily-total/enhanced naming, melanoma line, bundle renames, header weight, 3D renders on PDP/home, contact-page defects (shipping 404, refund policy placeholder, FAQ repeats).

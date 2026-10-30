@@ -1,6 +1,5 @@
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container" style="text-align:center;max-width:720px">
-    <span class="eyebrow">404</span>
     <h1>{{ section.settings.heading }}</h1>
     {%- if section.settings.text != blank -%}<p class="lede" style="margin:1.25rem auto 0">{{ section.settings.text }}</p>{%- endif -%}
     <div class="btn-row" style="justify-content:center"><a class="btn" href="{{ routes.root_url }}">{{ section.settings.button_label }}</a></div>

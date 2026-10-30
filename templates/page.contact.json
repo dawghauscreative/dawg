@@ -5,7 +5,7 @@
       "settings": {
         "image": "shopify://shop_images/AMD_CONTACT.png",
         "asset": "hero-banner-3.webp",
-        "eyebrow": "Contact",
+        "eyebrow": "",
         "heading": "How can we help?",
         "body": "<p>Product question, order issue, professional inquiry or partnership opportunity: choose the category below and our team will route your message appropriately.</p>"
       }

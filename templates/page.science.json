@@ -12,16 +12,15 @@
     "hero": {
       "type": "science-hero",
       "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "Dermatological science, from within",
+        "color_scheme": "green",
+        "eyebrow": "",
         "heading": "The Science of Internal Skin Health",
         "body": "<p>Skin is not an isolated surface. It is a living organ influenced by nutrition, environmental exposure, immune signaling, oxidative stress, the intestinal microbiome, and the integrity of its own barrier.</p><p>Alchemia MD formulates around those interconnected systems.</p><p>Every ingredient is selected for a defined purpose and evaluated against published research. The goal is not to replace topical skincare or sun protection. It is to add evidence-informed nutritional support to a complete skin-health routine.</p>",
         "primary_label": "Explore the research",
         "primary_url": "#research",
         "secondary_label": "Meet the formulas",
         "secondary_url": "/collections/individual-products",
-        "trust_line": "Dermatologist-formulated · Ingredient-transparent · Research-informed",
-        "image": "shopify://shop_images/MIA_FOUNDER_AMD_PIC.png"
+        "trust_line": "Dermatologist-formulated · Ingredient-transparent · Research-informed"
       }
     },
     "standard": {
@@ -89,7 +88,7 @@
       "settings": {
         "color_scheme": "light",
         "anchor": "research",
-        "eyebrow": "Our standard",
+        "eyebrow": "",
         "heading": "Research first. Claims second.",
         "body": "<p>Not all scientific evidence is equal. Alchemia MD evaluates ingredients using the totality of available research, with greater weight given to controlled human studies and systematic reviews than to laboratory or animal findings.</p>",
         "columns": "4",
@@ -109,7 +108,7 @@
             "kicker": "",
             "icon": "shield",
             "title": "Environmental stress",
-            "text": "<p>UV and other environmental exposures can influence oxidative stress and cellular responses in skin.</p><p>Research on ingredients such as nicotinamide and Polypodium leucotomos has examined biological responses to UV exposure in human volunteers.</p>",
+            "text": "<p>UV and other environmental exposures can influence oxidative stress and cellular responses in skin.</p><p>Research on ingredients such as niacinamide and Polypodium leucotomos has examined biological responses to UV exposure in human volunteers.</p>",
             "tag": "UV-response biology",
             "study": "yiasemides-nicotinamide-2009",
             "asset": "science-system-environment.webp"
@@ -122,7 +121,7 @@
             "kicker": "",
             "icon": "layers",
             "title": "Skin barrier",
-            "text": "<p>The outer skin barrier depends heavily on lipids including ceramides, free fatty acids, and cholesterol.</p><p>Experimental research has shown that nicotinamide can increase synthesis of several of these lipids in keratinocytes.</p>",
+            "text": "<p>The outer skin barrier depends heavily on lipids including ceramides, free fatty acids, and cholesterol.</p><p>Experimental research has shown that niacinamide can increase synthesis of several of these lipids in keratinocytes.</p>",
             "tag": "Epidermal barrier biology",
             "study": "tanno-nicotinamide-barrier-2000",
             "asset": "science-system-barrier.webp"
@@ -164,7 +163,7 @@
       "settings": {
         "color_scheme": "green",
         "anchor": "",
-        "eyebrow": "The biology",
+        "eyebrow": "",
         "heading": "Skin health is a system.",
         "body": "",
         "columns": "4",
@@ -183,9 +182,9 @@
             "name": "Niacinamide",
             "subtitle": "Vitamin B3",
             "evidence": "Human study + mechanistic research",
-            "why": "<p>Nicotinamide takes part in cellular energy metabolism and has been studied in relation to UV-response biology and skin barrier function.</p>",
+            "why": "<p>Niacinamide takes part in cellular energy metabolism and has been studied in relation to UV-response biology and skin barrier function.</p>",
             "shows_label": "What research shows",
-            "shows": "<p>A randomized, double-blind crossover study in healthy volunteers found that oral nicotinamide reduced UV-induced suppression of a measured skin immune response at the doses studied.</p><p>Separate laboratory and topical research found that nicotinamide increased synthesis of ceramides, free fatty acids, and cholesterol involved in epidermal barrier function.</p>",
+            "shows": "<p>A randomized, double-blind crossover study in healthy volunteers found that oral niacinamide reduced UV-induced suppression of a measured skin immune response at the doses studied.</p><p>Separate laboratory and topical research found that niacinamide increased synthesis of ceramides, free fatty acids, and cholesterol involved in epidermal barrier function.</p>",
             "language": "",
             "context": "<p>The barrier-lipid study included cell-culture and topical application research. It is not proof that oral UV Shield+ produces the same effect.</p>",
             "studies": "yiasemides-nicotinamide-2009, tanno-nicotinamide-barrier-2000",
@@ -271,7 +270,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "anchor": "uv-shield",
         "role": "Protect",
         "heading": "UV Shield+",
@@ -279,14 +278,11 @@
         "intro": "<p>UV Shield+ combines five ingredients selected around different aspects of environmental and oxidative-stress biology.</p><p>The formulation rationale is coverage of several different biological pathways, rather than one single proven ingredient pair.</p>",
         "ingredients": "Niacinamide\nPolypodium leucotomos\nTrans-resveratrol\nGreen tea polyphenols / EGCG\nSpirulina",
         "product": "uv-shield",
-        "image": "shopify://shop_images/uv-shield-2-five-actives.png",
-        "image_alt": "UV Shield+ five actives",
-        "image_caption": "Ingredient slide",
         "feature_title": "",
         "feature_body": "",
         "feature_studies": "",
         "feature_show_frame": true,
-        "show_card_images": true,
+        "show_card_images": false,
         "note": "<p>Research presented here describes studies on individual ingredients, not on UV Shield+ as a finished product. UV Shield+ is not a sunscreen and does not replace sun protection.</p>"
       }
     },
@@ -369,7 +365,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "anchor": "skinbiotic",
         "role": "Balance",
         "heading": "Skinbiotic+",
@@ -377,15 +373,11 @@
         "intro": "<p>Skinbiotic+ pairs a fermentable prebiotic with multiple microbial strains.</p><p>The formulation rationale is the prebiotic and probiotic pairing, and the complementary ecological roles of different organisms.</p>",
         "ingredients": "Organic inulin\nLactobacillus plantarum\nBifidobacterium lactis\nLactobacillus rhamnosus\nBifidobacterium bifidum\nAkkermansia muciniphila",
         "product": "skinbiotic",
-        "image": "shopify://shop_images/sk09.png",
-        "image_alt": "What's inside Skinbiotic+",
-        "image_caption": "Ingredient slide",
         "feature_title": "What is the gut–skin axis?",
         "feature_body": "<p>The gut-skin axis describes communication between the intestinal environment and the skin through pathways that can include microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support, but probiotic outcomes cannot be generalized across every strain or every product. Reviews consistently emphasize variability between organisms, populations, doses, and clinical endpoints.</p>",
         "feature_studies": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019",
-        "feature_image": "shopify://shop_images/sk10.png",
         "feature_show_frame": true,
-        "show_card_images": true,
+        "show_card_images": false,
         "note": "<p>Research presented here describes studies on individual strains and ingredients, not on Skinbiotic+ as a finished product.</p>"
       }
     },
@@ -512,14 +504,11 @@
         "intro": "<p>Dermaboost+ brings together eight ingredients with complementary roles.</p><p>The formulation rationale describes several plausible complementary relationships, such as quercetin with curcumin, quercetin with vitamin C, and vitamin C with zinc. These are complementary mechanisms, not proven clinical synergy of the finished formula.</p>",
         "ingredients": "Niacinamide\nVitamin D3\nVitamin C\nZinc\nQuercetin\nOptimized curcumin\nOlive leaf extract\nAstaxanthin",
         "product": "dermaboost",
-        "image": "shopify://shop_images/dermaboost-2-inside.png",
-        "image_alt": "What's inside Dermaboost+",
-        "image_caption": "Ingredient slide",
         "feature_title": "",
         "feature_body": "",
         "feature_studies": "",
         "feature_show_frame": true,
-        "show_card_images": true,
+        "show_card_images": false,
         "note": "<p>Research presented here describes studies on individual ingredients, not on Dermaboost+ as a finished product.</p>"
       }
     },
@@ -567,7 +556,7 @@
       ],
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Systems",
+        "eyebrow": "",
         "heading": "Different pathways. One skin-health system.",
         "body": "<p>The strongest formulation argument is not that one ingredient does everything. It is the opposite: different ingredients and products address different parts of a larger biological system.</p>",
         "caption": "This systems model represents formulation rationale. It does not mean the combination itself has been studied in human trials as an Alchemia MD finished-product regimen."
@@ -591,7 +580,7 @@
           "settings": {
             "study": "faisal-uva-2026",
             "kicker": "New research: 2026",
-            "headline": "Nicotinamide and Polypodium leucotomos after UVA exposure",
+            "headline": "Niacinamide and Polypodium leucotomos after UVA exposure",
             "text": "Randomized intraindividual human trial.",
             "asset": ""
           }
@@ -601,7 +590,7 @@
           "settings": {
             "study": "tanno-nicotinamide-barrier-2000",
             "kicker": "Skin barrier biology",
-            "headline": "Nicotinamide and epidermal barrier lipids",
+            "headline": "Niacinamide and epidermal barrier lipids",
             "text": "Mechanistic research involving ceramide and other lipid synthesis.",
             "asset": "research-spot-skin-barrier.webp"
           }
@@ -647,7 +636,7 @@
       ],
       "settings": {
         "color_scheme": "beige",
-        "eyebrow": "Research spotlight",
+        "eyebrow": "",
         "heading": "Research worth reading.",
         "body": "",
         "show_images": true,
@@ -660,7 +649,7 @@
         "b1": {
           "type": "row",
           "settings": {
-            "area": "Nicotinamide",
+            "area": "Niacinamide",
             "evidence": "Human + mechanistic",
             "level": "3",
             "interpretation": "Strong ingredient-level rationale; study dose and endpoint matter."
@@ -762,7 +751,7 @@
       ],
       "settings": {
         "color_scheme": "dark",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "What we know, and what we don't.",
         "body": "",
         "legend": "Dots show the maturity of the evidence, not the effect of any Alchemia MD product."
@@ -772,7 +761,7 @@
       "type": "science-boundaries",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Transparency",
+        "eyebrow": "",
         "heading": "Good science has boundaries.",
         "body": "",
         "not_heading": "These studies do not mean:",
@@ -795,7 +784,7 @@
       "type": "science-library",
       "settings": {
         "color_scheme": "light",
-        "eyebrow": "Research library",
+        "eyebrow": "",
         "heading": "Every study we cite.",
         "body": "<p>Filter by topic or search by ingredient. Studies describe individual ingredients or biological pathways, not Alchemia MD finished products.</p>",
         "filters": "Environmental / UV, Skin Barrier, Gut–Skin Axis, Probiotics, Antioxidants, Human Trials, Reviews",
@@ -867,7 +856,7 @@
       "settings": {
         "color_scheme": "dark",
         "anchor": "",
-        "eyebrow": "Formulation philosophy",
+        "eyebrow": "",
         "heading": "Why we formulate in systems.",
         "body": "",
         "columns": "4",
@@ -877,27 +866,12 @@
         "button_url": ""
       }
     },
-    "mia": {
-      "type": "founder",
-      "settings": {
-        "color_scheme": "dark",
-        "image_asset": "founder-portrait.webp",
-        "image_alt": "Dr. Mia Luna",
-        "image_side": "left",
-        "eyebrow": "Dermatologist-led",
-        "heading": "Science should make skin health easier to understand, not harder.",
-        "credentials": "",
-        "body": "<p>The purpose of Alchemia MD is not to overwhelm people with studies. It is to take what we know about skin biology, nutrition, and prevention and translate it into a routine people can actually understand and follow.</p>",
-        "link_label": "Meet Dr. Mia Luna",
-        "link_url": "/pages/founder"
-      }
-    },
     "cta": {
       "type": "final-cta",
       "settings": {
         "color_scheme": "band",
         "product": "",
-        "eyebrow": "Next step",
+        "eyebrow": "",
         "heading": "Build your internal skin health routine.",
         "body": "<p>Understand what each formula is designed to support and choose the level of support that fits your routine.</p>",
         "button_label": "Explore the products",
@@ -916,6 +890,80 @@
         "fda_text": "",
         "color_scheme": "dark"
       }
+    },
+    "learn": {
+      "type": "education-grid",
+      "blocks": {
+        "g1": {
+          "type": "guide",
+          "settings": {
+            "title": "Skin science",
+            "text": "Understand how skin functions, renews, adapts, and responds.",
+            "link": "/blogs/skin-edu/tagged/skin-science",
+            "cta_label": "Read articles"
+          }
+        },
+        "g2": {
+          "type": "guide",
+          "settings": {
+            "title": "Sun + environment",
+            "text": "UV exposure, environmental stress, sunscreen, and layered protection.",
+            "link": "/blogs/skin-edu/tagged/sun-environment",
+            "cta_label": "Read articles"
+          }
+        },
+        "g3": {
+          "type": "guide",
+          "settings": {
+            "title": "Gut + skin",
+            "text": "The microbiome, probiotics, prebiotics, and the gut-skin connection.",
+            "link": "/blogs/skin-edu/tagged/gut-skin",
+            "cta_label": "Read articles"
+          }
+        },
+        "g4": {
+          "type": "guide",
+          "settings": {
+            "title": "Ingredients",
+            "text": "What ingredients do, what the evidence says, and what it does not say.",
+            "link": "/blogs/skin-edu/tagged/ingredients",
+            "cta_label": "Read articles"
+          }
+        },
+        "g5": {
+          "type": "guide",
+          "settings": {
+            "title": "Nutrition + wellness",
+            "text": "How nutrition and everyday health habits fit into broader skin health.",
+            "link": "/blogs/skin-edu/tagged/nutrition-wellness",
+            "cta_label": "Read articles"
+          }
+        },
+        "g6": {
+          "type": "guide",
+          "settings": {
+            "title": "From the derm",
+            "text": "Clear explanations and practical guidance from Dr. Mia Luna.",
+            "link": "/blogs/skin-edu/tagged/ask-the-derm",
+            "cta_label": "Read articles"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6"
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "heading": "Skin Edu: learn more",
+        "body": "<p>Dermatologist-led articles, ingredient explainers, and research breakdowns.</p>",
+        "link_label": "All Skin Edu articles",
+        "link_url": "/blogs/skin-edu"
+      }
     }
   },
   "order": [
@@ -931,8 +979,8 @@
     "boundaries",
     "sunscreen",
     "library",
+    "learn",
     "philosophy",
-    "mia",
     "cta",
     "compliance"
   ]

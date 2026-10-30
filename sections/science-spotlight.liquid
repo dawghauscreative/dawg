@@ -2,7 +2,7 @@
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
-    <div class="cols cols--3 sci-spot">
+    <div class="cols cols--3 sci-spot" data-spot-pager>
       {%- for block in section.blocks -%}
         {%- assign handle = block.settings.study | strip -%}
         {%- assign st = shop.metaobjects.research_study[handle] -%}
@@ -19,7 +19,31 @@
         {%- endif -%}
       {%- endfor -%}
     </div>
+    <nav class="sci-spot__pager" data-spot-nav aria-label="Research pages" hidden>
+      <button type="button" class="btn btn--outline" data-spot-prev>Previous</button>
+      <span class="sci-spot__count" data-spot-count></span>
+      <button type="button" class="btn btn--outline" data-spot-next>Next</button>
+    </nav>
   </div>
+  <script>
+    (function () {
+      var root = document.currentScript.parentNode;
+      var grid = root.querySelector('[data-spot-pager]');
+      var nav = root.querySelector('[data-spot-nav]');
+      if (!grid || !nav) return;
+      var cards = Array.prototype.slice.call(grid.children), per = 3, page = 0, pages = Math.ceil(cards.length / per);
+      if (pages < 2) return;
+      var count = nav.querySelector('[data-spot-count]');
+      function show() {
+        cards.forEach(function (c, i) { c.hidden = Math.floor(i / per) !== page; });
+        count.textContent = (page + 1) + ' / ' + pages;
+      }
+      nav.hidden = false;
+      nav.querySelector('[data-spot-prev]').addEventListener('click', function () { page = (page - 1 + pages) % pages; show(); });
+      nav.querySelector('[data-spot-next]').addEventListener('click', function () { page = (page + 1) % pages; show(); });
+      show();
+    })();
+  </script>
 </section>
 
 {% schema %}
