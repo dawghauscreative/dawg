@@ -82,9 +82,9 @@
             "description": "For people who spend significant time outdoors and want to combine environmental skin support with gut-skin balance.",
             "support_areas": "Environmental stress support\nAntioxidant support\nGut-skin connection\nMicrobiome balance",
             "best_for": "Golf\nTennis\nBoating\nBeach\nTravel\nOutdoor lifestyles\nCustomers who want internal sun-support plus microbiome support",
-            "choose_label": "Choose Sun Safe System",
+            "choose_label": "Choose Outdoor Duo",
             "learn_label": "Learn more",
-            "plan_heading": "Choose your Sun Safe System plan",
+            "plan_heading": "Choose your Outdoor Duo plan",
             "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
           }
         },
@@ -98,9 +98,9 @@
             "description": "For customers focused on gut-skin balance together with broader nutritional, antioxidant, and immune-supportive pathways.",
             "support_areas": "Gut-skin connection\nMicrobiome balance\nAntioxidant support\nNormal immune support",
             "best_for": "Gut-health-focused routines\nMicrobiome support\nAntioxidant support\nBroader daily skin resilience\nCustomers who want internal balance without making outdoor exposure the primary focus",
-            "choose_label": "Choose Skin Recovery System",
+            "choose_label": "Choose Balance Duo",
             "learn_label": "Learn more",
-            "plan_heading": "Choose your Skin Recovery System plan",
+            "plan_heading": "Choose your Balance Duo plan",
             "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
           }
         },
@@ -114,9 +114,9 @@
             "description": "For customers who want environmental support paired with broader antioxidant, nutritional, and normal immune-supportive nutrition.",
             "support_areas": "Environmental support\nAntioxidant support\nNutritional support\nSkin resilience",
             "best_for": "Active outdoor lifestyles\nEnvironmental exposure\nAntioxidant-focused routines\nBroader nutritional skin support\nCustomers who want support beyond UV-focused pathways without prioritizing microbiome support",
-            "choose_label": "Choose Sun Resilience System",
+            "choose_label": "Choose Sun Resilience Duo",
             "learn_label": "Learn more",
-            "plan_heading": "Choose your Sun Resilience System plan",
+            "plan_heading": "Choose your Sun Resilience Duo plan",
             "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
           }
         },
@@ -130,9 +130,9 @@
             "description": "The most complete Alchemia MD routine for customers who already understand the three roles and want all three areas of support integrated into one daily system.",
             "support_areas": "Environmental support\nGut-skin balance\nAntioxidant support\nNormal immune support\nDaily skin resilience",
             "best_for": "Existing Alchemia MD customers\nCustomers who want all three support roles\nCustomers already committed to a comprehensive supplement routine",
-            "choose_label": "Choose Complete Skin Defense",
+            "choose_label": "Choose Tria Prima",
             "learn_label": "Learn more",
-            "plan_heading": "Choose your Complete Skin Defense plan",
+            "plan_heading": "Choose your Tria Prima plan",
             "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
           }
         }
@@ -158,7 +158,7 @@
         "b1": {
           "type": "row",
           "settings": {
-            "label": "Sun Safe",
+            "label": "Outdoor Duo",
             "a": "Protect + Balance",
             "b": "UV Shield+ + Skinbiotic+",
             "c": "Environmental support + gut-skin balance"
@@ -167,7 +167,7 @@
         "b2": {
           "type": "row",
           "settings": {
-            "label": "Skin Recovery",
+            "label": "Balance Duo",
             "a": "Balance + Restore",
             "b": "Skinbiotic+ + Dermaboost+",
             "c": "Microbiome + broader nutritional support"
@@ -176,7 +176,7 @@
         "b3": {
           "type": "row",
           "settings": {
-            "label": "Sun Resilience",
+            "label": "Sun Resilience Duo",
             "a": "Protect + Restore",
             "b": "UV Shield+ + Dermaboost+",
             "c": "Environmental + antioxidant/nutritional support"
@@ -185,7 +185,7 @@
         "b4": {
           "type": "row",
           "settings": {
-            "label": "Complete Skin Defense",
+            "label": "Tria Prima",
             "a": "Protect + Balance + Restore",
             "b": "All three",
             "c": "Most comprehensive Alchemia MD routine"
@@ -205,13 +205,13 @@
         "color_scheme": "light",
         "image_side": "right",
         "eyebrow": "",
-        "heading": "Sun Safe System",
+        "heading": "Outdoor Duo",
         "product": "sun-safe-system",
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
         "light_panel": true,
         "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+</p><h3>What each product contributes</h3><p><strong>UV Shield+</strong> Environmental and antioxidant support for skin exposed to life outdoors.</p><p><strong>Skinbiotic+</strong> Synbiotic support for gut health and the gut-skin connection.</p><h3>Why combine them?</h3><p>The pair works through different upstream mechanisms: UV Shield+ emphasizes environmental and oxidative pathways, while Skinbiotic+ emphasizes the intestinal microbial environment.</p><h3>Best for</h3><p>People who spend significant time outdoors and want to pair environmental support with gut-skin balance.</p>",
-        "primary_label": "Explore Sun Safe System"
+        "primary_label": "Explore Outdoor Duo"
       }
     },
     "edu_recovery": {
@@ -220,13 +220,13 @@
         "color_scheme": "green",
         "image_side": "left",
         "eyebrow": "",
-        "heading": "Skin Recovery System",
+        "heading": "Balance Duo",
         "product": "skin-recovery-system",
         "asset": "system-skin-recovery.webp",
         "ratio": "16x9",
         "light_panel": true,
         "body": "<p><strong>Includes</strong> Skinbiotic+ + Dermaboost+</p><h3>What each product contributes</h3><p><strong>Skinbiotic+</strong> Gut and microbiome support.</p><p><strong>Dermaboost+</strong> Antioxidant, nutritional, and normal immune support.</p><h3>Why combine them?</h3><p>This combination is a complementary gut-to-systemic strategy: one formula works primarily at the gut and microbial interface while the other contributes broader nutritional and systemic support.</p><h3>Best for</h3><p>Customers who want gut-skin balance plus broader daily nutritional support.</p>",
-        "primary_label": "Explore Skin Recovery System"
+        "primary_label": "Explore Balance Duo"
       }
     },
     "edu_resilience": {
@@ -235,13 +235,13 @@
         "color_scheme": "dark",
         "image_side": "right",
         "eyebrow": "",
-        "heading": "Sun Resilience System",
+        "heading": "Sun Resilience Duo",
         "product": "sun-resilience-system",
         "asset": "system-sun-resilience.webp",
         "ratio": "16x9",
         "light_panel": true,
         "body": "<p><strong>Includes</strong> UV Shield+ + Dermaboost+</p><h3>What each product contributes</h3><p><strong>UV Shield+</strong> Environmental and UV-related support.</p><p><strong>Dermaboost+</strong> Broader antioxidant, nutritional, and normal immune support.</p><h3>Why combine them?</h3><p>This is the pairing with the strongest overlap in oxidative-pathway support, while the two formulas keep different primary roles.</p><h3>Best for</h3><p>Customers with active outdoor lifestyles who want environmental support plus broader nutritional resilience.</p>",
-        "primary_label": "Explore Sun Resilience System"
+        "primary_label": "Explore Sun Resilience Duo"
       }
     },
     "edu_complete": {
@@ -250,13 +250,13 @@
         "color_scheme": "light",
         "image_side": "left",
         "eyebrow": "",
-        "heading": "Complete Skin Defense System",
+        "heading": "Tria Prima",
         "product": "complete-skin-defense-system",
         "asset": "system-complete.webp",
         "ratio": "16x9",
         "light_panel": true,
         "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+ + Dermaboost+</p><h3>What the system covers</h3><p><strong>Protect</strong> Environmental and antioxidant support.</p><p><strong>Balance</strong> Gut-skin and microbiome support.</p><p><strong>Restore</strong> Nutritional, antioxidant, and normal immune support.</p><h3>Why combine all three?</h3><p>The three formulas are organized across three broad domains, each with a primary role and some complementary overlap:</p><ul><li>Environmental and UV stress</li><li>The gut microbial environment</li><li>Systemic oxidative and immune-related pathways</li></ul><h3>Important positioning</h3><p>This is not the universal starting point. It is the most comprehensive routine for customers who already know they want support across all three Alchemia MD roles.</p>",
-        "primary_label": "Explore Complete Skin Defense"
+        "primary_label": "Explore Tria Prima"
       }
     },
     "finder": {
@@ -273,7 +273,7 @@
           "settings": {
             "statement": "I spend a lot of time outdoors + care about gut health",
             "product": "sun-safe-system",
-            "label": "Sun Safe System"
+            "label": "Outdoor Duo"
           }
         },
         "b2": {
@@ -281,7 +281,7 @@
           "settings": {
             "statement": "My priority is gut balance + broader daily skin support",
             "product": "skin-recovery-system",
-            "label": "Skin Recovery System"
+            "label": "Balance Duo"
           }
         },
         "b3": {
@@ -289,7 +289,7 @@
           "settings": {
             "statement": "I spend a lot of time outdoors + want broader antioxidant support",
             "product": "sun-resilience-system",
-            "label": "Sun Resilience System"
+            "label": "Sun Resilience Duo"
           }
         },
         "b4": {
@@ -297,7 +297,7 @@
           "settings": {
             "statement": "I already understand all three roles and want the full routine",
             "product": "complete-skin-defense-system",
-            "label": "Complete Skin Defense System"
+            "label": "Tria Prima"
           }
         }
       },
@@ -377,28 +377,28 @@
           "type": "card",
           "settings": {
             "title": "Environmental + microbiome",
-            "text": "<p>Sun Safe System.</p>"
+            "text": "<p>Outdoor Duo.</p>"
           }
         },
         "b2": {
           "type": "card",
           "settings": {
             "title": "Microbiome + systemic nutrition",
-            "text": "<p>Skin Recovery System.</p>"
+            "text": "<p>Balance Duo.</p>"
           }
         },
         "b3": {
           "type": "card",
           "settings": {
             "title": "Environmental + nutritional support",
-            "text": "<p>Sun Resilience System.</p>"
+            "text": "<p>Sun Resilience Duo.</p>"
           }
         },
         "b4": {
           "type": "card",
           "settings": {
             "title": "Three-domain support",
-            "text": "<p>Complete Skin Defense.</p>"
+            "text": "<p>Tria Prima.</p>"
           }
         }
       },
@@ -436,13 +436,13 @@
           "type": "item",
           "settings": {
             "question": "Which system should I start with?",
-            "answer": "<p>Choose based on your priorities: Sun Safe (Protect + Balance), Skin Recovery (Balance + Restore), Sun Resilience (Protect + Restore), or Complete Skin Defense (Protect + Balance + Restore).</p>"
+            "answer": "<p>Choose based on your priorities: Outdoor Duo (Protect + Balance), Balance Duo (Balance + Restore), Sun Resilience Duo (Protect + Restore), or Tria Prima (Protect + Balance + Restore).</p>"
           }
         },
         "b4": {
           "type": "item",
           "settings": {
-            "question": "Is Complete Skin Defense the best option?",
+            "question": "Is Tria Prima the best option?",
             "answer": "<p>It is the most comprehensive option, but not necessarily the right starting point for everyone.</p>"
           }
         },
@@ -475,7 +475,7 @@
       "settings": {
         "color_scheme": "dark",
         "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
-        "extra_line": "Sun Safe, Sun Resilience, and Complete Skin Defense do not replace sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
+        "extra_line": "Outdoor Duo, Sun Resilience Duo, and Tria Prima do not replace sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
       }
     },
     "final": {

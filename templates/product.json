@@ -47,10 +47,6 @@
           "type": "fda",
           "settings": {}
         },
-        "melanoma": {
-          "type": "melanoma",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -64,7 +60,6 @@
         "buy_buttons",
         "expectation",
         "trust_bar",
-        "melanoma",
         "fda"
       ],
       "settings": {}

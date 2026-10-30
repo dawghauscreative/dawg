@@ -16,7 +16,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "text": "<p>The Sun Safe System pairs UV Shield+ and Skinbiotic+ in one dermatologist-formulated daily routine.</p><p>UV Shield+ is built around nutritional and antioxidant support for skin exposed to environmental and UV-related stress. Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection.</p><p>Together, they create a simple two-step system for people who spend significant time outdoors and want to support skin from both the environmental and internal sides of the equation.</p>"
+            "text": "<p>The Outdoor Duo pairs UV Shield+ and Skinbiotic+ in one dermatologist-formulated daily routine.</p><p>UV Shield+ is built around nutritional and antioxidant support for skin exposed to environmental and UV-related stress. Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection.</p><p>Together, they create a simple two-step system for people who spend significant time outdoors and want to support skin from both the environmental and internal sides of the equation.</p>"
           }
         },
         "bullets": {
@@ -57,12 +57,8 @@
         "note": {
           "type": "note",
           "settings": {
-            "text": "The Sun Safe System complements sunscreen and smart sun habits. It does not replace them."
+            "text": "The Outdoor Duo complements sunscreen and smart sun habits. It does not replace them."
           }
-        },
-        "melanoma": {
-          "type": "melanoma",
-          "settings": {}
         },
         "fda": {
           "type": "fda",
@@ -80,7 +76,6 @@
         "expectation",
         "trust_bar",
         "note",
-        "melanoma",
         "fda"
       ],
       "settings": {
@@ -94,7 +89,7 @@
         "color_scheme": "light",
         "eyebrow": "",
         "heading": "Two complementary forms of internal skin support.",
-        "body": "<p>The Sun Safe System combines two formulas with different primary roles.</p><p>It is not built around taking more products for the sake of taking more products. It is built around combining two different biological support strategies in one routine.</p>",
+        "body": "<p>The Outdoor Duo combines two formulas with different primary roles.</p><p>It is not built around taking more products for the sake of taking more products. It is built around combining two different biological support strategies in one routine.</p>",
         "center": "Protect the routine. Balance the system."
       },
       "blocks": {
@@ -207,7 +202,7 @@
         "eyebrow": "",
         "heading": "Skin support works in layers.",
         "body": "<p>A complete routine has more than one layer.</p>",
-        "callout": "The Sun Safe System belongs inside a complete skin-health routine, not instead of one."
+        "callout": "The Outdoor Duo belongs inside a complete skin-health routine, not instead of one."
       },
       "blocks": {
         "b1": {
@@ -320,7 +315,7 @@
         "columns": "3",
         "eyebrow": "",
         "heading": "Designed for people who spend time in the sun.",
-        "statement": "The Sun Safe System is not about avoiding the sun. It is about supporting your skin while continuing to live the life you enjoy."
+        "statement": "The Outdoor Duo is not about avoiding the sun. It is about supporting your skin while continuing to live the life you enjoy."
       },
       "blocks": {
         "b1": {
@@ -439,7 +434,7 @@
         "heading": "Why these two formulas?",
         "columns": "4",
         "show_images": false,
-        "button_label": "Explore the Sun Safe science",
+        "button_label": "Explore the Outdoor Duo science",
         "button_url": "/pages/science"
       },
       "blocks": {
@@ -489,7 +484,7 @@
         "color_scheme": "light",
         "eyebrow": "",
         "heading": "Good science has boundaries.",
-        "not_heading": "The Sun Safe System does not claim to:",
+        "not_heading": "The Outdoor Duo does not claim to:",
         "not_items": "Replace sunscreen\nPrevent sunburn\nMake prolonged sun exposure safe\nPrevent skin cancer\nReverse existing sun damage\nTreat a skin disease\nGuarantee clearer skin\nGuarantee a visible result by a specific date\nProve that the two-product system itself has been clinically tested",
         "does_heading": "What it is",
         "does_text": "<p>A dermatologist-formulated two-product system designed to provide complementary environmental and gut-skin support.</p>"
@@ -500,7 +495,7 @@
       "settings": {
         "color_scheme": "green",
         "heading": "Keep the sunscreen.",
-        "body": "<p>The Sun Safe System is intended to complement a complete sun-health routine. Continue to use:</p>",
+        "body": "<p>The Outdoor Duo is intended to complement a complete sun-health routine. Continue to use:</p>",
         "items": "Broad-spectrum sunscreen\nProtective clothing\nHats and sunglasses\nShade\nReapplication\nRoutine dermatologic care",
         "callout": "Internal supplementation is not oral sunscreen."
       }
@@ -510,7 +505,7 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "heading": "Is Sun Safe the right system for you?",
+        "heading": "Is Outdoor Duo the right system for you?",
         "col_1": "Roles",
         "col_2": "Includes",
         "col_3": "Best fit",
@@ -521,7 +516,7 @@
         "b1": {
           "type": "row",
           "settings": {
-            "label": "Sun Safe",
+            "label": "Outdoor Duo",
             "a": "Protect + Balance",
             "b": "UV Shield+ + Skinbiotic+",
             "c": "Outdoor lifestyle + gut-skin support"
@@ -530,7 +525,7 @@
         "b2": {
           "type": "row",
           "settings": {
-            "label": "Skin Recovery",
+            "label": "Balance Duo",
             "a": "Balance + Restore",
             "b": "Skinbiotic+ + Dermaboost+",
             "c": "Gut-skin + broader nutritional support"
@@ -539,7 +534,7 @@
         "b3": {
           "type": "row",
           "settings": {
-            "label": "Sun Resilience",
+            "label": "Sun Resilience Duo",
             "a": "Protect + Restore",
             "b": "UV Shield+ + Dermaboost+",
             "c": "Outdoor + broader antioxidant support"
@@ -548,7 +543,7 @@
         "b4": {
           "type": "row",
           "settings": {
-            "label": "Complete Skin Defense",
+            "label": "Tria Prima",
             "a": "Protect + Balance + Restore",
             "b": "All three",
             "c": "Most comprehensive routine"
@@ -575,7 +570,7 @@
           "settings": {
             "statement": "Want Protect + Restore?",
             "product": "sun-resilience-system",
-            "label": "Explore Sun Resilience System"
+            "label": "Explore Sun Resilience Duo"
           }
         },
         "b2": {
@@ -583,7 +578,7 @@
           "settings": {
             "statement": "Want Balance + Restore?",
             "product": "skin-recovery-system",
-            "label": "Explore Skin Recovery System"
+            "label": "Explore Balance Duo"
           }
         },
         "b3": {
@@ -591,7 +586,7 @@
           "settings": {
             "statement": "Want all three roles?",
             "product": "complete-skin-defense-system",
-            "label": "Explore Complete Skin Defense"
+            "label": "Explore Tria Prima"
           }
         }
       },
@@ -620,8 +615,8 @@
         "b1": {
           "type": "item",
           "settings": {
-            "question": "What is the Sun Safe System?",
-            "answer": "<p>The Sun Safe System combines UV Shield+ and Skinbiotic+ in a two-product routine designed to support environmental skin resilience and the gut-skin connection.</p>"
+            "question": "What is the Outdoor Duo?",
+            "answer": "<p>The Outdoor Duo combines UV Shield+ and Skinbiotic+ in a two-product routine designed to support environmental skin resilience and the gut-skin connection.</p>"
           }
         },
         "b2": {
@@ -641,7 +636,7 @@
         "b4": {
           "type": "item",
           "settings": {
-            "question": "Does the Sun Safe System replace sunscreen?",
+            "question": "Does the Outdoor Duo replace sunscreen?",
             "answer": "<p>No. It is designed to complement sunscreen and smart sun habits, not replace them.</p>"
           }
         },
@@ -669,15 +664,15 @@
         "b8": {
           "type": "item",
           "settings": {
-            "question": "Can I subscribe to the Sun Safe System?",
+            "question": "Can I subscribe to the Outdoor Duo?",
             "answer": "<p>Yes. The plan options in the purchase box show the current subscription and one-time purchase options.</p>"
           }
         },
         "b9": {
           "type": "item",
           "settings": {
-            "question": "Is this the same as Complete Skin Defense?",
-            "answer": "<p>No. Sun Safe contains UV Shield+ and Skinbiotic+. Complete Skin Defense also includes Dermaboost+.</p>"
+            "question": "Is this the same as Tria Prima?",
+            "answer": "<p>No. Outdoor Duo contains UV Shield+ and Skinbiotic+. Tria Prima also includes Dermaboost+.</p>"
           }
         }
       },
@@ -698,7 +693,7 @@
       "settings": {
         "color_scheme": "dark",
         "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
-        "extra_line": "The Sun Safe System is not a replacement for sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
+        "extra_line": "The Outdoor Duo is not a replacement for sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
       }
     },
     "final": {

@@ -564,7 +564,7 @@
             "product": "skin-recovery-system",
             "roles": "Balance + Restore",
             "best_for": "Skinbiotic+ + Dermaboost+. Pairs microbiome-focused support with broader antioxidant, nutritional, and immune support.",
-            "cta": "Explore Skin Recovery System",
+            "cta": "Explore Balance Duo",
             "asset": "system-skin-recovery.webp",
             "note": ""
           }
@@ -575,7 +575,7 @@
             "product": "sun-resilience-system",
             "roles": "Protect + Restore",
             "best_for": "UV Shield+ + Dermaboost+. Pairs environmental support with broader antioxidant and immune-supportive nutrition.",
-            "cta": "Explore Sun Resilience System",
+            "cta": "Explore Sun Resilience Duo",
             "asset": "system-sun-resilience.webp"
           }
         }
@@ -640,14 +640,14 @@
           "type": "item",
           "settings": {
             "question": "Can I take Dermaboost+ by itself?",
-            "answer": "<p>Yes. Dermaboost+ is available as a standalone formula and is also included in the Skin Recovery System and Sun Resilience System.</p>"
+            "answer": "<p>Yes. Dermaboost+ is available as a standalone formula and is also included in the Balance Duo and Sun Resilience Duo.</p>"
           }
         },
         "b7": {
           "type": "item",
           "settings": {
-            "question": "Is Dermaboost+ part of Complete Skin Defense?",
-            "answer": "<p>Yes. Dermaboost+ is the Restore component of the Complete Skin Defense System. You do not need every formula; each one can be used on its own.</p>"
+            "question": "Is Dermaboost+ part of Tria Prima?",
+            "answer": "<p>Yes. Dermaboost+ is the Restore component of Tria Prima. You do not need every formula; each one can be used on its own.</p>"
           }
         }
       },

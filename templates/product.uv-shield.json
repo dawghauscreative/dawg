@@ -58,10 +58,6 @@
             "text": "UV Shield+ is designed to work alongside sunscreen, not replace it."
           }
         },
-        "melanoma": {
-          "type": "melanoma",
-          "settings": {}
-        },
         "fda": {
           "type": "fda",
           "settings": {}
@@ -78,7 +74,6 @@
         "expectation",
         "trust_bar",
         "note",
-        "melanoma",
         "fda"
       ],
       "settings": {
@@ -484,7 +479,7 @@
             "product": "sun-safe-system",
             "roles": "Protect + Balance",
             "best_for": "UV Shield+ + Skinbiotic+. Pairs environmental support with gut-skin support through different upstream mechanisms: environmental and oxidative pathways, and the intestinal microbial environment.",
-            "cta": "Explore Sun Safe System",
+            "cta": "Explore Outdoor Duo",
             "asset": "system-sun-safe.webp"
           }
         },
@@ -494,7 +489,7 @@
             "product": "sun-resilience-system",
             "roles": "Protect + Restore",
             "best_for": "UV Shield+ + Dermaboost+. Pairs UV and environmental support with broader antioxidant and immune-supportive nutrition.",
-            "cta": "Explore Sun Resilience System",
+            "cta": "Explore Sun Resilience Duo",
             "asset": "system-sun-resilience.webp"
           }
         }
@@ -566,7 +561,7 @@
           "type": "item",
           "settings": {
             "question": "Is UV Shield+ part of a system?",
-            "answer": "<p>Yes. UV Shield+ is included in the Sun Safe System and Sun Resilience System, while also being available as an individual formula.</p>"
+            "answer": "<p>Yes. UV Shield+ is included in the Outdoor Duo and Sun Resilience Duo, while also being available as an individual formula.</p>"
           }
         }
       },

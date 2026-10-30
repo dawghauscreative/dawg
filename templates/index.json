@@ -16,7 +16,7 @@
         "eyebrow": "",
         "heading": "Internal Skin Defense for Life in the Sun",
         "body": "<p>Skin is a living system. Alchemia MD supports it from within with dermatologist-formulated supplements designed to protect, balance, and restore!</p>",
-        "primary_label": "Shop the Sun Safe System",
+        "primary_label": "Shop the Outdoor Duo",
         "primary_url": "/products/sun-safe-system",
         "secondary_label": "Explore the Science",
         "secondary_url": "/pages/science",
@@ -207,12 +207,12 @@
         "color_scheme": "dark",
         "image_side": "right",
         "eyebrow": "",
-        "heading": "Meet the Sun Safe System",
+        "heading": "Meet the Outdoor Duo",
         "heading_tag": "h2",
         "subhead": "Protect + Balance",
-        "body": "<p>For people who spend their lives outdoors, the Sun Safe System pairs two targeted formulas:</p><p><strong>UV Shield+</strong> supports skin exposed to daily environmental and UV-related stress.</p><p><strong>Skinbiotic+</strong> supports the gut-skin connection and internal balance.</p><p>Together, they create a simple daily routine built for life outdoors.</p>",
+        "body": "<p>For people who spend their lives outdoors, the Outdoor Duo pairs two targeted formulas:</p><p><strong>UV Shield+</strong> supports skin exposed to daily environmental and UV-related stress.</p><p><strong>Skinbiotic+</strong> supports the gut-skin connection and internal balance.</p><p>Together, they create a simple daily routine built for life outdoors.</p>",
         "product": "sun-safe-system",
-        "primary_label": "Explore the Sun Safe System",
+        "primary_label": "Explore the Outdoor Duo",
         "primary_url": "",
         "secondary_label": "See all systems",
         "secondary_url": "/pages/systems",
@@ -250,7 +250,7 @@
             "roles": "Protect + Balance",
             "best_for": "Active outdoor lifestyles and customers looking for environmental support plus gut-skin balance.",
             "note": "",
-            "cta": "Explore Sun Safe",
+            "cta": "Explore Outdoor Duo",
             "asset": "system-sun-safe.webp",
             "featured": true
           }
@@ -262,7 +262,7 @@
             "roles": "Balance + Restore",
             "best_for": "Customers focused on gut-skin balance and broader nutritional support for calm, resilient skin.",
             "note": "",
-            "cta": "Explore Skin Recovery",
+            "cta": "Explore Balance Duo",
             "asset": "system-skin-recovery.webp",
             "featured": false
           }
@@ -274,7 +274,7 @@
             "roles": "Protect + Restore",
             "best_for": "Customers looking to pair environmental support with broader antioxidant and immune-supportive nutrition.",
             "note": "",
-            "cta": "Explore Sun Resilience",
+            "cta": "Explore Sun Resilience Duo",
             "asset": "system-sun-resilience.webp",
             "featured": false
           }
@@ -286,7 +286,7 @@
             "roles": "Protect + Balance + Restore",
             "best_for": "Customers who already understand the three roles and want the most comprehensive Alchemia MD routine.",
             "note": "",
-            "cta": "Explore Complete Skin Defense",
+            "cta": "Explore Tria Prima",
             "asset": "system-complete.webp",
             "featured": false
           }
@@ -726,8 +726,8 @@
         "product": "sun-safe-system",
         "eyebrow": "",
         "heading": "Built for life in the sun.",
-        "body": "<p>Start with UV Shield+ and Skinbiotic+ together in the Sun Safe System: a two-step routine designed to support environmental resilience and internal balance.</p>",
-        "button_label": "Explore the Sun Safe System",
+        "body": "<p>Start with UV Shield+ and Skinbiotic+ together in the Outdoor Duo: a two-step routine designed to support environmental resilience and internal balance.</p>",
+        "button_label": "Explore the Outdoor Duo",
         "button_url": "",
         "secondary_label": "Shop all products",
         "secondary_url": "/collections/all",

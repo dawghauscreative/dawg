@@ -404,3 +404,9 @@ Applied on the live branch (backup: branch `claude/backup-live-theme-2026-10-30`
 - Science: plain evergreen hero (no image/art), formula cards are collapsed FAQ-style dropdowns without images, research spotlight pages 3 at a time, subtitles sentence-case, headline sizes +5pt, "nicotinamide" -> "niacinamide" in visible text (study handles unchanged).
 - PDP: evergreen background, ingredient cards -> "Ingredients" dropdowns, no images.
 Held for owner decision: daily-total/enhanced naming, melanoma line, bundle renames, header weight, 3D renders on PDP/home, contact-page defects (shipping 404, refund policy placeholder, FAQ repeats).
+
+### Decisions applied (Oct 30, after review round)
+- Enhanced -> "Twice a day (2 bottles)" label in how-to-take; explainer/supply_line metafields (UV Shield+, Outdoor Duo, Sun Resilience Duo) reworded around the dermatologist, with arithmetic daily totals for UV Shield+ twice a day (niacinamide 1,000 mg etc.). Heather's "1,250 mg" example is not derivable from label data and was not used. The purchase-box "choice" itself lives in Supr/selling-plan config and is not changed here.
+- Melanoma research line removed from all product templates (and the mission-line section on Tria Prima). Theme setting kept for later use.
+- Bundle names in theme text: Outdoor Duo, Balance Duo, Tria Prima, Sun Resilience Duo (Shopify product titles already matched; handles/URLs unchanged).
+- Home hero headline set to semi-bold (600) via CSS; other headlines stay at the headline-weight setting.

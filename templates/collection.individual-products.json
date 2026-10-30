@@ -174,9 +174,9 @@
           "type": "row",
           "settings": {
             "label": "Used in systems",
-            "a": "Sun Safe, Sun Resilience, Complete",
-            "b": "Sun Safe, Skin Recovery, Complete",
-            "c": "Skin Recovery, Sun Resilience, Complete"
+            "a": "Outdoor Duo, Sun Resilience Duo, Complete",
+            "b": "Outdoor Duo, Balance Duo, Complete",
+            "c": "Balance Duo, Sun Resilience Duo, Complete"
           }
         }
       },
@@ -290,7 +290,7 @@
             "product": "sun-safe-system",
             "roles": "Protect + Balance",
             "best_for": "UV Shield+ + Skinbiotic+",
-            "cta": "Explore Sun Safe System",
+            "cta": "Explore Outdoor Duo",
             "asset": "system-sun-safe.webp"
           }
         },
@@ -300,7 +300,7 @@
             "product": "skin-recovery-system",
             "roles": "Balance + Restore",
             "best_for": "Skinbiotic+ + Dermaboost+",
-            "cta": "Explore Skin Recovery System",
+            "cta": "Explore Balance Duo",
             "asset": "system-skin-recovery.webp",
             "note": ""
           }
@@ -311,7 +311,7 @@
             "product": "sun-resilience-system",
             "roles": "Protect + Restore",
             "best_for": "UV Shield+ + Dermaboost+",
-            "cta": "Explore Sun Resilience System",
+            "cta": "Explore Sun Resilience Duo",
             "asset": "system-sun-resilience.webp"
           }
         },
@@ -321,7 +321,7 @@
             "product": "complete-skin-defense-system",
             "roles": "Protect + Balance + Restore",
             "best_for": "All three.",
-            "cta": "Explore Complete Skin Defense",
+            "cta": "Explore Tria Prima",
             "asset": "system-complete.webp"
           }
         }

@@ -16,7 +16,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "text": "<p>The Skin Recovery System combines Skinbiotic+ and Dermaboost+ in one dermatologist-formulated daily routine.</p><p>Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection. Dermaboost+ provides broader antioxidant, nutritional, and normal immune support through vitamins, minerals, carotenoids, and botanical polyphenols.</p><p>Together, they create a two-step system designed for customers who want to support skin from the gut outward while also strengthening the broader nutritional foundation skin relies on.</p>"
+            "text": "<p>The Balance Duo combines Skinbiotic+ and Dermaboost+ in one dermatologist-formulated daily routine.</p><p>Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection. Dermaboost+ provides broader antioxidant, nutritional, and normal immune support through vitamins, minerals, carotenoids, and botanical polyphenols.</p><p>Together, they create a two-step system designed for customers who want to support skin from the gut outward while also strengthening the broader nutritional foundation skin relies on.</p>"
           }
         },
         "bullets": {
@@ -54,10 +54,6 @@
             "text_3": "Full ingredient transparency"
           }
         },
-        "melanoma": {
-          "type": "melanoma",
-          "settings": {}
-        },
         "fda": {
           "type": "fda",
           "settings": {}
@@ -77,7 +73,6 @@
         "buy_buttons",
         "expectation",
         "trust_bar",
-        "melanoma",
         "fda",
         "compliance_slot"
       ],
@@ -92,7 +87,7 @@
         "color_scheme": "light",
         "eyebrow": "",
         "heading": "A two-step routine for internal balance and resilience.",
-        "body": "<p>The Skin Recovery System combines two formulas with different primary roles.</p><p>The combination is biologically complementary because one formula is centered on the gut and microbial environment and the other on broader systemic nutritional and antioxidant pathways.</p>",
+        "body": "<p>The Balance Duo combines two formulas with different primary roles.</p><p>The combination is biologically complementary because one formula is centered on the gut and microbial environment and the other on broader systemic nutritional and antioxidant pathways.</p>",
         "center": "Balance the gut. Support the systems skin relies on."
       },
       "blocks": {
@@ -140,7 +135,7 @@
         "color_scheme": "dark",
         "columns": "3",
         "show_images": false,
-        "note": "<p>This section describes formulation rationale. The combined Skin Recovery System has not been established here as a clinically tested finished-product regimen.</p>"
+        "note": "<p>This section describes formulation rationale. The combined Balance Duo has not been established here as a clinically tested finished-product regimen.</p>"
       },
       "blocks": {
         "b1": {
@@ -317,15 +312,15 @@
       "settings": {
         "color_scheme": "green",
         "eyebrow": "",
-        "heading": "Skin Recovery is not the same as Sun Safe.",
-        "center": "Choose Skin Recovery when environmental exposure is not the main reason you are building the system."
+        "heading": "Balance Duo is not the same as Outdoor Duo.",
+        "center": "Choose Balance Duo when environmental exposure is not the main reason you are building the system."
       },
       "blocks": {
         "b1": {
           "type": "side",
           "settings": {
             "kicker": "Protect + Balance",
-            "name": "Sun Safe System",
+            "name": "Outdoor Duo",
             "text": "UV Shield+ + Skinbiotic+",
             "focus": "Environmental support + gut-skin balance."
           }
@@ -334,7 +329,7 @@
           "type": "side",
           "settings": {
             "kicker": "Balance + Restore",
-            "name": "Skin Recovery System",
+            "name": "Balance Duo",
             "text": "Skinbiotic+ + Dermaboost+",
             "focus": "Gut-skin balance + broader nutritional resilience."
           }
@@ -459,7 +454,7 @@
         "heading": "Why these two formulas?",
         "columns": "4",
         "show_images": false,
-        "button_label": "Explore the Skin Recovery science",
+        "button_label": "Explore the Balance Duo science",
         "button_url": "/pages/science"
       },
       "blocks": {
@@ -508,7 +503,7 @@
         "color_scheme": "light",
         "eyebrow": "",
         "heading": "Good science has boundaries.",
-        "not_heading": "The Skin Recovery System does not claim to:",
+        "not_heading": "The Balance Duo does not claim to:",
         "not_items": "Treat acne\nTreat eczema\nTreat psoriasis\nTreat rosacea\nTreat autoimmune disease\nEliminate inflammation\nCure gut problems\nGuarantee clearer skin\nGuarantee visible results\nProve the finished two-product system has been clinically tested\nReplace medical care",
         "does_heading": "What it is",
         "does_text": "<p>A dermatologist-formulated two-product system designed to support the gut-skin connection together with broader antioxidant, nutritional, and normal immune pathways.</p>"
@@ -519,7 +514,7 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "heading": "Is Skin Recovery right for you?",
+        "heading": "Is Balance Duo right for you?",
         "col_1": "Roles",
         "col_2": "Includes",
         "col_3": "Best fit",
@@ -530,7 +525,7 @@
         "b1": {
           "type": "row",
           "settings": {
-            "label": "Sun Safe",
+            "label": "Outdoor Duo",
             "a": "Protect + Balance",
             "b": "UV Shield+ + Skinbiotic+",
             "c": "Outdoor + gut-skin support"
@@ -539,7 +534,7 @@
         "b2": {
           "type": "row",
           "settings": {
-            "label": "Skin Recovery",
+            "label": "Balance Duo",
             "a": "Balance + Restore",
             "b": "Skinbiotic+ + Dermaboost+",
             "c": "Gut-skin + broader nutritional support"
@@ -548,7 +543,7 @@
         "b3": {
           "type": "row",
           "settings": {
-            "label": "Sun Resilience",
+            "label": "Sun Resilience Duo",
             "a": "Protect + Restore",
             "b": "UV Shield+ + Dermaboost+",
             "c": "Outdoor + broader antioxidant support"
@@ -557,7 +552,7 @@
         "b4": {
           "type": "row",
           "settings": {
-            "label": "Complete Skin Defense",
+            "label": "Tria Prima",
             "a": "Protect + Balance + Restore",
             "b": "All three",
             "c": "Most comprehensive routine"
@@ -584,7 +579,7 @@
           "settings": {
             "statement": "Want outdoor + gut-skin support?",
             "product": "sun-safe-system",
-            "label": "Explore Sun Safe System"
+            "label": "Explore Outdoor Duo"
           }
         },
         "b2": {
@@ -592,7 +587,7 @@
           "settings": {
             "statement": "Want outdoor + restore?",
             "product": "sun-resilience-system",
-            "label": "Explore Sun Resilience System"
+            "label": "Explore Sun Resilience Duo"
           }
         },
         "b3": {
@@ -600,7 +595,7 @@
           "settings": {
             "statement": "Want all three roles?",
             "product": "complete-skin-defense-system",
-            "label": "Explore Complete Skin Defense"
+            "label": "Explore Tria Prima"
           }
         }
       },
@@ -629,8 +624,8 @@
         "b1": {
           "type": "item",
           "settings": {
-            "question": "What is the Skin Recovery System?",
-            "answer": "<p>The Skin Recovery System combines Skinbiotic+ and Dermaboost+ in a two-product daily routine designed to support gut-skin balance together with broader antioxidant, nutritional, and normal immune support.</p>"
+            "question": "What is the Balance Duo?",
+            "answer": "<p>The Balance Duo combines Skinbiotic+ and Dermaboost+ in a two-product daily routine designed to support gut-skin balance together with broader antioxidant, nutritional, and normal immune support.</p>"
           }
         },
         "b2": {
@@ -671,22 +666,22 @@
         "b7": {
           "type": "item",
           "settings": {
-            "question": "Can I subscribe to Skin Recovery?",
+            "question": "Can I subscribe to Balance Duo?",
             "answer": "<p>Yes. The plan options in the purchase box show the currently configured subscription and one-time options.</p>"
           }
         },
         "b8": {
           "type": "item",
           "settings": {
-            "question": "How is this different from Sun Safe?",
-            "answer": "<p>Sun Safe combines Protect + Balance. Skin Recovery combines Balance + Restore.</p>"
+            "question": "How is this different from Outdoor Duo?",
+            "answer": "<p>Outdoor Duo combines Protect + Balance. Balance Duo combines Balance + Restore.</p>"
           }
         },
         "b9": {
           "type": "item",
           "settings": {
-            "question": "How is it different from Complete Skin Defense?",
-            "answer": "<p>Complete Skin Defense contains all three foundational formulas. Skin Recovery contains Skinbiotic+ and Dermaboost+ only.</p>"
+            "question": "How is it different from Tria Prima?",
+            "answer": "<p>Tria Prima contains all three foundational formulas. Balance Duo contains Skinbiotic+ and Dermaboost+ only.</p>"
           }
         }
       },

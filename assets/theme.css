@@ -1033,3 +1033,6 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .sci-spot__pager { display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 28px; }
 .sci-spot__pager[hidden], .sci-spot > [hidden] { display: none; }
 .sci-spot__count { font-family: var(--font-callout); font-size: .8rem; letter-spacing: .14em; }
+
+/* Main page (home) header headline: semi-bold per client review; other headlines stay at the theme headline weight */
+.hero h1, .home-hero h1 { font-weight: 600; }

@@ -35,7 +35,7 @@
           "type": "item",
           "settings": {
             "question": "How long does one bottle last?",
-            "answer": "<p>UV Shield+ contains 60 capsules, which last 30 days at the daily serving and 15 days at the enhanced serving. Dermaboost+ contains 60 capsules, a 30-day supply at the daily serving. Skinbiotic+ contains 30 capsules, a 30-day supply at one capsule daily.</p>"
+            "answer": "<p>UV Shield+ contains 60 capsules, which last 30 days at the daily serving and 15 days when taken twice a day. Dermaboost+ contains 60 capsules, a 30-day supply at the daily serving. Skinbiotic+ contains 30 capsules, a 30-day supply at one capsule daily.</p>"
           }
         }
       },
@@ -67,7 +67,7 @@
           "type": "item",
           "settings": {
             "question": "Can I start with just one product?",
-            "answer": "<p>Yes. Each formula has its own role and you can start with one. The systems are for people who want a combined routine, and the Complete Skin Defense System is the most comprehensive option.</p>"
+            "answer": "<p>Yes. Each formula has its own role and you can start with one. The systems are for people who want a combined routine, and Tria Prima is the most comprehensive option.</p>"
           }
         },
         "q3": {
