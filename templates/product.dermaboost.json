@@ -262,82 +262,6 @@
         "b8"
       ]
     },
-    "together": {
-      "type": "ingredient-network",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Complementary support, not ingredient stacking.",
-        "nodes": "Niacinamide, Vitamin D3, Vitamin C, Zinc, Quercetin, Curcumin, Olive leaf, Astaxanthin",
-        "center_top": "DERMA",
-        "center_bottom": "BOOST+",
-        "caption": "This section describes formulation rationale based on ingredient biology. It does not mean Dermaboost+ as a finished formula has been clinically proven to produce these combined outcomes."
-      },
-      "blocks": {
-        "b1": {
-          "type": "pair",
-          "settings": {
-            "title": "Quercetin + Curcumin",
-            "text": "<p>Two botanical polyphenols with overlapping but distinct cellular-signaling and antioxidant properties.</p>",
-            "from": 5,
-            "to": 6
-          }
-        },
-        "b2": {
-          "type": "pair",
-          "settings": {
-            "title": "Curcumin + Vitamin D3",
-            "text": "<p>Nutritional and botanical support with different roles in immune and cellular physiology.</p>",
-            "from": 6,
-            "to": 2
-          }
-        },
-        "b3": {
-          "type": "pair",
-          "settings": {
-            "title": "Quercetin + Vitamin C",
-            "text": "<p>Two chemically different antioxidant systems.</p>",
-            "from": 5,
-            "to": 3
-          }
-        },
-        "b4": {
-          "type": "pair",
-          "settings": {
-            "title": "Quercetin + Astaxanthin",
-            "text": "<p>A flavonoid plus a carotenoid, providing structurally distinct antioxidant support.</p>",
-            "from": 5,
-            "to": 8
-          }
-        },
-        "b5": {
-          "type": "pair",
-          "settings": {
-            "title": "Curcumin + Olive leaf",
-            "text": "<p>Two botanical polyphenol sources with different constituent profiles.</p>",
-            "from": 6,
-            "to": 7
-          }
-        },
-        "b6": {
-          "type": "pair",
-          "settings": {
-            "title": "Vitamin C + Zinc",
-            "text": "<p>Essential nutrients with complementary roles in normal cellular, immune, and skin-related physiology.</p>",
-            "from": 3,
-            "to": 4
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5",
-        "b6"
-      ]
-    },
     "immune": {
       "type": "rich-text",
       "settings": {
@@ -351,18 +275,6 @@
         "quote": "Supporting normal immune function is not the same as treating immune-mediated disease."
       }
     },
-    "barrier": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "green",
-        "align": "left",
-        "width": "wide",
-        "eyebrow": "",
-        "heading": "Healthy skin depends on more than moisture.",
-        "heading_tag": "h2",
-        "body": "<p>The skin barrier relies on:</p><ul><li>Organized lipids</li><li>Normal keratinocyte function</li><li>Adequate nutrition</li><li>Hydration</li><li>Normal cellular turnover</li></ul><p>Niacinamide, vitamin C, zinc, and other nutrients in Dermaboost+ have biological roles connected to these broader systems. This is education about those roles; Dermaboost+ is not a barrier product and does not make barrier claims.</p>"
-      }
-    },
     "collagen": {
       "type": "rich-text",
       "settings": {
@@ -374,12 +286,6 @@
         "heading_tag": "h2",
         "body": "<p>Collagen is one of the primary structural proteins in skin. Vitamin C is required for normal collagen synthesis.</p><p>Other Dermaboost+ ingredients have been investigated in relation to oxidative pathways that can influence skin structure. That research describes biology; it is not a promise about specific outcomes.</p>",
         "quote": "Support for normal biology, without overpromising outcomes."
-      }
-    },
-    "timeline": {
-      "type": "renewal-timeline",
-      "settings": {
-        "color_scheme": "green"
       }
     },
     "who": {
@@ -439,7 +345,7 @@
     "supports": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "heading": "One formula. Four areas of support.",
         "columns": "4",
         "show_images": false,
@@ -485,7 +391,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Why these ingredients?",
         "columns": "4",
@@ -689,11 +595,8 @@
     "role",
     "antioxidant",
     "formula",
-    "together",
     "immune",
-    "barrier",
     "collagen",
-    "timeline",
     "who",
     "supports",
     "research",

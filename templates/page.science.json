@@ -750,7 +750,7 @@
         "b10"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What we know, and what we don't.",
         "body": "",
@@ -768,16 +768,6 @@
         "not_items": "A supplement can stand in for sunscreen.\nTaking a supplement makes prolonged sun exposure safe.\nEvery ingredient study proves the same result at every dose.\nResearch on one probiotic strain automatically applies to another.\nA study of an isolated ingredient proves the finished formula produces the same outcome.\nLaboratory findings are equivalent to randomized human trials.\nSupplements are intended to diagnose, treat, cure, or prevent any disease.",
         "does_heading": "What they do mean:",
         "does_text": "<p>There is published science supporting the biological rationale behind the ingredients and pathways used in Alchemia MD formulations.</p><p>That is the level at which this page makes the case.</p>"
-      }
-    },
-    "sunscreen": {
-      "type": "science-sunscreen",
-      "settings": {
-        "color_scheme": "green",
-        "heading": "Internal support is one layer.",
-        "body": "<p>Alchemia MD is designed to complement, not replace, a complete sun-safety routine.</p>",
-        "items": "Broad-spectrum sunscreen\nProtective clothing\nShade\nHats and sunglasses\nAppropriate reapplication\nRoutine dermatologic care",
-        "callout": "A supplement is not sun protection."
       }
     },
     "library": {
@@ -971,7 +961,6 @@
     "spotlight",
     "table",
     "boundaries",
-    "sunscreen",
     "library",
     "learn",
     "philosophy",

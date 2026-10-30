@@ -117,17 +117,52 @@
     var search = lib.querySelector('[data-search]');
     var empty = lib.querySelector('[data-empty]');
     var active = 'all';
+    var perPage = parseInt(lib.getAttribute('data-per-page'), 10) || 0;
+    var pager = lib.querySelector('[data-pager]');
+    var page = 0;
+    var matches = [];
+    function render() {
+      var pages = perPage ? Math.ceil(matches.length / perPage) : 1;
+      if (page > pages - 1) page = Math.max(pages - 1, 0);
+      entries.forEach(function (el) { el.hidden = true; });
+      matches.forEach(function (el, i) {
+        el.hidden = perPage ? Math.floor(i / perPage) !== page : false;
+      });
+      if (empty) empty.hidden = matches.length !== 0;
+      if (!pager) return;
+      pager.innerHTML = '';
+      if (!perPage || pages < 2) { pager.hidden = true; return; }
+      pager.hidden = false;
+      function btn(label, target, opts) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'btn btn--outline sci-lib__pagebtn' + (opts && opts.current ? ' is-active' : '');
+        b.textContent = label;
+        if (opts && opts.aria) b.setAttribute('aria-label', opts.aria);
+        if (opts && opts.current) b.setAttribute('aria-current', 'page');
+        if (opts && opts.disabled) b.disabled = true;
+        b.addEventListener('click', function () {
+          page = target;
+          render();
+          lib.querySelector('.sci-lib__controls').scrollIntoView({ block: 'start' });
+        });
+        pager.appendChild(b);
+      }
+      btn('Previous', page - 1, { disabled: page === 0 });
+      for (var i = 0; i < pages; i++) btn(String(i + 1), i, { current: i === page, aria: 'Page ' + (i + 1) });
+      btn('Next', page + 1, { disabled: page === pages - 1 });
+    }
     function apply() {
       var q = (search && search.value || '').toLowerCase().trim();
-      var shown = 0;
+      matches = [];
       entries.forEach(function (el) {
         var cats = (el.getAttribute('data-cats') || '').split('|');
         var okCat = active === 'all' || cats.indexOf(active) !== -1;
         var okText = !q || (el.getAttribute('data-text') || '').indexOf(q) !== -1;
-        el.hidden = !(okCat && okText);
-        if (!el.hidden) shown++;
+        if (okCat && okText) matches.push(el);
       });
-      if (empty) empty.hidden = shown !== 0;
+      page = 0;
+      render();
     }
     chips.forEach(function (chip) {
       chip.addEventListener('click', function () {
@@ -137,6 +172,7 @@
       });
     });
     if (search) search.addEventListener('input', apply);
+    apply();
   });
 })();
 

@@ -331,16 +331,10 @@
         "b3"
       ]
     },
-    "timeline": {
-      "type": "renewal-timeline",
-      "settings": {
-        "color_scheme": "green"
-      }
-    },
     "supports": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "heading": "Five areas of support.",
         "columns": "3",
         "show_images": false,
@@ -452,7 +446,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "One system. Multiple areas of biology.",
         "columns": "3",
@@ -675,7 +669,6 @@
     "gut",
     "environment",
     "ingredients",
-    "timeline",
     "supports",
     "compare",
     "research",

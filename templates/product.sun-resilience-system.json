@@ -290,12 +290,6 @@
         "b2"
       ]
     },
-    "timeline": {
-      "type": "renewal-timeline",
-      "settings": {
-        "color_scheme": "green"
-      }
-    },
     "who": {
       "type": "lifestyle-strip",
       "settings": {
@@ -371,7 +365,7 @@
     "supports": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "heading": "Four areas of support.",
         "columns": "4",
         "show_images": false,
@@ -417,7 +411,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Why these two formulas?",
         "columns": "4",
@@ -717,7 +711,6 @@
     "immune",
     "formula",
     "overlap",
-    "timeline",
     "who",
     "supports",
     "research",

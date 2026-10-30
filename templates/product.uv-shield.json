@@ -216,59 +216,6 @@
         "b5"
       ]
     },
-    "together": {
-      "type": "ingredient-web",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Why combine these ingredients?",
-        "caption": "This section describes formulation rationale. UV Shield+ as a finished product has not been established here as clinically tested for these combined outcomes."
-      },
-      "blocks": {
-        "b1": {
-          "type": "pair",
-          "settings": {
-            "title": "Polypodium + Resveratrol",
-            "text": "<p>Complementary botanical and antioxidant mechanisms.</p>"
-          }
-        },
-        "b2": {
-          "type": "pair",
-          "settings": {
-            "title": "Polypodium + EGCG",
-            "text": "<p>Potentially broader coverage of UV-associated cellular stress.</p>"
-          }
-        },
-        "b3": {
-          "type": "pair",
-          "settings": {
-            "title": "Resveratrol + EGCG",
-            "text": "<p>Two polyphenols with overlapping antioxidant and signaling roles.</p>"
-          }
-        },
-        "b4": {
-          "type": "pair",
-          "settings": {
-            "title": "Niacinamide + Polyphenols",
-            "text": "<p>Different biological mechanisms working in the same formula.</p>"
-          }
-        },
-        "b5": {
-          "type": "pair",
-          "settings": {
-            "title": "Spirulina + Polyphenols",
-            "text": "<p>Adds a broader nutrient-derived antioxidant profile.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5"
-      ]
-    },
     "oxidative": {
       "type": "flow-steps",
       "settings": {
@@ -303,24 +250,6 @@
         "b2",
         "b3"
       ]
-    },
-    "barrier": {
-      "type": "rich-text",
-      "settings": {
-        "color_scheme": "light",
-        "align": "left",
-        "width": "wide",
-        "eyebrow": "",
-        "heading": "Resilient skin starts with a functional barrier.",
-        "heading_tag": "h2",
-        "body": "<p>The skin barrier helps regulate water loss and acts as a physical interface with the outside world.</p><p>Skin-barrier biology involves lipids, proteins, hydration, and normal cellular turnover.</p><p>Niacinamide has been studied in relation to several aspects of barrier biology, which is one reason it serves as a foundational nutrient in the UV Shield+ formula.</p>"
-      }
-    },
-    "timeline": {
-      "type": "renewal-timeline",
-      "settings": {
-        "color_scheme": "dark"
-      }
     },
     "who": {
       "type": "lifestyle-strip",
@@ -407,7 +336,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Why these ingredients?",
         "columns": "4",
@@ -602,10 +531,7 @@
     "video",
     "why",
     "formula",
-    "together",
     "oxidative",
-    "barrier",
-    "timeline",
     "who",
     "sunscreen",
     "research",

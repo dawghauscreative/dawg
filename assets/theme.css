@@ -1036,3 +1036,9 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 
 /* Main page (home) header headline: semi-bold per client review; other headlines stay at the theme headline weight */
 .hero h1, .home-hero h1 { font-weight: 600; }
+
+.sci-lib__pager { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 32px; }
+.sci-lib__pager[hidden] { display: none; }
+.sci-lib__pagebtn { min-width: 44px; padding-inline: 14px; }
+.sci-lib__pagebtn.is-active { background: var(--accent); color: var(--c-black); border-color: var(--accent); }
+.sci-lib__pagebtn:disabled { opacity: .4; cursor: default; }
