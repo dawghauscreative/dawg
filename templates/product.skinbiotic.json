@@ -70,7 +70,8 @@
         "fda"
       ],
       "settings": {
-        "color_scheme": "green"
+        "color_scheme": "green",
+        "lead_asset": "product-3d-skinbiotic.webp"
       }
     },
     "definition": {

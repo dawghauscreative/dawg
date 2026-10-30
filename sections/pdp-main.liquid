@@ -23,8 +23,18 @@
     <div class="pdp__grid">
 
       <div class="pdp__gallery" data-gallery>
+        {%- assign lead_asset = section.settings.lead_asset | strip -%}
         {%- if featured != blank -%}
           <div class="media ratio-4x5">
+            {%- if lead_asset != blank -%}
+              <img
+                data-gallery-main
+                src="{{ lead_asset | asset_url }}"
+                sizes="(min-width: 990px) 56vw, 100vw"
+                alt="{{ product.title | escape }}"
+                width="1800" height="1013"
+                loading="eager" fetchpriority="high">
+            {%- else -%}
             <img
               data-gallery-main
               src="{{ featured | image_url: width: 1100 }}"
@@ -33,13 +43,17 @@
               alt="{{ featured.alt | default: product.title | escape }}"
               width="{{ featured.width }}" height="{{ featured.height }}"
               loading="eager" fetchpriority="high">
+            {%- endif -%}
           </div>
           {%- assign extra_assets = section.settings.gallery_assets | split: ',' -%}
-          {%- if product.media.size > 1 or extra_assets.size > 0 -%}
+          {%- if product.media.size > 1 or extra_assets.size > 0 or lead_asset != blank -%}
             <div class="pdp__thumbs">
+              {%- if lead_asset != blank -%}
+                <button type="button" data-thumb data-src="{{ lead_asset | asset_url }}" aria-label="Show product render" aria-current="true"><img src="{{ lead_asset | asset_url }}" alt="" width="100" height="100" loading="lazy"></button>
+              {%- endif -%}
               {%- for media in product.media limit: 10 -%}
                 {%- if media.media_type == 'image' -%}
-                  <button type="button" data-thumb data-src="{{ media | image_url: width: 1100 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" aria-label="Show image {{ forloop.index }}" aria-current="{% if media.id == featured.id %}true{% else %}false{% endif %}">
+                  <button type="button" data-thumb data-src="{{ media | image_url: width: 1100 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" aria-label="Show image {{ forloop.index }}" aria-current="{% if media.id == featured.id and lead_asset == blank %}true{% else %}false{% endif %}">
                     <img src="{{ media | image_url: width: 200 }}" alt="" width="100" height="100" loading="lazy">
                   </button>
                 {%- endif -%}
@@ -211,6 +225,7 @@
   "settings": [
     { "type": "text", "id": "gallery_note_heading", "label": "Note under the gallery: heading", "info": "Optional. For a short explanation of a plan option, such as Enhanced Support. No prices or discounts here." },
     { "type": "richtext", "id": "gallery_note", "label": "Note under the gallery: text" },
+    { "type": "text", "id": "lead_asset", "label": "Main image: 3D render (theme asset filename)", "info": "Shown first in the gallery, ahead of the product photos. e.g. product-3d-uv-shield.webp" },
     { "type": "text", "id": "gallery_assets", "label": "Extra gallery graphics (theme asset filenames, comma separated)", "info": "Appended after the product media, e.g. slide-d01-1.webp, slide-d02-1.webp" },
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],
