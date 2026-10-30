@@ -899,8 +899,7 @@
           "settings": {
             "title": "Skin science",
             "text": "Understand how skin functions, renews, adapts, and responds.",
-            "link": "/blogs/skin-edu/tagged/skin-science",
-            "cta_label": "Read articles"
+            "link": "/blogs/skin-edu/tagged/skin-science"
           }
         },
         "g2": {
@@ -908,8 +907,7 @@
           "settings": {
             "title": "Sun + environment",
             "text": "UV exposure, environmental stress, sunscreen, and layered protection.",
-            "link": "/blogs/skin-edu/tagged/sun-environment",
-            "cta_label": "Read articles"
+            "link": "/blogs/skin-edu/tagged/sun-environment"
           }
         },
         "g3": {
@@ -917,8 +915,7 @@
           "settings": {
             "title": "Gut + skin",
             "text": "The microbiome, probiotics, prebiotics, and the gut-skin connection.",
-            "link": "/blogs/skin-edu/tagged/gut-skin",
-            "cta_label": "Read articles"
+            "link": "/blogs/skin-edu/tagged/gut-skin"
           }
         },
         "g4": {
@@ -926,8 +923,7 @@
           "settings": {
             "title": "Ingredients",
             "text": "What ingredients do, what the evidence says, and what it does not say.",
-            "link": "/blogs/skin-edu/tagged/ingredients",
-            "cta_label": "Read articles"
+            "link": "/blogs/skin-edu/tagged/ingredients"
           }
         },
         "g5": {
@@ -935,8 +931,7 @@
           "settings": {
             "title": "Nutrition + wellness",
             "text": "How nutrition and everyday health habits fit into broader skin health.",
-            "link": "/blogs/skin-edu/tagged/nutrition-wellness",
-            "cta_label": "Read articles"
+            "link": "/blogs/skin-edu/tagged/nutrition-wellness"
           }
         },
         "g6": {
@@ -944,8 +939,7 @@
           "settings": {
             "title": "From the derm",
             "text": "Clear explanations and practical guidance from Dr. Mia Luna.",
-            "link": "/blogs/skin-edu/tagged/ask-the-derm",
-            "cta_label": "Read articles"
+            "link": "/blogs/skin-edu/tagged/ask-the-derm"
           }
         }
       },
