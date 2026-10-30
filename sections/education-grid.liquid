@@ -17,7 +17,7 @@
           <div class="edu-card__body">
             <h3>{{ block.settings.title }}</h3>
             {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
-            {%- if has_link -%}<span class="text-link">{{ block.settings.cta_label | default: 'Read articles' }}</span>{%- else -%}<span class="edu-card__soon">Coming soon</span>{%- endif -%}
+            {%- if has_link -%}<span class="text-link">{{ block.settings.cta_label | default: 'Read the guide' }}</span>{%- else -%}<span class="edu-card__soon">Coming soon</span>{%- endif -%}
           </div>
         </{% if has_link %}a{% else %}div{% endif %}>
       {%- endfor -%}
