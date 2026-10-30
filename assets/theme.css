@@ -1042,3 +1042,4 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .sci-lib__pagebtn { min-width: 44px; padding-inline: 14px; }
 .sci-lib__pagebtn.is-active { background: var(--accent); color: var(--c-black); border-color: var(--accent); }
 .sci-lib__pagebtn:disabled { opacity: .4; cursor: default; }
+.scheme-dark .sci-rcard__sub, .scheme-green .sci-rcard__sub, .scheme-dark .sci-rcard__summary .sci-badge, .scheme-green .sci-rcard__summary .sci-badge { color: var(--c-white); opacity: 1; }
