@@ -1098,3 +1098,18 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
   @keyframes homeSlideDrift { from { transform: scale(1); } to { transform: scale(1.05); } }
   @keyframes homeCopyIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 }
+
+/* Contact page */
+.contact__grid { display: grid; gap: clamp(40px, 6vw, 88px); }
+@media (min-width: 990px) { .contact__grid { grid-template-columns: 5fr 6fr; align-items: start; } }
+.contact__details { display: grid; gap: 1.25rem; margin: 2rem 0 0; }
+.contact__details > div { display: grid; gap: .35rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--rule); }
+.contact__details dt { font-family: var(--font-callout); font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--c-gold); }
+.contact__details dd { margin: 0; font-size: 1.05rem; }
+.contact__details a { color: inherit; text-underline-offset: 3px; }
+.contact__note { display: block; margin-top: .4rem; font-size: .85rem; opacity: .75; }
+.contact__links { list-style: none; display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.75rem 0 0; padding: 0; }
+.contact__links a { display: inline-block; padding: 8px 16px; border: 1px solid color-mix(in srgb, var(--c-gold) 60%, transparent); border-radius: 999px; font-family: var(--font-callout); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; color: inherit; transition: background .2s, color .2s; }
+.contact__links a:hover, .contact__links a:focus-visible { background: var(--c-gold); color: var(--c-black); }
+.contact__media { margin-top: 2.5rem; }
+.contact__form { padding: clamp(24px, 3vw, 40px); border: 1px solid var(--rule); background: color-mix(in srgb, var(--c-black) 18%, transparent); }

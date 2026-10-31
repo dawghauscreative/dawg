@@ -499,3 +499,10 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Also uploaded to Files and NOT used yet: single-product ingredient card sets (`UV_00-05`, `SK_00-06`, `DB_00-08`), bundle Studio/Environment/Graphic renders, and UV Shield+/Skinbiotic+/Dermaboost+ ad families.
 - Bundle guide cards cut to the "Inside <formula>" ingredient cards only: duos keep EDU 03 + 04 (one per formula); Tria Prima keeps 03-05 (one per formula, three formulas).
 - Single products, ingredient cards from Shopify Files (as is): UV Shield+ Niacinamide, Polypodium leucotomos, EGCG (UV_01-03) before its ad/lifestyle images; Skinbiotic+ Organic inulin, L. plantarum, Akkermansia (SK_01, 02, 06) then the cliffs lifestyle, old Shopify slides hidden. Dermaboost+ unchanged (it already shows the Vitamin D3 / Niacinamide / Zinc cards, same artwork as DB_02-04 with page numbers removed).
+
+## Contact page rebuilt + address/email aligned (2026-10-31)
+- Owner's Contact policy (Settings > Policies) is the source of truth: DERM ALCHEMIST MD LLC, PO Box 1556, Carmel, CA 93921 · info@dermalchemistmd.com · 888-990-8128.
+- Theme settings: mailing_address default changed to the PO Box; new support_phone setting (888-990-8128). Used on the Contact page and the password page.
+- Contact page (sections/contact-form.liquid, templates/page.contact.json): evergreen background, no eyebrow, email / phone / mailing address list with "Not for returns" note, quick links (Shipping, Returns, Manage subscription, FAQ), form in a framed panel with Topic + optional Order number, image changed from the old AMD_CONTACT.png to header-green-glass.webp.
+- Shipping, Subscription Terms and SMS Terms pages (Shopify pages) updated to the PO Box and info@dermalchemistmd.com (were Via Nona Marie and info@alchemiamd.com). Drafts in docs/policy-drafts updated to match.
+- Still wrong and admin-only (API lacks write_legal_policies): Privacy policy "Contact" paragraph says Redlands CA and info@alchemiamd.com. Contact form submissions go to the store email (info@alchemiamd.com) - Settings > General if that should change.

@@ -174,14 +174,21 @@
         "id": "support_email",
         "label": "Support email",
         "default": "info@dermalchemistmd.com",
-        "info": "Matches the label."
+        "info": "Matches the label and the Contact policy."
       },
       {
         "type": "text",
         "id": "mailing_address",
         "label": "Mailing address",
-        "default": "3785 Via Nona Marie, Suite 108, PMB 1097, Carmel, CA 93923",
-        "info": "Matches the label. Do not add a phone number or support hours until provided."
+        "default": "DERM ALCHEMIST MD LLC, PO Box 1556, Carmel, CA 93921",
+        "info": "Matches the Contact policy (Settings > Policies). Not the returns address."
+      },
+      {
+        "type": "text",
+        "id": "support_phone",
+        "label": "Support phone",
+        "default": "888-990-8128",
+        "info": "Matches the Contact policy. Shown on the Contact page."
       },
       {
         "type": "url",
