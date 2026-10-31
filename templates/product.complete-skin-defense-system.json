@@ -84,11 +84,11 @@
         "compliance_slot"
       ],
       "settings": {
-        "gallery_assets": "lifestyle-all-three-yacht.webp",
+        "gallery_assets": "bundle-complete-meet-the-trio.webp, lifestyle-all-three-yacht.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-trio.webp",
         "angle_assets": "",
-        "media_order": "2,3,5"
+        "media_order": "99"
       }
     },
     "definition": {

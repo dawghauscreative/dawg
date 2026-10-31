@@ -79,11 +79,11 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "lifestyle-uvshield-skinbiotic-sailboat.webp",
+        "gallery_assets": "bundle-sun-safe-outdoor.webp, lifestyle-uvshield-skinbiotic-sailboat.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-uv-shield-skinbiotic.webp",
         "angle_assets": "",
-        "media_order": "3,4,5"
+        "media_order": "99"
       }
     },
     "definition": {
