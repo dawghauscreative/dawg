@@ -422,3 +422,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - UV Shield+ gallery: added front/back/supplement-facts shots (product-angle-uv-shield-*.webp).
 - Skinbiotic+ gallery: added front/back/supplement-facts shots (product-angle-skinbiotic-*.webp).
 - Header: 'Science' is now a dropdown (The research, Meet Dr. Luna, and the six Skin Edu topics); mobile drawer lists the Skin Edu topics under Science.
+- Science page: added 'New from Skin Edu' article cards (no images) above the Skin Edu topic cards, so the Edu content lives on the Science page.

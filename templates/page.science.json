@@ -949,10 +949,67 @@
       ],
       "settings": {
         "color_scheme": "light",
-        "heading": "Skin Edu: learn more",
+        "heading": "Skin Edu: explore by topic",
         "body": "<p>Dermatologist-led articles, ingredient explainers, and research breakdowns.</p>",
         "link_label": "All Skin Edu articles",
         "link_url": "/blogs/skin-edu"
+      }
+    },
+    "edu_latest": {
+      "type": "edu-articles",
+      "blocks": {
+        "b1": {
+          "type": "article",
+          "settings": {
+            "asset": "",
+            "category": "",
+            "title": "What Is Internal Skin Defense?",
+            "teaser": "Skin health is shaped by more than what happens on the surface.",
+            "article": "what-is-internal-skin-defense-alchemia-md",
+            "url": "",
+            "cta_label": "Read the guide"
+          }
+        },
+        "b2": {
+          "type": "article",
+          "settings": {
+            "asset": "",
+            "category": "",
+            "title": "What Is the Gut-Skin Axis?",
+            "teaser": "How the intestinal environment and skin communicate.",
+            "article": "what-is-the-gut-skin-axis",
+            "url": "",
+            "cta_label": "Read article"
+          }
+        },
+        "b3": {
+          "type": "article",
+          "settings": {
+            "asset": "",
+            "category": "",
+            "title": "Why Consistency Matters in Skin Health",
+            "teaser": "Understanding renewal, daily habits, and realistic expectations.",
+            "article": "why-consistency-matters-in-skin-health",
+            "url": "",
+            "cta_label": "Read article"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "anchor": "latest",
+        "eyebrow": "",
+        "heading": "New from Skin Edu",
+        "body": "",
+        "columns": "3",
+        "blog_handle": "skin-edu",
+        "button_label": "",
+        "button_url": ""
       }
     }
   },
@@ -968,6 +1025,7 @@
     "table",
     "boundaries",
     "library",
+    "edu_latest",
     "learn",
     "philosophy",
     "cta",
