@@ -423,3 +423,10 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Skinbiotic+ gallery: added front/back/supplement-facts shots (product-angle-skinbiotic-*.webp).
 - Header: 'Science' is now a dropdown (The research, Meet Dr. Luna, and the six Skin Edu topics); mobile drawer lists the Skin Edu topics under Science.
 - Science page: added 'New from Skin Edu' article cards (no images) above the Skin Edu topic cards, so the Edu content lives on the Science page.
+
+### Contact-page defects (Oct 31)
+- FAQ page: the "How long until I see results?" entry was repeating at the top of every FAQ section (show_renewal_faq on all five). Now shown once, in the first section. Added a "Shipping and returns" FAQ section that matches the policies.
+- Shipping policy: Shopify page /pages/shipping was published with standard policy text built from the real delivery settings (US standard $8 under $70 / free $70+, express $15, 27 international countries at calculated rates). The processing time (1-3 business days) and transit estimates (3-7 / 1-3 business days) are standard-practice assumptions to confirm. Text: docs/policy-drafts/shipping-policy.html.
+- Refund policy: new text drafted in docs/policy-drafts/refund-policy.html (return address filled from the store's Contact policy, one email address, unopened-only returns for supplements, damaged-item window, subscriptions, EU cooling-off kept, 90-day guarantee deliberately not mentioned because it is still hidden). The API could not write it (needs the write_legal_policies scope), so it must be pasted into Shopify admin > Settings > Policies > Refund policy. Original text saved in docs/policy-backups/.
+- Still 404: /pages/subscription-terms and /pages/sms-terms (both linked in the footer, unpublished, empty).
+- Address/email mismatches to resolve: Contact policy says Redlands CA and info@dermalchemistmd.com (typo'd in places); product labels say Carmel CA; store contact email is info@alchemiamd.com.

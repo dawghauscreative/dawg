@@ -50,7 +50,8 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Frequently asked questions",
-        "heading_tag": "h1"
+        "heading_tag": "h1",
+        "show_renewal_faq": true
       }
     },
     "systems": {
@@ -87,7 +88,8 @@
         "color_scheme": "green",
         "eyebrow": "",
         "heading": "Systems",
-        "heading_tag": "h2"
+        "heading_tag": "h2",
+        "show_renewal_faq": false
       }
     },
     "sun": {
@@ -108,7 +110,8 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Sunscreen",
-        "heading_tag": "h2"
+        "heading_tag": "h2",
+        "show_renewal_faq": false
       }
     },
     "how": {
@@ -145,7 +148,8 @@
         "color_scheme": "light",
         "eyebrow": "",
         "heading": "Directions",
-        "heading_tag": "h2"
+        "heading_tag": "h2",
+        "show_renewal_faq": false
       }
     },
     "support": {
@@ -174,7 +178,46 @@
         "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Subscriptions and support",
-        "heading_tag": "h2"
+        "heading_tag": "h2",
+        "show_renewal_faq": false
+      }
+    },
+    "shipping": {
+      "type": "pdp-faq",
+      "blocks": {
+        "q1": {
+          "type": "item",
+          "settings": {
+            "question": "How much does shipping cost?",
+            "answer": "<p>In the United States, standard shipping is $8.00 on orders under $70 and free on orders of $70 or more. Express shipping is $15.00. International rates are calculated at checkout. See our <a href=\"/pages/shipping\">Shipping policy</a> for delivery times and the countries we ship to.</p>"
+          }
+        },
+        "q2": {
+          "type": "item",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. We ship to the United States, Canada, the United Kingdom, much of Europe, Australia, New Zealand, Japan, South Korea, Singapore, Hong Kong, Malaysia, Israel and the United Arab Emirates. Import duties and taxes may apply and are the recipient’s responsibility. See the <a href=\"/pages/shipping\">Shipping policy</a>.</p>"
+          }
+        },
+        "q3": {
+          "type": "item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "<p>Unopened, unused products can be returned within 30 days of delivery. If an item arrives damaged, defective or incorrect, email us within 14 days and we will replace it or refund you. See the full <a href=\"/policies/refund-policy\">Refund policy</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3"
+      ],
+      "settings": {
+        "color_scheme": "beige",
+        "eyebrow": "",
+        "heading": "Shipping and returns",
+        "heading_tag": "h2",
+        "show_renewal_faq": false
       }
     }
   },
@@ -183,6 +226,7 @@
     "systems",
     "sun",
     "how",
+    "shipping",
     "support"
   ]
 }
