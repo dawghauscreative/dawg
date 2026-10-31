@@ -77,9 +77,11 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "product-angle-uv-shield-front.webp, product-angle-uv-shield-back.webp, product-angle-uv-shield-facts.webp, slide-d01-1.webp,slide-d02-1.webp,slide-d03-1.webp,slide-d04-1.webp,slide-d05-1.webp",
+        "gallery_assets": "lifestyle-uvshield-rocks.webp, lifestyle-outdoor-living.webp",
         "color_scheme": "green",
-        "lead_asset": "product-3d-uv-shield.webp"
+        "lead_asset": "product-3d-uv-shield.webp",
+        "angle_assets": "product-angle-uv-shield-front.webp, product-angle-uv-shield-back.webp, product-angle-uv-shield-facts.webp",
+        "media_order": "2,3,4"
       }
     },
     "definition": {

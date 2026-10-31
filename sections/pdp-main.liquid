@@ -46,11 +46,30 @@
             {%- endif -%}
           </div>
           {%- assign extra_assets = section.settings.gallery_assets | split: ',' -%}
-          {%- if product.media.size > 1 or extra_assets.size > 0 or lead_asset != blank -%}
+          {%- if product.media.size > 1 or extra_assets.size > 0 or lead_asset != blank or section.settings.angle_assets != blank -%}
             <div class="pdp__thumbs">
               {%- if lead_asset != blank -%}
                 <button type="button" data-thumb data-src="{{ lead_asset | asset_url }}" aria-label="Show product render" aria-current="true"><img src="{{ lead_asset | asset_url }}" alt="" width="100" height="100" loading="lazy"></button>
               {%- endif -%}
+              {%- assign angle_list = section.settings.angle_assets | split: ',' -%}
+              {%- for asset_name in angle_list -%}
+                {%- assign asset_clean = asset_name | strip -%}
+                {%- if asset_clean != blank -%}
+                  <button type="button" data-thumb data-src="{{ asset_clean | asset_url }}" aria-label="Show product view {{ forloop.index }}" aria-current="false"><img src="{{ asset_clean | asset_url }}" alt="" width="100" height="125" loading="lazy"></button>
+                {%- endif -%}
+              {%- endfor -%}
+              {%- assign media_order = section.settings.media_order | split: ',' -%}
+              {%- if media_order.size > 0 -%}
+                {%- for idx in media_order -%}
+                  {%- assign mi = idx | strip | minus: 1 -%}
+                  {%- assign media = product.media[mi] -%}
+                  {%- if media != blank and media.media_type == 'image' -%}
+                    <button type="button" data-thumb data-src="{{ media | image_url: width: 1100 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" aria-label="Show image {{ forloop.index }}" aria-current="false">
+                      <img src="{{ media | image_url: width: 200 }}" alt="" width="100" height="100" loading="lazy">
+                    </button>
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- else -%}
               {%- for media in product.media limit: 10 -%}
                 {%- if media.media_type == 'image' -%}
                   <button type="button" data-thumb data-src="{{ media | image_url: width: 1100 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" aria-label="Show image {{ forloop.index }}" aria-current="{% if media.id == featured.id and lead_asset == blank %}true{% else %}false{% endif %}">
@@ -58,6 +77,7 @@
                   </button>
                 {%- endif -%}
               {%- endfor -%}
+              {%- endif -%}
               {%- for asset_name in extra_assets -%}
                 {%- assign asset_clean = asset_name | strip -%}
                 {%- if asset_clean != blank -%}
@@ -226,6 +246,8 @@
     { "type": "text", "id": "gallery_note_heading", "label": "Note under the gallery: heading", "info": "Optional. For a short explanation of a plan option, such as Enhanced Support. No prices or discounts here." },
     { "type": "richtext", "id": "gallery_note", "label": "Note under the gallery: text" },
     { "type": "text", "id": "lead_asset", "label": "Main image: 3D render (theme asset filename)", "info": "Shown first in the gallery, ahead of the product photos. e.g. product-3d-uv-shield.webp" },
+    { "type": "text", "id": "angle_assets", "label": "Product angle views (theme asset filenames, comma separated)", "info": "Shown right after the main render, e.g. front, back and supplement facts." },
+    { "type": "text", "id": "media_order", "label": "Product images to show, in order (numbers)", "info": "Position numbers of the product's Shopify images, e.g. 2,3,4 for three benefit slides. Leave empty to show them all." },
     { "type": "text", "id": "gallery_assets", "label": "Extra gallery graphics (theme asset filenames, comma separated)", "info": "Appended after the product media, e.g. slide-d01-1.webp, slide-d02-1.webp" },
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],
