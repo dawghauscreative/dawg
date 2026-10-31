@@ -2,7 +2,7 @@
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
-    <div class="cols cols--{{ section.settings.columns }}" style="gap:16px">
+    <div class="cols cols--{{ section.settings.columns }} lifestyle-grid">
       {%- for block in section.blocks -%}
         {%- comment -%} Tiles without an image show a placeholder frame. {%- endcomment -%}
         {%- if true -%}

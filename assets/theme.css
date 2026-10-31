@@ -1113,3 +1113,13 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .contact__links a:hover, .contact__links a:focus-visible { background: var(--c-gold); color: var(--c-black); }
 .contact__media { margin-top: 2.5rem; }
 .contact__form { padding: clamp(24px, 3vw, 40px); border: 1px solid var(--rule); background: color-mix(in srgb, var(--c-black) 18%, transparent); }
+
+/* Lifestyle strip: desktop keeps the spaced tiles; on phones the tiles close up into one 2-column mosaic */
+.lifestyle-grid { gap: 16px; }
+@media (max-width: 749px) {
+  .lifestyle-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px; margin-inline: calc(var(--gutter, 20px) * -1); }
+  .lifestyle-grid .media { border: 0; }
+  .lifestyle-grid .lifestyle-tile__label { padding: 2.5rem .7rem .7rem; }
+  .lifestyle-grid .lifestyle-tile__label h3 { font-size: 1rem; }
+  .lifestyle-grid .lifestyle-tile__label p { display: none; }
+}
