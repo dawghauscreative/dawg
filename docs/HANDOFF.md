@@ -488,3 +488,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Tria Prima / Complete: render, "Meet the Alchemia MD trio." (`bundle-complete-meet-the-trio.webp`), then the yacht lifestyle. "Explore all three formulas." and "Three formulas. A closer look." arrived only as inline pictures.
 - Skin Recovery Duo: unchanged (its three ads arrived only as inline pictures).
 - Old Shopify slides are hidden on all of these (`media_order` 99). Dermaboost+ keeps its new ingredient cards.
+- UV Shield+: the two pedestal images ("Support for the skin from within" arch, "Daily support. Made for your routine.") removed as redundant at the owner's request.
