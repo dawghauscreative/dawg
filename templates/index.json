@@ -22,7 +22,7 @@
             "primary_url": "/pages/science",
             "secondary_label": "",
             "secondary_url": "",
-            "background_asset": "hero-banner-1.webp",
+            "background_asset": "header-green-glass.webp",
             "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin",
             "asset": "",
             "image_alt": ""
@@ -38,7 +38,7 @@
             "primary_url": "/blogs/skin-edu",
             "secondary_label": "",
             "secondary_url": "",
-            "background_asset": "hero-banner-2.webp",
+            "background_asset": "header-black-leaves.webp",
             "key_ingredients": "",
             "asset": "",
             "image_alt": ""
@@ -48,13 +48,29 @@
           "type": "slide",
           "settings": {
             "color_scheme": "dark",
+            "heading": "Made for life outdoors.",
+            "body": "<p>Daily internal support for the days you spend outside. Use it alongside sunscreen and smart sun habits.</p>",
+            "primary_label": "See the formulas",
+            "primary_url": "/collections/shop-all",
+            "secondary_label": "",
+            "secondary_url": "",
+            "background_asset": "header-sunset-cliffs.webp",
+            "key_ingredients": "",
+            "asset": "",
+            "image_alt": ""
+          }
+        },
+        "s4": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "dark",
             "heading": "Balanced skin starts within.",
             "body": "<p>Protect, balance and restore, with daily internal support.</p>",
             "primary_label": "Shop now",
             "primary_url": "/collections/shop-all",
             "secondary_label": "",
             "secondary_url": "",
-            "background_asset": "hero-banner-3.webp",
+            "background_asset": "header-sunset-water.webp",
             "key_ingredients": "",
             "asset": "",
             "image_alt": ""
@@ -64,7 +80,8 @@
       "block_order": [
         "s1",
         "s2",
-        "s3"
+        "s3",
+        "s4"
       ]
     },
     "trust_strip": {

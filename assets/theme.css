@@ -1079,3 +1079,4 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 @media (prefers-reduced-motion: no-preference) { .home-slide.is-active { animation: homeSlideIn .5s ease both; } @keyframes homeSlideIn { from { opacity: 0; } to { opacity: 1; } } }
 .home-slide--bg .home-slide__copy { max-width: 560px; }
 @media (min-width: 990px) { .home-slide--bg .home-slide__copy { max-width: 46%; } }
+@media (min-width: 990px) { .home-slide--bg .home-slide__copy { max-width: 41%; } .home-slide--bg .home-slide__body { max-width: 38ch; } }
