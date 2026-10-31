@@ -4,11 +4,21 @@
     <div class="cols cols--3 edu-topics">
       {%- for block in section.blocks -%}
         {%- assign t = block.settings.tag | strip -%}
+        {%- assign tag_live = false -%}
+        {%- if t == blank or blogs[section.settings.blog_handle].all_tags contains t -%}{%- assign tag_live = true -%}{%- endif -%}
+        {%- if tag_live -%}
         <a class="edu-topic" href="{% if t != blank %}/blogs/{{ section.settings.blog_handle }}/tagged/{{ t }}{% else %}#all-articles{% endif %}" {{ block.shopify_attributes }}>
           <h3>{{ block.settings.title }}</h3>
           <p>{{ block.settings.text }}</p>
           <span class="edu-topic__go">Browse &rarr;</span>
         </a>
+        {%- else -%}
+        <div class="edu-topic edu-topic--soon" {{ block.shopify_attributes }}>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+          <span class="edu-topic__go">Coming soon</span>
+        </div>
+        {%- endif -%}
       {%- endfor -%}
     </div>
   </div>

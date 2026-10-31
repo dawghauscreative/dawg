@@ -1053,3 +1053,5 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .nav__panel--science a { padding: 5px 0; font-size: 1.05rem; }
 .nav__panel--science h2 a { font-family: var(--font-callout); font-size: inherit; }
 /* nav dropdown sync */
+.edu-topic--soon { opacity: .72; }
+.edu-topic--soon:hover { transform: none; border-color: var(--rule); }

@@ -888,71 +888,71 @@
       }
     },
     "learn": {
-      "type": "education-grid",
+      "type": "edu-topics",
       "blocks": {
-        "g1": {
-          "type": "guide",
+        "b1": {
+          "type": "topic",
           "settings": {
             "title": "Skin science",
-            "text": "Understand how skin functions, renews, adapts, and responds.",
-            "link": "/blogs/skin-edu/tagged/skin-science"
+            "tag": "skin-science",
+            "text": "Understand how skin functions, renews, adapts, and responds."
           }
         },
-        "g2": {
-          "type": "guide",
+        "b2": {
+          "type": "topic",
           "settings": {
             "title": "Sun + environment",
-            "text": "UV exposure, environmental stress, sunscreen, and layered protection.",
-            "link": "/blogs/skin-edu/tagged/sun-environment"
+            "tag": "sun-environment",
+            "text": "UV exposure, environmental stress, sunscreen, and layered protection."
           }
         },
-        "g3": {
-          "type": "guide",
+        "b3": {
+          "type": "topic",
           "settings": {
             "title": "Gut + skin",
-            "text": "The microbiome, probiotics, prebiotics, and the gut-skin connection.",
-            "link": "/blogs/skin-edu/tagged/gut-skin"
+            "tag": "gut-skin",
+            "text": "The microbiome, probiotics, prebiotics, and the gut-skin connection."
           }
         },
-        "g4": {
-          "type": "guide",
+        "b4": {
+          "type": "topic",
           "settings": {
             "title": "Ingredients",
-            "text": "What ingredients do, what the evidence says, and what it does not say.",
-            "link": "/blogs/skin-edu/tagged/ingredients"
+            "tag": "ingredients",
+            "text": "What ingredients do, what the evidence says, and what it does not say."
           }
         },
-        "g5": {
-          "type": "guide",
+        "b5": {
+          "type": "topic",
           "settings": {
             "title": "Nutrition + wellness",
-            "text": "How nutrition and everyday health habits fit into broader skin health.",
-            "link": "/blogs/skin-edu/tagged/nutrition-wellness"
+            "tag": "nutrition-wellness",
+            "text": "How nutrition and everyday health habits fit into broader skin health."
           }
         },
-        "g6": {
-          "type": "guide",
+        "b6": {
+          "type": "topic",
           "settings": {
             "title": "From the derm",
-            "text": "Clear explanations and practical guidance from Dr. Mia Luna.",
-            "link": "/blogs/skin-edu/tagged/ask-the-derm"
+            "tag": "ask-the-derm",
+            "text": "Clear explanations and practical guidance from Dr. Mia Luna."
           }
         }
       },
       "block_order": [
-        "g1",
-        "g2",
-        "g3",
-        "g4",
-        "g5",
-        "g6"
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
       ],
       "settings": {
         "color_scheme": "light",
+        "eyebrow": "",
         "heading": "Skin Edu: explore by topic",
-        "body": "<p>Dermatologist-led articles, ingredient explainers, and research breakdowns.</p>",
-        "link_label": "All Skin Edu articles",
-        "link_url": "/blogs/skin-edu"
+        "body": "",
+        "blog_handle": "skin-edu"
       }
     },
     "edu_latest": {

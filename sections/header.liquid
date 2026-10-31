@@ -1,4 +1,5 @@
 {%- liquid
+  assign edu_tags = blogs['skin-edu'].all_tags
   assign systems = 'sun-safe-system,skin-recovery-system,sun-resilience-system,complete-skin-defense-system' | split: ','
   assign singles = 'uv-shield,skinbiotic,dermaboost' | split: ','
   assign portal_url = settings.customer_portal_url | default: routes.account_url
@@ -61,7 +62,7 @@
               <div>
                 <h2><a href="/blogs/skin-edu">Skin Edu</a></h2>
                 <ul>
-                  <li><a href="/blogs/skin-edu/tagged/skin-science">Skin science</a></li><li><a href="/blogs/skin-edu/tagged/sun-environment">Sun + environment</a></li><li><a href="/blogs/skin-edu/tagged/gut-skin">Gut + skin</a></li><li><a href="/blogs/skin-edu/tagged/ingredients">Ingredients</a></li><li><a href="/blogs/skin-edu/tagged/nutrition-wellness">Nutrition + wellness</a></li><li><a href="/blogs/skin-edu/tagged/ask-the-derm">From the derm</a></li>
+                  {%- if edu_tags contains 'skin-science' -%}<li><a href="/blogs/skin-edu/tagged/skin-science">Skin science</a></li>{%- endif -%}{%- if edu_tags contains 'sun-environment' -%}<li><a href="/blogs/skin-edu/tagged/sun-environment">Sun + environment</a></li>{%- endif -%}{%- if edu_tags contains 'gut-skin' -%}<li><a href="/blogs/skin-edu/tagged/gut-skin">Gut + skin</a></li>{%- endif -%}{%- if edu_tags contains 'ingredients' -%}<li><a href="/blogs/skin-edu/tagged/ingredients">Ingredients</a></li>{%- endif -%}{%- if edu_tags contains 'nutrition-wellness' -%}<li><a href="/blogs/skin-edu/tagged/nutrition-wellness">Nutrition + wellness</a></li>{%- endif -%}{%- if edu_tags contains 'ask-the-derm' -%}<li><a href="/blogs/skin-edu/tagged/ask-the-derm">From the derm</a></li>{%- endif -%}
                 </ul>
               </div>
             </div>
@@ -112,7 +113,7 @@
           <a href="/pages/science">Science</a>
           <span class="drawer__label"><a href="/blogs/skin-edu" style="font-size:inherit;padding:0">Skin Edu</a></span>
           <ul>
-            <li><a href="/blogs/skin-edu/tagged/skin-science">Skin science</a></li><li><a href="/blogs/skin-edu/tagged/sun-environment">Sun + environment</a></li><li><a href="/blogs/skin-edu/tagged/gut-skin">Gut + skin</a></li><li><a href="/blogs/skin-edu/tagged/ingredients">Ingredients</a></li><li><a href="/blogs/skin-edu/tagged/nutrition-wellness">Nutrition + wellness</a></li><li><a href="/blogs/skin-edu/tagged/ask-the-derm">From the derm</a></li>
+            {%- if edu_tags contains 'skin-science' -%}<li><a href="/blogs/skin-edu/tagged/skin-science">Skin science</a></li>{%- endif -%}{%- if edu_tags contains 'sun-environment' -%}<li><a href="/blogs/skin-edu/tagged/sun-environment">Sun + environment</a></li>{%- endif -%}{%- if edu_tags contains 'gut-skin' -%}<li><a href="/blogs/skin-edu/tagged/gut-skin">Gut + skin</a></li>{%- endif -%}{%- if edu_tags contains 'ingredients' -%}<li><a href="/blogs/skin-edu/tagged/ingredients">Ingredients</a></li>{%- endif -%}{%- if edu_tags contains 'nutrition-wellness' -%}<li><a href="/blogs/skin-edu/tagged/nutrition-wellness">Nutrition + wellness</a></li>{%- endif -%}{%- if edu_tags contains 'ask-the-derm' -%}<li><a href="/blogs/skin-edu/tagged/ask-the-derm">From the derm</a></li>{%- endif -%}
           </ul>
         </li>
         <li><a href="/pages/founder">Founder</a></li>
