@@ -417,3 +417,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Science page, second pass of Heather's markups: pictures and icons removed from the science-cards (evidence standard, foundations, philosophy) and the research spotlight; the first two card sections are black; formula sections show the 3D product render (setting 'Or theme asset filename'). Also fixed a headline-size bug from the first pass (Science h1/formula h2 were rendering small).
 - UV Shield+: also removed 'What is oxidative stress?' (Heather's X over together/oxidative/barrier).
 - Dermaboost+ gallery: added front/back/supplement-facts product shots (product-angle-dermaboost-*.webp, padded to 4:5) after the 3D render. Skinbiotic+ shots still to be added.
+- Outdoor Duo and Sun Resilience Duo now lead with a render built from the supplied two-jar studio shots, composited on the same tan/evergreen block background as the other renders.

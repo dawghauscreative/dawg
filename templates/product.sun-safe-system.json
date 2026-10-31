@@ -80,7 +80,8 @@
       ],
       "settings": {
         "gallery_assets": "slide-d01-1.webp,slide-d11-1.webp,lifestyle-uvshield-skinbiotic-sailboat.webp",
-        "color_scheme": "green"
+        "color_scheme": "green",
+        "lead_asset": "product-3d-uv-shield-skinbiotic.webp"
       }
     },
     "definition": {
