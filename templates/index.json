@@ -10,20 +10,62 @@
 {
   "sections": {
     "hero": {
-      "type": "hero",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Internal Skin Defense for Life in the Sun",
-        "body": "<p>Skin is a living system. Alchemia MD supports it from within with dermatologist-formulated supplements designed to protect, balance, and restore!</p>",
-        "primary_label": "Shop the Outdoor Duo",
-        "primary_url": "/products/sun-safe-system",
-        "secondary_label": "Explore the Science",
-        "secondary_url": "/pages/science",
-        "image_alt": "",
-        "background_asset": "hero-banner-1.webp",
-        "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin"
-      }
+      "type": "home-slider",
+      "blocks": {
+        "s1": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "dark",
+            "heading": "Skin health starts from within.",
+            "body": "<p>Dermatologist-formulated supplements, built around published research.</p>",
+            "primary_label": "Explore the science",
+            "primary_url": "/pages/science",
+            "secondary_label": "",
+            "secondary_url": "",
+            "background_asset": "hero-banner-1.webp",
+            "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin",
+            "asset": "",
+            "image_alt": ""
+          }
+        },
+        "s2": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "dark",
+            "heading": "Learn what your skin needs.",
+            "body": "<p>Plain-language guides on the gut-skin connection, sun and skin renewal.</p>",
+            "primary_label": "Explore Skin Edu",
+            "primary_url": "/blogs/skin-edu",
+            "secondary_label": "",
+            "secondary_url": "",
+            "background_asset": "hero-banner-2.webp",
+            "key_ingredients": "",
+            "asset": "",
+            "image_alt": ""
+          }
+        },
+        "s3": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "dark",
+            "heading": "Balanced skin starts within.",
+            "body": "<p>Protect, balance and restore, with daily internal support.</p>",
+            "primary_label": "Shop now",
+            "primary_url": "/collections/shop-all",
+            "secondary_label": "",
+            "secondary_url": "",
+            "background_asset": "hero-banner-3.webp",
+            "key_ingredients": "",
+            "asset": "",
+            "image_alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ]
     },
     "trust_strip": {
       "type": "trust-bar",

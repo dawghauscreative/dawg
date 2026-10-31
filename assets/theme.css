@@ -1055,3 +1055,27 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 /* nav dropdown sync */
 .edu-topic--soon { opacity: .72; }
 .edu-topic--soon:hover { transform: none; border-color: var(--rule); }
+
+/* ---------- Home slider ---------- */
+.home-slider { position: relative; background: var(--c-black); }
+.home-slide { display: none; position: relative; overflow: hidden; padding-block: clamp(64px, 9vw, 128px); min-height: min(78vh, 720px); align-items: center; }
+.home-slide.is-active { display: flex; }
+.home-slider:not(.is-enhanced) .home-slide:first-child { display: flex; }
+.home-slide .container { width: 100%; position: relative; z-index: 1; }
+.home-slide__bg { position: absolute; inset: 0; z-index: 0; }
+.home-slide__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
+.home-slide__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,10,10,.88) 0%, rgba(10,10,10,.55) 45%, rgba(10,10,10,0) 75%); }
+@media (max-width: 749px) { .home-slide__bg::after { background: linear-gradient(180deg, rgba(10,10,10,.8), rgba(10,10,10,.55)); } }
+.home-slide__grid { display: grid; gap: 40px; align-items: center; }
+@media (min-width: 990px) { .home-slide__grid--split { grid-template-columns: 7fr 5fr; gap: 72px; } }
+.home-slide__copy h1, .home-slide__copy .home-slide__h { max-width: 14ch; font-weight: 600; font-size: clamp(2.7rem, 6vw, 5rem); line-height: 1.05; }
+.home-slide__body { max-width: 46ch; margin-top: 1.25rem; }
+.home-slide .btn-row { margin-top: 2rem; }
+.home-slide__media { max-width: 560px; width: 100%; margin-inline: auto; }
+.home-slider__dots { position: absolute; left: 0; right: 0; bottom: 24px; display: flex; justify-content: center; gap: 12px; z-index: 2; }
+.home-slider__dot { width: 12px; height: 12px; border-radius: 50%; border: 1px solid var(--c-gold); background: transparent; transition: background .2s ease, transform .2s ease; }
+.home-slider__dot:hover { transform: scale(1.2); }
+.home-slider__dot.is-active { background: var(--c-gold); }
+@media (prefers-reduced-motion: no-preference) { .home-slide.is-active { animation: homeSlideIn .5s ease both; } @keyframes homeSlideIn { from { opacity: 0; } to { opacity: 1; } } }
+.home-slide--bg .home-slide__copy { max-width: 560px; }
+@media (min-width: 990px) { .home-slide--bg .home-slide__copy { max-width: 46%; } }
