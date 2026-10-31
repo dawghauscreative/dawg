@@ -513,3 +513,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Home: on phones the key-ingredient chips now sit under the trust strip (trust-bar setting 'key_ingredients', phones only); they stay in the slider on desktop.
 - Home slider on phones: the header picture now sits on top (16:11, right-aligned so all jars show) with the headline, copy and button below it on black, instead of text laid over the jars. Desktop unchanged.
 - Wide screens / zoomed out: header row, home slider and trust strip are capped at 1920px and centred (were full-bleed, so on very wide viewports the logo sat at the far left, the hero image cropped into the jars and the headline drifted right). No change at 1920px and below.
+- Video sections (home + product pages): padding cut to 24-48px top/bottom, and the section right above a video also drops its bottom padding to 24-48px. Gap from the Outdoor Duo buttons to the home video went from ~290px to ~86px at 1440px wide.

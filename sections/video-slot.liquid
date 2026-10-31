@@ -21,7 +21,7 @@
   endif
 -%}
 {%- if has_video or section.settings.show_placeholder -%}
-<section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.tight_top %} section--flush-top{% endif %}" {{ section.shopify_attributes }}>
+<section class="section video-section scheme-{{ section.settings.color_scheme }}{% if section.settings.tight_top %} section--flush-top{% endif %}" {{ section.shopify_attributes }}>
   <div class="container">
     <div class="video-split{% if has_text %} video-split--text{% endif %}{% if section.settings.video_side == 'left' %} video-split--left{% endif %}{% if frame_class != blank %} video-split--wide{% endif %}">
       {%- if has_text -%}

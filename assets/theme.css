@@ -1153,3 +1153,8 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .site-header__inner.container { max-width: 1920px; }
 .home-slider, .trust-strip { max-width: 1920px; margin-inline: auto; }
 @media (min-width: 1921px) { .home-slider { border-inline: 1px solid color-mix(in srgb, var(--c-gold) 18%, transparent); } }
+
+/* Video sections: lighter padding so a video does not sit in a large empty band */
+.section.video-section { padding-block: clamp(24px, 3vw, 48px); }
+.section.video-section.section--flush-top { padding-top: 0; }
+.shopify-section:has(+ .shopify-section .video-section) > .section { padding-bottom: clamp(24px, 3vw, 48px); }
