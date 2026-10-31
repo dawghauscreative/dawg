@@ -1046,3 +1046,9 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 
 /* Science cards: short card titles in Roboto small caps (client review) */
 .sci-card h3 { font-family: var(--font-callout); font-size: .92rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; line-height: 1.35; }
+
+/* Science dropdown: Science links + Skin Edu topics side by side */
+.nav__panel--science { grid-template-columns: auto auto; gap: 8px 48px; min-width: 520px; }
+.nav__panel--science ul { gap: 2px; }
+.nav__panel--science a { padding: 5px 0; font-size: 1.05rem; }
+.nav__panel--science h2 a { font-family: var(--font-callout); font-size: inherit; }

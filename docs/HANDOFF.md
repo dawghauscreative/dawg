@@ -421,3 +421,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - UV Shield+: removed 'Internal support is one layer' and 'Why these ingredients?' (Heather's X). Science card titles set in Roboto small caps. Other product pages keep their 'Keep the sunscreen' sections.
 - UV Shield+ gallery: added front/back/supplement-facts shots (product-angle-uv-shield-*.webp).
 - Skinbiotic+ gallery: added front/back/supplement-facts shots (product-angle-skinbiotic-*.webp).
+- Header: 'Science' is now a dropdown (The research, Meet Dr. Luna, and the six Skin Edu topics); mobile drawer lists the Skin Edu topics under Science.

@@ -46,7 +46,26 @@
             </div>
           </details>
         </li>
-        <li><a href="/pages/science">Science</a></li>
+        <li>
+          <details>
+            <summary><a class="nav__shoplink" href="/pages/science">Science</a></summary>
+            <div class="nav__panel nav__panel--science">
+              <div>
+                <h2><a href="/pages/science">Science</a></h2>
+                <ul>
+                  <li><a href="/pages/science">The research</a></li>
+                  <li><a href="/pages/founder">Meet Dr. Luna</a></li>
+                </ul>
+              </div>
+              <div>
+                <h2><a href="/blogs/skin-edu">Skin Edu</a></h2>
+                <ul>
+                  <li><a href="/blogs/skin-edu/tagged/skin-science">Skin science</a></li><li><a href="/blogs/skin-edu/tagged/sun-environment">Sun + environment</a></li><li><a href="/blogs/skin-edu/tagged/gut-skin">Gut + skin</a></li><li><a href="/blogs/skin-edu/tagged/ingredients">Ingredients</a></li><li><a href="/blogs/skin-edu/tagged/nutrition-wellness">Nutrition + wellness</a></li><li><a href="/blogs/skin-edu/tagged/ask-the-derm">From the derm</a></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </li>
         <li><a href="/pages/founder">Founder</a></li>
         <li><a href="/pages/faq">FAQ</a></li>
       </ul>
@@ -88,7 +107,13 @@
             {%- endfor -%}
           </ul>
         </li>
-        <li><a href="/pages/science">Science</a></li>
+        <li>
+          <a href="/pages/science">Science</a>
+          <span class="drawer__label"><a href="/blogs/skin-edu" style="font-size:inherit;padding:0">Skin Edu</a></span>
+          <ul>
+            <li><a href="/blogs/skin-edu/tagged/skin-science">Skin science</a></li><li><a href="/blogs/skin-edu/tagged/sun-environment">Sun + environment</a></li><li><a href="/blogs/skin-edu/tagged/gut-skin">Gut + skin</a></li><li><a href="/blogs/skin-edu/tagged/ingredients">Ingredients</a></li><li><a href="/blogs/skin-edu/tagged/nutrition-wellness">Nutrition + wellness</a></li><li><a href="/blogs/skin-edu/tagged/ask-the-derm">From the derm</a></li>
+          </ul>
+        </li>
         <li><a href="/pages/founder">Founder</a></li>
         <li><a href="/pages/faq">FAQ</a></li>
         <li><a href="{{ portal_url }}">{{ settings.manage_subscription_label }}</a></li>
