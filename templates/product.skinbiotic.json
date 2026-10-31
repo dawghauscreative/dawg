@@ -71,7 +71,8 @@
       ],
       "settings": {
         "color_scheme": "green",
-        "lead_asset": "product-3d-skinbiotic.webp"
+        "lead_asset": "product-3d-skinbiotic.webp",
+        "gallery_assets": "product-angle-skinbiotic-front.webp, product-angle-skinbiotic-back.webp, product-angle-skinbiotic-facts.webp"
       }
     },
     "definition": {

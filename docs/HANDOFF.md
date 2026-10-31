@@ -420,3 +420,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Outdoor Duo and Sun Resilience Duo now lead with a render built from the supplied two-jar studio shots, composited on the same tan/evergreen block background as the other renders.
 - UV Shield+: removed 'Internal support is one layer' and 'Why these ingredients?' (Heather's X). Science card titles set in Roboto small caps. Other product pages keep their 'Keep the sunscreen' sections.
 - UV Shield+ gallery: added front/back/supplement-facts shots (product-angle-uv-shield-*.webp).
+- Skinbiotic+ gallery: added front/back/supplement-facts shots (product-angle-skinbiotic-*.webp).
