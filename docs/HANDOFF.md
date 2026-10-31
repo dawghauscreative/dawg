@@ -493,3 +493,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Skin Recovery Duo: render, "Two formulas. One thoughtful pairing.", sunset (old Shopify slides hidden; its two pedestal ads left out as redundant). Tria Prima: render, "Explore all three formulas.", "Three formulas. A closer look.", yacht.
 - Sun Safe Duo: render, "Built for bright, active days outdoors", "Outdoor days. Everyday care.", sailboat. "Meet your daily duo." (pedestal) left out as redundant.
 - Skin Recovery Duo: Bundle Guide cards 01-05 of 07 added as is after the render (`bundle-skin-recovery-guide-0N.webp`), then "Two formulas. One thoughtful pairing.", then sunset. Cards 06-07 still to come.
+- Bundle Guide cards (as is): Tria Prima 04-07 (`bundle-complete-guide-0N.webp`; 01-03 not yet received as files), Sun Resilience 01 (`bundle-sun-resilience-guide-01.webp`; 02-07 pending). Order on every bundle: render, guide cards in number order, ad images, lifestyle.
