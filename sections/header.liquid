@@ -28,7 +28,7 @@
             <summary><a class="nav__shoplink" href="{{ shop_all_url }}">Shop All</a></summary>
             <div class="nav__panel">
               <div>
-                <h2>{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}">Duos</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}">Duos</a>{% else %}Duos{% endif %}</h2>
+                <h2>{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}">Systems</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}">Systems</a>{% else %}Systems{% endif %}</h2>
                 <ul>
                   {%- for handle in systems -%}
                     {%- assign p = all_products[handle] -%}
@@ -94,7 +94,7 @@
       <ul>
         <li><a href="{{ shop_all_url }}">Shop All</a></li>
         <li>
-          <span class="drawer__label">{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}" style="font-size:inherit;padding:0">Duos</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}" style="font-size:inherit;padding:0">Duos</a>{% else %}Duos{% endif %}</span>
+          <span class="drawer__label">{% if pages['systems'] != blank %}<a href="{{ pages['systems'].url }}" style="font-size:inherit;padding:0">Systems</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}" style="font-size:inherit;padding:0">Systems</a>{% else %}Systems{% endif %}</span>
           <ul>
             {%- for handle in systems -%}
               {%- assign p = all_products[handle] -%}

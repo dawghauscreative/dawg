@@ -8,7 +8,7 @@
         "s1": {
           "type": "link",
           "settings": {
-            "label": "Duos",
+            "label": "Systems",
             "url": "/pages/systems",
             "column": "shop"
           }
