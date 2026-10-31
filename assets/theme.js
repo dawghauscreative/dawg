@@ -278,6 +278,23 @@
       }, { threshold: 0.25 }).observe(frame);
     }
   });
+  // Desktop "Choose your plan" link on non-product pages: appears after scrolling, CSS hides it on phones
+  var planCta = document.querySelector('[data-plan-cta]');
+  if (planCta) {
+    var planTick = false;
+    var planUpdate = function () {
+      planTick = false;
+      var on = window.scrollY > 600;
+      planCta.classList.toggle('is-visible', on);
+      planCta.setAttribute('aria-hidden', on ? 'false' : 'true');
+      planCta.toggleAttribute('inert', !on);
+    };
+    window.addEventListener('scroll', function () {
+      if (!planTick) { planTick = true; requestAnimationFrame(planUpdate); }
+    }, { passive: true });
+    planUpdate();
+  }
+
   // Mobile back-to-top button: appears after scrolling, CSS hides it on desktop
   var toTop = document.querySelector('[data-back-to-top]');
   if (toTop) {

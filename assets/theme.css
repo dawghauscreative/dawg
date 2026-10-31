@@ -1167,3 +1167,6 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
   .sticky-cta .btn { min-width: 0; padding-inline: 28px; }
   .has-sticky-cta { padding-bottom: 0; }
 }
+/* Same pill on the other pages (desktop only); links to Shop All */
+.plan-cta { display: none; }
+@media (min-width: 990px) { .plan-cta { display: flex; } }
