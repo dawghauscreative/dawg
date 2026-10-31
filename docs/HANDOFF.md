@@ -441,3 +441,7 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - 'System(s)' -> 'Bundle(s)' wherever it means a product bundle (menu, footer, Systems page, FAQs, buttons, product pages). Biology uses ('immune system', 'antioxidant systems', 'Skin health is a system') and all URLs/handles were left alone. Shopify page title and the bundles collection title renamed too.
 - The Bundles page address is now /pages/bundles (Shopify page handle changed with an automatic redirect from /pages/systems). All theme links updated. The page still uses the template file page.systems.json (template names are separate from the address).
 - Shop All single-product cards now show the front label shot (setting 'Front image' on each formula block).
+
+## Product cards use front label shots (2026-10-31)
+- New snippet `product-front-asset` maps uv-shield / skinbiotic / dermaboost to `product-angle-*-front.webp` (blank for bundles).
+- Used by `role-columns` (home Protect. Balance. Restore.), `product-selector` (Individual Products; a block-level `asset` still wins), `product-card` (collection/search/cross-sell) and `bundle-steps`. Bundles still use their own media.

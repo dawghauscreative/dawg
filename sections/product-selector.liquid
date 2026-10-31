@@ -18,8 +18,12 @@
             <a class="sel-card__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
               {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
               {%- assign fallback_asset = fallback_capture | strip -%}
+              {%- capture front_capture -%}{%- render 'product-front-asset', handle: p.handle -%}{%- endcapture -%}
+              {%- assign front_asset = front_capture | strip -%}
               {%- if block.settings.asset != blank -%}
                 {% render 'responsive-image', asset: block.settings.asset, asset_width: 1400, asset_height: 787, ratio: section.settings.media_ratio, sizes: '(min-width: 990px) 45vw, 100vw', alt: p.title %}
+              {%- elsif front_asset != blank -%}
+                {% render 'responsive-image', asset: front_asset, asset_width: 1200, asset_height: 1500, ratio: section.settings.media_ratio, sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
               {%- else -%}
                 {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: section.settings.media_ratio, sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
               {%- endif -%}

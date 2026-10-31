@@ -7,7 +7,13 @@
     <div class="pcard__media">
       {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
       {%- assign fallback_asset = fallback_capture | strip -%}
-      {%- render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 750px) 33vw, 100vw', alt: product.title -%}
+      {%- capture front_capture -%}{%- render 'product-front-asset', handle: product.handle -%}{%- endcapture -%}
+      {%- assign front_asset = front_capture | strip -%}
+      {%- if front_asset != blank -%}
+        {%- render 'responsive-image', asset: front_asset, asset_width: 1200, asset_height: 1500, ratio: '4x5', sizes: '(min-width: 750px) 33vw, 100vw', alt: product.title -%}
+      {%- else -%}
+        {%- render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 750px) 33vw, 100vw', alt: product.title -%}
+      {%- endif -%}
     </div>
     <div class="pcard__body">
       {%- if role != blank -%}<span class="role-badge">{{ role }}</span>{%- endif -%}

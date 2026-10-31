@@ -1,0 +1,9 @@
+{%- comment -%}
+  Front label shot for the three single formulas (empty for bundles). Cards use this in place of the lifestyle image.
+  Usage: {% capture front %}{% render 'product-front-asset', handle: product.handle %}{% endcapture %}
+{%- endcomment -%}
+{%- case handle -%}
+  {%- when 'uv-shield' -%}product-angle-uv-shield-front.webp
+  {%- when 'skinbiotic' -%}product-angle-skinbiotic-front.webp
+  {%- when 'dermaboost' -%}product-angle-dermaboost-front.webp
+{%- endcase -%}

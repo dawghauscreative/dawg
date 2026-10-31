@@ -9,7 +9,13 @@
             <a class="role-col__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
               {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
               {%- assign fallback_asset = fallback_capture | strip -%}
-              {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
+              {%- capture front_capture -%}{%- render 'product-front-asset', handle: p.handle -%}{%- endcapture -%}
+              {%- assign front_asset = front_capture | strip -%}
+              {%- if front_asset != blank -%}
+                {% render 'responsive-image', asset: front_asset, asset_width: 1200, asset_height: 1500, ratio: '4x5', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
+              {%- else -%}
+                {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
+              {%- endif -%}
             </a>
             <div class="role-col__body">
               <span class="role-badge">{{ block.settings.role }}</span>
