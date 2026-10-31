@@ -489,3 +489,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Skin Recovery Duo: unchanged (its three ads arrived only as inline pictures).
 - Old Shopify slides are hidden on all of these (`media_order` 99). Dermaboost+ keeps its new ingredient cards.
 - UV Shield+: the two pedestal images ("Support for the skin from within" arch, "Daily support. Made for your routine.") removed as redundant at the owner's request.
+- Bundles: pedestal shots removed as redundant ("Meet your support duo." on Sun Resilience, "Meet the Alchemia MD trio." on Tria Prima). Tria Prima is now render + yacht until its other images arrive as files.
