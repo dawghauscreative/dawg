@@ -274,7 +274,7 @@
         "primary_label": "Explore the Outdoor Duo",
         "primary_url": "",
         "secondary_label": "See all bundles",
-        "secondary_url": "/pages/systems",
+        "secondary_url": "/pages/bundles",
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
         "light_panel": true

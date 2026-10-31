@@ -398,7 +398,7 @@
         "col_2": "Products",
         "col_3": "Primary focus",
         "button_label": "Compare all bundles",
-        "button_url": "/pages/systems",
+        "button_url": "/pages/bundles",
         "body": "<p>The two-product bundles are designed around specific combinations of support. Tria Prima is for the customer who wants all three. It is a broader routine, not the only “correct” routine.</p>"
       },
       "blocks": {
