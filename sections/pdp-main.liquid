@@ -81,14 +81,18 @@
               {%- for asset_name in extra_assets -%}
                 {%- assign asset_clean = asset_name | strip -%}
                 {%- if asset_clean != blank -%}
-                  {%- comment -%} "file:name.png" = an image uploaded to Shopify admin > Content > Files {%- endcomment -%}
+                  {%- comment -%} A full https URL (Shopify Files CDN) or "file:name.png" = an image uploaded to Shopify admin > Content > Files {%- endcomment -%}
                   {%- assign asset_prefix = asset_clean | slice: 0, 5 -%}
-                  {%- if asset_prefix == 'file:' -%}
+                  {%- assign extra_thumb = '' -%}
+                  {%- if asset_clean contains '://' -%}
+                    {%- assign extra_src = asset_clean | append: '?width=1200' -%}
+                    {%- assign extra_thumb = asset_clean | append: '?width=240' -%}
+                  {%- elsif asset_prefix == 'file:' -%}
                     {%- assign extra_src = asset_clean | remove_first: 'file:' | strip | file_url -%}
                   {%- else -%}
                     {%- assign extra_src = asset_clean | asset_url -%}
                   {%- endif -%}
-                  <button type="button" data-thumb data-src="{{ extra_src }}" aria-label="Show graphic {{ forloop.index }}" aria-current="false"><img src="{{ extra_src }}" alt="" width="100" height="125" loading="lazy"></button>
+                  <button type="button" data-thumb data-src="{{ extra_src }}" aria-label="Show graphic {{ forloop.index }}" aria-current="false"><img src="{{ extra_thumb | default: extra_src }}" alt="" width="100" height="125" loading="lazy"></button>
                 {%- endif -%}
               {%- endfor -%}
             </div>
@@ -255,7 +259,7 @@
     { "type": "text", "id": "lead_asset", "label": "Main image: 3D render (theme asset filename)", "info": "Shown first in the gallery, ahead of the product photos. e.g. product-3d-uv-shield.webp" },
     { "type": "text", "id": "angle_assets", "label": "Product angle views (theme asset filenames, comma separated)", "info": "Shown right after the main render, e.g. front, back and supplement facts." },
     { "type": "text", "id": "media_order", "label": "Product images to show, in order (numbers)", "info": "Position numbers of the product's Shopify images, e.g. 2,3,4 for three benefit slides. Leave empty to show them all." },
-    { "type": "text", "id": "gallery_assets", "label": "Extra gallery graphics (theme asset filenames, comma separated)", "info": "Appended after the product media. Theme assets by name, or file:name.png for an image in Content > Files. e.g. slide-d01-1.webp, slide-d02-1.webp" },
+    { "type": "text", "id": "gallery_assets", "label": "Extra gallery graphics (theme asset filenames, comma separated)", "info": "Appended after the product media. Theme assets by name, or the full URL / file:name.png of an image in Content > Files. e.g. slide-d01-1.webp, slide-d02-1.webp" },
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
   ],
   "blocks": [
