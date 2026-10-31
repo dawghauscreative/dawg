@@ -8,6 +8,9 @@
       </div>
     {%- endfor -%}
   </div>
+  {%- if section.settings.key_ingredients != blank -%}
+    <div class="trust-ingredients container">{%- render 'key-ingredients', items: section.settings.key_ingredients -%}</div>
+  {%- endif -%}
 </section>
 {%- endif -%}
 
@@ -15,7 +18,8 @@
 {
   "name": "Trust strip",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "beige", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "band", "label": "Band (black to green)" }] }
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "beige", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "band", "label": "Band (black to green)" }] },
+    { "type": "textarea", "id": "key_ingredients", "label": "Key ingredients, phones only (one per line: Label|anchor)", "info": "Optional chips linking to the Science page, shown under the strip on phones only." }
   ],
   "blocks": [
     {

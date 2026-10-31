@@ -115,7 +115,8 @@
         "t3"
       ],
       "settings": {
-        "color_scheme": "dark"
+        "color_scheme": "dark",
+        "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin"
       }
     },
     "category": {

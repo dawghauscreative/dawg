@@ -510,3 +510,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Science page, Skinbiotic+ 'What is the gut-skin axis?' callout: image set to the uploaded Alchemia_Gut_Skin_Axis_4x5 (Shopify Files) in place of the empty placeholder frame.
 - Lifestyle strip (home + UV Shield+, Sun Safe, Sun Resilience pages): on phones the 6 tiles now close up into one edge-to-edge 2-column mosaic (3px gaps, label only, caption hidden) instead of six full-width stacked images. Desktop unchanged.
 - Home slider on phones: ingredient chips hidden (desktop keeps them). All slides now share one grid cell, so the slider holds the tallest slide's height and the page no longer jumps on each 3-second advance.
+- Home: on phones the key-ingredient chips now sit under the trust strip (trust-bar setting 'key_ingredients', phones only); they stay in the slider on desktop.

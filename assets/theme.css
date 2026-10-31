@@ -1130,3 +1130,10 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .home-slider.is-enhanced .home-slide { display: flex; grid-area: 1 / 1; visibility: hidden; opacity: 0; }
 .home-slider.is-enhanced .home-slide.is-active { visibility: visible; opacity: 1; }
 @media (max-width: 749px) { .home-slide .key-ingredients { display: none; } }
+/* Home: on phones the ingredient chips sit under the trust strip instead of in the slider */
+.trust-ingredients { display: none; }
+@media (max-width: 749px) {
+  .trust-ingredients { display: block; padding-block: 18px 22px; border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+  .scheme-dark .trust-ingredients, .scheme-green .trust-ingredients { background: color-mix(in srgb, var(--c-gold) 6%, var(--bg)); }
+  .trust-ingredients .key-ingredients { margin-top: 0; }
+}
