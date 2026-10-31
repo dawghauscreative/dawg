@@ -491,3 +491,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - UV Shield+: the two pedestal images ("Support for the skin from within" arch, "Daily support. Made for your routine.") removed as redundant at the owner's request.
 - Bundles: pedestal shots removed as redundant ("Meet your support duo." on Sun Resilience, "Meet the Alchemia MD trio." on Tria Prima). Tria Prima is now render + yacht until its other images arrive as files.
 - Skin Recovery Duo: render, "Two formulas. One thoughtful pairing.", sunset (old Shopify slides hidden; its two pedestal ads left out as redundant). Tria Prima: render, "Explore all three formulas.", "Three formulas. A closer look.", yacht.
+- Sun Safe Duo: render, "Built for bright, active days outdoors", "Outdoor days. Everyday care.", sailboat. "Meet your daily duo." (pedestal) left out as redundant.
