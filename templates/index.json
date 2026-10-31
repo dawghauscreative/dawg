@@ -130,7 +130,7 @@
           "settings": {
             "product": "uv-shield",
             "role": "Protect",
-            "descriptor": "Outdoor support for resilient skin.",
+            "descriptor": "Daily Sun Support",
             "related_1": "sun-safe-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
@@ -142,7 +142,7 @@
           "settings": {
             "product": "skinbiotic",
             "role": "Balance",
-            "descriptor": "Essential gut care for skin health.",
+            "descriptor": "Daily Skin Probiotic",
             "related_1": "sun-safe-system",
             "related_2": "skin-recovery-system",
             "related_3": "complete-skin-defense-system",
@@ -154,7 +154,7 @@
           "settings": {
             "product": "dermaboost",
             "role": "Restore",
-            "descriptor": "Immune support for calm, balanced skin.",
+            "descriptor": "Daily Immune Support",
             "related_1": "skin-recovery-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
@@ -250,12 +250,24 @@
         "button_label": "Join Alchemia MD",
         "success_text": "Thank you for joining Alchemia MD."
       }
+    },
+    "balance": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "dark",
+        "align": "left",
+        "width": "narrow",
+        "heading": "When trends chase perfect skin, we practice balance.",
+        "heading_tag": "h2",
+        "body": "<p>Skin is a dynamic ecosystem that is always changing. We believe lasting change begins by supporting the body from within. When your internal world is in balance, the effects can be seen on the surface.</p>"
+      }
     }
   },
   "order": [
     "slider",
     "founder",
     "benefits",
+    "balance",
     "products",
     "duos",
     "blog",
