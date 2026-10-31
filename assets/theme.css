@@ -1158,3 +1158,12 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .section.video-section { padding-block: clamp(24px, 3vw, 48px); }
 .section.video-section.section--flush-top { padding-top: 0; }
 .shopify-section:has(+ .shopify-section .video-section) > .section { padding-bottom: clamp(24px, 3vw, 48px); }
+
+/* Desktop: the "Choose your plan" bar floats as a pill in the bottom-right corner once the buy box is out of view */
+@media (min-width: 990px) {
+  .sticky-cta { left: auto; right: 28px; bottom: 28px; padding: 10px 10px 10px 26px; gap: 28px; border: 1px solid color-mix(in srgb, var(--c-gold) 60%, transparent); border-radius: 999px; background: color-mix(in srgb, var(--c-black) 94%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 14px 40px rgba(0,0,0,.45); transform: translateY(calc(100% + 40px)); }
+  .sticky-cta.is-visible { transform: none; }
+  .sticky-cta__title { font-size: 1.1rem; white-space: nowrap; }
+  .sticky-cta .btn { min-width: 0; padding-inline: 28px; }
+  .has-sticky-cta { padding-bottom: 0; }
+}
