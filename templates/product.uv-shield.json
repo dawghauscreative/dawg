@@ -217,41 +217,6 @@
         "b5"
       ]
     },
-    "oxidative": {
-      "type": "flow-steps",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "What is oxidative stress?",
-        "body": "<p>Oxidative stress describes an imbalance between reactive molecules and the body's antioxidant defenses.</p><p>Environmental exposure can contribute to reactive oxygen species in skin.</p><p>Antioxidants do not act like sunscreen. They work through internal biochemical pathways rather than blocking UV radiation at the skin surface.</p><p>That distinction matters.</p>",
-        "takeaway": "UV Shield+ is formulated to support those internal systems, not to replace external protection."
-      },
-      "blocks": {
-        "b1": {
-          "type": "step",
-          "settings": {
-            "label": "UV / environment"
-          }
-        },
-        "b2": {
-          "type": "step",
-          "settings": {
-            "label": "Reactive molecules"
-          }
-        },
-        "b3": {
-          "type": "step",
-          "settings": {
-            "label": "Antioxidant systems respond"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3"
-      ]
-    },
     "who": {
       "type": "lifestyle-strip",
       "settings": {
@@ -532,7 +497,6 @@
     "video",
     "why",
     "formula",
-    "oxidative",
     "who",
     "sunscreen",
     "research",
