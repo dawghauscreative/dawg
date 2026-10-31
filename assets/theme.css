@@ -1086,7 +1086,7 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .btn, .text-link { transition: background .2s, color .2s, border-color .2s, transform .2s ease; }
 .pcard:hover .pcard__link, .role-col__body .btn:hover, .sel-card .btn:hover { transform: translateX(3px); }
 @media (prefers-reduced-motion: no-preference) {
-  .home-slide.is-active .home-slide__bg img { animation: homeSlideDrift 6s ease-out both; }
+  .home-slide.is-active .home-slide__bg img { animation: homeSlideDrift 8s ease-out both; }
   .home-slide.is-active .home-slide__copy > * { animation: homeCopyIn .7s ease both; }
   .home-slide.is-active .home-slide__copy > :nth-child(2) { animation-delay: .12s; }
   .home-slide.is-active .home-slide__copy > :nth-child(3) { animation-delay: .24s; }
@@ -1125,7 +1125,7 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 }
 
 /* Home slider: all slides share one grid cell so the slider keeps the height of the tallest slide
-   (no page jump every 3 seconds). Phones: the ingredient chips are left off the slider. */
+   (no page jump on each advance). Phones: the ingredient chips are left off the slider. */
 .home-slider.is-enhanced .home-slider__track { display: grid; }
 .home-slider.is-enhanced .home-slide { display: flex; grid-area: 1 / 1; visibility: hidden; opacity: 0; }
 .home-slider.is-enhanced .home-slide.is-active { visibility: visible; opacity: 1; }
