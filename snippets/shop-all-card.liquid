@@ -1,7 +1,7 @@
 {%- comment -%}
   Shop All card. Discovery and plan routing only: no add to cart, no form, no quick add, no purchase widget.
   Every figure comes from the product: image, title, "from" price. The button opens the product page.
-  Params: product, role, descriptor, button_text, cue, badge, rel_1, rel_2, rel_3, size ('featured' | 'system' | 'single'), heading_tag
+  Params: product, front_asset (optional theme asset shown instead of the product's first image), role, descriptor, button_text, cue, badge, rel_1, rel_2, rel_3, size ('featured' | 'system' | 'single'), heading_tag
 {%- endcomment -%}
 {%- if product != blank -%}
   {%- assign tag = heading_tag | default: 'h3' -%}
@@ -12,7 +12,7 @@
   {%- if size == 'featured' -%}{%- assign card_ratio = '1x1' -%}{%- endif -%}
   <article class="shopcard shopcard--{{ size | default: 'system' }}">
     <a class="shopcard__media" href="{{ product.url }}" tabindex="-1" aria-hidden="true">
-      {% render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}
+      {% if front_asset != blank %}{% render 'responsive-image', asset: front_asset, asset_width: 1200, asset_height: 1500, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}{% else %}{% render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}{% endif %}
     </a>
     <div class="shopcard__body">
       {%- if role != blank or badge != blank -%}

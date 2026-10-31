@@ -84,7 +84,8 @@
             "related_1": "sun-safe-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan"
+            "button_text": "Choose your plan",
+            "front_asset": "product-angle-uv-shield-front.webp"
           }
         },
         "skinbiotic": {
@@ -96,7 +97,8 @@
             "related_1": "sun-safe-system",
             "related_2": "skin-recovery-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan"
+            "button_text": "Choose your plan",
+            "front_asset": "product-angle-skinbiotic-front.webp"
           }
         },
         "dermaboost": {
@@ -108,7 +110,8 @@
             "related_1": "skin-recovery-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan"
+            "button_text": "Choose your plan",
+            "front_asset": "product-angle-dermaboost-front.webp"
           }
         }
       },

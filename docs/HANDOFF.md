@@ -440,3 +440,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Bundle renders (Outdoor Duo, Sun Resilience Duo, Balance Duo, Tria Prima) re-made as 4:5 portraits so they fit the gallery frame without cropping.
 - 'System(s)' -> 'Bundle(s)' wherever it means a product bundle (menu, footer, Systems page, FAQs, buttons, product pages). Biology uses ('immune system', 'antioxidant systems', 'Skin health is a system') and all URLs/handles were left alone. Shopify page title and the bundles collection title renamed too.
 - The Bundles page address is now /pages/bundles (Shopify page handle changed with an automatic redirect from /pages/systems). All theme links updated. The page still uses the template file page.systems.json (template names are separate from the address).
+- Shop All single-product cards now show the front label shot (setting 'Front image' on each formula block).

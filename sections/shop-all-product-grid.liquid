@@ -8,6 +8,7 @@
         <div class="shop-grid__item" {{ block.shopify_attributes }}>
           {% render 'shop-all-card',
             product: block.settings.product,
+            front_asset: block.settings.front_asset,
             role: block.settings.role,
             descriptor: block.settings.descriptor,
             button_text: block.settings.button_text,
