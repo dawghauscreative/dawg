@@ -465,3 +465,7 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Gallery thumbnails are 4:5 instead of square, so slide headlines are no longer cut off.
 - UV Shield+ `media_order` is `2,4`: the "UV-stress timeline" image (Shopify media 3) is a before/during/after-sun graphic the blueprint bars. Media 5 ("What the science supports") is held for review before it goes back in as the third slide.
 - The "Ps" badge on a thumbnail in the review screenshot is the Adobe browser extension's hover icon, not part of the image.
+
+## UV Shield+ gallery uses the new ad images (2026-10-31)
+- The product's old Shopify slides (five actives, UV-stress timeline, layered protection, science) no longer show (`media_order` 99). After the render and the three label views the gallery is the supplied UV Shield+ images, as supplied: two "Support for the skin from within" studio slides, "Daily support. Made for your routine.", then the hiker and coastal lifestyle shots (`uvshield-slide-*.webp`). They carry their headline and SHOP NOW pill; the cleaned versions are `lifestyle-uvshield-hiker/coast.webp` if that is unwanted.
+- Dermaboost+ already shows its new ingredient slides. Skinbiotic+ still shows its Shopify slides 9-11 until its new images arrive. Bundles to follow.
