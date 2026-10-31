@@ -494,3 +494,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Sun Safe Duo: render, "Built for bright, active days outdoors", "Outdoor days. Everyday care.", sailboat. "Meet your daily duo." (pedestal) left out as redundant.
 - Skin Recovery Duo: Bundle Guide cards 01-05 of 07 added as is after the render (`bundle-skin-recovery-guide-0N.webp`), then "Two formulas. One thoughtful pairing.", then sunset. Cards 06-07 still to come.
 - Bundle Guide cards (as is): Tria Prima 04-07 (`bundle-complete-guide-0N.webp`; 01-03 not yet received as files), Sun Resilience 01 (`bundle-sun-resilience-guide-01.webp`; 02-07 pending). Order on every bundle: render, guide cards in number order, ad images, lifestyle.
+- pdp-main gallery_assets now also accepts `file:name.png` for images uploaded to Shopify admin > Content > Files (rendered with file_url), so cards that cannot be sent into the session as files can be uploaded there and referenced by name.
