@@ -1,0 +1,85 @@
+{%- comment -%}
+  Homepage hero slider (three slides). Order of information: science and education first, mission second, product last.
+  Each slide is a block. Slides are static content: nothing here touches the cart. Without JavaScript the first slide shows
+  and the others are reachable by the dots (which become anchors).
+{%- endcomment -%}
+{%- if section.blocks.size > 0 -%}
+<section class="home-slider" data-home-slider aria-roledescription="carousel" aria-label="Alchemia MD highlights" {{ section.shopify_attributes }}>
+  <div class="home-slider__track">
+    {%- for block in section.blocks -%}
+      {%- assign has_img = false -%}
+      {%- if block.settings.image != blank or block.settings.asset != blank -%}{%- assign has_img = true -%}{%- endif -%}
+      <article class="home-slide scheme-{{ block.settings.color_scheme }}{% if forloop.first %} is-active{% endif %}" id="slide-{{ forloop.index }}" data-slide role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ section.blocks.size }}" {{ block.shopify_attributes }}>
+        <div class="container home-slide__grid{% if has_img %} home-slide__grid--split{% endif %}">
+          <div class="home-slide__copy">
+            {%- if forloop.first -%}<h1>{{ block.settings.heading }}</h1>{%- else -%}<h2 class="home-slide__h">{{ block.settings.heading }}</h2>{%- endif -%}
+            {%- if block.settings.body != blank -%}<div class="lede home-slide__body">{{ block.settings.body }}</div>{%- endif -%}
+            <div class="btn-row">
+              {%- if block.settings.primary_label != blank -%}<a class="btn" href="{{ block.settings.primary_url | default: '#' }}">{{ block.settings.primary_label }}</a>{%- endif -%}
+              {%- if block.settings.secondary_label != blank -%}<a class="btn btn--outline" href="{{ block.settings.secondary_url | default: '#' }}">{{ block.settings.secondary_label }}</a>{%- endif -%}
+            </div>
+          </div>
+          {%- if has_img -%}
+            <div class="home-slide__media">
+              {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, asset_width: 1800, asset_height: 1013, ratio: '4x5', sizes: '(min-width: 990px) 45vw, 100vw', alt: block.settings.image_alt, loading: 'eager' %}
+            </div>
+          {%- endif -%}
+        </div>
+      </article>
+    {%- endfor -%}
+  </div>
+  {%- if section.blocks.size > 1 -%}
+    <div class="home-slider__dots" role="tablist" aria-label="Choose a slide">
+      {%- for block in section.blocks -%}
+        <a class="home-slider__dot{% if forloop.first %} is-active{% endif %}" href="#slide-{{ forloop.index }}" data-dot role="tab" aria-label="Show slide {{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"></a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+  <script>
+    (function () {
+      var root = document.currentScript.parentNode;
+      var slides = Array.prototype.slice.call(root.querySelectorAll('[data-slide]'));
+      var dots = Array.prototype.slice.call(root.querySelectorAll('[data-dot]'));
+      if (slides.length < 2) return;
+      root.classList.add('is-enhanced');
+      function show(i) {
+        slides.forEach(function (s, n) { s.classList.toggle('is-active', n === i); s.setAttribute('aria-hidden', n === i ? 'false' : 'true'); });
+        dots.forEach(function (d, n) { d.classList.toggle('is-active', n === i); d.setAttribute('aria-selected', n === i ? 'true' : 'false'); });
+      }
+      dots.forEach(function (d, n) { d.addEventListener('click', function (e) { e.preventDefault(); show(n); }); });
+      root.addEventListener('keydown', function (e) {
+        var cur = slides.findIndex(function (s) { return s.classList.contains('is-active'); });
+        if (e.key === 'ArrowRight') show((cur + 1) % slides.length);
+        if (e.key === 'ArrowLeft') show((cur - 1 + slides.length) % slides.length);
+      });
+      show(0);
+    })();
+  </script>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Home slider",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+        { "type": "text", "id": "heading", "label": "Heading" },
+        { "type": "richtext", "id": "body", "label": "Text" },
+        { "type": "text", "id": "primary_label", "label": "Button label" },
+        { "type": "url", "id": "primary_url", "label": "Button link" },
+        { "type": "text", "id": "secondary_label", "label": "Second button label (optional)" },
+        { "type": "url", "id": "secondary_url", "label": "Second button link" },
+        { "type": "image_picker", "id": "image", "label": "Image (optional)" },
+        { "type": "text", "id": "asset", "label": "Or theme asset filename", "info": "Used when no image is picked, e.g. product-3d-uv-shield.webp" },
+        { "type": "text", "id": "image_alt", "label": "Image alt text" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Home slider", "blocks": [{ "type": "slide" }, { "type": "slide" }, { "type": "slide" }] }]
+}
+{% endschema %}
