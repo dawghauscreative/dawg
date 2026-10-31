@@ -289,64 +289,6 @@
         "b6"
       ]
     },
-    "sunscreen": {
-      "type": "science-sunscreen",
-      "settings": {
-        "color_scheme": "green",
-        "heading": "Internal support is one layer.",
-        "body": "<p>UV Shield+ is intended to complement a complete sun-health routine. Continue to use:</p>",
-        "items": "Broad-spectrum sunscreen\nProtective clothing\nShade when appropriate\nHats and sunglasses\nReapplication\nRoutine dermatologic care",
-        "callout": "UV Shield+ is not sunscreen and does not replace sunscreen."
-      }
-    },
-    "research": {
-      "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Why these ingredients?",
-        "columns": "4",
-        "show_images": false,
-        "button_label": "Explore the UV Shield+ research",
-        "button_url": "/pages/science#uv-shield"
-      },
-      "blocks": {
-        "b1": {
-          "type": "card",
-          "settings": {
-            "title": "Niacinamide",
-            "text": "<p>Human and mechanistic research relevant to skin and UV-response biology.</p>"
-          }
-        },
-        "b2": {
-          "type": "card",
-          "settings": {
-            "title": "Polypodium leucotomos",
-            "text": "<p>Human research examining skin response to UV exposure.</p>"
-          }
-        },
-        "b3": {
-          "type": "card",
-          "settings": {
-            "title": "Resveratrol",
-            "text": "<p>Human and mechanistic research involving antioxidant and skin-related endpoints.</p>"
-          }
-        },
-        "b4": {
-          "type": "card",
-          "settings": {
-            "title": "Green tea polyphenols",
-            "text": "<p>Human and mechanistic research with mixed results depending on endpoint and study design.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ]
-    },
     "claims": {
       "type": "science-boundaries",
       "settings": {
@@ -498,8 +440,6 @@
     "why",
     "formula",
     "who",
-    "sunscreen",
-    "research",
     "claims",
     "systems",
     "reviews",
