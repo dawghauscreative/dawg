@@ -448,3 +448,9 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 
 - Home slider: the key-ingredient chips (link to Science page anchors) now show on all four slides, not only slide 1.
 - Home slider auto-advances every 3 seconds; pauses on hover/focus, restarts after a dot click, and stays still for visitors with reduced-motion set.
+
+## Motion polish (2026-10-31)
+- Scroll reveal now staggers siblings (~110ms apart, capped at 6) instead of a global 4-step cycle (`assets/theme.js`).
+- Home slider: slow 6s zoom on the background image, headline/body/chips/button cascade in on each slide, ingredient chips appear one by one.
+- Card hover: front-shot image zoom on role columns, selector cards and Shop All cards; button/link nudge.
+- All of it is under `prefers-reduced-motion: no-preference` (the global reduced-motion rule also kills transitions). Buy box untouched.

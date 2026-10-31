@@ -103,7 +103,11 @@
       var io2 = new IntersectionObserver(function (entries) {
         entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-visible'); io2.unobserve(en.target); } });
       }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
-      targets.forEach(function (el, i) { el.classList.add('reveal'); el.style.transitionDelay = ((i % 4) * 70) + 'ms'; io2.observe(el); });
+      targets.forEach(function (el) {
+        // Stagger siblings (cards in a row, steps, etc.) about 110ms apart, capped so the last one never lags.
+        var n = el.parentNode ? Array.prototype.indexOf.call(el.parentNode.children, el) : 0;
+        el.classList.add('reveal'); el.style.transitionDelay = (Math.min(n, 5) * 110) + 'ms'; io2.observe(el);
+      });
       setTimeout(function () { document.querySelectorAll('.reveal:not(.is-visible)').forEach(function (el) { el.classList.add('is-visible'); }); }, 4000);
     }
   }
