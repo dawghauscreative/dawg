@@ -77,11 +77,11 @@
         "compliance_slot"
       ],
       "settings": {
-        "gallery_assets": "lifestyle-skinbiotic-dermaboost-sunset.webp",
+        "gallery_assets": "bundle-skin-recovery-pairing.webp, lifestyle-skinbiotic-dermaboost-sunset.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-skinbiotic-dermaboost.webp",
         "angle_assets": "",
-        "media_order": "3,4,5"
+        "media_order": "99"
       }
     },
     "definition": {

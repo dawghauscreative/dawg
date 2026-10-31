@@ -84,7 +84,7 @@
         "compliance_slot"
       ],
       "settings": {
-        "gallery_assets": "lifestyle-all-three-yacht.webp",
+        "gallery_assets": "bundle-complete-explore-all-three.webp, bundle-complete-closer-look.webp, lifestyle-all-three-yacht.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-trio.webp",
         "angle_assets": "",
