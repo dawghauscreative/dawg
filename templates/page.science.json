@@ -382,7 +382,8 @@
         "show_card_images": false,
         "note": "<p>Research presented here describes studies on individual strains and ingredients, not on Skinbiotic+ as a finished product.</p>",
         "image_asset": "product-3d-skinbiotic.webp",
-        "image_alt": "Skinbiotic+"
+        "image_alt": "Skinbiotic+",
+        "feature_image": "shopify://shop_images/Alchemia_Gut_Skin_Axis_4x5_566e9564-6ffd-4837-9d7e-5115e7fbbcad.png"
       }
     },
     "derma": {
