@@ -1,5 +1,5 @@
 {%- comment -%}
-  Homepage hero slider (three slides). Order of information: science and education first, mission second, product last.
+  Homepage hero slider (up to four slides, auto-advances every 3 seconds; pauses on hover/focus and with reduced motion). Order of information: science and education first, mission second, product last.
   Each slide is a block. Slides are static content: nothing here touches the cart. Without JavaScript the first slide shows
   and the others are reachable by the dots (which become anchors).
 {%- endcomment -%}
@@ -52,13 +52,22 @@
         slides.forEach(function (s, n) { s.classList.toggle('is-active', n === i); s.setAttribute('aria-hidden', n === i ? 'false' : 'true'); });
         dots.forEach(function (d, n) { d.classList.toggle('is-active', n === i); d.setAttribute('aria-selected', n === i ? 'true' : 'false'); });
       }
-      dots.forEach(function (d, n) { d.addEventListener('click', function (e) { e.preventDefault(); show(n); }); });
+      var current = 0, timer = null, paused = false;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function go(i) { current = i; show(i); }
+      function stop() { if (timer) { clearInterval(timer); timer = null; } }
+      function start() { stop(); if (!reduce && !paused) timer = setInterval(function () { go((current + 1) % slides.length); }, 3000); }
+      dots.forEach(function (d, n) { d.addEventListener('click', function (e) { e.preventDefault(); go(n); start(); }); });
+      root.addEventListener('mouseenter', function () { paused = true; stop(); });
+      root.addEventListener('mouseleave', function () { paused = false; start(); });
+      root.addEventListener('focusin', function () { paused = true; stop(); });
+      root.addEventListener('focusout', function () { paused = false; start(); });
       root.addEventListener('keydown', function (e) {
-        var cur = slides.findIndex(function (s) { return s.classList.contains('is-active'); });
-        if (e.key === 'ArrowRight') show((cur + 1) % slides.length);
-        if (e.key === 'ArrowLeft') show((cur - 1 + slides.length) % slides.length);
+        if (e.key === 'ArrowRight') go((current + 1) % slides.length);
+        if (e.key === 'ArrowLeft') go((current - 1 + slides.length) % slides.length);
       });
-      show(0);
+      go(0);
+      start();
     })();
   </script>
 </section>

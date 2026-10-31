@@ -447,3 +447,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Used by `role-columns` (home Protect. Balance. Restore.), `product-selector` (Individual Products; a block-level `asset` still wins), `product-card` (collection/search/cross-sell) and `bundle-steps`. Bundles still use their own media.
 
 - Home slider: the key-ingredient chips (link to Science page anchors) now show on all four slides, not only slide 1.
+- Home slider auto-advances every 3 seconds; pauses on hover/focus, restarts after a dot click, and stays still for visitors with reduced-motion set.
