@@ -492,3 +492,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Bundles: pedestal shots removed as redundant ("Meet your support duo." on Sun Resilience, "Meet the Alchemia MD trio." on Tria Prima). Tria Prima is now render + yacht until its other images arrive as files.
 - Skin Recovery Duo: render, "Two formulas. One thoughtful pairing.", sunset (old Shopify slides hidden; its two pedestal ads left out as redundant). Tria Prima: render, "Explore all three formulas.", "Three formulas. A closer look.", yacht.
 - Sun Safe Duo: render, "Built for bright, active days outdoors", "Outdoor days. Everyday care.", sailboat. "Meet your daily duo." (pedestal) left out as redundant.
+- Skin Recovery Duo: Bundle Guide cards 01-05 of 07 added as is after the render (`bundle-skin-recovery-guide-0N.webp`), then "Two formulas. One thoughtful pairing.", then sunset. Cards 06-07 still to come.
