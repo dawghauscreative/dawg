@@ -72,11 +72,11 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "lifestyle-dermaboost-yacht.webp",
+        "gallery_assets": "slide-dermaboost-vitamin-d3.webp, slide-dermaboost-niacinamide.webp, slide-dermaboost-zinc.webp, lifestyle-dermaboost-yacht.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-dermaboost.webp",
         "angle_assets": "product-angle-dermaboost-front.webp, product-angle-dermaboost-back.webp, product-angle-dermaboost-facts.webp",
-        "media_order": "2,3,4"
+        "media_order": "99"
       }
     },
     "definition": {

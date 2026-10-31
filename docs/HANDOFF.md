@@ -454,3 +454,8 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Home slider: slow 6s zoom on the background image, headline/body/chips/button cascade in on each slide, ingredient chips appear one by one.
 - Card hover: front-shot image zoom on role columns, selector cards and Shop All cards; button/link nudge.
 - All of it is under `prefers-reduced-motion: no-preference` (the global reduced-motion rule also kills transitions). Buy box untouched.
+
+## Gallery images from the ad set (2026-10-31)
+- UV Shield+ lifestyle slots now use two cleaned crops of the supplied ads: `lifestyle-uvshield-hiker.webp` (mountain hiker) and `lifestyle-uvshield-coast.webp` (coastal cliff). Headline painted out of the sky and the SHOP NOW pill removed, so the gallery has no fake button or repeated copy. The rock where the button sat is a patched texture; check at full zoom. The old `lifestyle-uvshield-rocks` and `lifestyle-outdoor-living` assets are still in the theme, just unused on this page.
+- Dermaboost+ benefit slides are now theme assets: `slide-dermaboost-vitamin-d3 / niacinamide / zinc` (the "03 / 09" page numbers removed). `media_order` is set to `99` so the product's own Shopify slides (unreviewed per the Oct 9 notes) no longer show; clear the field to bring them back. Quercetin (animal/lab study only) and Longvida curcumin slides are NOT used: their studies are on the held list.
+- Not used: the remaining UV Shield+ ads (pedestal, graphic, golf, "Support for every round") are ad-only.
