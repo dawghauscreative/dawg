@@ -445,3 +445,5 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 ## Product cards use front label shots (2026-10-31)
 - New snippet `product-front-asset` maps uv-shield / skinbiotic / dermaboost to `product-angle-*-front.webp` (blank for bundles).
 - Used by `role-columns` (home Protect. Balance. Restore.), `product-selector` (Individual Products; a block-level `asset` still wins), `product-card` (collection/search/cross-sell) and `bundle-steps`. Bundles still use their own media.
+
+- Home slider: the key-ingredient chips (link to Science page anchors) now show on all four slides, not only slide 1.
