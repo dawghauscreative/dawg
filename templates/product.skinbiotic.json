@@ -308,7 +308,7 @@
         "b5": {
           "type": "card",
           "settings": {
-            "title": "People building a complete system",
+            "title": "People building a complete bundle",
             "text": "<p>You want to pair gut support with sun and antioxidant support, when it fits your routine.</p>"
           }
         }
@@ -439,7 +439,7 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "heading": "Skinbiotic+ can stand alone, or become part of a system.",
+        "heading": "Skinbiotic+ can stand alone, or become part of a bundle.",
         "best_for_label": ""
       },
       "blocks": {
@@ -525,7 +525,7 @@
           "type": "item",
           "settings": {
             "question": "Can I take Skinbiotic+ with UV Shield+ or Dermaboost+?",
-            "answer": "<p>They are formulated to be complementary and are offered together in our systems. Review each product label and consult your healthcare professional if you have questions.</p>"
+            "answer": "<p>They are formulated to be complementary and are offered together in our bundles. Review each product label and consult your healthcare professional if you have questions.</p>"
           }
         },
         "b7": {

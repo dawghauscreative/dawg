@@ -7,7 +7,7 @@
         "align": "left",
         "eyebrow": "",
         "heading": "Find the Routine That Fits You",
-        "body": "Explore dermatologist-formulated individual formulas and multi-product systems designed around distinct roles in daily skin support."
+        "body": "Explore dermatologist-formulated individual formulas and multi-product bundles designed around distinct roles in daily skin support."
       }
     },
     "featured": {
@@ -25,7 +25,7 @@
       "type": "shop-all-system-grid",
       "settings": {
         "color_scheme": "dark",
-        "heading": "More systems",
+        "heading": "More bundles",
         "subscribe_cue": "Subscribe & save available"
       },
       "blocks": {
@@ -71,7 +71,7 @@
         "color_scheme": "light",
         "eyebrow": "",
         "heading": "Start with one role",
-        "body": "Choose the formula that matches your current priority, then explore the systems that pair it with complementary support.",
+        "body": "Choose the formula that matches your current priority, then explore the bundles that pair it with complementary support.",
         "subscribe_cue": "Subscribe & save available"
       },
       "blocks": {
@@ -123,9 +123,9 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "heading": "Compare the Alchemia MD systems",
+        "heading": "Compare the Alchemia MD bundles",
         "body": "",
-        "button_label": "Explore systems",
+        "button_label": "Explore bundles",
         "button_url": "/pages/systems"
       }
     }

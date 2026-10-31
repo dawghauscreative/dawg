@@ -16,7 +16,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "text": "<p>The Balance Duo combines Skinbiotic+ and Dermaboost+ in one dermatologist-formulated daily routine.</p><p>Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection. Dermaboost+ provides broader antioxidant, nutritional, and normal immune support through vitamins, minerals, carotenoids, and botanical polyphenols.</p><p>Together, they create a two-step system designed for customers who want to support skin from the gut outward while also strengthening the broader nutritional foundation skin relies on.</p>"
+            "text": "<p>The Balance Duo combines Skinbiotic+ and Dermaboost+ in one dermatologist-formulated daily routine.</p><p>Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection. Dermaboost+ provides broader antioxidant, nutritional, and normal immune support through vitamins, minerals, carotenoids, and botanical polyphenols.</p><p>Together, they create a two-step bundle designed for customers who want to support skin from the gut outward while also strengthening the broader nutritional foundation skin relies on.</p>"
           }
         },
         "bullets": {
@@ -235,7 +235,7 @@
         "heading": "Different starting points. Complementary support.",
         "columns": "3",
         "show_images": false,
-        "body": "<p>Skinbiotic+ begins with the intestinal environment. Dermaboost+ adds broader nutritional and antioxidant support. Together, the system is designed around a simple idea:</p>"
+        "body": "<p>Skinbiotic+ begins with the intestinal environment. Dermaboost+ adds broader nutritional and antioxidant support. Together, the bundle is designed around a simple idea:</p>"
       },
       "blocks": {
         "b1": {
@@ -275,7 +275,7 @@
         "eyebrow": "",
         "heading": "The microbiome does more than digest food.",
         "heading_tag": "h2",
-        "body": "<p>Intestinal microorganisms interact with the body through:</p><ul><li>Metabolites</li><li>Barrier signaling</li><li>Nutrient processing</li><li>Immune communication</li></ul><p>Skinbiotic+ supports the microbial environment through prebiotic fiber and multiple probiotic organisms. Dermaboost+ contributes nutrients associated with normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating an immune-mediated skin condition.</em></p><h3>Broader support beyond the microbiome.</h3><p>Dermaboost+ expands the system beyond gut support through a combination of:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.</p>"
+        "body": "<p>Intestinal microorganisms interact with the body through:</p><ul><li>Metabolites</li><li>Barrier signaling</li><li>Nutrient processing</li><li>Immune communication</li></ul><p>Skinbiotic+ supports the microbial environment through prebiotic fiber and multiple probiotic organisms. Dermaboost+ contributes nutrients associated with normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating an immune-mediated skin condition.</em></p><h3>Broader support beyond the microbiome.</h3><p>Dermaboost+ expands the bundle beyond gut support through a combination of:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.</p>"
       }
     },
     "formula": {
@@ -316,7 +316,7 @@
         "color_scheme": "green",
         "eyebrow": "",
         "heading": "Balance Duo is not the same as Outdoor Duo.",
-        "center": "Choose Balance Duo when environmental exposure is not the main reason you are building the system."
+        "center": "Choose Balance Duo when environmental exposure is not the main reason you are building the bundle."
       },
       "blocks": {
         "b1": {
@@ -501,9 +501,9 @@
         "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "The Balance Duo does not claim to:",
-        "not_items": "Treat acne\nTreat eczema\nTreat psoriasis\nTreat rosacea\nTreat autoimmune disease\nEliminate inflammation\nCure gut problems\nGuarantee clearer skin\nGuarantee visible results\nProve the finished two-product system has been clinically tested\nReplace medical care",
+        "not_items": "Treat acne\nTreat eczema\nTreat psoriasis\nTreat rosacea\nTreat autoimmune disease\nEliminate inflammation\nCure gut problems\nGuarantee clearer skin\nGuarantee visible results\nProve the finished two-product bundle has been clinically tested\nReplace medical care",
         "does_heading": "What it is",
-        "does_text": "<p>A dermatologist-formulated two-product system designed to support the gut-skin connection together with broader antioxidant, nutritional, and normal immune pathways.</p>"
+        "does_text": "<p>A dermatologist-formulated two-product bundle designed to support the gut-skin connection together with broader antioxidant, nutritional, and normal immune pathways.</p>"
       }
     },
     "compare": {
@@ -515,7 +515,7 @@
         "col_1": "Roles",
         "col_2": "Includes",
         "col_3": "Best fit",
-        "button_label": "Compare all systems",
+        "button_label": "Compare all bundles",
         "button_url": "/pages/systems"
       },
       "blocks": {
@@ -643,13 +643,13 @@
           "type": "item",
           "settings": {
             "question": "Is this a treatment for inflammatory skin conditions?",
-            "answer": "<p>No. The system is not intended to diagnose, treat, cure, or prevent any disease or medical skin condition.</p>"
+            "answer": "<p>No. The bundle is not intended to diagnose, treat, cure, or prevent any disease or medical skin condition.</p>"
           }
         },
         "b5": {
           "type": "item",
           "settings": {
-            "question": "How do I take the system?",
+            "question": "How do I take the bundle?",
             "answer": "<p>Follow each product label. Skinbiotic+: Take one (1) capsule daily with water. Dermaboost+: Take two (2) capsules once daily with water.</p>"
           }
         },

@@ -213,7 +213,7 @@
         "eyebrow": "",
         "heading": "Outdoor life creates more than one type of stress.",
         "heading_tag": "h2",
-        "body": "<p>Environmental exposure can contribute to oxidative stress in skin. The body responds through multiple antioxidant systems, which is why the Sun Resilience Duo uses chemically different ingredients rather than relying on one antioxidant.</p><p>Across both formulas, the system includes:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Resveratrol</li><li>Spirulina</li><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Zinc</li></ul><p><em>Antioxidant support does not mean blocking UV radiation or replacing sunscreen.</em></p><h3>Not all antioxidants work the same way.</h3><p>A polyphenol is not the same as a vitamin. A carotenoid is not the same as a mineral. Different compounds have different chemical structures, cellular locations, and biological roles. That is the formulation rationale behind Sun Resilience Duo.</p><p><strong>UV Shield+</strong> leans heavily on botanical polyphenols and environmental-stress support.</p><p><strong>Dermaboost+</strong> adds vitamins, minerals, carotenoids, and broader botanical support.</p>",
+        "body": "<p>Environmental exposure can contribute to oxidative stress in skin. The body responds through multiple antioxidant systems, which is why the Sun Resilience Duo uses chemically different ingredients rather than relying on one antioxidant.</p><p>Across both formulas, the bundle includes:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Resveratrol</li><li>Spirulina</li><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Zinc</li></ul><p><em>Antioxidant support does not mean blocking UV radiation or replacing sunscreen.</em></p><h3>Not all antioxidants work the same way.</h3><p>A polyphenol is not the same as a vitamin. A carotenoid is not the same as a mineral. Different compounds have different chemical structures, cellular locations, and biological roles. That is the formulation rationale behind Sun Resilience Duo.</p><p><strong>UV Shield+</strong> leans heavily on botanical polyphenols and environmental-stress support.</p><p><strong>Dermaboost+</strong> adds vitamins, minerals, carotenoids, and broader botanical support.</p>",
         "quote": "Complementary does not mean identical."
       }
     },
@@ -400,7 +400,7 @@
           "type": "card",
           "settings": {
             "title": "Daily skin resilience†",
-            "text": "<p>The system brings these pathways into one repeatable routine.</p>"
+            "text": "<p>The bundle brings these pathways into one repeatable routine.</p>"
           }
         }
       },
@@ -469,9 +469,9 @@
         "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "The Sun Resilience Duo does not claim to:",
-        "not_items": "Replace sunscreen\nPrevent sunburn\nPrevent skin cancer\nMake unlimited sun exposure safe\nReverse sun damage\nEliminate inflammation\nTreat autoimmune skin disease\nRepair every form of skin damage\nReverse aging\nGuarantee visible results\nProve the finished two-product system has been clinically tested",
+        "not_items": "Replace sunscreen\nPrevent sunburn\nPrevent skin cancer\nMake unlimited sun exposure safe\nReverse sun damage\nEliminate inflammation\nTreat autoimmune skin disease\nRepair every form of skin damage\nReverse aging\nGuarantee visible results\nProve the finished two-product bundle has been clinically tested",
         "does_heading": "What it is",
-        "does_text": "<p>A dermatologist-formulated two-product system designed around complementary environmental, antioxidant, nutritional, and normal immune-support pathways.</p>"
+        "does_text": "<p>A dermatologist-formulated two-product bundle designed around complementary environmental, antioxidant, nutritional, and normal immune-support pathways.</p>"
       }
     },
     "sunscreen": {
@@ -493,7 +493,7 @@
         "col_1": "Roles",
         "col_2": "Includes",
         "col_3": "Best fit",
-        "button_label": "Compare all systems",
+        "button_label": "Compare all bundles",
         "button_url": "/pages/systems"
       },
       "blocks": {
@@ -628,7 +628,7 @@
           "type": "item",
           "settings": {
             "question": "Does Sun Resilience Duo replace sunscreen?",
-            "answer": "<p>No. The system should always be used alongside normal sunscreen and sun-safety practices.</p>"
+            "answer": "<p>No. The bundle should always be used alongside normal sunscreen and sun-safety practices.</p>"
           }
         },
         "b6": {
@@ -641,7 +641,7 @@
         "b7": {
           "type": "item",
           "settings": {
-            "question": "How do I take the system?",
+            "question": "How do I take the bundle?",
             "answer": "<p>Follow each product label. UV Shield+: Take two (2) capsules once daily with water. For enhanced support, take two (2) capsules twice daily with water. Dermaboost+: Take two (2) capsules once daily with water.</p>"
           }
         },
@@ -694,7 +694,7 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Broader internal support for life outdoors.",
-        "body": "<p>UV Shield+ and Dermaboost+ combine targeted environmental support with broader antioxidant, nutritional, and normal immune support in one dermatologist-formulated system.</p>",
+        "body": "<p>UV Shield+ and Dermaboost+ combine targeted environmental support with broader antioxidant, nutritional, and normal immune support in one dermatologist-formulated bundle.</p>",
         "button_label": "Choose your plan",
         "button_url": "#buy-box",
         "secondary_label": "Explore the science",

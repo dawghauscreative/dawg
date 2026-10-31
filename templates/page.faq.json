@@ -60,15 +60,15 @@
         "q1": {
           "type": "item",
           "settings": {
-            "question": "What is the difference between an individual product and a system?",
-            "answer": "<p>An individual product is a single formula. A system combines complementary formulas into one daily routine, so you can start with what you need and add to it over time.</p>"
+            "question": "What is the difference between an individual product and a bundle?",
+            "answer": "<p>An individual product is a single formula. A bundle combines complementary formulas into one daily routine, so you can start with what you need and add to it over time.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "Can I start with just one product?",
-            "answer": "<p>Yes. Each formula has its own role and you can start with one. The systems are for people who want a combined routine, and Tria Prima is the most comprehensive option.</p>"
+            "answer": "<p>Yes. Each formula has its own role and you can start with one. The bundles are for people who want a combined routine, and Tria Prima is the most comprehensive option.</p>"
           }
         },
         "q3": {
@@ -87,7 +87,7 @@
       "settings": {
         "color_scheme": "green",
         "eyebrow": "",
-        "heading": "Systems",
+        "heading": "Bundles",
         "heading_tag": "h2",
         "show_renewal_faq": false
       }

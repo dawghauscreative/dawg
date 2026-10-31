@@ -8,7 +8,7 @@
         "s1": {
           "type": "link",
           "settings": {
-            "label": "Systems",
+            "label": "Bundles",
             "url": "/pages/systems",
             "column": "shop"
           }

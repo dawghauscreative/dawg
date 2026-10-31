@@ -8,10 +8,10 @@
         "eyebrow": "",
         "heading": "Three targeted ways to support skin from within.",
         "heading_tag": "h1",
-        "body": "<p>Alchemia MD’s individual formulas are designed around three distinct roles in skin health:</p><p><strong>Protect. Balance. Restore.</strong></p><p>Choose the formula that best matches your current routine, or explore the systems if you want complementary support across more than one area.</p>",
+        "body": "<p>Alchemia MD’s individual formulas are designed around three distinct roles in skin health:</p><p><strong>Protect. Balance. Restore.</strong></p><p>Choose the formula that best matches your current routine, or explore the bundles if you want complementary support across more than one area.</p>",
         "primary_label": "Find your formula ↓",
         "primary_url": "#choose",
-        "secondary_label": "Explore the systems",
+        "secondary_label": "Explore the bundles",
         "secondary_url": "/pages/systems",
         "asset": "individual-three-formulas.webp",
         "ratio": "16x9",
@@ -173,7 +173,7 @@
         "b6": {
           "type": "row",
           "settings": {
-            "label": "Used in systems",
+            "label": "Used in bundles",
             "a": "Outdoor Duo, Sun Resilience Duo, Complete",
             "b": "Outdoor Duo, Balance Duo, Complete",
             "c": "Balance Duo, Sun Resilience Duo, Complete"
@@ -238,7 +238,7 @@
         "eyebrow": "",
         "heading": "Not sure where to start?",
         "line": "Want support across more than one area?",
-        "button_label": "Explore the systems",
+        "button_label": "Explore the bundles",
         "button_url": "/pages/systems"
       },
       "blocks": {
@@ -278,9 +278,9 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "heading": "Build a system instead.",
+        "heading": "Build a bundle instead.",
         "best_for_label": "",
-        "button_label": "Explore all systems",
+        "button_label": "Explore all bundles",
         "button_url": "/pages/systems"
       },
       "blocks": {
@@ -394,7 +394,7 @@
           "type": "item",
           "settings": {
             "question": "Do I need every formula?",
-            "answer": "<p>No. Each formula is designed to stand on its own. Systems combine formulas for customers who want support across multiple areas.</p>"
+            "answer": "<p>No. Each formula is designed to stand on its own. Bundles combine formulas for customers who want support across multiple areas.</p>"
           }
         },
         "b3": {
@@ -421,8 +421,8 @@
         "b6": {
           "type": "item",
           "settings": {
-            "question": "Can I switch from a single product to a system later?",
-            "answer": "<p>Yes. The individual formulas are the foundation of the Alchemia MD systems.</p>"
+            "question": "Can I switch from a single product to a bundle later?",
+            "answer": "<p>Yes. The individual formulas are the foundation of the Alchemia MD bundles.</p>"
           }
         }
       },
@@ -452,7 +452,7 @@
         "body": "<p>Three dermatologist-formulated ways to support skin from within.</p>",
         "button_label": "Choose your formula",
         "button_url": "#choose",
-        "secondary_label": "Explore the systems",
+        "secondary_label": "Explore the bundles",
         "secondary_url": "/pages/systems"
       }
     }

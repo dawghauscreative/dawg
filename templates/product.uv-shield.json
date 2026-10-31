@@ -308,7 +308,7 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "heading": "UV Shield+ can stand alone, or become part of a system.",
+        "heading": "UV Shield+ can stand alone, or become part of a bundle.",
         "best_for_label": ""
       },
       "blocks": {
@@ -399,7 +399,7 @@
         "b7": {
           "type": "item",
           "settings": {
-            "question": "Is UV Shield+ part of a system?",
+            "question": "Is UV Shield+ part of a bundle?",
             "answer": "<p>Yes. UV Shield+ is included in the Outdoor Duo and Sun Resilience Duo, while also being available as an individual formula.</p>"
           }
         }

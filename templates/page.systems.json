@@ -8,8 +8,8 @@
         "eyebrow": "",
         "heading": "Build the routine that fits your skin.",
         "heading_tag": "h1",
-        "body": "<p>Alchemia MD systems combine complementary formulas into simple daily routines built around three roles:</p><p><strong>Protect. Balance. Restore.</strong></p><p>Choose two targeted areas of support, or move into the complete three-step routine once you know you want all three.</p>",
-        "primary_label": "Find your system ↓",
+        "body": "<p>Alchemia MD bundles combine complementary formulas into simple daily routines built around three roles:</p><p><strong>Protect. Balance. Restore.</strong></p><p>Choose two targeted areas of support, or move into the complete three-step routine once you know you want all three.</p>",
+        "primary_label": "Find your bundle ↓",
         "primary_url": "#choose",
         "secondary_label": "Explore individual products",
         "secondary_url": "/collections/individual-products",
@@ -64,12 +64,12 @@
       "settings": {
         "color_scheme": "green",
         "eyebrow": "",
-        "heading": "Choose your system",
+        "heading": "Choose your bundle",
         "card_columns": "2",
         "media_ratio": "16x9",
         "show_tagline": false,
         "plan_heading": "Choose your plan",
-        "empty_text": "Select a system above to view purchase options."
+        "empty_text": "Select a bundle above to view purchase options."
       },
       "blocks": {
         "b1": {
@@ -127,7 +127,7 @@
             "role": "Protect + Balance + Restore",
             "includes": "UV Shield+ + Skinbiotic+ + Dermaboost+",
             "asset": "system-complete.webp",
-            "description": "The most complete Alchemia MD routine for customers who already understand the three roles and want all three areas of support integrated into one daily system.",
+            "description": "The most complete Alchemia MD routine for customers who already understand the three roles and want all three areas of support integrated into one daily bundle.",
             "support_areas": "Environmental support\nGut-skin balance\nAntioxidant support\nNormal immune support\nDaily skin resilience",
             "best_for": "Existing Alchemia MD customers\nCustomers who want all three support roles\nCustomers already committed to a comprehensive supplement routine",
             "choose_label": "Choose Tria Prima",
@@ -149,7 +149,7 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "heading": "Which system fits your routine?",
+        "heading": "Which bundle fits your routine?",
         "col_1": "Roles",
         "col_2": "Includes",
         "col_3": "Primary focus"
@@ -255,7 +255,7 @@
         "asset": "system-complete.webp",
         "ratio": "16x9",
         "light_panel": true,
-        "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+ + Dermaboost+</p><h3>What the system covers</h3><p><strong>Protect</strong> Environmental and antioxidant support.</p><p><strong>Balance</strong> Gut-skin and microbiome support.</p><p><strong>Restore</strong> Nutritional, antioxidant, and normal immune support.</p><h3>Why combine all three?</h3><p>The three formulas are organized across three broad domains, each with a primary role and some complementary overlap:</p><ul><li>Environmental and UV stress</li><li>The gut microbial environment</li><li>Systemic oxidative and immune-related pathways</li></ul><h3>Important positioning</h3><p>This is not the universal starting point. It is the most comprehensive routine for customers who already know they want support across all three Alchemia MD roles.</p>",
+        "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+ + Dermaboost+</p><h3>What the bundle covers</h3><p><strong>Protect</strong> Environmental and antioxidant support.</p><p><strong>Balance</strong> Gut-skin and microbiome support.</p><p><strong>Restore</strong> Nutritional, antioxidant, and normal immune support.</p><h3>Why combine all three?</h3><p>The three formulas are organized across three broad domains, each with a primary role and some complementary overlap:</p><ul><li>Environmental and UV stress</li><li>The gut microbial environment</li><li>Systemic oxidative and immune-related pathways</li></ul><h3>Important positioning</h3><p>This is not the universal starting point. It is the most comprehensive routine for customers who already know they want support across all three Alchemia MD roles.</p>",
         "primary_label": "Explore Tria Prima"
       }
     },
@@ -265,7 +265,7 @@
         "color_scheme": "green",
         "columns": "2",
         "eyebrow": "",
-        "heading": "Not sure which system to choose?"
+        "heading": "Not sure which bundle to choose?"
       },
       "blocks": {
         "b1": {
@@ -315,9 +315,9 @@
         "align": "left",
         "width": "wide",
         "eyebrow": "",
-        "heading": "Systems are about complementary roles, not more bottles.",
+        "heading": "Bundles are about complementary roles, not more bottles.",
         "heading_tag": "h2",
-        "body": "<p>The point of an Alchemia MD system is not to take the largest number of products. It is to combine formulas when their primary roles support different parts of the same broader skin-health routine.</p><p><strong>Protect</strong> Environmental support.</p><p><strong>Balance</strong> Gut-skin support.</p><p><strong>Restore</strong> Nutritional and immune support.</p>",
+        "body": "<p>The point of an Alchemia MD bundle is not to take the largest number of products. It is to combine formulas when their primary roles support different parts of the same broader skin-health routine.</p><p><strong>Protect</strong> Environmental support.</p><p><strong>Balance</strong> Gut-skin support.</p><p><strong>Restore</strong> Nutritional and immune support.</p>",
         "quote": "More is not automatically better. More intentional is better."
       }
     },
@@ -326,7 +326,7 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "heading": "A system is still a daily routine.",
+        "heading": "A bundle is still a daily routine.",
         "body": "<p>Each product is taken according to its own label directions.</p>"
       },
       "blocks": {
@@ -421,21 +421,21 @@
         "b1": {
           "type": "item",
           "settings": {
-            "question": "What is an Alchemia MD system?",
-            "answer": "<p>An Alchemia MD system combines two or more individual formulas with complementary roles in a single routine.</p>"
+            "question": "What is an Alchemia MD bundle?",
+            "answer": "<p>An Alchemia MD bundle combines two or more individual formulas with complementary roles in a single routine.</p>"
           }
         },
         "b2": {
           "type": "item",
           "settings": {
-            "question": "Do I need a system?",
-            "answer": "<p>No. Each individual formula can be used on its own. Systems are for customers who want support across more than one area.</p>"
+            "question": "Do I need a bundle?",
+            "answer": "<p>No. Each individual formula can be used on its own. Bundles are for customers who want support across more than one area.</p>"
           }
         },
         "b3": {
           "type": "item",
           "settings": {
-            "question": "Which system should I start with?",
+            "question": "Which bundle should I start with?",
             "answer": "<p>Choose based on your priorities: Outdoor Duo (Protect + Balance), Balance Duo (Balance + Restore), Sun Resilience Duo (Protect + Restore), or Tria Prima (Protect + Balance + Restore).</p>"
           }
         },
@@ -449,15 +449,15 @@
         "b5": {
           "type": "item",
           "settings": {
-            "question": "Can I subscribe to a system?",
-            "answer": "<p>Yes. Choose a system on this page, then choose your plan to see the current subscription and one-time options.</p>"
+            "question": "Can I subscribe to a bundle?",
+            "answer": "<p>Yes. Choose a bundle on this page, then choose your plan to see the current subscription and one-time options.</p>"
           }
         },
         "b6": {
           "type": "item",
           "settings": {
-            "question": "Can I switch systems later?",
-            "answer": "<p>Yes. The systems are built from the same three foundational formulas, so you can move between routines as your preferences change.</p>"
+            "question": "Can I switch bundles later?",
+            "answer": "<p>Yes. The bundles are built from the same three foundational formulas, so you can move between routines as your preferences change.</p>"
           }
         }
       },
@@ -483,9 +483,9 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "heading": "Build the system that fits your routine.",
+        "heading": "Build the bundle that fits your routine.",
         "body": "<p>Choose the combination of dermatologist-formulated support that matches your priorities.</p>",
-        "button_label": "Choose your system",
+        "button_label": "Choose your bundle",
         "button_url": "#choose",
         "secondary_label": "Shop individual products",
         "secondary_url": "/collections/individual-products"

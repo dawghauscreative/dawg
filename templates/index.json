@@ -257,7 +257,7 @@
         "color_scheme": "green",
         "eyebrow": "",
         "heading": "Protect. Balance. Restore.",
-        "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.</p><p>Each formula can stand on its own. The systems combine them when complementary support makes sense.</p>"
+        "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.</p><p>Each formula can stand on its own. The bundles combine them when complementary support makes sense.</p>"
       }
     },
     "featured": {
@@ -273,7 +273,7 @@
         "product": "sun-safe-system",
         "primary_label": "Explore the Outdoor Duo",
         "primary_url": "",
-        "secondary_label": "See all systems",
+        "secondary_label": "See all bundles",
         "secondary_url": "/pages/systems",
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
@@ -360,7 +360,7 @@
       "settings": {
         "color_scheme": "light",
         "eyebrow": "",
-        "heading": "Find the system that fits your goals.",
+        "heading": "Find the bundle that fits your goals.",
         "body": "",
         "button_label": "",
         "button_url": "",
