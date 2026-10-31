@@ -198,7 +198,7 @@ p { margin: 0; }
 @media (min-width: 990px) { .pdp__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 72px; align-items: start; } .pdp__info { position: sticky; top: calc(var(--header-h) + 24px); } }
 .pdp__gallery { display: grid; gap: 12px; }
 .pdp__thumbs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
-.pdp__thumbs button { padding: 0; border: 1px solid transparent; background: none; cursor: pointer; aspect-ratio: 1; overflow: hidden; }
+.pdp__thumbs button { padding: 0; border: 1px solid transparent; background: none; cursor: pointer; aspect-ratio: 4 / 5; overflow: hidden; }
 .pdp__thumbs button[aria-current="true"] { border-color: var(--c-gold); }
 .pdp__thumbs img { width: 100%; height: 100%; object-fit: cover; }
 .pdp__extras--side { display: none; }

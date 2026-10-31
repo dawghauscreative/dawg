@@ -79,9 +79,9 @@
       "settings": {
         "gallery_assets": "lifestyle-uvshield-hiker.webp, lifestyle-uvshield-coast.webp",
         "color_scheme": "green",
-        "lead_asset": "product-3d-uv-shield.webp",
+        "lead_asset": "product-3d-uv-shield-portrait.webp",
         "angle_assets": "product-angle-uv-shield-front.webp, product-angle-uv-shield-back.webp, product-angle-uv-shield-facts.webp",
-        "media_order": "2,3,4"
+        "media_order": "2,4"
       }
     },
     "definition": {
