@@ -1147,3 +1147,9 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
   .home-slide--bg .home-slide__grid { padding-top: 18px; }
   .home-slide--bg .home-slide__copy h1, .home-slide--bg .home-slide__copy .home-slide__h { font-size: clamp(2.1rem, 9vw, 2.7rem); }
 }
+
+/* Very wide screens (or zoomed out): keep the header row, hero slider and trust strip inside 1920px
+   so the logo, headline and jars stay where they are on a normal desktop instead of drifting apart. */
+.site-header__inner.container { max-width: 1920px; }
+.home-slider, .trust-strip { max-width: 1920px; margin-inline: auto; }
+@media (min-width: 1921px) { .home-slider { border-inline: 1px solid color-mix(in srgb, var(--c-gold) 18%, transparent); } }

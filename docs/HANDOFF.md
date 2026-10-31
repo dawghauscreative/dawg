@@ -512,3 +512,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Home slider on phones: ingredient chips hidden (desktop keeps them). All slides now share one grid cell, so the slider holds the tallest slide's height and the page no longer jumps on each 3-second advance.
 - Home: on phones the key-ingredient chips now sit under the trust strip (trust-bar setting 'key_ingredients', phones only); they stay in the slider on desktop.
 - Home slider on phones: the header picture now sits on top (16:11, right-aligned so all jars show) with the headline, copy and button below it on black, instead of text laid over the jars. Desktop unchanged.
+- Wide screens / zoomed out: header row, home slider and trust strip are capped at 1920px and centred (were full-bleed, so on very wide viewports the logo sat at the far left, the hero image cropped into the jars and the headline drifted right). No change at 1920px and below.
