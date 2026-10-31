@@ -72,9 +72,9 @@
       "settings": {
         "color_scheme": "green",
         "lead_asset": "product-3d-skinbiotic-portrait.webp",
-        "gallery_assets": "lifestyle-skinbiotic-cliffs.webp",
+        "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_01_Organic_inulin_4x5_c2eef458-40e5-4333-833e-a591d8364573.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_02_Lactobacillus_plantarum_4x5_b0df6284-9876-4ddf-8301-61d8aee491fc.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_06_Akkermansia_muciniphila_4x5_060fde1c-8f72-40e0-98c0-a82eea224ba6.png, lifestyle-skinbiotic-cliffs.webp",
         "angle_assets": "product-angle-skinbiotic-front.webp, product-angle-skinbiotic-back.webp, product-angle-skinbiotic-facts.webp",
-        "media_order": "9,10,11"
+        "media_order": "99"
       }
     },
     "definition": {
