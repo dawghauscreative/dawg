@@ -1137,3 +1137,13 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
   .scheme-dark .trust-ingredients, .scheme-green .trust-ingredients { background: color-mix(in srgb, var(--c-gold) 6%, var(--bg)); }
   .trust-ingredients .key-ingredients { margin-top: 0; }
 }
+
+/* Home slider on phones: picture on top, copy underneath, so the text never covers the jars */
+@media (max-width: 749px) {
+  .home-slide--bg { flex-direction: column; align-items: stretch; justify-content: flex-start; min-height: 0; padding-block: 0 64px; }
+  .home-slide--bg .home-slide__bg { position: relative; inset: auto; aspect-ratio: 16 / 11; flex: none; }
+  .home-slide--bg .home-slide__bg img { object-position: 100% 55%; }
+  .home-slide--bg .home-slide__bg::after { background: linear-gradient(180deg, rgba(10,10,10,0) 55%, var(--c-black) 100%); }
+  .home-slide--bg .home-slide__grid { padding-top: 18px; }
+  .home-slide--bg .home-slide__copy h1, .home-slide--bg .home-slide__copy .home-slide__h { font-size: clamp(2.1rem, 9vw, 2.7rem); }
+}
