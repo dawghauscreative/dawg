@@ -419,3 +419,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Dermaboost+ gallery: added front/back/supplement-facts product shots (product-angle-dermaboost-*.webp, padded to 4:5) after the 3D render. Skinbiotic+ shots still to be added.
 - Outdoor Duo and Sun Resilience Duo now lead with a render built from the supplied two-jar studio shots, composited on the same tan/evergreen block background as the other renders.
 - UV Shield+: removed 'Internal support is one layer' and 'Why these ingredients?' (Heather's X). Science card titles set in Roboto small caps. Other product pages keep their 'Keep the sunscreen' sections.
+- UV Shield+ gallery: added front/back/supplement-facts shots (product-angle-uv-shield-*.webp).

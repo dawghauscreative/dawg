@@ -77,7 +77,7 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "slide-d01-1.webp,slide-d02-1.webp,slide-d03-1.webp,slide-d04-1.webp,slide-d05-1.webp",
+        "gallery_assets": "product-angle-uv-shield-front.webp, product-angle-uv-shield-back.webp, product-angle-uv-shield-facts.webp, slide-d01-1.webp,slide-d02-1.webp,slide-d03-1.webp,slide-d04-1.webp,slide-d05-1.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-uv-shield.webp"
       }
