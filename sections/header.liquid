@@ -6,6 +6,7 @@
   assign shop_all_url = shop_all.url | default: routes.all_products_collection_url
 -%}
 
+{%- comment -%} Primary nav: Science is a dropdown that also holds the Skin Edu topics. {%- endcomment -%}
 <header class="site-header" {{ section.shopify_attributes }}>
   <div class="container site-header__inner">
     <button class="icon-btn menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="MenuDrawer" aria-label="{{ 'general.menu' | t }}">
