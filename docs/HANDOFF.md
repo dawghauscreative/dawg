@@ -437,3 +437,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Everything done after the owner pasted Stef's walkthrough transcript (home rebuild, home slider section, 'Duos' label rename in menu/footer/page title) was reverted at the owner's request. Theme is back to commit 5c01751 for those files.
 - Home hero is now a 3-slide slider using the supplied hero banners (hero-banner-1/2/3): science (with key-ingredient chips), Skin Edu, and shop. Rest of the home page unchanged. Section: sections/home-slider.liquid.
 - Home slider: four slides. Slide 1 is the original gold-halo banner (science), then the newer headers: green glass (Skin Edu), black wet leaves (research), sunset cliffs (shop). The sunset-water header was dropped as a near-duplicate.
+- Bundle renders (Outdoor Duo, Sun Resilience Duo, Balance Duo, Tria Prima) re-made as 4:5 portraits so they fit the gallery frame without cropping.
