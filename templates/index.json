@@ -134,8 +134,8 @@
         "supr_bundles_subscriptions_product_block_KfATzW"
       ],
       "settings": {
-        "product": "uv-shield",
-        "asset": "product-3d-uv-shield-portrait.webp",
+        "product": "sun-safe-system",
+        "asset": "",
         "heading": "Start here",
         "text": "<p>Two capsules a day, with water. Choose a subscription or a one-time order.</p>",
         "details_label": "See full details",
@@ -153,7 +153,7 @@
         "eyebrow": "",
         "heading": "Skin health is more than a surface routine.",
         "heading_tag": "h2",
-        "body": "<p>Skin is a living, dynamic system.</p><p>It responds to what happens outside the body, but also to nutrition, oxidative stress, immune signaling, the microbiome, and daily lifestyle.</p><p>Alchemia MD was built around a simple idea:</p><p><strong>Support skin from the inside out.</strong></p>",
+        "body": "<h4>Skin is a living, dynamic system.</h4><h4>It responds to what happens outside the body, but also to nutrition, oxidative stress, immune signaling, the microbiome, and daily lifestyle.</h4><h4>Alchemia MD was built around a simple idea:</h4><h4><strong>Support skin from the inside out.</strong></h4>",
         "quote": "",
         "button_label": "What is internal skin defense?",
         "button_url": "/blogs/skin-edu/what-is-internal-skin-defense-alchemia-md"
@@ -809,7 +809,6 @@
     },
     "final": {
       "type": "final-cta",
-      "disabled": true,
       "settings": {
         "color_scheme": "dark",
         "product": "sun-safe-system",
