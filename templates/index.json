@@ -279,7 +279,8 @@
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
         "light_panel": true
-      }
+      },
+      "disabled": true
     },
     "video": {
       "type": "video-slot",
@@ -564,7 +565,8 @@
         "note": "",
         "button_label": "Explore the Science",
         "button_url": "/pages/science"
-      }
+      },
+      "disabled": true
     },
     "research": {
       "type": "science-spotlight",
@@ -703,7 +705,8 @@
         "note": "",
         "button_label": "",
         "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "education": {
       "type": "education-grid",
@@ -764,7 +767,8 @@
         "quote": "",
         "button_label": "Learn about our mission",
         "button_url": "/pages/founder"
-      }
+      },
+      "disabled": true
     },
     "email": {
       "type": "email-capture",
