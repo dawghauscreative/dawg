@@ -798,7 +798,8 @@
         "note": "",
         "asset": "system-sun-safe.webp",
         "light_panel": true
-      }
+      },
+      "disabled": true
     },
     "buy_box": {
       "type": "featured-buy-box",
@@ -816,11 +817,11 @@
   "order": [
     "hero",
     "trust_strip",
+    "buy_box",
     "category",
     "intro_video",
     "problem",
     "roles",
-    "buy_box",
     "featured",
     "video",
     "finder",
