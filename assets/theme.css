@@ -1170,3 +1170,12 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 /* Same pill on the other pages (desktop only); links to Shop All */
 .plan-cta { display: none; }
 @media (min-width: 990px) { .plan-cta { display: flex; } }
+
+/* Home: featured product buy box */
+.home-buy__grid { display: grid; gap: 40px; align-items: center; }
+@media (min-width: 990px) { .home-buy__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 72px; } }
+.home-buy__media { max-width: 520px; width: 100%; margin-inline: auto; }
+.home-buy__info > * + * { margin-top: 1.25rem; }
+.home-buy__kicker { font-family: var(--font-callout); font-size: .78rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--c-gold); }
+.home-buy .pdp__title a { color: inherit; text-decoration: none; }
+.home-buy__more { margin-top: 1rem; }

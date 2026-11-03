@@ -795,6 +795,18 @@
         "asset": "system-sun-safe.webp",
         "light_panel": true
       }
+    },
+    "buy_box": {
+      "type": "featured-buy-box",
+      "settings": {
+        "product": "uv-shield",
+        "asset": "product-3d-uv-shield-portrait.webp",
+        "heading": "Start here",
+        "text": "<p>Two capsules a day, with water. Choose a subscription or a one-time order.</p>",
+        "details_label": "See full details",
+        "allow_plain_add": false,
+        "color_scheme": "green"
+      }
     }
   },
   "order": [
@@ -804,6 +816,7 @@
     "intro_video",
     "problem",
     "roles",
+    "buy_box",
     "featured",
     "video",
     "finder",
