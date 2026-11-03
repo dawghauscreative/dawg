@@ -82,7 +82,8 @@
         "s2",
         "s3",
         "s4"
-      ]
+      ],
+      "settings": {}
     },
     "trust_strip": {
       "type": "trust-bar",
@@ -117,6 +118,29 @@
       "settings": {
         "color_scheme": "dark",
         "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin"
+      }
+    },
+    "buy_box": {
+      "type": "featured-buy-box",
+      "blocks": {
+        "supr_bundles_subscriptions_product_block_KfATzW": {
+          "type": "shopify://apps/supr-bundles-subscriptions/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
+          "settings": {
+            "product": "{{section.settings.product}}"
+          }
+        }
+      },
+      "block_order": [
+        "supr_bundles_subscriptions_product_block_KfATzW"
+      ],
+      "settings": {
+        "product": "uv-shield",
+        "asset": "product-3d-uv-shield-portrait.webp",
+        "heading": "Start here",
+        "text": "<p>Two capsules a day, with water. Choose a subscription or a one-time order.</p>",
+        "details_label": "See full details",
+        "allow_plain_add": false,
+        "color_scheme": "green"
       }
     },
     "category": {
@@ -263,6 +287,7 @@
     },
     "featured": {
       "type": "feature-split",
+      "disabled": true,
       "settings": {
         "color_scheme": "dark",
         "image_side": "right",
@@ -279,8 +304,7 @@
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
         "light_panel": true
-      },
-      "disabled": true
+      }
     },
     "video": {
       "type": "video-slot",
@@ -554,6 +578,7 @@
         "b3",
         "b4"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "green",
         "anchor": "",
@@ -565,8 +590,7 @@
         "note": "",
         "button_label": "Explore the Science",
         "button_url": "/pages/science"
-      },
-      "disabled": true
+      }
     },
     "research": {
       "type": "science-spotlight",
@@ -694,6 +718,7 @@
         "b3",
         "b4"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "light",
         "anchor": "",
@@ -705,8 +730,7 @@
         "note": "",
         "button_label": "",
         "button_url": ""
-      },
-      "disabled": true
+      }
     },
     "education": {
       "type": "education-grid",
@@ -755,6 +779,7 @@
     },
     "mission": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "color_scheme": "band",
         "align": "center",
@@ -767,8 +792,7 @@
         "quote": "",
         "button_label": "Learn about our mission",
         "button_url": "/pages/founder"
-      },
-      "disabled": true
+      }
     },
     "email": {
       "type": "email-capture",
@@ -785,6 +809,7 @@
     },
     "final": {
       "type": "final-cta",
+      "disabled": true,
       "settings": {
         "color_scheme": "dark",
         "product": "sun-safe-system",
@@ -798,19 +823,6 @@
         "note": "",
         "asset": "system-sun-safe.webp",
         "light_panel": true
-      },
-      "disabled": true
-    },
-    "buy_box": {
-      "type": "featured-buy-box",
-      "settings": {
-        "product": "uv-shield",
-        "asset": "product-3d-uv-shield-portrait.webp",
-        "heading": "Start here",
-        "text": "<p>Two capsules a day, with water. Choose a subscription or a one-time order.</p>",
-        "details_label": "See full details",
-        "allow_plain_add": false,
-        "color_scheme": "green"
       }
     }
   },
