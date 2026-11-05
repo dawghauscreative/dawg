@@ -828,11 +828,11 @@
   "order": [
     "hero",
     "trust_strip",
+    "buy_box",
     "category",
     "intro_video",
     "problem",
     "roles",
-    "buy_box",
     "featured",
     "video",
     "finder",
