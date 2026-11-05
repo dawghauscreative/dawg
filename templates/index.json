@@ -137,7 +137,7 @@
         "product": "sun-safe-system",
         "asset": "",
         "heading": "Start here",
-        "text": "<p>Two capsules a day, with water. Choose a subscription or a one-time order.</p>",
+        "text": "<p>Choose a subscription or a one-time order.</p>",
         "details_label": "See full details",
         "allow_plain_add": false,
         "color_scheme": "green"
