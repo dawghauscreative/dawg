@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "header": {
@@ -23,11 +32,6 @@
     },
     "systems": {
       "type": "shop-all-system-grid",
-      "settings": {
-        "color_scheme": "dark",
-        "heading": "More bundles",
-        "subscribe_cue": "Subscribe & save available"
-      },
       "blocks": {
         "sun_resilience": {
           "type": "system",
@@ -35,6 +39,8 @@
             "product": "sun-resilience-system",
             "role": "Protect + Restore",
             "descriptor": "Environmental support with broader antioxidant and nutritional support.†",
+            "show_label": false,
+            "label_text": "Advanced option",
             "button_text": "Choose your plan"
           }
         },
@@ -44,6 +50,8 @@
             "product": "skin-recovery-system",
             "role": "Balance + Restore",
             "descriptor": "Gut-skin balance with broader nutritional and immune support.†",
+            "show_label": false,
+            "label_text": "Advanced option",
             "button_text": "Choose your plan"
           }
         },
@@ -63,17 +71,15 @@
         "sun_resilience",
         "skin_recovery",
         "complete"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "heading": "More bundles",
+        "subscribe_cue": "Subscribe & save available"
+      }
     },
     "singles": {
       "type": "shop-all-product-grid",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Start with one role",
-        "body": "Choose the formula that matches your current priority, then explore the bundles that pair it with complementary support.",
-        "subscribe_cue": "Subscribe & save available"
-      },
       "blocks": {
         "uv_shield": {
           "type": "formula",
@@ -84,8 +90,7 @@
             "related_1": "sun-safe-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan",
-            "front_asset": "product-angle-uv-shield-front.webp"
+            "button_text": "Choose your plan"
           }
         },
         "skinbiotic": {
@@ -97,8 +102,7 @@
             "related_1": "sun-safe-system",
             "related_2": "skin-recovery-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan",
-            "front_asset": "product-angle-skinbiotic-front.webp"
+            "button_text": "Choose your plan"
           }
         },
         "dermaboost": {
@@ -110,8 +114,7 @@
             "related_1": "skin-recovery-system",
             "related_2": "sun-resilience-system",
             "related_3": "complete-skin-defense-system",
-            "button_text": "Choose your plan",
-            "front_asset": "product-angle-dermaboost-front.webp"
+            "button_text": "Choose your plan"
           }
         }
       },
@@ -119,17 +122,54 @@
         "uv_shield",
         "skinbiotic",
         "dermaboost"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Start with one role",
+        "body": "Choose the formula that matches your current priority, then explore the bundles that pair it with complementary support.",
+        "subscribe_cue": "Subscribe & save available"
+      }
+    },
+    "featured_buy_box_nYDf9L": {
+      "type": "featured-buy-box",
+      "blocks": {
+        "supr_bundles_subscriptions_product_block_RBNBmy": {
+          "type": "shopify://apps/supr-bundles-subscriptions/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
+          "settings": {
+            "product": "{{section.settings.product}}"
+          }
+        }
+      },
+      "block_order": [
+        "supr_bundles_subscriptions_product_block_RBNBmy"
+      ],
+      "name": "Featured product buy box",
+      "settings": {
+        "product": "complete-skin-defense-system",
+        "asset": "",
+        "heading": "Start here",
+        "text": "",
+        "details_label": "See full details",
+        "allow_plain_add": false,
+        "color_scheme": "green"
+      }
     },
     "compare": {
       "type": "final-cta",
       "settings": {
         "color_scheme": "dark",
+        "product": "",
         "eyebrow": "",
         "heading": "Compare the Alchemia MD bundles",
         "body": "",
         "button_label": "Explore bundles",
-        "button_url": "/pages/bundles"
+        "button_url": "/pages/bundles",
+        "secondary_label": "",
+        "secondary_url": "",
+        "note": "",
+        "asset": "",
+        "light_panel": false
       }
     }
   },
@@ -138,6 +178,7 @@
     "featured",
     "systems",
     "singles",
+    "featured_buy_box_nYDf9L",
     "compare"
   ]
 }
