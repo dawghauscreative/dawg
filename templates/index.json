@@ -287,7 +287,6 @@
     },
     "featured": {
       "type": "feature-split",
-      "disabled": true,
       "settings": {
         "color_scheme": "dark",
         "image_side": "right",
@@ -295,7 +294,7 @@
         "heading": "Meet the Outdoor Duo",
         "heading_tag": "h2",
         "subhead": "Protect + Balance",
-        "body": "<p>For people who spend their lives outdoors, the Outdoor Duo pairs two targeted formulas:</p><p><strong>UV Shield+</strong> supports skin exposed to daily environmental and UV-related stress.</p><p><strong>Skinbiotic+</strong> supports the gut-skin connection and internal balance.</p><p>Together, they create a simple daily routine built for life outdoors.</p>",
+        "body": "<p>For people who spend their lives outdoors, the Outdoor Duo pairs two targeted formulas:</p><p><strong>UV Shield+</strong> supports skin exposed to daily environmental and UV-related stress.†</p><p><strong>Skinbiotic+</strong> supports the gut-skin connection and internal balance.†</p><p>Together, they create a simple daily routine built for life outdoors.</p>",
         "product": "sun-safe-system",
         "primary_label": "Explore the Outdoor Duo",
         "primary_url": "",
@@ -578,7 +577,6 @@
         "b3",
         "b4"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "green",
         "anchor": "",
@@ -718,7 +716,6 @@
         "b3",
         "b4"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "light",
         "anchor": "",
@@ -779,7 +776,6 @@
     },
     "mission": {
       "type": "rich-text",
-      "disabled": true,
       "settings": {
         "color_scheme": "band",
         "align": "center",
@@ -828,11 +824,11 @@
   "order": [
     "hero",
     "trust_strip",
-    "buy_box",
     "category",
     "intro_video",
     "problem",
     "roles",
+    "buy_box",
     "featured",
     "video",
     "finder",
