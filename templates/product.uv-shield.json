@@ -22,7 +22,7 @@
         "bullets": {
           "type": "bullets",
           "settings": {
-            "items": "Supports skin exposed to daily environmental stress\nProvides multi-pathway antioxidant support\nSupports skin resilience from within\nDesigned for active, sun-exposed lifestyles\nComplements sunscreen and smart sun habits"
+            "items": "Supports skin exposed to daily environmental stress†\nProvides multi-pathway antioxidant support†\nSupports skin resilience from within†\nDesigned for active, sun-exposed lifestyles"
           }
         },
         "price": {
@@ -55,7 +55,7 @@
         "note": {
           "type": "note",
           "settings": {
-            "text": "UV Shield+ is designed to work alongside sunscreen, not replace it."
+            "text": "UV Shield+ is not a sunscreen and does not replace sun protection."
           }
         },
         "fda": {
@@ -77,7 +77,7 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_01_Niacinamide_4x5_f38f2344-5da4-4eb2-a7e2-9b875e7655db.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_02_Polypodium_leucotomos_4x5_d71f3fdb-357b-4722-8af0-9b2d761bdd5c.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_03_EGCG_4x5_6063c5cb-17dd-490b-b6ac-2493bb760755.png, uvshield-slide-skin-from-within-split.webp, uvshield-slide-outdoors-hiker.webp",
+        "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_01_Niacinamide_4x5_f38f2344-5da4-4eb2-a7e2-9b875e7655db.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_02_Polypodium_leucotomos_4x5_d71f3fdb-357b-4722-8af0-9b2d761bdd5c.png, uvshield-slide-skin-from-within-split.webp, uvshield-slide-outdoors-hiker.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-uv-shield-portrait.webp",
         "angle_assets": "product-angle-uv-shield-front.webp, product-angle-uv-shield-back.webp, product-angle-uv-shield-facts.webp",
@@ -93,7 +93,7 @@
         "eyebrow": "",
         "heading": "Daily internal support for life outdoors.",
         "heading_tag": "h2",
-        "body": "<p>UV Shield+ is built for the reality that outdoor life exposes skin to more than one type of stress.</p><p>The formula uses five ingredients with different nutritional and biochemical roles so the support is broader than a single antioxidant or botanical alone.</p>",
+        "body": "<p>UV Shield+ is built for the reality that outdoor life exposes skin to more than one type of stress.</p><p>The formula uses five ingredients with different nutritional and biochemical roles so the support is broader than a single antioxidant or botanical alone.†</p>",
         "quote": "One formula. Multiple complementary pathways."
       }
     },
@@ -107,7 +107,7 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Sun exposure is a daily reality.",
-        "body": "<p>Your skin is a living organ constantly responding to the environment.</p><p>Outdoor exposure can influence oxidative stress, inflammatory signaling, cellular energy demands, and the skin's barrier systems.</p><p>That does not mean avoiding the outdoors. It means supporting skin through a layered routine:</p>",
+        "body": "<p>Your skin is a living organ constantly responding to the environment.</p><p>Outdoor exposure can influence oxidative stress, inflammatory signaling, cellular energy demands, and the skin's barrier systems.</p><p>That does not mean avoiding the outdoors. It means supporting skin through a layered routine:†</p>",
         "callout": "UV Shield+ belongs in the third layer. It does not replace the first."
       },
       "blocks": {
@@ -156,7 +156,7 @@
             "name": "Niacinamide",
             "amount": "500 mg per labeled 2-capsule serving",
             "role": "Cellular + barrier support",
-            "slide_set": "d02",
+            "slide_set": "",
             "text": "<p>Niacinamide is a form of vitamin B3 involved in cellular energy metabolism and multiple skin-related biological processes.</p><p>Within UV Shield+, it provides a different mechanism from the formula's plant polyphenols, giving the formulation broader pathway coverage.</p>",
             "link_label": "Explore Niacinamide research →",
             "link_url": "/pages/science#uv-shield"
@@ -168,7 +168,7 @@
             "name": "Polypodium leucotomos",
             "amount": "240 mg per labeled 2-capsule serving",
             "role": "Botanical environmental-stress support",
-            "slide_set": "d01",
+            "slide_set": "",
             "text": "<p>Polypodium leucotomos is a fern-derived botanical studied in relation to skin responses to ultraviolet exposure.</p><p>In the formula architecture, it contributes a different botanical and antioxidant profile from niacinamide and the polyphenols.</p>",
             "link_label": "Explore Polypodium research →",
             "link_url": "/pages/science#uv-shield"
@@ -180,7 +180,7 @@
             "name": "EGCG",
             "amount": "200 mg per labeled 2-capsule serving",
             "role": "Polyphenol antioxidant support",
-            "slide_set": "d03",
+            "slide_set": "",
             "text": "<p>EGCG is a green-tea catechin studied for antioxidant and cell-signaling activity.</p><p>It is potentially complementary with Polypodium leucotomos and resveratrol across oxidative and inflammatory-response pathways.</p>",
             "link_label": "Explore EGCG research →",
             "link_url": "/pages/science#uv-shield"
@@ -192,7 +192,7 @@
             "name": "Trans-resveratrol",
             "amount": "100 mg per labeled 2-capsule serving",
             "role": "Polyphenol cellular support",
-            "slide_set": "d04",
+            "slide_set": "",
             "text": "<p>Resveratrol is a plant polyphenol with antioxidant and cell-signaling activity.</p><p>Within the formula, it contributes overlapping but distinct redox and signaling support alongside EGCG and Polypodium leucotomos.</p>",
             "link_label": "Explore Resveratrol research →",
             "link_url": "/pages/science#uv-shield"
@@ -204,7 +204,7 @@
             "name": "Spirulina",
             "amount": "200 mg per labeled 2-capsule serving",
             "role": "Nutritional antioxidant support",
-            "slide_set": "d05",
+            "slide_set": "",
             "text": "<p>Spirulina adds nutrient-derived antioxidant activity to the broader polyphenol and botanical network.</p><p>It is viewed as complementary rather than a stand-alone mechanism.</p>",
             "link_label": "Explore Spirulina research →",
             "link_url": "/pages/science#uv-shield"
@@ -317,7 +317,7 @@
           "settings": {
             "product": "sun-safe-system",
             "roles": "Protect + Balance",
-            "best_for": "UV Shield+ + Skinbiotic+. Pairs environmental support with gut-skin support through different upstream mechanisms: environmental and oxidative pathways, and the intestinal microbial environment.",
+            "best_for": "UV Shield+ + Skinbiotic+. Pairs environmental support with gut-skin support through different upstream mechanisms: environmental and oxidative pathways, and the intestinal microbial environment.†",
             "cta": "Explore Outdoor Duo",
             "asset": "system-sun-safe.webp"
           }
@@ -327,7 +327,7 @@
           "settings": {
             "product": "sun-resilience-system",
             "roles": "Protect + Restore",
-            "best_for": "UV Shield+ + Dermaboost+. Pairs UV and environmental support with broader antioxidant and immune-supportive nutrition.",
+            "best_for": "UV Shield+ + Dermaboost+. Pairs UV and environmental support with broader antioxidant and immune-supportive nutrition.†",
             "cta": "Explore Sun Resilience Duo",
             "asset": "system-sun-resilience.webp"
           }
@@ -358,14 +358,14 @@
           "type": "item",
           "settings": {
             "question": "What is UV Shield+?",
-            "answer": "<p>UV Shield+ is a dermatologist-formulated dietary supplement designed to support skin exposed to active outdoor life through targeted nutritional, botanical, and antioxidant ingredients.</p>"
+            "answer": "<p>UV Shield+ is a dermatologist-formulated dietary supplement designed to support skin exposed to active outdoor life through targeted nutritional, botanical, and antioxidant ingredients.†</p>"
           }
         },
         "b2": {
           "type": "item",
           "settings": {
             "question": "Does UV Shield+ replace sunscreen?",
-            "answer": "<p>No. UV Shield+ is designed to complement sunscreen and smart sun habits, not replace them.</p>"
+            "answer": "<p>No. UV Shield+ is not a sunscreen and does not replace sun protection.</p>"
           }
         },
         "b3": {
@@ -393,7 +393,7 @@
           "type": "item",
           "settings": {
             "question": "Can I use UV Shield+ with my skincare routine?",
-            "answer": "<p>Yes. It is positioned as internal support intended to complement topical skincare and sun-safety practices.</p>"
+            "answer": "<p>Yes. UV Shield+ is a capsule you take by mouth, separate from what you apply to your skin. Review the label and consult your healthcare professional if you have questions.</p>"
           }
         },
         "b7": {
@@ -418,7 +418,7 @@
       "type": "compliance-notice",
       "settings": {
         "color_scheme": "dark",
-        "extra_line": "UV Shield+ is not a replacement for sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
+        "extra_line": "UV Shield+ is not a sunscreen and does not replace sun protection."
       }
     },
     "final": {

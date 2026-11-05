@@ -188,6 +188,7 @@
                   <p class="price-placeholder small" role="note">{{ settings.three_month_placeholder_text }}</p>
                 {%- endif -%}
                 {%- render 'guarantee-badge', style: 'line' -%}
+                {%- if settings.physician_note != blank -%}<p class="small physician-note">{{ settings.physician_note }}</p>{%- endif -%}
               </div>
 
             {%- when 'expectation' -%}

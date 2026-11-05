@@ -146,7 +146,7 @@
             "number": "",
             "kicker": "",
             "icon": "none",
-            "title": "Antioxidant and nutritional support",
+            "title": "Antioxidant and nutritional support†",
             "text": "<p>Different antioxidants and micronutrients act through different biological mechanisms.</p><p>Rather than relying on one compound, Alchemia MD formulas combine ingredients selected to provide complementary nutritional and biochemical roles.</p>",
             "tag": "Multi-pathway support",
             "study": "rao-resveratrol-2025, zhou-astaxanthin-meta-analysis-2021",
@@ -189,7 +189,7 @@
             "context": "<p>The barrier-lipid study included cell-culture and topical application research. It is not proof that oral UV Shield+ produces the same effect.</p>",
             "studies": "yiasemides-nicotinamide-2009, tanno-nicotinamide-barrier-2000",
             "anchor": "niacinamide",
-            "slide_set": "d02",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -206,7 +206,7 @@
             "context": "",
             "studies": "nestor-polypodium-rct, middelkamp-hup-polypodium, faisal-uva-2026",
             "anchor": "polypodium-leucotomos",
-            "slide_set": "d01",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -223,7 +223,7 @@
             "context": "<p>The dose and study design differ from UV Shield+. It supports ingredient rationale rather than establishing finished-product efficacy.</p>",
             "studies": "rao-resveratrol-2025",
             "anchor": "resveratrol",
-            "slide_set": "d04",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -240,7 +240,7 @@
             "context": "",
             "studies": "green-tea-two-year-trial",
             "anchor": "egcg",
-            "slide_set": "d03",
+            "slide_set": "",
             "mixed": true
           }
         },
@@ -257,7 +257,7 @@
             "context": "",
             "studies": "",
             "anchor": "spirulina",
-            "slide_set": "d05",
+            "slide_set": "",
             "mixed": false
           }
         }
@@ -274,7 +274,7 @@
         "anchor": "uv-shield",
         "role": "Protect",
         "heading": "UV Shield+",
-        "subhead": "Nutritional support for skin exposed to life outdoors.",
+        "subhead": "Nutritional support for skin exposed to life outdoors.†",
         "intro": "<p>UV Shield+ combines five ingredients selected around different aspects of environmental and oxidative-stress biology.</p><p>The formulation rationale is coverage of several different biological pathways, rather than one single proven ingredient pair.</p>",
         "ingredients": "Niacinamide\nPolypodium leucotomos\nTrans-resveratrol\nGreen tea polyphenols / EGCG\nSpirulina",
         "product": "uv-shield",
@@ -304,7 +304,7 @@
             "context": "",
             "studies": "",
             "anchor": "inulin",
-            "slide_set": "d11",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -321,7 +321,7 @@
             "context": "<p>This evidence is specific to the HY7714 strain. It does not prove identical outcomes for every L. plantarum strain.</p>",
             "studies": "lee-hy7714-2015",
             "anchor": "lactobacillus",
-            "slide_set": "d07",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -331,14 +331,14 @@
             "name": "Lactobacillus and Bifidobacterium species",
             "subtitle": "Probiotic strains",
             "evidence": "Review-level evidence",
-            "why": "<p>Different microorganisms occupy different ecological niches and produce different metabolites. The formula rationale is broader microbiome support rather than assuming every species provides the same function.</p>",
+            "why": "<p>Different microorganisms occupy different ecological niches and produce different metabolites. The formula rationale is broader microbiome support rather than assuming every species provides the same function.†</p>",
             "shows_label": "Research context",
             "shows": "<p>Clinical reviews of probiotic interventions in dermatology point to potential effects through gut-skin signaling, but repeatedly note substantial heterogeneity across strains, formulations, study populations, and outcomes.</p>",
             "language": "",
             "context": "",
             "studies": "gao-probiotics-gut-skin-2023, probiotic-clinical-review-2026",
             "anchor": "bifidobacterium",
-            "slide_set": "d08",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -355,7 +355,7 @@
             "context": "",
             "studies": "",
             "anchor": "akkermansia",
-            "slide_set": "d06",
+            "slide_set": "",
             "mixed": false
           }
         }
@@ -371,7 +371,7 @@
         "anchor": "skinbiotic",
         "role": "Balance",
         "heading": "Skinbiotic+",
-        "subhead": "Synbiotic support built around the gut–skin connection.",
+        "subhead": "Synbiotic support built around the gut–skin connection.†",
         "intro": "<p>Skinbiotic+ pairs a fermentable prebiotic with multiple microbial strains.</p><p>The formulation rationale is the prebiotic and probiotic pairing, and the complementary ecological roles of different organisms.</p>",
         "ingredients": "Organic inulin\nLactobacillus plantarum\nBifidobacterium lactis\nLactobacillus rhamnosus\nBifidobacterium bifidum\nAkkermansia muciniphila",
         "product": "skinbiotic",
@@ -402,7 +402,7 @@
             "context": "",
             "studies": "zhou-astaxanthin-meta-analysis-2021, tominaga-astaxanthin-2017",
             "anchor": "astaxanthin",
-            "slide_set": "d24",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -419,7 +419,7 @@
             "context": "",
             "studies": "jamwal-curcumin-pk-review, curcumin-independent-pk",
             "anchor": "curcumin",
-            "slide_set": "d21",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -436,7 +436,7 @@
             "context": "",
             "studies": "",
             "anchor": "vitamin-c",
-            "slide_set": "d15",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -446,14 +446,14 @@
             "name": "Zinc",
             "subtitle": "Essential mineral",
             "evidence": "Established nutritional physiology",
-            "why": "<p>Zinc is an essential mineral that acts as a cofactor for numerous enzymes and contributes to normal immune and cellular functions.</p>",
+            "why": "<p>Zinc is an essential mineral that acts as a cofactor for numerous enzymes and contributes to normal immune and cellular functions.†</p>",
             "shows_label": "What research shows",
             "shows": "",
             "language": "",
             "context": "",
             "studies": "",
             "anchor": "zinc",
-            "slide_set": "d16",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -463,14 +463,14 @@
             "name": "Vitamin D3",
             "subtitle": "Cholecalciferol, from lichen",
             "evidence": "Established nutritional physiology",
-            "why": "<p>Vitamin D is an essential nutrient that contributes to normal immune function. The form used here is plant-derived, from lichen.</p>",
+            "why": "<p>Vitamin D is an essential nutrient that contributes to normal immune function.† The form used here is plant-derived, from lichen.</p>",
             "shows_label": "What research shows",
             "shows": "",
             "language": "",
             "context": "",
             "studies": "",
             "anchor": "vitamin-d3",
-            "slide_set": "d14",
+            "slide_set": "",
             "mixed": false
           }
         },
@@ -487,7 +487,7 @@
             "context": "",
             "studies": "quercetin-human-pk",
             "anchor": "quercetin",
-            "slide_set": "d17",
+            "slide_set": "",
             "mixed": false
           }
         }
@@ -505,7 +505,7 @@
         "anchor": "dermaboost",
         "role": "Restore",
         "heading": "Dermaboost+",
-        "subhead": "Multi-nutrient support for antioxidant, immune, and skin-resilience pathways.",
+        "subhead": "Multi-nutrient support for antioxidant, immune, and skin-resilience pathways.†",
         "intro": "<p>Dermaboost+ brings together eight ingredients with complementary roles.</p><p>The formulation rationale describes several plausible complementary relationships, such as quercetin with curcumin, quercetin with vitamin C, and vitamin C with zinc. These are complementary mechanisms, not proven clinical synergy of the finished formula.</p>",
         "ingredients": "Niacinamide\nVitamin D3\nVitamin C\nZinc\nQuercetin\nOptimized curcumin\nOlive leaf extract\nAstaxanthin",
         "product": "dermaboost",
@@ -543,7 +543,7 @@
           "settings": {
             "title": "Skinbiotic+ + Dermaboost+",
             "subtitle": "Microbiome + nutritional support",
-            "text": "<p>Skinbiotic+ is oriented toward the gut and microbial interface, while Dermaboost+ contains nutrients and plant compounds selected around broader antioxidant and immune-support pathways.</p>"
+            "text": "<p>Skinbiotic+ is oriented toward the gut and microbial interface, while Dermaboost+ contains nutrients and plant compounds selected around broader antioxidant and immune-support pathways.†</p>"
           }
         },
         "b4": {
@@ -824,7 +824,7 @@
             "kicker": "",
             "icon": "none",
             "title": "Defined formulas",
-            "text": "<p><strong>UV Shield+: Protect.</strong> Environmental and antioxidant support.</p><p><strong>Skinbiotic+: Balance.</strong> Microbiome and gut-skin support.</p><p><strong>Dermaboost+: Restore.</strong> Antioxidant, nutritional, and immune support.</p>",
+            "text": "<p><strong>UV Shield+: Protect.</strong> Environmental and antioxidant support.†</p><p><strong>Skinbiotic+: Balance.</strong> Microbiome and gut-skin support.†</p><p><strong>Dermaboost+: Restore.</strong> Antioxidant, nutritional, and immune support.†</p>",
             "tag": "",
             "study": "",
             "asset": ""
@@ -875,7 +875,7 @@
         "button_url": "/collections/individual-products",
         "secondary_label": "Explore the bundles",
         "secondary_url": "/pages/bundles",
-        "note": "Alchemia MD supplements complement, but do not replace, sunscreen, appropriate sun-protective behavior, or professional medical care.",
+        "note": "Alchemia MD supplements are not sunscreen and do not replace sun protection or professional medical care.",
         "asset": "",
         "light_panel": false
       }

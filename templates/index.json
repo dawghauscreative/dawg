@@ -65,7 +65,7 @@
           "settings": {
             "color_scheme": "dark",
             "heading": "Balanced skin starts within.",
-            "body": "<p>Protect, balance and restore, with daily internal support.</p>",
+            "body": "<p>Protect, balance and restore, with daily internal support.†</p>",
             "primary_label": "Shop now",
             "primary_url": "/collections/shop-all",
             "secondary_label": "",
@@ -129,7 +129,7 @@
         "eyebrow": "",
         "heading": "Skin health is more than a surface routine.",
         "heading_tag": "h2",
-        "body": "<p>Skin is a living, dynamic system.</p><p>It responds to what happens outside the body, but also to nutrition, oxidative stress, immune signaling, the microbiome, and daily lifestyle.</p><p>Alchemia MD was built around a simple idea:</p><p><strong>Support skin from the inside out.</strong></p>",
+        "body": "<p>Skin is a living, dynamic system.</p><p>It responds to what happens outside the body, but also to nutrition, oxidative stress, immune signaling, the microbiome, and daily lifestyle.</p><p>Alchemia MD was built around a simple idea:</p><p><strong>Support skin from the inside out.†</strong></p>",
         "quote": "",
         "button_label": "What is internal skin defense?",
         "button_url": "/blogs/skin-edu/what-is-internal-skin-defense-alchemia-md"
@@ -223,8 +223,8 @@
           "settings": {
             "product": "uv-shield",
             "role": "Protect",
-            "tagline": "Daily support for active, sun-ready skin",
-            "text": "Designed around nutritional and antioxidant support for people who spend significant time outdoors.",
+            "tagline": "Daily support for active, sun-ready skin†",
+            "text": "Designed around nutritional and antioxidant support for people who spend significant time outdoors.†",
             "cta": "Explore UV Shield+"
           }
         },
@@ -243,8 +243,8 @@
           "settings": {
             "product": "dermaboost",
             "role": "Restore",
-            "tagline": "Daily immune support for calm, balanced skin",
-            "text": "A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.",
+            "tagline": "Daily immune support for calm, balanced skin†",
+            "text": "A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.†",
             "cta": "Explore Dermaboost+"
           }
         }
@@ -258,7 +258,7 @@
         "color_scheme": "green",
         "eyebrow": "",
         "heading": "Protect. Balance. Restore.",
-        "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.</p><p>Each formula can stand on its own. The bundles combine them when complementary support makes sense.</p>"
+        "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.†</p><p>Each formula can stand on its own. The bundles combine them when complementary support makes sense.</p>"
       }
     },
     "featured": {
@@ -309,7 +309,7 @@
           "settings": {
             "product": "sun-safe-system",
             "roles": "Protect + Balance",
-            "best_for": "Active outdoor lifestyles and customers looking for environmental support plus gut-skin balance.",
+            "best_for": "Active outdoor lifestyles and customers looking for environmental support plus gut-skin balance.†",
             "note": "",
             "cta": "Explore Outdoor Duo",
             "asset": "system-sun-safe.webp",
@@ -320,8 +320,8 @@
           "type": "system",
           "settings": {
             "product": "skin-recovery-system",
-            "roles": "Balance + Restore",
-            "best_for": "Customers focused on gut-skin balance and broader nutritional support for calm, resilient skin.",
+            "roles": "Balance + Restore†",
+            "best_for": "Customers focused on gut-skin balance and broader nutritional support for calm, resilient skin.†",
             "note": "",
             "cta": "Explore Balance Duo",
             "asset": "system-skin-recovery.webp",
@@ -333,7 +333,7 @@
           "settings": {
             "product": "sun-resilience-system",
             "roles": "Protect + Restore",
-            "best_for": "Customers looking to pair environmental support with broader antioxidant and immune-supportive nutrition.",
+            "best_for": "Customers looking to pair environmental support with broader antioxidant and immune-supportive nutrition.†",
             "note": "",
             "cta": "Explore Sun Resilience Duo",
             "asset": "system-sun-resilience.webp",
@@ -344,7 +344,7 @@
           "type": "system",
           "settings": {
             "product": "complete-skin-defense-system",
-            "roles": "Protect + Balance + Restore",
+            "roles": "Protect + Balance + Restore†",
             "best_for": "Customers who already understand the three roles and want the most comprehensive Alchemia MD routine.",
             "note": "",
             "cta": "Explore Tria Prima",
@@ -439,7 +439,7 @@
         "heading": "Keep living in the sun.",
         "body": "<p>Alchemia MD is built for people who do not want to choose between caring for their skin and living the life they love.</p>",
         "columns": "3",
-        "statement": "Sun exposure is part of life. Supporting your skin should be too."
+        "statement": "Sun exposure is part of life. Supporting your skin should be too.†"
       }
     },
     "layers": {
@@ -466,7 +466,7 @@
           "settings": {
             "short": "Internal support",
             "title": "Internal support",
-            "text": "Nutrition and supplementation can support biological systems involved in skin health."
+            "text": "Nutrition and supplementation can support biological systems involved in skin health.†"
           }
         },
         "b4": {
@@ -489,7 +489,7 @@
         "eyebrow": "",
         "heading": "Skin support works in layers.",
         "body": "",
-        "callout": "Alchemia MD is designed to complement—not replace—your sunscreen and sun-safety routine."
+        "callout": "Alchemia MD supplements are not sunscreen and do not replace sun protection."
       }
     },
     "science": {
@@ -626,7 +626,7 @@
         "eyebrow": "",
         "heading": "Balance is a practice.",
         "heading_tag": "h2",
-        "body": "<p>Alchemy was historically the pursuit of transformation through balance. Alchemia MD carries that idea into modern skin health.</p><p>Skin is always changing. It renews, adapts, responds, and rebuilds.</p><p>The goal is not perfect skin. The goal is to support the systems that help skin remain balanced, resilient, and vital through the changing demands of life.</p>",
+        "body": "<p>Alchemy was historically the pursuit of transformation through balance. Alchemia MD carries that idea into modern skin health.</p><p>Skin is always changing. It renews, adapts, responds, and rebuilds.</p><p>The goal is not perfect skin. The goal is to support the systems that help skin remain balanced, resilient, and vital through the changing demands of life.†</p>",
         "quote": "",
         "button_label": "",
         "button_url": ""

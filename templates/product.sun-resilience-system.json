@@ -16,7 +16,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "text": "<p>The Sun Resilience Duo combines UV Shield+ and Dermaboost+ in one dermatologist-formulated daily routine.</p><p>UV Shield+ provides targeted nutritional and antioxidant support for skin exposed to environmental and UV-related stress. Dermaboost+ adds broader antioxidant, nutritional, and normal immune support through vitamins, minerals, carotenoids, and botanical polyphenols.</p><p>Together, they create a two-step routine for people who spend significant time outdoors and want broader internal support beyond a single environmental-support formula.</p>"
+            "text": "<p>The Sun Resilience Duo combines UV Shield+ and Dermaboost+ in one dermatologist-formulated daily routine.</p><p>UV Shield+ provides targeted nutritional and antioxidant support for skin exposed to environmental and UV-related stress.† Dermaboost+ adds broader antioxidant, nutritional, and normal immune support through vitamins, minerals, carotenoids, and botanical polyphenols.†</p><p>Together, they create a two-step routine for people who spend significant time outdoors and want broader internal support beyond a single environmental-support formula.†</p>"
           }
         },
         "bullets": {
@@ -40,7 +40,7 @@
         "expectation": {
           "type": "expectation",
           "settings": {
-            "text": "Skin support is gradual. Consistent daily use matters."
+            "text": "Skin support is gradual.† Consistent daily use matters."
           }
         },
         "trust_bar": {
@@ -57,7 +57,7 @@
         "note": {
           "type": "note",
           "settings": {
-            "text": "The Sun Resilience Duo works alongside sunscreen and smart sun habits. It does not replace them."
+            "text": "The Sun Resilience Duo is not a sunscreen and does not replace sun protection."
           }
         },
         "fda": {
@@ -93,7 +93,7 @@
         "eyebrow": "",
         "heading": "Environmental support meets broader skin resilience.",
         "body": "<p>The Sun Resilience Duo combines two formulas with related but distinct roles.</p><p>The combination is intentionally more overlapping than Outdoor Duo: UV Shield+ and Dermaboost+ share more of their biological pathways, particularly oxidative-stress biology.</p>",
-        "center": "Protect against the demands of outdoor life. Support the systems skin relies on to stay resilient."
+        "center": "Protect against the demands of outdoor life. Support the systems skin relies on to stay resilient.†"
       },
       "blocks": {
         "b1": {
@@ -101,7 +101,7 @@
           "settings": {
             "kicker": "Protect",
             "name": "UV Shield+",
-            "text": "Focused on nutritional and antioxidant support for skin exposed to outdoor and environmental stress."
+            "text": "Focused on nutritional and antioxidant support for skin exposed to outdoor and environmental stress.†"
           }
         },
         "b2": {
@@ -109,7 +109,7 @@
           "settings": {
             "kicker": "Restore",
             "name": "Dermaboost+",
-            "text": "Focused on broader antioxidant, nutritional, and normal immune-supportive pathways involved in skin resilience."
+            "text": "Focused on broader antioxidant, nutritional, and normal immune-supportive pathways involved in skin resilience.†"
           }
         }
       },
@@ -131,7 +131,7 @@
         "eyebrow": "",
         "heading": "Why pair UV Shield+ with Dermaboost+?",
         "heading_tag": "h2",
-        "body": "<p>Both formulas provide antioxidant-related support, but they approach the problem differently.</p><p><strong>UV Shield+</strong> is more specifically oriented toward environmental and UV-associated stress.</p><p><strong>Dermaboost+</strong> provides broader nutritional, antioxidant, and normal immune support.</p><p>The pairing is complementary in three main areas:</p>"
+        "body": "<p>Both formulas provide antioxidant-related support, but they approach the problem differently.†</p><p><strong>UV Shield+</strong> is more specifically oriented toward environmental and UV-associated stress.</p><p><strong>Dermaboost+</strong> provides broader nutritional, antioxidant, and normal immune support.†</p><p>The pairing is complementary in three main areas:</p>"
       }
     },
     "why_areas": {
@@ -163,7 +163,7 @@
           "type": "card",
           "settings": {
             "number": "03",
-            "title": "Broader nutritional support",
+            "title": "Broader nutritional support†",
             "text": "<p>Dermaboost+ adds vitamin C, vitamin D3, zinc, astaxanthin, and other nutrients that are not present in UV Shield+.</p>"
           }
         }
@@ -181,11 +181,11 @@
         "image_side": "right",
         "eyebrow": "",
         "heading": "UV Shield+",
-        "subhead": "Daily support for active, sun-ready skin",
+        "subhead": "Daily support for active, sun-ready skin†",
         "product": "uv-shield",
         "asset": "lifestyle-uvshield-rocks.webp",
         "ratio": "4x5",
-        "body": "<p>UV Shield+ combines five ingredients selected for complementary nutritional and antioxidant roles:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Trans-resveratrol</li><li>Spirulina</li></ul><p>Its formulation is designed around broader coverage of environmental and oxidative-stress biology rather than reliance on one ingredient alone.</p><p><strong>Key support areas:</strong> environmental stress, antioxidant support, outdoor lifestyle support, skin resilience.</p>",
+        "body": "<p>UV Shield+ combines five ingredients selected for complementary nutritional and antioxidant roles:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Trans-resveratrol</li><li>Spirulina</li></ul><p>Its formulation is designed around broader coverage of environmental and oxidative-stress biology rather than reliance on one ingredient alone.</p><p><strong>Key support areas:</strong> environmental stress, antioxidant support, outdoor lifestyle support, skin resilience.†</p>",
         "primary_label": "Explore UV Shield+"
       }
     },
@@ -196,11 +196,11 @@
         "image_side": "left",
         "eyebrow": "",
         "heading": "Dermaboost+",
-        "subhead": "Daily immune support for calm, balanced skin",
+        "subhead": "Daily immune support for calm, balanced skin†",
         "product": "dermaboost",
         "asset": "lifestyle-dermaboost-yacht.webp",
         "ratio": "4x5",
-        "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients selected for broader nutritional, antioxidant, and normal immune-supportive roles:</p><ul><li>Niacinamide</li><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf extract</li><li>Astaxanthin</li></ul><p>The formulation rationale identifies several complementary pairings within Dermaboost+, including quercetin + curcumin, quercetin + vitamin C, quercetin + astaxanthin, curcumin + olive leaf, and vitamin C + zinc.</p><p><strong>Key support areas:</strong> antioxidant support, normal immune function, nutritional skin support, daily skin resilience.</p>",
+        "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients selected for broader nutritional, antioxidant, and normal immune-supportive roles:†</p><ul><li>Niacinamide</li><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf extract</li><li>Astaxanthin</li></ul><p>The formulation rationale identifies several complementary pairings within Dermaboost+, including quercetin + curcumin, quercetin + vitamin C, quercetin + astaxanthin, curcumin + olive leaf, and vitamin C + zinc.</p><p><strong>Key support areas:</strong> antioxidant support, normal immune function, nutritional skin support, daily skin resilience.†</p>",
         "primary_label": "Explore Dermaboost+"
       }
     },
@@ -213,7 +213,7 @@
         "eyebrow": "",
         "heading": "Outdoor life creates more than one type of stress.",
         "heading_tag": "h2",
-        "body": "<p>Environmental exposure can contribute to oxidative stress in skin. The body responds through multiple antioxidant systems, which is why the Sun Resilience Duo uses chemically different ingredients rather than relying on one antioxidant.</p><p>Across both formulas, the bundle includes:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Resveratrol</li><li>Spirulina</li><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Zinc</li></ul><p><em>Antioxidant support does not mean blocking UV radiation or replacing sunscreen.</em></p><h3>Not all antioxidants work the same way.</h3><p>A polyphenol is not the same as a vitamin. A carotenoid is not the same as a mineral. Different compounds have different chemical structures, cellular locations, and biological roles. That is the formulation rationale behind Sun Resilience Duo.</p><p><strong>UV Shield+</strong> leans heavily on botanical polyphenols and environmental-stress support.</p><p><strong>Dermaboost+</strong> adds vitamins, minerals, carotenoids, and broader botanical support.</p>",
+        "body": "<p>Environmental exposure can contribute to oxidative stress in skin.† The body responds through multiple antioxidant systems, which is why the Sun Resilience Duo uses chemically different ingredients rather than relying on one antioxidant.</p><p>Across both formulas, the bundle includes:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Resveratrol</li><li>Spirulina</li><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Zinc</li></ul><p><em>Antioxidant support does not mean blocking UV radiation or replacing sunscreen.</em></p><h3>Not all antioxidants work the same way.</h3><p>A polyphenol is not the same as a vitamin. A carotenoid is not the same as a mineral. Different compounds have different chemical structures, cellular locations, and biological roles. That is the formulation rationale behind Sun Resilience Duo.</p><p><strong>UV Shield+</strong> leans heavily on botanical polyphenols and environmental-stress support.†</p><p><strong>Dermaboost+</strong> adds vitamins, minerals, carotenoids, and broader botanical support.</p>",
         "quote": "Complementary does not mean identical."
       }
     },
@@ -226,7 +226,7 @@
         "eyebrow": "",
         "heading": "Skin is an immune-active organ.",
         "heading_tag": "h2",
-        "body": "<p>Skin participates in the body’s interaction with the external environment. Normal immune function therefore matters to broader skin health.</p><p>Dermaboost+ contributes nutrients such as:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li></ul><p>which have established roles in normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating immune-mediated disease.</em></p><h3>Resilience is the goal, not perfection.</h3><p>Skin is constantly:</p><ul><li>Renewing</li><li>Responding</li><li>Adapting</li><li>Maintaining barrier function</li><li>Interacting with the environment</li></ul><p>The Sun Resilience Duo is built around supporting those everyday processes from two directions: <strong>environmental support</strong> with UV Shield+ and <strong>broader nutritional support</strong> with Dermaboost+.</p>"
+        "body": "<p>Skin participates in the body’s interaction with the external environment. Normal immune function therefore matters to broader skin health.</p><p>Dermaboost+ contributes nutrients such as:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li></ul><p>which have established roles in normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating immune-mediated disease.</em></p><h3>Resilience is the goal, not perfection.</h3><p>Skin is constantly:</p><ul><li>Renewing</li><li>Responding</li><li>Adapting</li><li>Maintaining barrier function†</li><li>Interacting with the environment</li></ul><p>The Sun Resilience Duo is built around supporting those everyday processes from two directions: <strong>environmental support</strong> with UV Shield+ and <strong>broader nutritional support†</strong> with Dermaboost+.</p>"
       }
     },
     "formula": {
@@ -243,7 +243,7 @@
             "kicker": "Protect",
             "name": "UV Shield+",
             "items": "Niacinamide\nPolypodium leucotomos\nEGCG\nTrans-resveratrol\nSpirulina",
-            "focus": "Environmental + antioxidant support."
+            "focus": "Environmental + antioxidant support.†"
           }
         },
         "b2": {
@@ -252,7 +252,7 @@
             "kicker": "Restore",
             "name": "Dermaboost+",
             "items": "Niacinamide\nVitamin D3\nVitamin C\nZinc\nQuercetin\nCurcumin\nOlive leaf extract\nAstaxanthin",
-            "focus": "Antioxidant + nutritional + normal immune support."
+            "focus": "Antioxidant + nutritional + normal immune support.†"
           }
         }
       },
@@ -267,7 +267,7 @@
         "color_scheme": "green",
         "eyebrow": "",
         "heading": "Intentional overlap.",
-        "body": "<p>The two formulas share broad antioxidant and cellular-support themes, but their ingredient networks are different.</p>",
+        "body": "<p>The two formulas share broad antioxidant and cellular-support themes, but their ingredient networks are different.†</p>",
         "center": "The goal is broader support, not duplication for duplication’s sake."
       },
       "blocks": {
@@ -379,7 +379,7 @@
           "type": "card",
           "settings": {
             "title": "Environmental support†",
-            "text": "<p>UV Shield+ is the primary environmental-support formula.</p>"
+            "text": "<p>UV Shield+ is the primary environmental-support formula.†</p>"
           }
         },
         "b2": {
@@ -443,7 +443,7 @@
           "type": "card",
           "settings": {
             "title": "Vitamin C + zinc",
-            "text": "<p>Essential nutritional support.</p>"
+            "text": "<p>Essential nutritional support.†</p>"
           }
         },
         "b4": {
@@ -479,7 +479,7 @@
       "settings": {
         "color_scheme": "green",
         "heading": "Keep the sunscreen.",
-        "body": "<p>The Sun Resilience Duo belongs inside a layered sun-health routine. Continue using:</p>",
+        "body": "<p>The Sun Resilience Duo is not a sunscreen and does not replace sun protection. Continue to use:</p>",
         "items": "Broad-spectrum sunscreen\nProtective clothing\nHats and sunglasses\nShade\nProper reapplication\nRoutine dermatologic care",
         "callout": "Internal support does not replace external protection."
       }
@@ -600,7 +600,7 @@
           "type": "item",
           "settings": {
             "question": "What is the Sun Resilience Duo?",
-            "answer": "<p>The Sun Resilience Duo combines UV Shield+ and Dermaboost+ in a two-product routine designed to provide environmental, antioxidant, nutritional, and normal immune support.</p>"
+            "answer": "<p>The Sun Resilience Duo combines UV Shield+ and Dermaboost+ in a two-product routine designed to provide environmental, antioxidant, nutritional, and normal immune support.†</p>"
           }
         },
         "b2": {
@@ -614,21 +614,21 @@
           "type": "item",
           "settings": {
             "question": "Why are these two products paired?",
-            "answer": "<p>UV Shield+ is focused more specifically on environmental and UV-related stress, while Dermaboost+ provides broader antioxidant, nutritional, and normal immune-supportive pathways. Their ingredient networks overlap in some areas while remaining distinct.</p>"
+            "answer": "<p>UV Shield+ is focused more specifically on environmental and UV-related stress, while Dermaboost+ provides broader antioxidant, nutritional, and normal immune-supportive pathways.† Their ingredient networks overlap in some areas while remaining distinct.</p>"
           }
         },
         "b4": {
           "type": "item",
           "settings": {
             "question": "Is Sun Resilience Duo the same as Outdoor Duo?",
-            "answer": "<p>No. Outdoor Duo is UV Shield+ + Skinbiotic+; Sun Resilience Duo is UV Shield+ + Dermaboost+. Outdoor Duo adds gut-skin support. Sun Resilience Duo adds broader nutritional and antioxidant support.</p>"
+            "answer": "<p>No. Outdoor Duo is UV Shield+ + Skinbiotic+; Sun Resilience Duo is UV Shield+ + Dermaboost+. Outdoor Duo adds gut-skin support.† Sun Resilience Duo adds broader nutritional and antioxidant support.†</p>"
           }
         },
         "b5": {
           "type": "item",
           "settings": {
             "question": "Does Sun Resilience Duo replace sunscreen?",
-            "answer": "<p>No. The bundle should always be used alongside normal sunscreen and sun-safety practices.</p>"
+            "answer": "<p>No. The Sun Resilience Duo is not a sunscreen and does not replace sun protection.</p>"
           }
         },
         "b6": {
@@ -685,7 +685,7 @@
       "settings": {
         "color_scheme": "dark",
         "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
-        "extra_line": "The Sun Resilience Duo is not a replacement for sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
+        "extra_line": "The Sun Resilience Duo is not a sunscreen and does not replace sun protection."
       }
     },
     "final": {
@@ -694,7 +694,7 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Broader internal support for life outdoors.",
-        "body": "<p>UV Shield+ and Dermaboost+ combine targeted environmental support with broader antioxidant, nutritional, and normal immune support in one dermatologist-formulated bundle.</p>",
+        "body": "<p>UV Shield+ and Dermaboost+ combine targeted environmental support with broader antioxidant, nutritional, and normal immune support in one dermatologist-formulated bundle.†</p>",
         "button_label": "Choose your plan",
         "button_url": "#buy-box",
         "secondary_label": "Explore the science",

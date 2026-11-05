@@ -14,14 +14,14 @@
           "type": "item",
           "settings": {
             "question": "Who is Alchemia MD for?",
-            "answer": "<p>Alchemia MD is designed for people who want daily internal skin health support, especially those with active, sun-exposed lifestyles such as golf, tennis, boating, beach days and travel.</p>"
+            "answer": "<p>Alchemia MD is designed for people who want daily internal skin health support, especially those with active, sun-exposed lifestyles such as golf, tennis, boating, beach days and travel.†</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "What does each formula do?",
-            "answer": "<p>UV Shield+ is the Protect step, with daily antioxidant and nutritional support for skin exposed to life outdoors. Skinbiotic+ is the Balance step, a synbiotic designed around the gut-skin connection. Dermaboost+ is the Restore step, with immune-supportive and antioxidant nutrition for calm, balanced skin.†</p>"
+            "answer": "<p>UV Shield+ is the Protect step, with daily antioxidant and nutritional support for skin exposed to life outdoors.† Skinbiotic+ is the Balance step, a synbiotic designed around the gut-skin connection. Dermaboost+ is the Restore step, with immune-supportive and antioxidant nutrition for calm, balanced skin.†</p>"
           }
         },
         "q4": {
@@ -99,7 +99,7 @@
           "type": "item",
           "settings": {
             "question": "How do Alchemia MD products fit with sunscreen?",
-            "answer": "<p>UV Shield+ is designed to work alongside your sunscreen, not replace it. Alchemia MD complements your existing skincare and sun safety routines by adding a layer of support from within. It is not a sunscreen and does not replace sun protection.</p>"
+            "answer": "<p>They don't. Alchemia MD supplements are not sunscreen and do not replace sun protection. Keep using broad-spectrum sunscreen, protective clothing and shade.</p>"
           }
         }
       },

@@ -16,7 +16,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "text": "<p>The Outdoor Duo pairs UV Shield+ and Skinbiotic+ in one dermatologist-formulated daily routine.</p><p>UV Shield+ is built around nutritional and antioxidant support for skin exposed to environmental and UV-related stress. Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection.</p><p>Together, they create a simple two-step bundle for people who spend significant time outdoors and want to support skin from both the environmental and internal sides of the equation.</p>"
+            "text": "<p>The Outdoor Duo pairs UV Shield+ and Skinbiotic+ in one dermatologist-formulated daily routine.</p><p>UV Shield+ is built around nutritional and antioxidant support for skin exposed to environmental and UV-related stress.† Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection.†</p><p>Together, they create a simple two-step bundle for people who spend significant time outdoors and want to support skin from both the environmental and internal sides of the equation.†</p>"
           }
         },
         "bullets": {
@@ -40,7 +40,7 @@
         "expectation": {
           "type": "expectation",
           "settings": {
-            "text": "Skin support is gradual. Consistent daily use matters."
+            "text": "Skin support is gradual.† Consistent daily use matters."
           }
         },
         "trust_bar": {
@@ -57,7 +57,7 @@
         "note": {
           "type": "note",
           "settings": {
-            "text": "The Outdoor Duo complements sunscreen and smart sun habits. It does not replace them."
+            "text": "The Outdoor Duo is not a sunscreen and does not replace sun protection."
           }
         },
         "fda": {
@@ -101,7 +101,7 @@
           "settings": {
             "kicker": "Protect",
             "name": "UV Shield+",
-            "text": "Nutritional and antioxidant support for skin exposed to life outdoors."
+            "text": "Nutritional and antioxidant support for skin exposed to life outdoors.†"
           }
         },
         "b2": {
@@ -109,7 +109,7 @@
           "settings": {
             "kicker": "Balance",
             "name": "Skinbiotic+",
-            "text": "Synbiotic support for gut health and the gut-skin connection."
+            "text": "Synbiotic support for gut health and the gut-skin connection.†"
           }
         }
       },
@@ -175,11 +175,11 @@
         "image_side": "right",
         "eyebrow": "",
         "heading": "UV Shield+",
-        "subhead": "Daily support for active, sun-ready skin",
+        "subhead": "Daily support for active, sun-ready skin†",
         "product": "uv-shield",
         "asset": "lifestyle-uvshield-rocks.webp",
         "ratio": "4x5",
-        "body": "<p>UV Shield+ combines five ingredients selected for complementary nutritional and antioxidant roles:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Trans-resveratrol</li><li>Spirulina</li></ul><p>The formula’s strength lies in covering several aspects of environmental and oxidative-stress biology rather than depending on one single mechanism.</p><p><strong>Key support areas:</strong> environmental stress, antioxidant support, skin resilience, outdoor lifestyle support.</p>",
+        "body": "<p>UV Shield+ combines five ingredients selected for complementary nutritional and antioxidant roles:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Trans-resveratrol</li><li>Spirulina</li></ul><p>The formula’s strength lies in covering several aspects of environmental and oxidative-stress biology rather than depending on one single mechanism.</p><p><strong>Key support areas:</strong> environmental stress, antioxidant support, skin resilience, outdoor lifestyle support.†</p>",
         "primary_label": "Explore UV Shield+"
       }
     },
@@ -194,7 +194,7 @@
         "product": "skinbiotic",
         "asset": "lifestyle-skinbiotic-cliffs.webp",
         "ratio": "4x5",
-        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection.</p><p>The formulation rationale focuses on prebiotic support, multi-organism microbiome support, and complementary microbial roles.</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.</p>",
+        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection.</p><p>The formulation rationale focuses on prebiotic support, multi-organism microbiome support, and complementary microbial roles.†</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.†</p>",
         "primary_label": "Explore Skinbiotic+"
       }
     },
@@ -205,7 +205,7 @@
         "eyebrow": "",
         "heading": "Skin support works in layers.",
         "body": "<p>A complete routine has more than one layer.</p>",
-        "callout": "The Outdoor Duo belongs inside a complete skin-health routine, not instead of one."
+        "callout": "The Outdoor Duo is not a sunscreen and does not replace sun protection."
       },
       "blocks": {
         "b1": {
@@ -257,7 +257,7 @@
         "eyebrow": "",
         "heading": "Outdoor exposure is more than a surface event.",
         "heading_tag": "h2",
-        "body": "<p>Sunlight and environmental exposure can influence oxidative stress and other cellular responses in skin.</p><p>UV Shield+ is formulated around nutritional and antioxidant support for those internal systems.</p>",
+        "body": "<p>Sunlight and environmental exposure can influence oxidative stress and other cellular responses in skin.</p><p>UV Shield+ is formulated around nutritional and antioxidant support for those internal systems.†</p>",
         "quote": "Internal support does not replace external protection."
       }
     },
@@ -270,7 +270,7 @@
         "eyebrow": "",
         "heading": "The gut and skin communicate.",
         "heading_tag": "h2",
-        "body": "<p>The gut-skin axis refers to biological communication between the intestinal environment and the skin through pathways involving:</p><ul><li>Microbial metabolites</li><li>Immune signaling</li><li>Barrier integrity</li><li>Nutrient metabolism</li></ul><p>Skinbiotic+ is designed to support the intestinal side of that relationship. It is a synbiotic formula combining inulin with multiple probiotic organisms selected around gut and skin-related biological rationale.</p>"
+        "body": "<p>The gut-skin axis refers to biological communication between the intestinal environment and the skin through pathways involving:</p><ul><li>Microbial metabolites</li><li>Immune signaling</li><li>Barrier integrity</li><li>Nutrient metabolism</li></ul><p>Skinbiotic+ is designed to support the intestinal side of that relationship.† It is a synbiotic formula combining inulin with multiple probiotic organisms selected around gut and skin-related biological rationale.</p>"
       }
     },
     "formula": {
@@ -287,7 +287,7 @@
             "kicker": "Protect",
             "name": "UV Shield+",
             "items": "Niacinamide\nPolypodium leucotomos\nEGCG\nTrans-resveratrol\nSpirulina",
-            "focus": "Environmental and antioxidant support."
+            "focus": "Environmental and antioxidant support.†"
           }
         },
         "b2": {
@@ -296,7 +296,7 @@
             "kicker": "Balance",
             "name": "Skinbiotic+",
             "items": "Organic inulin\nLactobacillus plantarum\nBifidobacterium lactis\nLactobacillus rhamnosus\nBifidobacterium bifidum\nAkkermansia muciniphila Akk11®",
-            "focus": "Gut-skin and microbiome support."
+            "focus": "Gut-skin and microbiome support.†"
           }
         }
       },
@@ -312,7 +312,7 @@
         "columns": "3",
         "eyebrow": "",
         "heading": "Designed for people who spend time in the sun.",
-        "statement": "The Outdoor Duo is not about avoiding the sun. It is about supporting your skin while continuing to live the life you enjoy."
+        "statement": "The Outdoor Duo is not about avoiding the sun. It is about supporting your skin while continuing to live the life you enjoy.†"
       },
       "blocks": {
         "b1": {
@@ -391,14 +391,14 @@
           "type": "card",
           "settings": {
             "title": "Environmental support†",
-            "text": "<p>UV Shield+ provides targeted nutritional and antioxidant support.</p>"
+            "text": "<p>UV Shield+ provides targeted nutritional and antioxidant support.†</p>"
           }
         },
         "b2": {
           "type": "card",
           "settings": {
             "title": "Gut-skin support†",
-            "text": "<p>Skinbiotic+ supports the microbiome and gut-skin connection.</p>"
+            "text": "<p>Skinbiotic+ supports the microbiome and gut-skin connection.†</p>"
           }
         },
         "b3": {
@@ -492,7 +492,7 @@
       "settings": {
         "color_scheme": "green",
         "heading": "Keep the sunscreen.",
-        "body": "<p>The Outdoor Duo is intended to complement a complete sun-health routine. Continue to use:</p>",
+        "body": "<p>The Outdoor Duo is not a sunscreen and does not replace sun protection. Continue to use:</p>",
         "items": "Broad-spectrum sunscreen\nProtective clothing\nHats and sunglasses\nShade\nReapplication\nRoutine dermatologic care",
         "callout": "Internal supplementation is not oral sunscreen."
       }
@@ -613,7 +613,7 @@
           "type": "item",
           "settings": {
             "question": "What is the Outdoor Duo?",
-            "answer": "<p>The Outdoor Duo combines UV Shield+ and Skinbiotic+ in a two-product routine designed to support environmental skin resilience and the gut-skin connection.</p>"
+            "answer": "<p>The Outdoor Duo combines UV Shield+ and Skinbiotic+ in a two-product routine designed to support environmental skin resilience and the gut-skin connection.†</p>"
           }
         },
         "b2": {
@@ -627,14 +627,14 @@
           "type": "item",
           "settings": {
             "question": "Why are these two products paired?",
-            "answer": "<p>They focus on different areas of internal support: UV Shield+ emphasizes environmental and antioxidant support, while Skinbiotic+ emphasizes microbiome and gut-skin support.</p>"
+            "answer": "<p>They focus on different areas of internal support: UV Shield+ emphasizes environmental and antioxidant support, while Skinbiotic+ emphasizes microbiome and gut-skin support.†</p>"
           }
         },
         "b4": {
           "type": "item",
           "settings": {
             "question": "Does the Outdoor Duo replace sunscreen?",
-            "answer": "<p>No. It is designed to complement sunscreen and smart sun habits, not replace them.</p>"
+            "answer": "<p>No. The Outdoor Duo is not a sunscreen and does not replace sun protection.</p>"
           }
         },
         "b5": {
@@ -690,7 +690,7 @@
       "settings": {
         "color_scheme": "dark",
         "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
-        "extra_line": "The Outdoor Duo is not a replacement for sunscreen. Use with topical sunscreen, protective clothing, shade, and smart sun habits."
+        "extra_line": "The Outdoor Duo is not a sunscreen and does not replace sun protection."
       }
     },
     "final": {
@@ -699,7 +699,7 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Build internal skin support into your daily routine.",
-        "body": "<p>UV Shield+ and Skinbiotic+ bring environmental support and gut-skin balance together in one dermatologist-formulated bundle built for life outdoors.</p>",
+        "body": "<p>UV Shield+ and Skinbiotic+ bring environmental support and gut-skin balance together in one dermatologist-formulated bundle built for life outdoors.†</p>",
         "button_label": "Choose your plan",
         "button_url": "#buy-box",
         "secondary_label": "Explore the science",

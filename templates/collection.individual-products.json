@@ -33,7 +33,7 @@
           "settings": {
             "kicker": "Protect",
             "title": "UV Shield+",
-            "text": "<p>For people focused on outdoor exposure, environmental stress, and daily skin resilience.</p>"
+            "text": "<p>For people focused on outdoor exposure, environmental stress, and daily skin resilience.†</p>"
           }
         },
         "b2": {
@@ -49,7 +49,7 @@
           "settings": {
             "kicker": "Restore",
             "title": "Dermaboost+",
-            "text": "<p>For people focused on antioxidant, immune, and nutritional support for calm, resilient skin.</p>"
+            "text": "<p>For people focused on antioxidant, immune, and nutritional support for calm, resilient skin.†</p>"
           }
         }
       },
@@ -86,12 +86,12 @@
           "settings": {
             "product": "skinbiotic",
             "role": "Balance",
-            "description": "A dermatologist-formulated synbiotic combining organic inulin with multiple probiotic organisms to support gut health, microbiome balance, and the gut-skin connection.",
+            "description": "A dermatologist-formulated synbiotic combining organic inulin with multiple probiotic organisms to support gut health, microbiome balance, and the gut-skin connection.†",
             "support_areas": "Gut-skin connection\nMicrobiome balance\nSynbiotic support\nDaily internal balance",
             "best_for": "Customers already interested in probiotics\nGut-health-focused routines\nMicrobiome support\nInternal skin-health routines",
             "choose_label": "Choose Skinbiotic+",
             "plan_heading": "Choose your Skinbiotic+ plan",
-            "plan_copy": "Build gut-skin support into a consistent daily routine."
+            "plan_copy": "Build gut-skin support into a consistent daily routine.†"
           }
         },
         "b3": {
@@ -99,9 +99,9 @@
           "settings": {
             "product": "dermaboost",
             "role": "Restore",
-            "description": "A dermatologist-formulated daily supplement combining vitamins, minerals, carotenoids, and botanical polyphenols selected for antioxidant, nutritional, and normal immune-support roles.",
-            "support_areas": "Antioxidant support\nNormal immune function\nNutritional skin support\nSkin resilience",
-            "best_for": "Broader daily nutritional support\nAntioxidant-focused routines\nImmune-supportive nutrition\nLong-term skin resilience",
+            "description": "A dermatologist-formulated daily supplement combining vitamins, minerals, carotenoids, and botanical polyphenols selected for antioxidant, nutritional, and normal immune-support roles.†",
+            "support_areas": "Antioxidant support\nNormal immune function\nNutritional skin support†\nSkin resilience",
+            "best_for": "Broader daily nutritional support†\nAntioxidant-focused routines\nImmune-supportive nutrition\nLong-term skin resilience†",
             "choose_label": "Choose Dermaboost+",
             "plan_heading": "Choose your Dermaboost+ plan",
             "plan_copy": "Choose the replenishment schedule that fits your daily skin-health routine."
@@ -199,7 +199,7 @@
         "product": "uv-shield",
         "asset": "lifestyle-uvshield-rocks.webp",
         "ratio": "4x5",
-        "body": "<p>UV Shield+ combines niacinamide, Polypodium leucotomos, trans-resveratrol, EGCG, and spirulina.</p><p>These ingredients are selected to cover multiple complementary aspects of environmental, antioxidant, and UV-response biology.</p><p><strong>Best starting point if:</strong></p><ul><li>You spend significant time outdoors</li><li>Environmental exposure is your primary concern</li><li>You want targeted antioxidant support</li><li>You want a supplement designed to complement your sun-safe routine</li></ul>",
+        "body": "<p>UV Shield+ combines niacinamide, Polypodium leucotomos, trans-resveratrol, EGCG, and spirulina.</p><p>These ingredients are selected to cover multiple complementary aspects of environmental, antioxidant, and UV-response biology.</p><p><strong>Best starting point if:</strong></p><ul><li>You spend significant time outdoors</li><li>Environmental exposure is your primary concern</li><li>You want targeted antioxidant support†</li></ul>",
         "primary_label": "Explore UV Shield+"
       }
     },
@@ -213,7 +213,7 @@
         "product": "skinbiotic",
         "asset": "lifestyle-skinbiotic-cliffs.webp",
         "ratio": "4x5",
-        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula.</p><p>Research describes the gut-skin axis as involving short-chain fatty acid production, immune signaling, barrier integrity, and microbiome composition.</p><p><strong>Best starting point if:</strong></p><ul><li>Gut health is already part of your wellness routine</li><li>You are interested in microbiome support</li><li>You want to focus on the gut-skin connection</li><li>You prefer a simple one-capsule daily routine</li></ul>",
+        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula.</p><p>Research describes the gut-skin axis as involving short-chain fatty acid production, immune signaling, barrier integrity, and microbiome composition.</p><p><strong>Best starting point if:</strong></p><ul><li>Gut health is already part of your wellness routine</li><li>You are interested in microbiome support†</li><li>You want to focus on the gut-skin connection</li><li>You prefer a simple one-capsule daily routine</li></ul>",
         "primary_label": "Explore Skinbiotic+"
       }
     },
@@ -227,7 +227,7 @@
         "product": "dermaboost",
         "asset": "lifestyle-dermaboost-yacht.webp",
         "ratio": "4x5",
-        "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients in one formula.</p><p>The ingredient research includes antioxidant, nutritional, and immune-related biological rationale for the ingredient mix.</p><p><strong>Best starting point if:</strong></p><ul><li>You want broader daily nutritional skin support</li><li>Antioxidant support is a priority</li><li>You want nutrients associated with normal immune function</li><li>You want a more comprehensive single-formula routine</li></ul>",
+        "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients in one formula.</p><p>The ingredient research includes antioxidant, nutritional, and immune-related biological rationale for the ingredient mix.</p><p><strong>Best starting point if:</strong></p><ul><li>You want broader daily nutritional skin support†</li><li>Antioxidant support is a priority†</li><li>You want nutrients associated with normal immune function</li><li>You want a more comprehensive single-formula routine</li></ul>",
         "primary_label": "Explore Dermaboost+"
       }
     },
@@ -261,7 +261,7 @@
         "b3": {
           "type": "path",
           "settings": {
-            "statement": "I want broader daily skin resilience support",
+            "statement": "I want broader daily skin resilience support†",
             "product": "dermaboost",
             "label": "Start with Dermaboost+"
           }
@@ -298,7 +298,7 @@
           "type": "system",
           "settings": {
             "product": "skin-recovery-system",
-            "roles": "Balance + Restore",
+            "roles": "Balance + Restore†",
             "best_for": "Skinbiotic+ + Dermaboost+",
             "cta": "Explore Balance Duo",
             "asset": "system-skin-recovery.webp",
@@ -319,7 +319,7 @@
           "type": "system",
           "settings": {
             "product": "complete-skin-defense-system",
-            "roles": "Protect + Balance + Restore",
+            "roles": "Protect + Balance + Restore†",
             "best_for": "All three.",
             "cta": "Explore Tria Prima",
             "asset": "system-complete.webp"
@@ -415,7 +415,7 @@
           "type": "item",
           "settings": {
             "question": "Which product should I start with?",
-            "answer": "<p>Choose based on your main priority: Protect with UV Shield+, Balance with Skinbiotic+, or Restore with Dermaboost+.</p>"
+            "answer": "<p>Choose based on your main priority: Protect with UV Shield+, Balance with Skinbiotic+, or Restore with Dermaboost+.†</p>"
           }
         },
         "b6": {
@@ -449,7 +449,7 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Start with the formula that fits your routine.",
-        "body": "<p>Three dermatologist-formulated ways to support skin from within.</p>",
+        "body": "<p>Three dermatologist-formulated ways to support skin from within.†</p>",
         "button_label": "Choose your formula",
         "button_url": "#choose",
         "secondary_label": "Explore the bundles",

@@ -16,7 +16,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "text": "<p>The Balance Duo combines Skinbiotic+ and Dermaboost+ in one dermatologist-formulated daily routine.</p><p>Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection. Dermaboost+ provides broader antioxidant, nutritional, and normal immune support through vitamins, minerals, carotenoids, and botanical polyphenols.</p><p>Together, they create a two-step bundle designed for customers who want to support skin from the gut outward while also strengthening the broader nutritional foundation skin relies on.</p>"
+            "text": "<p>The Balance Duo combines Skinbiotic+ and Dermaboost+ in one dermatologist-formulated daily routine.</p><p>Skinbiotic+ supports gut health, microbiome balance, and the gut-skin connection.† Dermaboost+ provides broader antioxidant, nutritional, and normal immune support through vitamins, minerals, carotenoids, and botanical polyphenols.†</p><p>Together, they create a two-step bundle designed for customers who want to support skin from the gut outward while also strengthening the broader nutritional foundation skin relies on.†</p>"
           }
         },
         "bullets": {
@@ -40,7 +40,7 @@
         "expectation": {
           "type": "expectation",
           "settings": {
-            "text": "Skin support is gradual. Consistent daily use matters."
+            "text": "Skin support is gradual.† Consistent daily use matters."
           }
         },
         "trust_bar": {
@@ -91,7 +91,7 @@
         "eyebrow": "",
         "heading": "A two-step routine for internal balance and resilience.",
         "body": "<p>The Balance Duo combines two formulas with different primary roles.</p><p>The combination is biologically complementary because one formula is centered on the gut and microbial environment and the other on broader systemic nutritional and antioxidant pathways.</p>",
-        "center": "Balance the gut. Support the systems skin relies on."
+        "center": "Balance the gut. Support the systems skin relies on.†"
       },
       "blocks": {
         "b1": {
@@ -99,7 +99,7 @@
           "settings": {
             "kicker": "Balance",
             "name": "Skinbiotic+",
-            "text": "Supports gut health, microbiome balance, and the gut-skin connection."
+            "text": "Supports gut health, microbiome balance, and the gut-skin connection.†"
           }
         },
         "b2": {
@@ -107,7 +107,7 @@
           "settings": {
             "kicker": "Restore",
             "name": "Dermaboost+",
-            "text": "Provides broader antioxidant, nutritional, and normal immune support."
+            "text": "Provides broader antioxidant, nutritional, and normal immune support.†"
           }
         }
       },
@@ -129,7 +129,7 @@
         "eyebrow": "",
         "heading": "Why pair Skinbiotic+ with Dermaboost+?",
         "heading_tag": "h2",
-        "body": "<p>The two products begin in different places.</p><p><strong>Skinbiotic+</strong> focuses on the gut, microbiome, prebiotic support, and microbial signaling.</p><p><strong>Dermaboost+</strong> focuses on vitamins, minerals, botanicals, carotenoids, antioxidant support, and normal immune function.</p><p>Together they form a gut-to-systemic strategy, with potentially complementary roles across:</p>"
+        "body": "<p>The two products begin in different places.</p><p><strong>Skinbiotic+</strong> focuses on the gut, microbiome, prebiotic support, and microbial signaling.†</p><p><strong>Dermaboost+</strong> focuses on vitamins, minerals, botanicals, carotenoids, antioxidant support, and normal immune function.†</p><p>Together they form a gut-to-systemic strategy, with potentially complementary roles across:</p>"
       }
     },
     "why_areas": {
@@ -152,7 +152,7 @@
           "type": "card",
           "settings": {
             "number": "02",
-            "title": "Intestinal barrier support"
+            "title": "Intestinal barrier support†"
           }
         },
         "b3": {
@@ -173,7 +173,7 @@
           "type": "card",
           "settings": {
             "number": "05",
-            "title": "Broader nutritional support"
+            "title": "Broader nutritional support†"
           }
         }
       },
@@ -196,7 +196,7 @@
         "product": "skinbiotic",
         "asset": "lifestyle-skinbiotic-cliffs.webp",
         "ratio": "4x5",
-        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection. Its formula includes:</p><ul><li>Organic inulin</li><li>Lactobacillus plantarum</li><li>Bifidobacterium lactis</li><li>Lactobacillus rhamnosus</li><li>Bifidobacterium bifidum</li><li>Akkermansia muciniphila Akk11®</li></ul><p>The formulation rationale is the prebiotic and probiotic pairing, and the different ecological roles of the organisms.</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.</p>",
+        "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection. Its formula includes:</p><ul><li>Organic inulin</li><li>Lactobacillus plantarum</li><li>Bifidobacterium lactis</li><li>Lactobacillus rhamnosus</li><li>Bifidobacterium bifidum</li><li>Akkermansia muciniphila Akk11®</li></ul><p>The formulation rationale is the prebiotic and probiotic pairing, and the different ecological roles of the organisms.</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.†</p>",
         "primary_label": "Explore Skinbiotic+"
       }
     },
@@ -207,11 +207,11 @@
         "image_side": "left",
         "eyebrow": "",
         "heading": "Dermaboost+",
-        "subhead": "Daily immune support for calm, balanced skin",
+        "subhead": "Daily immune support for calm, balanced skin†",
         "product": "dermaboost",
         "asset": "lifestyle-dermaboost-yacht.webp",
         "ratio": "4x5",
-        "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients selected for broader nutritional, antioxidant, and normal immune-supportive roles. The formula includes:</p><ul><li>Niacinamide</li><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf extract</li><li>Astaxanthin</li></ul><p>The formulation rationale identifies several complementary ingredient relationships, including quercetin + curcumin, quercetin + vitamin C, quercetin + astaxanthin, curcumin + olive leaf, and vitamin C + zinc.</p><p><strong>Key support areas:</strong> antioxidant support, normal immune function, nutritional skin support, daily skin resilience.</p>",
+        "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients selected for broader nutritional, antioxidant, and normal immune-supportive roles.† The formula includes:</p><ul><li>Niacinamide</li><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf extract</li><li>Astaxanthin</li></ul><p>The formulation rationale identifies several complementary ingredient relationships, including quercetin + curcumin, quercetin + vitamin C, quercetin + astaxanthin, curcumin + olive leaf, and vitamin C + zinc.</p><p><strong>Key support areas:</strong> antioxidant support, normal immune function, nutritional skin support, daily skin resilience.†</p>",
         "primary_label": "Explore Dermaboost+"
       }
     },
@@ -235,20 +235,20 @@
         "heading": "Different starting points. Complementary support.",
         "columns": "3",
         "show_images": false,
-        "body": "<p>Skinbiotic+ begins with the intestinal environment. Dermaboost+ adds broader nutritional and antioxidant support. Together, the bundle is designed around a simple idea:</p>"
+        "body": "<p>Skinbiotic+ begins with the intestinal environment. Dermaboost+ adds broader nutritional and antioxidant support.† Together, the bundle is designed around a simple idea:</p>"
       },
       "blocks": {
         "b1": {
           "type": "card",
           "settings": {
             "title": "Gut-side support",
-            "text": "<p>Microbiome + synbiotic support.</p>"
+            "text": "<p>Microbiome + synbiotic support.†</p>"
           }
         },
         "b2": {
           "type": "card",
           "settings": {
-            "title": "Systemic nutritional support",
+            "title": "Systemic nutritional support†",
             "text": "<p>Vitamins, minerals, polyphenols, and carotenoids.</p>"
           }
         },
@@ -256,7 +256,7 @@
           "type": "card",
           "settings": {
             "title": "Shared goal",
-            "text": "<p>Support the broader internal systems connected to skin health.</p>"
+            "text": "<p>Support the broader internal systems connected to skin health.†</p>"
           }
         }
       },
@@ -275,7 +275,7 @@
         "eyebrow": "",
         "heading": "The microbiome does more than digest food.",
         "heading_tag": "h2",
-        "body": "<p>Intestinal microorganisms interact with the body through:</p><ul><li>Metabolites</li><li>Barrier signaling</li><li>Nutrient processing</li><li>Immune communication</li></ul><p>Skinbiotic+ supports the microbial environment through prebiotic fiber and multiple probiotic organisms. Dermaboost+ contributes nutrients associated with normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating an immune-mediated skin condition.</em></p><h3>Broader support beyond the microbiome.</h3><p>Dermaboost+ expands the bundle beyond gut support through a combination of:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.</p>"
+        "body": "<p>Intestinal microorganisms interact with the body through:</p><ul><li>Metabolites</li><li>Barrier signaling</li><li>Nutrient processing</li><li>Immune communication</li></ul><p>Skinbiotic+ supports the microbial environment through prebiotic fiber and multiple probiotic organisms.† Dermaboost+ contributes nutrients associated with normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating an immune-mediated skin condition.</em></p><h3>Broader support beyond the microbiome.†</h3><p>Dermaboost+ expands the bundle beyond gut support through a combination of:†</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.†</p>"
       }
     },
     "formula": {
@@ -292,7 +292,7 @@
             "kicker": "Balance",
             "name": "Skinbiotic+",
             "items": "Organic inulin\nLactobacillus plantarum\nBifidobacterium lactis\nLactobacillus rhamnosus\nBifidobacterium bifidum\nAkkermansia muciniphila Akk11®",
-            "focus": "Gut-skin + microbiome support."
+            "focus": "Gut-skin + microbiome support.†"
           }
         },
         "b2": {
@@ -301,7 +301,7 @@
             "kicker": "Restore",
             "name": "Dermaboost+",
             "items": "Niacinamide\nVitamin D3\nVitamin C\nZinc\nQuercetin\nCurcumin\nOlive leaf extract\nAstaxanthin",
-            "focus": "Antioxidant + nutritional + normal immune support."
+            "focus": "Antioxidant + nutritional + normal immune support.†"
           }
         }
       },
@@ -325,7 +325,7 @@
             "kicker": "Protect + Balance",
             "name": "Outdoor Duo",
             "text": "UV Shield+ + Skinbiotic+",
-            "focus": "Environmental support + gut-skin balance."
+            "focus": "Environmental support + gut-skin balance.†"
           }
         },
         "b2": {
@@ -334,7 +334,7 @@
             "kicker": "Balance + Restore",
             "name": "Balance Duo",
             "text": "Skinbiotic+ + Dermaboost+",
-            "focus": "Gut-skin balance + broader nutritional resilience."
+            "focus": "Gut-skin balance + broader nutritional resilience.†"
           }
         }
       },
@@ -364,7 +364,7 @@
           "type": "card",
           "settings": {
             "title": "The wellness-focused customer",
-            "text": "<p>Wants broader internal support as part of a daily routine.</p>"
+            "text": "<p>Wants broader internal support as part of a daily routine.†</p>"
           }
         },
         "b3": {
@@ -377,7 +377,7 @@
         "b4": {
           "type": "card",
           "settings": {
-            "title": "The skin-resilience customer",
+            "title": "The skin-resilience customer†",
             "text": "<p>Focused on long-term support rather than short-term cosmetic fixes.</p>"
           }
         },
@@ -411,7 +411,7 @@
           "type": "card",
           "settings": {
             "title": "Gut-skin support†",
-            "text": "<p>Skinbiotic+ supports the microbiome and gut-skin connection.</p>"
+            "text": "<p>Skinbiotic+ supports the microbiome and gut-skin connection.†</p>"
           }
         },
         "b2": {
@@ -622,7 +622,7 @@
           "type": "item",
           "settings": {
             "question": "What is the Balance Duo?",
-            "answer": "<p>The Balance Duo combines Skinbiotic+ and Dermaboost+ in a two-product daily routine designed to support gut-skin balance together with broader antioxidant, nutritional, and normal immune support.</p>"
+            "answer": "<p>The Balance Duo combines Skinbiotic+ and Dermaboost+ in a two-product daily routine designed to support gut-skin balance together with broader antioxidant, nutritional, and normal immune support.†</p>"
           }
         },
         "b2": {
@@ -636,7 +636,7 @@
           "type": "item",
           "settings": {
             "question": "Why are these two formulas paired?",
-            "answer": "<p>Skinbiotic+ focuses primarily on gut and microbiome support, while Dermaboost+ adds broader antioxidant, nutritional, and normal immune-supportive pathways. Together they form a complementary gut-to-systemic strategy.</p>"
+            "answer": "<p>Skinbiotic+ focuses primarily on gut and microbiome support, while Dermaboost+ adds broader antioxidant, nutritional, and normal immune-supportive pathways.† Together they form a complementary gut-to-systemic strategy.</p>"
           }
         },
         "b4": {
@@ -671,7 +671,7 @@
           "type": "item",
           "settings": {
             "question": "How is this different from Outdoor Duo?",
-            "answer": "<p>Outdoor Duo combines Protect + Balance. Balance Duo combines Balance + Restore.</p>"
+            "answer": "<p>Outdoor Duo combines Protect + Balance. Balance Duo combines Balance + Restore.†</p>"
           }
         },
         "b9": {
@@ -707,7 +707,7 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Support skin from the gut out.",
-        "body": "<p>Skinbiotic+ and Dermaboost+ combine microbiome-focused support with broader antioxidant, nutritional, and normal immune support in one dermatologist-formulated routine.</p>",
+        "body": "<p>Skinbiotic+ and Dermaboost+ combine microbiome-focused support with broader antioxidant, nutritional, and normal immune support in one dermatologist-formulated routine.†</p>",
         "button_label": "Choose your plan",
         "button_url": "#buy-box",
         "secondary_label": "Explore the science",

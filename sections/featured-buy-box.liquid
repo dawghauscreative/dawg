@@ -54,6 +54,7 @@
           <a class="btn btn--block" href="{{ p.url }}#buy-box">{{ settings.sticky_cta_label }}</a>
           {%- if request.design_mode -%}<p class="small">[Editor only] Add Supr's "Subscriptions + Bundles" block to this section (Add block &gt; Apps) to show the plan options here.</p>{%- endif -%}
         {%- endunless -%}
+        {%- if settings.physician_note != blank -%}<p class="small physician-note">{{ settings.physician_note }}</p>{%- endif -%}
       </div>
       <p class="small home-buy__more"><a class="text-link" href="{{ p.url }}">{{ section.settings.details_label }}</a></p>
       <div class="small">{% render 'fda-disclaimer', dagger: true %}</div>
