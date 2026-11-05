@@ -323,7 +323,8 @@
         "body": "",
         "button_label": "",
         "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "finder": {
       "type": "system-finder",

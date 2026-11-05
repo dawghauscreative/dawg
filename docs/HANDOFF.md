@@ -543,3 +543,4 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Skinbiotic+ description: "30 billion CFU" removed in both places to match the label (label lists the 215 mg blend with no CFU).
 - Same day, owner's call: Outdoor Duo feature, "Every ingredient has a reason", "Built around standards, not trends" and the mission section hidden again. "Start here" stays below the three roles.
 - "Start here" then moved to the top, right under the trust strip and above the "Skin health is more than a surface routine" text and intro video.
+- Second home video (the one after Protect / Balance / Restore) hidden at the owner's request; the intro video stays.
