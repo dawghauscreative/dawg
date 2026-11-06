@@ -278,13 +278,20 @@
       }, { threshold: 0.25 }).observe(frame);
     }
   });
-  // Desktop "Choose your plan" link on non-product pages: appears after scrolling, CSS hides it on phones
+})();
+
+/* Floating "Choose your plan" link and mobile back-to-top: their own block so they run on every page,
+   not only pages that have a video. */
+(function () {
+  // "Choose your plan" link on every non-product page: appears after a short scroll, or straight away on short pages
   var planCta = document.querySelector('[data-plan-cta]');
   if (planCta) {
+    document.body.classList.add('has-sticky-cta');
     var planTick = false;
     var planUpdate = function () {
       planTick = false;
-      var on = window.scrollY > 600;
+      var room = document.documentElement.scrollHeight - window.innerHeight;
+      var on = window.scrollY > 300 || room < 300;
       planCta.classList.toggle('is-visible', on);
       planCta.setAttribute('aria-hidden', on ? 'false' : 'true');
       planCta.toggleAttribute('inert', !on);

@@ -83,20 +83,21 @@
 
     {%- sections 'footer-group' -%}
 
-    {%- comment -%} Desktop floating "Choose your plan" on non-product pages: a plain link to Shop All (never an add-to-cart). Product pages have their own bar in pdp-main. {%- endcomment -%}
+    {%- comment -%} Floating "Choose your plan" on every page (bottom bar on phones, pill on desktop): a plain link to Shop All, never an add-to-cart. On Shop All it jumps to the bundles grid. Product pages have their own bar in pdp-main; the cart already has checkout. {%- endcomment -%}
     {%- liquid
       assign show_plan_cta = true
       if template.name == 'product' or template.name == 'cart' or template.name == 'password' or template.name == 'gift_card'
         assign show_plan_cta = false
       endif
+      assign plan_cta_url = routes.collections_url | append: '/shop-all'
       if template.name == 'collection' and collection.handle == 'shop-all'
-        assign show_plan_cta = false
+        assign plan_cta_url = '#shop-grid'
       endif
     -%}
     {%- if show_plan_cta -%}
       <div class="sticky-cta plan-cta" data-plan-cta aria-hidden="true" inert>
         <span class="sticky-cta__title">Alchemia MD</span>
-        <a class="btn" href="{{ routes.collections_url }}/shop-all">{{ settings.sticky_cta_label }}</a>
+        <a class="btn" href="{{ plan_cta_url }}">{{ settings.sticky_cta_label }}</a>
       </div>
     {%- endif -%}
 

@@ -1002,7 +1002,7 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 }
 .back-to-top { position: fixed; right: 16px; bottom: 20px; z-index: 40; width: 44px; height: 44px; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--c-gold) 60%, transparent); background: color-mix(in srgb, var(--c-black) 88%, transparent); color: var(--c-white); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 6px 20px rgba(0,0,0,.35); padding: 0; }
 .back-to-top[hidden] { display: none; }
-.template-product .back-to-top { bottom: 92px; }
+.template-product .back-to-top, .has-sticky-cta .back-to-top { bottom: 92px; }
 @media (min-width: 750px) { .back-to-top { display: none !important; } }
 
 /* ---------- Science + PDP accordions (client review) ---------- */
@@ -1167,9 +1167,8 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
   .sticky-cta .btn { min-width: 0; padding-inline: 28px; }
   .has-sticky-cta { padding-bottom: 0; }
 }
-/* Same pill on the other pages (desktop only); links to Shop All */
-.plan-cta { display: none; }
-@media (min-width: 990px) { .plan-cta { display: flex; } }
+/* Same bar/pill on every other page; links to Shop All */
+#shop-grid { scroll-margin-top: 90px; }
 
 /* Home: featured product buy box */
 .home-buy__grid { display: grid; gap: 40px; align-items: center; }

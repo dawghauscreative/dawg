@@ -544,3 +544,7 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 - Same day, owner's call: Outdoor Duo feature, "Every ingredient has a reason", "Built around standards, not trends" and the mission section hidden again. "Start here" stays below the three roles.
 - "Start here" then moved to the top, right under the trust strip and above the "Skin health is more than a surface routine" text and intro video.
 - Second home video (the one after Protect / Balance / Restore) hidden at the owner's request; the intro video stays.
+
+## Floating "Choose your plan" on every page (2026-11-06)
+- Fix: the floating button and the phone back-to-top arrow were coded inside the video-player script, which stops early on pages without a video, so they only showed on pages with a video. They now run in their own block on every page.
+- The non-product button now shows on phones too (full-width bar at the bottom, same as product pages) and on desktop (pill, bottom right). It appears after a short scroll, or straight away on short pages, and links to Shop All. On Shop All itself it jumps to the bundles grid (`#shop-grid`). Product pages keep their own bar that scrolls to the buy box. Not shown on the cart (checkout is already there) or the password page.
