@@ -136,28 +136,32 @@
           "type": "step",
           "settings": {
             "kicker": "UV Shield+",
-            "label": "Environmental exposure"
+            "label": "Environmental exposure",
+            "detail": "Time in the sun, heat and the outdoors adds daily environmental stress for skin."
           }
         },
         "b2": {
           "type": "step",
           "settings": {
             "kicker": "UV Shield+",
-            "label": "Antioxidant + nutritional support"
+            "label": "Antioxidant + nutritional support",
+            "detail": "UV Shield+ provides antioxidant and nutritional support for skin exposed to environmental stress.†"
           }
         },
         "b3": {
           "type": "step",
           "settings": {
             "kicker": "Skinbiotic+",
-            "label": "Gut + microbiome support"
+            "label": "Gut + microbiome support",
+            "detail": "Skinbiotic+ pairs prebiotic fiber with five probiotic strains to support the gut side of the gut-skin connection.†"
           }
         },
         "b4": {
           "type": "step",
           "settings": {
             "kicker": "Combined routine",
-            "label": "Broader internal balance"
+            "label": "Broader internal balance",
+            "detail": "Together they approach skin health from two different starting points, in one daily routine.†"
           }
         }
       },
@@ -274,31 +278,36 @@
         "b1": {
           "type": "step",
           "settings": {
-            "label": "Gut microbiome"
+            "label": "Gut microbiome",
+            "detail": "Trillions of microorganisms live in the intestinal tract, together called the gut microbiome."
           }
         },
         "b2": {
           "type": "step",
           "settings": {
-            "label": "Microbial metabolites"
+            "label": "Microbial metabolites",
+            "detail": "When gut microbes ferment dietary fiber, they produce compounds such as short-chain fatty acids that take part in normal immune and metabolic signaling."
           }
         },
         "b3": {
           "type": "step",
           "settings": {
-            "label": "Immune signaling"
+            "label": "Immune signaling",
+            "detail": "A large share of the body's immune tissue sits along the digestive tract, and immune messengers travel throughout the body."
           }
         },
         "b4": {
           "type": "step",
           "settings": {
-            "label": "Systemic circulation"
+            "label": "Systemic circulation",
+            "detail": "Nutrients absorbed in the gut, and signaling compounds, reach the rest of the body through the bloodstream."
           }
         },
         "b5": {
           "type": "step",
           "settings": {
-            "label": "Skin"
+            "label": "Skin",
+            "detail": "Skin relies on those nutrients and responds to that signaling. Researchers continue to study how much diet and supplements can influence it."
           }
         }
       },

@@ -1,6 +1,51 @@
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    {%- if section.settings.layout == 'tabs' -%}
+      {%- comment -%} Tabs layout (client review Nov 7): full width, one bundle at a time, copy left and image right. {%- endcomment -%}
+      <div class="bundle-tabs" data-tabs>
+        <div class="bundle-tabs__list" role="tablist" aria-label="{{ section.settings.heading | escape }}">
+          {%- for block in section.blocks -%}
+            {%- assign p = block.settings.product -%}
+            {%- if p != blank -%}
+              <button class="bundle-tabs__tab" type="button" role="tab" id="Tab-{{ section.id }}-{{ forloop.index }}" aria-controls="TabPanel-{{ section.id }}-{{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"{% unless forloop.first %} tabindex="-1"{% endunless %}>
+                <span class="bundle-tabs__name">{{ p.title }}</span>
+                {%- if block.settings.roles != blank -%}<span class="bundle-tabs__roles">{{ block.settings.roles }}</span>{%- endif -%}
+              </button>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+        {%- for block in section.blocks -%}
+          {%- assign p = block.settings.product -%}
+          {%- if p != blank -%}
+            {%- liquid
+              case p.handle
+                when 'sun-safe-system'
+                  assign tab_asset = 'product-3d-uv-shield-skinbiotic.webp'
+                when 'skin-recovery-system'
+                  assign tab_asset = 'product-3d-skinbiotic-dermaboost.webp'
+                when 'sun-resilience-system'
+                  assign tab_asset = 'product-3d-uv-shield-dermaboost.webp'
+                when 'complete-skin-defense-system'
+                  assign tab_asset = 'product-3d-trio.webp'
+                else
+                  assign tab_asset = block.settings.asset
+              endcase
+            -%}
+            <div class="bundle-tab" role="tabpanel" id="TabPanel-{{ section.id }}-{{ forloop.index }}" aria-labelledby="Tab-{{ section.id }}-{{ forloop.index }}"{% unless forloop.first %} hidden{% endunless %} {{ block.shopify_attributes }}>
+              <div class="bundle-tab__copy">
+                {%- if block.settings.roles != blank -%}<span class="eyebrow">{{ block.settings.roles }}</span>{%- endif -%}
+                <h3>{{ p.title }}</h3>
+                <p class="lede">{{ block.settings.best_for }}</p>
+                {%- if block.settings.note != blank -%}<p class="small">{{ block.settings.note }}</p>{%- endif -%}
+                <a class="btn" href="{{ p.url }}">{{ block.settings.cta | default: 'Explore' }}</a>
+              </div>
+              <a class="bundle-tab__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">{% render 'responsive-image', image: block.settings.image, asset: tab_asset, asset_width: 1200, asset_height: 1500, ratio: '4x5', sizes: '(min-width: 990px) 40vw, 100vw', alt: p.title %}</a>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- else -%}
     <div class="cols cols--auto4 finder">
       {%- for block in section.blocks -%}
         {%- assign p = block.settings.product -%}
@@ -18,6 +63,7 @@
         {%- endif -%}
       {%- endfor -%}
     </div>
+    {%- endif -%}
     {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
       <div class="btn-row" style="justify-content:center;margin-top:48px"><a class="btn" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a></div>
     {%- endif -%}
@@ -29,6 +75,7 @@
   "name": "System finder",
   "settings": [
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "select", "id": "layout", "label": "Layout", "default": "cards", "options": [{ "value": "cards", "label": "Cards" }, { "value": "tabs", "label": "Tabs (one bundle at a time, full width)" }] },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "richtext", "id": "body", "label": "Text" },

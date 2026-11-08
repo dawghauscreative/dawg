@@ -228,31 +228,36 @@
         "b1": {
           "type": "step",
           "settings": {
-            "label": "Gut microbiome"
+            "label": "Gut microbiome",
+            "detail": "Trillions of microorganisms live in the intestinal tract, together called the gut microbiome."
           }
         },
         "b2": {
           "type": "step",
           "settings": {
-            "label": "Microbial metabolites"
+            "label": "Microbial metabolites",
+            "detail": "When gut microbes ferment dietary fiber, they produce compounds such as short-chain fatty acids that take part in normal immune and metabolic signaling."
           }
         },
         "b3": {
           "type": "step",
           "settings": {
-            "label": "Immune signaling"
+            "label": "Immune signaling",
+            "detail": "A large share of the body's immune tissue sits along the digestive tract, and immune messengers travel throughout the body."
           }
         },
         "b4": {
           "type": "step",
           "settings": {
-            "label": "Systemic circulation"
+            "label": "Systemic circulation",
+            "detail": "Nutrients absorbed in the gut, and signaling compounds, reach the rest of the body through the bloodstream."
           }
         },
         "b5": {
           "type": "step",
           "settings": {
-            "label": "Skin"
+            "label": "Skin",
+            "detail": "Skin relies on those nutrients and responds to that signaling. Researchers continue to study how much diet and supplements can influence it."
           }
         }
       },

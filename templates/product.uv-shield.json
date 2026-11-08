@@ -310,7 +310,8 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "UV Shield+ can stand alone, or become part of a bundle.",
-        "best_for_label": ""
+        "best_for_label": "",
+        "layout": "tabs"
       },
       "blocks": {
         "b1": {
@@ -319,7 +320,7 @@
             "product": "sun-safe-system",
             "roles": "Protect + Balance",
             "best_for": "UV Shield+ + Skinbiotic+. Pairs environmental support with gut-skin support through different upstream mechanisms: environmental and oxidative pathways, and the intestinal microbial environment.†",
-            "cta": "Explore Outdoor Duo",
+            "cta": "Explore",
             "asset": "system-sun-safe.webp"
           }
         },
@@ -329,7 +330,7 @@
             "product": "sun-resilience-system",
             "roles": "Protect + Restore",
             "best_for": "UV Shield+ + Dermaboost+. Pairs UV and environmental support with broader antioxidant and immune-supportive nutrition.†",
-            "cta": "Explore Sun Resilience Duo",
+            "cta": "Explore",
             "asset": "system-sun-resilience.webp"
           }
         }

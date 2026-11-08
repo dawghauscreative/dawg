@@ -97,7 +97,7 @@
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var inEditor = window.Shopify && window.Shopify.designMode;
   if ('IntersectionObserver' in window && !reduce && !inEditor) {
-    var targets = document.querySelectorAll('main .section > .container > *, main .section--tight > .container > *, main .cols > *, main .steps > *, main .faq > details, main .bundle-panel, main .founder-split__copy, main .founder-split__media');
+    var targets = document.querySelectorAll('main .section > .container > *, main .section--tight > .container > *, main .cols > *, main .steps > *, main .faq > details, main .bundle-panel, main .founder-split__copy, main .founder-split__media, main .stagger > *');
     if (targets.length) {
       document.documentElement.classList.add('reveal-on');
       var io2 = new IntersectionObserver(function (entries) {
@@ -413,3 +413,70 @@
   });
 })();
 
+
+/* Interactive flow steps: steps light up in turn on scroll; with details, the first step opens and the chain plays through once
+   (unless reduced motion); hover, focus or tap shows a step's detail and stops the autoplay. */
+(function () {
+  document.querySelectorAll('[data-flow]').forEach(function (box) {
+    var steps = Array.prototype.slice.call(box.querySelectorAll('.flow__step'));
+    var details = box.querySelectorAll('.flow__detail');
+    var hasDetail = details.length > 0;
+    var timer = null;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function set(i) {
+      box.classList.add('has-active');
+      steps.forEach(function (s) { var on = s.getAttribute('data-step') === String(i); s.classList.toggle('is-active', on); if (hasDetail) s.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+      details.forEach(function (d) { d.classList.toggle('is-active', d.getAttribute('data-step') === String(i)); });
+    }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    if (hasDetail) {
+      steps.forEach(function (s) {
+        var i = s.getAttribute('data-step');
+        s.addEventListener('mouseenter', function () { stop(); set(i); });
+        s.addEventListener('focus', function () { stop(); set(i); });
+        s.addEventListener('click', function () { stop(); set(i); });
+        s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); stop(); set(i); } });
+      });
+    }
+    function start() {
+      box.classList.add('is-in');
+      if (!hasDetail) return;
+      set(0);
+      if (reduce) return;
+      var i = 0;
+      timer = setInterval(function () { i += 1; if (i >= steps.length) { stop(); return; } set(i); }, 2600);
+    }
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) { entries.forEach(function (en) { if (en.isIntersecting) { start(); io.disconnect(); } }); }, { threshold: 0.35 });
+      io.observe(box);
+    } else { start(); }
+  });
+})();
+
+/* Tabs (bundle tabs on product pages): click or arrow keys switch panels. */
+(function () {
+  document.querySelectorAll('[data-tabs]').forEach(function (box) {
+    var tabs = Array.prototype.slice.call(box.querySelectorAll('[role="tab"]'));
+    function select(tab, focus) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        var panel = document.getElementById(t.getAttribute('aria-controls'));
+        if (panel) panel.hidden = !on;
+      });
+      if (focus) tab.focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(t); });
+      t.addEventListener('keydown', function (e) {
+        var n = null;
+        if (e.key === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+        if (e.key === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
+        if (e.key === 'Home') n = tabs[0];
+        if (e.key === 'End') n = tabs[tabs.length - 1];
+        if (n) { e.preventDefault(); select(n, true); }
+      });
+    });
+  });
+})();

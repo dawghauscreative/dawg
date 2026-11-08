@@ -152,7 +152,8 @@
         "heading": "Which bundle fits your routine?",
         "col_1": "Roles",
         "col_2": "Includes",
-        "col_3": "Primary focus"
+        "col_3": "Primary focus",
+        "style": "cards"
       },
       "blocks": {
         "b1": {
@@ -161,7 +162,8 @@
             "label": "Outdoor Duo",
             "a": "Protect + Balance",
             "b": "UV Shield+ + Skinbiotic+",
-            "c": "Environmental support + gut-skin balance"
+            "c": "Environmental support + gut-skin balance",
+            "url": "/products/sun-safe-system"
           }
         },
         "b2": {
@@ -170,7 +172,8 @@
             "label": "Balance Duo",
             "a": "Balance + Restore",
             "b": "Skinbiotic+ + Dermaboost+",
-            "c": "Microbiome + broader nutritional support"
+            "c": "Microbiome + broader nutritional support",
+            "url": "/products/skin-recovery-system"
           }
         },
         "b3": {
@@ -179,7 +182,8 @@
             "label": "Sun Resilience Duo",
             "a": "Protect + Restore",
             "b": "UV Shield+ + Dermaboost+",
-            "c": "Environmental + antioxidant/nutritional support"
+            "c": "Environmental + antioxidant/nutritional support",
+            "url": "/products/sun-resilience-system"
           }
         },
         "b4": {
@@ -188,7 +192,8 @@
             "label": "Tria Prima",
             "a": "Protect + Balance + Restore",
             "b": "All three",
-            "c": "Most comprehensive Alchemia MD routine"
+            "c": "Most comprehensive Alchemia MD routine",
+            "url": "/products/complete-skin-defense-system"
           }
         }
       },

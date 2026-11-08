@@ -2,6 +2,23 @@
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    {%- if section.settings.style == 'cards' -%}
+      {%- comment -%} Card style (client review Nov 7): one card per row, staggered, with hover lift. {%- endcomment -%}
+      <div class="compare-cards stagger">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.url != blank -%}<a class="ccard" href="{{ block.settings.url }}" {{ block.shopify_attributes }}>{%- else -%}<article class="ccard" {{ block.shopify_attributes }}>{%- endif -%}
+            <span class="ccard__num">{{ forloop.index | prepend: '0' }}</span>
+            <h3>{{ block.settings.label }}</h3>
+            {%- if block.settings.a != blank -%}<span class="ccard__roles">{{ block.settings.a }}</span>{%- endif -%}
+            <dl>
+              {%- if block.settings.b != blank -%}<div><dt>{{ section.settings.col_2 }}</dt><dd>{{ block.settings.b }}</dd></div>{%- endif -%}
+              {%- if block.settings.c != blank -%}<div><dt>{{ section.settings.col_3 }}</dt><dd>{{ block.settings.c }}</dd></div>{%- endif -%}
+            </dl>
+            {%- if block.settings.url != blank -%}<span class="ccard__more">Explore</span>{%- endif -%}
+          {%- if block.settings.url != blank -%}</a>{%- else -%}</article>{%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- else -%}
     <div class="compare-table" role="region" aria-label="{{ section.settings.heading | escape }}" tabindex="0">
       <table>
         <thead>
@@ -19,6 +36,7 @@
         </tbody>
       </table>
     </div>
+    {%- endif -%}
     {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
       <div class="btn-row" style="justify-content:center;margin-top:48px"><a class="btn" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a></div>
     {%- endif -%}
@@ -30,6 +48,7 @@
   "name": "Compare table",
   "settings": [
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "select", "id": "style", "label": "Style", "default": "table", "options": [{ "value": "table", "label": "Table" }, { "value": "cards", "label": "Cards (staggered, with hover)" }] },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "richtext", "id": "body", "label": "Text" },
@@ -40,7 +59,7 @@
     { "type": "text", "id": "col_3", "label": "Column 3" }
   ],
   "blocks": [
-    { "type": "row", "name": "Row", "settings": [{ "type": "text", "id": "label", "label": "Row label" }, { "type": "text", "id": "a", "label": "Column 1" }, { "type": "text", "id": "b", "label": "Column 2" }, { "type": "text", "id": "c", "label": "Column 3" }] }
+    { "type": "row", "name": "Row", "settings": [{ "type": "text", "id": "label", "label": "Row label" }, { "type": "text", "id": "a", "label": "Column 1" }, { "type": "text", "id": "b", "label": "Column 2" }, { "type": "text", "id": "c", "label": "Column 3" }, { "type": "url", "id": "url", "label": "Card link (cards style)" }] }
   ],
   "max_blocks": 10,
   "presets": [{ "name": "Compare table" }]

@@ -464,7 +464,8 @@
         "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Dermaboost+ can stand alone, or become part of a bundle.",
-        "best_for_label": ""
+        "best_for_label": "",
+        "layout": "tabs"
       },
       "blocks": {
         "b1": {
@@ -473,7 +474,7 @@
             "product": "skin-recovery-system",
             "roles": "Balance + Restore",
             "best_for": "Skinbiotic+ + Dermaboost+. Pairs microbiome-focused support with broader antioxidant, nutritional, and immune support.†",
-            "cta": "Explore Balance Duo",
+            "cta": "Explore",
             "asset": "system-skin-recovery.webp",
             "note": ""
           }
@@ -484,7 +485,7 @@
             "product": "sun-resilience-system",
             "roles": "Protect + Restore",
             "best_for": "UV Shield+ + Dermaboost+. Pairs environmental support with broader antioxidant and immune-supportive nutrition.†",
-            "cta": "Explore Sun Resilience Duo",
+            "cta": "Explore",
             "asset": "system-sun-resilience.webp"
           }
         }
