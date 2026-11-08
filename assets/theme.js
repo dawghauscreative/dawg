@@ -152,8 +152,13 @@
         });
         pager.appendChild(b);
       }
+      // Same style as "Research worth reading": Previous · 1 / N · Next (client review Nov 7)
       btn('Previous', page - 1, { disabled: page === 0 });
-      for (var i = 0; i < pages; i++) btn(String(i + 1), i, { current: i === page, aria: 'Page ' + (i + 1) });
+      var count = document.createElement('span');
+      count.className = 'sci-spot__count';
+      count.setAttribute('aria-live', 'polite');
+      count.textContent = (page + 1) + ' / ' + pages;
+      pager.appendChild(count);
       btn('Next', page + 1, { disabled: page === pages - 1 });
     }
     function apply() {
@@ -478,5 +483,40 @@
         if (n) { e.preventDefault(); select(n, true); }
       });
     });
+  });
+})();
+
+/* Founder timeline: on scroll the milestones play through once and the line fills; hover, focus or tap shows a milestone. */
+(function () {
+  document.querySelectorAll('[data-timeline]').forEach(function (box) {
+    var items = Array.prototype.slice.call(box.querySelectorAll('.tl__item'));
+    var details = box.querySelectorAll('.tl__detail');
+    var n = items.length;
+    var timer = null;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function set(i) {
+      i = Number(i);
+      box.style.setProperty('--p', n > 1 ? i / (n - 1) : 1);
+      items.forEach(function (it, k) { it.classList.toggle('is-active', k === i); it.classList.toggle('is-done', k < i); it.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
+      details.forEach(function (d) { d.classList.toggle('is-active', Number(d.getAttribute('data-step')) === i); });
+    }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    items.forEach(function (it) {
+      var i = it.getAttribute('data-step');
+      it.addEventListener('mouseenter', function () { stop(); set(i); });
+      it.addEventListener('focus', function () { stop(); set(i); });
+      it.addEventListener('click', function () { stop(); set(i); });
+      it.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); stop(); set(i); } });
+    });
+    function start() {
+      set(0);
+      if (reduce) return;
+      var i = 0;
+      timer = setInterval(function () { i += 1; if (i >= n) { stop(); return; } set(i); }, 2800);
+    }
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) { entries.forEach(function (en) { if (en.isIntersecting) { start(); io.disconnect(); } }); }, { threshold: 0.4 });
+      io.observe(box);
+    } else { start(); }
   });
 })();

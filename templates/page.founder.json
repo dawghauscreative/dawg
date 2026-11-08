@@ -50,59 +50,47 @@
       }
     },
     "path": {
-      "type": "problem",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "From personal loss to a different way of thinking about skin.",
-        "body": ""
-      },
+      "type": "timeline-steps",
       "blocks": {
         "pt1": {
-          "type": "point",
+          "type": "milestone",
           "settings": {
-            "icon": "none",
-            "title": "01  Childhood",
+            "label": "Childhood",
             "text": "As a child, Mia lost her mother to melanoma. That loss shaped her purpose."
           }
         },
         "pt2": {
-          "type": "point",
+          "type": "milestone",
           "settings": {
-            "icon": "none",
-            "title": "02  Medicine",
+            "label": "Medicine",
             "text": "She pursued medicine, driven by the belief that education and preventative care help families protect the time they have together."
           }
         },
         "pt3": {
-          "type": "point",
+          "type": "milestone",
           "settings": {
-            "icon": "none",
-            "title": "03  Dermatology",
+            "label": "Dermatology",
             "text": "She became a board-certified dermatologist and built her clinical expertise."
           }
         },
         "pt4": {
-          "type": "point",
+          "type": "milestone",
           "settings": {
-            "icon": "none",
-            "title": "04  The patient need",
+            "label": "The patient need",
             "text": "In practice, patients kept asking for natural, evidence-informed ways to support their skin."
           }
         },
         "pt5": {
-          "type": "point",
+          "type": "milestone",
           "settings": {
-            "icon": "none",
-            "title": "05  The idea",
+            "label": "The idea",
             "text": "Why were patients being handed lists of disconnected supplements instead of a coherent bundle?"
           }
         },
         "pt6": {
-          "type": "point",
+          "type": "milestone",
           "settings": {
-            "icon": "none",
-            "title": "06  Alchemia MD",
+            "label": "Alchemia MD",
             "text": "A platform for dermatologist-led skin-health education and supplementation."
           }
         }
@@ -114,7 +102,13 @@
         "pt4",
         "pt5",
         "pt6"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "",
+        "heading": "From personal loss to a different way of thinking about skin.",
+        "body": ""
+      }
     }
   },
   "order": [

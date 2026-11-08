@@ -559,3 +559,17 @@ Full plan and status: `docs/REVIEW-2026-11-07.md`. Owner decisions: follow Heath
 - `contact-form`: new "Show mailing address" setting (off on the Contact page); image removed.
 - `product-selector`: plan heading only renders when set.
 - `feature-split`: new "Warm beige" colour option.
+
+## Heather's review, phase 2 (2026-11-08)
+New interactive pieces (all respect reduced motion, and keyboard and touch work):
+- `science-system-map` and `domain-circles` are now one interactive Venn (`[data-venn]` in theme.js). The script works out which circles the pointer is over (one, two or all three) and shows that panel. Pair blocks have an "Overlap" setting. On touch, the first tap on a product name shows its info and the second follows the link. Labels in domain circles can break lines with "|".
+- `layer-stack`: bars are buttons; hover, focus or tap highlights a layer (`[data-layers]`).
+- `flow-steps`: optional per-step "Detail" text shown in a panel, and the steps play through once on scroll (`[data-flow]`).
+- `system-finder`: new "Tabs" layout (`[data-tabs]`), used on the three product pages.
+- `compare-table`: new "Cards" style plus a per-row link, used on Bundles.
+- New `timeline-steps` section (Founder), `[data-timeline]`.
+- `science-cards`: new layout setting (grid / numbered rows / heading-left split). Every card has a hover lift.
+- `lifestyle-strip`: optional per-tile link and label.
+- The theme.js scroll-reveal list now includes `.stagger > *`.
+- The three single-product main images were rebuilt larger from the source renders.
+

@@ -1,0 +1,48 @@
+{%- comment -%}
+  Interactive timeline (Founder page, client review Nov 7). Desktop: horizontal line of milestones; the line fills as the
+  milestones play through once on scroll, and hovering, focusing or tapping one shows its story below
+  (assets/theme.js [data-timeline]). Phones: vertical timeline with every story visible.
+{%- endcomment -%}
+{%- assign count = section.blocks.size -%}
+<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    <div class="tl" data-timeline style="--n: {{ count }}; --p: 0">
+      <ol class="tl__track">
+        {%- for block in section.blocks -%}
+          <li class="tl__item" data-step="{{ forloop.index0 }}" tabindex="0" role="button" aria-controls="Timeline-{{ section.id }}" {{ block.shopify_attributes }}>
+            <span class="tl__dot" aria-hidden="true"></span>
+            <span class="tl__num">{{ forloop.index | prepend: '0' }}</span>
+            <span class="tl__label">{{ block.settings.label }}</span>
+            <p class="tl__text tl__text--inline">{{ block.settings.text }}</p>
+          </li>
+        {%- endfor -%}
+      </ol>
+      <div class="tl__panel" id="Timeline-{{ section.id }}" aria-live="polite">
+        {%- for block in section.blocks -%}
+          <div class="tl__detail" data-step="{{ forloop.index0 }}">
+            <span class="tl__detail-num">{{ forloop.index | prepend: '0' }}</span>
+            <div><h3>{{ block.settings.label }}</h3><p>{{ block.settings.text }}</p></div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Timeline",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Emerald" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "body", "label": "Text" }
+  ],
+  "blocks": [
+    { "type": "milestone", "name": "Milestone", "settings": [{ "type": "text", "id": "label", "label": "Label" }, { "type": "textarea", "id": "text", "label": "Story" }] }
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Timeline", "blocks": [{ "type": "milestone" }, { "type": "milestone" }, { "type": "milestone" }] }]
+}
+{% endschema %}

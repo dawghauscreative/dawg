@@ -392,7 +392,8 @@
         "eyebrow": "",
         "heading": "Built for customers looking beyond surface-level skincare.",
         "columns": "3",
-        "show_images": false
+        "show_images": false,
+        "layout": "rows"
       },
       "blocks": {
         "b1": {
@@ -494,7 +495,8 @@
         "columns": "4",
         "show_images": false,
         "button_label": "Explore the Balance Duo science",
-        "button_url": "/pages/science"
+        "button_url": "/pages/science",
+        "layout": "split"
       },
       "blocks": {
         "b1": {

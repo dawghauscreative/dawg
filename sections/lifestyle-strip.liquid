@@ -6,15 +6,18 @@
       {%- for block in section.blocks -%}
         {%- comment -%} Tiles without an image show a placeholder frame. {%- endcomment -%}
         {%- if true -%}
-          <figure class="lifestyle-tile" {{ block.shopify_attributes }}>
+          {%- if block.settings.url != blank -%}<a class="lifestyle-tile__link" href="{{ block.settings.url }}">{%- endif -%}
+          <figure class="lifestyle-tile{% if block.settings.url != blank %} lifestyle-tile--link{% endif %}" {{ block.shopify_attributes }}>
             {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, ratio: '4x5', sizes: '(min-width: 990px) 25vw, 50vw', alt: block.settings.label %}
             {%- if block.settings.label != blank or block.settings.caption != blank -%}
               <figcaption class="lifestyle-tile__label">
                 {%- if block.settings.label != blank -%}<h3>{{ block.settings.label }}</h3>{%- endif -%}
                 {%- if block.settings.caption != blank -%}<p>{{ block.settings.caption }}</p>{%- endif -%}
+                {%- if block.settings.url != blank -%}<span class="lifestyle-tile__more">{{ block.settings.link_label | default: 'Read more' }}</span>{%- endif -%}
               </figcaption>
             {%- endif -%}
           </figure>
+          {%- if block.settings.url != blank -%}</a>{%- endif -%}
         {%- endif -%}
       {%- endfor -%}
     </div>
@@ -44,7 +47,9 @@
         { "type": "image_picker", "id": "image", "label": "Image", "info": "Activity, not posing." },
         { "type": "text", "id": "asset", "label": "Fallback theme asset filename", "info": "Used only when no image is picked." },
         { "type": "text", "id": "label", "label": "Label (shown over the image)" },
-        { "type": "text", "id": "caption", "label": "Caption (shown under the label)" }
+        { "type": "text", "id": "caption", "label": "Caption (shown under the label)" },
+        { "type": "url", "id": "url", "label": "Link (optional)", "info": "A study, article or page. The tile becomes clickable." },
+        { "type": "text", "id": "link_label", "label": "Link label", "default": "Read more" }
       ]
     }
   ],
