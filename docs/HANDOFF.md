@@ -577,4 +577,11 @@ New interactive pieces (all respect reduced motion, and keyboard and touch work)
 - Supr renders its widget server-side from its app block with inline CSS variables (`--sss-db-*` for Bundle & Save, `--sss-widget-dropdown-plus-*` for the subscription picker). theme.css overrides them with `!important`, scoped to `.buy-box`. The block at the end of theme.css is marked "Supr buy box".
 - theme.js turns `.sss-bundle-block__tiers` into a `<select>` (`.amd-tier-select`) and shows only the chosen tier. Changing the select clicks Supr's own radio. A MutationObserver keeps the select in sync when Supr updates prices.
 - How the markup was read: a hidden copy of the buy box went on the password page for a few minutes, then was removed. If Supr changes its markup, re-check `.sss-bundle-block__tier`, `[data-tier-total]` and `[data-tier-savings]`.
+- Supr option titles (audited 2026-11-08 across all seven products). Inside the bundles the product names, prices and plans are correct. The Supr titles were inconsistent, so theme.js (`TITLES` map in the Supr block) shows unified names:
+  - "Twice a day (2 bottles)" shows as "Enhanced: twice a day (2 bottles)".
+  - "Enhanced Support" shows as "Enhanced: UV Shield+ twice a day".
+  - "3-Month Supply (3 sets)" shows as "3-Month Supply (One-Time)".
+  - "3-Month Subscription (3 sets)" shows as "3-Month Subscription".
+  - Savings are shown as whole numbers, rounded down ("Save 10.61%" shows as "Save 10%").
+  The same names should be entered in the Supr dashboard (and "Round savings" turned on); once they are, the map stops matching. Still open in Supr: "Best value" appears on three options per bundle.
 

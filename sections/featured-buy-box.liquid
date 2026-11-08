@@ -19,7 +19,7 @@
     endif
   endfor
 -%}
-<section class="section scheme-{{ section.settings.color_scheme }} home-buy"{% if section.settings.hidden_probe %} hidden aria-hidden="true" style="display:none"{% endif %} {{ section.shopify_attributes }}>
+<section class="section scheme-{{ section.settings.color_scheme }} home-buy" {{ section.shopify_attributes }}>
   <div class="container home-buy__grid">
     <div class="home-buy__media">
       {%- if section.settings.asset != blank -%}
@@ -67,7 +67,6 @@
 {
   "name": "Featured product buy box",
   "settings": [
-    { "type": "checkbox", "id": "hidden_probe", "label": "Render hidden (developer use)", "default": false },
     { "type": "product", "id": "product", "label": "Product" },
     { "type": "text", "id": "asset", "label": "Image: theme asset filename", "info": "e.g. product-3d-uv-shield-portrait.webp. Blank = the product's first image." },
     { "type": "text", "id": "heading", "label": "Small label above the product name", "default": "Start here" },

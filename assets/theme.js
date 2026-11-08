@@ -526,6 +526,26 @@
 (function () {
   function txt(el) { return el ? el.textContent.replace(/\s+/g, ' ').trim() : ''; }
   function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  // Consistent option names across products (Supr titles as set in its dashboard -> what shoppers see). Exact matches only,
+  // so once the titles are corrected in Supr these simply stop matching. The order property (_bundle_block_name) is untouched.
+  var TITLES = {
+    'Twice a day (2 bottles)': 'Enhanced: twice a day (2 bottles)',
+    'Enhanced Support': 'Enhanced: UV Shield+ twice a day',
+    '3-Month Supply (3 sets)': '3-Month Supply (One-Time)',
+    '3-Month Subscription (3 sets)': '3-Month Subscription'
+  };
+  function tidy(block) {
+    block.querySelectorAll('.sss-bundle-block__tier-title').forEach(function (el) {
+      var t = txt(el);
+      if (TITLES[t] && el.textContent !== TITLES[t]) el.textContent = TITLES[t];
+    });
+    // Whole-number savings, rounded down so a saving is never overstated ("Save 10.61%" -> "Save 10%")
+    block.querySelectorAll('[data-tier-savings]').forEach(function (el) {
+      var t = el.textContent;
+      var n = t.replace(/(\d+)\.\d+\s*%/g, '$1%');
+      if (n !== t) el.textContent = n;
+    });
+  }
   function enhance(block) {
     if (block.getAttribute('data-amd-select')) return;
     var list = block.querySelector('.sss-bundle-block__tiers');
@@ -542,6 +562,7 @@
     block.classList.add('amd-tiers-select');
     function radioOf(t) { return t.querySelector('input.sss-bundle-block__radio'); }
     function sync() {
+      tidy(block);
       tiers = Array.prototype.filter.call(list.children, function (c) { return c.classList.contains('sss-bundle-block__tier'); });
       var html = '';
       var current = 0;
