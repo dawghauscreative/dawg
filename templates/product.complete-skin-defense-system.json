@@ -215,7 +215,7 @@
         "b2": {
           "type": "domain",
           "settings": {
-            "short": "Gut microbial",
+            "short": "Gut|microbial",
             "title": "Gut microbial environment",
             "primary": "Skinbiotic+",
             "supporting": "Dermaboost+"
@@ -224,7 +224,7 @@
         "b3": {
           "type": "domain",
           "settings": {
-            "short": "Oxidative + immune",
+            "short": "Oxidative +|immune",
             "title": "Broader oxidative + immune-related pathways",
             "primary": "Dermaboost+",
             "supporting": "UV Shield+ + Skinbiotic+"

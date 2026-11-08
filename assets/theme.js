@@ -320,3 +320,96 @@
     toTopUpdate();
   }
 })();
+
+/* Interactive Venn (Science page, Tria Prima): hovering or tapping a circle, an overlap or the centre shows that region's
+   panel. The region comes from which circles contain the pointer; keyboard users focus the labels and dots. */
+(function () {
+  document.querySelectorAll('[data-venn]').forEach(function (venn) {
+    var svg = venn.querySelector('[data-venn-svg]');
+    if (!svg || !svg.createSVGPoint) return;
+    var circles = {};
+    var panels = {};
+    var current = null;
+    venn.querySelectorAll('[data-venn-circle]').forEach(function (c) { circles[c.getAttribute('data-venn-circle')] = c; });
+    venn.querySelectorAll('[data-venn-panel]').forEach(function (p) { panels[p.getAttribute('data-venn-panel')] = p; });
+    function show(key) {
+      if (!key || !panels[key] || key === current) return;
+      current = key;
+      Object.keys(panels).forEach(function (k) { panels[k].classList.toggle('is-active', k === key); });
+      Object.keys(circles).forEach(function (k) { circles[k].classList.toggle('is-on', key.indexOf(k) !== -1); });
+      venn.classList.add('is-open');
+    }
+    function hide() {
+      current = null;
+      venn.classList.remove('is-open');
+      Object.keys(circles).forEach(function (k) { circles[k].classList.remove('is-on'); });
+    }
+    function regionAt(evt) {
+      var m = svg.getScreenCTM();
+      if (!m) return null;
+      var pt = svg.createSVGPoint();
+      pt.x = evt.clientX; pt.y = evt.clientY;
+      var p = pt.matrixTransform(m.inverse());
+      var inside = [];
+      var nearest = null;
+      var nearestD = Infinity;
+      ['a', 'b', 'c'].forEach(function (k) {
+        var c = circles[k];
+        if (!c) return;
+        var dx = p.x - c.cx.baseVal.value;
+        var dy = p.y - c.cy.baseVal.value;
+        var d = Math.sqrt(dx * dx + dy * dy);
+        if (d <= c.r.baseVal.value) inside.push(k);
+        if (d < nearestD) { nearestD = d; nearest = k; }
+      });
+      if (!inside.length) return null;
+      var key = inside.join('');
+      if (!panels[key]) key = inside.length === 3 && panels.abc ? 'abc' : nearest;
+      return key;
+    }
+    svg.addEventListener('pointermove', function (e) { if (e.pointerType === 'mouse') show(regionAt(e)); });
+    svg.addEventListener('pointerdown', function (e) { if (e.pointerType !== 'mouse') show(regionAt(e)); });
+    venn.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') hide(); });
+    var lastPointer = 'mouse';
+    var beforeTap = null;
+    venn.addEventListener('pointerdown', function (e) { lastPointer = e.pointerType; beforeTap = current; }, true);
+    venn.querySelectorAll('[data-venn-focus]').forEach(function (el) {
+      el.addEventListener('focus', function () { show(el.getAttribute('data-venn-focus')); });
+      // Touch: the first tap on a product name opens its info; a second tap follows the link
+      el.addEventListener('click', function (e) {
+        var key = el.getAttribute('data-venn-focus');
+        if (lastPointer !== 'mouse' && beforeTap !== key) { e.preventDefault(); beforeTap = key; show(key); }
+      });
+      el.addEventListener('keydown', function (e) {
+        if ((e.key === 'Enter' || e.key === ' ') && el.tagName.toLowerCase() !== 'a') { e.preventDefault(); show(el.getAttribute('data-venn-focus')); }
+      });
+    });
+    venn.addEventListener('keydown', function (e) { if (e.key === 'Escape') hide(); });
+  });
+})();
+
+/* Interactive layers: hover, focus or tap a layer to highlight it and its explanation; slide in on scroll. */
+(function () {
+  document.querySelectorAll('[data-layers]').forEach(function (box) {
+    var bars = box.querySelectorAll('.layers__bar');
+    var items = box.querySelectorAll('.layers__list li');
+    function set(i) {
+      box.classList.toggle('has-active', i !== null);
+      bars.forEach(function (b) { var on = b.getAttribute('data-layer') === i; b.classList.toggle('is-active', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+      items.forEach(function (li) { li.classList.toggle('is-active', li.getAttribute('data-layer') === i); });
+    }
+    bars.forEach(function (b) {
+      var i = b.getAttribute('data-layer');
+      b.addEventListener('mouseenter', function () { set(i); });
+      b.addEventListener('focus', function () { set(i); });
+      b.addEventListener('click', function () { if (box.dataset.pinned === i) { box.dataset.pinned = ''; set(null); } else { box.dataset.pinned = i; set(i); } });
+    });
+    items.forEach(function (li) { li.addEventListener('mouseenter', function () { set(li.getAttribute('data-layer')); }); });
+    box.addEventListener('mouseleave', function () { set(box.dataset.pinned || null); });
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) { entries.forEach(function (en) { if (en.isIntersecting) { box.classList.add('is-in'); io.disconnect(); } }); }, { threshold: 0.2 });
+      io.observe(box);
+    } else { box.classList.add('is-in'); }
+  });
+})();
+

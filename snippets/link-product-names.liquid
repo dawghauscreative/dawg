@@ -1,0 +1,10 @@
+{%- comment -%} Wraps the three product names in links to their product pages. Usage: {% render 'link-product-names', text: 'UV Shield+ + Dermaboost+' %} {%- endcomment -%}
+{%- liquid
+  assign u1 = all_products['uv-shield'].url | default: '/products/uv-shield'
+  assign u2 = all_products['skinbiotic'].url | default: '/products/skinbiotic'
+  assign u3 = all_products['dermaboost'].url | default: '/products/dermaboost'
+  assign a1 = '<a href="' | append: u1 | append: '">UV Shield+</a>'
+  assign a2 = '<a href="' | append: u2 | append: '">Skinbiotic+</a>'
+  assign a3 = '<a href="' | append: u3 | append: '">Dermaboost+</a>'
+  echo text | replace: 'UV Shield+', a1 | replace: 'Skinbiotic+', a2 | replace: 'Dermaboost+', a3
+-%}

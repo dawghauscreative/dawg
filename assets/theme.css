@@ -1189,3 +1189,64 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .sci-bounds__intro .section-head { margin-bottom: 1.5rem; }
 .sci-bounds__does p + p { margin-top: 1em; }
 .sci-bounds__col--not { padding: clamp(24px, 3vw, 36px); border: 1px solid var(--rule); background: var(--card); }
+
+/* ---------- Interactive Venn (Science page, Tria Prima), client review Nov 7 ---------- */
+.venn { position: relative; display: grid; gap: 28px; justify-items: center; }
+.venn__stage { width: min(100%, 560px); }
+.venn__svg { width: 100%; height: auto; display: block; color: var(--fg); overflow: visible; touch-action: manipulation; }
+.venn__circles circle { fill-opacity: .07; transition: fill-opacity .3s ease, stroke-width .3s ease; }
+.venn__circles circle.is-on { fill-opacity: .2; stroke-width: 2.2; }
+.venn.is-open .venn__circles circle:not(.is-on) { fill-opacity: .03; }
+.venn__title { font-family: var(--font-display); font-size: 28px; }
+.venn__title--sm { font-size: 24px; }
+.venn__sub { font-family: var(--font-callout); font-size: 13px; font-weight: 700; letter-spacing: 2.5px; opacity: .75; }
+.venn__center { font-family: var(--font-callout); font-size: 12px; font-weight: 700; letter-spacing: 2px; opacity: .8; pointer-events: none; }
+.venn__labels a { text-decoration: none; }
+.venn__labels a:hover .venn__sub, .venn__labels a:focus-visible .venn__sub { opacity: 1; text-decoration: underline; }
+.venn__labels a:focus, .venn__label:focus, .venn__dot:focus { outline: none; }
+.venn__labels a:focus-visible .venn__title, .venn__label:focus-visible .venn__title { text-decoration: underline; }
+.venn__label { cursor: pointer; }
+.venn__dot { cursor: pointer; }
+.venn__dot circle { fill: var(--c-gold); transform-box: fill-box; transform-origin: center; animation: venn-pulse 2.6s ease-in-out infinite; }
+.venn__dot path { stroke: #fff; stroke-width: 1.6; }
+.venn__dot:focus-visible circle { stroke: var(--fg); stroke-width: 2; }
+.venn__hint { margin-top: 10px; text-align: center; font-family: var(--font-callout); font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; opacity: .6; }
+.venn__panels { width: 100%; max-width: 560px; display: grid; gap: 16px; }
+.venn__panel { padding: 24px 26px; border-left: 2px solid var(--accent); background: var(--card); }
+.venn__panel h3 { font-size: clamp(1.5rem, 2.2vw, 2rem); margin: .4rem 0 .75rem; }
+.venn__panel h3 a { text-decoration: none; }
+.venn__panel h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+.venn__eyebrow { font-family: var(--font-callout); font-size: .7rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+.venn__panel .text-link { display: inline-block; margin-top: 1rem; }
+.venn__row { margin-top: .45rem; }
+.venn__row strong { font-family: var(--font-callout); font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-right: .5em; }
+.venn__row a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.js .venn__panel { display: none; }
+.js .venn__panel.is-active { display: block; animation: venn-in .35s ease both; }
+/* Wide screens: the diagram stays centred and the info slides in beside it (the diagram never moves under the pointer) */
+@media (min-width: 1200px) {
+  .js .venn { display: block; }
+  .js .venn__stage { margin-inline: auto; width: 540px; }
+  .js .venn__panels { position: absolute; top: 46%; left: calc(50% + 290px); width: min(380px, calc(50% - 300px)); transform: translate(28px, -50%); opacity: 0; pointer-events: none; transition: opacity .35s ease, transform .5s cubic-bezier(.2, .7, .2, 1); }
+  .js .venn.is-open .venn__panels { opacity: 1; transform: translate(0, -50%); pointer-events: auto; }
+}
+@keyframes venn-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes venn-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.18); } }
+@media (prefers-reduced-motion: reduce) { .venn__panels { transition: none !important; } .venn__dot circle, .js .venn__panel.is-active { animation: none; } }
+
+/* ---------- Interactive layers (home + product pages), client review Nov 7 ---------- */
+.layers__bar { text-align: left; color: inherit; cursor: pointer; transition: background .3s ease, color .3s ease, transform .35s cubic-bezier(.2, .7, .2, 1), opacity .3s ease, box-shadow .3s ease; }
+.layers__bar:hover, .layers__bar.is-active { background: var(--accent); color: var(--btn-fg, #fff); transform: translateX(8px); box-shadow: 0 10px 28px rgba(0, 0, 0, .18); }
+.layers__bar.is-active span, .layers__bar:hover span { opacity: .9; }
+.layers__list li { transition: opacity .3s ease, transform .35s cubic-bezier(.2, .7, .2, 1); }
+.layers.has-active .layers__list li { opacity: .35; }
+.layers.has-active .layers__list li.is-active { opacity: 1; transform: translateX(6px); }
+.layers.has-active .layers__bar:not(.is-active) { opacity: .55; }
+.js .layers[data-layers] .layers__bar, .js .layers[data-layers] .layers__list li { opacity: 0; transform: translateX(-24px); }
+.js .layers[data-layers].is-in .layers__bar, .js .layers[data-layers].is-in .layers__list li { opacity: 1; transform: none; transition-delay: calc(var(--i) * 90ms); }
+.js .layers[data-layers].is-in.has-active .layers__bar, .js .layers[data-layers].is-in.has-active .layers__list li { transition-delay: 0ms; }
+.js .layers[data-layers].is-in.has-active .layers__list li:not(.is-active) { opacity: .35; }
+.js .layers[data-layers].is-in.has-active .layers__list li.is-active { transform: translateX(6px); }
+.js .layers[data-layers].is-in.has-active .layers__bar:not(.is-active) { opacity: .55; }
+.js .layers[data-layers].is-in .layers__bar.is-active, .js .layers[data-layers].is-in .layers__bar:hover { transform: translateX(8px); }
+@media (prefers-reduced-motion: reduce) { .js .layers[data-layers] .layers__bar, .js .layers[data-layers] .layers__list li { opacity: 1; transform: none; transition: none; } }
