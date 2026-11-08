@@ -120,11 +120,57 @@
         "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin"
       }
     },
+    "roles": {
+      "type": "role-columns",
+      "blocks": {
+        "b1": {
+          "type": "role",
+          "settings": {
+            "product": "uv-shield",
+            "role": "Protect",
+            "tagline": "",
+            "text": "Daily support for active, sun-ready skin.† Designed around nutritional and antioxidant support for people who spend significant time outdoors.†",
+            "cta": "Explore UV Shield+"
+          }
+        },
+        "b2": {
+          "type": "role",
+          "settings": {
+            "product": "skinbiotic",
+            "role": "Balance",
+            "tagline": "",
+            "text": "Daily probiotic for gut and skin health.† A synbiotic approach designed around the connection between the intestinal microbiome and skin wellness.",
+            "cta": "Explore Skinbiotic+"
+          }
+        },
+        "b3": {
+          "type": "role",
+          "settings": {
+            "product": "dermaboost",
+            "role": "Restore",
+            "tagline": "",
+            "text": "Daily immune support for calm, balanced skin.† A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.†",
+            "cta": "Explore Dermaboost+"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "",
+        "heading": "Protect. Balance. Restore.",
+        "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.†</p><p>Each formula can stand on its own. The bundles combine them when complementary support makes sense.</p>"
+      }
+    },
     "buy_box": {
       "type": "featured-buy-box",
       "blocks": {
         "supr_bundles_subscriptions_product_block_KfATzW": {
-          "type": "shopify://apps/supr-bundles-subscriptions/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
+          "type": "shopify://apps/supr-bundle-subscription-app/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
           "settings": {
             "product": "{{section.settings.product}}"
           }
@@ -133,6 +179,7 @@
       "block_order": [
         "supr_bundles_subscriptions_product_block_KfATzW"
       ],
+      "disabled": true,
       "settings": {
         "product": "sun-safe-system",
         "asset": "",
@@ -141,8 +188,7 @@
         "details_label": "See full details",
         "allow_plain_add": false,
         "color_scheme": "green"
-      },
-      "disabled": true
+      }
     },
     "category": {
       "type": "rich-text",
@@ -233,6 +279,7 @@
         "eyebrow": "",
         "heading": "The supplement aisle wasn't built for skin.",
         "body": "",
+        "layout": "grid",
         "columns": "3",
         "show_images": false,
         "note": "",
@@ -240,54 +287,9 @@
         "button_url": ""
       }
     },
-    "roles": {
-      "type": "role-columns",
-      "blocks": {
-        "b1": {
-          "type": "role",
-          "settings": {
-            "product": "uv-shield",
-            "role": "Protect",
-            "tagline": "",
-            "text": "Daily support for active, sun-ready skin.† Designed around nutritional and antioxidant support for people who spend significant time outdoors.†",
-            "cta": "Explore UV Shield+"
-          }
-        },
-        "b2": {
-          "type": "role",
-          "settings": {
-            "product": "skinbiotic",
-            "role": "Balance",
-            "tagline": "",
-            "text": "Daily probiotic for gut and skin health.† A synbiotic approach designed around the connection between the intestinal microbiome and skin wellness.",
-            "cta": "Explore Skinbiotic+"
-          }
-        },
-        "b3": {
-          "type": "role",
-          "settings": {
-            "product": "dermaboost",
-            "role": "Restore",
-            "tagline": "",
-            "text": "Daily immune support for calm, balanced skin.† A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.†",
-            "cta": "Explore Dermaboost+"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3"
-      ],
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "Protect. Balance. Restore.",
-        "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.†</p><p>Each formula can stand on its own. The bundles combine them when complementary support makes sense.</p>"
-      }
-    },
     "featured": {
       "type": "feature-split",
+      "disabled": true,
       "settings": {
         "color_scheme": "dark",
         "image_side": "right",
@@ -304,11 +306,11 @@
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
         "light_panel": true
-      },
-      "disabled": true
+      }
     },
     "video": {
       "type": "video-slot",
+      "disabled": true,
       "settings": {
         "color_scheme": "dark",
         "aspect": "16x9",
@@ -324,8 +326,7 @@
         "body": "",
         "button_label": "",
         "button_url": ""
-      },
-      "disabled": true
+      }
     },
     "finder": {
       "type": "system-finder",
@@ -387,6 +388,7 @@
       ],
       "settings": {
         "color_scheme": "dark",
+        "layout": "cards",
         "eyebrow": "",
         "heading": "Find the bundle that fits your goals.",
         "body": "",
@@ -592,19 +594,20 @@
         "b3",
         "b4"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "green",
         "anchor": "",
         "eyebrow": "",
         "heading": "Every ingredient has a reason.",
         "body": "<p>Alchemia MD formulations are built around published ingredient research and defined biological roles.</p><p>We do not ask you to trust a proprietary mystery blend. We show you what is in the formula, why it is there, and what the research actually supports.</p>",
+        "layout": "grid",
         "columns": "4",
         "show_images": false,
         "note": "",
         "button_label": "Explore the Science",
         "button_url": "/pages/science"
-      },
-      "disabled": true
+      }
     },
     "research": {
       "type": "science-spotlight",
@@ -656,6 +659,7 @@
     },
     "philosophy": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "color_scheme": "dark",
         "align": "center",
@@ -668,8 +672,7 @@
         "quote": "",
         "button_label": "",
         "button_url": ""
-      },
-      "disabled": true
+      }
     },
     "trust": {
       "type": "science-cards",
@@ -733,19 +736,20 @@
         "b3",
         "b4"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "light",
         "anchor": "",
         "eyebrow": "",
         "heading": "Built around standards, not trends.",
         "body": "",
+        "layout": "grid",
         "columns": "4",
         "show_images": false,
         "note": "",
         "button_label": "",
         "button_url": ""
-      },
-      "disabled": true
+      }
     },
     "education": {
       "type": "education-grid",
@@ -764,6 +768,7 @@
           "settings": {
             "title": "What Is the Gut-Skin Axis?",
             "text": "How the intestinal environment and skin communicate.",
+            "image": "shopify://shop_images/three-women-lying-down-in-a-studio-2026-10-06-20-13-22-utc.jpg",
             "asset": "edu-card-gut-skin-axis.webp",
             "link": "/blogs/skin-edu/what-is-the-gut-skin-axis"
           }
@@ -794,6 +799,7 @@
     },
     "mission": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "color_scheme": "band",
         "align": "center",
@@ -806,11 +812,11 @@
         "quote": "",
         "button_label": "Learn about our mission",
         "button_url": "/pages/founder"
-      },
-      "disabled": true
+      }
     },
     "email": {
       "type": "email-capture",
+      "disabled": true,
       "settings": {
         "color_scheme": "green",
         "hide_on_home": false,
@@ -820,11 +826,11 @@
         "placeholder": "Email address",
         "button_label": "Join Alchemia MD",
         "success_text": "Thank you for joining Alchemia MD."
-      },
-      "disabled": true
+      }
     },
     "final": {
       "type": "final-cta",
+      "disabled": true,
       "settings": {
         "color_scheme": "dark",
         "product": "sun-safe-system",
@@ -838,8 +844,7 @@
         "note": "",
         "asset": "system-sun-safe.webp",
         "light_panel": true
-      },
-      "disabled": true
+      }
     }
   },
   "order": [
