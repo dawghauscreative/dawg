@@ -520,3 +520,68 @@
     } else { start(); }
   });
 })();
+
+/* Supr "Bundle & Save" as a dropdown (client review Nov 7). The tier list collapses to a select plus the chosen option's card.
+   Choosing an option clicks Supr's own radio, so Supr stays in charge of prices, plans and the cart. */
+(function () {
+  function txt(el) { return el ? el.textContent.replace(/\s+/g, ' ').trim() : ''; }
+  function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  function enhance(block) {
+    if (block.getAttribute('data-amd-select')) return;
+    var list = block.querySelector('.sss-bundle-block__tiers');
+    if (!list) return;
+    var tiers = Array.prototype.filter.call(list.children, function (c) { return c.classList.contains('sss-bundle-block__tier'); });
+    if (tiers.length < 2) return;
+    block.setAttribute('data-amd-select', '1');
+    var id = 'amd-tier-' + Math.random().toString(36).slice(2, 8);
+    var wrap = document.createElement('div');
+    wrap.className = 'amd-tier-select';
+    wrap.innerHTML = '<label class="visually-hidden" for="' + id + '">Choose your option</label><div class="amd-tier-select__field"><select class="amd-tier-select__control" id="' + id + '"></select></div>';
+    list.parentNode.insertBefore(wrap, list);
+    var sel = wrap.querySelector('select');
+    block.classList.add('amd-tiers-select');
+    function radioOf(t) { return t.querySelector('input.sss-bundle-block__radio'); }
+    function sync() {
+      tiers = Array.prototype.filter.call(list.children, function (c) { return c.classList.contains('sss-bundle-block__tier'); });
+      var html = '';
+      var current = 0;
+      tiers.forEach(function (t, i) {
+        var title = txt(t.querySelector('.sss-bundle-block__tier-title'));
+        var price = txt(t.querySelector('[data-tier-total]'));
+        var save = txt(t.querySelector('[data-tier-savings]'));
+        var r = radioOf(t);
+        if ((r && r.checked) || t.classList.contains('sss-bundle-block__tier--selected')) current = i;
+        var off = t.classList.contains('sss-bundle-block__tier--sold-out') ? ' disabled' : '';
+        html += '<option value="' + i + '"' + off + '>' + esc(title + (price ? ' — ' + price : '') + (save ? ' (' + save + ')' : '')) + '</option>';
+      });
+      if (sel.innerHTML !== html) sel.innerHTML = html;
+      if (sel.selectedIndex !== current) sel.selectedIndex = current;
+      tiers.forEach(function (t, i) { if (t.classList.contains('amd-tier-current') !== (i === current)) t.classList.toggle('amd-tier-current', i === current); });
+    }
+    sel.addEventListener('change', function () {
+      var t = tiers[sel.selectedIndex];
+      var r = t && radioOf(t);
+      if (r && !r.checked) r.click(); else if (t) t.click();
+      setTimeout(sync, 0);
+    });
+    list.addEventListener('change', function () { setTimeout(sync, 0); });
+    if ('MutationObserver' in window) {
+      var queued = false;
+      new MutationObserver(function () {
+        if (queued) return;
+        queued = true;
+        requestAnimationFrame(function () { queued = false; sync(); });
+      }).observe(list, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ['class', 'checked'] });
+    }
+    sync();
+  }
+  function scan() { document.querySelectorAll('.buy-box .sss-bundle-block').forEach(enhance); }
+  scan();
+  // Supr can render after load (variant changes, late scripts): rescan for a short while
+  if ('MutationObserver' in window) {
+    var timer = null;
+    var mo = new MutationObserver(function () { clearTimeout(timer); timer = setTimeout(scan, 120); });
+    mo.observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { mo.disconnect(); }, 20000);
+  }
+})();

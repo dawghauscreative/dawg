@@ -1372,3 +1372,86 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .lifestyle-tile__link:hover .lifestyle-tile__label, .lifestyle-tile__link:focus-visible .lifestyle-tile__label { padding-bottom: 1.5rem; }
 .lifestyle-tile__link:focus-visible { outline: 2px solid var(--c-gold); outline-offset: 3px; }
 @media (hover: none) { .lifestyle-tile__more { opacity: 1; transform: none; } }
+
+/* ---------- Supr buy box: brand colours and a quieter, dropdown-led layout (client review Nov 7) ----------
+   Supr sets its colours as inline CSS variables from its dashboard; these !important overrides re-skin them on the
+   Emerald buy box. Structure, prices, plans and cart behaviour stay with Supr. */
+.buy-box .sss-bundle-block {
+  --sss-db-gradient-color-1: var(--c-gold) !important; --sss-db-gradient-color-2: var(--c-gold) !important; --sss-db-gradient-color-3: var(--c-gold) !important;
+  --sss-db-on-gradient: #fff !important; --sss-db-gradient-text-1: var(--c-gold) !important; --sss-db-gradient-text-2: var(--c-gold) !important;
+  --sss-db-accent: var(--c-gold) !important; --sss-db-text: var(--c-white) !important; --sss-db-bg: transparent !important;
+  --sss-db-price: #fff !important; --sss-db-price-selected: #fff !important;
+  --sss-db-compare: color-mix(in srgb, var(--c-white) 55%, transparent) !important; --sss-db-compare-selected: color-mix(in srgb, var(--c-white) 55%, transparent) !important;
+  --sss-db-unit-price: color-mix(in srgb, var(--c-white) 65%, transparent) !important;
+  --sss-db-border: color-mix(in srgb, var(--c-white) 22%, transparent) !important; --sss-db-border-selected: var(--c-gold) !important;
+  --sss-db-selected-bg: color-mix(in srgb, var(--c-gold) 14%, transparent) !important; --sss-db-selected-bg-solid: color-mix(in srgb, var(--c-gold) 14%, var(--c-emerald)) !important;
+  --sss-db-selected-edge: var(--c-gold) !important; --sss-db-chosen-fill: var(--c-gold) !important;
+  --sss-db-radio: color-mix(in srgb, var(--c-white) 50%, transparent) !important; --sss-db-radio-selected: var(--c-gold) !important;
+  --sss-db-tier-title: var(--c-white) !important; --sss-db-tier-title-selected: #fff !important;
+  --sss-db-badge-bg: transparent !important; --sss-db-badge-text: var(--c-gold) !important; --sss-db-badge-border-color: var(--c-gold) !important; --sss-db-badge-border-width: 1px !important;
+  --sss-db-badge-selected-bg: transparent !important; --sss-db-badge-selected-text: var(--c-gold) !important;
+  --sss-db-savings-bg: var(--c-gold) !important; --sss-db-savings-text: #fff !important;
+  --sss-db-gift-bg: var(--c-gold) !important; --sss-db-gift-text: #fff !important; --sss-db-gift-selected-bg: var(--c-gold) !important; --sss-db-gift-selected-text: #fff !important;
+  --sss-db-ship-bg: var(--c-gold) !important; --sss-db-ship-text: #fff !important; --sss-db-ship-selected-bg: var(--c-gold) !important; --sss-db-ship-selected-text: #fff !important;
+  --sss-db-title-color: var(--c-white) !important; --sss-db-title-rule: color-mix(in srgb, var(--c-gold) 45%, transparent) !important;
+  --sss-db-radius: 10px !important; --sss-db-thickness: 1px !important;
+}
+.buy-box .super-simple-subs-wrapper {
+  --sss-brand-primary: var(--c-gold) !important; --sss-brand-accent: var(--c-gold) !important; --sss-brand-on-primary: #fff !important;
+  --sss-widget-background-color: transparent !important;
+  --sss-widget-dropdown-plus-background-color: transparent !important;
+  --sss-widget-dropdown-plus-background-color-hover: color-mix(in srgb, var(--c-gold) 6%, transparent) !important;
+  --sss-widget-dropdown-plus-background-color-active: color-mix(in srgb, var(--c-gold) 14%, transparent) !important;
+  --sss-widget-dropdown-plus-outer-border-color: var(--c-gold) !important; --sss-widget-dropdown-plus-outer-border-width: 1px !important;
+  --sss-widget-dropdown-plus-inner-border-color: color-mix(in srgb, var(--c-white) 18%, transparent) !important; --sss-widget-dropdown-plus-inner-border-width: 1px !important;
+  --sss-widget-dropdown-plus-border-radius: 10px !important;
+  --sss-widget-dropdown-plus-subscription-plan-radio-border-color: var(--c-gold) !important; --sss-widget-dropdown-plus-subscription-plan-radio-bullet-color: var(--c-gold) !important;
+  --sss-widget-dropdown-plus-subscription-plan-name-color: #fff !important; --sss-widget-dropdown-plus-subscription-plan-price-color: #fff !important;
+  --sss-widget-dropdown-plus-subscription-plan-frequency-color: color-mix(in srgb, var(--c-white) 70%, transparent) !important;
+  --sss-widget-dropdown-plus-subscription-plan-from-label-color: color-mix(in srgb, var(--c-white) 70%, transparent) !important;
+  --sss-widget-dropdown-plus-subscription-plan-prepaid-subtitle-color: color-mix(in srgb, var(--c-white) 70%, transparent) !important;
+  --sss-widget-dropdown-plus-discount-badge-background-color: var(--c-gold) !important; --sss-widget-dropdown-plus-discount-badge-text-color: #fff !important; --sss-widget-dropdown-plus-discount-badge-border-color: var(--c-gold) !important;
+  --sss-widget-dropdown-plus-purchase-options-background-color: transparent !important;
+  --sss-widget-dropdown-plus-purchase-option-background-color: color-mix(in srgb, var(--c-black) 25%, var(--c-emerald)) !important;
+  --sss-widget-dropdown-plus-purchase-option-border-color: color-mix(in srgb, var(--c-gold) 60%, transparent) !important;
+  --sss-widget-dropdown-plus-purchase-option-color: #fff !important; --sss-widget-dropdown-plus-purchase-option-caret-color: var(--c-gold) !important;
+  --sss-widget-dropdown-plus-purchase-option-name-color: #fff !important; --sss-widget-dropdown-plus-purchase-option-price-color: #fff !important;
+  --sss-widget-dropdown-plus-purchase-option-frequency-color: color-mix(in srgb, var(--c-white) 70%, transparent) !important;
+  --sss-widget-dropdown-plus-purchase-option-description-color: color-mix(in srgb, var(--c-white) 70%, transparent) !important;
+  --sss-widget-dropdown-plus-purchase-option-prepaid-subtitle-color: color-mix(in srgb, var(--c-white) 70%, transparent) !important;
+  --sss-widget-dropdown-plus-billing-frequency-label-color: color-mix(in srgb, var(--c-white) 75%, transparent) !important;
+  --sss-widget-dropdown-plus-compare-price-color: color-mix(in srgb, var(--c-white) 55%, transparent) !important;
+}
+/* Roboto small caps for every all-caps label in the widget */
+.buy-box .sss-bundle-block__badge, .buy-box .sss-bundle-block__savings, .buy-box .sss-bundle-block__title-text, .buy-box .fetcher-selling-plan-fieldset-label-text, .buy-box .sale-tag, .buy-box .billing-frequency-label {
+  font-family: var(--font-callout) !important; text-transform: uppercase !important; letter-spacing: .14em !important; font-weight: 700 !important;
+}
+.buy-box .sss-bundle-block__title-text, .buy-box .fetcher-selling-plan-fieldset-label-text { font-size: .72rem !important; color: var(--c-white) !important; }
+.buy-box .fetcher-selling-plan-fieldset-label-rule, .buy-box .sss-bundle-block__title-rule { background: color-mix(in srgb, var(--c-gold) 45%, transparent) !important; border-color: color-mix(in srgb, var(--c-gold) 45%, transparent) !important; }
+.buy-box .sss-bundle-block__badge, .buy-box .sss-bundle-block__savings { font-size: .6rem !important; }
+/* Sale tag on the Subscribe & Save row: a plain gold pill instead of the tilted tag */
+.buy-box .sale-tag-container .sale-tag-left-triangle, .buy-box .sale-tag-container .sale-tag-right-triangle { display: none !important; }
+.buy-box .sale-tag-container { transform: none !important; }
+.buy-box .sale-tag { background: var(--c-gold) !important; color: #fff !important; border-radius: 999px !important; padding: 2px 9px !important; font-size: .6rem !important; }
+.buy-box .super-simple-subs-wrapper label, .buy-box .sss-bundle-block__tier-title { font-family: var(--font-body); }
+.buy-box .sss-selling-plan-select { color: #fff !important; background-color: color-mix(in srgb, var(--c-black) 25%, var(--c-emerald)) !important; border-color: color-mix(in srgb, var(--c-gold) 60%, transparent) !important; }
+
+/* "Bundle & Save" as a dropdown: the select lists every option; only the chosen option's card shows below it */
+.amd-tier-select { display: grid; gap: 8px; margin-bottom: 10px; }
+.amd-tier-select__field { position: relative; }
+.amd-tier-select__field::after { content: ""; position: absolute; right: 18px; top: 50%; width: 8px; height: 8px; border-right: 1.5px solid var(--c-gold); border-bottom: 1.5px solid var(--c-gold); transform: translateY(-70%) rotate(45deg); pointer-events: none; }
+.amd-tier-select__control { appearance: none; -webkit-appearance: none; width: 100%; min-height: 54px; padding: 0 48px 0 18px; border: 1px solid var(--c-gold); border-radius: 10px; background: color-mix(in srgb, var(--c-black) 25%, var(--c-emerald)); color: #fff; font: inherit; font-size: 1rem; cursor: pointer; }
+.amd-tier-select__control:focus-visible { outline: 2px solid var(--c-gold); outline-offset: 2px; }
+.amd-tier-select__control option { background: var(--c-emerald); color: #fff; }
+.amd-tiers-select .sss-bundle-block__tiers > .sss-bundle-block__tier:not(.amd-tier-current) { display: none !important; }
+.buy-box .super-simple-subs-wrapper .subscription-plan-details label, .buy-box .super-simple-subs-wrapper .selling-plan-price, .buy-box .super-simple-subs-wrapper .subscription-plan-wrapper * { color: #fff; }
+.buy-box .super-simple-subs-wrapper .subscription-plan-details label, .buy-box .super-simple-subs-wrapper .selling-plan-price { color: #fff !important; }
+.buy-box .super-simple-subs-wrapper .selling-plan-frequency, .buy-box .super-simple-subs-wrapper .selling-plan-price-from-label { color: color-mix(in srgb, var(--c-white) 70%, transparent) !important; }
+.buy-box .sale-tag { clip-path: none !important; -webkit-clip-path: none !important; }
+.buy-box .sale-tag-container { background: none !important; }
+.buy-box .super-simple-subs-wrapper.super-simple-subs-wrapper .subscription-plan-wrapper .subscription-plan-details label,
+.buy-box .super-simple-subs-wrapper.super-simple-subs-wrapper .subscription-plan-wrapper .selling-plan-price,
+.buy-box .super-simple-subs-wrapper.super-simple-subs-wrapper .subscription-plan-wrapper .sss-benefit-item,
+.buy-box .super-simple-subs-wrapper.super-simple-subs-wrapper .subscription-plan-wrapper .sss-benefit-item span { color: #fff !important; }
+.buy-box .fetcher-selling-plan-fieldset .sale-tag-container.badge-type-tag .sale-tag { clip-path: none !important; border-radius: 999px !important; padding: 2px 9px !important; }
+.buy-box .bullseye-radio .line { display: none !important; }
