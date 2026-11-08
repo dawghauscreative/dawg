@@ -573,3 +573,8 @@ New interactive pieces (all respect reduced motion, and keyboard and touch work)
 - The theme.js scroll-reveal list now includes `.stagger > *`.
 - The three single-product main images were rebuilt larger from the source renders.
 
+## Supr buy box restyle (2026-11-08)
+- Supr renders its widget server-side from its app block with inline CSS variables (`--sss-db-*` for Bundle & Save, `--sss-widget-dropdown-plus-*` for the subscription picker). theme.css overrides them with `!important`, scoped to `.buy-box`. The block at the end of theme.css is marked "Supr buy box".
+- theme.js turns `.sss-bundle-block__tiers` into a `<select>` (`.amd-tier-select`) and shows only the chosen tier. Changing the select clicks Supr's own radio. A MutationObserver keeps the select in sync when Supr updates prices.
+- How the markup was read: a hidden copy of the buy box went on the password page for a few minutes, then was removed. If Supr changes its markup, re-check `.sss-bundle-block__tier`, `[data-tier-total]` and `[data-tier-savings]`.
+
