@@ -6,12 +6,13 @@
         "color_scheme": "green",
         "heading": "How can we help?",
         "body": "<p>Questions about a product, an order or your subscription, or a professional or partnership inquiry: choose a topic and send us a message. We will route it to the right person.</p>",
-        "asset": "header-green-glass.webp",
-        "returns_note": "Not for returns. See our Returns policy for where to send them.",
+        "asset": "",
+        "returns_note": "",
         "inquiry_types": "Product question, Order or shipping, Subscription, Returns, Wholesale or retail, Dermatology office, Media, Partnership, Other",
         "button_label": "Send message",
         "reply_note": "We reply by email.",
-        "success_text": "Thank you. We will be in touch."
+        "success_text": "Thank you. We will be in touch.",
+        "show_mailing_address": false
       }
     }
   },

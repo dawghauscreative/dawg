@@ -54,7 +54,7 @@
     </div>
 
     <div class="selector__plan" id="plan" data-sel-plan tabindex="-1" aria-live="polite">
-      <h2 class="selector__plan-title">{{ section.settings.plan_heading }}</h2>
+      {%- if section.settings.plan_heading != blank -%}<h2 class="selector__plan-title">{{ section.settings.plan_heading }}</h2>{%- endif -%}
       <p class="selector__empty" data-sel-empty>{{ section.settings.empty_text }}</p>
       {%- for block in section.blocks -%}
         {%- assign p = block.settings.product -%}

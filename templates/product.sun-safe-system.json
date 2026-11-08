@@ -262,16 +262,53 @@
       }
     },
     "gut": {
-      "type": "rich-text",
+      "type": "flow-steps",
       "settings": {
         "color_scheme": "green",
-        "align": "left",
-        "width": "wide",
         "eyebrow": "",
-        "heading": "The gut and skin communicate.",
-        "heading_tag": "h2",
-        "body": "<p>The gut-skin axis refers to biological communication between the intestinal environment and the skin through pathways involving:</p><ul><li>Microbial metabolites</li><li>Immune signaling</li><li>Barrier integrity</li><li>Nutrient metabolism</li></ul><p>Skinbiotic+ is designed to support the intestinal side of that relationship.† It is a synbiotic formula combining inulin with multiple probiotic organisms selected around gut and skin-related biological rationale.</p>"
-      }
+        "heading": "What is the gut-skin connection?",
+        "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
+        "takeaway": "Skinbiotic+ is designed to support the gut side of that conversation.†"
+      },
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "Gut microbiome"
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Microbial metabolites"
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "Immune signaling"
+          }
+        },
+        "b4": {
+          "type": "step",
+          "settings": {
+            "label": "Systemic circulation"
+          }
+        },
+        "b5": {
+          "type": "step",
+          "settings": {
+            "label": "Skin"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
     },
     "formula": {
       "type": "split-compare",
@@ -709,12 +746,12 @@
   },
   "order": [
     "main",
+    "why",
+    "layers",
     "definition",
     "video",
-    "why",
     "step1",
     "step2",
-    "layers",
     "environment",
     "gut",
     "formula",

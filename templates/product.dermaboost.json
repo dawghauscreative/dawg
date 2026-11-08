@@ -153,7 +153,7 @@
     "formula": {
       "type": "product-actives",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "Ingredients",
         "columns": "4"
@@ -593,17 +593,17 @@
   },
   "order": [
     "main",
+    "role",
     "definition",
     "video",
-    "role",
     "antioxidant",
     "formula",
+    "research",
+    "claims",
     "immune",
     "collagen",
     "who",
     "supports",
-    "research",
-    "claims",
     "systems",
     "reviews",
     "faq",

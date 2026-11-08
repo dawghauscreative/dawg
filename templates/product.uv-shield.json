@@ -289,7 +289,8 @@
         "b4",
         "b5",
         "b6"
-      ]
+      ],
+      "disabled": true
     },
     "claims": {
       "type": "science-boundaries",
@@ -437,9 +438,9 @@
   },
   "order": [
     "main",
+    "why",
     "definition",
     "video",
-    "why",
     "formula",
     "who",
     "claims",

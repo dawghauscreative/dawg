@@ -10,8 +10,8 @@
         <details class="active-faq" {{ block.shopify_attributes }}>
           <summary>
             <span class="active-faq__name">
-              {%- if block.settings.role != blank -%}<span class="active-card__role">{{ block.settings.role }}</span>{%- endif -%}
               <h3>{{ block.settings.name }}</h3>
+              {%- if block.settings.role != blank -%}<span class="active-card__role">{{ block.settings.role }}</span>{%- endif -%}
             </span>
             {%- if block.settings.amount != blank -%}<span class="active-card__amount">{{ block.settings.amount }}</span>{%- endif -%}
           </summary>

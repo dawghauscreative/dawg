@@ -14,10 +14,10 @@
       "settings": {
         "color_scheme": "dark",
         "eyebrow": "",
-        "title": "Skin Edu",
+        "title": "Skin Education",
         "subtitle": "Dermatologist-led education for understanding your skin from the inside out.",
         "heading": "Understand your skin. Then decide what it needs.",
-        "body": "<p>Skin health is more than products.</p><p>It is biology, nutrition, environment, habits, and the choices you make every day.</p><p>Skin Edu translates dermatological science into clear, practical guidance so you can understand what affects your skin, evaluate what you are putting into your body, and build a routine with intention.</p>",
+        "body": "<p>Skin health is more than products.</p><p>It is biology, nutrition, environment, habits, and the choices you make every day.</p><p>Skin Education translates dermatological science into clear, practical guidance so you can understand what affects your skin, evaluate what you are putting into your body, and build a routine with intention.</p>",
         "primary_label": "Explore the latest",
         "primary_url": "#latest",
         "secondary_label": "Browse by topic",
@@ -101,7 +101,7 @@
       "settings": {
         "color_scheme": "light",
         "eyebrow": "",
-        "heading": "Explore Skin Edu",
+        "heading": "Explore Skin Education",
         "body": "",
         "blog_handle": "skin-edu"
       }
@@ -155,7 +155,7 @@
         "color_scheme": "light",
         "anchor": "latest",
         "eyebrow": "",
-        "heading": "New from Skin Edu",
+        "heading": "New from Skin Education",
         "body": "",
         "columns": "3",
         "blog_handle": "skin-edu",
@@ -1243,11 +1243,12 @@
         "hide_on_home": false,
         "eyebrow": "",
         "heading": "Better skin decisions start with better information.",
-        "body": "<p>Get dermatologist-led skin education, ingredient explainers, research breakdowns, and new Skin Edu articles delivered to your inbox.</p>",
+        "body": "<p>Get dermatologist-led skin education, ingredient explainers, research breakdowns, and new Skin Education articles delivered to your inbox.</p>",
         "placeholder": "Email address",
-        "button_label": "Join Skin Edu",
-        "success_text": "Thank you. You are on the Skin Edu list."
-      }
+        "button_label": "Join Skin Education",
+        "success_text": "Thank you. You are on the Skin Education list."
+      },
+      "disabled": true
     },
     "final": {
       "type": "final-cta",

@@ -216,16 +216,53 @@
       }
     },
     "gutskin": {
-      "type": "rich-text",
+      "type": "flow-steps",
       "settings": {
         "color_scheme": "dark",
-        "align": "left",
-        "width": "wide",
         "eyebrow": "",
-        "heading": "The gut and skin are part of a larger system.",
-        "heading_tag": "h2",
-        "body": "<p>The gut-skin axis refers to biological communication between the intestinal environment and the skin. Research in this area looks at pathways involving:</p><ul><li>Microbial metabolites</li><li>Intestinal barrier integrity</li><li>Immune signaling</li><li>Nutrient metabolism</li><li>Microbiome composition</li></ul><p>Skinbiotic+ is designed around the gut side of that relationship. The gut is one part of the picture; not every skin concern is connected to it.</p>"
-      }
+        "heading": "What is the gut-skin connection?",
+        "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
+        "takeaway": "Skinbiotic+ is designed to support the gut side of that conversation.†"
+      },
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "Gut microbiome"
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Microbial metabolites"
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "Immune signaling"
+          }
+        },
+        "b4": {
+          "type": "step",
+          "settings": {
+            "label": "Systemic circulation"
+          }
+        },
+        "b5": {
+          "type": "step",
+          "settings": {
+            "label": "Skin"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
     },
     "systemic": {
       "type": "science-cards",
@@ -717,10 +754,10 @@
   },
   "order": [
     "main",
-    "definition",
-    "video",
     "why",
     "why_areas",
+    "definition",
+    "video",
     "step1",
     "step2",
     "gutskin",

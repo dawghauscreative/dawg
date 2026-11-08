@@ -548,3 +548,14 @@ Held for owner decision: daily-total/enhanced naming, melanoma line, bundle rena
 ## Floating "Choose your plan" on every page (2026-11-06)
 - Fix: the floating button and the phone back-to-top arrow were coded inside the video-player script, which stops early on pages without a video, so they only showed on pages with a video. They now run in their own block on every page.
 - The non-product button now shows on phones too (full-width bar at the bottom, same as product pages) and on desktop (pill, bottom right). It appears after a short scroll, or straight away on short pages, and links to Shop All. On Shop All itself it jumps to the bundles grid (`#shop-grid`). Product pages keep their own bar that scrolls to the buy box. Not shown on the cart (checkout is already there) or the password page.
+
+## Heather's Frame.io review (Nov 6–7), phase 1 (2026-11-08)
+Full plan and status: `docs/REVIEW-2026-11-07.md`. Owner decisions: follow Heather on the home layout ("Start here" buy box and closing Outdoor Duo CTA hidden, product trio second); one green email band site-wide.
+- Brand colours (schema defaults, no editor overrides): gold #C18C31, beige #DEBC8C, Emerald #132D22 (replaces Evergreen #1A2E1F everywhere `color_evergreen` is used). Text and buttons on gold are white Roboto.
+- All-caps labels now use Roboto (callout font list in theme.css). All H1s semibold. Wider section heads/text on desktop.
+- Header: Science is a plain link; the Skin Edu dropdown and drawer list are gone. "Skin Edu" copy now reads "Skin Education" (URL unchanged).
+- `science-boundaries` (Science + every product page): the "does" copy sits under the main heading, the "does not" list is a card on the right, and the second heading is no longer shown.
+- `product-actives`: ingredient name first and larger, role under it in small Roboto.
+- `contact-form`: new "Show mailing address" setting (off on the Contact page); image removed.
+- `product-selector`: plan heading only renders when set.
+- `feature-split`: new "Warm beige" colour option.

@@ -391,7 +391,7 @@
     "compare": {
       "type": "compare-table",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Compare the Alchemia MD bundles.",
         "col_1": "Roles",

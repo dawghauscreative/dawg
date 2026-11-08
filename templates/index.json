@@ -34,7 +34,7 @@
             "color_scheme": "dark",
             "heading": "Learn what your skin needs.",
             "body": "<p>Plain-language guides on the gut-skin connection, sun and skin renewal.</p>",
-            "primary_label": "Explore Skin Edu",
+            "primary_label": "Explore Skin Education",
             "primary_url": "/blogs/skin-edu",
             "secondary_label": "",
             "secondary_url": "",
@@ -141,14 +141,15 @@
         "details_label": "See full details",
         "allow_plain_add": false,
         "color_scheme": "green"
-      }
+      },
+      "disabled": true
     },
     "category": {
       "type": "rich-text",
       "settings": {
         "color_scheme": "light",
         "align": "center",
-        "width": "narrow",
+        "width": "wide",
         "salt_symbol": false,
         "eyebrow": "",
         "heading": "Skin health is more than a surface routine.",
@@ -185,7 +186,7 @@
           "type": "card",
           "settings": {
             "number": "01",
-            "kicker": "Too many bottles",
+            "kicker": "",
             "icon": "none",
             "title": "Fragmented routines",
             "text": "<p>People trying to support their skin are often left combining multiple individual supplements without a clear system or defined purpose.</p>",
@@ -198,7 +199,7 @@
           "type": "card",
           "settings": {
             "number": "02",
-            "kicker": "Too much noise",
+            "kicker": "",
             "icon": "none",
             "title": "Trend-driven formulas",
             "text": "<p>The category is crowded with vague beauty claims, proprietary blends, and products designed around trends instead of transparent formulation logic.</p>",
@@ -211,7 +212,7 @@
           "type": "card",
           "settings": {
             "number": "03",
-            "kicker": "Too little guidance",
+            "kicker": "",
             "icon": "none",
             "title": "Missing dermatological context",
             "text": "<p>Consumers want to understand what they are taking, why it is included, and how it fits into a complete skin-health routine.</p>",
@@ -247,8 +248,8 @@
           "settings": {
             "product": "uv-shield",
             "role": "Protect",
-            "tagline": "Daily support for active, sun-ready skin",
-            "text": "Designed around nutritional and antioxidant support for people who spend significant time outdoors.†",
+            "tagline": "",
+            "text": "Daily support for active, sun-ready skin.† Designed around nutritional and antioxidant support for people who spend significant time outdoors.†",
             "cta": "Explore UV Shield+"
           }
         },
@@ -257,8 +258,8 @@
           "settings": {
             "product": "skinbiotic",
             "role": "Balance",
-            "tagline": "Daily probiotic for gut and skin health",
-            "text": "A synbiotic approach designed around the connection between the intestinal microbiome and skin wellness.",
+            "tagline": "",
+            "text": "Daily probiotic for gut and skin health.† A synbiotic approach designed around the connection between the intestinal microbiome and skin wellness.",
             "cta": "Explore Skinbiotic+"
           }
         },
@@ -267,8 +268,8 @@
           "settings": {
             "product": "dermaboost",
             "role": "Restore",
-            "tagline": "Daily immune support for calm, balanced skin",
-            "text": "A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.†",
+            "tagline": "",
+            "text": "Daily immune support for calm, balanced skin.† A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.†",
             "cta": "Explore Dermaboost+"
           }
         }
@@ -336,7 +337,7 @@
             "roles": "Protect + Balance",
             "best_for": "Active outdoor lifestyles and customers looking for environmental support plus gut-skin balance.†",
             "note": "",
-            "cta": "Explore Outdoor Duo",
+            "cta": "Explore",
             "asset": "system-sun-safe.webp",
             "featured": true
           }
@@ -348,7 +349,7 @@
             "roles": "Balance + Restore",
             "best_for": "Customers focused on gut-skin balance and broader nutritional support for calm, resilient skin.†",
             "note": "",
-            "cta": "Explore Balance Duo",
+            "cta": "Explore",
             "asset": "system-skin-recovery.webp",
             "featured": false
           }
@@ -360,7 +361,7 @@
             "roles": "Protect + Restore",
             "best_for": "Customers looking to pair environmental support with broader antioxidant and immune-supportive nutrition.†",
             "note": "",
-            "cta": "Explore Sun Resilience Duo",
+            "cta": "Explore",
             "asset": "system-sun-resilience.webp",
             "featured": false
           }
@@ -372,7 +373,7 @@
             "roles": "Protect + Balance + Restore",
             "best_for": "Customers who already understand the three roles and want the most comprehensive Alchemia MD routine.",
             "note": "",
-            "cta": "Explore Tria Prima",
+            "cta": "Explore",
             "asset": "system-complete.webp",
             "featured": false
           }
@@ -385,7 +386,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Find the bundle that fits your goals.",
         "body": "",
@@ -633,7 +634,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Research worth reading.",
         "body": "",
@@ -647,7 +648,7 @@
         "color_scheme": "dark",
         "align": "center",
         "width": "narrow",
-        "salt_symbol": true,
+        "salt_symbol": false,
         "eyebrow": "",
         "heading": "Balance is a practice.",
         "heading_tag": "h2",
@@ -655,7 +656,8 @@
         "quote": "",
         "button_label": "",
         "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "trust": {
       "type": "science-cards",
@@ -770,7 +772,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "beige",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Understand your skin from the inside out.",
         "body": "",
@@ -806,7 +808,8 @@
         "placeholder": "Email address",
         "button_label": "Join Alchemia MD",
         "success_text": "Thank you for joining Alchemia MD."
-      }
+      },
+      "disabled": true
     },
     "final": {
       "type": "final-cta",
@@ -823,17 +826,18 @@
         "note": "",
         "asset": "system-sun-safe.webp",
         "light_panel": true
-      }
+      },
+      "disabled": true
     }
   },
   "order": [
     "hero",
     "trust_strip",
+    "roles",
     "buy_box",
     "category",
     "intro_video",
     "problem",
-    "roles",
     "featured",
     "video",
     "finder",

@@ -64,11 +64,11 @@
       "settings": {
         "color_scheme": "green",
         "eyebrow": "",
-        "heading": "Choose your bundle",
+        "heading": "Choose your plan",
         "card_columns": "2",
         "media_ratio": "16x9",
         "show_tagline": false,
-        "plan_heading": "Choose your plan",
+        "plan_heading": "",
         "empty_text": "Select a bundle above to view purchase options."
       },
       "blocks": {
@@ -82,7 +82,7 @@
             "description": "For people who spend significant time outdoors and want to combine environmental skin support with gut-skin balance.†",
             "support_areas": "Environmental stress support†\nAntioxidant support\nGut-skin connection\nMicrobiome balance",
             "best_for": "Golf\nTennis\nBoating\nBeach\nTravel\nOutdoor lifestyles\nCustomers who want internal sun-support plus microbiome support†",
-            "choose_label": "Choose Outdoor Duo",
+            "choose_label": "Choose",
             "learn_label": "Learn more",
             "plan_heading": "Choose your Outdoor Duo plan",
             "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
@@ -98,7 +98,7 @@
             "description": "For customers focused on gut-skin balance together with broader nutritional, antioxidant, and immune-supportive pathways.†",
             "support_areas": "Gut-skin connection\nMicrobiome balance\nAntioxidant support\nNormal immune support†",
             "best_for": "Gut-health-focused routines\nMicrobiome support\nAntioxidant support\nBroader daily skin resilience†\nCustomers who want internal balance without making outdoor exposure the primary focus",
-            "choose_label": "Choose Balance Duo",
+            "choose_label": "Choose",
             "learn_label": "Learn more",
             "plan_heading": "Choose your Balance Duo plan",
             "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
@@ -114,7 +114,7 @@
             "description": "For customers who want environmental support paired with broader antioxidant, nutritional, and normal immune-supportive nutrition.†",
             "support_areas": "Environmental support\nAntioxidant support\nNutritional support\nSkin resilience",
             "best_for": "Active outdoor lifestyles\nEnvironmental exposure\nAntioxidant-focused routines\nBroader nutritional skin support†\nCustomers who want support beyond UV-focused pathways without prioritizing microbiome support",
-            "choose_label": "Choose Sun Resilience Duo",
+            "choose_label": "Choose",
             "learn_label": "Learn more",
             "plan_heading": "Choose your Sun Resilience Duo plan",
             "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
@@ -130,7 +130,7 @@
             "description": "The most complete Alchemia MD routine for customers who already understand the three roles and want all three areas of support integrated into one daily bundle.",
             "support_areas": "Environmental support\nGut-skin balance\nAntioxidant support\nNormal immune support†\nDaily skin resilience†",
             "best_for": "Existing Alchemia MD customers\nCustomers who want all three support roles\nCustomers already committed to a comprehensive supplement routine",
-            "choose_label": "Choose Tria Prima",
+            "choose_label": "Choose",
             "learn_label": "Learn more",
             "plan_heading": "Choose your Tria Prima plan",
             "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
@@ -202,7 +202,7 @@
     "edu_sun_safe": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "image_side": "right",
         "eyebrow": "",
         "heading": "Outdoor Duo",
@@ -217,7 +217,7 @@
     "edu_recovery": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "beige",
         "image_side": "left",
         "eyebrow": "",
         "heading": "Balance Duo",
@@ -232,7 +232,7 @@
     "edu_resilience": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "beige",
         "image_side": "right",
         "eyebrow": "",
         "heading": "Sun Resilience Duo",

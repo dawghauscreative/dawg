@@ -14,14 +14,14 @@
     "newsletter": {
       "type": "email-capture",
       "settings": {
-        "color_scheme": "gold",
-        "hide_on_home": true,
+        "color_scheme": "green",
+        "hide_on_home": false,
         "eyebrow": "",
-        "heading": "Stay informed. Stay empowered.",
-        "body": "",
-        "placeholder": "Enter your email address",
-        "button_label": "Subscribe",
-        "success_text": "Thank you for subscribing."
+        "heading": "Skin health, explained clearly.",
+        "body": "<p>Get dermatologist-led education, ingredient research, product guidance, and Alchemia MD updates delivered to your inbox.</p>",
+        "placeholder": "Email address",
+        "button_label": "Join Alchemia MD",
+        "success_text": "Thank you for joining Alchemia MD."
       }
     },
     "featured_buy_box_yHETDq": {

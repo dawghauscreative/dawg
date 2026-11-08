@@ -1,15 +1,15 @@
+{%- comment -%} Client review (Nov 7): the main heading carries the "what it is" copy directly under it (no second headline); the "does not" list sits on the right. Shared by the Science page and every product page. {%- endcomment -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
-    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
     <div class="sci-bounds">
-      <div class="sci-bounds__col">
-        <h3>{{ section.settings.not_heading }}</h3>
+      <div class="sci-bounds__intro">
+        {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+        {%- if section.settings.does_text != blank -%}<div class="prose sci-bounds__does">{{ section.settings.does_text }}</div>{%- endif -%}
+      </div>
+      <div class="sci-bounds__col sci-bounds__col--not">
+        {%- if section.settings.not_heading != blank -%}<h3>{{ section.settings.not_heading }}</h3>{%- endif -%}
         {%- assign items = section.settings.not_items | newline_to_br | split: '<br />' -%}
         <ul class="sci-x">{%- for item in items -%}{%- assign item_text = item | strip -%}{%- if item_text != blank -%}<li>{{ item_text }}</li>{%- endif -%}{%- endfor -%}</ul>
-      </div>
-      <div class="sci-bounds__col sci-bounds__col--does">
-        <h3>{{ section.settings.does_heading }}</h3>
-        <div class="prose">{{ section.settings.does_text }}</div>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@
     { "type": "richtext", "id": "body", "label": "Text" },
     { "type": "text", "id": "not_heading", "label": "Left heading", "default": "These studies do not mean:" },
     { "type": "textarea", "id": "not_items", "label": "Left list (one per line)" },
-    { "type": "text", "id": "does_heading", "label": "Right heading", "default": "What they do mean:" },
+    { "type": "text", "id": "does_heading", "label": "Second heading (not shown)", "default": "What they do mean:", "info": "No longer displayed. The text below shows directly under the main heading." },
     { "type": "richtext", "id": "does_text", "label": "Right text" }
   ],
   "presets": [{ "name": "Science boundaries" }]

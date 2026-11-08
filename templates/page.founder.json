@@ -14,8 +14,11 @@
     "cta": {
       "type": "final-cta",
       "settings": {
-        "product": "sun-safe-system",
-        "color_scheme": "band"
+        "product": "",
+        "color_scheme": "band",
+        "heading": "Support your skin from within.",
+        "button_label": "Shop all",
+        "button_url": "/collections/shop-all"
       }
     },
     "alchemy": {

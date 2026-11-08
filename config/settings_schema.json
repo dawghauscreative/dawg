@@ -27,16 +27,16 @@
       {
         "type": "color",
         "id": "color_evergreen",
-        "label": "Evergreen",
-        "default": "#1A2E1F",
-        "info": "Secondary dark surface. Use selectively."
+        "label": "Emerald",
+        "default": "#132D22",
+        "info": "Brand Emerald (#132d22). Product page heroes and green sections."
       },
       {
         "type": "color",
         "id": "color_gold",
         "label": "Gold",
-        "default": "#C9A96E",
-        "info": "Accent, primary button on dark, thin rules, icon details."
+        "default": "#C18C31",
+        "info": "Brand gold (#c18c31). Accent, buttons, banners. Text on gold is white Roboto."
       },
       {
         "type": "color",
@@ -48,8 +48,8 @@
         "type": "color",
         "id": "color_beige",
         "label": "Warm beige (secondary band)",
-        "default": "#EDE3D2",
-        "info": "A slightly deeper tone of Beige for alternating light bands."
+        "default": "#DEBC8C",
+        "info": "Brand beige (#debc8c). Use occasionally; gold is the main accent."
       },
       {
         "type": "color",
