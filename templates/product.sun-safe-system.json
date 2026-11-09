@@ -91,7 +91,7 @@
         "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_SK_EDU_03_4x5_c0b4dc6d-cce8-4d00-ac97-d1a81051d78d.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_SK_EDU_04_4x5_b0f5ca95-5fd3-4801-b51a-4adbf0c02d76.png, bundle-sun-safe-outdoor.webp, bundle-sun-safe-everyday-care.webp, lifestyle-uvshield-skinbiotic-sailboat.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-uv-shield-skinbiotic.webp",
-        "angle_assets": "product-angle-sun-safe-front.webp, product-angle-sun-safe-back.webp, product-angle-uv-shield-facts.webp, product-angle-skinbiotic-facts.webp",
+        "angle_assets": "product-angle-sun-safe-back.webp, product-angle-uv-shield-facts.webp, product-angle-skinbiotic-facts.webp",
         "media_order": "99"
       }
     },

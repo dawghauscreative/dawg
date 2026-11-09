@@ -91,7 +91,7 @@
         "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_DB_EDU_03_4x5_24d7c21d-2412-4f19-91bc-138142f6e916.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_DB_EDU_04_4x5_e9a00d5c-1d6c-4538-a119-f4044d7a8d41.png, bundle-sun-resilience-pairing.webp, bundle-sun-resilience-outdoor.webp, lifestyle-uvshield-dermaboost-tennis.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-uv-shield-dermaboost.webp",
-        "angle_assets": "product-angle-sun-resilience-front.webp, product-angle-sun-resilience-back.webp, product-angle-uv-shield-facts.webp, product-angle-dermaboost-facts.webp",
+        "angle_assets": "product-angle-sun-resilience-back.webp, product-angle-uv-shield-facts.webp, product-angle-dermaboost-facts.webp",
         "media_order": "99"
       }
     },

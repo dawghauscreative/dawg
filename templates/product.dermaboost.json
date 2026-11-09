@@ -84,7 +84,7 @@
         "gallery_assets": "slide-dermaboost-vitamin-d3.webp, slide-dermaboost-niacinamide.webp, slide-dermaboost-zinc.webp, lifestyle-dermaboost-yacht.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-dermaboost-portrait.webp",
-        "angle_assets": "product-angle-dermaboost-front.webp, product-angle-dermaboost-back.webp, product-angle-dermaboost-facts.webp",
+        "angle_assets": "product-angle-dermaboost-back.webp, product-angle-dermaboost-facts.webp",
         "media_order": "99"
       }
     },

@@ -96,7 +96,7 @@
         "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/TRIO_EDU_03_4x5_fa5e0b91-ab3f-4841-85b3-48cdf8664bb9.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/TRIO_EDU_04_4x5_9dd77151-fa21-4643-bd7c-5c0bfea885d5.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/TRIO_EDU_05_4x5_f64b7b92-ae0a-44ab-985f-1a9bf70f14ed.png, bundle-complete-explore-all-three.webp, bundle-complete-closer-look.webp, lifestyle-all-three-yacht.webp",
         "color_scheme": "green",
         "lead_asset": "product-3d-trio.webp",
-        "angle_assets": "product-angle-trio-front.webp, product-angle-trio-back.webp, product-angle-uv-shield-facts.webp, product-angle-skinbiotic-facts.webp, product-angle-dermaboost-facts.webp",
+        "angle_assets": "product-angle-trio-back.webp, product-angle-uv-shield-facts.webp, product-angle-skinbiotic-facts.webp, product-angle-dermaboost-facts.webp",
         "media_order": "99"
       }
     },
