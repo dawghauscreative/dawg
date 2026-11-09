@@ -1484,3 +1484,5 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 /* Home slider badge: small gold card above a slide heading (e.g. "Supplement highlight") */
 .home-slide__badge { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px; padding: 9px 16px; border: 1px solid var(--c-gold); border-radius: 4px; background: color-mix(in srgb, var(--c-black) 55%, transparent); backdrop-filter: blur(6px); color: var(--c-gold); font-family: var(--font-callout); font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
 .home-slide__badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--c-gold); }
+/* Hero held while the scroll steps through its slides (Full scroll animations, home page) */
+.home-slider.is-scroll-held { position: sticky; top: 0; z-index: 2; }

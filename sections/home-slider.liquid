@@ -58,11 +58,11 @@
         slides.forEach(function (s, n) { s.classList.toggle('is-active', n === i); s.setAttribute('aria-hidden', n === i ? 'false' : 'true'); });
         dots.forEach(function (d, n) { d.classList.toggle('is-active', n === i); d.setAttribute('aria-selected', n === i ? 'true' : 'false'); });
       }
-      var current = 0, timer = null, paused = false;
+      var current = 0, timer = null, paused = false, scrollHeld = false;
       var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       function go(i) { current = i; show(i); }
       function stop() { if (timer) { clearInterval(timer); timer = null; } }
-      function start() { stop(); if (!reduce && !paused) timer = setInterval(function () { go((current + 1) % slides.length); }, 6000); }
+      function start() { stop(); if (!reduce && !paused && !scrollHeld) timer = setInterval(function () { go((current + 1) % slides.length); }, 6000); }
       dots.forEach(function (d, n) { d.addEventListener('click', function (e) { e.preventDefault(); go(n); start(); }); });
       var prev = root.querySelector('[data-slider-prev]'), next = root.querySelector('[data-slider-next]');
       if (prev && next) {
@@ -77,6 +77,13 @@
       root.addEventListener('keydown', function (e) {
         if (e.key === 'ArrowRight') go((current + 1) % slides.length);
         if (e.key === 'ArrowLeft') go((current - 1 + slides.length) % slides.length);
+      });
+      // Scroll-driven (Full scroll animations, assets/theme.js "Scroll motion"): while the hero is held on screen the
+      // scroll picks the slide and autoplay pauses; back at the top, autoplay resumes.
+      root.addEventListener('scrollslide', function (e) {
+        if (e.detail === null) { scrollHeld = false; start(); return; }
+        scrollHeld = true; stop();
+        if (e.detail !== current) go(e.detail);
       });
       go(0);
       start();

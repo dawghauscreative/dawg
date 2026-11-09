@@ -744,17 +744,62 @@
     });
   }
 
-  if (!photos.length && !steppers.length && !slides.length) return;
+  // Hero slider (home page, Full): held at the top while the scroll steps through its slides, then released.
+  var hero = null;
+  if (full) {
+    var hs = document.querySelector('main [data-home-slider].is-enhanced, [data-home-slider].is-enhanced');
+    var hn = hs ? hs.querySelectorAll('[data-slide]').length : 0;
+    if (hn > 1) hero = { el: hs, n: hn, track: null, spacer: null, held: false, last: undefined };
+  }
+  function heroLayout() {
+    if (!hero) return;
+    if (hero.spacer) { hero.spacer.remove(); hero.spacer = null; }
+    hero.el.classList.remove('is-scroll-held');
+    // A hero a little taller than the window is held with its bottom edge at the bottom of the window.
+    var hh = hero.el.offsetHeight;
+    hero.held = hh <= window.innerHeight * 1.35;
+    hero.top = Math.min(0, window.innerHeight - hh);
+    hero.el.style.top = hero.held ? hero.top + 'px' : '';
+    hero.last = undefined;
+    if (!hero.held) return;
+    if (!hero.track) {
+      hero.track = document.createElement('div');
+      hero.track.className = 'scroll-pin-track scroll-pin-track--hero';
+      hero.el.before(hero.track);
+      hero.track.appendChild(hero.el);
+    }
+    hero.dist = Math.round(window.innerHeight * 0.5 * (hero.n - 1));
+    var sp = document.createElement('div');
+    sp.className = 'scroll-pin-spacer';
+    sp.setAttribute('aria-hidden', 'true');
+    sp.style.height = hero.dist + 'px';
+    hero.track.appendChild(sp);
+    hero.spacer = sp;
+    hero.el.classList.add('is-scroll-held');
+  }
+  function heroStep() {
+    if (!hero || !hero.held) return;
+    var natTop = hero.spacer.getBoundingClientRect().top - hero.el.offsetHeight;
+    var raw = (hero.top - natTop) / hero.dist;
+    var idx = raw <= 0.02 ? null : Math.min(hero.n - 1, Math.floor(raw * hero.n));
+    if (idx === hero.last) return;
+    hero.last = idx;
+    hero.el.dispatchEvent(new CustomEvent('scrollslide', { detail: idx }));
+  }
+
+  if (!photos.length && !steppers.length && !slides.length && !hero) return;
   root.classList.add('motion-on');
   var ticking = false;
-  function frame() { ticking = false; drift(); steps(); slide(); }
+  function frame() { ticking = false; drift(); steps(); slide(); heroStep(); }
   function schedule() { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
   layout();
+  heroLayout();
   frame();
   window.addEventListener('scroll', schedule, { passive: true });
   window.addEventListener('load', function () {
     // Late fonts or images can change heights: re-measure if any step-through section changed size.
     if (steppers.some(function (s) { return s.el.offsetHeight !== s.h; })) layout();
+    heroLayout();
     schedule();
   });
   var rt;
@@ -765,6 +810,7 @@
       if (window.innerWidth === lastW && Math.abs(window.innerHeight - vh) < 120) { vh = window.innerHeight; schedule(); return; }
       lastW = window.innerWidth;
       layout();
+      heroLayout();
       schedule();
     }, 150);
   });
