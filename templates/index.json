@@ -32,7 +32,8 @@
           "type": "slide",
           "settings": {
             "color_scheme": "dark",
-            "heading": "Supplement highlight: Niacinamide.",
+            "badge": "Supplement highlight",
+            "heading": "Niacinamide.",
             "body": "<p>A form of vitamin B3, studied in human research on how skin responds to UV exposure. 500 mg in every serving of UV Shield+.</p>",
             "primary_label": "See the research",
             "primary_url": "/pages/science#uv-shield",
