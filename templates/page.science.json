@@ -951,7 +951,7 @@
       "settings": {
         "color_scheme": "light",
         "eyebrow": "",
-        "heading": "Skin Education: explore by topic",
+        "heading": "Blog: explore by topic",
         "body": "",
         "blog_handle": "skin-edu"
       }
@@ -1005,7 +1005,7 @@
         "color_scheme": "light",
         "anchor": "latest",
         "eyebrow": "",
-        "heading": "New from Skin Education",
+        "heading": "New on the blog",
         "body": "",
         "columns": "3",
         "blog_handle": "skin-edu",
