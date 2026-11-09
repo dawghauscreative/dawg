@@ -76,13 +76,31 @@
             "asset": "",
             "image_alt": ""
           }
+        },
+        "s5": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "dark",
+            "heading": "Bundle and save.",
+            "body": "<p>Pair formulas in a bundle and pay less than buying them separately. Subscribe and your routine arrives on schedule, at a lower price than a one-time order.</p>",
+            "primary_label": "Shop now",
+            "primary_url": "/collections/shop-all",
+            "secondary_label": "",
+            "secondary_url": "",
+            "background_asset": "hero-bundle-trio-coast.webp",
+            "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin",
+            "asset": "",
+            "image_alt": "",
+            "badge": ""
+          }
         }
       },
       "block_order": [
         "s1",
         "s2",
         "s3",
-        "s4"
+        "s4",
+        "s5"
       ],
       "settings": {}
     },
