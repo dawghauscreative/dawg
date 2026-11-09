@@ -1459,3 +1459,24 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .buy-box .super-simple-subs-wrapper.super-simple-subs-wrapper .subscription-plan-wrapper .sss-benefit-item span { color: #fff !important; }
 .buy-box .fetcher-selling-plan-fieldset .sale-tag-container.badge-type-tag .sale-tag { clip-path: none !important; border-radius: 999px !important; padding: 2px 9px !important; }
 .buy-box .bullseye-radio .line { display: none !important; }
+
+/* ---------- Scroll motion: theme setting "Scroll animations" (Theme settings > Animations); assets/theme.js "Scroll motion".
+   Every rule needs a class the script adds, so with the setting off, reduced motion, the theme editor or no script
+   nothing here applies. ---------- */
+.motion-on .media img { transition: transform .5s ease, scale 1.4s cubic-bezier(.2, .7, .2, 1); }
+.motion-on .bundle-tab__media img { transition: transform .8s cubic-bezier(.2, .7, .2, 1), scale 1.4s cubic-bezier(.2, .7, .2, 1); }
+.motion-on.reveal-on .reveal:not(.is-visible) .media img:not(.is-parallax) { scale: 1.06; }
+.motion-on .media img.is-parallax { scale: 1.1; will-change: translate; }
+.motion-clip { overflow-x: clip; }
+[data-scroll-steps].is-pinned { position: sticky; z-index: 1; }
+/* Protect / Balance / Restore: columns light up in turn and stay lit; the newest one gets a gold frame. */
+.is-stepping[data-scroll-steps="lit"] [data-step-item] > * { transition: opacity .6s ease, translate .7s cubic-bezier(.2, .7, .2, 1), filter .6s ease; transition-delay: calc(var(--k, 0) * 140ms); }
+.is-stepping[data-scroll-steps="lit"] [data-step-item]:not(.is-lit) > * { opacity: .22; translate: 0 18px; filter: saturate(.35); }
+.is-stepping[data-scroll-steps="lit"] [data-step-item] .media { transition: border-color .5s ease, box-shadow .5s ease; }
+.is-stepping[data-scroll-steps="lit"] [data-step-item].is-current .media { border-color: var(--c-gold); box-shadow: 0 0 0 1px var(--c-gold), 0 22px 48px rgba(0, 0, 0, .35); }
+/* Bundle finder cards slide in (translate set per card by the script) */
+.is-sliding > * { will-change: translate; }
+@media (prefers-reduced-motion: reduce) {
+  .motion-on .media img, .motion-on .media img.is-parallax { scale: none; translate: none; }
+  .is-stepping[data-scroll-steps="lit"] [data-step-item] > * { opacity: 1; translate: none; filter: none; }
+}

@@ -46,7 +46,7 @@
         {%- endfor -%}
       </div>
     {%- else -%}
-    <div class="cols cols--auto4 finder">
+    <div class="cols cols--auto4 finder" data-scroll-slide>
       {%- for block in section.blocks -%}
         {%- assign p = block.settings.product -%}
         {%- if p != blank -%}

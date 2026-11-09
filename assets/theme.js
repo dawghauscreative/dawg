@@ -411,6 +411,8 @@
     });
     items.forEach(function (li) { li.addEventListener('mouseenter', function () { set(li.getAttribute('data-layer')); }); });
     box.addEventListener('mouseleave', function () { set(box.dataset.pinned || null); });
+    // Scroll-driven steps (Full scroll animations, see "Scroll motion" below). A layer the visitor tapped wins.
+    box.addEventListener('scrollstep', function (e) { if (!box.dataset.pinned) set(e.detail === null ? null : String(e.detail)); });
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) { entries.forEach(function (en) { if (en.isIntersecting) { box.classList.add('is-in'); io.disconnect(); } }); }, { threshold: 0.2 });
       io.observe(box);
@@ -605,4 +607,157 @@
     mo.observe(document.body, { childList: true, subtree: true });
     setTimeout(function () { mo.disconnect(); }, 20000);
   }
+})();
+
+/* Scroll motion. Theme setting "Scroll animations" (Theme settings > Animations), written to <html data-motion>.
+   off:    nothing here runs; the site keeps only the original fade-ins.
+   subtle: on every page, photos drift slightly slower than the page and images settle in as their card appears.
+   full:   subtle, plus on the home page: Protect / Balance / Restore light up in turn and the layers graphic steps
+           through as you scroll (held on screen while they fit, on desktop), and the bundle finder cards slide in.
+   Nothing runs with reduced motion, in the theme editor, or without IntersectionObserver, and without this script
+   everything simply shows. Product renders never get the drift, so jars are never cropped. */
+(function () {
+  var root = document.documentElement;
+  var mode = root.getAttribute('data-motion') || 'full';
+  if (mode === 'off') return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || (window.Shopify && window.Shopify.designMode) || !('IntersectionObserver' in window)) return;
+  var full = mode === 'full' && document.body.classList.contains('template-index');
+  var vh = window.innerHeight, lastW = window.innerWidth;
+  function clamp(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
+
+  // Photos drift (parallax), only while on screen.
+  var PRODUCT = /product-|system-|individual-three|systems-hero|_Studio|Bundle_|_EDU_|AMD_/i;
+  var photos = [];
+  document.querySelectorAll('main .lifestyle-tile .media img, main .edu-card .media img, main .feature-split__media:not(.feature-split__media--panel) .media img, main .founder-split__media .media img, main .sci-spotcard .media img').forEach(function (img) {
+    if (PRODUCT.test((img.getAttribute('src') || '') + ' ' + (img.getAttribute('srcset') || ''))) return;
+    var box = img.closest('.media');
+    if (!box) return;
+    img.classList.add('is-parallax');
+    photos.push({ img: img, box: box, on: false });
+  });
+  if (photos.length) {
+    var pio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { photos.forEach(function (ph) { if (ph.box === en.target) ph.on = en.isIntersecting; }); });
+      schedule();
+    }, { rootMargin: '15% 0px' });
+    photos.forEach(function (ph) { pio.observe(ph.box); });
+  }
+  function drift() {
+    photos.forEach(function (ph) {
+      if (!ph.on) return;
+      var r = ph.box.getBoundingClientRect();
+      var c = (r.top + r.height / 2 - vh / 2) / (vh / 2 + r.height / 2);
+      c = c < -1 ? -1 : c > 1 ? 1 : c;
+      ph.img.style.translate = '0 ' + (-c * r.height * 0.045).toFixed(1) + 'px';
+    });
+  }
+
+  // Step-through sections (home page, Full): "lit" = items light up in turn and stay lit; "exclusive" = one at a time
+  // (the layers graphic, via its 'scrollstep' event).
+  var steppers = [];
+  if (full) document.querySelectorAll('main [data-scroll-steps]').forEach(function (el) {
+    var exclusive = el.getAttribute('data-scroll-steps') === 'exclusive';
+    var items = Array.prototype.slice.call(el.querySelectorAll(exclusive ? '.layers__list li' : '[data-step-item]'));
+    if (items.length < 2) return;
+    el.classList.add('is-stepping');
+    steppers.push({ el: el, items: items, exclusive: exclusive, spacer: null, pinned: false, last: undefined, h: 0 });
+  });
+  function headerH() { var h = document.querySelector('.site-header'); return h ? h.offsetHeight : 72; }
+  function layout() {
+    vh = window.innerHeight;
+    var top = headerH() + 16;
+    steppers.forEach(function (s) {
+      if (s.spacer) { s.spacer.remove(); s.spacer = null; }
+      s.el.classList.remove('is-pinned');
+      s.el.style.top = '';
+      s.h = s.el.offsetHeight;
+      // Hold it on screen only on desktop and only when the whole element fits under the header.
+      s.pinned = window.innerWidth >= 990 && s.h + top + 24 <= vh;
+      s.items.forEach(function (it, k) { it.style.setProperty('--k', s.pinned ? 0 : k); });
+      s.last = undefined;
+      if (!s.pinned) return;
+      s.dist = Math.round(vh * 0.38 * s.items.length);
+      var sp = document.createElement('div');
+      sp.className = 'scroll-pin-spacer';
+      sp.setAttribute('aria-hidden', 'true');
+      sp.style.height = s.dist + 'px';
+      s.el.after(sp);
+      s.spacer = sp;
+      s.delta = sp.offsetTop - s.el.offsetTop;
+      s.top = top;
+      s.el.style.top = top + 'px';
+      s.el.classList.add('is-pinned');
+    });
+  }
+  function steps() {
+    steppers.forEach(function (s) {
+      var n = s.items.length, idx;
+      if (s.pinned) {
+        var natTop = s.spacer.getBoundingClientRect().top - s.delta;
+        var raw = (s.top - natTop) / s.dist;
+        if (s.exclusive) idx = (raw < 0 || raw >= 0.9) ? null : Math.min(n - 1, Math.floor(raw / 0.9 * n));
+        else if (raw < 0) idx = natTop < vh * 0.62 ? 0 : -1;
+        else idx = raw >= 0.85 ? n : Math.min(n - 1, Math.floor(raw / 0.85 * n));
+      } else {
+        var line = vh * (s.exclusive ? 0.55 : 0.72);
+        idx = -1;
+        s.items.forEach(function (it, k) { if (it.getBoundingClientRect().top < line) idx = k; });
+        if (s.exclusive) { if (idx < 0 || s.el.getBoundingClientRect().bottom < vh * 0.3) idx = null; }
+        else if (idx === n - 1) idx = n;
+      }
+      if (idx === s.last) return;
+      s.last = idx;
+      if (s.exclusive) { s.el.dispatchEvent(new CustomEvent('scrollstep', { detail: idx })); return; }
+      s.items.forEach(function (it, k) { it.classList.toggle('is-lit', k <= idx); it.classList.toggle('is-current', k === idx); });
+    });
+  }
+
+  // Bundle finder (home page, Full, desktop): the cards slide in from the right, the later ones from further out.
+  var slides = [];
+  if (full) document.querySelectorAll('main [data-scroll-slide]').forEach(function (row) {
+    var cards = Array.prototype.slice.call(row.children);
+    if (!cards.length) return;
+    row.classList.add('is-sliding');
+    var sec = row.closest('.section');
+    if (sec) sec.classList.add('motion-clip');
+    slides.push({ row: row, cards: cards });
+  });
+  function slide() {
+    var wide = window.innerWidth >= 990;
+    slides.forEach(function (s) {
+      var r = s.row.getBoundingClientRect();
+      var p = wide ? clamp((vh - r.top) / (vh * 0.6)) : 1;
+      s.cards.forEach(function (c, i) {
+        var q = clamp(p * 1.35 - i * 0.12);
+        var x = (1 - (1 - Math.pow(1 - q, 3))) * (90 + i * 45);
+        c.style.translate = x > 0.5 ? x.toFixed(1) + 'px 0' : '';
+      });
+    });
+  }
+
+  if (!photos.length && !steppers.length && !slides.length) return;
+  root.classList.add('motion-on');
+  var ticking = false;
+  function frame() { ticking = false; drift(); steps(); slide(); }
+  function schedule() { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
+  layout();
+  frame();
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('load', function () {
+    // Late fonts or images can change heights: re-measure if any step-through section changed size.
+    if (steppers.some(function (s) { return s.el.offsetHeight !== s.h; })) layout();
+    schedule();
+  });
+  var rt;
+  window.addEventListener('resize', function () {
+    clearTimeout(rt);
+    rt = setTimeout(function () {
+      // Phone address bars change the height a little while scrolling; only re-measure for real resizes.
+      if (window.innerWidth === lastW && Math.abs(window.innerHeight - vh) < 120) { vh = window.innerHeight; schedule(); return; }
+      lastW = window.innerWidth;
+      layout();
+      schedule();
+    }, 150);
+  });
 })();

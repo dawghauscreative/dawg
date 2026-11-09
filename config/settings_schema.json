@@ -145,6 +145,32 @@
     ]
   },
   {
+    "name": "Animations",
+    "settings": [
+      {
+        "type": "select",
+        "id": "scroll_animations",
+        "label": "Scroll animations",
+        "default": "full",
+        "options": [
+          {
+            "value": "off",
+            "label": "Off (original fade-ins only)"
+          },
+          {
+            "value": "subtle",
+            "label": "Subtle"
+          },
+          {
+            "value": "full",
+            "label": "Full"
+          }
+        ],
+        "info": "Subtle adds slow-moving photos and images that settle in as they appear, on every page. Full also adds the home page scroll moments: Protect / Balance / Restore, the layers graphic and the bundle finder. Visitors whose device is set to reduce motion never see animation, and nothing moves in the theme editor."
+      }
+    ]
+  },
+  {
     "name": "Brand & contact",
     "settings": [
       {

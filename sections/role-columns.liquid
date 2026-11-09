@@ -1,11 +1,11 @@
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
-    <div class="cols cols--3 role-cols">
+    <div class="cols cols--3 role-cols" data-scroll-steps="lit">
       {%- for block in section.blocks -%}
         {%- assign p = block.settings.product -%}
         {%- if p != blank -%}
-          <article class="role-col" {{ block.shopify_attributes }}>
+          <article class="role-col" data-step-item {{ block.shopify_attributes }}>
             <a class="role-col__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
               {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
               {%- assign fallback_asset = fallback_capture | strip -%}
