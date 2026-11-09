@@ -18,10 +18,10 @@
         "subtitle": "Dermatologist-led education for understanding your skin from the inside out.",
         "heading": "Understand your skin. Then decide what it needs.",
         "body": "<p>Skin health is more than products.</p><p>It is biology, nutrition, environment, habits, and the choices you make every day.</p><p>Our blog translates dermatological science into clear, practical guidance so you can understand what affects your skin, evaluate what you are putting into your body, and build a routine with intention.</p>",
-        "primary_label": "Explore the latest",
-        "primary_url": "#latest",
-        "secondary_label": "Browse by topic",
-        "secondary_url": "#topics"
+        "primary_label": "Start here",
+        "primary_url": "#start-here",
+        "secondary_label": "All articles",
+        "secondary_url": "#all-articles"
       }
     },
     "feature": {
@@ -36,7 +36,8 @@
         "article": "what-is-internal-skin-health",
         "cta_label": "Read the article",
         "image": "shopify://shop_images/alchemia-brand-guidelines-p033-image03_7b4538b1-d652-4fe6-b39e-449fb41b8e76.png"
-      }
+      },
+      "disabled": true
     },
     "topics": {
       "type": "edu-topics",
@@ -104,7 +105,8 @@
         "heading": "Explore the blog",
         "body": "",
         "blog_handle": "skin-edu"
-      }
+      },
+      "disabled": true
     },
     "latest": {
       "type": "edu-articles",
@@ -161,78 +163,55 @@
         "blog_handle": "skin-edu",
         "button_label": "",
         "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "start": {
       "type": "edu-articles",
       "blocks": {
-        "b1": {
+        "r1": {
           "type": "article",
           "settings": {
             "asset": "",
             "category": "01",
-            "title": "Skin Is a Living System",
-            "teaser": "How skin continually renews, adapts, and responds to its environment.",
-            "article": "",
+            "title": "What Is Internal Skin Defense?",
+            "teaser": "Why skin health is shaped by more than the surface, and how internal support, sun habits and consistency fit together.",
+            "article": "what-is-internal-skin-defense-alchemia-md",
             "url": "",
             "cta_label": "Read article"
           }
         },
-        "b2": {
+        "r2": {
           "type": "article",
           "settings": {
             "asset": "",
             "category": "02",
-            "title": "What Does “Skin Health From Within” Actually Mean?",
-            "teaser": "The relationship between nutrition and normal skin biology.",
-            "article": "",
-            "url": "",
-            "cta_label": "Read article"
-          }
-        },
-        "b3": {
-          "type": "article",
-          "settings": {
-            "asset": "",
-            "category": "03",
-            "title": "Oxidative Stress, Explained Simply",
-            "teaser": "What oxidative stress is and why antioxidant systems matter.",
-            "article": "",
-            "url": "",
-            "cta_label": "Read article"
-          }
-        },
-        "b4": {
-          "type": "article",
-          "settings": {
-            "asset": "",
-            "category": "04",
-            "title": "What Is the Skin Barrier?",
-            "teaser": "A dermatologist-level concept explained without jargon.",
-            "article": "",
-            "url": "",
-            "cta_label": "Read article"
-          }
-        },
-        "b5": {
-          "type": "article",
-          "settings": {
-            "asset": "",
-            "category": "05",
-            "title": "The Gut-Skin Axis, Explained",
-            "teaser": "How the intestinal environment and skin communicate.",
+            "title": "What Is the Gut-Skin Axis?",
+            "teaser": "How the intestinal environment and skin communicate, and what the research can and cannot say.",
             "article": "what-is-the-gut-skin-axis",
             "url": "",
             "cta_label": "Read article"
           }
         },
-        "b6": {
+        "r3": {
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "06",
-            "title": "Why Consistency Matters More Than Quick Fixes",
-            "teaser": "How daily routines fit into long-term skin support.",
+            "category": "03",
+            "title": "Understanding Skin Renewal",
+            "teaser": "Skin continually renews itself. How that works, and why it is gradual.",
+            "article": "understanding-skin-renewal",
+            "url": "",
+            "cta_label": "Read article"
+          }
+        },
+        "r4": {
+          "type": "article",
+          "settings": {
+            "asset": "",
+            "category": "04",
+            "title": "Why Consistency Matters in Skin Health",
+            "teaser": "Skin changes slowly. Why daily habits matter more than quick fixes.",
             "article": "why-consistency-matters-in-skin-health",
             "url": "",
             "cta_label": "Read article"
@@ -240,23 +219,21 @@
         }
       },
       "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5",
-        "b6"
+        "r1",
+        "r2",
+        "r3",
+        "r4"
       ],
       "settings": {
         "color_scheme": "green",
-        "anchor": "",
+        "anchor": "start-here",
         "eyebrow": "",
-        "heading": "New to internal skin health? Start here.",
-        "body": "",
-        "columns": "3",
+        "heading": "New here? Start here.",
+        "body": "<p>Four short reads, in order. Together they explain how Alchemia MD thinks about skin health.</p>",
+        "columns": "4",
         "blog_handle": "skin-edu",
-        "button_label": "Explore Skin Health 101",
-        "button_url": "/blogs/skin-edu/tagged/beginner"
+        "button_label": "",
+        "button_url": ""
       }
     },
     "sun": {
@@ -379,7 +356,8 @@
         "blog_handle": "skin-edu",
         "button_label": "Explore Sun + Environment",
         "button_url": "/blogs/skin-edu/tagged/sun-environment"
-      }
+      },
+      "disabled": true
     },
     "gut": {
       "type": "edu-articles",
@@ -514,7 +492,8 @@
         "blog_handle": "skin-edu",
         "button_label": "Explore Gut + Skin",
         "button_url": "/blogs/skin-edu/tagged/gut-skin"
-      }
+      },
+      "disabled": true
     },
     "ingredients": {
       "type": "edu-ingredients",
@@ -841,7 +820,8 @@
         "blog_handle": "skin-edu",
         "button_label": "Read Ask the Derm",
         "button_url": "/blogs/skin-edu/tagged/ask-the-derm"
-      }
+      },
+      "disabled": true
     },
     "research": {
       "type": "edu-articles",
@@ -963,7 +943,8 @@
         "blog_handle": "skin-edu",
         "button_label": "Understand the research",
         "button_url": "/blogs/skin-edu/tagged/research-explained"
-      }
+      },
+      "disabled": true
     },
     "formulas": {
       "type": "edu-articles",
@@ -1142,7 +1123,8 @@
         "blog_handle": "skin-edu",
         "button_label": "Explore outdoor life",
         "button_url": "/blogs/skin-edu/tagged/outdoor-life"
-      }
+      },
+      "disabled": true
     },
     "picks": {
       "type": "edu-articles",
@@ -1225,7 +1207,8 @@
         "blog_handle": "skin-edu",
         "button_label": "",
         "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "all": {
       "type": "main-blog",
@@ -1270,20 +1253,20 @@
   },
   "order": [
     "hero",
+    "start",
+    "all",
+    "ingredients",
+    "formulas",
+    "final",
     "feature",
     "topics",
     "latest",
-    "start",
     "sun",
     "gut",
-    "ingredients",
     "ask",
     "research",
-    "formulas",
     "outdoor",
     "picks",
-    "all",
-    "email",
-    "final"
+    "email"
   ]
 }
