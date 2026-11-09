@@ -1,0 +1,54 @@
+{%- comment -%}
+  Quick view for a product card (bundle or single): front and back photos, tagline, price, what's inside with each
+  formula's key ingredients (linked to the Science page), summary and a button to the product page. Rendered into a
+  <template> inside the card; assets/theme.js "Quick view" shows it in one shared panel on hover (desktop) or when
+  the card photo is tapped (phones). Nothing here adds to the cart: plans and checkout stay on the product page (Supr).
+  Usage: {% render 'product-quickview', product: p %}
+{%- endcomment -%}
+{%- liquid
+  assign qv_key = ''
+  case product.handle
+    when 'sun-safe-system'
+      assign qv_key = 'sun-safe'
+    when 'skin-recovery-system'
+      assign qv_key = 'skin-recovery'
+    when 'sun-resilience-system'
+      assign qv_key = 'sun-resilience'
+    when 'complete-skin-defense-system'
+      assign qv_key = 'trio'
+    when 'uv-shield', 'skinbiotic', 'dermaboost'
+      assign qv_key = product.handle
+  endcase
+  assign qv_line = product.metafields.custom.tagline.value
+  assign qv_summary = product.metafields.custom.summary.value
+  assign qv_comps = product.metafields.custom.bundle_components.value
+  assign qv_science = pages['science'].url | default: '/pages/science'
+-%}
+<template data-qv>
+  {%- if qv_key != blank -%}
+    <div class="qv__media">
+      <img src="{{ 'product-angle-' | append: qv_key | append: '-front.webp' | asset_url }}" alt="{{ product.title | escape }}, front" width="1200" height="1500" loading="lazy">
+      <img src="{{ 'product-angle-' | append: qv_key | append: '-back.webp' | asset_url }}" alt="{{ product.title | escape }}, back" width="1200" height="1500" loading="lazy">
+    </div>
+  {%- endif -%}
+  <div class="qv__body">
+    <h3 class="qv__title"><a href="{{ product.url }}">{{ product.title }}</a></h3>
+    {%- if qv_line != blank -%}<p class="qv__line">{{ qv_line }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>{%- endif -%}
+    <p class="qv__price">{% if product.price_varies %}From {% endif %}{{ product.price_min | money }}</p>
+    {%- capture qv_inside -%}
+      {%- if qv_comps != blank -%}
+        {%- for c in qv_comps -%}
+          <li><a class="qv__formula" href="{{ c.url }}">{{ c.title }}</a>{%- render 'product-quickview-ingredients', text: c.metafields.custom.key_ingredients.value, science: qv_science -%}</li>
+        {%- endfor -%}
+      {%- elsif product.metafields.custom.key_ingredients.value != blank -%}
+        <li>{%- render 'product-quickview-ingredients', text: product.metafields.custom.key_ingredients.value, science: qv_science -%}</li>
+      {%- endif -%}
+    {%- endcapture -%}
+    {%- if qv_inside != blank -%}
+      <p class="qv__label">{% if qv_comps != blank %}What's inside{% else %}Key ingredients{% endif %}</p>
+      <ul class="qv__inside">{{ qv_inside }}</ul>
+    {%- endif -%}
+    {%- if qv_summary != blank -%}<p class="qv__summary">{{ qv_summary }}</p>{%- endif -%}
+    <a class="btn qv__cta" href="{{ product.url }}">Choose your plan</a>
+  </div>
+</template>

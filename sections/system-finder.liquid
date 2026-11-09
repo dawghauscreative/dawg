@@ -50,7 +50,8 @@
       {%- for block in section.blocks -%}
         {%- assign p = block.settings.product -%}
         {%- if p != blank -%}
-          <article class="finder-card{% if block.settings.featured %} finder-card--featured{% endif %}" {{ block.shopify_attributes }}>
+          <article class="finder-card{% if block.settings.featured %} finder-card--featured{% endif %}" data-qv-card {{ block.shopify_attributes }}>
+            {%- render 'product-quickview', product: p -%}
             <a class="finder-card__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">{% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, asset_width: 1400, asset_height: 787, ratio: '16x9', sizes: '(min-width: 990px) 25vw, 100vw', alt: p.title %}</a>
             <div class="finder-card__body">
               <h3>{{ p.title }}</h3>

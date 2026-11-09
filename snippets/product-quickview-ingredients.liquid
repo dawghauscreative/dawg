@@ -1,0 +1,12 @@
+{%- comment -%} Quick view helper: "Label|science-anchor" lines -> a short row of ingredient links. {%- endcomment -%}
+{%- if text != blank -%}
+  {%- assign qvi_lines = text | newline_to_br | strip_newlines | split: '<br />' -%}
+  <span class="qv__ingredients">
+    {%- for qvi_line in qvi_lines -%}
+      {%- assign qvi_parts = qvi_line | split: '|' -%}
+      {%- assign qvi_label = qvi_parts[0] | strip -%}
+      {%- assign qvi_anchor = qvi_parts[1] | strip -%}
+      {%- if qvi_label != blank -%}<a href="{{ science }}{% if qvi_anchor != blank %}#{{ qvi_anchor }}{% endif %}">{{ qvi_label }}</a>{%- endif -%}
+    {%- endfor -%}
+  </span>
+{%- endif -%}

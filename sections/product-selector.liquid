@@ -14,7 +14,8 @@
       {%- for block in section.blocks -%}
         {%- assign p = block.settings.product -%}
         {%- if p != blank -%}
-          <article class="sel-card" data-sel-card="{{ p.handle }}" {{ block.shopify_attributes }}>
+          <article class="sel-card" data-sel-card="{{ p.handle }}" data-qv-card {{ block.shopify_attributes }}>
+            {%- render 'product-quickview', product: p -%}
             <a class="sel-card__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
               {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
               {%- assign fallback_asset = fallback_capture | strip -%}

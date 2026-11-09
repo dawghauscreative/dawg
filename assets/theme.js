@@ -790,3 +790,85 @@
     }
   });
 })();
+
+
+/* Quick view: hovering a bundle or product card (system-finder cards, product-selector cards) for a moment opens a
+   panel beside it with photos, price, what's inside and a link to the product page (snippets/product-quickview).
+   Phones and tablets: tapping the card photo opens the same panel as a bottom sheet. Hovering also prefetches the
+   product page so the click feels instant. Nothing here touches the cart. */
+(function () {
+  var cards = document.querySelectorAll('[data-qv-card]');
+  if (!cards.length || (window.Shopify && window.Shopify.designMode)) return;
+  var hoverable = window.matchMedia('(hover: hover) and (pointer: fine)');
+  var panel = document.createElement('div');
+  panel.className = 'qv';
+  panel.setAttribute('role', 'dialog');
+  panel.setAttribute('aria-label', 'Quick view');
+  panel.hidden = true;
+  panel.innerHTML = '<button class="qv__close" type="button" aria-label="Close quick view">&times;</button><div class="qv__content"></div>';
+  document.body.appendChild(panel);
+  var content = panel.querySelector('.qv__content');
+  var current = null, openTimer = null, closeTimer = null, prefetched = {};
+  function prefetch(card) {
+    var a = card.querySelector('a[href]');
+    if (!a || prefetched[a.href]) return;
+    prefetched[a.href] = true;
+    var l = document.createElement('link'); l.rel = 'prefetch'; l.href = a.href; document.head.appendChild(l);
+  }
+  function place(card) {
+    var sheet = !hoverable.matches || window.innerWidth < 990;
+    panel.classList.toggle('qv--sheet', sheet);
+    if (sheet) { panel.style.left = ''; panel.style.top = ''; return; }
+    var r = card.getBoundingClientRect(), w = panel.offsetWidth, h = panel.offsetHeight, gap = 16;
+    var left = r.right + gap + w <= window.innerWidth - gap ? r.right + gap : r.left - gap - w;
+    if (left < gap) left = Math.max(gap, Math.min(window.innerWidth - w - gap, r.left));
+    var top = Math.min(Math.max(gap, r.top), Math.max(gap, window.innerHeight - h - gap));
+    panel.style.left = Math.round(left + window.scrollX) + 'px';
+    panel.style.top = Math.round(top + window.scrollY) + 'px';
+  }
+  function open(card) {
+    var t = card.querySelector('template[data-qv]');
+    if (!t) return;
+    if (current !== card) { content.innerHTML = ''; content.appendChild(t.content.cloneNode(true)); }
+    current = card;
+    panel.hidden = false;
+    place(card);
+    requestAnimationFrame(function () { panel.classList.add('is-open'); });
+  }
+  function close() {
+    clearTimeout(openTimer);
+    panel.classList.remove('is-open');
+    panel.hidden = true;
+    current = null;
+  }
+  cards.forEach(function (card) {
+    card.addEventListener('mouseenter', function () {
+      if (!hoverable.matches) return;
+      prefetch(card);
+      clearTimeout(closeTimer);
+      clearTimeout(openTimer);
+      openTimer = setTimeout(function () { open(card); }, current ? 0 : 280);
+    });
+    card.addEventListener('mouseleave', function () {
+      if (!hoverable.matches) return;
+      clearTimeout(openTimer);
+      closeTimer = setTimeout(close, 220);
+    });
+    var media = card.querySelector('.finder-card__media, .sel-card__media');
+    if (media) media.addEventListener('click', function (e) {
+      if (hoverable.matches && window.innerWidth >= 990) return;
+      e.preventDefault();
+      open(card);
+    });
+  });
+  panel.addEventListener('mouseenter', function () { clearTimeout(closeTimer); });
+  panel.addEventListener('mouseleave', function () { if (!panel.classList.contains('qv--sheet')) closeTimer = setTimeout(close, 220); });
+  panel.querySelector('.qv__close').addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) close(); });
+  document.addEventListener('click', function (e) {
+    if (panel.hidden || panel.contains(e.target)) return;
+    if (current && current.contains(e.target) && e.target.closest('.finder-card__media, .sel-card__media')) return;
+    close();
+  });
+  window.addEventListener('resize', function () { if (current) place(current); });
+})();
