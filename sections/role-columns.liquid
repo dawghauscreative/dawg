@@ -26,7 +26,8 @@
               <p class="role-flip__price">{% if p.price_varies %}From {% endif %}{{ p.price_min | money }}</p>
               {%- if p.metafields.custom.key_ingredients.value != blank -%}
                 <p class="role-flip__label">Key ingredients</p>
-                {%- render 'product-quickview-ingredients', text: p.metafields.custom.key_ingredients.value, science: pages['science'].url | default: '/pages/science' -%}
+                {%- assign flip_science = pages['science'].url | default: '/pages/science' -%}
+                {%- render 'product-quickview-ingredients', text: p.metafields.custom.key_ingredients.value, science: flip_science -%}
               {%- endif -%}
               {%- if p.metafields.custom.summary.value != blank -%}<p class="role-flip__summary">{{ p.metafields.custom.summary.value }}</p>{%- endif -%}
               <a class="btn role-flip__cta" href="{{ p.url }}">Choose your plan</a>
