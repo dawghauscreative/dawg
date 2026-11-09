@@ -682,7 +682,15 @@
       sp.className = 'scroll-pin-spacer';
       sp.setAttribute('aria-hidden', 'true');
       sp.style.height = s.dist + 'px';
-      s.el.after(sp);
+      // Hold it inside its own track (element + spacer only), so the hold ends before whatever follows it
+      // (e.g. the layers callout) can scroll up underneath.
+      if (!s.track) {
+        s.track = document.createElement('div');
+        s.track.className = 'scroll-pin-track';
+        s.el.before(s.track);
+        s.track.appendChild(s.el);
+      }
+      s.track.appendChild(sp);
       s.spacer = sp;
       s.delta = sp.offsetTop - s.el.offsetTop;
       s.top = top;
