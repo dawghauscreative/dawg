@@ -872,3 +872,28 @@
   });
   window.addEventListener('resize', function () { if (current) place(current); });
 })();
+
+
+/* Card flip (home Protect / Balance / Restore columns, sections/role-columns): hover flips the photo to its back
+   (price, key ingredients, summary, Choose your plan). On touch screens the first tap on the photo flips it and a
+   tap on the back's empty space flips it back; links on the back work as normal. */
+(function () {
+  var flips = document.querySelectorAll('[data-flip]');
+  if (!flips.length) return;
+  var hoverable = window.matchMedia('(hover: hover) and (pointer: fine)');
+  flips.forEach(function (f) {
+    f.addEventListener('click', function (e) {
+      if (hoverable.matches) return;
+      var link = e.target.closest('a');
+      if (f.classList.contains('is-flipped')) {
+        if (link && f.querySelector('.role-flip__back').contains(link)) return;
+        e.preventDefault();
+        f.classList.remove('is-flipped');
+        return;
+      }
+      e.preventDefault();
+      document.querySelectorAll('[data-flip].is-flipped').forEach(function (o) { o.classList.remove('is-flipped'); });
+      f.classList.add('is-flipped');
+    });
+  });
+})();

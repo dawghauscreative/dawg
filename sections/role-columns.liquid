@@ -6,7 +6,9 @@
         {%- assign p = block.settings.product -%}
         {%- if p != blank -%}
           <article class="role-col" data-step-item {{ block.shopify_attributes }}>
-            <a class="role-col__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
+            <div class="role-flip" data-flip>
+            <div class="role-flip__inner">
+            <a class="role-col__media role-flip__front" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
               {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
               {%- assign fallback_asset = fallback_capture | strip -%}
               {%- capture front_capture -%}{%- render 'product-front-asset', handle: p.handle -%}{%- endcapture -%}
@@ -17,6 +19,20 @@
                 {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
               {%- endif -%}
             </a>
+            {%- comment -%} Back of the card (hover on desktop, tap on phones; assets/theme.js "Card flip"). {%- endcomment -%}
+            <div class="role-flip__back">
+              <span class="role-badge">{{ block.settings.role }}</span>
+              <h3 class="role-flip__title"><a href="{{ p.url }}">{{ p.title }}</a></h3>
+              <p class="role-flip__price">{% if p.price_varies %}From {% endif %}{{ p.price_min | money }}</p>
+              {%- if p.metafields.custom.key_ingredients.value != blank -%}
+                <p class="role-flip__label">Key ingredients</p>
+                {%- render 'product-quickview-ingredients', text: p.metafields.custom.key_ingredients.value, science: pages['science'].url | default: '/pages/science' -%}
+              {%- endif -%}
+              {%- if p.metafields.custom.summary.value != blank -%}<p class="role-flip__summary">{{ p.metafields.custom.summary.value }}</p>{%- endif -%}
+              <a class="btn role-flip__cta" href="{{ p.url }}">Choose your plan</a>
+            </div>
+            </div>
+            </div>
             <div class="role-col__body">
               <span class="role-badge">{{ block.settings.role }}</span>
               <h3>{{ p.title }}</h3>
