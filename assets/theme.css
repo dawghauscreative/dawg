@@ -1075,7 +1075,11 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .home-slide__body { max-width: 46ch; margin-top: 1.25rem; }
 .home-slide .btn-row { margin-top: 2rem; }
 .home-slide__media { max-width: 560px; width: 100%; margin-inline: auto; }
-.home-slider__dots { position: absolute; left: 0; right: 0; bottom: 24px; display: flex; justify-content: center; gap: 12px; z-index: 2; }
+.home-slider__nav { position: absolute; left: 0; right: 0; bottom: 20px; display: flex; justify-content: center; align-items: center; gap: 18px; z-index: 2; }
+.home-slider__dots { display: flex; gap: 12px; }
+.home-slider__arrow { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 1px solid var(--c-gold); background: rgba(10,10,10,.35); color: var(--c-gold); cursor: pointer; transition: background .2s ease, color .2s ease; }
+.home-slider__arrow:hover, .home-slider__arrow:focus-visible { background: var(--c-gold); color: #fff; }
+.home-slider__arrow[hidden] { display: none; }
 .home-slider__dot { width: 12px; height: 12px; border-radius: 50%; border: 1px solid var(--c-gold); background: transparent; transition: background .2s ease, transform .2s ease; }
 .home-slider__dot:hover { transform: scale(1.2); }
 .home-slider__dot.is-active { background: var(--c-gold); }
@@ -1143,7 +1147,7 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 
 /* Home slider on phones: picture on top, copy underneath, so the text never covers the jars */
 @media (max-width: 749px) {
-  .home-slide--bg { flex-direction: column; align-items: stretch; justify-content: flex-start; min-height: 0; padding-block: 0 64px; }
+  .home-slide--bg { flex-direction: column; align-items: stretch; justify-content: flex-start; min-height: 0; padding-block: 0 96px; }
   .home-slide--bg .home-slide__bg { position: relative; inset: auto; aspect-ratio: 16 / 11; flex: none; }
   .home-slide--bg .home-slide__bg img { object-position: 100% 55%; }
   .home-slide--bg .home-slide__bg::after { background: linear-gradient(180deg, rgba(10,10,10,0) 55%, var(--c-black) 100%); }
