@@ -19,7 +19,9 @@
       </div>
       {%- if section.settings.image != blank or section.settings.image_asset != blank -%}
       <figure class="sci-formula__slide">
+        {%- if section.settings.product != blank -%}<a class="media-link" href="{{ section.settings.product.url }}" tabindex="-1" aria-hidden="true">{%- endif -%}
         {% render 'responsive-image', image: section.settings.image, asset: section.settings.image_asset, asset_width: 1800, asset_height: 1013, ratio: '4x5', sizes: '(min-width: 990px) 34vw, 100vw', alt: section.settings.image_alt %}
+        {%- if section.settings.product != blank -%}</a>{%- endif -%}
         {%- if section.settings.image_caption != blank -%}<figcaption class="small">{{ section.settings.image_caption }}</figcaption>{%- endif -%}
       </figure>
       {%- endif -%}
