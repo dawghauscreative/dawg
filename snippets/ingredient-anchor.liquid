@@ -1,0 +1,39 @@
+{%- comment -%}
+  Science page anchor for an ingredient name (e.g. "Green tea polyphenols / EGCG" -> egcg). Outputs nothing when the
+  name has no entry. Usage: {%- capture a -%}{% render 'ingredient-anchor', name: chip %}{%- endcapture -%}
+  Keep in step with the INGREDIENTS list in assets/theme.js ("Ingredient links").
+{%- endcomment -%}
+{%- liquid
+  assign n = name | downcase
+  if n contains 'niacinamide'
+    echo 'niacinamide'
+  elsif n contains 'polypodium'
+    echo 'polypodium-leucotomos'
+  elsif n contains 'resveratrol'
+    echo 'resveratrol'
+  elsif n contains 'egcg' or n contains 'green tea'
+    echo 'egcg'
+  elsif n contains 'spirulina'
+    echo 'spirulina'
+  elsif n contains 'akkermansia'
+    echo 'akkermansia'
+  elsif n contains 'curcumin'
+    echo 'curcumin'
+  elsif n contains 'astaxanthin'
+    echo 'astaxanthin'
+  elsif n contains 'inulin'
+    echo 'inulin'
+  elsif n contains 'bifidobacter'
+    echo 'bifidobacterium'
+  elsif n contains 'lactobacillus' or n contains 'plantarum' or n contains 'rhamnosus'
+    echo 'lactobacillus'
+  elsif n contains 'quercetin'
+    echo 'quercetin'
+  elsif n contains 'vitamin c'
+    echo 'vitamin-c'
+  elsif n contains 'vitamin d'
+    echo 'vitamin-d3'
+  elsif n contains 'zinc'
+    echo 'zinc'
+  endif
+-%}

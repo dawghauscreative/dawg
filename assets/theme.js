@@ -769,3 +769,24 @@
     }, 150);
   });
 })();
+
+/* Ingredient links: list items in page content that are just an ingredient name (bundle steps, "What's inside"
+   comparisons, antioxidant / immune lists written in rich text) link to that ingredient on the Science page.
+   Chips and tables rendered by sections link in Liquid (snippets/ingredient-anchor.liquid; keep both lists in step). */
+(function () {
+  var INGREDIENTS = [[/niacinamide/i, 'niacinamide'], [/polypodium/i, 'polypodium-leucotomos'], [/resveratrol/i, 'resveratrol'], [/egcg|green tea/i, 'egcg'], [/spirulina/i, 'spirulina'], [/akkermansia/i, 'akkermansia'], [/curcumin/i, 'curcumin'], [/astaxanthin/i, 'astaxanthin'], [/inulin/i, 'inulin'], [/bifidobacter/i, 'bifidobacterium'], [/lactobacillus|plantarum|rhamnosus/i, 'lactobacillus'], [/quercetin/i, 'quercetin'], [/vitamin c\b/i, 'vitamin-c'], [/vitamin d/i, 'vitamin-d3'], [/\bzinc\b/i, 'zinc']];
+  document.querySelectorAll('main li').forEach(function (li) {
+    if (li.querySelector('a, button, input, ul, ol') || li.closest('a, nav, form, [role="tablist"], .key-ingredients, .sci-chips')) return;
+    var t = li.textContent.trim();
+    if (!t || t.length > 48) return;
+    for (var i = 0; i < INGREDIENTS.length; i++) {
+      if (!INGREDIENTS[i][0].test(t)) continue;
+      var a = document.createElement('a');
+      a.className = 'ingredient-link';
+      a.href = '/pages/science#' + INGREDIENTS[i][1];
+      while (li.firstChild) a.appendChild(li.firstChild);
+      li.appendChild(a);
+      return;
+    }
+  });
+})();

@@ -207,7 +207,7 @@
             "slide_set": "",
             "text": "<p>A fermentable fiber that serves as food for certain intestinal microorganisms. It forms the prebiotic foundation of the formula.</p>",
             "link_label": "See the research",
-            "link_url": "/pages/science#skinbiotic"
+            "link_url": "/pages/science#inulin"
           }
         },
         "b2": {
@@ -219,7 +219,7 @@
             "slide_set": "",
             "text": "<p>A widely studied species. Research is strain-specific, so findings on one strain are not assumed to apply to every L. plantarum.</p>",
             "link_label": "See the research",
-            "link_url": "/pages/science#skinbiotic"
+            "link_url": "/pages/science#lactobacillus"
           }
         },
         "b3": {
@@ -230,7 +230,7 @@
             "role": "Probiotic",
             "text": "<p>A Bifidobacterium species included for its role in the intestinal microbial community alongside the other organisms.</p>",
             "link_label": "See the research",
-            "link_url": "/pages/science#skinbiotic",
+            "link_url": "/pages/science#bifidobacterium",
             "slide_set": ""
           }
         },
@@ -243,7 +243,7 @@
             "slide_set": "",
             "text": "<p>A Lactobacillus species studied across many gut-health contexts. Different strains behave differently.</p>",
             "link_label": "See the research",
-            "link_url": "/pages/science#skinbiotic"
+            "link_url": "/pages/science#lactobacillus"
           }
         },
         "b5": {
@@ -255,7 +255,7 @@
             "slide_set": "",
             "text": "<p>A Bifidobacterium species that is part of the human intestinal community, included to broaden the range of organisms in the formula.</p>",
             "link_label": "See the research",
-            "link_url": "/pages/science#skinbiotic"
+            "link_url": "/pages/science#bifidobacterium"
           }
         },
         "b6": {
@@ -268,7 +268,7 @@
             "slide_set": "",
             "text": "<p>A mucus-layer-associated organism that is an active area of microbiome research. The evidence is earlier-stage than for the other organisms.</p>",
             "link_label": "See the research",
-            "link_url": "/pages/science#skinbiotic"
+            "link_url": "/pages/science#akkermansia"
           }
         }
       },

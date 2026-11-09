@@ -7,7 +7,7 @@
       </div>
       {%- for block in section.blocks -%}
         <div class="sci-table__row" role="row" {{ block.shopify_attributes }}>
-          <strong role="cell">{{ block.settings.area }}</strong>
+          {%- capture area_anchor -%}{% render 'ingredient-anchor', name: block.settings.area %}{%- endcapture -%}<strong role="cell">{%- if area_anchor != blank -%}<a href="#{{ area_anchor }}">{{ block.settings.area }}</a>{%- else -%}{{ block.settings.area }}{%- endif -%}</strong>
           <span role="cell" data-label="Current evidence"><i class="sci-dots sci-dots--{{ block.settings.level }}" aria-hidden="true"></i>{{ block.settings.evidence }}</span>
           <span role="cell" data-label="How we interpret it">{{ block.settings.interpretation }}</span>
         </div>

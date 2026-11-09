@@ -13,7 +13,7 @@
         <div class="prose sci-formula__intro">{{ section.settings.intro }}</div>
         {%- if section.settings.ingredients != blank -%}
           {%- assign chips = section.settings.ingredients | newline_to_br | split: '<br />' -%}
-          <ul class="sci-chips">{%- for chip in chips -%}{%- assign chip_text = chip | strip -%}{%- if chip_text != blank -%}<li>{{ chip_text }}</li>{%- endif -%}{%- endfor -%}</ul>
+          <ul class="sci-chips">{%- for chip in chips -%}{%- assign chip_text = chip | strip -%}{%- if chip_text != blank -%}{%- capture chip_anchor -%}{% render 'ingredient-anchor', name: chip_text %}{%- endcapture -%}<li>{%- if chip_anchor != blank -%}<a href="{{ pages['science'].url | default: '/pages/science' }}#{{ chip_anchor }}">{{ chip_text }}</a>{%- else -%}{{ chip_text }}{%- endif -%}</li>{%- endif -%}{%- endfor -%}</ul>
         {%- endif -%}
         {%- if section.settings.product != blank -%}<p><a class="text-link" href="{{ section.settings.product.url }}">View {{ section.settings.product.title }}</a></p>{%- endif -%}
       </div>

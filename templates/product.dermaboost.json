@@ -177,7 +177,7 @@
             "slide_set": "",
             "text": "<p>Niacinamide is a form of vitamin B3 involved in cellular energy metabolism and skin-related biological processes.</p><p>Within Dermaboost+, it contributes a nutritional mechanism distinct from the formula’s botanical polyphenols and carotenoids.</p>",
             "link_label": "Explore niacinamide research",
-            "link_url": "/pages/science#dermaboost"
+            "link_url": "/pages/science#niacinamide"
           }
         },
         "b2": {
@@ -189,7 +189,7 @@
             "slide_set": "",
             "text": "<p>Vitamin D plays established physiological roles in immune regulation and numerous cellular processes.</p><p>Dermaboost+ includes vitamin D3 as part of its broader nutritional support strategy.†</p>",
             "link_label": "Explore vitamin D research",
-            "link_url": "/pages/science#dermaboost"
+            "link_url": "/pages/science#vitamin-d3"
           }
         },
         "b3": {
@@ -201,7 +201,7 @@
             "slide_set": "",
             "text": "<p>Vitamin C is an essential nutrient and antioxidant. It also serves as a required cofactor in normal collagen synthesis.</p><p>Its role in Dermaboost+ is foundational nutritional support.†</p>",
             "link_label": "Explore vitamin C research",
-            "link_url": "/pages/science#dermaboost"
+            "link_url": "/pages/science#vitamin-c"
           }
         },
         "b4": {
@@ -213,7 +213,7 @@
             "slide_set": "",
             "text": "<p>Zinc is an essential mineral involved in normal immune function, protein synthesis, DNA synthesis, and numerous enzyme systems.</p><p>Within the formula, it complements vitamin C and vitamin D as part of the nutritional foundation.</p>",
             "link_label": "Explore zinc research",
-            "link_url": "/pages/science#dermaboost"
+            "link_url": "/pages/science#zinc"
           }
         },
         "b5": {
@@ -225,7 +225,7 @@
             "slide_set": "",
             "text": "<p>Quercetin is a plant flavonoid studied for antioxidant activity and cellular-signaling effects.</p><p>Within Dermaboost+, it contributes a different polyphenolic profile from curcumin and olive leaf extract.</p>",
             "link_label": "Explore quercetin research",
-            "link_url": "/pages/science#dermaboost"
+            "link_url": "/pages/science#quercetin"
           }
         },
         "b6": {
@@ -236,7 +236,7 @@
             "role": "Botanical antioxidant support",
             "text": "<p>Curcumin is a botanical polyphenol widely studied for antioxidant and cell-signaling activity.</p><p>The formulation uses an optimized form to address curcumin’s naturally limited oral bioavailability.</p>",
             "link_label": "Explore curcumin research",
-            "link_url": "/pages/science#dermaboost"
+            "link_url": "/pages/science#curcumin"
           }
         },
         "b7": {
@@ -258,7 +258,7 @@
             "role": "Carotenoid antioxidant support",
             "text": "<p>Astaxanthin is a carotenoid antioxidant studied in human research involving several skin-related parameters.</p><p>It provides a structurally different antioxidant component from the vitamins and polyphenols in Dermaboost+.</p>",
             "link_label": "Explore astaxanthin research",
-            "link_url": "/pages/science#dermaboost",
+            "link_url": "/pages/science#astaxanthin",
             "slide_set": ""
           }
         }
