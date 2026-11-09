@@ -21,7 +21,9 @@
         "primary_label": "Start here",
         "primary_url": "#start-here",
         "secondary_label": "All articles",
-        "secondary_url": "#all-articles"
+        "secondary_url": "#all-articles",
+        "image_asset": "blog-hero-three-skin-tones.webp",
+        "image_alt": "Three women with different skin tones in profile"
       }
     },
     "feature": {

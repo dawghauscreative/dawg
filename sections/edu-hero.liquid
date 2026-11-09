@@ -1,5 +1,5 @@
-<section class="section scheme-{{ section.settings.color_scheme }} edu-hero" {{ section.shopify_attributes }}>
-  <div class="container">
+<section class="section scheme-{{ section.settings.color_scheme }} edu-hero{% if section.settings.image != blank or section.settings.image_asset != blank %} edu-hero--media{% endif %}" {{ section.shopify_attributes }}>
+  <div class="container edu-hero__grid">
     <div class="edu-hero__inner">
       {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
       <h1>{{ section.settings.title }}</h1>
@@ -11,6 +11,9 @@
         {%- if section.settings.secondary_label != blank -%}<a class="btn btn--outline" href="{{ section.settings.secondary_url }}">{{ section.settings.secondary_label }}</a>{%- endif -%}
       </div>
     </div>
+    {%- if section.settings.image != blank or section.settings.image_asset != blank -%}
+      <div class="edu-hero__media">{% render 'responsive-image', image: section.settings.image, asset: section.settings.image_asset, asset_width: 1800, asset_height: 1273, ratio: 'natural', sizes: '(min-width: 990px) 50vw, 100vw', alt: section.settings.image_alt, loading: 'eager' %}</div>
+    {%- endif -%}
   </div>
 </section>
 
@@ -27,7 +30,10 @@
     { "type": "text", "id": "primary_label", "label": "Primary button label" },
     { "type": "text", "id": "primary_url", "label": "Primary button link (anchor or URL)" },
     { "type": "text", "id": "secondary_label", "label": "Secondary button label" },
-    { "type": "text", "id": "secondary_url", "label": "Secondary button link (anchor or URL)" }
+    { "type": "text", "id": "secondary_url", "label": "Secondary button link (anchor or URL)" },
+    { "type": "image_picker", "id": "image", "label": "Image (optional)" },
+    { "type": "text", "id": "image_asset", "label": "Or theme asset filename", "info": "Shown beside the text, e.g. blog-hero-three-skin-tones.webp" },
+    { "type": "text", "id": "image_alt", "label": "Image alt text" }
   ],
   "presets": [{ "name": "Skin Edu hero" }]
 }

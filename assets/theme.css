@@ -1501,3 +1501,10 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 /* Header: About dropdown (Founder, Our Blog) */
 .nav__panel--about { min-width: 220px; }
 .nav__panel--about ul { gap: 6px; }
+
+/* Blog hero with a photo beside the text */
+.edu-hero--media .edu-hero__grid { display: grid; gap: clamp(32px, 5vw, 72px); align-items: center; }
+@media (min-width: 990px) { .edu-hero--media .edu-hero__grid { grid-template-columns: 1fr 1.05fr; } }
+.edu-hero__media .media { aspect-ratio: 1 / 1; }
+.edu-hero__media .media img { object-position: 52% 50%; }
+@media (max-width: 989px) { .edu-hero__media .media { aspect-ratio: 1800 / 1276; } }
