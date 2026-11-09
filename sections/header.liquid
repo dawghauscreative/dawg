@@ -6,7 +6,7 @@
   assign shop_all_url = shop_all.url | default: routes.all_products_collection_url
 -%}
 
-{%- comment -%} Primary nav. Science is a plain link (no dropdown); Skin Education lives on the Science page (client review Nov 7). {%- endcomment -%}
+{%- comment -%} Primary nav. Science is a plain link (client review Nov 7). About (Nov 9) holds Founder and Our Blog (the skin-edu blog). {%- endcomment -%}
 <header class="site-header" {{ section.shopify_attributes }}>
   <div class="container site-header__inner">
     <button class="icon-btn menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="MenuDrawer" aria-label="{{ 'general.menu' | t }}">
@@ -48,7 +48,17 @@
           </details>
         </li>
         <li><a href="/pages/science">Science</a></li>
-        <li><a href="/pages/founder">Founder</a></li>
+        <li>
+          <details>
+            <summary>About</summary>
+            <div class="nav__panel nav__panel--about">
+              <ul>
+                <li><a href="/pages/founder">Founder</a></li>
+                <li><a href="{{ blogs['skin-edu'].url | default: '/blogs/skin-edu' }}">Our Blog</a></li>
+              </ul>
+            </div>
+          </details>
+        </li>
         <li><a href="/pages/faq">FAQ</a></li>
       </ul>
     </nav>
@@ -90,7 +100,13 @@
           </ul>
         </li>
         <li><a href="/pages/science">Science</a></li>
-        <li><a href="/pages/founder">Founder</a></li>
+        <li>
+          <span class="drawer__label">About</span>
+          <ul>
+            <li><a href="/pages/founder">Founder</a></li>
+            <li><a href="{{ blogs['skin-edu'].url | default: '/blogs/skin-edu' }}">Our Blog</a></li>
+          </ul>
+        </li>
         <li><a href="/pages/faq">FAQ</a></li>
         <li><a href="{{ portal_url }}">{{ settings.manage_subscription_label }}</a></li>
       </ul>
