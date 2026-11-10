@@ -444,6 +444,82 @@
         "secondary_label": "Explore the science",
         "secondary_url": "/pages/science#uv-shield"
       }
+    },
+    "reasons": {
+      "type": "science-cards",
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Polypodium leucotomos",
+            "icon": "shield",
+            "title": "Environmental stress",
+            "text": "<p>Polypodium leucotomos (240 mg), a fern-derived botanical, is studied for how skin responds to UV and environmental exposure.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "EGCG · Resveratrol · Spirulina",
+            "icon": "molecule",
+            "title": "Antioxidant support",
+            "text": "<p>EGCG from green tea, trans-resveratrol and spirulina each bring a different antioxidant profile, so the support is broader than any one ingredient.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Niacinamide",
+            "icon": "layers",
+            "title": "Skin barrier",
+            "text": "<p>Niacinamide (500 mg), a form of vitamin B3, is involved in the lipids that make up the skin barrier.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Niacinamide · Resveratrol",
+            "icon": "cell",
+            "title": "Cellular energy",
+            "text": "<p>Niacinamide also takes part in cellular energy metabolism, while resveratrol supports normal cell signaling in skin under daily stress.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "color_scheme": "green-light",
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Every ingredient has a reason.",
+        "body": "<p>UV Shield+ combines five ingredients, each chosen for a different role in skin exposed to life outdoors.†</p><p>Here is what each part of the formula is there to do.</p>",
+        "layout": "grid",
+        "columns": "4",
+        "show_images": false,
+        "note": "",
+        "button_label": "Explore the science",
+        "button_url": "/pages/science#uv-shield"
+      }
     }
   },
   "order": [
@@ -452,6 +528,7 @@
     "definition",
     "video",
     "formula",
+    "reasons",
     "who",
     "claims",
     "systems",

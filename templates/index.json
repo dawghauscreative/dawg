@@ -558,10 +558,10 @@
           "type": "card",
           "settings": {
             "number": "",
-            "kicker": "",
+            "kicker": "UV Shield+",
             "icon": "shield",
             "title": "Environmental stress",
-            "text": "<p>Explore research around skin responses to daily environmental exposure.</p>",
+            "text": "<p>UV Shield+ pairs Polypodium leucotomos with niacinamide, EGCG, trans-resveratrol and spirulina for skin exposed to daily sun and environmental stress.†</p>",
             "tag": "",
             "study": "",
             "asset": ""
@@ -571,10 +571,10 @@
           "type": "card",
           "settings": {
             "number": "",
-            "kicker": "",
+            "kicker": "Skinbiotic+",
             "icon": "cell",
             "title": "Gut–skin axis",
-            "text": "<p>Understand the relationship between the intestinal microbiome and skin biology.</p>",
+            "text": "<p>Skinbiotic+ combines organic inulin with five probiotic strains, including Akkermansia muciniphila, to support the gut-skin connection.†</p>",
             "tag": "",
             "study": "",
             "asset": ""
@@ -584,10 +584,10 @@
           "type": "card",
           "settings": {
             "number": "",
-            "kicker": "",
+            "kicker": "Dermaboost+ · UV Shield+",
             "icon": "molecule",
             "title": "Antioxidant support",
-            "text": "<p>Learn how different nutrients and plant compounds play distinct roles in oxidative-stress biology.</p>",
+            "text": "<p>Dermaboost+ brings curcumin, quercetin and astaxanthin; UV Shield+ adds EGCG and resveratrol. Each plays a distinct role in oxidative-stress biology.†</p>",
             "tag": "",
             "study": "",
             "asset": ""
@@ -597,10 +597,10 @@
           "type": "card",
           "settings": {
             "number": "",
-            "kicker": "",
+            "kicker": "Dermaboost+ · UV Shield+",
             "icon": "layers",
             "title": "Skin barrier",
-            "text": "<p>Explore the nutritional and biological systems involved in maintaining skin integrity.</p>",
+            "text": "<p>Niacinamide, in both UV Shield+ and Dermaboost+, is involved in the lipids that make up the skin barrier. Dermaboost+ adds zinc and vitamin C.†</p>",
             "tag": "",
             "study": "",
             "asset": ""

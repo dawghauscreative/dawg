@@ -599,6 +599,82 @@
         "secondary_label": "Explore the science",
         "secondary_url": "/pages/science#dermaboost"
       }
+    },
+    "reasons": {
+      "type": "science-cards",
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Vitamin D3 · Vitamin C · Zinc",
+            "icon": "shield",
+            "title": "Immune balance",
+            "text": "<p>Vitamin D3 (1,000 IU), vitamin C and zinc each contribute to normal immune function.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Curcumin · Quercetin · Astaxanthin",
+            "icon": "molecule",
+            "title": "Antioxidant support",
+            "text": "<p>Optimized curcumin, quercetin, olive leaf extract and astaxanthin each play a different role in oxidative-stress biology.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Niacinamide",
+            "icon": "layers",
+            "title": "Skin barrier",
+            "text": "<p>Niacinamide (250 mg NE), a form of vitamin B3, is involved in the lipids that make up the skin barrier.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Vitamin C · Zinc",
+            "icon": "cell",
+            "title": "Collagen and skin maintenance",
+            "text": "<p>Vitamin C contributes to normal collagen formation, and zinc to the maintenance of normal skin.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "color_scheme": "green-light",
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Every ingredient has a reason.",
+        "body": "<p>Dermaboost+ brings together eight nutrients and botanicals for calm, balanced, resilient skin.†</p><p>Here is what each part of the formula is there to do.</p>",
+        "layout": "grid",
+        "columns": "4",
+        "show_images": false,
+        "note": "",
+        "button_label": "Explore the science",
+        "button_url": "/pages/science#dermaboost"
+      }
     }
   },
   "order": [
@@ -608,6 +684,7 @@
     "video",
     "antioxidant",
     "formula",
+    "reasons",
     "research",
     "claims",
     "immune",

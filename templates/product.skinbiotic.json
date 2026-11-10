@@ -588,6 +588,82 @@
         "secondary_label": "Explore the science",
         "secondary_url": "/pages/science#skinbiotic"
       }
+    },
+    "reasons": {
+      "type": "science-cards",
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "The whole formula",
+            "icon": "cell",
+            "title": "Gut–skin axis",
+            "text": "<p>The gut and skin communicate through immune and microbial signals. Skinbiotic+ is designed to support that connection from the intestinal side.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Organic inulin",
+            "icon": "molecule",
+            "title": "Prebiotic fiber",
+            "text": "<p>Organic inulin (500 mg) is a fiber that certain gut bacteria use as food, supporting a balanced intestinal environment.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Lactobacillus · Bifidobacterium",
+            "icon": "shield",
+            "title": "Probiotic strains",
+            "text": "<p>Lactobacillus plantarum, L. rhamnosus, Bifidobacterium lactis and B. bifidum make up a 215 mg probiotic blend with distinct roles.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "number": "",
+            "kicker": "Akkermansia muciniphila",
+            "icon": "layers",
+            "title": "Gut lining",
+            "text": "<p>Akkermansia muciniphila (Akk11®) is a strain studied for its role in the gut lining and the intestinal environment.†</p>",
+            "tag": "",
+            "study": "",
+            "asset": ""
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "color_scheme": "green-light",
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Every ingredient has a reason.",
+        "body": "<p>Skinbiotic+ pairs a prebiotic fiber with five probiotic strains, built around the connection between the gut and the skin.†</p><p>Here is what each part of the formula is there to do.</p>",
+        "layout": "grid",
+        "columns": "4",
+        "show_images": false,
+        "note": "",
+        "button_label": "Explore the science",
+        "button_url": "/pages/science#skinbiotic"
+      }
     }
   },
   "order": [
@@ -597,6 +673,7 @@
     "axis",
     "synbiotic",
     "formula",
+    "reasons",
     "who",
     "supports",
     "research",
