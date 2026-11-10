@@ -161,7 +161,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "dark",
         "anchor": "",
         "eyebrow": "",
         "heading": "Skin health is a system.",
@@ -270,7 +270,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "anchor": "uv-shield",
         "role": "Protect",
         "heading": "UV Shield+",
@@ -367,7 +367,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "anchor": "skinbiotic",
         "role": "Balance",
         "heading": "Skinbiotic+",
@@ -501,7 +501,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "anchor": "dermaboost",
         "role": "Restore",
         "heading": "Dermaboost+",
