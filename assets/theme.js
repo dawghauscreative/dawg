@@ -897,3 +897,30 @@
     });
   });
 })();
+
+
+/* Colour bleeds: where a light section (white / beige) meets a green or black one, the top of the lower section fades
+   in from the upper section's colour, so the change is a soft blend instead of a hard edge. Only between solid
+   colour-scheme sections; photo heroes, videos and sections without a scheme are left alone. */
+(function () {
+  function lum(c) {
+    var m = c && c.match(/rgba?\(([\d.]+),\s*([\d.]+),\s*([\d.]+)(?:,\s*([\d.]+))?/);
+    if (!m || (m[4] !== undefined && +m[4] < 0.9)) return null;
+    return 0.2126 * m[1] + 0.7152 * m[2] + 0.0722 * m[3];
+  }
+  var prev = null;
+  document.querySelectorAll('main > .shopify-section, main .shopify-section').forEach(function (wrap) {
+    if (wrap.parentElement && wrap.parentElement.closest('.shopify-section')) return;
+    var sec = wrap.firstElementChild;
+    while (sec && (sec.tagName === 'SCRIPT' || sec.tagName === 'STYLE' || sec.tagName === 'LINK')) sec = sec.nextElementSibling;
+    if (!sec || !sec.offsetHeight) return;
+    var scheme = /(^|\s)scheme-/.test(sec.className) && !sec.querySelector(':scope > video, :scope > .home-slide__bg');
+    var bg = scheme ? getComputedStyle(sec).backgroundColor : null;
+    var L = scheme ? lum(bg) : null;
+    if (prev && L !== null && prev.L !== null && Math.abs(prev.L - L) > 90) {
+      sec.classList.add('has-bleed');
+      sec.style.setProperty('--bleed-from', prev.bg);
+    }
+    prev = { L: L, bg: bg };
+  });
+})();
