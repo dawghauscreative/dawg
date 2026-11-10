@@ -562,6 +562,7 @@
         "b4"
       ],
       "settings": {
+        "center": true,
         "color_scheme": "light",
         "eyebrow": "",
         "heading": "Different pathways. One skin-health system.",

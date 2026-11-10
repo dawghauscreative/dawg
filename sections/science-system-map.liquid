@@ -14,7 +14,7 @@
 -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
-    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body, center: section.settings.center -%}
     <div class="venn" data-venn data-venn-mode="regions">
       <div class="venn__stage">
         <svg class="venn__svg" viewBox="0 0 600 510" role="group" aria-label="Protect, Balance and Restore: hover or tap to explore" data-venn-svg>
@@ -67,7 +67,7 @@
         {%- endfor -%}
       </div>
     </div>
-    {%- if section.settings.caption != blank -%}<p class="sci-caption">{{ section.settings.caption }}</p>{%- endif -%}
+    {%- if section.settings.caption != blank -%}<p class="sci-caption{% if section.settings.center %} sci-caption--center{% endif %}">{{ section.settings.caption }}</p>{%- endif -%}
   </div>
 </section>
 
@@ -76,6 +76,7 @@
   "name": "Science system map",
   "settings": [
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "checkbox", "id": "center", "label": "Centre heading, text and caption", "default": false },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "richtext", "id": "body", "label": "Text" },
