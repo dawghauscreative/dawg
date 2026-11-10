@@ -370,7 +370,8 @@
             "asset": "lifestyle-skinbiotic-cliffs.webp",
             "label": "Golf",
             "caption": "Long rounds and repeated outdoor exposure.",
-            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
+            "link_label": "Sun + skin: read more"
           }
         },
         "b2": {
@@ -380,7 +381,8 @@
             "asset": "lifestyle-uvshield-dermaboost-tennis.webp",
             "label": "Tennis",
             "caption": "Court time, heat, and active outdoor routines.",
-            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
+            "link_label": "Sun + skin: read more"
           }
         },
         "b3": {
@@ -390,7 +392,8 @@
             "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp",
             "label": "Sailing + boating",
             "caption": "Open-sky and reflected-light environments.",
-            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
+            "link_label": "Sun + skin: read more"
           }
         },
         "b4": {
@@ -399,7 +402,8 @@
             "asset": "lifestyle-running-cycling-duo.webp",
             "label": "Running + cycling",
             "caption": "Consistent outdoor training.",
-            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
+            "link_label": "Sun + skin: read more"
           }
         },
         "b5": {
@@ -409,7 +413,8 @@
             "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
             "label": "Beach + travel",
             "caption": "High-exposure leisure and travel environments.",
-            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
+            "link_label": "Sun + skin: read more"
           }
         },
         "b6": {
@@ -418,7 +423,8 @@
             "asset": "lifestyle-outdoor-living.webp",
             "label": "Everyday outdoor life",
             "caption": "Walking, gardening, commuting, dining, and time outside.",
-            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
+            "link_label": "Sun + skin: read more"
           }
         }
       },
