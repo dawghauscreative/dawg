@@ -1626,3 +1626,8 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .compare-row__link { color: inherit; text-decoration: none; }
 .compare-row__link::after { content: ""; position: absolute; inset: 0; }
 .compare-row--link:hover .compare-row__link { color: var(--c-gold); }
+
+/* Charcoal scheme (Nov 10): the dark scheme on the brand charcoal. Sections output both scheme-dark and scheme-charcoal. */
+.scheme-dark.scheme-charcoal { --bg: var(--c-charcoal); --card: color-mix(in srgb, var(--c-white) 6%, var(--c-charcoal)); }
+.shopify-section:has(> .section.scheme-charcoal) + .shopify-section > .section.scheme-dark:not(.scheme-charcoal),
+.shopify-section:has(> .section.scheme-dark:not(.scheme-charcoal)) + .shopify-section > .section.scheme-charcoal { padding-top: var(--space-section); }
