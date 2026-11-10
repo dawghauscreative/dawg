@@ -48,7 +48,7 @@ button { font: inherit; color: inherit; }
   --bg: var(--c-beige); --fg: var(--c-black); --body: var(--c-black); --accent: var(--c-black); --rule: color-mix(in srgb, var(--c-black) 28%, transparent);
   --btn-bg: var(--c-black); --btn-fg: var(--c-white); --card: color-mix(in srgb, var(--c-white) 35%, var(--c-beige));
 }
-.scheme-dark, .scheme-green, .scheme-light, .scheme-beige, .scheme-green-light { background: var(--bg); color: var(--fg); }
+.scheme-dark, .scheme-green, .scheme-light, .scheme-beige, .scheme-green-light, .scheme-grey { background: var(--bg); color: var(--fg); }
 .scheme-dark p, .scheme-dark li, .scheme-green p, .scheme-green li, .scheme-light p, .scheme-light li, .scheme-beige p, .scheme-beige li, .scheme-dark address, .scheme-green address, .scheme-green-light p, .scheme-green-light li, .scheme-green-light address { color: var(--body); }
 .scheme-dark h1, .scheme-dark h2, .scheme-dark h3, .scheme-dark h4, .scheme-green h1, .scheme-green h2, .scheme-green h3, .scheme-green h4, .scheme-green-light h1, .scheme-green-light h2, .scheme-green-light h3, .scheme-green-light h4 { color: var(--c-white); }
 
@@ -1575,3 +1575,8 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 @media (min-width: 990px) { .rich-split { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } .rich-split--right .rich-split__media { order: 2; } }
 .rich-split__media { max-width: 560px; width: 100%; margin-inline: auto; }
 .rich-split__copy .pull-quote { font-size: clamp(1.6rem, 2.6vw, 2.4rem); }
+
+/* Brand grey scheme (#afafaf, Nov 10): used by the layers sections. Dark text, dark bars and buttons. */
+.scheme-grey { --bg: var(--c-gray); --fg: var(--c-black); --body: color-mix(in srgb, var(--c-black) 86%, var(--c-gray)); --accent: var(--c-black); --rule: color-mix(in srgb, var(--c-black) 30%, transparent); --btn-bg: var(--c-black); --btn-fg: var(--c-white); --card: color-mix(in srgb, var(--c-white) 28%, var(--c-gray)); }
+.scheme-grey p, .scheme-grey li { color: var(--body); }
+.scheme-grey .eyebrow { opacity: .8; }
