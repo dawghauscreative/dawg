@@ -6,7 +6,9 @@
       {%- comment -%} Card style (client review Nov 7): one card per row, staggered, with hover lift. {%- endcomment -%}
       <div class="compare-cards stagger">
         {%- for block in section.blocks -%}
-          {%- if block.settings.url != blank -%}<a class="ccard" href="{{ block.settings.url }}" {{ block.shopify_attributes }}>{%- else -%}<article class="ccard" {{ block.shopify_attributes }}>{%- endif -%}
+          {%- capture ct_url -%}{%- if block.settings.url != blank -%}{{ block.settings.url }}{%- else -%}{%- render 'product-name-url', name: block.settings.label -%}{%- endif -%}{%- endcapture -%}
+          {%- assign ct_url = ct_url | strip -%}
+          {%- if ct_url != blank -%}<a class="ccard" href="{{ ct_url }}" {{ block.shopify_attributes }}>{%- else -%}<article class="ccard" {{ block.shopify_attributes }}>{%- endif -%}
             <span class="ccard__num">{{ forloop.index | prepend: '0' }}</span>
             <h3>{{ block.settings.label }}</h3>
             {%- if block.settings.a != blank -%}<span class="ccard__roles">{{ block.settings.a }}</span>{%- endif -%}
@@ -14,8 +16,8 @@
               {%- if block.settings.b != blank -%}<div><dt>{{ section.settings.col_2 }}</dt><dd>{{ block.settings.b }}</dd></div>{%- endif -%}
               {%- if block.settings.c != blank -%}<div><dt>{{ section.settings.col_3 }}</dt><dd>{{ block.settings.c }}</dd></div>{%- endif -%}
             </dl>
-            {%- if block.settings.url != blank -%}<span class="ccard__more">Explore</span>{%- endif -%}
-          {%- if block.settings.url != blank -%}</a>{%- else -%}</article>{%- endif -%}
+            {%- if ct_url != blank -%}<span class="ccard__more">Explore</span>{%- endif -%}
+          {%- if ct_url != blank -%}</a>{%- else -%}</article>{%- endif -%}
         {%- endfor -%}
       </div>
     {%- else -%}
@@ -26,8 +28,10 @@
         </thead>
         <tbody>
           {%- for block in section.blocks -%}
-            <tr {{ block.shopify_attributes }}>
-              <th scope="row">{{ block.settings.label }}</th>
+            {%- capture ct_url -%}{%- if block.settings.url != blank -%}{{ block.settings.url }}{%- else -%}{%- render 'product-name-url', name: block.settings.label -%}{%- endif -%}{%- endcapture -%}
+            {%- assign ct_url = ct_url | strip -%}
+            <tr{% if ct_url != blank %} class="compare-row--link"{% endif %} {{ block.shopify_attributes }}>
+              <th scope="row">{%- if ct_url != blank -%}<a class="compare-row__link" href="{{ ct_url }}">{{ block.settings.label }} <span aria-hidden="true">&rarr;</span></a>{%- else -%}{{ block.settings.label }}{%- endif -%}</th>
               <td data-label="{{ section.settings.col_1 | escape }}">{{ block.settings.a }}</td>
               <td data-label="{{ section.settings.col_2 | escape }}">{{ block.settings.b }}</td>
               <td data-label="{{ section.settings.col_3 | escape }}">{{ block.settings.c }}</td>

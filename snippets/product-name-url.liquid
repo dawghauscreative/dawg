@@ -1,0 +1,31 @@
+{%- comment -%}
+  Outputs the product page URL for a product or bundle name (e.g. "Balance Duo" -> /products/balance-duo), or nothing.
+  Usage: {% capture u %}{% render 'product-name-url', name: 'Balance Duo', bundles_only: true %}{% endcapture %}
+{%- endcomment -%}
+{%- liquid
+  assign pn = name | downcase | strip
+  assign pn_handle = ''
+  if pn contains 'outdoor duo'
+    assign pn_handle = 'outdoor-duo'
+  elsif pn contains 'balance duo'
+    assign pn_handle = 'balance-duo'
+  elsif pn contains 'sun resilience duo'
+    assign pn_handle = 'sun-resilience-duo'
+  elsif pn contains 'tria prima'
+    assign pn_handle = 'tria-prima'
+  elsif bundles_only != true
+    if pn == 'uv shield+' or pn == 'uv shield'
+      assign pn_handle = 'uv-shield'
+    elsif pn == 'skinbiotic+' or pn == 'skinbiotic'
+      assign pn_handle = 'skinbiotic'
+    elsif pn == 'dermaboost+' or pn == 'dermaboost'
+      assign pn_handle = 'dermaboost'
+    endif
+  endif
+  if product != blank and product.handle == pn_handle
+    assign pn_handle = ''
+  endif
+  if pn_handle != blank
+    echo '/products/' | append: pn_handle
+  endif
+-%}

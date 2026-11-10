@@ -1619,3 +1619,10 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .shopify-section:has(> .section.scheme-beige) + .shopify-section > .section.scheme-beige,
 .shopify-section:has(> .section.scheme-grey) + .shopify-section > .section.scheme-grey,
 .shopify-section:has(> .section.scheme-band) + .shopify-section > .section.scheme-band { padding-top: clamp(8px, 1vw, 16px); }
+
+/* Compare-table rows that link to a product page: whole row clickable (Nov 10) */
+.compare-row--link { position: relative; cursor: pointer; transition: background-color .2s ease; }
+.compare-row--link:hover { background: color-mix(in srgb, var(--c-gold) 10%, transparent); }
+.compare-row__link { color: inherit; text-decoration: none; }
+.compare-row__link::after { content: ""; position: absolute; inset: 0; }
+.compare-row--link:hover .compare-row__link { color: var(--c-gold); }

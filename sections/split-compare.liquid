@@ -7,6 +7,12 @@
         {%- liquid
           assign cs_link = block.settings.link
           if cs_link == blank
+            capture cs_link
+              render 'product-name-url', name: block.settings.name, bundles_only: true
+            endcapture
+            assign cs_link = cs_link | strip
+          endif
+          if cs_link == blank
             assign cs_hay = block.settings.name | append: ' ' | append: block.settings.kicker | downcase
             assign cs_science = pages['science'].url | default: '/pages/science'
             if cs_hay contains 'uv shield'
@@ -28,7 +34,7 @@
             <ul class="compare__list">{%- assign items = block.settings.items | newline_to_br | split: '<br />' -%}{%- for it in items -%}{%- assign t = it | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
           {%- endif -%}
           {%- if block.settings.focus != blank -%}<p class="compare__focus"><strong>Primary focus</strong> {{ block.settings.focus }}</p>{%- endif -%}
-          {%- if cs_link != blank -%}<span class="compare__more" aria-hidden="true">Explore the science &rarr;</span>{%- endif -%}
+          {%- if cs_link != blank -%}<span class="compare__more" aria-hidden="true">{% if cs_link contains '/products/' %}View bundle{% else %}Explore the science{% endif %} &rarr;</span>{%- endif -%}
         </article>
         {%- if forloop.first and section.blocks.size < 3 -%}<span class="compare__plus" aria-hidden="true">+</span>{%- endif -%}
       {%- endfor -%}
