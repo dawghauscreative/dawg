@@ -524,11 +524,11 @@
   },
   "order": [
     "main",
+    "reasons",
     "why",
     "definition",
     "video",
     "formula",
-    "reasons",
     "who",
     "claims",
     "systems",

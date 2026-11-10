@@ -679,12 +679,12 @@
   },
   "order": [
     "main",
+    "reasons",
     "role",
     "definition",
     "video",
     "antioxidant",
     "formula",
-    "reasons",
     "research",
     "claims",
     "immune",
