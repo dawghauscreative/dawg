@@ -410,9 +410,9 @@
       b.addEventListener('click', function () { if (box.dataset.pinned === i) { box.dataset.pinned = ''; set(null); } else { box.dataset.pinned = i; set(i); } });
     });
     items.forEach(function (li) { li.addEventListener('mouseenter', function () { set(li.getAttribute('data-layer')); }); });
-    box.addEventListener('mouseleave', function () { set(box.dataset.pinned || null); });
+    box.addEventListener('mouseleave', function () { set(box.dataset.pinned || (box.classList.contains('is-single') ? (box.dataset.scrollStep || '0') : null)); });
     // Scroll-driven steps (Full scroll animations, see "Scroll motion" below). A layer the visitor tapped wins.
-    box.addEventListener('scrollstep', function (e) { if (!box.dataset.pinned) set(e.detail === null ? null : String(e.detail)); });
+    box.addEventListener('scrollstep', function (e) { box.dataset.scrollStep = e.detail === null ? '' : String(e.detail); if (!box.dataset.pinned) set(e.detail === null ? null : String(e.detail)); });
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) { entries.forEach(function (en) { if (en.isIntersecting) { box.classList.add('is-in'); io.disconnect(); } }); }, { threshold: 0.2 });
       io.observe(box);
@@ -657,11 +657,15 @@
   // (the layers graphic, via its 'scrollstep' event).
   var steppers = [];
   if (full) document.querySelectorAll('main [data-scroll-steps]').forEach(function (el) {
-    var exclusive = el.getAttribute('data-scroll-steps') === 'exclusive';
+    // "single" (layers graphic, Nov 10): one description at a time, chosen by how far the section has scrolled; never held.
+    var mode = el.getAttribute('data-scroll-steps');
+    var single = mode === 'single';
+    var exclusive = mode === 'exclusive' || single;
     var items = Array.prototype.slice.call(el.querySelectorAll(exclusive ? '.layers__list li' : '[data-step-item]'));
     if (items.length < 2) return;
     el.classList.add('is-stepping');
-    steppers.push({ el: el, items: items, exclusive: exclusive, spacer: null, pinned: false, last: undefined, h: 0 });
+    if (single) el.classList.add('is-single');
+    steppers.push({ el: el, items: items, exclusive: exclusive, single: single, spacer: null, pinned: false, last: undefined, h: 0 });
   });
   function headerH() { var h = document.querySelector('.site-header'); return h ? h.offsetHeight : 72; }
   function layout() {
@@ -673,7 +677,7 @@
       s.el.style.top = '';
       s.h = s.el.offsetHeight;
       // Hold it on screen only on desktop and only when the whole element fits under the header.
-      s.pinned = window.innerWidth >= 990 && s.h + top + 24 <= vh;
+      s.pinned = !s.single && window.innerWidth >= 990 && s.h + top + 24 <= vh;
       s.items.forEach(function (it, k) { it.style.setProperty('--k', s.pinned ? 0 : k); });
       s.last = undefined;
       if (!s.pinned) return;
@@ -707,6 +711,9 @@
         if (s.exclusive) idx = (raw < 0 || raw >= 0.9) ? null : Math.min(n - 1, Math.floor(raw / 0.9 * n));
         else if (raw < 0) idx = natTop < vh * 0.62 ? 0 : -1;
         else idx = raw >= 0.85 ? n : Math.min(n - 1, Math.floor(raw / 0.85 * n));
+      } else if (s.single) {
+        var sr = s.el.getBoundingClientRect();
+        idx = Math.min(n - 1, Math.floor(clamp((vh * 0.85 - sr.top) / (sr.height + vh * 0.55)) * n));
       } else {
         var line = vh * (s.exclusive ? 0.55 : 0.72);
         idx = -1;

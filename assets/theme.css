@@ -1561,3 +1561,12 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 /* Colour bleeds between light and green / black sections (assets/theme.js "Colour bleeds") */
 .has-bleed { position: relative; isolation: isolate; }
 .has-bleed::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: clamp(90px, 11vw, 180px); background: linear-gradient(to bottom, var(--bleed-from) 0%, color-mix(in srgb, var(--bleed-from) 72%, transparent) 22%, color-mix(in srgb, var(--bleed-from) 40%, transparent) 48%, color-mix(in srgb, var(--bleed-from) 14%, transparent) 76%, transparent 100%); pointer-events: none; z-index: -1; }
+
+/* Layers graphic, one description at a time (Full scroll animations, home page; assets/theme.js "single" steps).
+   The four descriptions share one spot; the scroll (or hovering / tapping a bar) picks which one shows. */
+.layers.is-single .layers__list { display: grid; align-content: center; }
+.js .layers[data-layers].is-single .layers__list li { grid-area: 1 / 1; transition: opacity .45s ease, transform .55s cubic-bezier(.2, .7, .2, 1); }
+.js .layers[data-layers].is-single.is-in .layers__list li:not(.is-active), .js .layers[data-layers].is-single.is-in.has-active .layers__list li:not(.is-active) { opacity: 0; transform: translateY(16px); pointer-events: none; }
+.js .layers[data-layers].is-single.is-in.has-active .layers__list li.is-active { opacity: 1; transform: none; }
+.layers.is-single .layers__list li.is-active h3 { font-size: clamp(1.6rem, 2.4vw, 2.1rem); }
+.layers.is-single .layers__list li.is-active p { font-size: 1.05rem; }

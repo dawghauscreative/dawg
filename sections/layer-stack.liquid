@@ -2,7 +2,7 @@
   <div class="container">
     {%- render 'section-head', heading: section.settings.heading, eyebrow: section.settings.eyebrow, body: section.settings.body -%}
     {%- comment -%} Interactive (client review Nov 7): hovering, focusing or tapping a layer highlights it and its explanation; bars slide in on scroll (assets/theme.js [data-layers]). {%- endcomment -%}
-    <div class="layers" data-layers>
+    <div class="layers" data-layers data-scroll-steps="single">
       <div class="layers__stack">
         {%- for block in section.blocks -%}
           <button class="layers__bar" type="button" style="--i: {{ forloop.index0 }}" data-layer="{{ forloop.index0 }}" aria-describedby="Layer-{{ section.id }}-{{ forloop.index0 }}"><span>{{ forloop.index | prepend: '0' }}</span>{{ block.settings.short }}</button>
