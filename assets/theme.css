@@ -36,7 +36,7 @@ button { font: inherit; color: inherit; }
   --bg: var(--c-black); --fg: var(--c-white); --body: color-mix(in srgb, var(--c-white) 80%, var(--c-black)); --accent: var(--c-gold); --rule: color-mix(in srgb, var(--c-gold) 55%, transparent);
   --btn-bg: var(--c-gold-bright); --btn-fg: #fff; --card: var(--c-charcoal);
 }
-.scheme-green {
+.scheme-green, .scheme-green-light {
   --bg: var(--c-emerald); --fg: var(--c-white); --body: color-mix(in srgb, var(--c-white) 80%, var(--c-black)); --accent: var(--c-gold); --rule: color-mix(in srgb, var(--c-gold) 55%, transparent);
   --btn-bg: var(--c-gold-bright); --btn-fg: #fff; --card: color-mix(in srgb, var(--c-white) 7%, var(--c-evergreen));
 }
@@ -48,9 +48,9 @@ button { font: inherit; color: inherit; }
   --bg: var(--c-beige); --fg: var(--c-black); --body: var(--c-black); --accent: var(--c-black); --rule: color-mix(in srgb, var(--c-black) 28%, transparent);
   --btn-bg: var(--c-black); --btn-fg: var(--c-white); --card: color-mix(in srgb, var(--c-white) 35%, var(--c-beige));
 }
-.scheme-dark, .scheme-green, .scheme-light, .scheme-beige { background: var(--bg); color: var(--fg); }
-.scheme-dark p, .scheme-dark li, .scheme-green p, .scheme-green li, .scheme-light p, .scheme-light li, .scheme-beige p, .scheme-beige li, .scheme-dark address, .scheme-green address { color: var(--body); }
-.scheme-dark h1, .scheme-dark h2, .scheme-dark h3, .scheme-dark h4, .scheme-green h1, .scheme-green h2, .scheme-green h3, .scheme-green h4 { color: var(--c-white); }
+.scheme-dark, .scheme-green, .scheme-light, .scheme-beige, .scheme-green-light { background: var(--bg); color: var(--fg); }
+.scheme-dark p, .scheme-dark li, .scheme-green p, .scheme-green li, .scheme-light p, .scheme-light li, .scheme-beige p, .scheme-beige li, .scheme-dark address, .scheme-green address, .scheme-green-light p, .scheme-green-light li, .scheme-green-light address { color: var(--body); }
+.scheme-dark h1, .scheme-dark h2, .scheme-dark h3, .scheme-dark h4, .scheme-green h1, .scheme-green h2, .scheme-green h3, .scheme-green h4, .scheme-green-light h1, .scheme-green-light h2, .scheme-green-light h3, .scheme-green-light h4 { color: var(--c-white); }
 
 /* ---------- Layout ---------- */
 .container { width: 100%; max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
@@ -841,7 +841,7 @@ h1, h2, h3, h4 { font-variant-numeric: lining-nums; }
 .trust-strip { border-block: 1px solid var(--rule); }
 .trust-strip > div { min-height: 0; padding: 22px 18px; gap: 12px; font-size: .78rem; letter-spacing: .18em; line-height: 1.5; border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
 .trust-strip .icon { width: 22px; height: 22px; color: var(--accent); flex: none; }
-.scheme-dark .trust-strip, .scheme-green .trust-strip { background: color-mix(in srgb, var(--c-gold) 6%, var(--bg)); }
+.scheme-dark .trust-strip, .scheme-green .trust-strip, .scheme-green-light .trust-strip { background: color-mix(in srgb, var(--c-gold) 6%, var(--bg)); }
 @media (min-width: 750px) { .trust-strip > div { padding: 26px 20px; letter-spacing: .14em; } .trust-strip > div:first-child { border-left: 0; } }
 .trust-strip .icon, .trust-strip .icon svg { opacity: 1; color: var(--c-gold); }
 @media (max-width: 749px) { .trust-strip { grid-template-columns: 1fr; } .trust-strip > div { justify-content: flex-start; padding: 16px 22px; border-right: 0; text-align: left; } }
@@ -1018,7 +1018,7 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .sci-rcard__sub { text-transform: none; letter-spacing: 0; font-size: 1rem; opacity: .85; }
 .sci-formula h2 { font-size: clamp(calc(2.15rem + 5pt), calc(4.3vw + 5pt), calc(3.5rem + 5pt)); }
 .sci-hero h1 { font-size: clamp(calc(2.7rem + 5pt), calc(6vw + 5pt), calc(5rem + 5pt)); }
-.scheme-dark .sci-formula__sub, .scheme-green .sci-formula__sub, .scheme-dark .sci-rcard__row h4, .scheme-green .sci-rcard__row h4, .scheme-dark.sci-formula .eyebrow, .scheme-green.sci-formula .eyebrow { color: var(--c-white); opacity: 1; }
+.scheme-dark .sci-formula__sub, .scheme-green .sci-formula__sub, .scheme-dark .sci-rcard__row h4, .scheme-green .sci-rcard__row h4, .scheme-dark.sci-formula .eyebrow, .scheme-green.sci-formula .eyebrow, .scheme-green-light .sci-formula__sub, .scheme-green-light .sci-rcard__row h4, .scheme-green-light.sci-formula .eyebrow { color: var(--c-white); opacity: 1; }
 .sci-research.sci-research--wide, .sci-research { grid-template-columns: 1fr !important; }
 .sci-hero--plain .sci-hero__grid { grid-template-columns: 1fr; }
 .sci-hero--plain .sci-hero__copy { max-width: 880px; }
@@ -1045,7 +1045,7 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .sci-lib__pagebtn { min-width: 44px; }
 .sci-lib__pagebtn.is-active { background: var(--accent); color: #fff; border-color: var(--accent); }
 .sci-lib__pagebtn:disabled { opacity: .4; cursor: default; }
-.scheme-dark .sci-rcard__sub, .scheme-green .sci-rcard__sub, .scheme-dark .sci-rcard__summary .sci-badge, .scheme-green .sci-rcard__summary .sci-badge { color: var(--c-white); opacity: 1; }
+.scheme-dark .sci-rcard__sub, .scheme-green .sci-rcard__sub, .scheme-dark .sci-rcard__summary .sci-badge, .scheme-green .sci-rcard__summary .sci-badge, .scheme-green-light .sci-rcard__sub, .scheme-green-light .sci-rcard__summary .sci-badge { color: var(--c-white); opacity: 1; }
 
 /* Science cards: short card titles in Roboto small caps (client review) */
 .sci-card h3 { font-family: var(--font-callout); font-size: .92rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; line-height: 1.35; }
@@ -1141,7 +1141,7 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .trust-ingredients { display: none; }
 @media (max-width: 749px) {
   .trust-ingredients { display: block; padding-block: 18px 22px; border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
-  .scheme-dark .trust-ingredients, .scheme-green .trust-ingredients { background: color-mix(in srgb, var(--c-gold) 6%, var(--bg)); }
+  .scheme-dark .trust-ingredients, .scheme-green .trust-ingredients, .scheme-green-light .trust-ingredients { background: color-mix(in srgb, var(--c-gold) 6%, var(--bg)); }
   .trust-ingredients .key-ingredients { margin-top: 0; }
 }
 
@@ -1566,3 +1566,6 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .js .layers[data-layers].is-single.is-in.has-active .layers__list li.is-active { opacity: 1; transform: none; }
 .layers.is-single .layers__list li.is-active h3 { font-size: clamp(1.6rem, 2.4vw, 2.1rem); }
 .layers.is-single .layers__list li.is-active p { font-size: 1.05rem; }
+
+/* Lighter green scheme (Nov 10): same as Emerald, one step lighter. */
+.scheme-green-light { --bg: #24493a; --card: color-mix(in srgb, var(--c-white) 8%, #24493a); }

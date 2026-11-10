@@ -212,7 +212,7 @@
     "category": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "green-light",
         "align": "center",
         "width": "wide",
         "salt_symbol": false,
@@ -228,7 +228,7 @@
     "intro_video": {
       "type": "video-slot",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "green-light",
         "aspect": "16x9",
         "video": "shopify://files/videos/AMD TEST WELCOME SCRAP.mov",
         "video_url": "",
