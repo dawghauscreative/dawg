@@ -134,7 +134,7 @@
     "why": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green-light",
         "image_asset": "lifestyle-uvshield-dermaboost-tennis.webp",
         "image_alt": "UV Shield+ and Dermaboost+ courtside on a sunny day",
         "image_side": "right",
@@ -181,7 +181,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green-light",
         "columns": "3",
         "show_images": false,
         "note": "<p>This section describes formulation rationale. The combined Sun Resilience Duo has not been established here as a clinically tested finished-product regimen.</p>"
