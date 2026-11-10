@@ -3,7 +3,7 @@
 {%- if section.settings.image != blank or section.settings.image_asset != blank -%}{%- assign rt_img = true -%}{%- endif -%}
 {%- if section.settings.align == 'center' -%}{%- assign head_center = true -%}{%- endif -%}
 {%- if section.settings.heading != blank or section.settings.body != blank -%}
-<section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.salt_symbol %} has-salt{% endif %}" {{ section.shopify_attributes }}>
+<section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.salt_symbol %} has-salt{% endif %}{% if section.settings.tight_bottom %} rt-tight-bottom{% endif %}" {{ section.shopify_attributes }}>
   {%- if section.settings.salt_symbol -%}
     <svg class="salt-symbol" viewBox="0 0 400 400" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="10"><circle cx="200" cy="200" r="170"/><path d="M10 200h380"/></svg>
   {%- endif -%}
@@ -34,6 +34,7 @@
     { "type": "select", "id": "align", "label": "Alignment", "default": "left", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Centered" }] },
     { "type": "select", "id": "width", "label": "Width", "default": "narrow", "options": [{ "value": "narrow", "label": "Narrow" }, { "value": "wide", "label": "Wide" }] },
     { "type": "checkbox", "id": "salt_symbol", "label": "Oversized salt symbol behind the text", "default": false },
+    { "type": "checkbox", "id": "tight_bottom", "label": "Less space below", "default": false, "info": "Use when the next section continues this one (e.g. Why pair… followed by its cards)." },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "select", "id": "heading_tag", "label": "Heading level", "default": "h2", "options": [{ "value": "h1", "label": "H1" }, { "value": "h2", "label": "H2" }] },

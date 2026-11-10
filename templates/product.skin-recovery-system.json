@@ -136,6 +136,7 @@
         "image_asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
         "image_alt": "Skinbiotic+ and Dermaboost+ on a sunlit terrace",
         "image_side": "right",
+        "tight_bottom": true,
         "align": "left",
         "width": "wide",
         "eyebrow": "",
@@ -150,35 +151,35 @@
         "b1": {
           "type": "card",
           "settings": {
-            "number": "01",
+            "number": "",
             "title": "Microbiome biology"
           }
         },
         "b2": {
           "type": "card",
           "settings": {
-            "number": "02",
+            "number": "",
             "title": "Intestinal barrier support†"
           }
         },
         "b3": {
           "type": "card",
           "settings": {
-            "number": "03",
+            "number": "",
             "title": "Immune-related signaling"
           }
         },
         "b4": {
           "type": "card",
           "settings": {
-            "number": "04",
+            "number": "",
             "title": "Oxidative-stress biology"
           }
         },
         "b5": {
           "type": "card",
           "settings": {
-            "number": "05",
+            "number": "",
             "title": "Broader nutritional support†"
           }
         }

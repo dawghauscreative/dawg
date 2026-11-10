@@ -250,7 +250,7 @@
         "b1": {
           "type": "card",
           "settings": {
-            "number": "01",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Fragmented routines",
@@ -263,7 +263,7 @@
         "b2": {
           "type": "card",
           "settings": {
-            "number": "02",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Trend-driven formulas",
@@ -276,7 +276,7 @@
         "b3": {
           "type": "card",
           "settings": {
-            "number": "03",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Missing dermatological context",

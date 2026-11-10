@@ -138,6 +138,7 @@
         "image_asset": "lifestyle-uvshield-dermaboost-tennis.webp",
         "image_alt": "UV Shield+ and Dermaboost+ courtside on a sunny day",
         "image_side": "right",
+        "tight_bottom": true,
         "align": "left",
         "width": "wide",
         "eyebrow": "",
@@ -152,7 +153,7 @@
         "b1": {
           "type": "card",
           "settings": {
-            "number": "01",
+            "number": "",
             "title": "Oxidative stress",
             "text": "<p>Complementary antioxidant pathways.</p>"
           }
@@ -160,7 +161,7 @@
         "b2": {
           "type": "card",
           "settings": {
-            "number": "02",
+            "number": "",
             "title": "Cellular signaling",
             "text": "<p>Different botanical polyphenols contribute distinct but overlapping mechanisms.</p>"
           }
@@ -168,7 +169,7 @@
         "b3": {
           "type": "card",
           "settings": {
-            "number": "03",
+            "number": "",
             "title": "Broader nutritional support†",
             "text": "<p>Dermaboost+ adds vitamin C, vitamin D3, zinc, astaxanthin, and other nutrients that are not present in UV Shield+.</p>"
           }

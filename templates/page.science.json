@@ -29,7 +29,7 @@
         "b1": {
           "type": "card",
           "settings": {
-            "number": "01",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Human clinical research",
@@ -42,7 +42,7 @@
         "b2": {
           "type": "card",
           "settings": {
-            "number": "02",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Systematic reviews",
@@ -55,7 +55,7 @@
         "b3": {
           "type": "card",
           "settings": {
-            "number": "03",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Mechanistic research",
@@ -68,7 +68,7 @@
         "b4": {
           "type": "card",
           "settings": {
-            "number": "04",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Emerging evidence",
@@ -794,7 +794,7 @@
         "b1": {
           "type": "card",
           "settings": {
-            "number": "01",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Different biological roles",
@@ -807,7 +807,7 @@
         "b2": {
           "type": "card",
           "settings": {
-            "number": "02",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Complementary mechanisms",
@@ -820,7 +820,7 @@
         "b3": {
           "type": "card",
           "settings": {
-            "number": "03",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Defined formulas",
@@ -833,7 +833,7 @@
         "b4": {
           "type": "card",
           "settings": {
-            "number": "04",
+            "number": "",
             "kicker": "",
             "icon": "none",
             "title": "Full transparency",
