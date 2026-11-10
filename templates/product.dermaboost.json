@@ -91,8 +91,10 @@
     "definition": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "light",
-        "align": "left",
+        "color_scheme": "grey",
+        "align": "center",
+        "image_asset": "lifestyle-running-cycling-duo.webp",
+        "image_alt": "Runner and cyclist on a coastal road at golden hour",
         "width": "wide",
         "eyebrow": "",
         "heading": "Daily nutritional support for skin resilience.",

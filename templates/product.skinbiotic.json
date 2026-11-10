@@ -89,8 +89,10 @@
     "definition": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "light",
-        "align": "left",
+        "color_scheme": "grey",
+        "align": "center",
+        "image_asset": "lifestyle-outdoor-living.webp",
+        "image_alt": "Couple relaxing on a terrace by the sea at sunset",
         "width": "wide",
         "eyebrow": "",
         "heading": "A synbiotic for the gut-skin connection.",
