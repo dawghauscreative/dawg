@@ -149,16 +149,42 @@
       }
     },
     "antioxidant": {
-      "type": "rich-text",
+      "type": "flow-steps",
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "Vitamins",
+            "detail": "Vitamin C and niacinamide (vitamin B3)."
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Polyphenols",
+            "detail": "Quercetin, curcumin and olive leaf polyphenols, all plant compounds."
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "Carotenoid",
+            "detail": "Astaxanthin, a carotenoid pigment."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ],
       "settings": {
         "color_scheme": "green",
-        "align": "left",
-        "width": "wide",
         "eyebrow": "",
         "heading": "Oxidative stress is not one single pathway.",
-        "heading_tag": "h2",
-        "body": "<p>Reactive molecules are produced as part of normal metabolism and can also increase in response to environmental stress. The body relies on multiple antioxidant systems to maintain balance.†</p><p>That is one reason Dermaboost+ does not depend on a single antioxidant. Its formulation includes several chemically distinct compounds:</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>Different compounds can behave differently within cellular environments, which is the rationale for combining multiple nutritional and botanical sources rather than positioning one ingredient as a complete solution.</p>",
-        "quote": "Antioxidant support is part of normal nutritional physiology, not a promise to eliminate oxidative stress."
+        "body": "<p>Reactive molecules are produced as part of normal metabolism and can also increase in response to environmental stress. The body relies on multiple antioxidant systems to maintain balance.†</p><p>That is one reason Dermaboost+ does not depend on a single antioxidant. Its formula includes several chemically distinct groups of compounds.</p>",
+        "takeaway": "No single ingredient is positioned as a complete solution.",
+        "note": "Different compounds can behave differently within cellular environments. Antioxidant support is part of normal nutritional physiology, not a promise to eliminate oxidative stress."
       }
     },
     "formula": {
@@ -277,16 +303,41 @@
       }
     },
     "immune": {
-      "type": "rich-text",
+      "type": "flow-steps",
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "Vitamin D3",
+            "detail": "A fat-soluble vitamin with an established role in normal immune physiology."
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Vitamin C",
+            "detail": "A water-soluble vitamin with an established role in normal immune physiology."
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "Zinc",
+            "detail": "An essential mineral with an established role in normal immune physiology."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ],
       "settings": {
         "color_scheme": "light",
-        "align": "left",
-        "width": "wide",
         "eyebrow": "",
         "heading": "Skin is part of the immune system’s front line.",
-        "heading_tag": "h2",
-        "body": "<p>Skin is not simply a covering. It contains immune cells and participates in communication between the body and the outside environment. Normal immune function therefore matters to skin health.</p><p>Dermaboost+ includes nutrients with established roles in normal immune physiology, including:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li></ul><p>alongside antioxidant and botanical compounds selected for complementary nutritional support.†</p>",
-        "quote": "Supporting normal immune function is not the same as treating immune-mediated disease."
+        "body": "<p>Skin is not simply a covering. It contains immune cells and participates in communication between the body and the outside environment. Normal immune function therefore matters to skin health.</p><p>Dermaboost+ includes nutrients with established roles in normal immune physiology, alongside antioxidant and botanical compounds selected for complementary nutritional support.†</p>",
+        "note": "Supporting normal immune function is not the same as treating immune-mediated disease."
       }
     },
     "collagen": {

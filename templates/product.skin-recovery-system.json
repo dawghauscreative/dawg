@@ -322,15 +322,50 @@
       }
     },
     "microbiome": {
-      "type": "rich-text",
+      "type": "flow-steps",
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "Metabolites",
+            "detail": "Gut microorganisms produce compounds as they break down fiber and other food components."
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Barrier signaling",
+            "detail": "Microbes interact with the gut lining, the barrier between the gut and the rest of the body."
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "Nutrient processing",
+            "detail": "Gut microbes take part in breaking down and processing nutrients."
+          }
+        },
+        "b4": {
+          "type": "step",
+          "settings": {
+            "label": "Immune communication",
+            "detail": "A large share of the body's immune tissue sits along the digestive tract."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
       "settings": {
         "color_scheme": "light",
-        "align": "left",
-        "width": "wide",
         "eyebrow": "",
         "heading": "The microbiome does more than digest food.",
-        "heading_tag": "h2",
-        "body": "<p>Intestinal microorganisms interact with the body through:</p><ul><li>Metabolites</li><li>Barrier signaling</li><li>Nutrient processing</li><li>Immune communication</li></ul><p>Skinbiotic+ supports the microbial environment through prebiotic fiber and multiple probiotic organisms.† Dermaboost+ contributes nutrients associated with normal immune physiology.</p><p><em>Supporting normal immune function is not the same as treating an immune-mediated skin condition.</em></p><h3>Broader support beyond the microbiome.†</h3><p>Dermaboost+ expands the bundle beyond gut support through a combination of:†</p><ul><li>Vitamin C</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf polyphenols</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.†</p>"
+        "body": "<p>Intestinal microorganisms interact with the body through several pathways.</p>",
+        "takeaway": "Skinbiotic+ supports the microbial environment with prebiotic fiber and probiotics.†",
+        "note": "Dermaboost+ contributes nutrients associated with normal immune physiology. Supporting normal immune function is not the same as treating an immune-mediated skin condition."
       }
     },
     "formula": {
@@ -770,6 +805,44 @@
         "secondary_label": "Explore the science",
         "secondary_url": "/pages/science"
       }
+    },
+    "microbiome_more": {
+      "type": "flow-steps",
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "Vitamins",
+            "detail": "Vitamin C and niacinamide (vitamin B3)."
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Polyphenols",
+            "detail": "Quercetin, curcumin and olive leaf polyphenols, all plant compounds."
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "Carotenoid",
+            "detail": "Astaxanthin, a carotenoid pigment."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Broader support beyond the microbiome.†",
+        "body": "<p>Dermaboost+ expands the bundle beyond gut support through a combination of chemically different ingredients.†</p>",
+        "note": "These ingredients contribute different antioxidant and nutritional roles. The purpose is broader support for the normal biological systems involved in everyday skin resilience.†"
+      }
     }
   },
   "order": [
@@ -783,6 +856,7 @@
     "gutskin",
     "systemic",
     "microbiome",
+    "microbiome_more",
     "formula",
     "versus",
     "who",

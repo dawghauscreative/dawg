@@ -146,15 +146,56 @@
       "settings": {}
     },
     "whofor": {
-      "type": "rich-text",
+      "type": "flow-steps",
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "Know the system",
+            "detail": "Already understand Protect / Balance / Restore.†"
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Want all three",
+            "detail": "Want support across all three areas."
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "One routine",
+            "detail": "Prefer one comprehensive daily routine, and are comfortable taking multiple supplements consistently."
+          }
+        },
+        "b4": {
+          "type": "step",
+          "settings": {
+            "label": "Consolidate",
+            "detail": "May already use one or more Alchemia MD products, and want to consolidate into the broadest Alchemia MD bundle."
+          }
+        },
+        "b5": {
+          "type": "step",
+          "settings": {
+            "label": "Transparency",
+            "detail": "Value transparent ingredients and clearly defined formula roles."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
       "settings": {
         "color_scheme": "dark",
-        "align": "left",
-        "width": "wide",
         "eyebrow": "",
         "heading": "Tria Prima is for the customer who already understands the bundle.",
-        "heading_tag": "h2",
-        "body": "<p>It is best suited to customers who:</p><ul><li>Already understand Protect / Balance / Restore†</li><li>Want support across all three areas</li><li>Prefer one comprehensive daily routine</li><li>Are comfortable taking multiple supplements consistently</li><li>May already use one or more Alchemia MD products</li><li>Want to consolidate into the broadest Alchemia MD bundle</li><li>Value transparent ingredients and clearly defined formula roles</li></ul>"
+        "body": "<p>It is best suited to customers who fit this picture.</p>"
       }
     },
     "step1": {
@@ -247,28 +288,100 @@
       ]
     },
     "why": {
-      "type": "rich-text",
+      "type": "flow-steps",
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "Protect",
+            "detail": "Environmental support from UV Shield+."
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Balance",
+            "detail": "Gut-skin and microbiome support from Skinbiotic+.†"
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "Restore",
+            "detail": "Broader nutritional and normal immune support from Dermaboost+.†"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ],
       "settings": {
         "color_scheme": "light",
-        "align": "left",
-        "width": "wide",
         "eyebrow": "",
         "heading": "Different roles are more useful than redundant bottles.",
-        "heading_tag": "h2",
-        "body": "<p>Tria Prima is not about stacking more ingredients simply to make a bigger formula. The bundle is structured around three different support roles.</p><p><strong>Protect</strong> Environmental support.</p><p><strong>Balance</strong> Gut-skin and microbiome support.†</p><p><strong>Restore</strong> Broader nutritional and normal immune support.†</p><p><em>The value is in the combination of different roles, not in taking the greatest number of capsules possible.</em></p><h3>Skin health is connected to the rest of the body.</h3><p>Skin is not an isolated surface. Its biology is influenced by:</p><ul><li>Environmental exposure</li><li>Nutrient availability</li><li>Oxidative stress</li><li>Immune signaling</li><li>Microbiome-related pathways</li><li>Barrier function</li><li>Normal cellular renewal</li></ul><p>Tria Prima is the broadest expression of the Alchemia MD philosophy that skin should be supported as part of a larger biological system.†</p>"
+        "body": "<p>Tria Prima is not about stacking more ingredients simply to make a bigger formula. The bundle is structured around three different support roles.</p>",
+        "takeaway": "The value is in the combination of different roles, not the number of capsules."
       }
     },
     "environment": {
-      "type": "rich-text",
+      "type": "flow-steps",
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "UV Shield+",
+            "detail": "The primary environmental-support role in the bundle.†",
+            "kicker": "Protect"
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Vitamins",
+            "detail": "Vitamin D3, vitamin C and niacinamide (vitamin B3).",
+            "kicker": "Dermaboost+"
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "Mineral",
+            "detail": "Zinc, an essential mineral.",
+            "kicker": "Dermaboost+"
+          }
+        },
+        "b4": {
+          "type": "step",
+          "settings": {
+            "label": "Polyphenols",
+            "detail": "Quercetin, curcumin and olive leaf.",
+            "kicker": "Dermaboost+"
+          }
+        },
+        "b5": {
+          "type": "step",
+          "settings": {
+            "label": "Carotenoid",
+            "detail": "Astaxanthin.",
+            "kicker": "Dermaboost+"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
       "settings": {
         "color_scheme": "dark",
-        "align": "left",
-        "width": "wide",
         "eyebrow": "",
         "heading": "Support for life outdoors, and broader nutrition.",
-        "heading_tag": "h2",
-        "body": "<p>UV Shield+ provides the bundle’s primary environmental-support role.† Dermaboost+ contributes additional antioxidant and nutritional compounds.</p><p><em>Tria Prima does not replace sunscreen.</em></p><h3>Broader nutritional support.†</h3><p>Dermaboost+ adds:</p><ul><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf</li><li>Astaxanthin</li><li>Niacinamide</li></ul><p>These ingredients contribute nutritional, antioxidant, and normal immune-supportive roles.†</p>",
-        "quote": "Supporting normal immune function is not the same as treating autoimmune or inflammatory disease."
+        "body": "<p>UV Shield+ provides the bundle’s primary environmental-support role.† Dermaboost+ adds nutritional, antioxidant, and normal immune-supportive ingredients.†</p><p><em>Tria Prima does not replace sunscreen.</em></p>",
+        "note": "Supporting normal immune function is not the same as treating autoimmune or inflammatory disease."
       }
     },
     "gut": {
@@ -666,6 +779,60 @@
         "secondary_label": "Explore the science",
         "secondary_url": "/pages/science"
       }
+    },
+    "why_body": {
+      "type": "flow-steps",
+      "blocks": {
+        "b1": {
+          "type": "step",
+          "settings": {
+            "label": "Environment",
+            "detail": "Sun, heat, wind and pollution are part of daily life, and skin meets them first."
+          }
+        },
+        "b2": {
+          "type": "step",
+          "settings": {
+            "label": "Nutrients",
+            "detail": "Skin draws on the vitamins, minerals and other nutrients the body has available."
+          }
+        },
+        "b3": {
+          "type": "step",
+          "settings": {
+            "label": "Oxidative stress",
+            "detail": "Reactive molecules come from normal metabolism and can increase with environmental stress."
+          }
+        },
+        "b4": {
+          "type": "step",
+          "settings": {
+            "label": "Signaling",
+            "detail": "Immune signaling and microbiome-related pathways connect the gut, the immune system and skin."
+          }
+        },
+        "b5": {
+          "type": "step",
+          "settings": {
+            "label": "Barrier + renewal",
+            "detail": "Skin maintains its barrier and renews its cells continuously as part of normal function."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Skin health is connected to the rest of the body.",
+        "body": "<p>Skin is not an isolated surface. Its biology is influenced by several connected factors.</p>",
+        "note": "Tria Prima is the broadest expression of the Alchemia MD philosophy that skin should be supported as part of a larger biological system.†"
+      }
     }
   },
   "order": [
@@ -678,6 +845,7 @@
     "step3",
     "domains",
     "why",
+    "why_body",
     "gut",
     "environment",
     "ingredients",
