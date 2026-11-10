@@ -6,7 +6,7 @@
   assign shop_all_url = shop_all.url | default: routes.all_products_collection_url
 -%}
 
-{%- comment -%} Primary nav. Science is a plain link (client review Nov 7). About (Nov 9) holds Founder and Blog (the skin-edu blog). {%- endcomment -%}
+{%- comment -%} Primary nav. Science is a plain link (client review Nov 7). About (Nov 9) holds Founder and Blog (the blog blog). {%- endcomment -%}
 <header class="site-header" {{ section.shopify_attributes }}>
   <div class="container site-header__inner">
     <button class="icon-btn menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="MenuDrawer" aria-label="{{ 'general.menu' | t }}">
@@ -54,7 +54,7 @@
             <div class="nav__panel nav__panel--about">
               <ul>
                 <li><a href="/pages/founder">Founder</a></li>
-                <li><a href="{{ blogs['skin-edu'].url | default: '/blogs/skin-edu' }}">Blog</a></li>
+                <li><a href="{{ blogs['blog'].url | default: '/blogs/blog' }}">Blog</a></li>
               </ul>
             </div>
           </details>
@@ -104,7 +104,7 @@
           <span class="drawer__label">About</span>
           <ul>
             <li><a href="/pages/founder">Founder</a></li>
-            <li><a href="{{ blogs['skin-edu'].url | default: '/blogs/skin-edu' }}">Blog</a></li>
+            <li><a href="{{ blogs['blog'].url | default: '/blogs/blog' }}">Blog</a></li>
           </ul>
         </li>
         <li><a href="/pages/faq">FAQ</a></li>

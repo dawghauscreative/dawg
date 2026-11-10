@@ -34,7 +34,7 @@
         "eyebrow": "",
         "heading": "What Is Internal Skin Health?",
         "deck": "Topical skincare is only one part of the picture. Learn how nutrition, oxidative stress, the microbiome, immune signaling, and the environment interact with the skin from within.",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "article": "what-is-internal-skin-health",
         "cta_label": "Read the article",
         "image": "shopify://shop_images/alchemia-brand-guidelines-p033-image03_7b4538b1-d652-4fe6-b39e-449fb41b8e76.png"
@@ -106,7 +106,7 @@
         "eyebrow": "",
         "heading": "Explore the blog",
         "body": "",
-        "blog_handle": "skin-edu"
+        "blog_handle": "blog"
       },
       "disabled": true
     },
@@ -120,7 +120,7 @@
             "category": "",
             "title": "What Is Internal Skin Defense?",
             "teaser": "Skin health is shaped by more than what happens on the surface.",
-            "article": "what-is-internal-skin-defense-alchemia-md",
+            "article": "what-is-internal-skin-defense",
             "url": "",
             "cta_label": "Read the guide"
           }
@@ -162,7 +162,7 @@
         "heading": "New on the blog",
         "body": "",
         "columns": "3",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "",
         "button_url": ""
       },
@@ -178,7 +178,7 @@
             "category": "01",
             "title": "What Is Internal Skin Defense?",
             "teaser": "Why skin health is shaped by more than the surface, and how internal support, sun habits and consistency fit together.",
-            "article": "what-is-internal-skin-defense-alchemia-md",
+            "article": "what-is-internal-skin-defense",
             "url": "",
             "cta_label": "Read article"
           }
@@ -233,7 +233,7 @@
         "heading": "New here? Start here.",
         "body": "<p>Four short reads, in order. Together they explain how Alchemia MD thinks about skin health.</p>",
         "columns": "4",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "",
         "button_url": ""
       }
@@ -355,9 +355,9 @@
         "heading": "Understand the environment your skin lives in.",
         "body": "",
         "columns": "4",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "Explore Sun + Environment",
-        "button_url": "/blogs/skin-edu/tagged/sun-environment"
+        "button_url": "/blogs/blog/tagged/sun-environment"
       },
       "disabled": true
     },
@@ -491,9 +491,9 @@
         "heading": "Your skin does not exist in isolation.",
         "body": "",
         "columns": "4",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "Explore Gut + Skin",
-        "button_url": "/blogs/skin-edu/tagged/gut-skin"
+        "button_url": "/blogs/blog/tagged/gut-skin"
       },
       "disabled": true
     },
@@ -819,9 +819,9 @@
         "heading": "Questions you’d ask your dermatologist.",
         "body": "",
         "columns": "4",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "Read Ask the Derm",
-        "button_url": "/blogs/skin-edu/tagged/ask-the-derm"
+        "button_url": "/blogs/blog/tagged/ask-the-derm"
       },
       "disabled": true
     },
@@ -942,9 +942,9 @@
         "heading": "Research, translated.",
         "body": "",
         "columns": "4",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "Understand the research",
-        "button_url": "/blogs/skin-edu/tagged/research-explained"
+        "button_url": "/blogs/blog/tagged/research-explained"
       },
       "disabled": true
     },
@@ -1000,7 +1000,7 @@
         "heading": "See how the science informs the formulas.",
         "body": "",
         "columns": "3",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "",
         "button_url": ""
       }
@@ -1122,9 +1122,9 @@
         "heading": "Skin health for life outdoors.",
         "body": "",
         "columns": "4",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "Explore outdoor life",
-        "button_url": "/blogs/skin-edu/tagged/outdoor-life"
+        "button_url": "/blogs/blog/tagged/outdoor-life"
       },
       "disabled": true
     },
@@ -1206,7 +1206,7 @@
         "heading": "Worth reading.",
         "body": "",
         "columns": "3",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "",
         "button_url": ""
       },

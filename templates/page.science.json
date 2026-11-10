@@ -953,7 +953,7 @@
         "eyebrow": "",
         "heading": "Blog: explore by topic",
         "body": "",
-        "blog_handle": "skin-edu"
+        "blog_handle": "blog"
       }
     },
     "edu_latest": {
@@ -966,7 +966,7 @@
             "category": "",
             "title": "What Is Internal Skin Defense?",
             "teaser": "Skin health is shaped by more than what happens on the surface.",
-            "article": "what-is-internal-skin-defense-alchemia-md",
+            "article": "what-is-internal-skin-defense",
             "url": "",
             "cta_label": "Read the guide"
           }
@@ -1008,7 +1008,7 @@
         "heading": "New on the blog",
         "body": "",
         "columns": "3",
-        "blog_handle": "skin-edu",
+        "blog_handle": "blog",
         "button_label": "",
         "button_url": ""
       }

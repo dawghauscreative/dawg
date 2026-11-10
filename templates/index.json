@@ -222,7 +222,7 @@
         "body": "<h4>Skin is a living, dynamic system.</h4><h4>It responds to what happens outside the body, but also to nutrition, oxidative stress, immune signaling, the microbiome, and daily lifestyle.</h4><h4>Alchemia MD was built around a simple idea:</h4><h4><strong>Support skin from the inside out.†</strong></h4>",
         "quote": "",
         "button_label": "What is internal skin defense?",
-        "button_url": "/blogs/skin-edu/what-is-internal-skin-defense-alchemia-md"
+        "button_url": "/blogs/blog/what-is-internal-skin-defense"
       }
     },
     "intro_video": {
@@ -426,7 +426,7 @@
             "asset": "lifestyle-skinbiotic-cliffs.webp",
             "label": "Golf",
             "caption": "For the long round.",
-            "url": "/blogs/skin-edu/supporting-skin-through-daily-sun-exposure",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
             "link_label": "Sun + skin: read more"
           }
         },
@@ -437,7 +437,7 @@
             "asset": "lifestyle-uvshield-dermaboost-tennis.webp",
             "label": "Tennis",
             "caption": "For hours on court.",
-            "url": "/blogs/skin-edu/supporting-skin-through-daily-sun-exposure",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
             "link_label": "Sun + skin: read more"
           }
         },
@@ -448,7 +448,7 @@
             "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp",
             "label": "Sailing",
             "caption": "For long days on the water.",
-            "url": "/blogs/skin-edu/supporting-skin-through-daily-sun-exposure",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
             "link_label": "Sun + skin: read more"
           }
         },
@@ -458,7 +458,7 @@
             "asset": "lifestyle-running-cycling-duo.webp",
             "label": "Running + Cycling",
             "caption": "For miles under open sky.",
-            "url": "/blogs/skin-edu/supporting-skin-through-daily-sun-exposure",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
             "link_label": "Sun + skin: read more"
           }
         },
@@ -469,7 +469,7 @@
             "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
             "label": "Beach + Travel",
             "caption": "For the places worth going.",
-            "url": "/blogs/skin-edu/supporting-skin-through-daily-sun-exposure",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
             "link_label": "Sun + skin: read more"
           }
         },
@@ -479,7 +479,7 @@
             "asset": "lifestyle-outdoor-living.webp",
             "label": "Outdoor living",
             "caption": "For ordinary days spent outside.",
-            "url": "/blogs/skin-edu/supporting-skin-through-daily-sun-exposure",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure",
             "link_label": "Sun + skin: read more"
           }
         }
@@ -779,7 +779,7 @@
             "title": "What Is Internal Skin Defense?",
             "text": "Skin health is shaped by more than what happens on the surface.",
             "asset": "edu-card-internal-skin-defense-couple.webp",
-            "link": "/blogs/skin-edu/what-is-internal-skin-defense-alchemia-md"
+            "link": "/blogs/blog/what-is-internal-skin-defense"
           }
         },
         "b2": {
@@ -789,7 +789,7 @@
             "text": "How the intestinal environment and skin communicate.",
             "image": "shopify://shop_images/three-women-lying-down-in-a-studio-2026-10-06-20-13-22-utc.jpg",
             "asset": "edu-card-gut-skin-axis.webp",
-            "link": "/blogs/skin-edu/what-is-the-gut-skin-axis"
+            "link": "/blogs/blog/what-is-the-gut-skin-axis"
           }
         },
         "b3": {
@@ -798,7 +798,7 @@
             "title": "Why Consistency Matters in Skin Health",
             "text": "Understanding renewal, daily habits, and realistic expectations.",
             "asset": "edu-card-consistency-palm.webp",
-            "link": "/blogs/skin-edu/why-consistency-matters-in-skin-health"
+            "link": "/blogs/blog/why-consistency-matters-in-skin-health"
           }
         }
       },
