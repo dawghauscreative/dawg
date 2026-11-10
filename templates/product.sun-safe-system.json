@@ -88,22 +88,15 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_SK_EDU_03_4x5_c0b4dc6d-cce8-4d00-ac97-d1a81051d78d.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_SK_EDU_04_4x5_b0f5ca95-5fd3-4801-b51a-4adbf0c02d76.png, bundle-sun-safe-outdoor.webp, bundle-sun-safe-everyday-care.webp, lifestyle-uvshield-skinbiotic-sailboat.webp",
-        "color_scheme": "green",
         "lead_asset": "product-3d-uv-shield-skinbiotic.webp",
         "angle_assets": "product-angle-sun-safe-back.webp, product-angle-uv-shield-facts.webp, product-angle-skinbiotic-facts.webp",
-        "media_order": "99"
+        "media_order": "99",
+        "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_SK_EDU_03_4x5_c0b4dc6d-cce8-4d00-ac97-d1a81051d78d.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_SK_EDU_04_4x5_b0f5ca95-5fd3-4801-b51a-4adbf0c02d76.png, bundle-sun-safe-outdoor.webp, bundle-sun-safe-everyday-care.webp, lifestyle-uvshield-skinbiotic-sailboat.webp",
+        "color_scheme": "green"
       }
     },
     "definition": {
       "type": "split-compare",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Two complementary forms of internal skin support.",
-        "body": "<p>The Outdoor Duo combines two formulas with different primary roles.</p><p>It is not built around taking more products for the sake of taking more products. It is built around combining two different biological support strategies in one routine.</p>",
-        "center": "Protect the routine. Balance the system."
-      },
       "blocks": {
         "b1": {
           "type": "side",
@@ -125,7 +118,14 @@
       "block_order": [
         "b1",
         "b2"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Two complementary forms of internal skin support.",
+        "body": "<p>The Outdoor Duo combines two formulas with different primary roles.</p><p>It is not built around taking more products for the sake of taking more products. It is built around combining two different biological support strategies in one routine.</p>",
+        "center": "Protect the routine. Balance the system."
+      }
     },
     "video": {
       "type": "video-slot",
@@ -133,13 +133,6 @@
     },
     "why": {
       "type": "flow-steps",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Why pair UV Shield+ with Skinbiotic+?",
-        "body": "<p>UV Shield+ primarily targets nutritional and antioxidant pathways relevant to environmental stress. Skinbiotic+ primarily targets the gut and microbial environment.</p><p>These are different starting points, which is exactly why the pairing makes sense. The two products operate through different upstream mechanisms that may converge on broader systemic signaling.</p>",
-        "note": "This diagram represents formulation rationale. It does not mean the finished bundle has been clinically tested as a combined regimen."
-      },
       "blocks": {
         "b1": {
           "type": "step",
@@ -179,7 +172,14 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "Why pair UV Shield+ with Skinbiotic+?",
+        "body": "<p>UV Shield+ primarily targets nutritional and antioxidant pathways relevant to environmental stress. Skinbiotic+ primarily targets the gut and microbial environment.</p><p>These are different starting points, which is exactly why the pairing makes sense. The two products operate through different upstream mechanisms that may converge on broader systemic signaling.</p>",
+        "note": "This diagram represents formulation rationale. It does not mean the finished bundle has been clinically tested as a combined regimen."
+      }
     },
     "step1": {
       "type": "feature-split",
@@ -189,11 +189,11 @@
         "eyebrow": "",
         "heading": "UV Shield+",
         "subhead": "Daily support for active, sun-ready skin†",
-        "product": "uv-shield",
-        "asset": "lifestyle-uvshield-rocks.webp",
-        "ratio": "4x5",
         "body": "<p>UV Shield+ combines five ingredients selected for complementary nutritional and antioxidant roles:</p><ul><li>Niacinamide</li><li>Polypodium leucotomos</li><li>EGCG</li><li>Trans-resveratrol</li><li>Spirulina</li></ul><p>The formula’s strength lies in covering several aspects of environmental and oxidative-stress biology rather than depending on one single mechanism.</p><p><strong>Key support areas:</strong> environmental stress, antioxidant support, skin resilience, outdoor lifestyle support.†</p>",
-        "primary_label": "Explore UV Shield+"
+        "product": "uv-shield",
+        "primary_label": "Explore UV Shield+",
+        "asset": "lifestyle-uvshield-rocks.webp",
+        "ratio": "4x5"
       }
     },
     "step2": {
@@ -204,22 +204,15 @@
         "eyebrow": "",
         "heading": "Skinbiotic+",
         "subhead": "Daily probiotic for gut and skin health",
-        "product": "skinbiotic",
-        "asset": "lifestyle-skinbiotic-cliffs.webp",
-        "ratio": "4x5",
         "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection.</p><p>The formulation rationale focuses on prebiotic support, multi-organism microbiome support, and complementary microbial roles.†</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.†</p>",
-        "primary_label": "Explore Skinbiotic+"
+        "product": "skinbiotic",
+        "primary_label": "Explore Skinbiotic+",
+        "asset": "lifestyle-skinbiotic-cliffs.webp",
+        "ratio": "4x5"
       }
     },
     "layers": {
       "type": "layer-stack",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Skin support works in layers.",
-        "body": "<p>A complete routine has more than one layer.</p>",
-        "callout": "The Outdoor Duo is not a sunscreen and does not replace sun protection."
-      },
       "blocks": {
         "b1": {
           "type": "layer",
@@ -259,7 +252,14 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "Skin support works in layers.",
+        "body": "<p>A complete routine has more than one layer.</p>",
+        "callout": "The Outdoor Duo is not a sunscreen and does not replace sun protection."
+      }
     },
     "environment": {
       "type": "rich-text",
@@ -276,13 +276,6 @@
     },
     "gut": {
       "type": "flow-steps",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "What is the gut-skin connection?",
-        "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
-        "takeaway": "Skinbiotic+ is designed to support the gut side of that conversation.†"
-      },
       "blocks": {
         "b1": {
           "type": "step",
@@ -326,15 +319,17 @@
         "b3",
         "b4",
         "b5"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "",
+        "heading": "What is the gut-skin connection?",
+        "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
+        "takeaway": "Skinbiotic+ is designed to support the gut side of that conversation.†"
+      }
     },
     "formula": {
       "type": "split-compare",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Two formulas. Complementary roles."
-      },
       "blocks": {
         "b1": {
           "type": "side",
@@ -358,17 +353,15 @@
       "block_order": [
         "b1",
         "b2"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Two formulas. Complementary roles."
+      }
     },
     "who": {
       "type": "lifestyle-strip",
-      "settings": {
-        "color_scheme": "light",
-        "columns": "3",
-        "eyebrow": "",
-        "heading": "Designed for people who spend time in the sun.",
-        "statement": "The Outdoor Duo is not about avoiding the sun. It is about supporting your skin while continuing to live the life you enjoy.†"
-      },
       "blocks": {
         "b1": {
           "type": "image",
@@ -400,9 +393,9 @@
         "b4": {
           "type": "image",
           "settings": {
+            "asset": "lifestyle-running-cycling-duo.webp",
             "label": "Running + cycling",
-            "caption": "Consistent outdoor training.",
-            "asset": "lifestyle-running-cycling-duo.webp"
+            "caption": "Consistent outdoor training."
           }
         },
         "b5": {
@@ -417,9 +410,9 @@
         "b6": {
           "type": "image",
           "settings": {
+            "asset": "lifestyle-outdoor-living.webp",
             "label": "Everyday outdoor life",
-            "caption": "Walking, gardening, commuting, dining, and time outside.",
-            "asset": "lifestyle-outdoor-living.webp"
+            "caption": "Walking, gardening, commuting, dining, and time outside."
           }
         }
       },
@@ -430,17 +423,17 @@
         "b4",
         "b5",
         "b6"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Designed for people who spend time in the sun.",
+        "columns": "3",
+        "statement": "The Outdoor Duo is not about avoiding the sun. It is about supporting your skin while continuing to live the life you enjoy.†"
+      }
     },
     "supports": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "heading": "Four areas of daily support.",
-        "columns": "4",
-        "show_images": false,
-        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -476,50 +469,48 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "heading": "Four areas of daily support.",
+        "columns": "4",
+        "show_images": false,
+        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
+      }
     },
     "research": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Why these two formulas?",
-        "columns": "4",
-        "show_images": false,
-        "button_label": "Explore the Outdoor Duo science",
-        "button_url": "/pages/science"
-      },
       "blocks": {
         "b1": {
           "type": "card",
           "settings": {
             "title": "Niacinamide + Polypodium",
-            "study": "nestor-polypodium-rct",
-            "text": "<p>Research relevant to environmental and UV-response biology.</p>"
+            "text": "<p>Research relevant to environmental and UV-response biology.</p>",
+            "study": "nestor-polypodium-rct"
           }
         },
         "b2": {
           "type": "card",
           "settings": {
             "title": "EGCG + resveratrol",
-            "study": "rao-resveratrol-2025",
-            "text": "<p>Polyphenol antioxidant and cell-signaling research.</p>"
+            "text": "<p>Polyphenol antioxidant and cell-signaling research.</p>",
+            "study": "rao-resveratrol-2025"
           }
         },
         "b3": {
           "type": "card",
           "settings": {
             "title": "Synbiotics",
-            "study": "lee-hy7714-2015",
-            "text": "<p>Research around prebiotic and probiotic support.</p>"
+            "text": "<p>Research around prebiotic and probiotic support.</p>",
+            "study": "lee-hy7714-2015"
           }
         },
         "b4": {
           "type": "card",
           "settings": {
             "title": "Gut-skin axis",
-            "study": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019",
-            "text": "<p>Research on microbiome-skin communication.</p>"
+            "text": "<p>Research on microbiome-skin communication.</p>",
+            "study": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019"
           }
         }
       },
@@ -528,7 +519,16 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Why these two formulas?",
+        "columns": "4",
+        "show_images": false,
+        "button_label": "Explore the Outdoor Duo science",
+        "button_url": "/pages/science"
+      }
     },
     "claims": {
       "type": "science-boundaries",
@@ -554,16 +554,6 @@
     },
     "compare": {
       "type": "compare-table",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Is Outdoor Duo the right bundle for you?",
-        "col_1": "Roles",
-        "col_2": "Includes",
-        "col_3": "Best fit",
-        "button_label": "Compare all bundles",
-        "button_url": "/pages/bundles"
-      },
       "blocks": {
         "b1": {
           "type": "row",
@@ -607,15 +597,20 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "Is Outdoor Duo the right bundle for you?",
+        "button_label": "Compare all bundles",
+        "button_url": "/pages/bundles",
+        "col_1": "Roles",
+        "col_2": "Includes",
+        "col_3": "Best fit"
+      }
     },
     "upgrade": {
       "type": "start-paths",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Build around your priorities."
-      },
       "blocks": {
         "b1": {
           "type": "path",
@@ -646,7 +641,12 @@
         "b1",
         "b2",
         "b3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Build around your priorities."
+      }
     },
     "reviews": {
       "type": "pdp-reviews",
@@ -657,12 +657,6 @@
     },
     "faq": {
       "type": "pdp-faq",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Frequently asked questions",
-        "heading_tag": "h2"
-      },
       "blocks": {
         "b1": {
           "type": "item",
@@ -738,14 +732,20 @@
         "b7",
         "b8",
         "b9"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading_tag": "h2",
+        "heading": "Frequently asked questions"
+      }
     },
     "compliance": {
       "type": "compliance-notice",
       "settings": {
-        "color_scheme": "dark",
+        "extra_line": "The Outdoor Duo is not a sunscreen and does not replace sun protection.",
         "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
-        "extra_line": "The Outdoor Duo is not a sunscreen and does not replace sun protection."
+        "color_scheme": "dark"
       }
     },
     "final": {

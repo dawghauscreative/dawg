@@ -135,7 +135,7 @@
       "type": "featured-buy-box",
       "blocks": {
         "supr_bundles_subscriptions_product_block_RBNBmy": {
-          "type": "shopify://apps/supr-bundles-subscriptions/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
+          "type": "shopify://apps/supr-bundle-subscription-app/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
           "settings": {
             "product": "{{section.settings.product}}"
           }

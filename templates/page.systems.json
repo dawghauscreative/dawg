@@ -29,13 +29,6 @@
     },
     "framework": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Three roles. Four ways to build your routine.",
-        "columns": "3",
-        "show_images": false
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -66,20 +59,17 @@
         "b1",
         "b2",
         "b3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Three roles. Four ways to build your routine.",
+        "columns": "3",
+        "show_images": false
+      }
     },
     "selector": {
       "type": "product-selector",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "Choose your plan",
-        "card_columns": "2",
-        "media_ratio": "16x9",
-        "show_tagline": false,
-        "plan_heading": "",
-        "empty_text": "Select a bundle above to view purchase options."
-      },
       "blocks": {
         "b1": {
           "type": "formula",
@@ -151,19 +141,20 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "",
+        "heading": "Choose your plan",
+        "card_columns": "2",
+        "media_ratio": "16x9",
+        "show_tagline": false,
+        "plan_heading": "",
+        "empty_text": "Select a bundle above to view purchase options."
+      }
     },
     "compare": {
       "type": "compare-table",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Which bundle fits your routine?",
-        "col_1": "Roles",
-        "col_2": "Includes",
-        "col_3": "Primary focus",
-        "style": "cards"
-      },
       "blocks": {
         "b1": {
           "type": "row",
@@ -211,7 +202,16 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "style": "cards",
+        "eyebrow": "",
+        "heading": "Which bundle fits your routine?",
+        "col_1": "Roles",
+        "col_2": "Includes",
+        "col_3": "Primary focus"
+      }
     },
     "edu_sun_safe": {
       "type": "feature-split",
@@ -220,12 +220,12 @@
         "image_side": "right",
         "eyebrow": "",
         "heading": "Outdoor Duo",
+        "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+</p><h3>What each product contributes</h3><p><strong>UV Shield+</strong> Environmental and antioxidant support for skin exposed to life outdoors.†</p><p><strong>Skinbiotic+</strong> Synbiotic support for gut health and the gut-skin connection.†</p><h3>Why combine them?</h3><p>The pair works through different upstream mechanisms: UV Shield+ emphasizes environmental and oxidative pathways, while Skinbiotic+ emphasizes the intestinal microbial environment.</p><h3>Best for</h3><p>People who spend significant time outdoors and want to pair environmental support with gut-skin balance.†</p>",
         "product": "outdoor-duo",
+        "primary_label": "Explore Outdoor Duo",
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
-        "light_panel": true,
-        "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+</p><h3>What each product contributes</h3><p><strong>UV Shield+</strong> Environmental and antioxidant support for skin exposed to life outdoors.†</p><p><strong>Skinbiotic+</strong> Synbiotic support for gut health and the gut-skin connection.†</p><h3>Why combine them?</h3><p>The pair works through different upstream mechanisms: UV Shield+ emphasizes environmental and oxidative pathways, while Skinbiotic+ emphasizes the intestinal microbial environment.</p><h3>Best for</h3><p>People who spend significant time outdoors and want to pair environmental support with gut-skin balance.†</p>",
-        "primary_label": "Explore Outdoor Duo"
+        "light_panel": true
       }
     },
     "edu_recovery": {
@@ -235,12 +235,12 @@
         "image_side": "left",
         "eyebrow": "",
         "heading": "Balance Duo",
+        "body": "<p><strong>Includes</strong> Skinbiotic+ + Dermaboost+</p><h3>What each product contributes</h3><p><strong>Skinbiotic+</strong> Gut and microbiome support.†</p><p><strong>Dermaboost+</strong> Antioxidant, nutritional, and normal immune support.†</p><h3>Why combine them?</h3><p>This combination is a complementary gut-to-systemic strategy: one formula works primarily at the gut and microbial interface while the other contributes broader nutritional and systemic support.†</p><h3>Best for</h3><p>Customers who want gut-skin balance plus broader daily nutritional support.†</p>",
         "product": "balance-duo",
+        "primary_label": "Explore Balance Duo",
         "asset": "system-skin-recovery.webp",
         "ratio": "16x9",
-        "light_panel": true,
-        "body": "<p><strong>Includes</strong> Skinbiotic+ + Dermaboost+</p><h3>What each product contributes</h3><p><strong>Skinbiotic+</strong> Gut and microbiome support.†</p><p><strong>Dermaboost+</strong> Antioxidant, nutritional, and normal immune support.†</p><h3>Why combine them?</h3><p>This combination is a complementary gut-to-systemic strategy: one formula works primarily at the gut and microbial interface while the other contributes broader nutritional and systemic support.†</p><h3>Best for</h3><p>Customers who want gut-skin balance plus broader daily nutritional support.†</p>",
-        "primary_label": "Explore Balance Duo"
+        "light_panel": true
       }
     },
     "edu_resilience": {
@@ -250,12 +250,12 @@
         "image_side": "right",
         "eyebrow": "",
         "heading": "Sun Resilience Duo",
+        "body": "<p><strong>Includes</strong> UV Shield+ + Dermaboost+</p><h3>What each product contributes</h3><p><strong>UV Shield+</strong> Environmental and UV-related support.†</p><p><strong>Dermaboost+</strong> Broader antioxidant, nutritional, and normal immune support.†</p><h3>Why combine them?</h3><p>This is the pairing with the strongest overlap in oxidative-pathway support, while the two formulas keep different primary roles.†</p><h3>Best for</h3><p>Customers with active outdoor lifestyles who want environmental support plus broader nutritional resilience.†</p>",
         "product": "sun-resilience-duo",
+        "primary_label": "Explore Sun Resilience Duo",
         "asset": "system-sun-resilience.webp",
         "ratio": "16x9",
-        "light_panel": true,
-        "body": "<p><strong>Includes</strong> UV Shield+ + Dermaboost+</p><h3>What each product contributes</h3><p><strong>UV Shield+</strong> Environmental and UV-related support.†</p><p><strong>Dermaboost+</strong> Broader antioxidant, nutritional, and normal immune support.†</p><h3>Why combine them?</h3><p>This is the pairing with the strongest overlap in oxidative-pathway support, while the two formulas keep different primary roles.†</p><h3>Best for</h3><p>Customers with active outdoor lifestyles who want environmental support plus broader nutritional resilience.†</p>",
-        "primary_label": "Explore Sun Resilience Duo"
+        "light_panel": true
       }
     },
     "edu_complete": {
@@ -265,22 +265,16 @@
         "image_side": "left",
         "eyebrow": "",
         "heading": "Tria Prima",
+        "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+ + Dermaboost+</p><h3>What the bundle covers</h3><p><strong>Protect</strong> Environmental and antioxidant support.†</p><p><strong>Balance</strong> Gut-skin and microbiome support.†</p><p><strong>Restore</strong> Nutritional, antioxidant, and normal immune support.†</p><h3>Why combine all three?</h3><p>The three formulas are organized across three broad domains, each with a primary role and some complementary overlap:</p><ul><li>Environmental and UV stress</li><li>The gut microbial environment</li><li>Systemic oxidative and immune-related pathways</li></ul><h3>Important positioning</h3><p>This is not the universal starting point. It is the most comprehensive routine for customers who already know they want support across all three Alchemia MD roles.</p>",
         "product": "tria-prima",
+        "primary_label": "Explore Tria Prima",
         "asset": "system-complete.webp",
         "ratio": "16x9",
-        "light_panel": true,
-        "body": "<p><strong>Includes</strong> UV Shield+ + Skinbiotic+ + Dermaboost+</p><h3>What the bundle covers</h3><p><strong>Protect</strong> Environmental and antioxidant support.†</p><p><strong>Balance</strong> Gut-skin and microbiome support.†</p><p><strong>Restore</strong> Nutritional, antioxidant, and normal immune support.†</p><h3>Why combine all three?</h3><p>The three formulas are organized across three broad domains, each with a primary role and some complementary overlap:</p><ul><li>Environmental and UV stress</li><li>The gut microbial environment</li><li>Systemic oxidative and immune-related pathways</li></ul><h3>Important positioning</h3><p>This is not the universal starting point. It is the most comprehensive routine for customers who already know they want support across all three Alchemia MD roles.</p>",
-        "primary_label": "Explore Tria Prima"
+        "light_panel": true
       }
     },
     "finder": {
       "type": "start-paths",
-      "settings": {
-        "color_scheme": "green",
-        "columns": "2",
-        "eyebrow": "",
-        "heading": "Not sure which bundle to choose?"
-      },
       "blocks": {
         "b1": {
           "type": "path",
@@ -320,7 +314,13 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "columns": "2",
+        "eyebrow": "",
+        "heading": "Not sure which bundle to choose?"
+      }
     },
     "why": {
       "type": "rich-text",
@@ -337,12 +337,6 @@
     },
     "directions": {
       "type": "system-directions",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "A bundle is still a daily routine.",
-        "body": "<p>Each product is taken according to its own label directions.</p>"
-      },
       "blocks": {
         "b1": {
           "type": "product",
@@ -367,7 +361,13 @@
         "b1",
         "b2",
         "b3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "A bundle is still a daily routine.",
+        "body": "<p>Each product is taken according to its own label directions.</p>"
+      }
     },
     "timeline": {
       "type": "renewal-timeline",
@@ -377,15 +377,6 @@
     },
     "science": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Built around complementary biology.",
-        "columns": "4",
-        "show_images": false,
-        "button_label": "Explore the science",
-        "button_url": "/pages/science"
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -421,16 +412,19 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Built around complementary biology.",
+        "columns": "4",
+        "show_images": false,
+        "button_label": "Explore the science",
+        "button_url": "/pages/science"
+      }
     },
     "faq": {
       "type": "pdp-faq",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Frequently asked questions",
-        "heading_tag": "h2"
-      },
       "blocks": {
         "b1": {
           "type": "item",
@@ -482,14 +476,20 @@
         "b4",
         "b5",
         "b6"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading_tag": "h2",
+        "heading": "Frequently asked questions"
+      }
     },
     "compliance": {
       "type": "compliance-notice",
       "settings": {
-        "color_scheme": "dark",
+        "extra_line": "Outdoor Duo, Sun Resilience Duo and Tria Prima are not sunscreen and do not replace sun protection.",
         "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
-        "extra_line": "Outdoor Duo, Sun Resilience Duo and Tria Prima are not sunscreen and do not replace sun protection."
+        "color_scheme": "dark"
       }
     },
     "final": {

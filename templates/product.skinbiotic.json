@@ -79,11 +79,11 @@
         "fda"
       ],
       "settings": {
-        "color_scheme": "green",
         "lead_asset": "product-3d-skinbiotic-portrait.webp",
-        "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_01_Organic_inulin_4x5_c2eef458-40e5-4333-833e-a591d8364573.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_02_Lactobacillus_plantarum_4x5_b0df6284-9876-4ddf-8301-61d8aee491fc.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_06_Akkermansia_muciniphila_4x5_060fde1c-8f72-40e0-98c0-a82eea224ba6.png, lifestyle-skinbiotic-cliffs.webp",
         "angle_assets": "product-angle-skinbiotic-back.webp, product-angle-skinbiotic-facts.webp",
-        "media_order": "99"
+        "media_order": "99",
+        "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_01_Organic_inulin_4x5_c2eef458-40e5-4333-833e-a591d8364573.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_02_Lactobacillus_plantarum_4x5_b0df6284-9876-4ddf-8301-61d8aee491fc.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_06_Akkermansia_muciniphila_4x5_060fde1c-8f72-40e0-98c0-a82eea224ba6.png, lifestyle-skinbiotic-cliffs.webp",
+        "color_scheme": "green"
       }
     },
     "definition": {
@@ -105,13 +105,6 @@
     },
     "axis": {
       "type": "flow-steps",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "What is the gut-skin connection?",
-        "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
-        "takeaway": "Skinbiotic+ is designed to support the gut side of that conversation.†"
-      },
       "blocks": {
         "b1": {
           "type": "step",
@@ -155,17 +148,17 @@
         "b3",
         "b4",
         "b5"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "What is the gut-skin connection?",
+        "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
+        "takeaway": "Skinbiotic+ is designed to support the gut side of that conversation.†"
+      }
     },
     "synbiotic": {
       "type": "split-compare",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "What makes it a synbiotic?",
-        "body": "<p>A synbiotic pairs a prebiotic with probiotics. Each side has a different job, and the formula is built around having both.</p>",
-        "center": "Prebiotic + probiotic = synbiotic."
-      },
       "blocks": {
         "b1": {
           "type": "side",
@@ -187,16 +180,17 @@
       "block_order": [
         "b1",
         "b2"
-      ]
-    },
-    "formula": {
-      "type": "product-actives",
+      ],
       "settings": {
         "color_scheme": "green",
         "eyebrow": "",
-        "heading": "Ingredients",
-        "body": "<p>Organic inulin at 500 mg and a 215 mg probiotic blend, as listed on the label.</p>"
-      },
+        "heading": "What makes it a synbiotic?",
+        "body": "<p>A synbiotic pairs a prebiotic with probiotics. Each side has a different job, and the formula is built around having both.</p>",
+        "center": "Prebiotic + probiotic = synbiotic."
+      }
+    },
+    "formula": {
+      "type": "product-actives",
       "blocks": {
         "b1": {
           "type": "active",
@@ -204,8 +198,8 @@
             "name": "Organic inulin",
             "amount": "500 mg per serving",
             "role": "Prebiotic",
-            "slide_set": "",
             "text": "<p>A fermentable fiber that serves as food for certain intestinal microorganisms. It forms the prebiotic foundation of the formula.</p>",
+            "slide_set": "",
             "link_label": "See the research",
             "link_url": "/pages/science#inulin"
           }
@@ -216,8 +210,8 @@
             "name": "Lactobacillus plantarum",
             "amount": "Part of the 215 mg probiotic blend",
             "role": "Probiotic",
-            "slide_set": "",
             "text": "<p>A widely studied species. Research is strain-specific, so findings on one strain are not assumed to apply to every L. plantarum.</p>",
+            "slide_set": "",
             "link_label": "See the research",
             "link_url": "/pages/science#lactobacillus"
           }
@@ -229,9 +223,9 @@
             "amount": "Part of the 215 mg probiotic blend",
             "role": "Probiotic",
             "text": "<p>A Bifidobacterium species included for its role in the intestinal microbial community alongside the other organisms.</p>",
+            "slide_set": "",
             "link_label": "See the research",
-            "link_url": "/pages/science#bifidobacterium",
-            "slide_set": ""
+            "link_url": "/pages/science#bifidobacterium"
           }
         },
         "b4": {
@@ -240,8 +234,8 @@
             "name": "Lactobacillus rhamnosus",
             "amount": "Part of the 215 mg probiotic blend",
             "role": "Probiotic",
-            "slide_set": "",
             "text": "<p>A Lactobacillus species studied across many gut-health contexts. Different strains behave differently.</p>",
+            "slide_set": "",
             "link_label": "See the research",
             "link_url": "/pages/science#lactobacillus"
           }
@@ -252,8 +246,8 @@
             "name": "Bifidobacterium bifidum",
             "amount": "Part of the 215 mg probiotic blend",
             "role": "Probiotic",
-            "slide_set": "",
             "text": "<p>A Bifidobacterium species that is part of the human intestinal community, included to broaden the range of organisms in the formula.</p>",
+            "slide_set": "",
             "link_label": "See the research",
             "link_url": "/pages/science#bifidobacterium"
           }
@@ -265,8 +259,8 @@
             "amount": "Part of the 215 mg probiotic blend",
             "badge": "Emerging research",
             "role": "Probiotic",
-            "slide_set": "",
             "text": "<p>A mucus-layer-associated organism that is an active area of microbiome research. The evidence is earlier-stage than for the other organisms.</p>",
+            "slide_set": "",
             "link_label": "See the research",
             "link_url": "/pages/science#akkermansia"
           }
@@ -279,17 +273,16 @@
         "b4",
         "b5",
         "b6"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "",
+        "heading": "Ingredients",
+        "body": "<p>Organic inulin at 500 mg and a 215 mg probiotic blend, as listed on the label.</p>"
+      }
     },
     "who": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "For people building a gut-conscious routine.",
-        "columns": "3",
-        "show_images": false
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -333,18 +326,17 @@
         "b3",
         "b4",
         "b5"
-      ]
-    },
-    "supports": {
-      "type": "science-cards",
+      ],
       "settings": {
         "color_scheme": "light",
         "eyebrow": "",
-        "heading": "What Skinbiotic+ is designed to support.",
-        "columns": "4",
-        "show_images": false,
-        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
-      },
+        "heading": "For people building a gut-conscious routine.",
+        "columns": "3",
+        "show_images": false
+      }
+    },
+    "supports": {
+      "type": "science-cards",
       "blocks": {
         "b1": {
           "type": "card",
@@ -380,52 +372,51 @@
         "b2",
         "b3",
         "b4"
-      ]
-    },
-    "research": {
-      "type": "science-cards",
+      ],
       "settings": {
         "color_scheme": "light",
         "eyebrow": "",
-        "heading": "Why these organisms?",
+        "heading": "What Skinbiotic+ is designed to support.",
         "columns": "4",
         "show_images": false,
-        "button_label": "Explore the Skinbiotic+ research",
-        "button_url": "/pages/science#skinbiotic"
-      },
+        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
+      }
+    },
+    "research": {
+      "type": "science-cards",
       "blocks": {
         "b1": {
           "type": "card",
           "settings": {
             "title": "Gut-skin axis reviews",
+            "text": "<p>Reviews describe communication between the gut microbiome and skin, and note variability across studies.</p>",
             "tag": "Review",
-            "study": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019",
-            "text": "<p>Reviews describe communication between the gut microbiome and skin, and note variability across studies.</p>"
+            "study": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019"
           }
         },
         "b2": {
           "type": "card",
           "settings": {
             "title": "Strain-specific trials",
+            "text": "<p>A 12-week randomized trial of one L. plantarum strain. Findings are specific to that strain.</p>",
             "tag": "Strain-specific",
-            "study": "lee-hy7714-2015",
-            "text": "<p>A 12-week randomized trial of one L. plantarum strain. Findings are specific to that strain.</p>"
+            "study": "lee-hy7714-2015"
           }
         },
         "b3": {
           "type": "card",
           "settings": {
             "title": "Prebiotic fiber",
-            "tag": "Established biology",
-            "text": "<p>Inulin is a well-characterized fermentable fiber that can feed certain intestinal organisms.</p>"
+            "text": "<p>Inulin is a well-characterized fermentable fiber that can feed certain intestinal organisms.</p>",
+            "tag": "Established biology"
           }
         },
         "b4": {
           "type": "card",
           "settings": {
             "title": "Akkermansia",
-            "tag": "Emerging research",
-            "text": "<p>A growing area of microbiome research, at an earlier stage than the other components.</p>"
+            "text": "<p>A growing area of microbiome research, at an earlier stage than the other components.</p>",
+            "tag": "Emerging research"
           }
         }
       },
@@ -434,7 +425,16 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Why these organisms?",
+        "columns": "4",
+        "show_images": false,
+        "button_label": "Explore the Skinbiotic+ research",
+        "button_url": "/pages/science#skinbiotic"
+      }
     },
     "claims": {
       "type": "science-boundaries",
@@ -450,13 +450,6 @@
     },
     "systems": {
       "type": "system-finder",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Skinbiotic+ can stand alone, or become part of a bundle.",
-        "best_for_label": "",
-        "layout": "tabs"
-      },
       "blocks": {
         "b1": {
           "type": "system",
@@ -474,16 +467,23 @@
             "product": "balance-duo",
             "roles": "Balance + Restore",
             "best_for": "Skinbiotic+ + Dermaboost+. Pairs gut-skin support with broader antioxidant nutrition.†",
+            "note": "",
             "cta": "Explore",
-            "asset": "system-skin-recovery.webp",
-            "note": ""
+            "asset": "system-skin-recovery.webp"
           }
         }
       },
       "block_order": [
         "b1",
         "b2"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "layout": "tabs",
+        "eyebrow": "",
+        "heading": "Skinbiotic+ can stand alone, or become part of a bundle.",
+        "best_for_label": ""
+      }
     },
     "reviews": {
       "type": "pdp-reviews",
@@ -494,12 +494,6 @@
     },
     "faq": {
       "type": "pdp-faq",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Frequently asked questions",
-        "heading_tag": "h2"
-      },
       "blocks": {
         "b1": {
           "type": "item",
@@ -567,13 +561,19 @@
         "b6",
         "b7",
         "b8"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading_tag": "h2",
+        "heading": "Frequently asked questions"
+      }
     },
     "compliance": {
       "type": "compliance-notice",
       "settings": {
-        "color_scheme": "dark",
-        "extra_line": ""
+        "extra_line": "",
+        "color_scheme": "dark"
       }
     },
     "final": {

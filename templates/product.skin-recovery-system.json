@@ -86,22 +86,15 @@
         "compliance_slot"
       ],
       "settings": {
-        "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_DB_EDU_03_4x5_4eda5d66-30d3-44c5-966a-2632b6eaad10.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_DB_EDU_04_4x5_594cefa4-a7ef-416c-ae15-c59ceebea31b.png, bundle-skin-recovery-pairing.webp, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/Bundle_SK_DB_Environment_4x5_0134fa80-113c-4e1b-a9fe-804881a43a08.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/Bundle_SK_DB_Studio_4x5_cf829253-162e-466e-92d8-ecd4fce25ea4.png, lifestyle-skinbiotic-dermaboost-sunset.webp",
-        "color_scheme": "green",
         "lead_asset": "product-3d-skinbiotic-dermaboost.webp",
         "angle_assets": "product-angle-skin-recovery-back.webp, product-angle-skinbiotic-facts.webp, product-angle-dermaboost-facts.webp",
-        "media_order": "99"
+        "media_order": "99",
+        "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_DB_EDU_03_4x5_4eda5d66-30d3-44c5-966a-2632b6eaad10.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_DB_EDU_04_4x5_594cefa4-a7ef-416c-ae15-c59ceebea31b.png, bundle-skin-recovery-pairing.webp, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/Bundle_SK_DB_Environment_4x5_0134fa80-113c-4e1b-a9fe-804881a43a08.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/Bundle_SK_DB_Studio_4x5_cf829253-162e-466e-92d8-ecd4fce25ea4.png, lifestyle-skinbiotic-dermaboost-sunset.webp",
+        "color_scheme": "green"
       }
     },
     "definition": {
       "type": "split-compare",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "A two-step routine for internal balance and resilience.",
-        "body": "<p>The Balance Duo combines two formulas with different primary roles.</p><p>The combination is biologically complementary because one formula is centered on the gut and microbial environment and the other on broader systemic nutritional and antioxidant pathways.</p>",
-        "center": "Balance the gut. Support the systems skin relies on.†"
-      },
       "blocks": {
         "b1": {
           "type": "side",
@@ -123,7 +116,14 @@
       "block_order": [
         "b1",
         "b2"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "A two-step routine for internal balance and resilience.",
+        "body": "<p>The Balance Duo combines two formulas with different primary roles.</p><p>The combination is biologically complementary because one formula is centered on the gut and microbial environment and the other on broader systemic nutritional and antioxidant pathways.</p>",
+        "center": "Balance the gut. Support the systems skin relies on.†"
+      }
     },
     "video": {
       "type": "video-slot",
@@ -143,12 +143,6 @@
     },
     "why_areas": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "dark",
-        "columns": "3",
-        "show_images": false,
-        "note": "<p>This section describes formulation rationale. The combined Balance Duo has not been established here as a clinically tested finished-product regimen.</p>"
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -192,7 +186,13 @@
         "b3",
         "b4",
         "b5"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "columns": "3",
+        "show_images": false,
+        "note": "<p>This section describes formulation rationale. The combined Balance Duo has not been established here as a clinically tested finished-product regimen.</p>"
+      }
     },
     "step1": {
       "type": "feature-split",
@@ -202,11 +202,11 @@
         "eyebrow": "",
         "heading": "Skinbiotic+",
         "subhead": "Daily probiotic for gut and skin health",
-        "product": "skinbiotic",
-        "asset": "lifestyle-skinbiotic-cliffs.webp",
-        "ratio": "4x5",
         "body": "<p>Skinbiotic+ combines organic inulin with multiple probiotic organisms in a synbiotic formula designed around gut health and the gut-skin connection. Its formula includes:</p><ul><li>Organic inulin</li><li>Lactobacillus plantarum</li><li>Bifidobacterium lactis</li><li>Lactobacillus rhamnosus</li><li>Bifidobacterium bifidum</li><li>Akkermansia muciniphila Akk11®</li></ul><p>The formulation rationale is the prebiotic and probiotic pairing, and the different ecological roles of the organisms.</p><p><strong>Key support areas:</strong> gut-skin connection, microbiome balance, synbiotic support, daily internal balance.†</p>",
-        "primary_label": "Explore Skinbiotic+"
+        "product": "skinbiotic",
+        "primary_label": "Explore Skinbiotic+",
+        "asset": "lifestyle-skinbiotic-cliffs.webp",
+        "ratio": "4x5"
       }
     },
     "step2": {
@@ -217,22 +217,15 @@
         "eyebrow": "",
         "heading": "Dermaboost+",
         "subhead": "Daily immune support for calm, balanced skin†",
-        "product": "dermaboost",
-        "asset": "lifestyle-dermaboost-yacht.webp",
-        "ratio": "4x5",
         "body": "<p>Dermaboost+ combines eight vitamins, minerals, carotenoids, and botanical ingredients selected for broader nutritional, antioxidant, and normal immune-supportive roles.† The formula includes:</p><ul><li>Niacinamide</li><li>Vitamin D3</li><li>Vitamin C</li><li>Zinc</li><li>Quercetin</li><li>Curcumin</li><li>Olive leaf extract</li><li>Astaxanthin</li></ul><p>The formulation rationale identifies several complementary ingredient relationships, including quercetin + curcumin, quercetin + vitamin C, quercetin + astaxanthin, curcumin + olive leaf, and vitamin C + zinc.</p><p><strong>Key support areas:</strong> antioxidant support, normal immune function, nutritional skin support, daily skin resilience.†</p>",
-        "primary_label": "Explore Dermaboost+"
+        "product": "dermaboost",
+        "primary_label": "Explore Dermaboost+",
+        "asset": "lifestyle-dermaboost-yacht.webp",
+        "ratio": "4x5"
       }
     },
     "gutskin": {
       "type": "flow-steps",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "What is the gut-skin connection?",
-        "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
-        "takeaway": "Skinbiotic+ is designed to support the gut side of that conversation.†"
-      },
       "blocks": {
         "b1": {
           "type": "step",
@@ -276,18 +269,17 @@
         "b3",
         "b4",
         "b5"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "What is the gut-skin connection?",
+        "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
+        "takeaway": "Skinbiotic+ is designed to support the gut side of that conversation.†"
+      }
     },
     "systemic": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "Different starting points. Complementary support.",
-        "columns": "3",
-        "show_images": false,
-        "body": "<p>Skinbiotic+ begins with the intestinal environment. Dermaboost+ adds broader nutritional and antioxidant support.† Together, the bundle is designed around a simple idea:</p>"
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -315,7 +307,15 @@
         "b1",
         "b2",
         "b3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "",
+        "heading": "Different starting points. Complementary support.",
+        "body": "<p>Skinbiotic+ begins with the intestinal environment. Dermaboost+ adds broader nutritional and antioxidant support.† Together, the bundle is designed around a simple idea:</p>",
+        "columns": "3",
+        "show_images": false
+      }
     },
     "microbiome": {
       "type": "rich-text",
@@ -331,11 +331,6 @@
     },
     "formula": {
       "type": "split-compare",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Two formulas. Two different starting points."
-      },
       "blocks": {
         "b1": {
           "type": "side",
@@ -359,16 +354,15 @@
       "block_order": [
         "b1",
         "b2"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Two formulas. Two different starting points."
+      }
     },
     "versus": {
       "type": "split-compare",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "Balance Duo is not the same as Outdoor Duo.",
-        "center": "Choose Balance Duo when environmental exposure is not the main reason you are building the bundle."
-      },
       "blocks": {
         "b1": {
           "type": "side",
@@ -392,18 +386,16 @@
       "block_order": [
         "b1",
         "b2"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "eyebrow": "",
+        "heading": "Balance Duo is not the same as Outdoor Duo.",
+        "center": "Choose Balance Duo when environmental exposure is not the main reason you are building the bundle."
+      }
     },
     "who": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Built for customers looking beyond surface-level skincare.",
-        "columns": "3",
-        "show_images": false,
-        "layout": "rows"
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -447,17 +439,18 @@
         "b3",
         "b4",
         "b5"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Built for customers looking beyond surface-level skincare.",
+        "layout": "rows",
+        "columns": "3",
+        "show_images": false
+      }
     },
     "supports": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "heading": "Four areas of daily support.",
-        "columns": "4",
-        "show_images": false,
-        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -493,43 +486,40 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "heading": "Four areas of daily support.",
+        "columns": "4",
+        "show_images": false,
+        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
+      }
     },
     "research": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Why these two formulas?",
-        "columns": "4",
-        "show_images": false,
-        "button_label": "Explore the Balance Duo science",
-        "button_url": "/pages/science",
-        "layout": "split"
-      },
       "blocks": {
         "b1": {
           "type": "card",
           "settings": {
             "title": "Synbiotic biology",
-            "study": "lee-hy7714-2015",
-            "text": "<p>Prebiotic + probiotic rationale.</p>"
+            "text": "<p>Prebiotic + probiotic rationale.</p>",
+            "study": "lee-hy7714-2015"
           }
         },
         "b2": {
           "type": "card",
           "settings": {
             "title": "Gut-skin axis",
-            "study": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019",
-            "text": "<p>Microbiome-skin communication.</p>"
+            "text": "<p>Microbiome-skin communication.</p>",
+            "study": "gao-probiotics-gut-skin-2023, szanto-gut-skin-2019"
           }
         },
         "b3": {
           "type": "card",
           "settings": {
             "title": "Antioxidant support",
-            "study": "zhou-astaxanthin-meta-analysis-2021, jamwal-curcumin-pk-review",
-            "text": "<p>Polyphenols, carotenoids, and vitamins.</p>"
+            "text": "<p>Polyphenols, carotenoids, and vitamins.</p>",
+            "study": "zhou-astaxanthin-meta-analysis-2021, jamwal-curcumin-pk-review"
           }
         },
         "b4": {
@@ -545,7 +535,17 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Why these two formulas?",
+        "layout": "split",
+        "columns": "4",
+        "show_images": false,
+        "button_label": "Explore the Balance Duo science",
+        "button_url": "/pages/science"
+      }
     },
     "claims": {
       "type": "science-boundaries",
@@ -561,16 +561,6 @@
     },
     "compare": {
       "type": "compare-table",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Is Balance Duo right for you?",
-        "col_1": "Roles",
-        "col_2": "Includes",
-        "col_3": "Best fit",
-        "button_label": "Compare all bundles",
-        "button_url": "/pages/bundles"
-      },
       "blocks": {
         "b1": {
           "type": "row",
@@ -614,15 +604,20 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "Is Balance Duo right for you?",
+        "button_label": "Compare all bundles",
+        "button_url": "/pages/bundles",
+        "col_1": "Roles",
+        "col_2": "Includes",
+        "col_3": "Best fit"
+      }
     },
     "alternatives": {
       "type": "start-paths",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Need a different combination?"
-      },
       "blocks": {
         "b1": {
           "type": "path",
@@ -653,7 +648,12 @@
         "b1",
         "b2",
         "b3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Need a different combination?"
+      }
     },
     "reviews": {
       "type": "pdp-reviews",
@@ -664,12 +664,6 @@
     },
     "faq": {
       "type": "pdp-faq",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Frequently asked questions",
-        "heading_tag": "h2"
-      },
       "blocks": {
         "b1": {
           "type": "item",
@@ -745,13 +739,19 @@
         "b7",
         "b8",
         "b9"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading_tag": "h2",
+        "heading": "Frequently asked questions"
+      }
     },
     "compliance": {
       "type": "compliance-notice",
       "settings": {
-        "color_scheme": "dark",
-        "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease."
+        "fda_text": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
+        "color_scheme": "dark"
       }
     },
     "final": {
