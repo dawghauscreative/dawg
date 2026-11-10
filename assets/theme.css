@@ -1595,3 +1595,13 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .announcement::after { content: ""; position: absolute; top: 0; bottom: 0; left: -40%; width: 30%; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .45), transparent); transform: skewX(-20deg); animation: goldSweep 7s ease-in-out infinite; pointer-events: none; }
 @keyframes goldSweep { 0%, 70% { left: -40%; } 100% { left: 130%; } }
 @media (prefers-reduced-motion: reduce) { .announcement::after { animation: none; display: none; } }
+
+/* Split-compare cards that link to the Science page (whole card is clickable; links inside stay clickable) */
+.compare__side--link { position: relative; transition: border-color .25s ease, transform .3s cubic-bezier(.2, .7, .2, 1), box-shadow .3s ease; }
+.compare__side--link:hover { border-color: var(--c-gold); transform: translateY(-3px); box-shadow: 0 14px 34px rgba(0, 0, 0, .12); }
+.compare__link { color: inherit; text-decoration: none; }
+.compare__link::after { content: ""; position: absolute; inset: 0; }
+.compare__side--link .compare__list a, .compare__side--link p a { position: relative; z-index: 1; }
+.compare__more { display: inline-block; width: fit-content; justify-self: start; align-self: start; margin-top: 14px; font-family: var(--font-callout); font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; border-bottom: 1px solid currentColor; padding-bottom: 3px; }
+.compare__side--link:hover .compare__more { color: var(--c-gold); }
+@media (prefers-reduced-motion: reduce) { .compare__side--link:hover { transform: none; } }

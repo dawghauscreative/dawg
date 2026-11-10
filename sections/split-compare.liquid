@@ -4,14 +4,31 @@
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
     <div class="compare{% if section.blocks.size > 2 %} compare--3{% endif %}">
       {%- for block in section.blocks limit: 3 -%}
-        <article class="compare__side" {{ block.shopify_attributes }}>
+        {%- liquid
+          assign cs_link = block.settings.link
+          if cs_link == blank
+            assign cs_hay = block.settings.name | append: ' ' | append: block.settings.kicker | downcase
+            assign cs_science = pages['science'].url | default: '/pages/science'
+            if cs_hay contains 'uv shield'
+              assign cs_link = cs_science | append: '#uv-shield'
+            elsif cs_hay contains 'skinbiotic' or cs_hay contains 'probiotic'
+              assign cs_link = cs_science | append: '#skinbiotic'
+            elsif cs_hay contains 'dermaboost'
+              assign cs_link = cs_science | append: '#dermaboost'
+            elsif cs_hay contains 'inulin' or cs_hay contains 'prebiotic'
+              assign cs_link = cs_science | append: '#inulin'
+            endif
+          endif
+        -%}
+        <article class="compare__side{% if cs_link != blank %} compare__side--link{% endif %}" {{ block.shopify_attributes }}>
           <span class="compare__kicker">{{ block.settings.kicker }}</span>
-          <h3>{{ block.settings.name }}</h3>
+          <h3>{%- if cs_link != blank -%}<a class="compare__link" href="{{ cs_link }}">{{ block.settings.name }}</a>{%- else -%}{{ block.settings.name }}{%- endif -%}</h3>
           {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
           {%- if block.settings.items != blank -%}
             <ul class="compare__list">{%- assign items = block.settings.items | newline_to_br | split: '<br />' -%}{%- for it in items -%}{%- assign t = it | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
           {%- endif -%}
           {%- if block.settings.focus != blank -%}<p class="compare__focus"><strong>Primary focus</strong> {{ block.settings.focus }}</p>{%- endif -%}
+          {%- if cs_link != blank -%}<span class="compare__more" aria-hidden="true">Explore the science &rarr;</span>{%- endif -%}
         </article>
         {%- if forloop.first and section.blocks.size < 3 -%}<span class="compare__plus" aria-hidden="true">+</span>{%- endif -%}
       {%- endfor -%}
@@ -36,7 +53,7 @@
     { "type": "url", "id": "button_url", "label": "Button link" }
   ],
   "blocks": [
-    { "type": "side", "name": "Side", "settings": [{ "type": "text", "id": "kicker", "label": "Label" }, { "type": "text", "id": "name", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" }, { "type": "textarea", "id": "items", "label": "List (one per line)" }, { "type": "text", "id": "focus", "label": "Primary focus line" }] }
+    { "type": "side", "name": "Side", "settings": [{ "type": "text", "id": "kicker", "label": "Label" }, { "type": "text", "id": "name", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" }, { "type": "textarea", "id": "items", "label": "List (one per line)" }, { "type": "text", "id": "focus", "label": "Primary focus line" }, { "type": "url", "id": "link", "label": "Card link (optional)", "info": "Cards naming UV Shield+, Skinbiotic+, Dermaboost+, inulin or probiotics link to the Science page automatically. Set a link here to override." }] }
   ],
   "max_blocks": 3,
   "presets": [{ "name": "Split compare", "blocks": [{ "type": "side" }, { "type": "side" }] }]
