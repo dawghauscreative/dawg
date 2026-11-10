@@ -1580,3 +1580,18 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .scheme-grey { --bg: var(--c-gray); --fg: var(--c-black); --body: color-mix(in srgb, var(--c-black) 86%, var(--c-gray)); --accent: var(--c-black); --rule: color-mix(in srgb, var(--c-black) 30%, transparent); --btn-bg: var(--c-black); --btn-fg: var(--c-white); --card: color-mix(in srgb, var(--c-white) 28%, var(--c-gray)); }
 .scheme-grey p, .scheme-grey li { color: var(--body); }
 .scheme-grey .eyebrow { opacity: .8; }
+
+/* ---------- Shiny gold (Nov 10): metallic finish on gold buttons and gold banners ----------
+   --gold-sheen is set only where buttons are gold (black, green and band sections, the sticky buy bar), so black
+   buttons on light sections stay flat. Hover keeps the existing outline style. */
+:root { --gold-sheen: linear-gradient(135deg, #f7dc96 0%, #e9bd5c 28%, #d9a441 52%, #c18c31 72%, #e6b75a 100%); }
+.scheme-dark, .scheme-green, .scheme-green-light, .scheme-band, .sticky-cta, .plan-cta, .qv { --btn-sheen: var(--gold-sheen); }
+.btn { background-image: var(--btn-sheen, none); box-shadow: var(--btn-sheen-shadow, none); text-shadow: var(--btn-sheen-text, none); }
+.scheme-dark, .scheme-green, .scheme-green-light, .scheme-band, .sticky-cta, .plan-cta, .qv { --btn-sheen-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .18), 0 6px 18px rgba(193, 140, 49, .28); --btn-sheen-text: 0 1px 1px rgba(0, 0, 0, .22); }
+.btn:hover { background-image: none; box-shadow: none; text-shadow: none; }
+.btn--outline, .btn--secondary { background-image: none; box-shadow: none; text-shadow: none; }
+.announcement, .scheme-gold { background-image: var(--gold-sheen); }
+.announcement { position: relative; overflow: hidden; text-shadow: 0 1px 1px rgba(0, 0, 0, .22); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .45), inset 0 -1px 0 rgba(0, 0, 0, .15); }
+.announcement::after { content: ""; position: absolute; top: 0; bottom: 0; left: -40%; width: 30%; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .45), transparent); transform: skewX(-20deg); animation: goldSweep 7s ease-in-out infinite; pointer-events: none; }
+@keyframes goldSweep { 0%, 70% { left: -40%; } 100% { left: 130%; } }
+@media (prefers-reduced-motion: reduce) { .announcement::after { animation: none; display: none; } }
