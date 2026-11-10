@@ -1576,8 +1576,8 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .rich-split__media { max-width: 560px; width: 100%; margin-inline: auto; }
 .rich-split__copy .pull-quote { font-size: clamp(1.6rem, 2.6vw, 2.4rem); }
 
-/* Brand grey scheme (#afafaf, Nov 10): used by the layers sections. Dark text, dark bars and buttons. */
-.scheme-grey { --bg: var(--c-gray); --fg: var(--c-black); --body: color-mix(in srgb, var(--c-black) 86%, var(--c-gray)); --accent: var(--c-black); --rule: color-mix(in srgb, var(--c-black) 30%, transparent); --btn-bg: var(--c-black); --btn-fg: var(--c-white); --card: color-mix(in srgb, var(--c-white) 28%, var(--c-gray)); }
+/* Grey scheme (warm light grey #e2ded8, Nov 10): used by the layers sections. Dark text, dark bars and buttons. */
+.scheme-grey { --bg: #e2ded8; --fg: var(--c-black); --body: color-mix(in srgb, var(--c-black) 84%, #e2ded8); --accent: var(--c-black); --rule: color-mix(in srgb, var(--c-black) 30%, transparent); --btn-bg: var(--c-black); --btn-fg: var(--c-white); --card: color-mix(in srgb, var(--c-white) 45%, #e2ded8); }
 .scheme-grey p, .scheme-grey li { color: var(--body); }
 .scheme-grey .eyebrow { opacity: .8; }
 
