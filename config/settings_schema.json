@@ -40,6 +40,13 @@
       },
       {
         "type": "color",
+        "id": "color_gold_bright",
+        "label": "Bright gold (buttons and banners)",
+        "default": "#e3b04b",
+        "info": "Fill colour for buttons, banners, gold bands and filled badges (Nov 10). Lines, borders and gold text keep Brand gold."
+      },
+      {
+        "type": "color",
         "id": "color_white",
         "label": "Beige (primary light surface and text on dark)",
         "default": "#F5F0E8"
