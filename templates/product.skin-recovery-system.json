@@ -133,6 +133,9 @@
       "type": "rich-text",
       "settings": {
         "color_scheme": "dark",
+        "image_asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
+        "image_alt": "Skinbiotic+ and Dermaboost+ on a sunlit terrace",
+        "image_side": "right",
         "align": "left",
         "width": "wide",
         "eyebrow": "",

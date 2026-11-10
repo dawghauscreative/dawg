@@ -135,6 +135,9 @@
       "type": "rich-text",
       "settings": {
         "color_scheme": "dark",
+        "image_asset": "lifestyle-uvshield-dermaboost-tennis.webp",
+        "image_alt": "UV Shield+ and Dermaboost+ courtside on a sunny day",
+        "image_side": "right",
         "align": "left",
         "width": "wide",
         "eyebrow": "",
