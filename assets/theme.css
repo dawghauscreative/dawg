@@ -1558,10 +1558,6 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 /* A hovered or flipped column is always fully lit, even before the scroll lights it */
 .is-stepping[data-scroll-steps="lit"] [data-step-item]:hover > *, .is-stepping[data-scroll-steps="lit"] [data-step-item]:has(.is-flipped) > * { opacity: 1; translate: none; filter: none; transition-delay: 0ms; }
 
-/* Colour bleeds between light and green / black sections (assets/theme.js "Colour bleeds") */
-.has-bleed { position: relative; isolation: isolate; }
-.has-bleed::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: clamp(90px, 11vw, 180px); background: linear-gradient(to bottom, var(--bleed-from) 0%, color-mix(in srgb, var(--bleed-from) 72%, transparent) 22%, color-mix(in srgb, var(--bleed-from) 40%, transparent) 48%, color-mix(in srgb, var(--bleed-from) 14%, transparent) 76%, transparent 100%); pointer-events: none; z-index: -1; }
-
 /* Layers graphic, one description at a time (Full scroll animations, home page; assets/theme.js "single" steps).
    The four descriptions share one spot; the scroll (or hovering / tapping a bar) picks which one shows. */
 .layers.is-single .layers__list { display: grid; align-content: center; }
