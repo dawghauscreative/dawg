@@ -1569,3 +1569,9 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 
 /* Lighter green scheme (Nov 10): same as Emerald, one step lighter. */
 .scheme-green-light { --bg: #24493a; --card: color-mix(in srgb, var(--c-white) 8%, #24493a); }
+
+/* Rich text with an image beside it (sections/rich-text.liquid, optional image) */
+.rich-split { display: grid; gap: clamp(32px, 5vw, 80px); align-items: center; }
+@media (min-width: 990px) { .rich-split { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } .rich-split--right .rich-split__media { order: 2; } }
+.rich-split__media { max-width: 560px; width: 100%; margin-inline: auto; }
+.rich-split__copy .pull-quote { font-size: clamp(1.6rem, 2.6vw, 2.4rem); }

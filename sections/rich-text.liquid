@@ -1,17 +1,25 @@
 {%- assign head_center = false -%}
+{%- assign rt_img = false -%}
+{%- if section.settings.image != blank or section.settings.image_asset != blank -%}{%- assign rt_img = true -%}{%- endif -%}
 {%- if section.settings.align == 'center' -%}{%- assign head_center = true -%}{%- endif -%}
 {%- if section.settings.heading != blank or section.settings.body != blank -%}
 <section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.salt_symbol %} has-salt{% endif %}" {{ section.shopify_attributes }}>
   {%- if section.settings.salt_symbol -%}
     <svg class="salt-symbol" viewBox="0 0 400 400" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="10"><circle cx="200" cy="200" r="170"/><path d="M10 200h380"/></svg>
   {%- endif -%}
-  <div class="container" style="position:relative;max-width:{% if section.settings.width == 'narrow' %}760px{% else %}1100px{% endif %}{% if section.settings.align == 'center' %};text-align:center{% endif %}">
+  <div class="container" style="position:relative;max-width:{% if rt_img %}1240px{% elsif section.settings.width == 'narrow' %}760px{% else %}1100px{% endif %}{% if section.settings.align == 'center' %};text-align:center{% endif %}">
+    {%- if rt_img -%}
+    <div class="rich-split{% if section.settings.image_side == 'right' %} rich-split--right{% endif %}">
+      <div class="rich-split__media">{% render 'responsive-image', image: section.settings.image, asset: section.settings.image_asset, asset_width: 1200, asset_height: 1500, ratio: '4x5', sizes: '(min-width: 990px) 40vw, 100vw', alt: section.settings.image_alt %}</div>
+      <div class="rich-split__copy">
+    {%- endif -%}
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, tag: section.settings.heading_tag, center: head_center -%}
     {%- if section.settings.body != blank -%}<div class="prose"{% if section.settings.align == 'center' %} style="margin-inline:auto"{% endif %}>{{ section.settings.body }}</div>{%- endif -%}
     {%- if section.settings.quote != blank -%}<p class="pull-quote"{% if section.settings.align == 'center' %} style="margin-inline:auto"{% endif %}>{{ section.settings.quote }}</p>{%- endif -%}
     {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
       <div class="btn-row"{% if section.settings.align == 'center' %} style="justify-content:center"{% endif %}><a class="btn" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a></div>
     {%- endif -%}
+    {%- if rt_img -%}</div></div>{%- endif -%}
   </div>
 </section>
 {%- elsif request.design_mode -%}
@@ -32,7 +40,12 @@
     { "type": "richtext", "id": "body", "label": "Text" },
     { "type": "text", "id": "quote", "label": "Pull quote" },
     { "type": "text", "id": "button_label", "label": "Button label" },
-    { "type": "url", "id": "button_url", "label": "Button link" }
+    { "type": "url", "id": "button_url", "label": "Button link" },
+    { "type": "header", "content": "Image (optional)" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "image_asset", "label": "Or theme asset filename", "info": "Shown beside the text, e.g. lifestyle-hikers-summit-4x5.webp" },
+    { "type": "text", "id": "image_alt", "label": "Image alt text" },
+    { "type": "select", "id": "image_side", "label": "Image side", "default": "left", "options": [{ "value": "left", "label": "Left" }, { "value": "right", "label": "Right" }] }
   ],
   "presets": [{ "name": "Rich text" }]
 }
