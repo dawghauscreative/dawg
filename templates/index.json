@@ -81,6 +81,7 @@
           "type": "slide",
           "settings": {
             "color_scheme": "dark",
+            "badge": "",
             "heading": "Bundle and save.",
             "body": "<p>Pair the formulas your skin needs and pay less than buying them one by one. Subscribe, and your routine ships on schedule at the subscriber price, so you never miss a day.</p>",
             "primary_label": "Shop now",
@@ -90,8 +91,7 @@
             "background_asset": "hero-bundle-trio-coast.webp",
             "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin",
             "asset": "",
-            "image_alt": "",
-            "badge": ""
+            "image_alt": ""
           }
         }
       },
@@ -200,7 +200,7 @@
       ],
       "disabled": true,
       "settings": {
-        "product": "sun-safe-system",
+        "product": "outdoor-duo",
         "asset": "",
         "heading": "Start here",
         "text": "<p>Choose a subscription or a one-time order.</p>",
@@ -317,7 +317,7 @@
         "heading_tag": "h2",
         "subhead": "Protect + Balance",
         "body": "<p>For people who spend their lives outdoors, the Outdoor Duo pairs two targeted formulas:</p><p><strong>UV Shield+</strong> supports skin exposed to daily environmental and UV-related stress.†</p><p><strong>Skinbiotic+</strong> supports the gut-skin connection and internal balance.†</p><p>Together, they create a simple daily routine built for life outdoors.</p>",
-        "product": "sun-safe-system",
+        "product": "outdoor-duo",
         "primary_label": "Explore the Outdoor Duo",
         "primary_url": "",
         "secondary_label": "See all bundles",
@@ -353,7 +353,7 @@
         "b1": {
           "type": "system",
           "settings": {
-            "product": "sun-safe-system",
+            "product": "outdoor-duo",
             "roles": "Protect + Balance",
             "best_for": "Active outdoor lifestyles and customers looking for environmental support plus gut-skin balance.†",
             "note": "",
@@ -365,7 +365,7 @@
         "b2": {
           "type": "system",
           "settings": {
-            "product": "skin-recovery-system",
+            "product": "balance-duo",
             "roles": "Balance + Restore",
             "best_for": "Customers focused on gut-skin balance and broader nutritional support for calm, resilient skin.†",
             "note": "",
@@ -377,7 +377,7 @@
         "b3": {
           "type": "system",
           "settings": {
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "roles": "Protect + Restore",
             "best_for": "Customers looking to pair environmental support with broader antioxidant and immune-supportive nutrition.†",
             "note": "",
@@ -389,7 +389,7 @@
         "b4": {
           "type": "system",
           "settings": {
-            "product": "complete-skin-defense-system",
+            "product": "tria-prima",
             "roles": "Protect + Balance + Restore",
             "best_for": "Customers who already understand the three roles and want the most comprehensive Alchemia MD routine.",
             "note": "",
@@ -852,7 +852,7 @@
       "disabled": true,
       "settings": {
         "color_scheme": "dark",
-        "product": "sun-safe-system",
+        "product": "outdoor-duo",
         "eyebrow": "",
         "heading": "Built for life in the sun.",
         "body": "<p>Start with UV Shield+ and Skinbiotic+ together in the Outdoor Duo: a two-step routine designed to support environmental resilience and internal balance.†</p>",

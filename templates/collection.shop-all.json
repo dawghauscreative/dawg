@@ -23,7 +23,7 @@
       "type": "shop-all-featured-system",
       "settings": {
         "color_scheme": "green",
-        "product": "sun-safe-system",
+        "product": "outdoor-duo",
         "role": "Protect + Balance",
         "descriptor": "Environmental support paired with gut-skin balance.†",
         "button_text": "Choose your plan",
@@ -36,7 +36,7 @@
         "sun_resilience": {
           "type": "system",
           "settings": {
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "role": "Protect + Restore",
             "descriptor": "Environmental support with broader antioxidant and nutritional support.†",
             "show_label": false,
@@ -47,7 +47,7 @@
         "skin_recovery": {
           "type": "system",
           "settings": {
-            "product": "skin-recovery-system",
+            "product": "balance-duo",
             "role": "Balance + Restore",
             "descriptor": "Gut-skin balance with broader nutritional and immune support.†",
             "show_label": false,
@@ -58,7 +58,7 @@
         "complete": {
           "type": "system",
           "settings": {
-            "product": "complete-skin-defense-system",
+            "product": "tria-prima",
             "role": "Protect + Balance + Restore",
             "descriptor": "The most comprehensive Alchemia MD routine.",
             "show_label": true,
@@ -87,9 +87,9 @@
             "product": "uv-shield",
             "role": "Protect",
             "descriptor": "Outdoor support for resilient skin.†",
-            "related_1": "sun-safe-system",
-            "related_2": "sun-resilience-system",
-            "related_3": "complete-skin-defense-system",
+            "related_1": "outdoor-duo",
+            "related_2": "sun-resilience-duo",
+            "related_3": "tria-prima",
             "button_text": "Choose your plan"
           }
         },
@@ -99,9 +99,9 @@
             "product": "skinbiotic",
             "role": "Balance",
             "descriptor": "Essential gut care for skin health.",
-            "related_1": "sun-safe-system",
-            "related_2": "skin-recovery-system",
-            "related_3": "complete-skin-defense-system",
+            "related_1": "outdoor-duo",
+            "related_2": "balance-duo",
+            "related_3": "tria-prima",
             "button_text": "Choose your plan"
           }
         },
@@ -111,9 +111,9 @@
             "product": "dermaboost",
             "role": "Restore",
             "descriptor": "Immune support for calm, balanced skin.†",
-            "related_1": "skin-recovery-system",
-            "related_2": "sun-resilience-system",
-            "related_3": "complete-skin-defense-system",
+            "related_1": "balance-duo",
+            "related_2": "sun-resilience-duo",
+            "related_3": "tria-prima",
             "button_text": "Choose your plan"
           }
         }
@@ -135,7 +135,7 @@
       "type": "featured-buy-box",
       "blocks": {
         "supr_bundles_subscriptions_product_block_RBNBmy": {
-          "type": "shopify://apps/supr-bundles-subscriptions/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
+          "type": "shopify://apps/supr-bundle-subscription-app/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
           "settings": {
             "product": "{{section.settings.product}}"
           }
@@ -146,7 +146,7 @@
       ],
       "name": "Featured product buy box",
       "settings": {
-        "product": "complete-skin-defense-system",
+        "product": "tria-prima",
         "asset": "",
         "heading": "Start here",
         "text": "",

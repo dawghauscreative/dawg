@@ -81,11 +81,11 @@
         "fda"
       ],
       "settings": {
-        "gallery_assets": "slide-dermaboost-vitamin-d3.webp, slide-dermaboost-niacinamide.webp, slide-dermaboost-zinc.webp, lifestyle-dermaboost-yacht.webp",
-        "color_scheme": "green",
         "lead_asset": "product-3d-dermaboost-portrait.webp",
         "angle_assets": "product-angle-dermaboost-back.webp, product-angle-dermaboost-facts.webp",
-        "media_order": "99"
+        "media_order": "99",
+        "gallery_assets": "slide-dermaboost-vitamin-d3.webp, slide-dermaboost-niacinamide.webp, slide-dermaboost-zinc.webp, lifestyle-dermaboost-yacht.webp",
+        "color_scheme": "green"
       }
     },
     "definition": {
@@ -107,13 +107,6 @@
     },
     "role": {
       "type": "layer-stack",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Restore means supporting the systems skin relies on.",
-        "body": "<p>Skin is constantly responding to:</p><ul><li>Environmental stress</li><li>Normal oxidative processes</li><li>Nutritional demands</li><li>Immune signaling</li><li>Daily renewal</li></ul><p>“Restore” does not mean repairing every form of damage or reversing aging. Within the Alchemia MD system, it means providing nutritional support for the biological systems involved in maintaining calm, balanced, resilient skin.†</p>",
-        "callout": "Protect responds to exposure. Balance supports the gut and internal balance.† Restore supports antioxidant, nutritional, and immune pathways.†"
-      },
       "blocks": {
         "b1": {
           "type": "layer",
@@ -144,7 +137,14 @@
         "b1",
         "b2",
         "b3"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading": "Restore means supporting the systems skin relies on.",
+        "body": "<p>Skin is constantly responding to:</p><ul><li>Environmental stress</li><li>Normal oxidative processes</li><li>Nutritional demands</li><li>Immune signaling</li><li>Daily renewal</li></ul><p>“Restore” does not mean repairing every form of damage or reversing aging. Within the Alchemia MD system, it means providing nutritional support for the biological systems involved in maintaining calm, balanced, resilient skin.†</p>",
+        "callout": "Protect responds to exposure. Balance supports the gut and internal balance.† Restore supports antioxidant, nutritional, and immune pathways.†"
+      }
     },
     "antioxidant": {
       "type": "rich-text",
@@ -161,12 +161,6 @@
     },
     "formula": {
       "type": "product-actives",
-      "settings": {
-        "color_scheme": "green",
-        "eyebrow": "",
-        "heading": "Ingredients",
-        "columns": "4"
-      },
       "blocks": {
         "b1": {
           "type": "active",
@@ -174,8 +168,8 @@
             "name": "Niacinamide",
             "amount": "250 mg NE per serving",
             "role": "Cellular + barrier support",
-            "slide_set": "",
             "text": "<p>Niacinamide is a form of vitamin B3 involved in cellular energy metabolism and skin-related biological processes.</p><p>Within Dermaboost+, it contributes a nutritional mechanism distinct from the formula’s botanical polyphenols and carotenoids.</p>",
+            "slide_set": "",
             "link_label": "Explore niacinamide research",
             "link_url": "/pages/science#niacinamide"
           }
@@ -186,8 +180,8 @@
             "name": "Vitamin D3",
             "amount": "25 mcg (1,000 IU) per serving",
             "role": "Normal immune function",
-            "slide_set": "",
             "text": "<p>Vitamin D plays established physiological roles in immune regulation and numerous cellular processes.</p><p>Dermaboost+ includes vitamin D3 as part of its broader nutritional support strategy.†</p>",
+            "slide_set": "",
             "link_label": "Explore vitamin D research",
             "link_url": "/pages/science#vitamin-d3"
           }
@@ -198,8 +192,8 @@
             "name": "Vitamin C",
             "amount": "45 mg per serving",
             "role": "Antioxidant + collagen-related nutrition",
-            "slide_set": "",
             "text": "<p>Vitamin C is an essential nutrient and antioxidant. It also serves as a required cofactor in normal collagen synthesis.</p><p>Its role in Dermaboost+ is foundational nutritional support.†</p>",
+            "slide_set": "",
             "link_label": "Explore vitamin C research",
             "link_url": "/pages/science#vitamin-c"
           }
@@ -210,8 +204,8 @@
             "name": "Zinc",
             "amount": "5 mg per serving",
             "role": "Immune + cellular support",
-            "slide_set": "",
             "text": "<p>Zinc is an essential mineral involved in normal immune function, protein synthesis, DNA synthesis, and numerous enzyme systems.</p><p>Within the formula, it complements vitamin C and vitamin D as part of the nutritional foundation.</p>",
+            "slide_set": "",
             "link_label": "Explore zinc research",
             "link_url": "/pages/science#zinc"
           }
@@ -222,8 +216,8 @@
             "name": "Quercetin",
             "amount": "250 mg per serving",
             "role": "Polyphenol antioxidant support",
-            "slide_set": "",
             "text": "<p>Quercetin is a plant flavonoid studied for antioxidant activity and cellular-signaling effects.</p><p>Within Dermaboost+, it contributes a different polyphenolic profile from curcumin and olive leaf extract.</p>",
+            "slide_set": "",
             "link_label": "Explore quercetin research",
             "link_url": "/pages/science#quercetin"
           }
@@ -257,9 +251,9 @@
             "amount": "4 mg per serving",
             "role": "Carotenoid antioxidant support",
             "text": "<p>Astaxanthin is a carotenoid antioxidant studied in human research involving several skin-related parameters.</p><p>It provides a structurally different antioxidant component from the vitamins and polyphenols in Dermaboost+.</p>",
+            "slide_set": "",
             "link_label": "Explore astaxanthin research",
-            "link_url": "/pages/science#astaxanthin",
-            "slide_set": ""
+            "link_url": "/pages/science#astaxanthin"
           }
         }
       },
@@ -272,7 +266,13 @@
         "b6",
         "b7",
         "b8"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "green",
+        "columns": "4",
+        "eyebrow": "",
+        "heading": "Ingredients"
+      }
     },
     "immune": {
       "type": "rich-text",
@@ -302,13 +302,6 @@
     },
     "who": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Built for people thinking beyond surface-level skincare.",
-        "columns": "3",
-        "show_images": false
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -352,17 +345,17 @@
         "b3",
         "b4",
         "b5"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Built for people thinking beyond surface-level skincare.",
+        "columns": "3",
+        "show_images": false
+      }
     },
     "supports": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "heading": "One formula. Four areas of support.",
-        "columns": "4",
-        "show_images": false,
-        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
-      },
       "blocks": {
         "b1": {
           "type": "card",
@@ -398,53 +391,51 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "heading": "One formula. Four areas of support.",
+        "columns": "4",
+        "show_images": false,
+        "note": "<p>†These statements have not been evaluated by the Food and Drug Administration.</p>"
+      }
     },
     "research": {
       "type": "science-cards",
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Why these ingredients?",
-        "columns": "4",
-        "show_images": false,
-        "button_label": "Explore Dermaboost+ research",
-        "button_url": "/pages/science#dermaboost"
-      },
       "blocks": {
         "b1": {
           "type": "card",
           "settings": {
             "title": "Astaxanthin",
+            "text": "<p>Human research and meta-analytic evidence involving selected skin parameters.</p>",
             "tag": "Human + meta-analytic",
-            "study": "zhou-astaxanthin-meta-analysis-2021, tominaga-astaxanthin-2017",
-            "text": "<p>Human research and meta-analytic evidence involving selected skin parameters.</p>"
+            "study": "zhou-astaxanthin-meta-analysis-2021, tominaga-astaxanthin-2017"
           }
         },
         "b2": {
           "type": "card",
           "settings": {
             "title": "Curcumin",
+            "text": "<p>Extensive mechanistic research and human pharmacokinetic research.</p>",
             "tag": "Mechanistic + pharmacokinetic",
-            "study": "jamwal-curcumin-pk-review",
-            "text": "<p>Extensive mechanistic research and human pharmacokinetic research.</p>"
+            "study": "jamwal-curcumin-pk-review"
           }
         },
         "b3": {
           "type": "card",
           "settings": {
             "title": "Vitamin C + Zinc",
-            "tag": "Established physiology",
-            "text": "<p>Essential nutrients with established physiological roles.</p>"
+            "text": "<p>Essential nutrients with established physiological roles.</p>",
+            "tag": "Established physiology"
           }
         },
         "b4": {
           "type": "card",
           "settings": {
             "title": "Quercetin",
+            "text": "<p>Human pharmacokinetic and mechanistic research involving antioxidant and signaling pathways.</p>",
             "tag": "Pharmacokinetic + mechanistic",
-            "study": "quercetin-human-pk",
-            "text": "<p>Human pharmacokinetic and mechanistic research involving antioxidant and signaling pathways.</p>"
+            "study": "quercetin-human-pk"
           }
         }
       },
@@ -453,7 +444,16 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "light",
+        "eyebrow": "",
+        "heading": "Why these ingredients?",
+        "columns": "4",
+        "show_images": false,
+        "button_label": "Explore Dermaboost+ research",
+        "button_url": "/pages/science#dermaboost"
+      }
     },
     "claims": {
       "type": "science-boundaries",
@@ -469,29 +469,22 @@
     },
     "systems": {
       "type": "system-finder",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Dermaboost+ can stand alone, or become part of a bundle.",
-        "best_for_label": "",
-        "layout": "tabs"
-      },
       "blocks": {
         "b1": {
           "type": "system",
           "settings": {
-            "product": "skin-recovery-system",
+            "product": "balance-duo",
             "roles": "Balance + Restore",
             "best_for": "Skinbiotic+ + Dermaboost+. Pairs microbiome-focused support with broader antioxidant, nutritional, and immune support.†",
+            "note": "",
             "cta": "Explore",
-            "asset": "system-skin-recovery.webp",
-            "note": ""
+            "asset": "system-skin-recovery.webp"
           }
         },
         "b2": {
           "type": "system",
           "settings": {
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "roles": "Protect + Restore",
             "best_for": "UV Shield+ + Dermaboost+. Pairs environmental support with broader antioxidant and immune-supportive nutrition.†",
             "cta": "Explore",
@@ -502,7 +495,14 @@
       "block_order": [
         "b1",
         "b2"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "layout": "tabs",
+        "eyebrow": "",
+        "heading": "Dermaboost+ can stand alone, or become part of a bundle.",
+        "best_for_label": ""
+      }
     },
     "reviews": {
       "type": "pdp-reviews",
@@ -513,12 +513,6 @@
     },
     "faq": {
       "type": "pdp-faq",
-      "settings": {
-        "color_scheme": "dark",
-        "eyebrow": "",
-        "heading": "Frequently asked questions",
-        "heading_tag": "h2"
-      },
       "blocks": {
         "b1": {
           "type": "item",
@@ -578,13 +572,19 @@
         "b5",
         "b6",
         "b7"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "dark",
+        "eyebrow": "",
+        "heading_tag": "h2",
+        "heading": "Frequently asked questions"
+      }
     },
     "compliance": {
       "type": "compliance-notice",
       "settings": {
-        "color_scheme": "dark",
-        "extra_line": ""
+        "extra_line": "",
+        "color_scheme": "dark"
       }
     },
     "final": {
