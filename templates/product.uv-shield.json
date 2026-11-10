@@ -326,7 +326,7 @@
         "b1": {
           "type": "system",
           "settings": {
-            "product": "sun-safe-system",
+            "product": "outdoor-duo",
             "roles": "Protect + Balance",
             "best_for": "UV Shield+ + Skinbiotic+. Pairs environmental support with gut-skin support through different upstream mechanisms: environmental and oxidative pathways, and the intestinal microbial environment.†",
             "cta": "Explore",
@@ -336,7 +336,7 @@
         "b2": {
           "type": "system",
           "settings": {
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "roles": "Protect + Restore",
             "best_for": "UV Shield+ + Dermaboost+. Pairs UV and environmental support with broader antioxidant and immune-supportive nutrition.†",
             "cta": "Explore",

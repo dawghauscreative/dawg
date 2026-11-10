@@ -84,7 +84,7 @@
         "b1": {
           "type": "formula",
           "settings": {
-            "product": "sun-safe-system",
+            "product": "outdoor-duo",
             "role": "Protect + Balance",
             "includes": "UV Shield+ + Skinbiotic+",
             "asset": "system-sun-safe.webp",
@@ -100,7 +100,7 @@
         "b2": {
           "type": "formula",
           "settings": {
-            "product": "skin-recovery-system",
+            "product": "balance-duo",
             "role": "Balance + Restore",
             "includes": "Skinbiotic+ + Dermaboost+",
             "asset": "system-skin-recovery.webp",
@@ -116,7 +116,7 @@
         "b3": {
           "type": "formula",
           "settings": {
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "role": "Protect + Restore",
             "includes": "UV Shield+ + Dermaboost+",
             "asset": "system-sun-resilience.webp",
@@ -132,7 +132,7 @@
         "b4": {
           "type": "formula",
           "settings": {
-            "product": "complete-skin-defense-system",
+            "product": "tria-prima",
             "role": "Protect + Balance + Restore",
             "includes": "UV Shield+ + Skinbiotic+ + Dermaboost+",
             "asset": "system-complete.webp",
@@ -172,7 +172,7 @@
             "a": "Protect + Balance",
             "b": "UV Shield+ + Skinbiotic+",
             "c": "Environmental support + gut-skin balance",
-            "url": "/products/sun-safe-system"
+            "url": "/products/outdoor-duo"
           }
         },
         "b2": {
@@ -182,7 +182,7 @@
             "a": "Balance + Restore",
             "b": "Skinbiotic+ + Dermaboost+",
             "c": "Microbiome + broader nutritional support",
-            "url": "/products/skin-recovery-system"
+            "url": "/products/balance-duo"
           }
         },
         "b3": {
@@ -192,7 +192,7 @@
             "a": "Protect + Restore",
             "b": "UV Shield+ + Dermaboost+",
             "c": "Environmental + antioxidant/nutritional support",
-            "url": "/products/sun-resilience-system"
+            "url": "/products/sun-resilience-duo"
           }
         },
         "b4": {
@@ -202,7 +202,7 @@
             "a": "Protect + Balance + Restore",
             "b": "All three",
             "c": "Most comprehensive Alchemia MD routine",
-            "url": "/products/complete-skin-defense-system"
+            "url": "/products/tria-prima"
           }
         }
       },
@@ -220,7 +220,7 @@
         "image_side": "right",
         "eyebrow": "",
         "heading": "Outdoor Duo",
-        "product": "sun-safe-system",
+        "product": "outdoor-duo",
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
         "light_panel": true,
@@ -235,7 +235,7 @@
         "image_side": "left",
         "eyebrow": "",
         "heading": "Balance Duo",
-        "product": "skin-recovery-system",
+        "product": "balance-duo",
         "asset": "system-skin-recovery.webp",
         "ratio": "16x9",
         "light_panel": true,
@@ -250,7 +250,7 @@
         "image_side": "right",
         "eyebrow": "",
         "heading": "Sun Resilience Duo",
-        "product": "sun-resilience-system",
+        "product": "sun-resilience-duo",
         "asset": "system-sun-resilience.webp",
         "ratio": "16x9",
         "light_panel": true,
@@ -265,7 +265,7 @@
         "image_side": "left",
         "eyebrow": "",
         "heading": "Tria Prima",
-        "product": "complete-skin-defense-system",
+        "product": "tria-prima",
         "asset": "system-complete.webp",
         "ratio": "16x9",
         "light_panel": true,
@@ -286,7 +286,7 @@
           "type": "path",
           "settings": {
             "statement": "I spend a lot of time outdoors + care about gut health",
-            "product": "sun-safe-system",
+            "product": "outdoor-duo",
             "label": "Outdoor Duo"
           }
         },
@@ -294,7 +294,7 @@
           "type": "path",
           "settings": {
             "statement": "My priority is gut balance + broader daily skin support†",
-            "product": "skin-recovery-system",
+            "product": "balance-duo",
             "label": "Balance Duo"
           }
         },
@@ -302,7 +302,7 @@
           "type": "path",
           "settings": {
             "statement": "I spend a lot of time outdoors + want broader antioxidant support†",
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "label": "Sun Resilience Duo"
           }
         },
@@ -310,7 +310,7 @@
           "type": "path",
           "settings": {
             "statement": "I already understand all three roles and want the full routine",
-            "product": "complete-skin-defense-system",
+            "product": "tria-prima",
             "label": "Tria Prima"
           }
         }

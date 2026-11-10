@@ -287,7 +287,7 @@
         "b1": {
           "type": "system",
           "settings": {
-            "product": "sun-safe-system",
+            "product": "outdoor-duo",
             "roles": "Protect + Balance",
             "best_for": "UV Shield+ + Skinbiotic+",
             "cta": "Explore Outdoor Duo",
@@ -297,7 +297,7 @@
         "b2": {
           "type": "system",
           "settings": {
-            "product": "skin-recovery-system",
+            "product": "balance-duo",
             "roles": "Balance + Restore",
             "best_for": "Skinbiotic+ + Dermaboost+",
             "cta": "Explore Balance Duo",
@@ -308,7 +308,7 @@
         "b3": {
           "type": "system",
           "settings": {
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "roles": "Protect + Restore",
             "best_for": "UV Shield+ + Dermaboost+",
             "cta": "Explore Sun Resilience Duo",
@@ -318,7 +318,7 @@
         "b4": {
           "type": "system",
           "settings": {
-            "product": "complete-skin-defense-system",
+            "product": "tria-prima",
             "roles": "Protect + Balance + Restore",
             "best_for": "All three.",
             "cta": "Explore Tria Prima",

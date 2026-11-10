@@ -6,14 +6,14 @@
   assign handles = cart.items | map: 'product' | map: 'handle'
   assign has_skinbiotic = false
   assign has_dermaboost = false
-  if handles contains 'skin-recovery-system' or handles contains 'complete-skin-defense-system'
+  if handles contains 'balance-duo' or handles contains 'tria-prima'
     assign has_skinbiotic = true
     assign has_dermaboost = true
   endif
-  if handles contains 'skinbiotic' or handles contains 'sun-safe-system'
+  if handles contains 'skinbiotic' or handles contains 'outdoor-duo'
     assign has_skinbiotic = true
   endif
-  if handles contains 'dermaboost' or handles contains 'sun-resilience-system'
+  if handles contains 'dermaboost' or handles contains 'sun-resilience-duo'
     assign has_dermaboost = true
   endif
 -%}

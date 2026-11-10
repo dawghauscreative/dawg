@@ -628,7 +628,7 @@
           "type": "path",
           "settings": {
             "statement": "Want outdoor + gut-skin support?",
-            "product": "sun-safe-system",
+            "product": "outdoor-duo",
             "label": "Explore Outdoor Duo"
           }
         },
@@ -636,7 +636,7 @@
           "type": "path",
           "settings": {
             "statement": "Want outdoor + restore?",
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "label": "Explore Sun Resilience Duo"
           }
         },
@@ -644,7 +644,7 @@
           "type": "path",
           "settings": {
             "statement": "Want all three roles?",
-            "product": "complete-skin-defense-system",
+            "product": "tria-prima",
             "label": "Explore Tria Prima"
           }
         }

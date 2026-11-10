@@ -20,13 +20,13 @@
           {%- if p != blank -%}
             {%- liquid
               case p.handle
-                when 'sun-safe-system'
+                when 'outdoor-duo'
                   assign tab_asset = 'product-3d-uv-shield-skinbiotic.webp'
-                when 'skin-recovery-system'
+                when 'balance-duo'
                   assign tab_asset = 'product-3d-skinbiotic-dermaboost.webp'
-                when 'sun-resilience-system'
+                when 'sun-resilience-duo'
                   assign tab_asset = 'product-3d-uv-shield-dermaboost.webp'
-                when 'complete-skin-defense-system'
+                when 'tria-prima'
                   assign tab_asset = 'product-3d-trio.webp'
                 else
                   assign tab_asset = block.settings.asset

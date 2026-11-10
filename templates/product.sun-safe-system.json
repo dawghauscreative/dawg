@@ -621,7 +621,7 @@
           "type": "path",
           "settings": {
             "statement": "Want Protect + Restore?",
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "label": "Explore Sun Resilience Duo"
           }
         },
@@ -629,7 +629,7 @@
           "type": "path",
           "settings": {
             "statement": "Want Balance + Restore?",
-            "product": "skin-recovery-system",
+            "product": "balance-duo",
             "label": "Explore Balance Duo"
           }
         },
@@ -637,7 +637,7 @@
           "type": "path",
           "settings": {
             "statement": "Want all three roles?",
-            "product": "complete-skin-defense-system",
+            "product": "tria-prima",
             "label": "Explore Tria Prima"
           }
         }

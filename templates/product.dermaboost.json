@@ -480,7 +480,7 @@
         "b1": {
           "type": "system",
           "settings": {
-            "product": "skin-recovery-system",
+            "product": "balance-duo",
             "roles": "Balance + Restore",
             "best_for": "Skinbiotic+ + Dermaboost+. Pairs microbiome-focused support with broader antioxidant, nutritional, and immune support.†",
             "cta": "Explore",
@@ -491,7 +491,7 @@
         "b2": {
           "type": "system",
           "settings": {
-            "product": "sun-resilience-system",
+            "product": "sun-resilience-duo",
             "roles": "Protect + Restore",
             "best_for": "UV Shield+ + Dermaboost+. Pairs environmental support with broader antioxidant and immune-supportive nutrition.†",
             "cta": "Explore",
