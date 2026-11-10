@@ -8,7 +8,7 @@ html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 :root {
   --gutter: 20px;
   --max: 1280px;
-  --space-section: clamp(72px, 10vw, 144px);
+  --space-section: clamp(56px, 7vw, 104px);
   --header-h: 72px;
 }
 
@@ -1609,3 +1609,13 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 /* Rich text "Less space below": the section and the one after it join closely (e.g. Why pair... and its cards) */
 .section.rt-tight-bottom { padding-bottom: clamp(20px, 2.5vw, 40px); }
 .shopify-section:has(> .rt-tight-bottom) + .shopify-section > .section { padding-top: clamp(20px, 2.5vw, 40px); }
+
+/* Site-wide spacing (Nov 10): two sections with the same background in a row read as one block, so the second one
+   drops its top padding (the gap is one section's spacing, not two). */
+.shopify-section:has(> .section.scheme-dark) + .shopify-section > .section.scheme-dark,
+.shopify-section:has(> .section.scheme-green) + .shopify-section > .section.scheme-green,
+.shopify-section:has(> .section.scheme-green-light) + .shopify-section > .section.scheme-green-light,
+.shopify-section:has(> .section.scheme-light) + .shopify-section > .section.scheme-light,
+.shopify-section:has(> .section.scheme-beige) + .shopify-section > .section.scheme-beige,
+.shopify-section:has(> .section.scheme-grey) + .shopify-section > .section.scheme-grey,
+.shopify-section:has(> .section.scheme-band) + .shopify-section > .section.scheme-band { padding-top: clamp(8px, 1vw, 16px); }
