@@ -369,7 +369,8 @@
             "image": "shopify://shop_images/silhouette-of-golfers-hit-sweeping-and-keep-golf-c-2026-03-19-02-22-18-utc_Large_602982b3-bc47-4fbb-a744-8ba4faa4f081.jpg",
             "asset": "lifestyle-skinbiotic-cliffs.webp",
             "label": "Golf",
-            "caption": "Long rounds and repeated outdoor exposure."
+            "caption": "Long rounds and repeated outdoor exposure.",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
           }
         },
         "b2": {
@@ -378,7 +379,8 @@
             "image": "shopify://shop_images/back-lit-young-female-multiracial-tennis-players-w-2026-03-25-03-18-19-utc_Large_33af3979-5b4a-46c2-b954-2bdaed9743dc.jpg",
             "asset": "lifestyle-uvshield-dermaboost-tennis.webp",
             "label": "Tennis",
-            "caption": "Court time, heat, and active outdoor routines."
+            "caption": "Court time, heat, and active outdoor routines.",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
           }
         },
         "b3": {
@@ -387,7 +389,8 @@
             "image": "shopify://shop_images/family-sailing-at-sunset-on-luxury-boat-2026-03-27-00-33-51-utc_Large_d9a9c705-5243-4f08-b80c-a7a620ca8241.jpg",
             "asset": "lifestyle-uvshield-skinbiotic-sailboat.webp",
             "label": "Sailing + boating",
-            "caption": "Open-sky and reflected-light environments."
+            "caption": "Open-sky and reflected-light environments.",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
           }
         },
         "b4": {
@@ -395,7 +398,8 @@
           "settings": {
             "asset": "lifestyle-running-cycling-duo.webp",
             "label": "Running + cycling",
-            "caption": "Consistent outdoor training."
+            "caption": "Consistent outdoor training.",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
           }
         },
         "b5": {
@@ -404,7 +408,8 @@
             "image": "shopify://shop_images/portrait-of-a-beautiful-woman-on-the-beach-at-suns-2026-03-25-06-30-52-utc_Large_88f1f284-5829-4cad-b407-ec1cdccd5ce2.jpg",
             "asset": "lifestyle-skinbiotic-dermaboost-sunset.webp",
             "label": "Beach + travel",
-            "caption": "High-exposure leisure and travel environments."
+            "caption": "High-exposure leisure and travel environments.",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
           }
         },
         "b6": {
@@ -412,7 +417,8 @@
           "settings": {
             "asset": "lifestyle-outdoor-living.webp",
             "label": "Everyday outdoor life",
-            "caption": "Walking, gardening, commuting, dining, and time outside."
+            "caption": "Walking, gardening, commuting, dining, and time outside.",
+            "url": "/blogs/blog/supporting-skin-through-daily-sun-exposure"
           }
         }
       },
