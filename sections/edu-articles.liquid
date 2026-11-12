@@ -3,7 +3,7 @@
   in the blog and shows "Coming soon" until then. A card can also link to any URL (e.g. a product page).
   Read time is calculated from the real article; it is never made up for articles that do not exist yet.
 {%- endcomment -%}
-<section class="section scheme-{{ section.settings.color_scheme }}"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
+<section class="section {% if section.settings.color_scheme == 'charcoal' %}scheme-dark {% endif %}scheme-{{ section.settings.color_scheme }}"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
   <div class="container">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
     <div class="cols cols--auto4 edu-cards edu-cards--{{ section.settings.columns }}">
@@ -43,7 +43,7 @@
 {
   "name": "Skin Edu articles",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "charcoal", "label": "Charcoal" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
     { "type": "text", "id": "anchor", "label": "Anchor id (optional)" },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
