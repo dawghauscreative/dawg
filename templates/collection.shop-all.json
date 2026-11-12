@@ -26,7 +26,7 @@
         "product": "outdoor-duo",
         "role": "Protect + Balance",
         "descriptor": "Environmental support paired with gut-skin balance.†",
-        "button_text": "Choose your plan",
+        "button_text": "Shop Now",
         "subscribe_cue": "Subscribe & save available"
       }
     },
@@ -41,7 +41,7 @@
             "descriptor": "Environmental support with broader antioxidant and nutritional support.†",
             "show_label": false,
             "label_text": "Advanced option",
-            "button_text": "Choose your plan"
+            "button_text": "Discover"
           }
         },
         "skin_recovery": {
@@ -52,7 +52,7 @@
             "descriptor": "Gut-skin balance with broader nutritional and immune support.†",
             "show_label": false,
             "label_text": "Advanced option",
-            "button_text": "Choose your plan"
+            "button_text": "Discover"
           }
         },
         "complete": {
@@ -63,7 +63,7 @@
             "descriptor": "The most comprehensive Alchemia MD routine.",
             "show_label": true,
             "label_text": "Advanced option",
-            "button_text": "Choose your plan"
+            "button_text": "Discover"
           }
         }
       },
@@ -90,7 +90,7 @@
             "related_1": "outdoor-duo",
             "related_2": "sun-resilience-duo",
             "related_3": "tria-prima",
-            "button_text": "Choose your plan"
+            "button_text": "Shop Now"
           }
         },
         "skinbiotic": {
@@ -102,7 +102,7 @@
             "related_1": "outdoor-duo",
             "related_2": "balance-duo",
             "related_3": "tria-prima",
-            "button_text": "Choose your plan"
+            "button_text": "Shop Now"
           }
         },
         "dermaboost": {
@@ -114,7 +114,7 @@
             "related_1": "balance-duo",
             "related_2": "sun-resilience-duo",
             "related_3": "tria-prima",
-            "button_text": "Choose your plan"
+            "button_text": "Shop Now"
           }
         }
       },

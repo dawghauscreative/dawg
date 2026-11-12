@@ -63,7 +63,7 @@
           <div class="sel-panel" id="plan-{{ p.handle }}" data-sel-panel="{{ p.handle }}" hidden>
             <h3>{{ block.settings.plan_heading }}</h3>
             <p>{{ block.settings.plan_copy }}</p>
-            <div class="btn-row"><a class="btn" href="{{ p.url }}#buy-box">{{ block.settings.plan_button | default: 'Choose your plan' }}</a></div>
+            <div class="btn-row"><a class="btn" href="{{ p.url }}#buy-box">{{ block.settings.plan_button | default: 'Shop Now' }}</a></div>
             {%- render 'compliance-slot', content: p.metafields.custom.compliance_slot -%}
           </div>
         {%- endif -%}
