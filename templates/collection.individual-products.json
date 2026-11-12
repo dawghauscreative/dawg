@@ -374,6 +374,7 @@
       ],
       "settings": {
         "color_scheme": "green-light",
+        "anchor": "",
         "eyebrow": "",
         "heading": "Understand what you’re taking.",
         "columns": "3",
