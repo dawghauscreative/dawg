@@ -22,7 +22,7 @@
       <div class="rich-split__copy">
     {%- endif -%}
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, tag: section.settings.heading_tag, center: head_center -%}
-    {%- if section.settings.body != blank -%}<div class="prose"{% if section.settings.align == 'center' %} style="margin-inline:auto"{% endif %}>{{ section.settings.body }}</div>{%- endif -%}
+    {%- if section.settings.body != blank -%}<div class="prose{% if section.settings.align == 'center' and section.settings.width == 'wide' %} prose--full{% endif %}"{% if section.settings.align == 'center' %} style="margin-inline:auto"{% endif %}>{{ section.settings.body }}</div>{%- endif -%}
     {%- if section.settings.quote != blank -%}<p class="pull-quote"{% if section.settings.align == 'center' %} style="margin-inline:auto"{% endif %}>{{ section.settings.quote }}</p>{%- endif -%}
     {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
       <div class="btn-row"{% if section.settings.align == 'center' %} style="justify-content:center"{% endif %}><a class="btn" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a></div>

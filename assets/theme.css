@@ -1652,3 +1652,9 @@ html[data-motion="off"] .alch-emblem__ring, html[data-motion="off"] .alch-emblem
 .edu-flip .role-flip__back { --btn-bg: var(--c-gold-bright); --btn-fg: #fff; --btn-sheen: var(--gold-sheen); --btn-sheen-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .18), 0 6px 18px rgba(193, 140, 49, .28); --btn-sheen-text: 0 1px 1px rgba(0, 0, 0, .22); }
 .edu-flip .role-flip__back .role-flip__price, .edu-flip .role-flip__back .role-flip__label { color: var(--c-gold); }
 .edu-flip .role-flip__back .role-flip__summary { color: var(--c-white); }
+
+/* Rich text body with h4 lines (home "Skin health is more than a surface routine", Nov 12): breathing room between
+   lines, and full container width when the section is wide and centred */
+.prose h4 { line-height: 1.45; text-wrap: pretty; }
+.prose h4 + h4, .prose p + h4, .prose h4 + p { margin-top: .75em; }
+.prose--full { max-width: none; }
