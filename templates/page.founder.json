@@ -36,7 +36,7 @@
         "eyebrow": "",
         "heading": "Alchemy is transformation through balance.",
         "heading_tag": "h2",
-        "color_scheme": "light",
+        "color_scheme": "grey",
         "body": "<p>Centuries ago, alchemists sought to turn lead into gold. We believe lasting change begins by supporting the body from within.</p>"
       }
     },
@@ -57,7 +57,7 @@
     "category": {
       "type": "category-statement",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "grey",
         "eyebrow": "",
         "statement": "To transform skin health from the inside out. We are guided by dermatological science and the philosophy that balance is a practice, not a destination."
       }
@@ -117,7 +117,7 @@
         "pt6"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "charcoal",
         "eyebrow": "",
         "heading": "From personal loss to a different way of thinking about skin.",
         "body": ""
