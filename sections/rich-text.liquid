@@ -1,6 +1,6 @@
 {%- assign head_center = false -%}
 {%- assign rt_img = false -%}
-{%- if section.settings.image != blank or section.settings.image_asset != blank -%}{%- assign rt_img = true -%}{%- endif -%}
+{%- if section.settings.image != blank or section.settings.image_asset != blank or section.settings.graphic == 'alchemy' -%}{%- assign rt_img = true -%}{%- endif -%}
 {%- if section.settings.align == 'center' -%}{%- assign head_center = true -%}{%- endif -%}
 {%- if section.settings.heading != blank or section.settings.body != blank -%}
 <section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.salt_symbol %} has-salt{% endif %}{% if section.settings.tight_bottom %} rt-tight-bottom{% endif %}" {{ section.shopify_attributes }}>
@@ -10,7 +10,7 @@
   <div class="container" style="position:relative;max-width:{% if rt_img %}1240px{% elsif section.settings.width == 'narrow' %}760px{% else %}1100px{% endif %}{% if section.settings.align == 'center' %};text-align:center{% endif %}">
     {%- if rt_img -%}
     <div class="rich-split{% if section.settings.image_side == 'right' %} rich-split--right{% endif %}">
-      <div class="rich-split__media">{%- liquid
+      <div class="rich-split__media">{%- if section.settings.graphic == 'alchemy' -%}{% render 'alchemy-emblem', uid: section.id %}{%- else -%}{%- liquid
           assign rt_ratio = section.settings.image_ratio | default: '4x5'
           assign rt_w = 1200
           assign rt_h = 1500
@@ -18,7 +18,7 @@
             assign rt_w = 1500
             assign rt_h = 1000
           endif
-        -%}{% render 'responsive-image', image: section.settings.image, asset: section.settings.image_asset, asset_width: rt_w, asset_height: rt_h, ratio: rt_ratio, sizes: '(min-width: 990px) 40vw, 100vw', alt: section.settings.image_alt %}</div>
+        -%}{% render 'responsive-image', image: section.settings.image, asset: section.settings.image_asset, asset_width: rt_w, asset_height: rt_h, ratio: rt_ratio, sizes: '(min-width: 990px) 40vw, 100vw', alt: section.settings.image_alt %}{%- endif -%}</div>
       <div class="rich-split__copy">
     {%- endif -%}
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, tag: section.settings.heading_tag, center: head_center -%}
@@ -51,6 +51,7 @@
     { "type": "text", "id": "button_label", "label": "Button label" },
     { "type": "url", "id": "button_url", "label": "Button link" },
     { "type": "header", "content": "Image (optional)" },
+    { "type": "select", "id": "graphic", "label": "Graphic instead of an image", "default": "none", "options": [{ "value": "none", "label": "None" }, { "value": "alchemy", "label": "Gold alchemy emblem" }] },
     { "type": "image_picker", "id": "image", "label": "Image" },
     { "type": "text", "id": "image_asset", "label": "Or theme asset filename", "info": "Shown beside the text, e.g. lifestyle-hikers-summit-4x5.webp" },
     { "type": "text", "id": "image_alt", "label": "Image alt text" },

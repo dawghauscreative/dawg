@@ -37,6 +37,8 @@
         "heading": "Alchemy is transformation through balance.",
         "heading_tag": "h2",
         "color_scheme": "grey",
+        "graphic": "alchemy",
+        "image_side": "left",
         "body": "<p>Centuries ago, alchemists sought to turn lead into gold. We believe lasting change begins by supporting the body from within.</p>"
       }
     },
