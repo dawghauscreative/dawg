@@ -326,7 +326,7 @@
       "type": "rich-text",
       "settings": {
         "color_scheme": "charcoal",
-        "align": "left",
+        "align": "center",
         "width": "wide",
         "eyebrow": "",
         "heading": "Bundles are about complementary roles, not more bottles.",
