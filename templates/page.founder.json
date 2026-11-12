@@ -47,6 +47,10 @@
         "heading": "To change the way people understand their skin.",
         "heading_tag": "h2",
         "color_scheme": "dark",
+        "image_asset": "about-skin-diversity-3x2.webp",
+        "image_ratio": "3x2",
+        "image_side": "left",
+        "image_alt": "Three women with different skin tones in profile",
         "body": "<p>Instead of something to be fixed or perfected, it is a dynamic living system to be supported. Skin is always seeking balance, and always capable of returning to it.</p>"
       }
     },

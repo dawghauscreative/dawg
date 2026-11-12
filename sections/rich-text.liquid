@@ -10,7 +10,15 @@
   <div class="container" style="position:relative;max-width:{% if rt_img %}1240px{% elsif section.settings.width == 'narrow' %}760px{% else %}1100px{% endif %}{% if section.settings.align == 'center' %};text-align:center{% endif %}">
     {%- if rt_img -%}
     <div class="rich-split{% if section.settings.image_side == 'right' %} rich-split--right{% endif %}">
-      <div class="rich-split__media">{% render 'responsive-image', image: section.settings.image, asset: section.settings.image_asset, asset_width: 1200, asset_height: 1500, ratio: '4x5', sizes: '(min-width: 990px) 40vw, 100vw', alt: section.settings.image_alt %}</div>
+      <div class="rich-split__media">{%- liquid
+          assign rt_ratio = section.settings.image_ratio | default: '4x5'
+          assign rt_w = 1200
+          assign rt_h = 1500
+          if rt_ratio == '3x2'
+            assign rt_w = 1500
+            assign rt_h = 1000
+          endif
+        -%}{% render 'responsive-image', image: section.settings.image, asset: section.settings.image_asset, asset_width: rt_w, asset_height: rt_h, ratio: rt_ratio, sizes: '(min-width: 990px) 40vw, 100vw', alt: section.settings.image_alt %}</div>
       <div class="rich-split__copy">
     {%- endif -%}
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, tag: section.settings.heading_tag, center: head_center -%}
@@ -46,7 +54,8 @@
     { "type": "image_picker", "id": "image", "label": "Image" },
     { "type": "text", "id": "image_asset", "label": "Or theme asset filename", "info": "Shown beside the text, e.g. lifestyle-hikers-summit-4x5.webp" },
     { "type": "text", "id": "image_alt", "label": "Image alt text" },
-    { "type": "select", "id": "image_side", "label": "Image side", "default": "left", "options": [{ "value": "left", "label": "Left" }, { "value": "right", "label": "Right" }] }
+    { "type": "select", "id": "image_side", "label": "Image side", "default": "left", "options": [{ "value": "left", "label": "Left" }, { "value": "right", "label": "Right" }] },
+    { "type": "select", "id": "image_ratio", "label": "Image shape", "default": "4x5", "options": [{ "value": "4x5", "label": "Portrait (4:5)" }, { "value": "3x2", "label": "Landscape (3:2)" }] }
   ],
   "presets": [{ "name": "Rich text" }]
 }
