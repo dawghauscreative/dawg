@@ -1,11 +1,11 @@
 {%- comment -%}
-  Gold alchemy emblem (Nov 12): the alchemical symbols for Air, Water and Earth side by side in a gold gradient, with a
+  Gold alchemy emblem (Nov 12): the alchemical symbols for Water, Air and Earth side by side in a gold gradient, with a
   light glint sweeping across them (SVG animation, paused for reduced motion or when animations are off).
   Usage: {% render 'alchemy-emblem', uid: section.id %}
 {%- endcomment -%}
 {%- assign g = 'alchGold-' | append: uid -%}
 {%- assign s = 'alchShine-' | append: uid -%}
-<svg class="alch-emblem alch-emblem--salts" viewBox="0 0 420 160" role="img" aria-label="Gold alchemical symbols for air, water and earth">
+<svg class="alch-emblem alch-emblem--salts" viewBox="0 0 420 160" role="img" aria-label="Gold alchemical symbols for water, air and earth">
   <defs>
     <linearGradient id="{{ g }}" gradientUnits="userSpaceOnUse" x1="0" y1="20" x2="420" y2="140">
       <stop offset="0" stop-color="#8a6a2e"/>
@@ -23,8 +23,8 @@
       <animateTransform attributeName="gradientTransform" type="translate" values="-460 0; 460 0; 460 0" keyTimes="0; .6; 1" dur="4.5s" repeatCount="indefinite"/>
     </linearGradient>
     <g id="{{ uid }}-shapes">
-      <path d="M72 30L130 130H14Z"/><path d="M22 96.7h100"/>
-      <path d="M210 130L152 30H268Z"/>
+      <path d="M72 130L14 30H130Z"/>
+      <path d="M210 30L268 130H152Z"/><path d="M160 96.7h100"/>
       <path d="M348 130L290 30H406Z"/><path d="M298 63.3h100"/>
     </g>
   </defs>
