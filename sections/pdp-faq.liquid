@@ -3,7 +3,7 @@
 {%- if settings.show_renewal_timeline and settings.renewal_faq_answer != blank and section.settings.show_renewal_faq -%}{%- assign renewal_faq = true -%}{%- endif -%}
 {%- capture guarantee_faq -%}{%- render 'guarantee-badge', style: 'faq' -%}{%- endcapture -%}
 {%- if section.blocks.size > 0 or renewal_faq or guarantee_faq != blank -%}
-<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+<section class="section {% if section.settings.color_scheme == 'charcoal' %}scheme-dark {% endif %}scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container" style="max-width:960px">
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, tag: heading_tag -%}
     <div class="faq">
@@ -33,7 +33,7 @@
 {
   "name": "FAQ",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "green-light", "label": "Lighter green" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "grey", "label": "Grey (brand)" }] },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "charcoal", "label": "Charcoal" }, { "value": "green", "label": "Evergreen" }, { "value": "green-light", "label": "Lighter green" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "grey", "label": "Grey (brand)" }] },
     { "type": "checkbox", "id": "show_renewal_faq", "label": "Include the \"How long until I see results?\" entry", "default": true },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "select", "id": "heading_tag", "label": "Heading level", "default": "h2", "options": [{ "value": "h1", "label": "H1 (page title)" }, { "value": "h2", "label": "H2" }] },
