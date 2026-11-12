@@ -216,7 +216,7 @@
     "edu_sun_safe": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "beige",
+        "color_scheme": "light",
         "image_side": "right",
         "eyebrow": "",
         "heading": "Outdoor Duo",
@@ -231,7 +231,7 @@
     "edu_recovery": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "beige",
+        "color_scheme": "light",
         "image_side": "left",
         "eyebrow": "",
         "heading": "Balance Duo",
@@ -246,7 +246,7 @@
     "edu_resilience": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "beige",
+        "color_scheme": "light",
         "image_side": "right",
         "eyebrow": "",
         "heading": "Sun Resilience Duo",
