@@ -1,5 +1,5 @@
 {%- if section.settings.statement != blank -%}
-<section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
+<section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.eyebrow_size == 'large' %} has-eyebrow-lg{% endif %}" {{ section.shopify_attributes }}>
   <div class="container">
     {%- if section.settings.eyebrow != blank -%}<span class="eyebrow" style="text-align:center">{{ section.settings.eyebrow }}</span>{%- endif -%}
     <p class="definition">{{ section.settings.statement }}</p>
@@ -15,6 +15,7 @@
   "settings": [
     { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "grey", "label": "Grey (brand)" }, { "value": "band", "label": "Band (black to green)" }] },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "select", "id": "eyebrow_size", "label": "Eyebrow size", "default": "normal", "options": [{ "value": "normal", "label": "Normal" }, { "value": "large", "label": "Large (section header)" }] },
     { "type": "textarea", "id": "statement", "label": "Statement", "info": "Empty = hidden. Needs approved copy." }
   ],
   "presets": [{ "name": "Category statement" }]
