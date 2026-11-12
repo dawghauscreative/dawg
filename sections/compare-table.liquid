@@ -9,12 +9,11 @@
           {%- capture ct_url -%}{%- if block.settings.url != blank -%}{{ block.settings.url }}{%- else -%}{%- render 'product-name-url', name: block.settings.label -%}{%- endif -%}{%- endcapture -%}
           {%- assign ct_url = ct_url | strip -%}
           {%- if ct_url != blank -%}<a class="ccard" href="{{ ct_url }}" {{ block.shopify_attributes }}>{%- else -%}<article class="ccard" {{ block.shopify_attributes }}>{%- endif -%}
-            <span class="ccard__num">{{ forloop.index | prepend: '0' }}</span>
             <h3>{{ block.settings.label }}</h3>
             {%- if block.settings.a != blank -%}<span class="ccard__roles">{{ block.settings.a }}</span>{%- endif -%}
             <dl>
-              {%- if block.settings.b != blank -%}<div><dt>{{ section.settings.col_2 }}</dt><dd>{{ block.settings.b }}</dd></div>{%- endif -%}
-              {%- if block.settings.c != blank -%}<div><dt>{{ section.settings.col_3 }}</dt><dd>{{ block.settings.c }}</dd></div>{%- endif -%}
+              {%- if block.settings.b != blank -%}<div><dd>{{ block.settings.b }}</dd></div>{%- endif -%}
+              {%- if block.settings.c != blank -%}<div><dd>{{ block.settings.c }}</dd></div>{%- endif -%}
             </dl>
             {%- if ct_url != blank -%}<span class="ccard__more">Explore</span>{%- endif -%}
           {%- if ct_url != blank -%}</a>{%- else -%}</article>{%- endif -%}
@@ -51,7 +50,7 @@
 {
   "name": "Compare table",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "green-light", "label": "Lighter green" }, { "value": "light", "label": "Beige" }] },
     { "type": "select", "id": "style", "label": "Style", "default": "table", "options": [{ "value": "table", "label": "Table" }, { "value": "cards", "label": "Cards (staggered, with hover)" }] },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
