@@ -1215,7 +1215,7 @@
     "all": {
       "type": "main-blog",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "All articles",
         "empty_text": "New articles are on the way."
