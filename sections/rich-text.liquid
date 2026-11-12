@@ -3,7 +3,7 @@
 {%- if section.settings.image != blank or section.settings.image_asset != blank or section.settings.graphic == 'alchemy' -%}{%- assign rt_img = true -%}{%- endif -%}
 {%- if section.settings.align == 'center' -%}{%- assign head_center = true -%}{%- endif -%}
 {%- if section.settings.heading != blank or section.settings.body != blank -%}
-<section class="section scheme-{{ section.settings.color_scheme }}{% if section.settings.salt_symbol %} has-salt{% endif %}{% if section.settings.tight_bottom %} rt-tight-bottom{% endif %}" {{ section.shopify_attributes }}>
+<section class="section {% if section.settings.color_scheme == 'charcoal' %}scheme-dark {% endif %}scheme-{{ section.settings.color_scheme }}{% if section.settings.salt_symbol %} has-salt{% endif %}{% if section.settings.tight_bottom %} rt-tight-bottom{% endif %}" {{ section.shopify_attributes }}>
   {%- if section.settings.salt_symbol -%}
     <svg class="salt-symbol" viewBox="0 0 400 400" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="10"><circle cx="200" cy="200" r="170"/><path d="M10 200h380"/></svg>
   {%- endif -%}
@@ -38,7 +38,7 @@
 {
   "name": "Rich text",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "green-light", "label": "Lighter green" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "grey", "label": "Grey (brand)" }, { "value": "band", "label": "Band (black to green)" }] },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "charcoal", "label": "Charcoal" }, { "value": "green", "label": "Evergreen" }, { "value": "green-light", "label": "Lighter green" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "grey", "label": "Grey (brand)" }, { "value": "band", "label": "Band (black to green)" }] },
     { "type": "select", "id": "align", "label": "Alignment", "default": "left", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Centered" }] },
     { "type": "select", "id": "width", "label": "Width", "default": "narrow", "options": [{ "value": "narrow", "label": "Narrow" }, { "value": "wide", "label": "Wide" }] },
     { "type": "checkbox", "id": "salt_symbol", "label": "Oversized salt symbol behind the text", "default": false },
