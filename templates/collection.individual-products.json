@@ -190,7 +190,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Which formula is right for me?",
         "col_1": "UV Shield+",
@@ -215,7 +215,7 @@
     "edu_skin": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "image_side": "left",
         "eyebrow": "",
         "heading": "Skinbiotic+",
@@ -229,7 +229,7 @@
     "edu_derma": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "image_side": "right",
         "eyebrow": "",
         "heading": "Dermaboost+",
@@ -274,7 +274,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Not sure where to start?",
         "line": "Want support across more than one area?",
@@ -334,7 +334,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "charcoal",
         "eyebrow": "",
         "heading": "Build a bundle instead.",
         "button_label": "Explore all bundles",
