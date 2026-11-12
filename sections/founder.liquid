@@ -2,7 +2,7 @@
   <div class="founder-split__copy">
     {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
     <h2>{{ section.settings.heading }}</h2>
-    {%- if section.settings.credentials != blank -%}<p class="small" style="margin-top:12px;letter-spacing:.14em;text-transform:uppercase">{{ section.settings.credentials }}</p>{%- endif -%}
+    {%- if section.settings.credentials != blank -%}<p class="small" style="margin-top:12px;letter-spacing:.08em;text-transform:none;font-variant-caps:small-caps;font-size:1.05em">{{ section.settings.credentials }}</p>{%- endif -%}
     {%- if section.settings.body != blank -%}<div class="prose" style="margin-top:1.5rem">{{ section.settings.body }}</div>{%- endif -%}
     {%- if section.settings.link_label != blank -%}
       <div class="btn-row"><a class="btn btn--outline" href="{{ section.settings.link_url | default: '/pages/founder' }}">{{ section.settings.link_label }}</a></div>
