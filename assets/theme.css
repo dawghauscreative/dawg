@@ -1661,3 +1661,7 @@ html[data-motion="off"] .alch-emblem__ring, html[data-motion="off"] .alch-emblem
 
 /* Layers (Nov 12): numbers removed, so the detail list is a single column */
 .layers__list li { grid-template-columns: 1fr; }
+
+/* Science notes / disclaimers in Roboto (Nov 12) */
+.sci-note, .sci-note p { font-family: var(--font-callout); }
+.sci-note p { font-size: .92rem; line-height: 1.6; letter-spacing: .01em; }
