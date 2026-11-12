@@ -1203,8 +1203,8 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 .venn.is-open .venn__circles circle:not(.is-on) { fill-opacity: .03; }
 .venn__title { font-family: var(--font-display); font-size: 28px; }
 .venn__title--sm { font-size: 24px; }
-.venn__sub { font-family: var(--font-callout); font-size: 13px; font-weight: 700; letter-spacing: 2.5px; opacity: .75; }
-.venn__center { font-family: var(--font-callout); font-size: 12px; font-weight: 700; letter-spacing: 2px; opacity: .8; pointer-events: none; }
+.venn__sub { font-family: var(--font-callout); font-size: 16px; font-weight: 700; letter-spacing: 1.4px; font-variant-caps: small-caps; opacity: .75; }
+.venn__center { font-family: var(--font-callout); font-size: 15px; font-weight: 700; letter-spacing: 1.2px; font-variant-caps: small-caps; opacity: .8; pointer-events: none; }
 .venn__labels a { text-decoration: none; }
 .venn__labels a:hover .venn__sub, .venn__labels a:focus-visible .venn__sub { opacity: 1; text-decoration: underline; }
 .venn__labels a:focus, .venn__label:focus, .venn__dot:focus { outline: none; }
