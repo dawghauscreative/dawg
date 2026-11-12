@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "color_scheme": "dark",
+            "badge": "",
             "heading": "Balanced skin starts from within.",
             "body": "<p>Dermatologist-formulated supplements, built around published research.</p>",
             "primary_label": "Start today",
@@ -49,6 +50,7 @@
           "type": "slide",
           "settings": {
             "color_scheme": "dark",
+            "badge": "",
             "heading": "Explore the science.",
             "body": "<p>Each formula has a defined role, with the research behind it.</p>",
             "primary_label": "See how they work",
@@ -65,6 +67,7 @@
           "type": "slide",
           "settings": {
             "color_scheme": "dark",
+            "badge": "",
             "heading": "Buy a bottle, fund the research.",
             "body": "<p>Your purchase contributes to melanoma research.</p>",
             "primary_label": "Our mission",
@@ -198,7 +201,6 @@
       "block_order": [
         "supr_bundles_subscriptions_product_block_KfATzW"
       ],
-      "disabled": true,
       "settings": {
         "product": "outdoor-duo",
         "asset": "",
@@ -216,13 +218,19 @@
         "align": "center",
         "width": "wide",
         "salt_symbol": false,
+        "tight_bottom": false,
         "eyebrow": "",
         "heading": "Skin health is more than a surface routine.",
         "heading_tag": "h2",
         "body": "<h4>Skin is a living, dynamic system.</h4><h4>It responds to what happens outside the body, but also to nutrition, oxidative stress, immune signaling, the microbiome, and daily lifestyle.</h4><h4>Alchemia MD was built around a simple idea:</h4><h4><strong>Support skin from the inside out.†</strong></h4>",
         "quote": "",
         "button_label": "What is internal skin defense?",
-        "button_url": "/blogs/blog/what-is-internal-skin-defense"
+        "button_url": "/blogs/blog/what-is-internal-skin-defense",
+        "graphic": "none",
+        "image_asset": "",
+        "image_alt": "",
+        "image_side": "left",
+        "image_ratio": "4x5"
       }
     },
     "intro_video": {
@@ -684,13 +692,19 @@
         "align": "center",
         "width": "narrow",
         "salt_symbol": false,
+        "tight_bottom": false,
         "eyebrow": "",
         "heading": "Balance is a practice.",
         "heading_tag": "h2",
         "body": "<p>Alchemy was historically the pursuit of transformation through balance. Alchemia MD carries that idea into modern skin health.</p><p>Skin is always changing. It renews, adapts, responds, and rebuilds.</p><p>The goal is not perfect skin. The goal is to support the systems that help skin remain balanced, resilient, and vital through the changing demands of life.†</p>",
         "quote": "",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "graphic": "none",
+        "image_asset": "",
+        "image_alt": "",
+        "image_side": "left",
+        "image_ratio": "4x5"
       }
     },
     "trust": {
@@ -824,13 +838,19 @@
         "align": "center",
         "width": "narrow",
         "salt_symbol": false,
+        "tight_bottom": false,
         "eyebrow": "",
         "heading": "Every purchase supports a larger mission.",
         "heading_tag": "h2",
         "body": "<p>Your purchase contributes to melanoma research.</p>",
         "quote": "",
         "button_label": "Learn about our mission",
-        "button_url": "/pages/founder"
+        "button_url": "/pages/founder",
+        "graphic": "none",
+        "image_asset": "",
+        "image_alt": "",
+        "image_side": "left",
+        "image_ratio": "4x5"
       }
     },
     "email": {
@@ -869,8 +889,8 @@
   "order": [
     "hero",
     "trust_strip",
-    "roles",
     "buy_box",
+    "roles",
     "category",
     "intro_video",
     "problem",
