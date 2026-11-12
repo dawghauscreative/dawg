@@ -14,7 +14,7 @@
           {%- assign front_asset = front_capture | strip -%}
           <div class="step__media">{% if front_asset != blank %}{% render 'responsive-image', asset: front_asset, asset_width: 1200, asset_height: 1500, ratio: '4x5', sizes: '220px', alt: c.title %}{% else %}{% render 'responsive-image', image: c.featured_media, ratio: '4x5', sizes: '220px', alt: c.title %}{% endif %}</div>
           <div class="stack" style="--stack:.75rem">
-            <span class="step__num"><span class="step__badge">{{ forloop.index }}</span>{{ section.settings.step_label }} {{ forloop.index }}</span>
+            
             <h3>{{ c.title }}</h3>
             {%- if c.metafields.custom.tagline != blank -%}<p>{{ c.metafields.custom.tagline }}</p>{%- endif -%}
             <a class="text-link" href="{{ c.url }}">View product</a>

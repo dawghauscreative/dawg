@@ -26,7 +26,6 @@
         <div class="flow__panel" id="Flow-{{ section.id }}" aria-live="polite">
           {%- for block in section.blocks -%}
             <div class="flow__detail" data-step="{{ forloop.index0 }}">
-              <span class="flow__detail-num">{{ forloop.index | prepend: '0' }}</span>
               <div><h3>{{ block.settings.label }}</h3><p>{{ block.settings.detail }}</p></div>
             </div>
           {%- endfor -%}

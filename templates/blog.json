@@ -175,7 +175,7 @@
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "01",
+            "category": "",
             "title": "What Is Internal Skin Defense?",
             "teaser": "Why skin health is shaped by more than the surface, and how internal support, sun habits and consistency fit together.",
             "article": "what-is-internal-skin-defense",
@@ -187,7 +187,7 @@
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "02",
+            "category": "",
             "title": "What Is the Gut-Skin Axis?",
             "teaser": "How the intestinal environment and skin communicate, and what the research can and cannot say.",
             "article": "what-is-the-gut-skin-axis",
@@ -199,7 +199,7 @@
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "03",
+            "category": "",
             "title": "Understanding Skin Renewal",
             "teaser": "Skin continually renews itself. How that works, and why it is gradual.",
             "article": "understanding-skin-renewal",
@@ -211,7 +211,7 @@
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "04",
+            "category": "",
             "title": "Why Consistency Matters in Skin Health",
             "teaser": "Skin changes slowly. Why daily habits matter more than quick fixes.",
             "article": "why-consistency-matters-in-skin-health",
@@ -1136,7 +1136,7 @@
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "01",
+            "category": "",
             "title": "What Is Internal Skin Health?",
             "teaser": "",
             "article": "what-is-internal-skin-health",
@@ -1148,7 +1148,7 @@
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "02",
+            "category": "",
             "title": "Why Sunscreen Still Matters",
             "teaser": "",
             "article": "",
@@ -1160,7 +1160,7 @@
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "03",
+            "category": "",
             "title": "The Gut-Skin Axis, Explained",
             "teaser": "",
             "article": "what-is-the-gut-skin-axis",
@@ -1172,7 +1172,7 @@
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "04",
+            "category": "",
             "title": "How to Read a Supplement Label",
             "teaser": "",
             "article": "",
@@ -1184,7 +1184,7 @@
           "type": "article",
           "settings": {
             "asset": "",
-            "category": "05",
+            "category": "",
             "title": "Ingredient Study vs. Product Proof",
             "teaser": "",
             "article": "",

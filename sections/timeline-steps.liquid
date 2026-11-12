@@ -12,7 +12,6 @@
         {%- for block in section.blocks -%}
           <li class="tl__item" data-step="{{ forloop.index0 }}" tabindex="0" role="button" aria-controls="Timeline-{{ section.id }}" {{ block.shopify_attributes }}>
             <span class="tl__dot" aria-hidden="true"></span>
-            <span class="tl__num">{{ forloop.index | prepend: '0' }}</span>
             <span class="tl__label">{{ block.settings.label }}</span>
             <p class="tl__text tl__text--inline">{{ block.settings.text }}</p>
           </li>
@@ -21,7 +20,6 @@
       <div class="tl__panel" id="Timeline-{{ section.id }}" aria-live="polite">
         {%- for block in section.blocks -%}
           <div class="tl__detail" data-step="{{ forloop.index0 }}">
-            <span class="tl__detail-num">{{ forloop.index | prepend: '0' }}</span>
             <div><h3>{{ block.settings.label }}</h3><p>{{ block.settings.text }}</p></div>
           </div>
         {%- endfor -%}
