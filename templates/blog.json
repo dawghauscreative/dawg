@@ -1000,6 +1000,7 @@
         "heading": "See how the science informs the formulas.",
         "body": "",
         "columns": "3",
+        "flip": true,
         "blog_handle": "blog",
         "button_label": "",
         "button_url": ""

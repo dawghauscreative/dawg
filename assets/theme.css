@@ -1643,3 +1643,12 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 @keyframes alchBreathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
 @media (prefers-reduced-motion: reduce) { .alch-emblem__ring, .alch-emblem__salt { animation: none; } }
 html[data-motion="off"] .alch-emblem__ring, html[data-motion="off"] .alch-emblem__salt { animation: none; }
+
+/* Skin Edu product cards that flip (sections/edu-articles, "Flip product cards", Nov 12) */
+.edu-flip, .edu-flip .role-flip__inner { height: 100%; }
+.edu-flip .edu-card { height: 100%; }
+.edu-flip .role-flip__back .role-badge { color: var(--c-gold); border-color: color-mix(in srgb, var(--c-gold) 70%, transparent); }
+.edu-flip .role-flip__back a:not(.btn) { color: inherit; }
+.edu-flip .role-flip__back { --btn-bg: var(--c-gold-bright); --btn-fg: #fff; --btn-sheen: var(--gold-sheen); --btn-sheen-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .18), 0 6px 18px rgba(193, 140, 49, .28); --btn-sheen-text: 0 1px 1px rgba(0, 0, 0, .22); }
+.edu-flip .role-flip__back .role-flip__price, .edu-flip .role-flip__back .role-flip__label { color: var(--c-gold); }
+.edu-flip .role-flip__back .role-flip__summary { color: var(--c-white); }

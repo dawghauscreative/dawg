@@ -15,7 +15,15 @@
         {%- if a != blank -%}{%- assign href = a.url -%}{%- endif -%}
         {%- assign has_media = false -%}
         {%- if block.settings.image != blank or block.settings.asset != blank -%}{%- assign has_media = true -%}{%- endif -%}
-        <article class="edu-card{% if href == blank %} edu-card--soon{% endif %}{% if has_media %} edu-card--media{% endif %}" {{ block.shopify_attributes }}>
+        {%- liquid
+          assign fp = blank
+          if section.settings.flip and href contains '/products/'
+            assign fp_handle = href | split: '/products/' | last | split: '?' | first | split: '#' | first
+            assign fp = all_products[fp_handle]
+          endif
+        -%}
+        {%- if fp != blank -%}<div class="role-flip edu-flip" data-flip {{ block.shopify_attributes }}><div class="role-flip__inner">{%- endif -%}
+        <article class="edu-card{% if href == blank %} edu-card--soon{% endif %}{% if has_media %} edu-card--media{% endif %}{% if fp != blank %} role-flip__front{% endif %}"{% if fp == blank %} {{ block.shopify_attributes }}{% endif %}>
           {%- if has_media -%}
             {%- if href != blank -%}<a class="edu-card__img" href="{{ href }}" tabindex="-1" aria-hidden="true">{%- else -%}<div class="edu-card__img">{%- endif -%}
               {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, ratio: '4x5', sizes: '(min-width: 1000px) 30vw, (min-width: 750px) 45vw, 100vw', alt: block.settings.title %}
@@ -31,6 +39,22 @@
           </p>
           </div>
         </article>
+        {%- if fp != blank -%}
+          {%- comment -%} Back of the card (hover on desktop, tap on phones; assets/theme.js "Card flip"). {%- endcomment -%}
+          <div class="role-flip__back">
+            {%- if block.settings.category != blank -%}<span class="role-badge">{{ block.settings.category }}</span>{%- endif -%}
+            <h3 class="role-flip__title"><a href="{{ fp.url }}">{{ fp.title }}</a></h3>
+            <p class="role-flip__price">{% if fp.price_varies %}From {% endif %}{{ fp.price_min | money }}</p>
+            {%- if fp.metafields.custom.key_ingredients.value != blank -%}
+              <p class="role-flip__label">Key ingredients</p>
+              {%- assign flip_science = pages['science'].url | default: '/pages/science' -%}
+              {%- render 'product-quickview-ingredients', text: fp.metafields.custom.key_ingredients.value, science: flip_science -%}
+            {%- endif -%}
+            {%- if fp.metafields.custom.summary.value != blank -%}<p class="role-flip__summary">{{ fp.metafields.custom.summary.value }}</p>{%- endif -%}
+            <a class="btn role-flip__cta" href="{{ fp.url }}">Choose your plan</a>
+          </div>
+          </div></div>
+        {%- endif -%}
       {%- endfor -%}
     </div>
     {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
@@ -50,6 +74,7 @@
     { "type": "richtext", "id": "body", "label": "Text" },
     { "type": "select", "id": "columns", "label": "Cards per row", "default": "3", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }] },
     { "type": "text", "id": "blog_handle", "label": "Blog handle", "default": "blog" },
+    { "type": "checkbox", "id": "flip", "label": "Flip product cards", "info": "Cards linking to a product page flip on hover (tap on phones) to show price, key ingredients and Choose your plan.", "default": false },
     { "type": "text", "id": "button_label", "label": "Button label (optional)" },
     { "type": "url", "id": "button_url", "label": "Button link" }
   ],
