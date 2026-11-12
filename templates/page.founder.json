@@ -33,7 +33,7 @@
     "alchemy": {
       "type": "rich-text",
       "settings": {
-        "eyebrow": "",
+        "eyebrow": "Brand Philosophy",
         "heading": "Alchemy is transformation through balance.",
         "heading_tag": "h2",
         "color_scheme": "grey",
@@ -45,7 +45,7 @@
     "purpose": {
       "type": "rich-text",
       "settings": {
-        "eyebrow": "",
+        "eyebrow": "Prevention",
         "heading": "To change the way people understand their skin.",
         "heading_tag": "h2",
         "color_scheme": "light",
@@ -60,7 +60,7 @@
       "type": "category-statement",
       "settings": {
         "color_scheme": "grey",
-        "eyebrow": "",
+        "eyebrow": "Our Mission",
         "statement": "To transform skin health from the inside out. We are guided by dermatological science and the philosophy that balance is a practice, not a destination."
       }
     },
