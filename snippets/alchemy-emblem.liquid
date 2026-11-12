@@ -1,9 +1,9 @@
 {%- comment -%}
-  Gold alchemy emblem (Nov 12, simplified): three alchemical salt symbols (a circle with a line through it) side by side,
+  Gold alchemy emblem (Nov 12, simplified): three alchemical symbols side by side: salt, mercury and gold,
   in a gold gradient. Each one gently pulses in turn. Usage: {% render 'alchemy-emblem', uid: section.id %}
 {%- endcomment -%}
 {%- assign g = 'alchGold-' | append: uid -%}
-<svg class="alch-emblem alch-emblem--salts" viewBox="0 0 420 160" role="img" aria-label="Three gold alchemical salt symbols side by side">
+<svg class="alch-emblem alch-emblem--salts" viewBox="0 0 420 160" role="img" aria-label="Gold alchemical symbols for salt, mercury and gold">
   <defs>
     <linearGradient id="{{ g }}" gradientUnits="userSpaceOnUse" x1="0" y1="20" x2="420" y2="140">
       <stop offset="0" stop-color="#8a6a2e"/>
@@ -14,8 +14,8 @@
     </linearGradient>
   </defs>
   <g fill="none" stroke="url(#{{ g }})" stroke-width="5" stroke-linecap="round">
-    <g class="alch-emblem__salt" style="--d: 0s; transform-origin: 72px 80px"><circle cx="72" cy="80" r="56"/><path d="M8 80h128"/></g>
-    <g class="alch-emblem__salt" style="--d: 1s; transform-origin: 210px 80px"><circle cx="210" cy="80" r="56"/><path d="M146 80h128"/></g>
-    <g class="alch-emblem__salt" style="--d: 2s; transform-origin: 348px 80px"><circle cx="348" cy="80" r="56"/><path d="M284 80h128"/></g>
+    <g class="alch-emblem__salt" style="--d: 0s; transform-origin: 72px 80px"><title>Salt</title><circle cx="72" cy="80" r="52"/><path d="M12 80h120"/></g>
+    <g class="alch-emblem__salt" style="--d: 1s; transform-origin: 210px 80px"><title>Mercury</title><path d="M184 14a26 26 0 0 0 52 0"/><circle cx="210" cy="72" r="30"/><path d="M210 102v48M190 126h40"/></g>
+    <g class="alch-emblem__salt" style="--d: 2s; transform-origin: 348px 80px"><title>Gold</title><circle cx="348" cy="80" r="52"/><circle cx="348" cy="80" r="8" fill="url(#{{ g }})" stroke="none"/></g>
   </g>
 </svg>
