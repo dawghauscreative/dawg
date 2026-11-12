@@ -5,13 +5,12 @@
     <div class="layers" data-layers data-scroll-steps="single">
       <div class="layers__stack">
         {%- for block in section.blocks -%}
-          <button class="layers__bar" type="button" style="--i: {{ forloop.index0 }}" data-layer="{{ forloop.index0 }}" aria-describedby="Layer-{{ section.id }}-{{ forloop.index0 }}"><span>{{ forloop.index | prepend: '0' }}</span>{{ block.settings.short }}</button>
+          <button class="layers__bar" type="button" style="--i: {{ forloop.index0 }}" data-layer="{{ forloop.index0 }}" aria-describedby="Layer-{{ section.id }}-{{ forloop.index0 }}">{{ block.settings.short }}</button>
         {%- endfor -%}
       </div>
       <ol class="layers__list">
         {%- for block in section.blocks -%}
           <li id="Layer-{{ section.id }}-{{ forloop.index0 }}" data-layer="{{ forloop.index0 }}" style="--i: {{ forloop.index0 }}" {{ block.shopify_attributes }}>
-            <span class="layers__num">{{ forloop.index | prepend: '0' }}</span>
             <div><h3>{{ block.settings.title }}</h3><p>{{ block.settings.text }}</p></div>
           </li>
         {%- endfor -%}

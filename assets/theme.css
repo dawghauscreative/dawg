@@ -1658,3 +1658,6 @@ html[data-motion="off"] .alch-emblem__ring, html[data-motion="off"] .alch-emblem
 .prose h4 { line-height: 1.45; text-wrap: pretty; }
 .prose h4 + h4, .prose p + h4, .prose h4 + p { margin-top: .75em; }
 .prose--full { max-width: none; }
+
+/* Layers (Nov 12): numbers removed, so the detail list is a single column */
+.layers__list li { grid-template-columns: 1fr; }
