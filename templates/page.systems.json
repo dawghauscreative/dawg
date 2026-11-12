@@ -24,7 +24,7 @@
         "secondary_url": "/collections/individual-products",
         "asset": "systems-hero.webp",
         "ratio": "16x9",
-        "light_panel": true
+        "light_panel": false
       }
     },
     "framework": {
@@ -225,7 +225,7 @@
         "primary_label": "Explore Outdoor Duo",
         "asset": "system-sun-safe.webp",
         "ratio": "16x9",
-        "light_panel": true
+        "light_panel": false
       }
     },
     "edu_recovery": {
@@ -240,7 +240,7 @@
         "primary_label": "Explore Balance Duo",
         "asset": "system-skin-recovery.webp",
         "ratio": "16x9",
-        "light_panel": true
+        "light_panel": false
       }
     },
     "edu_resilience": {
@@ -255,7 +255,7 @@
         "primary_label": "Explore Sun Resilience Duo",
         "asset": "system-sun-resilience.webp",
         "ratio": "16x9",
-        "light_panel": true
+        "light_panel": false
       }
     },
     "edu_complete": {
@@ -270,7 +270,7 @@
         "primary_label": "Explore Tria Prima",
         "asset": "system-complete.webp",
         "ratio": "16x9",
-        "light_panel": true
+        "light_panel": false
       }
     },
     "finder": {

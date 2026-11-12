@@ -24,7 +24,7 @@
         "secondary_url": "/pages/bundles",
         "asset": "individual-three-formulas.webp",
         "ratio": "16x9",
-        "light_panel": true
+        "light_panel": false
       }
     },
     "roles": {
