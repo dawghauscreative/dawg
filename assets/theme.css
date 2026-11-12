@@ -1676,3 +1676,27 @@ html[data-motion="off"] .alch-emblem__ring, html[data-motion="off"] .alch-emblem
 .sci-cards--rows .sci-card__body::before { content: none; display: none; }
 @media (min-width: 750px) { .sci-cards--rows .sci-card__body { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); } }
 .sci-card__num { display: none; }
+
+/* Gut-skin body line art beside the flow-steps intro (snippets/gut-skin-body.liquid, Nov 12) */
+.flow-intro { display: grid; gap: clamp(24px, 4vw, 64px); align-items: center; }
+@media (min-width: 990px) { .flow-intro { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); } }
+.flow-intro__figure { display: flex; justify-content: center; }
+.gutbody { width: 100%; max-width: 300px; height: auto; max-height: 520px; overflow: visible; }
+.gutbody g { fill: none; stroke: var(--c-gold); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: opacity .45s ease, filter .45s ease, stroke-width .3s ease; cursor: pointer; }
+.gutbody__metabolites circle, .gutbody__immune circle { fill: var(--c-gold); stroke: none; }
+.gutbody__skin { stroke-width: 1.8; }
+.gutbody__vessels { stroke-width: 1.3; }
+.gutbody__flow { stroke-dasharray: 5 7; }
+.gutbody__heart { fill: color-mix(in srgb, var(--c-gold) 35%, transparent); }
+.gutbody.has-active g { opacity: .28; }
+.gutbody.has-active g.is-on { opacity: 1; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--c-gold-bright, #E3B04B) 80%, transparent)); }
+.gutbody.has-active .gutbody__skin.is-on { stroke-width: 2.6; }
+.gutbody g.is-on .gutbody__flow { animation: gutbodyFlow 1.6s linear infinite; }
+.gutbody g.is-on .gutbody__heart { animation: gutbodyBeat 1.1s ease-in-out infinite; transform-origin: 158px 200px; }
+.gutbody__metabolites.is-on circle, .gutbody__immune.is-on circle { animation: gutbodyPulse 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.gutbody__metabolites.is-on circle:nth-child(2n) { animation-delay: .4s; } .gutbody__immune.is-on circle:nth-child(2n) { animation-delay: .5s; }
+@keyframes gutbodyFlow { to { stroke-dashoffset: -24; } }
+@keyframes gutbodyBeat { 0%, 100% { transform: scale(1); } 40% { transform: scale(1.15); } }
+@keyframes gutbodyPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.6); } }
+@media (prefers-reduced-motion: reduce) { .gutbody g, .gutbody g * { animation: none !important; transition: none; } }
+html[data-motion="off"] .gutbody g * { animation: none !important; }

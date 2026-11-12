@@ -12,7 +12,9 @@
 -%}
 <section class="section scheme-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}>
   <div class="container">
+    {%- if section.settings.figure == 'body' -%}<div class="flow-intro"><div class="flow-intro__copy">{%- endif -%}
     {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    {%- if section.settings.figure == 'body' -%}</div><div class="flow-intro__figure">{% render 'gut-skin-body', uid: section.id %}</div></div>{%- endif -%}
     <div class="flow-wrap{% if has_detail %} flow-wrap--detail{% endif %}" data-flow>
       <ol class="flow">
         {%- for block in section.blocks -%}
@@ -46,7 +48,8 @@
     { "type": "text", "id": "heading", "label": "Heading" },
     { "type": "richtext", "id": "body", "label": "Text" },
     { "type": "text", "id": "takeaway", "label": "Takeaway" },
-    { "type": "text", "id": "note", "label": "Small note" }
+    { "type": "text", "id": "note", "label": "Small note" },
+    { "type": "select", "id": "figure", "label": "Illustration", "default": "none", "options": [{ "value": "none", "label": "None" }, { "value": "body", "label": "Human body line art (gut-skin steps)" }], "info": "The body lights up the gut, metabolites, immune nodes, circulation and skin for steps 1 to 5." }
   ],
   "blocks": [
     { "type": "step", "name": "Step", "settings": [{ "type": "text", "id": "kicker", "label": "Small label" }, { "type": "text", "id": "label", "label": "Step" }, { "type": "textarea", "id": "detail", "label": "Detail (shown on hover or tap)" }] }

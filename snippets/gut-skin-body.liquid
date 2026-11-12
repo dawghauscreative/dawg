@@ -1,0 +1,47 @@
+{%- comment -%}
+  Gold line-art human figure for the gut-skin connection (Nov 12). Each part is tied to a flow step by data-body-step:
+  0 gut microbiome (intestines), 1 microbial metabolites (particles), 2 immune signaling (lymph nodes),
+  3 systemic circulation (heart and vessels), 4 skin (the outline). assets/theme.js lights the part of the active step;
+  hovering or tapping a part selects its step.
+{%- endcomment -%}
+<svg class="gutbody" viewBox="0 0 300 600" role="img" aria-label="Line drawing of a human body showing the gut, the immune system, circulation and the skin" data-gutbody>
+  <defs>
+    <g id="gutbody-half-{{ uid }}">
+      <path d="M150 22c-19 0-31 15-31 38 0 19 9 35 20 41"/>
+      <path d="M139 101l-2 21c-22 5-46 9-58 22-9 10-12 28-15 52l-6 66c-2 24-4 46-6 72"/>
+      <path d="M52 334c-5 6-8 14-6 22 1 6 6 9 10 6"/>
+      <path d="M93 192c-3 34-8 70-14 104-4 24-7 42-10 58"/>
+      <path d="M95 190c2 38 6 70 2 104-3 22 2 40 10 58"/>
+      <path d="M107 352c-6 62-2 124 3 186l2 34c0 8-10 10-18 12-8 2-6 8 2 8h30"/>
+      <path d="M150 382c-4 56-12 106-17 156l-2 46"/>
+    </g>
+  </defs>
+  <g class="gutbody__skin" data-body-step="4">
+    <use href="#gutbody-half-{{ uid }}"/>
+    <use href="#gutbody-half-{{ uid }}" transform="translate(300 0) scale(-1 1)"/>
+    <path class="gutbody__glint" d="M178 52c4 6 5 14 3 22"/>
+  </g>
+  <g class="gutbody__vessels" data-body-step="3">
+    <path class="gutbody__flow" d="M150 205V120M150 120V96"/>
+    <path class="gutbody__flow" d="M150 205c-20-8-38-6-50 4-12 26-16 70-22 118"/>
+    <path class="gutbody__flow" d="M150 205c20-8 38-6 50 4 12 26 16 70 22 118"/>
+    <path class="gutbody__flow" d="M150 205v150c-14 50-18 120-22 190"/>
+    <path class="gutbody__flow" d="M150 355c14 50 18 120 22 190"/>
+    <path class="gutbody__heart" d="M158 214c-10-6-18-12-18-20 0-6 5-10 10-10 4 0 7 2 8 6 1-4 4-6 8-6 5 0 10 4 10 10 0 8-8 14-18 20z"/>
+  </g>
+  <g class="gutbody__gut" data-body-step="0">
+    <path d="M138 236c-10 2-16 10-14 20 2 8 12 10 22 8 14-2 26-10 28-22"/>
+    <path d="M122 282h56c9 0 9 13 0 13h-56c-9 0-9 13 0 13h56c9 0 9 13 0 13h-56c-9 0-9 13 0 13h56"/>
+    <path d="M114 276c-6 24-6 52 2 74M186 276c6 24 6 52-2 74M114 276c20-6 52-6 72 0"/>
+  </g>
+  <g class="gutbody__metabolites" data-body-step="1">
+    <circle cx="196" cy="268" r="3.5"/><circle cx="104" cy="262" r="3"/><circle cx="200" cy="318" r="2.5"/>
+    <circle cx="100" cy="330" r="3.5"/><circle cx="168" cy="258" r="2.5"/><circle cx="132" cy="358" r="3"/><circle cx="174" cy="360" r="2.5"/>
+  </g>
+  <g class="gutbody__immune" data-body-step="2">
+    <circle cx="138" cy="114" r="4"/><circle cx="162" cy="114" r="4"/>
+    <circle cx="102" cy="188" r="4.5"/><circle cx="198" cy="188" r="4.5"/>
+    <circle cx="128" cy="372" r="4.5"/><circle cx="172" cy="372" r="4.5"/>
+    <circle cx="150" cy="270" r="5"/>
+  </g>
+</svg>

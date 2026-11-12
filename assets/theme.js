@@ -427,6 +427,9 @@
   document.querySelectorAll('[data-flow]').forEach(function (box) {
     var steps = Array.prototype.slice.call(box.querySelectorAll('.flow__step'));
     var details = box.querySelectorAll('.flow__detail');
+    var sec = box.closest('.section');
+    var spots = sec ? Array.prototype.slice.call(sec.querySelectorAll('[data-body-step]')) : [];
+    var body = sec ? sec.querySelector('[data-gutbody]') : null;
     var hasDetail = details.length > 0;
     var timer = null;
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -434,6 +437,8 @@
       box.classList.add('has-active');
       steps.forEach(function (s) { var on = s.getAttribute('data-step') === String(i); s.classList.toggle('is-active', on); if (hasDetail) s.setAttribute('aria-pressed', on ? 'true' : 'false'); });
       details.forEach(function (d) { d.classList.toggle('is-active', d.getAttribute('data-step') === String(i)); });
+      if (body) body.classList.add('has-active');
+      spots.forEach(function (g) { g.classList.toggle('is-on', g.getAttribute('data-body-step') === String(i)); });
     }
     function stop() { if (timer) { clearInterval(timer); timer = null; } }
     if (hasDetail) {
@@ -445,6 +450,12 @@
         s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); stop(); set(i); } });
       });
     }
+    spots.forEach(function (g) {
+      var i = g.getAttribute('data-body-step');
+      if (!steps[i]) return;
+      g.addEventListener('mouseenter', function () { stop(); set(i); });
+      g.addEventListener('click', function () { stop(); set(i); });
+    });
     function start() {
       box.classList.add('is-in');
       if (!hasDetail) return;
