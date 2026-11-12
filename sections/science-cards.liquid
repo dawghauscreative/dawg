@@ -11,7 +11,7 @@
     {%- if layout == 'split' -%}</div>{%- endif -%}
     <div class="cols cols--auto4 sci-cards sci-cards--{{ section.settings.columns }} sci-cards--{{ layout }}">
       {%- for block in section.blocks -%}
-        <article class="sci-card" {{ block.shopify_attributes }}>
+        <article class="sci-card{% if block.settings.url != blank %} sci-card--link{% endif %}" {{ block.shopify_attributes }}>
           {%- if section.settings.show_images -%}
             {% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, asset_width: 1536, asset_height: 1024, ratio: '3x2', sizes: '(min-width: 990px) 25vw, 100vw', alt: block.settings.title %}
           {%- endif -%}
@@ -19,8 +19,9 @@
             {%- if block.settings.number != blank -%}<span class="sci-card__num">{{ block.settings.number }}</span>{%- endif -%}
             {%- if block.settings.kicker != blank -%}<span class="sci-card__kicker">{{ block.settings.kicker }}</span>{%- endif -%}
             {%- if block.settings.icon != 'none' -%}<span class="icon">{% render 'icon', name: block.settings.icon %}</span>{%- endif -%}
-            <h3>{{ block.settings.title }}</h3>
+            <h3>{%- if block.settings.url != blank -%}<a class="sci-card__link" href="{{ block.settings.url }}">{{ block.settings.title }}</a>{%- else -%}{{ block.settings.title }}{%- endif -%}</h3>
             <div class="sci-card__text">{{ block.settings.text }}</div>
+            {%- if block.settings.url != blank -%}<span class="sci-card__more" aria-hidden="true">Learn more &rarr;</span>{%- endif -%}
             {%- if block.settings.tag != blank -%}<p class="sci-card__tag"><span>Research area</span> {{ block.settings.tag }}</p>{%- endif -%}
             {%- if block.settings.study != blank -%}
               {%- assign study_handles = block.settings.study | split: ',' -%}
@@ -72,6 +73,7 @@
         { "type": "text", "id": "kicker", "label": "Kicker (small label above the title)" },
         { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [{ "value": "none", "label": "None" }, { "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
         { "type": "text", "id": "title", "label": "Title" },
+        { "type": "url", "id": "url", "label": "Card link (optional)", "info": "Makes the whole card clickable." },
         { "type": "richtext", "id": "text", "label": "Text" },
         { "type": "text", "id": "tag", "label": "Research area tag" },
         { "type": "text", "id": "study", "label": "Citation (study handle)", "info": "Handle of a Research study entry. Shows only when that study is approved for public display." },

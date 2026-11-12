@@ -152,35 +152,40 @@
           "type": "card",
           "settings": {
             "number": "",
-            "title": "Microbiome biology"
+            "title": "Microbiome biology",
+            "url": "/pages/science#skinbiotic"
           }
         },
         "b2": {
           "type": "card",
           "settings": {
             "number": "",
-            "title": "Intestinal barrier support†"
+            "title": "Intestinal barrier support†",
+            "url": "/blogs/blog/what-is-the-gut-skin-axis"
           }
         },
         "b3": {
           "type": "card",
           "settings": {
             "number": "",
-            "title": "Immune-related signaling"
+            "title": "Immune-related signaling",
+            "url": "/blogs/blog/what-is-internal-skin-defense"
           }
         },
         "b4": {
           "type": "card",
           "settings": {
             "number": "",
-            "title": "Oxidative-stress biology"
+            "title": "Oxidative-stress biology",
+            "url": "/blogs/blog/how-antioxidants-support-skin-health"
           }
         },
         "b5": {
           "type": "card",
           "settings": {
             "number": "",
-            "title": "Broader nutritional support†"
+            "title": "Broader nutritional support†",
+            "url": "/pages/science#dermaboost"
           }
         }
       },
