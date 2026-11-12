@@ -1637,7 +1637,8 @@ a.edu-card[data-edu-ing] .text-link { text-decoration: underline; text-underline
 /* Gold alchemy emblem (snippets/alchemy-emblem.liquid, Nov 12): outer ring turns slowly, salt symbol breathes */
 .alch-emblem { display: block; width: 100%; max-width: 440px; height: auto; margin-inline: auto; filter: drop-shadow(0 10px 30px color-mix(in srgb, #C9A96E 25%, transparent)); }
 .alch-emblem__ring { transform-origin: 200px 200px; animation: alchSpin 90s linear infinite; }
-.alch-emblem__salt { transform-origin: 200px 242.7px; animation: alchBreathe 6s ease-in-out infinite; }
+.alch-emblem__salt { animation: alchBreathe 6s ease-in-out infinite; animation-delay: var(--d, 0s); }
+.alch-emblem--salts { max-width: 480px; }
 @keyframes alchSpin { to { transform: rotate(360deg); } }
 @keyframes alchBreathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
 @media (prefers-reduced-motion: reduce) { .alch-emblem__ring, .alch-emblem__salt { animation: none; } }

@@ -1,36 +1,21 @@
 {%- comment -%}
-  Gold alchemy emblem (Nov 12): the classic "squared circle" figure (circle, square, triangle, inner circle) with the
-  alchemical symbol for salt at its heart, inside a slowly turning ring of ticks. Pure SVG, gold gradient stroke.
-  Usage: {% render 'alchemy-emblem', uid: section.id %}
+  Gold alchemy emblem (Nov 12, simplified): three alchemical salt symbols (a circle with a line through it) side by side,
+  in a gold gradient. Each one gently pulses in turn. Usage: {% render 'alchemy-emblem', uid: section.id %}
 {%- endcomment -%}
 {%- assign g = 'alchGold-' | append: uid -%}
-<svg class="alch-emblem" viewBox="0 0 400 400" role="img" aria-label="Gold alchemy emblem: circle, square and triangle around the alchemical symbol for salt">
+<svg class="alch-emblem alch-emblem--salts" viewBox="0 0 420 160" role="img" aria-label="Three gold alchemical salt symbols side by side">
   <defs>
-    <linearGradient id="{{ g }}" gradientUnits="userSpaceOnUse" x1="40" y1="40" x2="360" y2="360">
+    <linearGradient id="{{ g }}" gradientUnits="userSpaceOnUse" x1="0" y1="20" x2="420" y2="140">
       <stop offset="0" stop-color="#8a6a2e"/>
-      <stop offset=".35" stop-color="#E3B04B"/>
-      <stop offset=".55" stop-color="#f6dc9a"/>
-      <stop offset=".8" stop-color="#C9A96E"/>
+      <stop offset=".3" stop-color="#E3B04B"/>
+      <stop offset=".5" stop-color="#f6dc9a"/>
+      <stop offset=".72" stop-color="#C9A96E"/>
       <stop offset="1" stop-color="#8a6a2e"/>
     </linearGradient>
   </defs>
-  <g fill="none" stroke="url(#{{ g }})" stroke-linecap="round" stroke-linejoin="round">
-    <g class="alch-emblem__ring">
-      <circle cx="200" cy="200" r="186" stroke-width="1.5"/>
-      <circle cx="200" cy="200" r="176" stroke-width="8" stroke-dasharray="1.2 8" opacity=".75"/>
-    </g>
-    <circle cx="200" cy="200" r="158" stroke-width="2"/>
-    <rect x="88.3" y="88.3" width="223.4" height="223.4" stroke-width="2"/>
-    <path d="M200 88.3 L311.7 311.7 L88.3 311.7 Z" stroke-width="2"/>
-    <circle cx="200" cy="242.7" r="69" stroke-width="1.5" opacity=".7"/>
-    <g class="alch-emblem__salt">
-      <circle cx="200" cy="242.7" r="34" stroke-width="4.5"/>
-      <path d="M158 242.7h84" stroke-width="4.5"/>
-    </g>
-  </g>
-  <g fill="url(#{{ g }})">
-    <circle cx="88.3" cy="88.3" r="4.5"/><circle cx="311.7" cy="88.3" r="4.5"/>
-    <circle cx="88.3" cy="311.7" r="4.5"/><circle cx="311.7" cy="311.7" r="4.5"/>
-    <circle cx="200" cy="88.3" r="5.5"/>
+  <g fill="none" stroke="url(#{{ g }})" stroke-width="5" stroke-linecap="round">
+    <g class="alch-emblem__salt" style="--d: 0s; transform-origin: 72px 80px"><circle cx="72" cy="80" r="56"/><path d="M8 80h128"/></g>
+    <g class="alch-emblem__salt" style="--d: 1s; transform-origin: 210px 80px"><circle cx="210" cy="80" r="56"/><path d="M146 80h128"/></g>
+    <g class="alch-emblem__salt" style="--d: 2s; transform-origin: 348px 80px"><circle cx="348" cy="80" r="56"/><path d="M284 80h128"/></g>
   </g>
 </svg>
