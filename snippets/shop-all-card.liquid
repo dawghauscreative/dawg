@@ -13,7 +13,6 @@
   <article class="shopcard shopcard--{{ size | default: 'system' }}">
     <a class="shopcard__media" href="{{ product.url }}" tabindex="-1" aria-hidden="true">
       {% if front_asset != blank %}{% render 'responsive-image', asset: front_asset, asset_width: 1200, asset_height: 1500, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}{% else %}{% render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}{% endif %}
-      {% render 'product-back-flip', handle: product.handle %}
     </a>
     <div class="shopcard__body">
       {%- if role != blank or badge != blank -%}
