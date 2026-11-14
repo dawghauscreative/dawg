@@ -1712,3 +1712,11 @@ html[data-motion="off"] .gutbody g * { animation: none !important; }
 
 /* Home slide: shift a centred subject right, clear of the headline (Nov 14) */
 @media (min-width: 750px) { .home-slide__bg--shift img { object-position: 0% 50%; transform: scale(1.42); transform-origin: 0% 34%; } }
+
+/* Home slide badge as a live highlight: text sweeps black to gold and back, dot pulses (Nov 14) */
+.home-slide__badge-text { background: linear-gradient(100deg, var(--c-black) 0%, var(--c-black) 30%, #b8862f 42%, #E3B04B 50%, #b8862f 58%, var(--c-black) 70%, var(--c-black) 100%); background-size: 260% 100%; background-position: 100% 0; -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; animation: badgeSweep 3.6s ease-in-out infinite; }
+.home-slide__badge::before { animation: badgeDot 1.8s ease-in-out infinite; }
+@keyframes badgeSweep { 0% { background-position: 100% 0; } 55%, 100% { background-position: 0% 0; } }
+@keyframes badgeDot { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--c-gold) 55%, transparent); } 50% { box-shadow: 0 0 0 6px color-mix(in srgb, var(--c-gold) 0%, transparent); } }
+@media (prefers-reduced-motion: reduce) { .home-slide__badge-text { animation: none; background-position: 50% 0; } .home-slide__badge::before { animation: none; } }
+html[data-motion="off"] .home-slide__badge-text, html[data-motion="off"] .home-slide__badge::before { animation: none; }

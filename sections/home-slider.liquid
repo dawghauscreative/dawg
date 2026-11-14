@@ -18,7 +18,7 @@
         {%- endif -%}
         <div class="container home-slide__grid{% if has_img %} home-slide__grid--split{% endif %}">
           <div class="home-slide__copy">
-            {%- if block.settings.badge != blank -%}<span class="home-slide__badge">{{ block.settings.badge }}</span>{%- endif -%}
+            {%- if block.settings.badge != blank -%}<span class="home-slide__badge"><span class="home-slide__badge-text">{{ block.settings.badge }}</span></span>{%- endif -%}
             {%- if forloop.first -%}<h1>{{ block.settings.heading }}</h1>{%- else -%}<h2 class="home-slide__h">{{ block.settings.heading }}</h2>{%- endif -%}
             {%- if block.settings.body != blank -%}<div class="lede home-slide__body">{{ block.settings.body }}</div>{%- endif -%}
             {%- if block.settings.key_ingredients != blank -%}{%- render 'key-ingredients', items: block.settings.key_ingredients -%}{%- endif -%}
