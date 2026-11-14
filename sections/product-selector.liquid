@@ -28,6 +28,7 @@
               {%- else -%}
                 {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: section.settings.media_ratio, sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
               {%- endif -%}
+              {% render 'product-back-flip', handle: p.handle %}
             </a>
             <div class="sel-card__body">
               <span class="role-badge">{{ block.settings.role }}</span>

@@ -1,0 +1,30 @@
+{%- comment -%}
+  Back-of-jar image that a product card's photo turns over to on hover (Nov 14). Render it right after the card's front
+  image, inside the same media container. Not shown on product pages. CSS: "Product card photos flip" in theme.css.
+  Usage: {% render 'product-back-flip', handle: product.handle %}
+{%- endcomment -%}
+{%- unless template.name == 'product' -%}
+  {%- liquid
+    case handle
+      when 'uv-shield'
+        assign back = 'product-angle-uv-shield-back.webp'
+      when 'skinbiotic'
+        assign back = 'product-angle-skinbiotic-back.webp'
+      when 'dermaboost'
+        assign back = 'product-angle-dermaboost-back.webp'
+      when 'outdoor-duo', 'sun-safe-system'
+        assign back = 'product-angle-sun-safe-back.webp'
+      when 'balance-duo', 'skin-recovery-system'
+        assign back = 'product-angle-skin-recovery-back.webp'
+      when 'sun-resilience-duo', 'sun-resilience-system'
+        assign back = 'product-angle-sun-resilience-back.webp'
+      when 'tria-prima', 'complete-skin-defense-system'
+        assign back = 'product-angle-trio-back.webp'
+      else
+        assign back = ''
+    endcase
+  -%}
+  {%- if back != blank -%}
+    <span class="backflip" aria-hidden="true"><img src="{{ back | asset_url }}" alt="" width="1200" height="1500" loading="lazy"></span>
+  {%- endif -%}
+{%- endunless -%}

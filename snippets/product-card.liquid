@@ -14,6 +14,7 @@
       {%- else -%}
         {%- render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: '4x5', sizes: '(min-width: 750px) 33vw, 100vw', alt: product.title -%}
       {%- endif -%}
+      {%- render 'product-back-flip', handle: product.handle -%}
     </div>
     <div class="pcard__body">
       {%- if role != blank -%}<span class="role-badge">{{ role }}</span>{%- endif -%}

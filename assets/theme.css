@@ -1746,3 +1746,18 @@ html[data-motion="off"] .home-buy__kicker { animation: none; }
 .home-buy--center-kicker .home-buy__kicker--top { display: block; grid-column: 1 / -1; text-align: center; margin-bottom: 0; }
 .home-buy--center-kicker .home-buy__kicker--info { display: none; }
 @media (min-width: 990px) { .home-buy--center-kicker .home-buy__kicker--top { margin-bottom: -36px; } }
+
+/* Product card photos flip (Nov 14): on hover the card photo turns over to the back of the jar
+   (snippets/product-back-flip.liquid). Cards on product pages do not flip. */
+:is(.shopcard__media, .pcard__media, .sel-card__media, .finder-card__media, .bundle-tab__media):has(> .backflip) { position: relative; display: block; perspective: 1200px; }
+:is(.shopcard__media, .pcard__media, .sel-card__media, .finder-card__media, .bundle-tab__media):has(> .backflip) > .media { backface-visibility: hidden; -webkit-backface-visibility: hidden; transition: transform .75s cubic-bezier(.2, .7, .2, 1); }
+.backflip { position: absolute; inset: 0; z-index: 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; transform: rotateY(180deg); transition: transform .75s cubic-bezier(.2, .7, .2, 1); background: var(--c-emerald); overflow: hidden; }
+.backflip img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; display: block; }
+@media (hover: hover) and (pointer: fine) {
+  :is(.shopcard, .pcard, .sel-card, .finder-card, .bundle-tab):hover :is(.shopcard__media, .pcard__media, .sel-card__media, .finder-card__media, .bundle-tab__media) > .media { transform: rotateY(-180deg); }
+  :is(.shopcard, .pcard, .sel-card, .finder-card, .bundle-tab):hover .backflip { transform: rotateY(0deg); }
+}
+@media (hover: none), (pointer: coarse) { .backflip { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  :is(.shopcard__media, .pcard__media, .sel-card__media, .finder-card__media, .bundle-tab__media) > .media, .backflip { transition: opacity .3s ease; }
+}
