@@ -1742,3 +1742,7 @@ html[data-motion="off"] .home-buy__kicker { animation: none; }
 
 /* Buy box label centred (home page, Nov 14) */
 .home-buy--center-kicker .home-buy__kicker { text-align: center; }
+/* Centred label: one label across the full width of the section, centred on the page, above the photo and product (Nov 14) */
+.home-buy--center-kicker .home-buy__kicker--top { display: block; grid-column: 1 / -1; text-align: center; margin-bottom: 0; }
+.home-buy--center-kicker .home-buy__kicker--info { display: none; }
+@media (min-width: 990px) { .home-buy--center-kicker .home-buy__kicker--top { margin-bottom: -36px; } }
