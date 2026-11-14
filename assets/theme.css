@@ -1720,3 +1720,9 @@ html[data-motion="off"] .gutbody g * { animation: none !important; }
 @keyframes badgeDot { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--c-gold) 55%, transparent); } 50% { box-shadow: 0 0 0 6px color-mix(in srgb, var(--c-gold) 0%, transparent); } }
 @media (prefers-reduced-motion: reduce) { .home-slide__badge-text { animation: none; background-position: 50% 0; } .home-slide__badge::before { animation: none; } }
 html[data-motion="off"] .home-slide__badge-text, html[data-motion="off"] .home-slide__badge::before { animation: none; }
+
+/* Home slide badge as a heading, not a pill (Nov 14): large display text with the gold sweep, on the photo */
+.home-slide__badge { background: none; box-shadow: none; padding: 0; border-radius: 0; margin-bottom: 14px; font-family: var(--font-display); font-size: clamp(1.6rem, 2.6vw, 2.3rem); font-weight: var(--headline-weight, 500); font-variant-caps: normal; letter-spacing: -0.005em; line-height: 1.1; text-transform: none; }
+.home-slide__badge::before { display: none; }
+.home-slide__badge-text { background-image: linear-gradient(100deg, var(--c-white) 0%, var(--c-white) 30%, #c9953a 42%, #f2cf7e 50%, #c9953a 58%, var(--c-white) 70%, var(--c-white) 100%); }
+.home-slide.scheme-light .home-slide__badge-text, .home-slide.scheme-beige .home-slide__badge-text { background-image: linear-gradient(100deg, var(--c-black) 0%, var(--c-black) 30%, #b8862f 42%, #E3B04B 50%, #b8862f 58%, var(--c-black) 70%, var(--c-black) 100%); }
