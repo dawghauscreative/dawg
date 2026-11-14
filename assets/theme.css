@@ -1726,3 +1726,9 @@ html[data-motion="off"] .home-slide__badge-text, html[data-motion="off"] .home-s
 .home-slide__badge::before { display: none; }
 .home-slide__badge-text { background-image: linear-gradient(100deg, var(--c-white) 0%, var(--c-white) 30%, #c9953a 42%, #f2cf7e 50%, #c9953a 58%, var(--c-white) 70%, var(--c-white) 100%); }
 .home-slide.scheme-light .home-slide__badge-text, .home-slide.scheme-beige .home-slide__badge-text { background-image: linear-gradient(100deg, var(--c-black) 0%, var(--c-black) 30%, #b8862f 42%, #E3B04B 50%, #b8862f 58%, var(--c-black) 70%, var(--c-black) 100%); }
+
+/* Home buy box "Start here" label: bigger, with a slow golden glow (Nov 14) */
+p.home-buy__kicker, .section p.home-buy__kicker { font-size: clamp(1.9rem, 2.8vw, 2.5rem); line-height: 1.1; letter-spacing: .06em; color: var(--c-gold-bright, #E3B04B); margin-bottom: .35em; animation: kickerGlow 3.2s ease-in-out infinite; }
+@keyframes kickerGlow { 0%, 100% { text-shadow: 0 0 0 rgba(227, 176, 75, 0); } 50% { text-shadow: 0 0 14px rgba(227, 176, 75, .75), 0 0 32px rgba(227, 176, 75, .35); } }
+@media (prefers-reduced-motion: reduce) { .home-buy__kicker { animation: none; text-shadow: 0 0 12px rgba(227, 176, 75, .45); } }
+html[data-motion="off"] .home-buy__kicker { animation: none; }
