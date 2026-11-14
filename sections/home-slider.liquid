@@ -14,7 +14,7 @@
       {%- if block.settings.background_asset != blank -%}{%- assign has_bg = true -%}{%- endif -%}
       <article class="home-slide{% if has_bg %} home-slide--bg{% endif %} scheme-{{ block.settings.color_scheme }}{% if forloop.first %} is-active{% endif %}" id="slide-{{ forloop.index }}" data-slide role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ section.blocks.size }}" {{ block.shopify_attributes }}>
         {%- if has_bg -%}
-          <div class="home-slide__bg"><img src="{{ block.settings.background_asset | asset_url }}" alt="" width="1672" height="941" sizes="100vw" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"{% if forloop.first %} fetchpriority="high"{% endif %}></div>
+          <div class="home-slide__bg{% if block.settings.background_shift %} home-slide__bg--shift{% endif %}"><img src="{{ block.settings.background_asset | asset_url }}" alt="" width="1672" height="941" sizes="100vw" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"{% if forloop.first %} fetchpriority="high"{% endif %}></div>
         {%- endif -%}
         <div class="container home-slide__grid{% if has_img %} home-slide__grid--split{% endif %}">
           <div class="home-slide__copy">
@@ -103,6 +103,7 @@
         { "type": "text", "id": "secondary_label", "label": "Second button label (optional)" },
         { "type": "url", "id": "secondary_url", "label": "Second button link" },
         { "type": "text", "id": "background_asset", "label": "Full-width background (theme asset filename)", "info": "e.g. hero-banner-1.webp. Text sits on the left over a dark fade." },
+        { "type": "checkbox", "id": "background_shift", "label": "Shift photo right", "default": false, "info": "Zooms the photo slightly and moves the subject right, clear of the text." },
         { "type": "textarea", "id": "key_ingredients", "label": "Key ingredients (one per line: Label|anchor)", "info": "Optional chips linking to the Science page." },
         { "type": "image_picker", "id": "image", "label": "Image (optional)" },
         { "type": "text", "id": "asset", "label": "Or theme asset filename", "info": "Used when no image is picked, e.g. product-3d-uv-shield.webp" },

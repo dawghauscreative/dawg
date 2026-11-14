@@ -1709,3 +1709,6 @@ html[data-motion="off"] .gutbody g * { animation: none !important; }
 .sci-card__more { display: inline-block; margin-top: 12px; font-family: var(--font-callout); font-size: .9rem; font-weight: 700; letter-spacing: .1em; font-variant-caps: small-caps; color: var(--accent); }
 .sci-card--link:hover .sci-card__more { color: var(--c-gold); }
 @media (prefers-reduced-motion: reduce) { .sci-card--link:hover { transform: none; } }
+
+/* Home slide: shift a centred subject right, clear of the headline (Nov 14) */
+@media (min-width: 750px) { .home-slide__bg--shift img { transform: scale(1.28); transform-origin: 0% 38%; } }
