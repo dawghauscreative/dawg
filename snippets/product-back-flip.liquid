@@ -1,25 +1,18 @@
 {%- comment -%}
-  Back-of-jar image that a product card's photo turns over to on hover (Nov 14). Render it right after the card's front
+  Supplement Facts panel that a product card's photo turns over to on hover (Nov 14). Bundles show the panel of
+  their first product. Render it right after the card's front
   image, inside the same media container. Not shown on product pages. CSS: "Product card photos flip" in theme.css.
   Usage: {% render 'product-back-flip', handle: product.handle %}
 {%- endcomment -%}
 {%- unless template.name == 'product' -%}
   {%- liquid
     case handle
-      when 'uv-shield'
-        assign back = 'product-angle-uv-shield-back.webp'
-      when 'skinbiotic'
-        assign back = 'product-angle-skinbiotic-back.webp'
+      when 'uv-shield', 'outdoor-duo', 'sun-safe-system', 'sun-resilience-duo', 'sun-resilience-system', 'tria-prima', 'complete-skin-defense-system'
+        assign back = 'product-angle-uv-shield-facts.webp'
+      when 'skinbiotic', 'balance-duo', 'skin-recovery-system'
+        assign back = 'product-angle-skinbiotic-facts.webp'
       when 'dermaboost'
-        assign back = 'product-angle-dermaboost-back.webp'
-      when 'outdoor-duo', 'sun-safe-system'
-        assign back = 'product-angle-sun-safe-back.webp'
-      when 'balance-duo', 'skin-recovery-system'
-        assign back = 'product-angle-skin-recovery-back.webp'
-      when 'sun-resilience-duo', 'sun-resilience-system'
-        assign back = 'product-angle-sun-resilience-back.webp'
-      when 'tria-prima', 'complete-skin-defense-system'
-        assign back = 'product-angle-trio-back.webp'
+        assign back = 'product-angle-dermaboost-facts.webp'
       else
         assign back = ''
     endcase
