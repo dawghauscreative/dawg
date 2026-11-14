@@ -5,7 +5,7 @@
 {%- endcomment -%}
 <section class="section {% if section.settings.color_scheme == 'charcoal' %}scheme-dark {% endif %}scheme-{{ section.settings.color_scheme }}"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %} {{ section.shopify_attributes }}>
   <div class="container">
-    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body -%}
+    {%- render 'section-head', eyebrow: section.settings.eyebrow, heading: section.settings.heading, body: section.settings.body, center: section.settings.center -%}
     <div class="cols cols--auto4 edu-cards edu-cards--{{ section.settings.columns }}">
       {%- for block in section.blocks -%}
         {%- assign ah = block.settings.article | strip -%}
@@ -71,6 +71,7 @@
     { "type": "text", "id": "anchor", "label": "Anchor id (optional)" },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "checkbox", "id": "center", "label": "Centre heading and text", "default": false },
     { "type": "richtext", "id": "body", "label": "Text" },
     { "type": "select", "id": "columns", "label": "Cards per row", "default": "3", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }] },
     { "type": "text", "id": "blog_handle", "label": "Blog handle", "default": "blog" },

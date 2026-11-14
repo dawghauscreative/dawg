@@ -235,7 +235,8 @@
         "columns": "4",
         "blog_handle": "blog",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "center": true
       }
     },
     "sun": {
