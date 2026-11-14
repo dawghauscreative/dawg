@@ -21,6 +21,7 @@
 -%}
 <section class="section scheme-{{ section.settings.color_scheme }} home-buy" {{ section.shopify_attributes }}>
   <div class="container home-buy__grid">
+    {%- if section.settings.heading != blank -%}<p class="home-buy__kicker home-buy__kicker--top" aria-hidden="true">{{ section.settings.heading }}</p>{%- endif -%}
     <div class="home-buy__media">
       {%- if section.settings.asset != blank -%}
         {% render 'responsive-image', asset: section.settings.asset, asset_width: 1200, asset_height: 1500, ratio: '4x5', sizes: '(min-width: 990px) 45vw, 100vw', alt: p.title %}
@@ -29,7 +30,7 @@
       {%- endif -%}
     </div>
     <div class="home-buy__info">
-      {%- if section.settings.heading != blank -%}<p class="home-buy__kicker">{{ section.settings.heading }}</p>{%- endif -%}
+      {%- if section.settings.heading != blank -%}<p class="home-buy__kicker home-buy__kicker--info">{{ section.settings.heading }}</p>{%- endif -%}
       <h2 class="pdp__title"><a href="{{ p.url }}">{{ p.title }}</a></h2>
       {%- if p.metafields.custom.tagline != blank -%}
         <p class="pdp__tagline">{{ p.metafields.custom.tagline }}{% if settings.fda_disclaimer_text != blank %}<sup>{{ settings.fda_dagger }}</sup>{% endif %}</p>
