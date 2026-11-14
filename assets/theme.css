@@ -1726,11 +1726,3 @@ html[data-motion="off"] .home-slide__badge-text, html[data-motion="off"] .home-s
 .home-slide__badge::before { display: none; }
 .home-slide__badge-text { background-image: linear-gradient(100deg, var(--c-white) 0%, var(--c-white) 30%, #c9953a 42%, #f2cf7e 50%, #c9953a 58%, var(--c-white) 70%, var(--c-white) 100%); }
 .home-slide.scheme-light .home-slide__badge-text, .home-slide.scheme-beige .home-slide__badge-text { background-image: linear-gradient(100deg, var(--c-black) 0%, var(--c-black) 30%, #b8862f 42%, #E3B04B 50%, #b8862f 58%, var(--c-black) 70%, var(--c-black) 100%); }
-
-/* Home slider headings: a band of golden light sweeps through the text (Nov 14). On an inner span so the slide-in
-   entrance animation on the heading keeps working. */
-.home-slide__shine { background-image: linear-gradient(105deg, var(--c-white) 0%, var(--c-white) 40%, #d9a441 46%, #f7dc96 50%, #d9a441 54%, var(--c-white) 60%, var(--c-white) 100%); background-size: 300% 100%; background-position: 100% 0; -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; animation: heroShine 6s ease-in-out 1s infinite; }
-.home-slide.scheme-light .home-slide__shine, .home-slide.scheme-beige .home-slide__shine { background-image: linear-gradient(105deg, var(--c-black) 0%, var(--c-black) 40%, #b8862f 46%, #E3B04B 50%, #b8862f 54%, var(--c-black) 60%, var(--c-black) 100%); }
-@keyframes heroShine { 0% { background-position: 100% 0; } 50%, 100% { background-position: 0% 0; } }
-@media (prefers-reduced-motion: reduce) { .home-slide__shine { animation: none; background-position: 0% 0; } }
-html[data-motion="off"] .home-slide__shine { animation: none; background-position: 0% 0; }
