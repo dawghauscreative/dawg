@@ -19,7 +19,7 @@
     endif
   endfor
 -%}
-<section class="section scheme-{{ section.settings.color_scheme }} home-buy" {{ section.shopify_attributes }}>
+<section class="section scheme-{{ section.settings.color_scheme }} home-buy{% if section.settings.center_kicker %} home-buy--center-kicker{% endif %}" {{ section.shopify_attributes }}>
   <div class="container home-buy__grid">
     {%- if section.settings.heading != blank -%}<p class="home-buy__kicker home-buy__kicker--top" aria-hidden="true">{{ section.settings.heading }}</p>{%- endif -%}
     <div class="home-buy__media">
@@ -71,6 +71,7 @@
     { "type": "product", "id": "product", "label": "Product" },
     { "type": "text", "id": "asset", "label": "Image: theme asset filename", "info": "e.g. product-3d-uv-shield-portrait.webp. Blank = the product's first image." },
     { "type": "text", "id": "heading", "label": "Small label above the product name", "default": "Start here" },
+    { "type": "checkbox", "id": "center_kicker", "label": "Centre the small label", "default": false },
     { "type": "richtext", "id": "text", "label": "Short text" },
     { "type": "text", "id": "details_label", "label": "Product page link label", "default": "See full details" },
     { "type": "checkbox", "id": "allow_plain_add", "label": "Show Add to cart without a plan block", "default": false, "info": "Leave off. Without Supr's block the cart button would add a one-time purchase only." },

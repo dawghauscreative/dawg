@@ -209,7 +209,8 @@
         "text": "<p>Choose a subscription or a one-time order.</p>",
         "details_label": "See full details",
         "allow_plain_add": false,
-        "color_scheme": "green"
+        "color_scheme": "green",
+        "center_kicker": true
       }
     },
     "category": {

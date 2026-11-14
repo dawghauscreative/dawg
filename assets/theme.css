@@ -1739,3 +1739,6 @@ html[data-motion="off"] .home-buy__kicker { animation: none; }
   .home-buy__kicker--top { display: block; margin-bottom: -16px; }
   .home-buy__kicker--info { display: none; }
 }
+
+/* Buy box label centred (home page, Nov 14) */
+.home-buy--center-kicker .home-buy__kicker { text-align: center; }
