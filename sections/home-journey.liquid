@@ -1,0 +1,40 @@
+{%- comment -%} "Your first 90 days with Alchemia MD": four photo tiles with a label and short text (Homepage 2 template, Nov 20). Copy is about the routine, never results. {%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }} hjourney" {{ section.shopify_attributes }}>
+  <div class="container">
+    <h2 class="hjourney__head">{{ section.settings.heading }}</h2>
+    <ol class="hjourney__grid">
+      {%- for block in section.blocks -%}
+        <li class="hjourney__item" {{ block.shopify_attributes }}>
+          <span class="hjourney__media">
+            {%- if block.settings.image != blank -%}
+              <img src="{{ block.settings.image | image_url: width: 640 }}" alt="{{ block.settings.image.alt | escape }}" width="640" height="496" loading="lazy">
+            {%- elsif block.settings.asset != blank -%}
+              <img src="{{ block.settings.asset | asset_url }}" alt="" width="640" height="496" loading="lazy">
+            {%- endif -%}
+          </span>
+          <h3 class="hjourney__label">{{ block.settings.label }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Home first 90 days",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour", "default": "beige", "options": [{ "value": "light", "label": "Cream" }, { "value": "grey", "label": "Light cream" }, { "value": "green-light", "label": "Mint" }, { "value": "beige", "label": "Tan" }] },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Your first 90 days with Alchemia MD" }
+  ],
+  "blocks": [
+    { "type": "step", "name": "Step", "settings": [
+      { "type": "image_picker", "id": "image", "label": "Photo" },
+      { "type": "text", "id": "asset", "label": "Theme asset fallback" },
+      { "type": "text", "id": "label", "label": "Label", "default": "Month 1" },
+      { "type": "textarea", "id": "text", "label": "Text" }
+    ] }
+  ],
+  "presets": [{ "name": "Home first 90 days" }]
+}
+{% endschema %}

@@ -1,0 +1,40 @@
+{%- comment -%}
+  Home hero (Homepage 2 template, Nov 20): sand background, olive diagonal, product jar standing on the slope,
+  headline and button on the right, credit band underneath.
+{%- endcomment -%}
+<section class="hh" {{ section.shopify_attributes }}>
+  <div class="hh__stage">
+    <div class="hh__art" aria-hidden="true">
+      <div class="hh__slope"></div>
+      {%- if section.settings.image != blank -%}
+        <img class="hh__jar" src="{{ section.settings.image | image_url: width: 900 }}" alt="" width="769" height="900" fetchpriority="high">
+      {%- else -%}
+        <img class="hh__jar" src="{{ section.settings.asset | default: 'home-jar-uv-shield.webp' | asset_url }}" alt="" width="769" height="900" fetchpriority="high">
+      {%- endif -%}
+    </div>
+    <div class="container hh__grid">
+      <div class="hh__copy">
+        <h1>{{ section.settings.heading }}</h1>
+        {%- if section.settings.text != blank -%}<p class="hh__text">{{ section.settings.text }}</p>{%- endif -%}
+        {%- if section.settings.button_label != blank -%}<a class="btn" href="{{ section.settings.button_url | default: '/products/uv-shield' }}">{{ section.settings.button_label }}</a>{%- endif -%}
+      </div>
+    </div>
+  </div>
+  {%- if section.settings.band != blank -%}<p class="hh__band">{{ section.settings.band }}</p>{%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Home hero (diagonal)",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Product image (transparent PNG)", "info": "Leave empty to use the UV Shield+ jar." },
+    { "type": "text", "id": "asset", "label": "Theme asset fallback", "default": "home-jar-uv-shield.webp" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Layered sun care starts here." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "UV Shield+ combines quality ingredients into daily capsules, developed by a board-certified dermatologist. Designed to complement sunscreen." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop UV Shield" },
+    { "type": "url", "id": "button_url", "label": "Button link" },
+    { "type": "text", "id": "band", "label": "Credit band", "default": "Developed by Dr. Mia Luna, MD | Board-certified dermatologist" }
+  ],
+  "presets": [{ "name": "Home hero (diagonal)" }]
+}
+{% endschema %}

@@ -1,0 +1,37 @@
+{%- comment -%} "For the trails, fairways, and everything in between": photo and two-column activity list (Homepage 2 template, Nov 20). {%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }} hact" {{ section.shopify_attributes }}>
+  <div class="container hact__grid">
+    <div class="hact__media">
+      {%- if section.settings.image != blank -%}
+        <img src="{{ section.settings.image | image_url: width: 1000 }}" alt="{{ section.settings.image.alt | escape }}" width="1000" height="{{ 1000 | divided_by: section.settings.image.aspect_ratio | round }}" loading="lazy">
+      {%- else -%}
+        <img src="{{ section.settings.asset | default: 'home-golfer.webp' | asset_url }}" alt="{{ section.settings.alt | escape }}" width="934" height="1400" loading="lazy">
+      {%- endif -%}
+    </div>
+    <div class="hact__copy">
+      <h2>{{ section.settings.heading | newline_to_br }}</h2>
+      {%- assign items = section.settings.items | newline_to_br | split: '<br />' -%}
+      <ul class="hact__list">
+        {%- for item in items -%}{%- assign it = item | strip -%}{%- if it != blank -%}<li>{{ it }}</li>{%- endif -%}{%- endfor -%}
+      </ul>
+      {%- if section.settings.link_label != blank -%}<a class="text-link hact__link" href="{{ section.settings.link_url | default: '/products/sun-safe-system' }}">{{ section.settings.link_label }}</a>{%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Home activities",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour", "default": "green-light", "options": [{ "value": "light", "label": "Cream" }, { "value": "grey", "label": "Light cream" }, { "value": "green-light", "label": "Mint" }, { "value": "beige", "label": "Tan" }] },
+    { "type": "image_picker", "id": "image", "label": "Photo" },
+    { "type": "text", "id": "asset", "label": "Theme asset fallback", "default": "home-golfer.webp" },
+    { "type": "text", "id": "alt", "label": "Photo description", "default": "Woman carrying a golf bag across a sunny fairway" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "For the trails, fairways,\nand everything in between" },
+    { "type": "textarea", "id": "items", "label": "Activities (one per line)", "default": "golfing\ntrail-running\npicnics\nbeach bumming\nskiing\nbike rides\nsailing\ngardening\ncamping" },
+    { "type": "text", "id": "link_label", "label": "Link label (optional)" },
+    { "type": "url", "id": "link_url", "label": "Link" }
+  ],
+  "presets": [{ "name": "Home activities" }]
+}
+{% endschema %}

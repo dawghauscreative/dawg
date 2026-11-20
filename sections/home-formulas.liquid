@@ -1,0 +1,61 @@
+{%- comment -%}
+  "Discover the formula that's right for you": three product cards (jar on a grey tile, plain-language label,
+  name and count, star rating only when the product has real Judge.me reviews, price), then a bundles prompt.
+  (Homepage 2 template, Nov 20)
+{%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }} hform" {{ section.shopify_attributes }}>
+  <div class="container">
+    <h2 class="hform__head">{{ section.settings.heading }}</h2>
+    <div class="hform__grid">
+      {%- for block in section.blocks -%}
+        {%- assign p = block.settings.product -%}
+        {%- assign url = p.url | default: block.settings.url -%}
+        <a class="hform__card" href="{{ url }}" {{ block.shopify_attributes }}>
+          <span class="hform__media">
+            <img src="{{ block.settings.asset | asset_url }}" alt="{{ p.title | default: block.settings.name | escape }}" width="769" height="900" loading="lazy">
+          </span>
+          <span class="hform__label">{{ block.settings.label }}</span>
+          <span class="hform__name">{{ p.title | default: block.settings.name }}{% if block.settings.count != blank %} | {{ block.settings.count }}{% endif %}</span>
+          {%- assign rating = p.metafields.reviews.rating.value -%}
+          {%- assign rating_count = p.metafields.reviews.rating_count.value | default: 0 -%}
+          {%- if rating_count > 0 -%}
+            {%- assign r = rating.rating | round -%}
+            <span class="hform__stars" aria-label="Rated {{ rating.rating | round: 1 }} out of 5 from {{ rating_count }} reviews">
+              {%- for i in (1..5) -%}<span class="{% if i <= r %}is-on{% endif %}" aria-hidden="true">★</span>{%- endfor -%}
+              <span class="hform__count">({{ rating_count }})</span>
+            </span>
+          {%- endif -%}
+          {%- if p != blank -%}<span class="hform__price">{{ p.price | money_without_trailing_zeros }}</span>{%- endif -%}
+        </a>
+      {%- endfor -%}
+    </div>
+    <div class="hform__foot">
+      {%- if section.settings.note != blank -%}<p class="hform__note">{{ section.settings.note }}</p>{%- endif -%}
+      {%- if section.settings.button_label != blank -%}<a class="btn" href="{{ section.settings.button_url | default: '/pages/bundles' }}">{{ section.settings.button_label }}</a>{%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Home formula cards",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour", "default": "grey", "options": [{ "value": "light", "label": "Cream" }, { "value": "grey", "label": "Light cream" }, { "value": "green-light", "label": "Mint" }, { "value": "beige", "label": "Tan" }] },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Discover the formula that’s right for you" },
+    { "type": "text", "id": "note", "label": "Note above the button", "default": "Love our products and looking for enhanced support?" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop Bundles" },
+    { "type": "url", "id": "button_url", "label": "Button link" }
+  ],
+  "blocks": [
+    { "type": "product", "name": "Product", "settings": [
+      { "type": "product", "id": "product", "label": "Product" },
+      { "type": "text", "id": "label", "label": "Plain-language label", "default": "Daily sun support" },
+      { "type": "text", "id": "name", "label": "Name (if no product picked)" },
+      { "type": "text", "id": "count", "label": "Count", "default": "60 count" },
+      { "type": "text", "id": "asset", "label": "Jar image (theme asset)", "default": "home-jar-uv-shield.webp" },
+      { "type": "url", "id": "url", "label": "Link (if no product picked)" }
+    ] }
+  ],
+  "presets": [{ "name": "Home formula cards" }]
+}
+{% endschema %}

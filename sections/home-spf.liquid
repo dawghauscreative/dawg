@@ -1,0 +1,27 @@
+{%- comment -%} "Sunscreen's got the SPF covered" statement with the SPF tube graphic (Homepage 2 template, Nov 20). {%- endcomment -%}
+<section class="section scheme-{{ section.settings.color_scheme }} hspf" {{ section.shopify_attributes }}>
+  <div class="container hspf__grid">
+    <div class="hspf__copy">
+      <h2>{{ section.settings.heading }}</h2>
+      {%- if section.settings.label != blank -%}<span class="eyebrow hspf__label">{{ section.settings.label }}</span>{%- endif -%}
+      {%- if section.settings.text != blank -%}<div class="hspf__text">{{ section.settings.text }}</div>{%- endif -%}
+    </div>
+    <div class="hspf__art">
+      <img src="{{ section.settings.graphic | default: 'home-spf-tube.png' | asset_url }}" alt="" width="374" height="632" loading="lazy">
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Home SPF statement",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour", "default": "light", "options": [{ "value": "light", "label": "Cream" }, { "value": "grey", "label": "Light cream" }, { "value": "green-light", "label": "Mint" }, { "value": "beige", "label": "Tan" }] },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Sunscreen’s got the SPF covered. Alchemia MD supports from within." },
+    { "type": "text", "id": "label", "label": "Label", "default": "The gut-skin connection" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>The gut–skin connection links gut, immune, and skin health. A layered routine may include topical care, sunscreen, and targeted supplements, though benefits vary and supplements don’t treat skin conditions.</p>" },
+    { "type": "text", "id": "graphic", "label": "Graphic (theme asset)", "default": "home-spf-tube.png" }
+  ],
+  "presets": [{ "name": "Home SPF statement" }]
+}
+{% endschema %}

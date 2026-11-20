@@ -1,0 +1,35 @@
+{%- comment -%} "A dermatologist's mission beyond the clinic." Founder quote and portrait (Homepage 2 template, Nov 20). {%- endcomment -%}
+<section class="section hfounder" {{ section.shopify_attributes }}>
+  <span class="hfounder__rule" aria-hidden="true"></span>
+  <div class="container hfounder__grid">
+    <div class="hfounder__copy">
+      <h2>{{ section.settings.heading | newline_to_br }}</h2>
+      {%- if section.settings.name != blank -%}<span class="eyebrow hfounder__name">{{ section.settings.name }}</span>{%- endif -%}
+      {%- if section.settings.quote != blank -%}<blockquote class="hfounder__quote"><p>“{{ section.settings.quote }}”</p></blockquote>{%- endif -%}
+      {%- if section.settings.link_label != blank -%}<a class="text-link" href="{{ section.settings.link_url | default: '/pages/founder' }}">{{ section.settings.link_label }}</a>{%- endif -%}
+    </div>
+    <div class="hfounder__media">
+      {%- if section.settings.image != blank -%}
+        <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.name | escape }}" width="800" height="{{ 800 | divided_by: section.settings.image.aspect_ratio | round }}" loading="lazy">
+      {%- else -%}
+        <img src="{{ section.settings.asset | default: 'home-founder-cutout.webp' | asset_url }}" alt="{{ section.settings.name | escape }}" width="428" height="640" loading="lazy">
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Home founder note",
+  "settings": [
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "A dermatologist's mission\nbeyond the clinic." },
+    { "type": "text", "id": "name", "label": "Name", "default": "Dr. Mia Luna, MD" },
+    { "type": "textarea", "id": "quote", "label": "Quote" },
+    { "type": "image_picker", "id": "image", "label": "Portrait" },
+    { "type": "text", "id": "asset", "label": "Theme asset fallback", "default": "home-founder-cutout.webp" },
+    { "type": "text", "id": "link_label", "label": "Link label", "default": "Read our story" },
+    { "type": "url", "id": "link_url", "label": "Link" }
+  ],
+  "presets": [{ "name": "Home founder note" }]
+}
+{% endschema %}

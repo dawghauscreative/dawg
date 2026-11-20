@@ -9,6 +9,165 @@
  */
 {
   "sections": {
+    "t_hero": {
+      "type": "home-hero-diagonal",
+      "settings": {}
+    },
+    "t_spf": {
+      "type": "home-spf",
+      "settings": {
+        "color_scheme": "light"
+      }
+    },
+    "t_routine": {
+      "type": "home-routine",
+      "settings": {
+        "color_scheme": "light",
+        "active": 3
+      },
+      "blocks": {
+        "r1": {
+          "type": "tab",
+          "settings": {
+            "title": "Sunscreen",
+            "text": "Broad-spectrum sunscreen is the first layer. Apply it every day and reapply when you're outdoors."
+          }
+        },
+        "r2": {
+          "type": "tab",
+          "settings": {
+            "title": "Smart sun habits",
+            "text": "Shade, hats, protective clothing and timing your time outside all add up to less exposure."
+          }
+        },
+        "r3": {
+          "type": "tab",
+          "settings": {
+            "title": "Internal support",
+            "text": "Intentional nutrition and supplementation with Alchemia MD can support long-term skin health and resilience.†"
+          }
+        },
+        "r4": {
+          "type": "tab",
+          "settings": {
+            "title": "Consistency",
+            "text": "Skin renews over weeks, not days. The routine you keep up every day is the one that counts."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ]
+    },
+    "t_activities": {
+      "type": "home-activities",
+      "settings": {
+        "color_scheme": "green-light",
+        "link_label": "Explore the Outdoor Duo",
+        "link_url": "/products/sun-safe-system"
+      }
+    },
+    "t_formulas": {
+      "type": "home-formulas",
+      "settings": {
+        "color_scheme": "grey"
+      },
+      "blocks": {
+        "f1": {
+          "type": "product",
+          "settings": {
+            "product": "uv-shield",
+            "label": "Daily sun support",
+            "count": "60 count",
+            "asset": "home-jar-uv-shield.webp",
+            "name": "UV Shield+",
+            "url": "/products/uv-shield"
+          }
+        },
+        "f2": {
+          "type": "product",
+          "settings": {
+            "product": "dermaboost",
+            "label": "Daily immune support",
+            "count": "60 count",
+            "asset": "home-jar-dermaboost.webp",
+            "name": "Dermaboost+",
+            "url": "/products/dermaboost"
+          }
+        },
+        "f3": {
+          "type": "product",
+          "settings": {
+            "product": "skinbiotic",
+            "label": "Daily skin probiotic",
+            "count": "30 count",
+            "asset": "home-jar-skinbiotic.webp",
+            "name": "Skinbiotic+",
+            "url": "/products/skinbiotic"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3"
+      ]
+    },
+    "t_journey": {
+      "type": "home-journey",
+      "settings": {
+        "color_scheme": "beige"
+      },
+      "blocks": {
+        "j1": {
+          "type": "step",
+          "settings": {
+            "asset": "lifestyle-uvshield-coast.webp",
+            "label": "Week 1",
+            "text": "Your order arrives. Take your capsules with a meal at the same time each day, and keep up your sunscreen and sun habits."
+          }
+        },
+        "j2": {
+          "type": "step",
+          "settings": {
+            "asset": "edu-card-consistency-palm.webp",
+            "label": "Month 1",
+            "text": "The routine settles in. Find a moment that sticks, like breakfast. Consistency matters more than anything else."
+          }
+        },
+        "j3": {
+          "type": "step",
+          "settings": {
+            "asset": "lifestyle-outdoor-living.webp",
+            "label": "Month 2",
+            "text": "Daily habits are building. Keep pairing your supplements with sunscreen, shade, water and a balanced diet."
+          }
+        },
+        "j4": {
+          "type": "step",
+          "settings": {
+            "asset": "lifestyle-hikers-summit-4x5.webp",
+            "label": "Month 3",
+            "text": "Ninety days in. Skin renews over weeks, so this is a natural point to look back at your routine and plan what's next."
+          }
+        }
+      },
+      "block_order": [
+        "j1",
+        "j2",
+        "j3",
+        "j4"
+      ]
+    },
+    "t_founder": {
+      "type": "home-founder-note",
+      "settings": {
+        "quote": "Patients often asked me about supplements for their skin. I found myself recommending the same handful again and again, and I noticed it was a lot of bottles to keep up with."
+      }
+    },
     "hero": {
       "type": "home-slider",
       "blocks": {
@@ -106,7 +265,8 @@
         "s4",
         "s5"
       ],
-      "settings": {}
+      "settings": {},
+      "disabled": true
     },
     "trust_strip": {
       "type": "trust-bar",
@@ -141,7 +301,33 @@
       "settings": {
         "color_scheme": "dark",
         "key_ingredients": "Niacinamide|niacinamide\nPolypodium leucotomos|polypodium-leucotomos\nTrans-resveratrol|resveratrol\nAkkermansia muciniphila|akkermansia\nCurcumin|curcumin\nAstaxanthin|astaxanthin"
-      }
+      },
+      "disabled": true
+    },
+    "buy_box": {
+      "type": "featured-buy-box",
+      "blocks": {
+        "supr_bundles_subscriptions_product_block_KfATzW": {
+          "type": "shopify://apps/supr-bundle-subscription-app/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
+          "settings": {
+            "product": "{{section.settings.product}}"
+          }
+        }
+      },
+      "block_order": [
+        "supr_bundles_subscriptions_product_block_KfATzW"
+      ],
+      "settings": {
+        "product": "outdoor-duo",
+        "asset": "",
+        "heading": "Start here",
+        "text": "<p>Choose a subscription or a one-time order.</p>",
+        "details_label": "See full details",
+        "allow_plain_add": false,
+        "color_scheme": "green",
+        "center_kicker": true
+      },
+      "disabled": true
     },
     "roles": {
       "type": "role-columns",
@@ -187,31 +373,8 @@
         "eyebrow": "",
         "heading": "Protect. Balance. Restore.",
         "body": "<p>Alchemia MD organizes internal skin support around three distinct roles.†</p><p>Each formula can stand on its own. The bundles combine them when complementary support makes sense.</p>"
-      }
-    },
-    "buy_box": {
-      "type": "featured-buy-box",
-      "blocks": {
-        "supr_bundles_subscriptions_product_block_KfATzW": {
-          "type": "shopify://apps/supr-bundle-subscription-app/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
-          "settings": {
-            "product": "{{section.settings.product}}"
-          }
-        }
       },
-      "block_order": [
-        "supr_bundles_subscriptions_product_block_KfATzW"
-      ],
-      "settings": {
-        "product": "outdoor-duo",
-        "asset": "",
-        "heading": "Start here",
-        "text": "<p>Choose a subscription or a one-time order.</p>",
-        "details_label": "See full details",
-        "allow_plain_add": false,
-        "color_scheme": "green",
-        "center_kicker": true
-      }
+      "disabled": true
     },
     "category": {
       "type": "rich-text",
@@ -233,7 +396,8 @@
         "image_alt": "",
         "image_side": "left",
         "image_ratio": "4x5"
-      }
+      },
+      "disabled": true
     },
     "intro_video": {
       "type": "video-slot",
@@ -252,7 +416,8 @@
         "body": "",
         "button_label": "",
         "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "problem": {
       "type": "science-cards",
@@ -314,48 +479,8 @@
         "note": "",
         "button_label": "",
         "button_url": ""
-      }
-    },
-    "featured": {
-      "type": "feature-split",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "dark",
-        "image_side": "right",
-        "eyebrow": "",
-        "heading": "Meet the Outdoor Duo",
-        "heading_tag": "h2",
-        "subhead": "Protect + Balance",
-        "body": "<p>For people who spend their lives outdoors, the Outdoor Duo pairs two targeted formulas:</p><p><strong>UV Shield+</strong> supports skin exposed to daily environmental and UV-related stress.†</p><p><strong>Skinbiotic+</strong> supports the gut-skin connection and internal balance.†</p><p>Together, they create a simple daily routine built for life outdoors.</p>",
-        "product": "outdoor-duo",
-        "primary_label": "Explore the Outdoor Duo",
-        "primary_url": "",
-        "secondary_label": "See all bundles",
-        "secondary_url": "/pages/bundles",
-        "asset": "system-sun-safe.webp",
-        "ratio": "16x9",
-        "light_panel": false
-      }
-    },
-    "video": {
-      "type": "video-slot",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "dark",
-        "aspect": "16x9",
-        "video": "shopify://files/videos/hf_20260503_005659_fe87e28d-6747-4371-9806-17accfc37fd7.mp4",
-        "video_url": "",
-        "tight_top": false,
-        "autoplay": true,
-        "video_title": "Alchemia MD",
-        "show_placeholder": true,
-        "video_side": "right",
-        "eyebrow": "",
-        "heading": "",
-        "body": "",
-        "button_label": "",
-        "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "finder": {
       "type": "system-finder",
@@ -424,7 +549,8 @@
         "button_label": "",
         "button_url": "",
         "best_for_label": "Best for:"
-      }
+      },
+      "disabled": true
     },
     "lifestyle": {
       "type": "lifestyle-strip",
@@ -509,7 +635,8 @@
         "body": "<p>Alchemia MD is built for people who do not want to choose between caring for their skin and living the life they love.</p>",
         "columns": "3",
         "statement": "Sun exposure is part of life. Supporting your skin should be too.†"
-      }
+      },
+      "disabled": true
     },
     "layers": {
       "type": "layer-stack",
@@ -559,84 +686,8 @@
         "heading": "Skin support works in layers.",
         "body": "",
         "callout": "Alchemia MD supplements are not sunscreen and do not replace sun protection."
-      }
-    },
-    "science": {
-      "type": "science-cards",
-      "blocks": {
-        "b1": {
-          "type": "card",
-          "settings": {
-            "number": "",
-            "kicker": "UV Shield+",
-            "icon": "shield",
-            "title": "Environmental stress",
-            "text": "<p>UV Shield+ pairs Polypodium leucotomos with niacinamide, EGCG, trans-resveratrol and spirulina for skin exposed to daily sun and environmental stress.†</p>",
-            "tag": "",
-            "study": "",
-            "asset": ""
-          }
-        },
-        "b2": {
-          "type": "card",
-          "settings": {
-            "number": "",
-            "kicker": "Skinbiotic+",
-            "icon": "cell",
-            "title": "Gut–skin axis",
-            "text": "<p>Skinbiotic+ combines organic inulin with five probiotic strains, including Akkermansia muciniphila, to support the gut-skin connection.†</p>",
-            "tag": "",
-            "study": "",
-            "asset": ""
-          }
-        },
-        "b3": {
-          "type": "card",
-          "settings": {
-            "number": "",
-            "kicker": "Dermaboost+ · UV Shield+",
-            "icon": "molecule",
-            "title": "Antioxidant support",
-            "text": "<p>Dermaboost+ brings curcumin, quercetin and astaxanthin; UV Shield+ adds EGCG and resveratrol. Each plays a distinct role in oxidative-stress biology.†</p>",
-            "tag": "",
-            "study": "",
-            "asset": ""
-          }
-        },
-        "b4": {
-          "type": "card",
-          "settings": {
-            "number": "",
-            "kicker": "Dermaboost+ · UV Shield+",
-            "icon": "layers",
-            "title": "Skin barrier",
-            "text": "<p>Niacinamide, in both UV Shield+ and Dermaboost+, is involved in the lipids that make up the skin barrier. Dermaboost+ adds zinc and vitamin C.†</p>",
-            "tag": "",
-            "study": "",
-            "asset": ""
-          }
-        }
       },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "green",
-        "anchor": "",
-        "eyebrow": "",
-        "heading": "Every ingredient has a reason.",
-        "body": "<p>Alchemia MD formulations are built around published ingredient research and defined biological roles.</p><p>We do not ask you to trust a proprietary mystery blend. We show you what is in the formula, why it is there, and what the research actually supports.</p>",
-        "layout": "grid",
-        "columns": "4",
-        "show_images": false,
-        "note": "",
-        "button_label": "Explore the Science",
-        "button_url": "/pages/science"
-      }
+      "disabled": true
     },
     "research": {
       "type": "science-spotlight",
@@ -684,107 +735,8 @@
         "body": "",
         "show_images": false,
         "link_label": "View research →"
-      }
-    },
-    "philosophy": {
-      "type": "rich-text",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "dark",
-        "align": "center",
-        "width": "narrow",
-        "salt_symbol": false,
-        "tight_bottom": false,
-        "eyebrow": "",
-        "heading": "Balance is a practice.",
-        "heading_tag": "h2",
-        "body": "<p>Alchemy was historically the pursuit of transformation through balance. Alchemia MD carries that idea into modern skin health.</p><p>Skin is always changing. It renews, adapts, responds, and rebuilds.</p><p>The goal is not perfect skin. The goal is to support the systems that help skin remain balanced, resilient, and vital through the changing demands of life.†</p>",
-        "quote": "",
-        "button_label": "",
-        "button_url": "",
-        "graphic": "none",
-        "image_asset": "",
-        "image_alt": "",
-        "image_side": "left",
-        "image_ratio": "4x5"
-      }
-    },
-    "trust": {
-      "type": "science-cards",
-      "blocks": {
-        "b1": {
-          "type": "card",
-          "settings": {
-            "number": "",
-            "kicker": "",
-            "icon": "molecule",
-            "title": "Integrity",
-            "text": "<p>Ingredients are selected based on evidence and formulation purpose.</p>",
-            "tag": "",
-            "study": "",
-            "asset": ""
-          }
-        },
-        "b2": {
-          "type": "card",
-          "settings": {
-            "number": "",
-            "kicker": "",
-            "icon": "layers",
-            "title": "Transparency",
-            "text": "<p>Clear ingredients. Clear reasoning. No mystery positioning.</p>",
-            "tag": "",
-            "study": "",
-            "asset": ""
-          }
-        },
-        "b3": {
-          "type": "card",
-          "settings": {
-            "number": "",
-            "kicker": "",
-            "icon": "shield",
-            "title": "Prevention",
-            "text": "<p>Education and proactive skin-health habits are part of the brand, not an afterthought.</p>",
-            "tag": "",
-            "study": "",
-            "asset": ""
-          }
-        },
-        "b4": {
-          "type": "card",
-          "settings": {
-            "number": "",
-            "kicker": "",
-            "icon": "cell",
-            "title": "Purpose",
-            "text": "<p>The brand was created from a personal mission extending beyond the product itself.</p>",
-            "tag": "",
-            "study": "",
-            "asset": ""
-          }
-        }
       },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "light",
-        "anchor": "",
-        "eyebrow": "",
-        "heading": "Built around standards, not trends.",
-        "body": "",
-        "layout": "grid",
-        "columns": "4",
-        "show_images": false,
-        "note": "",
-        "button_label": "",
-        "button_url": ""
-      }
+      "disabled": true
     },
     "education": {
       "type": "education-grid",
@@ -830,65 +782,18 @@
         "body": "",
         "link_label": "",
         "link_url": ""
-      }
-    },
-    "mission": {
-      "type": "rich-text",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "band",
-        "align": "center",
-        "width": "narrow",
-        "salt_symbol": false,
-        "tight_bottom": false,
-        "eyebrow": "",
-        "heading": "Every purchase supports a larger mission.",
-        "heading_tag": "h2",
-        "body": "<p>Your purchase contributes to melanoma research.</p>",
-        "quote": "",
-        "button_label": "Learn about our mission",
-        "button_url": "/pages/founder",
-        "graphic": "none",
-        "image_asset": "",
-        "image_alt": "",
-        "image_side": "left",
-        "image_ratio": "4x5"
-      }
-    },
-    "email": {
-      "type": "email-capture",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "green",
-        "hide_on_home": false,
-        "eyebrow": "",
-        "heading": "Skin health, explained clearly.",
-        "body": "<p>Get dermatologist-led education, ingredient research, product guidance, and Alchemia MD updates delivered to your inbox.</p>",
-        "placeholder": "Email address",
-        "button_label": "Join Alchemia MD",
-        "success_text": "Thank you for joining Alchemia MD."
-      }
-    },
-    "final": {
-      "type": "final-cta",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "dark",
-        "product": "outdoor-duo",
-        "eyebrow": "",
-        "heading": "Built for life in the sun.",
-        "body": "<p>Start with UV Shield+ and Skinbiotic+ together in the Outdoor Duo: a two-step routine designed to support environmental resilience and internal balance.†</p>",
-        "button_label": "Explore the Outdoor Duo",
-        "button_url": "",
-        "secondary_label": "Shop all products",
-        "secondary_url": "/collections/all",
-        "note": "",
-        "asset": "system-sun-safe.webp",
-        "light_panel": false
-      }
+      },
+      "disabled": true
     }
   },
   "order": [
+    "t_hero",
+    "t_spf",
+    "t_routine",
+    "t_activities",
+    "t_formulas",
+    "t_journey",
+    "t_founder",
     "hero",
     "trust_strip",
     "buy_box",
@@ -896,18 +801,10 @@
     "category",
     "intro_video",
     "problem",
-    "featured",
-    "video",
     "finder",
     "lifestyle",
     "layers",
-    "science",
     "research",
-    "philosophy",
-    "trust",
-    "education",
-    "mission",
-    "email",
-    "final"
+    "education"
   ]
 }

@@ -47,24 +47,24 @@
             </div>
           </details>
         </li>
-        <li><a href="/pages/science">Science</a></li>
         <li>
           <details>
-            <summary>About</summary>
+            <summary>Learn</summary>
             <div class="nav__panel nav__panel--about">
               <ul>
-                <li><a href="/pages/founder">Founder</a></li>
+                <li><a href="/pages/science">Skin Health Science</a></li>
                 <li><a href="{{ blogs['blog'].url | default: '/blogs/blog' }}">Blog</a></li>
               </ul>
             </div>
           </details>
         </li>
-        <li><a href="/pages/faq">FAQ</a></li>
+        <li><a href="/pages/founder">Our Story</a></li>
+        <li><a href="/pages/faq">FAQs</a></li>
       </ul>
     </nav>
 
     <div class="site-header__tools">
-      <a class="site-header__portal" href="{{ portal_url }}">{{ settings.manage_subscription_label }}</a>
+      <a class="site-header__portal" href="{{ routes.account_url }}">{% if customer %}Account{% else %}Sign In{% endif %}</a>
       <a class="icon-btn" href="{{ routes.cart_url }}" aria-label="{{ 'general.cart' | t }}">
         {% render 'icon', name: 'cart' %}
         {%- if cart.item_count > 0 -%}<span class="cart-count">{{ cart.item_count }}</span>{%- endif -%}
@@ -99,15 +99,16 @@
             {%- endfor -%}
           </ul>
         </li>
-        <li><a href="/pages/science">Science</a></li>
         <li>
-          <span class="drawer__label">About</span>
+          <span class="drawer__label">Learn</span>
           <ul>
-            <li><a href="/pages/founder">Founder</a></li>
+            <li><a href="/pages/science">Skin Health Science</a></li>
             <li><a href="{{ blogs['blog'].url | default: '/blogs/blog' }}">Blog</a></li>
           </ul>
         </li>
-        <li><a href="/pages/faq">FAQ</a></li>
+        <li><a href="/pages/founder">Our Story</a></li>
+        <li><a href="/pages/faq">FAQs</a></li>
+        <li><a href="{{ routes.account_url }}">{% if customer %}Account{% else %}Sign In{% endif %}</a></li>
         <li><a href="{{ portal_url }}">{{ settings.manage_subscription_label }}</a></li>
       </ul>
     </nav>

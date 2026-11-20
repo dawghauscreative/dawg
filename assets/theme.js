@@ -916,3 +916,25 @@
   });
 })();
 
+
+/* Home layered routine tabs (sections/home-routine.liquid, Nov 20): click, hover or arrow keys show that tab's text. */
+(function () {
+  document.querySelectorAll('[data-routine]').forEach(function (sec) {
+    var tabs = Array.prototype.slice.call(sec.querySelectorAll('[data-routine-tab]'));
+    var texts = sec.querySelectorAll('[data-routine-text]');
+    function set(i) {
+      tabs.forEach(function (t) { var on = t.getAttribute('data-routine-tab') === String(i); t.classList.toggle('is-active', on); t.setAttribute('aria-selected', on ? 'true' : 'false'); });
+      texts.forEach(function (p) { var on = p.getAttribute('data-routine-text') === String(i); p.classList.toggle('is-active', on); p.hidden = !on; });
+    }
+    tabs.forEach(function (t, n) {
+      t.addEventListener('click', function () { set(n); });
+      t.addEventListener('mouseenter', function () { if (window.matchMedia('(hover: hover)').matches) set(n); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+        e.preventDefault();
+        var k = (n + (e.key === 'ArrowDown' ? 1 : tabs.length - 1)) % tabs.length;
+        tabs[k].focus(); set(k);
+      });
+    });
+  });
+})();

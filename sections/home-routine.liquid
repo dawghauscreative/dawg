@@ -1,0 +1,46 @@
+{%- comment -%}
+  "Healthy skin needs more than just a surface routine." Four stacked routine tabs, the skin cross-section graphic,
+  and the text for the chosen tab (Homepage 2 template, Nov 20). Tabs switch on click or hover (theme.js: data-routine).
+{%- endcomment -%}
+{%- assign active = section.settings.active | minus: 1 -%}
+<section class="section scheme-{{ section.settings.color_scheme }} hroutine" data-routine {{ section.shopify_attributes }}>
+  {%- if section.settings.accent_rule -%}<span class="hroutine__rule" aria-hidden="true"></span>{%- endif -%}
+  <div class="container">
+    <h2 class="hroutine__head">{{ section.settings.heading }}</h2>
+    <div class="hroutine__grid">
+      <div class="hroutine__tabs" role="tablist" aria-label="{{ section.settings.heading | escape }}">
+        {%- for block in section.blocks -%}
+          <button type="button" role="tab" class="hroutine__tab{% if forloop.index0 == active %} is-active{% endif %}" id="RoutineTab-{{ section.id }}-{{ forloop.index0 }}" aria-controls="RoutinePanel-{{ section.id }}" aria-selected="{% if forloop.index0 == active %}true{% else %}false{% endif %}" data-routine-tab="{{ forloop.index0 }}" {{ block.shopify_attributes }}>{{ block.settings.title }}</button>
+        {%- endfor -%}
+      </div>
+      <div class="hroutine__art">
+        <img src="{{ section.settings.graphic | default: 'home-skin-layers.png' | asset_url }}" alt="" width="420" height="400" loading="lazy">
+      </div>
+      <div class="hroutine__panel" id="RoutinePanel-{{ section.id }}" role="tabpanel" aria-live="polite">
+        {%- for block in section.blocks -%}
+          <p class="hroutine__text{% if forloop.index0 == active %} is-active{% endif %}" data-routine-text="{{ forloop.index0 }}"{% unless forloop.index0 == active %} hidden{% endunless %}>{{ block.settings.text }}</p>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Home layered routine",
+  "settings": [
+    { "type": "select", "id": "color_scheme", "label": "Colour", "default": "light", "options": [{ "value": "light", "label": "Cream" }, { "value": "grey", "label": "Light cream" }, { "value": "green-light", "label": "Mint" }, { "value": "beige", "label": "Tan" }] },
+    { "type": "checkbox", "id": "accent_rule", "label": "Short grey rule above", "default": true },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Healthy skin needs more than just a surface routine." },
+    { "type": "range", "id": "active", "label": "Tab shown first", "min": 1, "max": 6, "step": 1, "default": 3 },
+    { "type": "text", "id": "graphic", "label": "Graphic (theme asset)", "default": "home-skin-layers.png" }
+  ],
+  "blocks": [
+    { "type": "tab", "name": "Tab", "settings": [
+      { "type": "text", "id": "title", "label": "Tab name" },
+      { "type": "textarea", "id": "text", "label": "Text shown for this tab" }
+    ] }
+  ],
+  "presets": [{ "name": "Home layered routine" }]
+}
+{% endschema %}
