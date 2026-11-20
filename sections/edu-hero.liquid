@@ -4,7 +4,7 @@
       {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
       <h1>{{ section.settings.title }}</h1>
       {%- if section.settings.subtitle != blank -%}<p class="edu-hero__sub">{{ section.settings.subtitle }}</p>{%- endif -%}
-      <h2 class="edu-hero__lead">{{ section.settings.heading }}</h2>
+      {%- if section.settings.heading != blank -%}<h2 class="edu-hero__lead">{{ section.settings.heading }}</h2>{%- endif -%}
       <div class="prose">{{ section.settings.body }}</div>
       <div class="btn-row">
         {%- if section.settings.primary_label != blank -%}<a class="btn" href="{{ section.settings.primary_url }}">{{ section.settings.primary_label }}</a>{%- endif -%}

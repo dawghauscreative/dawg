@@ -1992,3 +1992,11 @@ p.home-buy__kicker, .section p.home-buy__kicker { color: #fff; }
 .home-buy__info > .home-buy__more { margin: 0 0 18px; }
 /* Buttons (all pages except the home page, which stays as approved): larger text, tighter padding */
 body:not(.template-index) .btn { font-size: .95rem; padding: .55em 1.4em; min-height: 42px; letter-spacing: .1em; }
+
+/* Copy feedback (Nov 13 notes): callout lines as Roboto labels, not headlines; arrow pager; directions line as a label */
+.sci-callout { font-family: var(--font-callout); font-size: .9rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.sci-spot__arrow { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid currentColor; background: transparent; color: inherit; cursor: pointer; transition: background .2s ease, color .2s ease; }
+.sci-spot__arrow:hover { background: var(--t-gold); border-color: var(--t-gold); color: #fff; }
+.sci-spot__arrow[disabled] { opacity: .35; cursor: default; }
+.plan-cta .sticky-cta__title { display: none; }
+.section:has(.directions-grid) .section-head .lede { font-family: var(--font-callout); font-size: .95rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: 1; }

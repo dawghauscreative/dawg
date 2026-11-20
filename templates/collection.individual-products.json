@@ -17,7 +17,7 @@
         "eyebrow": "",
         "heading": "Three targeted ways to support skin from within.",
         "heading_tag": "h1",
-        "body": "<p>Alchemia MD’s individual formulas are designed around three distinct roles in skin health:</p><p><strong>Protect. Balance. Restore.</strong></p><p>Choose the formula that best matches your current routine, or explore the bundles if you want complementary support across more than one area.</p>",
+        "body": "<p>Our individual formulas are designed to have three distinct roles in skin health.</p>",
         "primary_label": "Find your formula ↓",
         "primary_url": "#choose",
         "secondary_label": "Explore the bundles",
@@ -80,8 +80,9 @@
             "support_areas": "Environmental stress\nAntioxidant support\nSkin resilience\nOutdoor lifestyle support",
             "best_for": "Golf\nTennis\nSailing\nRunning\nCycling\nBeach\nTravel\nEveryday outdoor living",
             "choose_label": "Choose UV Shield+",
-            "plan_heading": "Choose your UV Shield+ plan",
-            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
+            "plan_heading": "Customize your UV Shield+ plan",
+            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish.",
+            "plan_button": "Continue"
           }
         },
         "b2": {
@@ -93,8 +94,9 @@
             "support_areas": "Gut-skin connection\nMicrobiome balance\nSynbiotic support\nDaily internal balance",
             "best_for": "Customers already interested in probiotics\nGut-health-focused routines\nMicrobiome support\nInternal skin-health routines",
             "choose_label": "Choose Skinbiotic+",
-            "plan_heading": "Choose your Skinbiotic+ plan",
-            "plan_copy": "Build gut-skin support into a consistent daily routine.†"
+            "plan_heading": "Customize your Skinbiotic+ plan",
+            "plan_copy": "Build gut-skin support into a consistent daily routine.†",
+            "plan_button": "Continue"
           }
         },
         "b3": {
@@ -106,8 +108,9 @@
             "support_areas": "Antioxidant support\nNormal immune function\nNutritional skin support†\nSkin resilience",
             "best_for": "Broader daily nutritional support†\nAntioxidant-focused routines\nImmune-supportive nutrition\nLong-term skin resilience†",
             "choose_label": "Choose Dermaboost+",
-            "plan_heading": "Choose your Dermaboost+ plan",
-            "plan_copy": "Choose the replenishment schedule that fits your daily skin-health routine."
+            "plan_heading": "Customize your Dermaboost+ plan",
+            "plan_copy": "Choose the replenishment schedule that fits your daily skin-health routine.",
+            "plan_button": "Continue"
           }
         }
       },
@@ -120,7 +123,9 @@
         "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Choose your formula",
-        "plan_heading": "Choose your plan"
+        "plan_heading": "Customize your plan",
+        "expectation": "",
+        "trust_items": ""
       }
     },
     "compare": {

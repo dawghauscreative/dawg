@@ -15,14 +15,14 @@
         "color_scheme": "dark",
         "align": "left",
         "eyebrow": "",
-        "heading": "Find the Routine That Fits You",
-        "body": "Explore dermatologist-formulated individual formulas and multi-product bundles designed around distinct roles in daily skin support.†"
+        "heading": "Experience Our Formulas",
+        "body": "Choose the formula that matches your current priority, then explore the bundles that pair it with complementary support."
       }
     },
     "featured": {
       "type": "shop-all-featured-system",
       "settings": {
-        "color_scheme": "grey",
+        "color_scheme": "light",
         "product": "outdoor-duo",
         "role": "Protect + Balance",
         "descriptor": "Environmental support paired with gut-skin balance.†",
@@ -73,8 +73,8 @@
         "complete"
       ],
       "settings": {
-        "color_scheme": "light",
-        "heading": "More bundles",
+        "color_scheme": "green-light",
+        "heading": "Bundles",
         "subscribe_cue": "Subscribe & save available"
       }
     },
@@ -124,10 +124,10 @@
         "dermaboost"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "grey",
         "eyebrow": "",
-        "heading": "Experience our Formulas",
-        "body": "Choose the formula that matches your current priority, then explore the bundles that pair it with complementary support.",
+        "heading": "",
+        "body": "",
         "subscribe_cue": "Subscribe & save available"
       }
     },
@@ -161,9 +161,9 @@
         "color_scheme": "dark",
         "product": "",
         "eyebrow": "",
-        "heading": "Compare the Alchemia MD bundles",
+        "heading": "Find the right routine that works for you",
         "body": "",
-        "button_label": "Explore bundles",
+        "button_label": "Explore Bundles",
         "button_url": "/pages/bundles",
         "secondary_label": "",
         "secondary_url": "",
@@ -175,9 +175,9 @@
   },
   "order": [
     "header",
+    "singles",
     "featured",
     "systems",
-    "singles",
     "featured_buy_box_nYDf9L",
     "compare"
   ]

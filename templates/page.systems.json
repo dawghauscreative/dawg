@@ -17,7 +17,7 @@
         "eyebrow": "",
         "heading": "Build the routine that fits your skin.",
         "heading_tag": "h1",
-        "body": "<p>Alchemia MD bundles combine complementary formulas into simple daily routines built around three roles:</p><p><strong>Protect. Balance. Restore.</strong></p><p>Choose two targeted areas of support, or move into the complete three-step routine once you know you want all three.</p>",
+        "body": "<p>Our bundles combine complementary formulas into simple daily routines.</p>",
         "primary_label": "Find your bundle ↓",
         "primary_url": "#choose",
         "secondary_label": "Explore individual products",
@@ -63,7 +63,7 @@
       "settings": {
         "color_scheme": "grey",
         "eyebrow": "",
-        "heading": "Three roles. Four ways to build your routine.",
+        "heading": "Three roles. Four ways to build your daily routine.",
         "columns": "3",
         "show_images": false
       }
@@ -83,8 +83,9 @@
             "best_for": "Golf\nTennis\nBoating\nBeach\nTravel\nOutdoor lifestyles\nCustomers who want internal sun-support plus microbiome support†",
             "choose_label": "Choose",
             "learn_label": "Learn more",
-            "plan_heading": "Choose your Outdoor Duo plan",
-            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
+            "plan_heading": "Customize your Outdoor Duo plan",
+            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish.",
+            "plan_button": "Continue"
           }
         },
         "b2": {
@@ -99,8 +100,9 @@
             "best_for": "Gut-health-focused routines\nMicrobiome support\nAntioxidant support\nBroader daily skin resilience†\nCustomers who want internal balance without making outdoor exposure the primary focus",
             "choose_label": "Choose",
             "learn_label": "Learn more",
-            "plan_heading": "Choose your Balance Duo plan",
-            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
+            "plan_heading": "Customize your Balance Duo plan",
+            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish.",
+            "plan_button": "Continue"
           }
         },
         "b3": {
@@ -115,8 +117,9 @@
             "best_for": "Active outdoor lifestyles\nEnvironmental exposure\nAntioxidant-focused routines\nBroader nutritional skin support†\nCustomers who want support beyond UV-focused pathways without prioritizing microbiome support",
             "choose_label": "Choose",
             "learn_label": "Learn more",
-            "plan_heading": "Choose your Sun Resilience Duo plan",
-            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
+            "plan_heading": "Customize your Sun Resilience Duo plan",
+            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish.",
+            "plan_button": "Continue"
           }
         },
         "b4": {
@@ -131,8 +134,9 @@
             "best_for": "Existing Alchemia MD customers\nCustomers who want all three support roles\nCustomers already committed to a comprehensive supplement routine",
             "choose_label": "Choose",
             "learn_label": "Learn more",
-            "plan_heading": "Choose your Tria Prima plan",
-            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish."
+            "plan_heading": "Customize your Tria Prima plan",
+            "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish.",
+            "plan_button": "Continue"
           }
         }
       },
@@ -150,7 +154,9 @@
         "media_ratio": "16x9",
         "show_tagline": false,
         "plan_heading": "",
-        "empty_text": "Select a bundle above to view purchase options."
+        "empty_text": "Select a bundle above to view purchase options.",
+        "expectation": "",
+        "trust_items": ""
       }
     },
     "compare": {
@@ -204,7 +210,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "grey",
+        "color_scheme": "light",
         "style": "cards",
         "eyebrow": "",
         "heading": "Which bundle fits your routine?",
@@ -231,7 +237,7 @@
     "edu_recovery": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "image_side": "left",
         "eyebrow": "",
         "heading": "Balance Duo",
@@ -316,7 +322,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "beige",
         "columns": "2",
         "eyebrow": "",
         "heading": "Not sure which bundle to choose?"
@@ -329,10 +335,10 @@
         "align": "center",
         "width": "wide",
         "eyebrow": "",
-        "heading": "Bundles are about complementary roles, not more bottles.",
+        "heading": "Bundles are about intentional, complementary roles. Not more bottles.",
         "heading_tag": "h2",
         "body": "<p>The point of an Alchemia MD bundle is not to take the largest number of products. It is to combine formulas when their primary roles support different parts of the same broader skin-health routine.†</p><p><strong>Protect</strong> Environmental support.</p><p><strong>Balance</strong> Gut-skin support.</p><p><strong>Restore</strong> Nutritional and immune support.†</p>",
-        "quote": "More is not automatically better. More intentional is better."
+        "quote": ""
       }
     },
     "directions": {
@@ -363,9 +369,9 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "beige",
+        "color_scheme": "grey",
         "eyebrow": "",
-        "heading": "A bundle is still a daily routine.",
+        "heading": "",
         "body": "<p>Each product is taken according to its own label directions.</p>"
       }
     },
@@ -509,6 +515,7 @@
   "order": [
     "hero",
     "framework",
+    "directions",
     "selector",
     "compare",
     "edu_sun_safe",
@@ -517,7 +524,6 @@
     "edu_complete",
     "finder",
     "why",
-    "directions",
     "timeline",
     "science",
     "faq",

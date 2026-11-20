@@ -10,7 +10,6 @@
           <article class="sci-spotcard" {{ block.shopify_attributes }}>
             {%- if section.settings.show_images -%}{% render 'responsive-image', image: block.settings.image, asset: block.settings.asset, asset_width: 1600, asset_height: 1067, ratio: '3x2', sizes: '(min-width: 990px) 30vw, 100vw', alt: block.settings.headline %}{%- endif -%}
             <div class="sci-spotcard__body">
-              <span class="eyebrow">{{ block.settings.kicker }}</span>
               <h3>{{ block.settings.headline }}</h3>
               <p>{{ block.settings.text }}</p>
               {% render 'study-link', handle: handle, label: section.settings.link_label %}
@@ -20,9 +19,9 @@
       {%- endfor -%}
     </div>
     <nav class="sci-spot__pager" data-spot-nav aria-label="Research pages" hidden>
-      <button type="button" class="btn btn--outline" data-spot-prev>Previous</button>
+      <button type="button" class="sci-spot__arrow" data-spot-prev aria-label="Previous"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
       <span class="sci-spot__count" data-spot-count></span>
-      <button type="button" class="btn btn--outline" data-spot-next>Next</button>
+      <button type="button" class="sci-spot__arrow" data-spot-next aria-label="Next"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
     </nav>
   </div>
   <script>

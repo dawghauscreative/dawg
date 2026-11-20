@@ -17,10 +17,10 @@
         "color_scheme": "green",
         "hide_on_home": false,
         "eyebrow": "",
-        "heading": "Mailing list",
+        "heading": "Join our mailing list",
         "body": "<p>Join us for skin health education, ingredient insights, brand updates, and special offers delivered to your inbox.</p>",
         "placeholder": "Your email address",
-        "button_label": "Subscribe",
+        "button_label": "Sign up",
         "success_text": "Thank you for joining Alchemia MD.",
         "layout": "footer"
       }

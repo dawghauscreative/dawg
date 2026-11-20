@@ -24,26 +24,12 @@
       <ul>
         <li>
           <details>
-            <summary><a class="nav__shoplink" href="{{ shop_all_url }}">Shop All</a></summary>
-            <div class="nav__panel">
-              <div>
-                <h2>{% if pages['bundles'] != blank %}<a href="{{ pages['bundles'].url }}">Bundles</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}">Bundles</a>{% else %}Bundles{% endif %}</h2>
-                <ul>
-                  {%- for handle in systems -%}
-                    {%- assign p = all_products[handle] -%}
-                    {%- if p.title != blank -%}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{%- endif -%}
-                  {%- endfor -%}
-                </ul>
-              </div>
-              <div>
-                <h2>{% if collections['individual-products'] != blank %}<a href="{{ collections['individual-products'].url }}">Individual</a>{% else %}Individual{% endif %}</h2>
-                <ul>
-                  {%- for handle in singles -%}
-                    {%- assign p = all_products[handle] -%}
-                    {%- if p.title != blank -%}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{%- endif -%}
-                  {%- endfor -%}
-                </ul>
-              </div>
+            <summary>Shop</summary>
+            <div class="nav__panel nav__panel--about">
+              <ul>
+                <li><a href="{{ shop_all_url }}">All Products</a></li>
+                <li><a href="{% if pages['bundles'] != blank %}{{ pages['bundles'].url }}{% elsif collections['bundles'] != blank %}{{ collections['bundles'].url }}{% else %}/pages/bundles{% endif %}">Bundles</a></li>
+              </ul>
             </div>
           </details>
         </li>
@@ -82,21 +68,11 @@
     </div>
     <nav aria-label="Mobile">
       <ul>
-        <li><a href="{{ shop_all_url }}">Shop All</a></li>
         <li>
-          <span class="drawer__label">{% if pages['bundles'] != blank %}<a href="{{ pages['bundles'].url }}" style="font-size:inherit;padding:0">Bundles</a>{% elsif collections['bundles'] != blank %}<a href="{{ collections['bundles'].url }}" style="font-size:inherit;padding:0">Bundles</a>{% else %}Bundles{% endif %}</span>
+          <span class="drawer__label">Shop</span>
           <ul>
-            {%- for handle in systems -%}
-              {%- assign p = all_products[handle] -%}
-              {%- if p.title != blank -%}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{%- endif -%}
-            {%- endfor -%}
-          </ul>
-          <span class="drawer__label">{% if collections['individual-products'] != blank %}<a href="{{ collections['individual-products'].url }}" style="font-size:inherit;padding:0">Individual</a>{% else %}Individual{% endif %}</span>
-          <ul>
-            {%- for handle in singles -%}
-              {%- assign p = all_products[handle] -%}
-              {%- if p.title != blank -%}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{%- endif -%}
-            {%- endfor -%}
+            <li><a href="{{ shop_all_url }}">All Products</a></li>
+            <li><a href="{% if pages['bundles'] != blank %}{{ pages['bundles'].url }}{% elsif collections['bundles'] != blank %}{{ collections['bundles'].url }}{% else %}/pages/bundles{% endif %}">Bundles</a></li>
           </ul>
         </li>
         <li>

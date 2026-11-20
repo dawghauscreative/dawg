@@ -46,6 +46,13 @@
             "question": "How long does one bottle last?",
             "answer": "<p>UV Shield+ contains 60 capsules, which last 30 days at the daily serving and 15 days when taken twice a day. Dermaboost+ contains 60 capsules, a 30-day supply at the daily serving. Skinbiotic+ contains 30 capsules, a 30-day supply at one capsule daily.</p>"
           }
+        },
+        "sun_q1": {
+          "type": "item",
+          "settings": {
+            "question": "How do Alchemia MD products fit with sunscreen?",
+            "answer": "<p>They don't. Alchemia MD supplements are not sunscreen and do not replace sun protection. Keep using broad-spectrum sunscreen, protective clothing and shade.</p>"
+          }
         }
       },
       "block_order": [
@@ -53,7 +60,8 @@
         "q2",
         "q3",
         "q4",
-        "q5"
+        "q5",
+        "sun_q1"
       ],
       "settings": {
         "color_scheme": "charcoal",
@@ -101,28 +109,6 @@
         "show_renewal_faq": false
       }
     },
-    "sun": {
-      "type": "pdp-faq",
-      "blocks": {
-        "q1": {
-          "type": "item",
-          "settings": {
-            "question": "How do Alchemia MD products fit with sunscreen?",
-            "answer": "<p>They don't. Alchemia MD supplements are not sunscreen and do not replace sun protection. Keep using broad-spectrum sunscreen, protective clothing and shade.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "q1"
-      ],
-      "settings": {
-        "color_scheme": "light",
-        "eyebrow": "",
-        "heading": "Sunscreen",
-        "heading_tag": "h2",
-        "show_renewal_faq": false
-      }
-    },
     "how": {
       "type": "pdp-faq",
       "blocks": {
@@ -154,7 +140,7 @@
         "q3"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Directions",
         "heading_tag": "h2",
@@ -233,7 +219,6 @@
   "order": [
     "products",
     "systems",
-    "sun",
     "how",
     "shipping",
     "support"
