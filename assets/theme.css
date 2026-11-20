@@ -1954,3 +1954,14 @@ h3 { font-size: clamp(1.35rem, 1.9vw, 1.75rem); }
   background: var(--t-sand); color: var(--t-ink);
 }
 #MainContent > .shopify-section:first-child > section:is(.edu-hero, .sci-hero, .shop-head, .founder-split, .section:has(> .container > .feature-split), .section:has(> .container.feature-split)) :is(h1, h2, h3, h4, p, li, .eyebrow, .lede) { color: var(--t-ink); }
+
+/* Product page top section in sand beige too (Nov 20). --c-white is the "light text" token used by the price,
+   the Supr plan picker and the buy box, so inside this section it becomes ink. */
+.pdp[class*="scheme-"] {
+  --c-white: var(--t-ink);
+  --bg: var(--t-sand); --fg: var(--t-ink); --body: color-mix(in srgb, var(--t-ink) 88%, var(--t-sand)); --accent: var(--t-ink);
+  --rule: color-mix(in srgb, var(--t-ink) 20%, transparent); --card: color-mix(in srgb, #fff 40%, var(--t-sand));
+  background: var(--t-sand); color: var(--t-ink);
+}
+.pdp[class*="scheme-"] :is(h1, h2, h3, h4, p, li, .eyebrow, .lede, label) { color: var(--t-ink); }
+.pdp[class*="scheme-"] .btn { color: #fff; }
