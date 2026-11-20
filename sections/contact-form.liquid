@@ -71,18 +71,101 @@
 {
   "name": "Contact form",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "How can we help?" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "checkbox", "id": "show_mailing_address", "label": "Show mailing address", "default": true },
-    { "type": "text", "id": "returns_note", "label": "Note under the mailing address", "default": "Not for returns. See our Returns policy for where to send them." },
-    { "type": "image_picker", "id": "image", "label": "Image (optional)" },
-    { "type": "text", "id": "asset", "label": "Fallback theme asset filename", "info": "Used only when no image is picked." },
-    { "type": "text", "id": "inquiry_types", "label": "Topics (comma separated)", "default": "Product question, Order or shipping, Subscription, Returns, Wholesale or retail, Dermatology office, Media, Partnership, Other" },
-    { "type": "text", "id": "button_label", "label": "Button label", "default": "Send message" },
-    { "type": "text", "id": "reply_note", "label": "Note under the button", "default": "We reply by email." },
-    { "type": "text", "id": "success_text", "label": "Success message", "default": "Thank you. We will be in touch." }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "green",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "White"
+        },
+        {
+          "value": "beige",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "How can we help?"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_mailing_address",
+      "label": "Show mailing address",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "returns_note",
+      "label": "Note under the mailing address",
+      "default": "Not for returns. See our Returns policy for where to send them."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image (optional)"
+    },
+    {
+      "type": "text",
+      "id": "asset",
+      "label": "Fallback theme asset filename",
+      "info": "Used only when no image is picked."
+    },
+    {
+      "type": "text",
+      "id": "inquiry_types",
+      "label": "Topics (comma separated)",
+      "default": "Product question, Order or shipping, Subscription, Returns, Wholesale or retail, Dermatology office, Media, Partnership, Other"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Send message"
+    },
+    {
+      "type": "text",
+      "id": "reply_note",
+      "label": "Note under the button",
+      "default": "We reply by email."
+    },
+    {
+      "type": "text",
+      "id": "success_text",
+      "label": "Success message",
+      "default": "Thank you. We will be in touch."
+    }
   ],
-  "presets": [{ "name": "Contact form" }]
+  "presets": [
+    {
+      "name": "Contact form"
+    }
+  ]
 }
 {% endschema %}

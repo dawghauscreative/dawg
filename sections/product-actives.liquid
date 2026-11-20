@@ -30,30 +30,129 @@
 {
   "name": "Product actives",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }, { "value": "beige", "label": "Warm beige" }] },
-    { "type": "select", "id": "columns", "label": "Columns", "default": "3", "options": [{ "value": "3", "label": "3" }, { "value": "4", "label": "4" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "green",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "beige",
+          "label": "Warm beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Columns",
+      "default": "3",
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    }
   ],
   "blocks": [
     {
       "type": "active",
       "name": "Active ingredient",
       "settings": [
-        { "type": "text", "id": "name", "label": "Ingredient" },
-        { "type": "text", "id": "amount", "label": "Amount (as labeled)", "info": "Leave empty when the label shows no separate amount." },
-        { "type": "text", "id": "badge", "label": "Evidence label (optional)" },
-        { "type": "text", "id": "role", "label": "Role" },
-        { "type": "richtext", "id": "text", "label": "Education copy" },
-        { "type": "text", "id": "slide_set", "label": "Ingredient slide set (e.g. d02)" },
-        { "type": "image_picker", "id": "image", "label": "Image (overrides the slide)" },
-        { "type": "text", "id": "link_label", "label": "Research link label" },
-        { "type": "url", "id": "link_url", "label": "Research link (Science page)" }
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Ingredient"
+        },
+        {
+          "type": "text",
+          "id": "amount",
+          "label": "Amount (as labeled)",
+          "info": "Leave empty when the label shows no separate amount."
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Evidence label (optional)"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Education copy"
+        },
+        {
+          "type": "text",
+          "id": "slide_set",
+          "label": "Ingredient slide set (e.g. d02)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image (overrides the slide)"
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Research link label"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Research link (Science page)"
+        }
       ]
     }
   ],
   "max_blocks": 8,
-  "presets": [{ "name": "Product actives" }]
+  "presets": [
+    {
+      "name": "Product actives"
+    }
+  ]
 }
 {% endschema %}

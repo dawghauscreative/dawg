@@ -50,21 +50,133 @@
 {
   "name": "Compare table",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "green-light", "label": "Lighter green" }, { "value": "light", "label": "Beige" }] },
-    { "type": "select", "id": "style", "label": "Style", "default": "table", "options": [{ "value": "table", "label": "Table" }, { "value": "cards", "label": "Cards (staggered, with hover)" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "text", "id": "button_label", "label": "Button label (optional)" },
-    { "type": "url", "id": "button_url", "label": "Button link" },
-    { "type": "text", "id": "col_1", "label": "Column 1" },
-    { "type": "text", "id": "col_2", "label": "Column 2" },
-    { "type": "text", "id": "col_3", "label": "Column 3" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "green-light",
+          "label": "Lighter green"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "default": "table",
+      "options": [
+        {
+          "value": "table",
+          "label": "Table"
+        },
+        {
+          "value": "cards",
+          "label": "Cards (staggered, with hover)"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label (optional)"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "col_3",
+      "label": "Column 3"
+    }
   ],
   "blocks": [
-    { "type": "row", "name": "Row", "settings": [{ "type": "text", "id": "label", "label": "Row label" }, { "type": "text", "id": "a", "label": "Column 1" }, { "type": "text", "id": "b", "label": "Column 2" }, { "type": "text", "id": "c", "label": "Column 3" }, { "type": "url", "id": "url", "label": "Card link (cards style)" }] }
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Row label"
+        },
+        {
+          "type": "text",
+          "id": "a",
+          "label": "Column 1"
+        },
+        {
+          "type": "text",
+          "id": "b",
+          "label": "Column 2"
+        },
+        {
+          "type": "text",
+          "id": "c",
+          "label": "Column 3"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Card link (cards style)"
+        }
+      ]
+    }
   ],
   "max_blocks": 10,
-  "presets": [{ "name": "Compare table" }]
+  "presets": [
+    {
+      "name": "Compare table"
+    }
+  ]
 }
 {% endschema %}

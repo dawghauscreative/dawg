@@ -50,18 +50,121 @@
 {
   "name": "Split compare",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "text", "id": "center", "label": "Centre statement" },
-    { "type": "text", "id": "button_label", "label": "Button label (optional)" },
-    { "type": "url", "id": "button_url", "label": "Button link" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "green",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "center",
+      "label": "Centre statement"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label (optional)"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button link"
+    }
   ],
   "blocks": [
-    { "type": "side", "name": "Side", "settings": [{ "type": "text", "id": "kicker", "label": "Label" }, { "type": "text", "id": "name", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" }, { "type": "textarea", "id": "items", "label": "List (one per line)" }, { "type": "text", "id": "focus", "label": "Primary focus line" }, { "type": "url", "id": "link", "label": "Card link (optional)", "info": "Cards naming UV Shield+, Skinbiotic+, Dermaboost+, inulin or probiotics link to the Science page automatically. Set a link here to override." }] }
+    {
+      "type": "side",
+      "name": "Side",
+      "settings": [
+        {
+          "type": "text",
+          "id": "kicker",
+          "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "textarea",
+          "id": "items",
+          "label": "List (one per line)"
+        },
+        {
+          "type": "text",
+          "id": "focus",
+          "label": "Primary focus line"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Card link (optional)",
+          "info": "Cards naming UV Shield+, Skinbiotic+, Dermaboost+, inulin or probiotics link to the Science page automatically. Set a link here to override."
+        }
+      ]
+    }
   ],
   "max_blocks": 3,
-  "presets": [{ "name": "Split compare", "blocks": [{ "type": "side" }, { "type": "side" }] }]
+  "presets": [
+    {
+      "name": "Split compare",
+      "blocks": [
+        {
+          "type": "side"
+        },
+        {
+          "type": "side"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

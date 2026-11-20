@@ -29,28 +29,122 @@
 {
   "name": "Shop All formulas",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Start with one role" },
-    { "type": "textarea", "id": "body", "label": "Supporting text", "default": "Choose the formula that matches your current priority, then explore the bundles that pair it with complementary support." },
-    { "type": "text", "id": "subscribe_cue", "label": "Subscribe cue (no percentages)", "default": "Subscribe & save available" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "light",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Start with one role"
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Supporting text",
+      "default": "Choose the formula that matches your current priority, then explore the bundles that pair it with complementary support."
+    },
+    {
+      "type": "text",
+      "id": "subscribe_cue",
+      "label": "Subscribe cue (no percentages)",
+      "default": "Subscribe & save available"
+    }
   ],
   "blocks": [
     {
       "type": "formula",
       "name": "Formula",
       "settings": [
-        { "type": "product", "id": "product", "label": "Formula" },
-        { "type": "text", "id": "role", "label": "Role label" },
-        { "type": "textarea", "id": "descriptor", "label": "Descriptor" },
-        { "type": "product", "id": "related_1", "label": "Also in: system 1" },
-        { "type": "product", "id": "related_2", "label": "Also in: system 2" },
-        { "type": "product", "id": "related_3", "label": "Also in: system 3" },
-        { "type": "text", "id": "button_text", "label": "Button text", "default": "Choose your plan" }
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Formula"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role label"
+        },
+        {
+          "type": "textarea",
+          "id": "descriptor",
+          "label": "Descriptor"
+        },
+        {
+          "type": "product",
+          "id": "related_1",
+          "label": "Also in: system 1"
+        },
+        {
+          "type": "product",
+          "id": "related_2",
+          "label": "Also in: system 2"
+        },
+        {
+          "type": "product",
+          "id": "related_3",
+          "label": "Also in: system 3"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Choose your plan"
+        }
       ]
     }
   ],
   "max_blocks": 6,
-  "presets": [{ "name": "Shop All formulas", "blocks": [{ "type": "formula" }, { "type": "formula" }, { "type": "formula" }] }]
+  "presets": [
+    {
+      "name": "Shop All formulas",
+      "blocks": [
+        {
+          "type": "formula"
+        },
+        {
+          "type": "formula"
+        },
+        {
+          "type": "formula"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

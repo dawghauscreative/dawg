@@ -21,25 +21,111 @@
 {
   "name": "Evidence table",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "textarea", "id": "legend", "label": "Legend" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "textarea",
+      "id": "legend",
+      "label": "Legend"
+    }
   ],
   "blocks": [
     {
       "type": "row",
       "name": "Row",
       "settings": [
-        { "type": "text", "id": "area", "label": "Research area" },
-        { "type": "text", "id": "evidence", "label": "Current evidence" },
-        { "type": "select", "id": "level", "label": "Evidence maturity (dots)", "default": "3", "options": [{ "value": "1", "label": "1: Emerging / preclinical" }, { "value": "2", "label": "2: Growing, mixed or strain-specific" }, { "value": "3", "label": "3: Human evidence" }, { "value": "4", "label": "4: Extensive" }] },
-        { "type": "textarea", "id": "interpretation", "label": "How we interpret it" }
+        {
+          "type": "text",
+          "id": "area",
+          "label": "Research area"
+        },
+        {
+          "type": "text",
+          "id": "evidence",
+          "label": "Current evidence"
+        },
+        {
+          "type": "select",
+          "id": "level",
+          "label": "Evidence maturity (dots)",
+          "default": "3",
+          "options": [
+            {
+              "value": "1",
+              "label": "1: Emerging / preclinical"
+            },
+            {
+              "value": "2",
+              "label": "2: Growing, mixed or strain-specific"
+            },
+            {
+              "value": "3",
+              "label": "3: Human evidence"
+            },
+            {
+              "value": "4",
+              "label": "4: Extensive"
+            }
+          ]
+        },
+        {
+          "type": "textarea",
+          "id": "interpretation",
+          "label": "How we interpret it"
+        }
       ]
     }
   ],
   "max_blocks": 16,
-  "presets": [{ "name": "Evidence table" }]
+  "presets": [
+    {
+      "name": "Evidence table"
+    }
+  ]
 }
 {% endschema %}

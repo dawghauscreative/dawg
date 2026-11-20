@@ -227,7 +227,7 @@
         "r4"
       ],
       "settings": {
-        "color_scheme": "charcoal",
+        "color_scheme": "grey",
         "anchor": "start-here",
         "eyebrow": "",
         "heading": "New here? Start here.",
@@ -994,7 +994,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "anchor": "",
         "eyebrow": "",
         "heading": "See how the science informs the formulas.",
@@ -1216,7 +1216,7 @@
     "all": {
       "type": "main-blog",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "All articles",
         "empty_text": "New articles are on the way."
@@ -1239,7 +1239,7 @@
     "final": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "dark",
         "product": "",
         "eyebrow": "",
         "heading": "Understand the science behind your routine.",

@@ -24,7 +24,7 @@
       "type": "final-cta",
       "settings": {
         "product": "",
-        "color_scheme": "green-light",
+        "color_scheme": "dark",
         "heading": "Support your skin from within.",
         "button_label": "Shop all",
         "button_url": "/collections/shop-all"
@@ -36,7 +36,7 @@
         "eyebrow": "Brand Philosophy",
         "heading": "Alchemy is transformation through balance.",
         "heading_tag": "h2",
-        "color_scheme": "grey",
+        "color_scheme": "green-light",
         "graphic": "alchemy",
         "image_side": "left",
         "body": "<p>Centuries ago, alchemists sought to turn lead into gold. We believe lasting change begins by supporting the body from within.</p>",
@@ -50,7 +50,7 @@
         "eyebrow": "Prevention",
         "heading": "To change the way people understand their skin.",
         "heading_tag": "h2",
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "image_asset": "about-skin-diversity-3x2.webp",
         "image_ratio": "3x2",
         "image_side": "left",
@@ -62,7 +62,7 @@
     "category": {
       "type": "category-statement",
       "settings": {
-        "color_scheme": "grey",
+        "color_scheme": "light",
         "eyebrow": "Our Mission",
         "statement": "To transform skin health from the inside out. We are guided by dermatological science and the philosophy that balance is a practice, not a destination.",
         "eyebrow_size": "large"
@@ -123,7 +123,7 @@
         "pt6"
       ],
       "settings": {
-        "color_scheme": "charcoal",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "From personal loss to a different way of thinking about skin.",
         "body": ""

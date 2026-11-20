@@ -20,13 +20,72 @@
 {
   "name": "Shop All featured system",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
-    { "type": "product", "id": "product", "label": "Featured system" },
-    { "type": "text", "id": "role", "label": "Role label", "default": "Protect + Balance" },
-    { "type": "textarea", "id": "descriptor", "label": "Descriptor", "default": "Environmental support paired with gut-skin balance." },
-    { "type": "text", "id": "button_text", "label": "Button text", "default": "Choose your plan" },
-    { "type": "text", "id": "subscribe_cue", "label": "Subscribe cue (no percentages)", "default": "Subscribe & save available" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "green",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Featured system"
+    },
+    {
+      "type": "text",
+      "id": "role",
+      "label": "Role label",
+      "default": "Protect + Balance"
+    },
+    {
+      "type": "textarea",
+      "id": "descriptor",
+      "label": "Descriptor",
+      "default": "Environmental support paired with gut-skin balance."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Choose your plan"
+    },
+    {
+      "type": "text",
+      "id": "subscribe_cue",
+      "label": "Subscribe cue (no percentages)",
+      "default": "Subscribe & save available"
+    }
   ],
-  "presets": [{ "name": "Shop All featured system" }]
+  "presets": [
+    {
+      "name": "Shop All featured system"
+    }
+  ]
 }
 {% endschema %}

@@ -88,7 +88,7 @@
         "fda"
       ],
       "settings": {
-        "lead_asset": "product-3d-uv-shield-skinbiotic.webp",
+        "lead_asset": "product-beige-sun-safe.webp",
         "angle_assets": "product-angle-sun-safe-back.webp, product-angle-uv-shield-facts.webp, product-angle-skinbiotic-facts.webp",
         "media_order": "99",
         "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_SK_EDU_03_4x5_c0b4dc6d-cce8-4d00-ac97-d1a81051d78d.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_SK_EDU_04_4x5_b0f5ca95-5fd3-4801-b51a-4adbf0c02d76.png, bundle-sun-safe-outdoor.webp, bundle-sun-safe-everyday-care.webp, lifestyle-uvshield-skinbiotic-sailboat.webp",
@@ -120,7 +120,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Two complementary forms of internal skin support.",
         "body": "<p>The Outdoor Duo combines two formulas with different primary roles.</p><p>It is not built around taking more products for the sake of taking more products. It is built around combining two different biological support strategies in one routine.</p>",
@@ -176,7 +176,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Why pair UV Shield+ with Skinbiotic+?",
         "body": "<p>UV Shield+ primarily targets nutritional and antioxidant pathways relevant to environmental stress. Skinbiotic+ primarily targets the gut and microbial environment.</p><p>These are different starting points, which is exactly why the pairing makes sense. The two products operate through different upstream mechanisms that may converge on broader systemic signaling.</p>",
@@ -186,7 +186,7 @@
     "step1": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "image_side": "right",
         "eyebrow": "",
         "heading": "UV Shield+",
@@ -323,7 +323,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What is the gut-skin connection?",
         "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
@@ -358,7 +358,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Two formulas. Complementary roles."
       }
@@ -440,7 +440,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Designed for people who spend time in the sun.",
         "columns": "3",
@@ -486,7 +486,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "heading": "Four areas of daily support.",
         "columns": "4",
         "show_images": false,
@@ -536,7 +536,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Why these two formulas?",
         "columns": "4",
@@ -548,7 +548,7 @@
     "claims": {
       "type": "science-boundaries",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "The Outdoor Duo does not claim to:",
@@ -560,7 +560,7 @@
     "sunscreen": {
       "type": "science-sunscreen",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "beige",
         "heading": "Keep the sunscreen.",
         "body": "<p>The Outdoor Duo is not a sunscreen and does not replace sun protection. Continue to use:</p>",
         "items": "Broad-spectrum sunscreen\nProtective clothing\nHats and sunglasses\nShade\nReapplication\nRoutine dermatologic care",
@@ -614,7 +614,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "Is Outdoor Duo the right bundle for you?",
         "button_label": "Compare all bundles",
@@ -658,7 +658,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "Build around your priorities."
       }
@@ -666,7 +666,7 @@
     "reviews": {
       "type": "pdp-reviews",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "heading": "What customers are saying"
       }
     },

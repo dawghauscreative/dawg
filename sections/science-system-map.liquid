@@ -75,21 +75,143 @@
 {
   "name": "Science system map",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
-    { "type": "checkbox", "id": "center", "label": "Centre heading, text and caption", "default": false },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "textarea", "id": "caption", "label": "Caption" },
-    { "type": "header", "content": "Circle info (shown on hover)" },
-    { "type": "richtext", "id": "protect_text", "label": "Protect / UV Shield+", "default": "<p>Daily support for active, sun-ready skin.† Designed around nutritional and antioxidant support for people who spend significant time outdoors.†</p>" },
-    { "type": "richtext", "id": "balance_text", "label": "Balance / Skinbiotic+", "default": "<p>Daily probiotic for gut and skin health.† A synbiotic approach designed around the connection between the intestinal microbiome and skin wellness.</p>" },
-    { "type": "richtext", "id": "restore_text", "label": "Restore / Dermaboost+", "default": "<p>Daily immune support for calm, balanced skin.† A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.†</p>" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "center",
+      "label": "Centre heading, text and caption",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "textarea",
+      "id": "caption",
+      "label": "Caption"
+    },
+    {
+      "type": "header",
+      "content": "Circle info (shown on hover)"
+    },
+    {
+      "type": "richtext",
+      "id": "protect_text",
+      "label": "Protect / UV Shield+",
+      "default": "<p>Daily support for active, sun-ready skin.† Designed around nutritional and antioxidant support for people who spend significant time outdoors.†</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "balance_text",
+      "label": "Balance / Skinbiotic+",
+      "default": "<p>Daily probiotic for gut and skin health.† A synbiotic approach designed around the connection between the intestinal microbiome and skin wellness.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "restore_text",
+      "label": "Restore / Dermaboost+",
+      "default": "<p>Daily immune support for calm, balanced skin.† A multi-nutrient formula built around antioxidant, immune, and skin-resilience support.†</p>"
+    }
   ],
   "blocks": [
-    { "type": "pair", "name": "Pairing", "settings": [{ "type": "select", "id": "region", "label": "Overlap", "default": "", "options": [{ "value": "", "label": "By order" }, { "value": "ab", "label": "Protect + Balance" }, { "value": "ac", "label": "Protect + Restore" }, { "value": "bc", "label": "Balance + Restore" }, { "value": "abc", "label": "All three (centre)" }] }, { "type": "text", "id": "title", "label": "Title" }, { "type": "text", "id": "subtitle", "label": "Subtitle" }, { "type": "richtext", "id": "text", "label": "Text" }] }
+    {
+      "type": "pair",
+      "name": "Pairing",
+      "settings": [
+        {
+          "type": "select",
+          "id": "region",
+          "label": "Overlap",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "By order"
+            },
+            {
+              "value": "ab",
+              "label": "Protect + Balance"
+            },
+            {
+              "value": "ac",
+              "label": "Protect + Restore"
+            },
+            {
+              "value": "bc",
+              "label": "Balance + Restore"
+            },
+            {
+              "value": "abc",
+              "label": "All three (centre)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
   ],
   "max_blocks": 5,
-  "presets": [{ "name": "Science system map" }]
+  "presets": [
+    {
+      "name": "Science system map"
+    }
+  ]
 }
 {% endschema %}

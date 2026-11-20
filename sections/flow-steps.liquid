@@ -43,18 +43,120 @@
 {
   "name": "Flow steps",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "green-light", "label": "Lighter green" }, { "value": "light", "label": "Beige" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "text", "id": "takeaway", "label": "Takeaway" },
-    { "type": "text", "id": "note", "label": "Small note" },
-    { "type": "select", "id": "figure", "label": "Illustration", "default": "none", "options": [{ "value": "none", "label": "None" }, { "value": "body", "label": "Human body line art (gut-skin steps)" }], "info": "The body lights up the gut, metabolites, immune nodes, circulation and skin for steps 1 to 5." }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "green-light",
+          "label": "Lighter green"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "takeaway",
+      "label": "Takeaway"
+    },
+    {
+      "type": "text",
+      "id": "note",
+      "label": "Small note"
+    },
+    {
+      "type": "select",
+      "id": "figure",
+      "label": "Illustration",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "body",
+          "label": "Human body line art (gut-skin steps)"
+        }
+      ],
+      "info": "The body lights up the gut, metabolites, immune nodes, circulation and skin for steps 1 to 5."
+    }
   ],
   "blocks": [
-    { "type": "step", "name": "Step", "settings": [{ "type": "text", "id": "kicker", "label": "Small label" }, { "type": "text", "id": "label", "label": "Step" }, { "type": "textarea", "id": "detail", "label": "Detail (shown on hover or tap)" }] }
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "kicker",
+          "label": "Small label"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Step"
+        },
+        {
+          "type": "textarea",
+          "id": "detail",
+          "label": "Detail (shown on hover or tap)"
+        }
+      ]
+    }
   ],
   "max_blocks": 5,
-  "presets": [{ "name": "Flow steps", "blocks": [{ "type": "step" }, { "type": "step" }, { "type": "step" }] }]
+  "presets": [
+    {
+      "name": "Flow steps",
+      "blocks": [
+        {
+          "type": "step"
+        },
+        {
+          "type": "step"
+        },
+        {
+          "type": "step"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

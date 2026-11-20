@@ -95,7 +95,7 @@
       "settings": {
         "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/TRIO_EDU_03_4x5_fa5e0b91-ab3f-4841-85b3-48cdf8664bb9.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/TRIO_EDU_04_4x5_9dd77151-fa21-4643-bd7c-5c0bfea885d5.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/TRIO_EDU_05_4x5_f64b7b92-ae0a-44ab-985f-1a9bf70f14ed.png, bundle-complete-explore-all-three.webp, bundle-complete-closer-look.webp, lifestyle-all-three-yacht.webp",
         "color_scheme": "green",
-        "lead_asset": "product-3d-trio.webp",
+        "lead_asset": "product-beige-trio.webp",
         "angle_assets": "product-angle-trio-back.webp, product-angle-uv-shield-facts.webp, product-angle-skinbiotic-facts.webp, product-angle-dermaboost-facts.webp",
         "media_order": "99"
       }
@@ -103,7 +103,7 @@
     "definition": {
       "type": "split-compare",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Three distinct roles. One complete routine.",
         "body": "<p>Tria Prima integrates all three foundational Alchemia MD formulas.</p><p>This is the broadest routine in the Alchemia MD line, but broader does not automatically mean better for every customer.</p>",
@@ -194,7 +194,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Tria Prima is for the customer who already understands the bundle.",
         "body": "<p>It is best suited to customers who fit this picture.</p>"
@@ -203,7 +203,7 @@
     "step1": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "image_side": "right",
         "eyebrow": "",
         "heading": "UV Shield+",
@@ -218,7 +218,7 @@
     "step2": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "grey",
         "image_side": "left",
         "eyebrow": "",
         "heading": "Skinbiotic+",
@@ -233,7 +233,7 @@
     "step3": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "image_side": "right",
         "eyebrow": "",
         "heading": "Dermaboost+",
@@ -248,7 +248,7 @@
     "domains": {
       "type": "domain-circles",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Three different starting points.",
         "center": "COMPLETE",
@@ -379,7 +379,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Support for life outdoors, and broader nutrition.",
         "body": "<p>UV Shield+ provides the bundle’s primary environmental-support role.† Dermaboost+ adds nutritional, antioxidant, and normal immune-supportive ingredients.†</p><p><em>Tria Prima does not replace sunscreen.</em></p>",
@@ -389,7 +389,7 @@
     "gut": {
       "type": "split-compare",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Support the gut-skin connection.",
         "body": "<p>Skinbiotic+ provides the bundle’s microbiome-focused role. The purpose is to support the intestinal environment and gut-skin biology, without implying that every skin concern originates in the gut.</p>"
@@ -420,7 +420,7 @@
     "ingredients": {
       "type": "split-compare",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Three formulas. Defined roles.",
         "button_label": "Explore the ingredient science",
@@ -461,7 +461,7 @@
     "supports": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "heading": "Five areas of support.",
         "columns": "3",
         "show_images": false,
@@ -515,7 +515,7 @@
     "compare": {
       "type": "compare-table",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Compare the Alchemia MD bundles.",
         "col_1": "Roles",
@@ -573,7 +573,7 @@
     "research": {
       "type": "science-cards",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "One bundle. Multiple areas of biology.",
         "columns": "3",
@@ -642,7 +642,7 @@
     "claims": {
       "type": "science-boundaries",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "Tria Prima does not claim to:",
@@ -664,7 +664,7 @@
     "reviews": {
       "type": "pdp-reviews",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "heading": "What customers are saying"
       }
     },
@@ -829,7 +829,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Skin health is connected to the rest of the body.",
         "body": "<p>Skin is not an isolated surface. Its biology is influenced by several connected factors.</p>",

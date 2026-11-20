@@ -79,7 +79,7 @@
         "fda"
       ],
       "settings": {
-        "lead_asset": "product-3d-skinbiotic-portrait.webp",
+        "lead_asset": "product-beige-skinbiotic.webp",
         "angle_assets": "product-angle-skinbiotic-back.webp, product-angle-skinbiotic-facts.webp",
         "media_order": "99",
         "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_01_Organic_inulin_4x5_c2eef458-40e5-4333-833e-a591d8364573.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_02_Lactobacillus_plantarum_4x5_b0df6284-9876-4ddf-8301-61d8aee491fc.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/SK_06_Akkermansia_muciniphila_4x5_060fde1c-8f72-40e0-98c0-a82eea224ba6.png, lifestyle-skinbiotic-cliffs.webp",
@@ -154,7 +154,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What is the gut-skin connection?",
         "body": "<p>The gut-skin connection (or gut-skin axis) describes communication between the intestinal environment and the skin. Researchers study several pathways, including microbial metabolites, immune signaling, barrier integrity, and systemic metabolism.</p><p>The concept has substantial biological support. Outcomes still vary by organism, dose, and population, so we describe the research carefully and do not generalize it.</p>",
@@ -187,7 +187,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "What makes it a synbiotic?",
         "body": "<p>A synbiotic pairs a prebiotic with probiotics. Each side has a different job, and the formula is built around having both.</p>",
@@ -280,7 +280,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Ingredients",
         "body": "<p>Organic inulin at 500 mg and a 215 mg probiotic blend, as listed on the label.</p>"
@@ -333,7 +333,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "For people building a gut-conscious routine.",
         "columns": "3",
@@ -379,7 +379,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "What Skinbiotic+ is designed to support.",
         "columns": "4",
@@ -432,7 +432,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Why these organisms?",
         "columns": "4",
@@ -444,7 +444,7 @@
     "claims": {
       "type": "science-boundaries",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "Skinbiotic+ is not intended to:",
@@ -483,7 +483,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "beige",
         "layout": "tabs",
         "eyebrow": "",
         "heading": "Skinbiotic+ can stand alone, or become part of a bundle.",
@@ -493,7 +493,7 @@
     "reviews": {
       "type": "pdp-reviews",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "heading": "What customers are saying"
       }
     },
@@ -568,7 +568,7 @@
         "b8"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading_tag": "h2",
         "heading": "Frequently asked questions"
@@ -657,7 +657,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "grey",
         "anchor": "",
         "eyebrow": "",
         "heading": "Every ingredient has a reason.",

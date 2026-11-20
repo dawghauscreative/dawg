@@ -19,15 +19,81 @@
 {
   "name": "Science boundaries",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "text", "id": "not_heading", "label": "Left heading", "default": "These studies do not mean:" },
-    { "type": "textarea", "id": "not_items", "label": "Left list (one per line)" },
-    { "type": "text", "id": "does_heading", "label": "Second heading (not shown)", "default": "What they do mean:", "info": "No longer displayed. The text below shows directly under the main heading." },
-    { "type": "richtext", "id": "does_text", "label": "Right text" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "light",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "not_heading",
+      "label": "Left heading",
+      "default": "These studies do not mean:"
+    },
+    {
+      "type": "textarea",
+      "id": "not_items",
+      "label": "Left list (one per line)"
+    },
+    {
+      "type": "text",
+      "id": "does_heading",
+      "label": "Second heading (not shown)",
+      "default": "What they do mean:",
+      "info": "No longer displayed. The text below shows directly under the main heading."
+    },
+    {
+      "type": "richtext",
+      "id": "does_text",
+      "label": "Right text"
+    }
   ],
-  "presets": [{ "name": "Science boundaries" }]
+  "presets": [
+    {
+      "name": "Science boundaries"
+    }
+  ]
 }
 {% endschema %}

@@ -56,10 +56,56 @@
 {
   "name": "Article",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
-    { "type": "text", "id": "reviewed_by", "label": "Reviewed-by line", "default": "Reviewed by Dr. Mia Luna, Board-Certified Dermatologist" },
-    { "type": "textarea", "id": "disclaimer", "label": "Article disclaimer", "default": "This article is for educational purposes only and is not a substitute for individualized medical advice. Speak with your healthcare professional about questions specific to your health." },
-    { "type": "product", "id": "product", "label": "Default related formula", "info": "Used when an article has no related-product metafield. Links to the product page only." }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "light",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "White"
+        },
+        {
+          "value": "beige",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "reviewed_by",
+      "label": "Reviewed-by line",
+      "default": "Reviewed by Dr. Mia Luna, Board-Certified Dermatologist"
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer",
+      "label": "Article disclaimer",
+      "default": "This article is for educational purposes only and is not a substitute for individualized medical advice. Speak with your healthcare professional about questions specific to your health."
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Default related formula",
+      "info": "Used when an article has no related-product metafield. Links to the product page only."
+    }
   ]
 }
 {% endschema %}

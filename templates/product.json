@@ -66,39 +66,57 @@
     },
     "definition": {
       "type": "pdp-definition",
-      "settings": {}
+      "settings": {
+        "color_scheme": "grey"
+      }
     },
     "benefits": {
       "type": "pdp-benefits",
-      "settings": {}
+      "settings": {
+        "color_scheme": "grey"
+      }
     },
     "ingredients": {
       "type": "pdp-ingredients",
-      "settings": {}
+      "settings": {
+        "color_scheme": "light"
+      }
     },
     "how": {
       "type": "pdp-how-it-works",
-      "settings": {}
+      "settings": {
+        "color_scheme": "green-light"
+      }
     },
     "timeline": {
       "type": "renewal-timeline",
-      "settings": {}
+      "settings": {
+        "color_scheme": "green-light"
+      }
     },
     "crosssell": {
       "type": "pdp-crosssell",
-      "settings": {}
+      "settings": {
+        "color_scheme": "beige"
+      }
     },
     "reviews": {
       "type": "pdp-reviews",
-      "settings": {}
+      "settings": {
+        "color_scheme": "green"
+      }
     },
     "faq": {
       "type": "pdp-faq",
-      "settings": {}
+      "settings": {
+        "color_scheme": "green"
+      }
     },
     "compliance": {
       "type": "compliance-notice",
-      "settings": {}
+      "settings": {
+        "color_scheme": "dark"
+      }
     },
     "video": {
       "type": "video-slot",

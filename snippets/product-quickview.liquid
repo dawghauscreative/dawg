@@ -27,7 +27,7 @@
 <template data-qv>
   {%- if qv_key != blank -%}
     <div class="qv__media">
-      <img src="{{ 'product-angle-' | append: qv_key | append: '-front.webp' | asset_url }}" alt="{{ product.title | escape }}, front" width="1200" height="1500" loading="lazy">
+      <img src="{{ 'product-beige-' | append: qv_key | append: '.webp' | asset_url }}" alt="{{ product.title | escape }}, front" width="1200" height="1500" loading="lazy">
       <img src="{{ 'product-angle-' | append: qv_key | append: '-back.webp' | asset_url }}" alt="{{ product.title | escape }}, back" width="1200" height="1500" loading="lazy">
     </div>
   {%- endif -%}

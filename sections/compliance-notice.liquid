@@ -17,10 +17,54 @@
 {
   "name": "Compliance notice",
   "settings": [
-    { "type": "text", "id": "extra_line", "label": "Extra line (e.g. sunscreen statement)" },
-    { "type": "textarea", "id": "fda_text", "label": "FDA wording override (optional)", "info": "Blank = the standard wording in Theme settings > Compliance. Use for pages that cover several products." },
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
+    {
+      "type": "text",
+      "id": "extra_line",
+      "label": "Extra line (e.g. sunscreen statement)"
+    },
+    {
+      "type": "textarea",
+      "id": "fda_text",
+      "label": "FDA wording override (optional)",
+      "info": "Blank = the standard wording in Theme settings > Compliance. Use for pages that cover several products."
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "White"
+        },
+        {
+          "value": "beige",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    }
   ],
-  "presets": [{ "name": "Compliance notice" }]
+  "presets": [
+    {
+      "name": "Compliance notice"
+    }
+  ]
 }
 {% endschema %}

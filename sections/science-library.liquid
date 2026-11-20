@@ -51,14 +51,80 @@
 {
   "name": "Research library",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }, { "value": "beige", "label": "Warm beige" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "text", "id": "filters", "label": "Filters (comma separated)", "default": "Environmental / UV, Skin Barrier, Gut–Skin Axis, Probiotics, Antioxidants, Human Trials, Reviews", "info": "Must match the Filter categories used on each study." },
-    { "type": "range", "id": "per_page", "label": "Studies per page", "min": 0, "max": 12, "step": 1, "default": 3, "info": "0 shows every study on one page." },
-    { "type": "richtext", "id": "note", "label": "Note" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "light",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "beige",
+          "label": "Warm beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "filters",
+      "label": "Filters (comma separated)",
+      "default": "Environmental / UV, Skin Barrier, Gut–Skin Axis, Probiotics, Antioxidants, Human Trials, Reviews",
+      "info": "Must match the Filter categories used on each study."
+    },
+    {
+      "type": "range",
+      "id": "per_page",
+      "label": "Studies per page",
+      "min": 0,
+      "max": 12,
+      "step": 1,
+      "default": 3,
+      "info": "0 shows every study on one page."
+    },
+    {
+      "type": "richtext",
+      "id": "note",
+      "label": "Note"
+    }
   ],
-  "presets": [{ "name": "Research library" }]
+  "presets": [
+    {
+      "name": "Research library"
+    }
+  ]
 }
 {% endschema %}

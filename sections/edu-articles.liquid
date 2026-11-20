@@ -67,34 +67,162 @@
 {
   "name": "Skin Edu articles",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "charcoal", "label": "Charcoal" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
-    { "type": "text", "id": "anchor", "label": "Anchor id (optional)" },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "select", "id": "columns", "label": "Cards per row", "default": "3", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }] },
-    { "type": "text", "id": "blog_handle", "label": "Blog handle", "default": "blog" },
-    { "type": "checkbox", "id": "flip", "label": "Flip product cards", "info": "Cards linking to a product page flip on hover (tap on phones) to show price, key ingredients and Choose your plan.", "default": false },
-    { "type": "text", "id": "button_label", "label": "Button label (optional)" },
-    { "type": "url", "id": "button_url", "label": "Button link" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "charcoal",
+          "label": "Charcoal"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Anchor id (optional)"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Cards per row",
+      "default": "3",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "blog_handle",
+      "label": "Blog handle",
+      "default": "blog"
+    },
+    {
+      "type": "checkbox",
+      "id": "flip",
+      "label": "Flip product cards",
+      "info": "Cards linking to a product page flip on hover (tap on phones) to show price, key ingredients and Choose your plan.",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label (optional)"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button link"
+    }
   ],
   "blocks": [
     {
       "type": "article",
       "name": "Article card",
       "settings": [
-        { "type": "image_picker", "id": "image", "label": "Image (4:5)" },
-        { "type": "text", "id": "asset", "label": "Or theme asset filename", "info": "Used when no image is picked." },
-        { "type": "text", "id": "category", "label": "Category label" },
-        { "type": "text", "id": "title", "label": "Title" },
-        { "type": "textarea", "id": "teaser", "label": "Teaser (1 to 2 sentences)" },
-        { "type": "text", "id": "article", "label": "Article handle", "info": "Links once the article is published." },
-        { "type": "url", "id": "url", "label": "Or link to any page" },
-        { "type": "text", "id": "cta_label", "label": "Link label", "default": "Read article" }
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image (4:5)"
+        },
+        {
+          "type": "text",
+          "id": "asset",
+          "label": "Or theme asset filename",
+          "info": "Used when no image is picked."
+        },
+        {
+          "type": "text",
+          "id": "category",
+          "label": "Category label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "teaser",
+          "label": "Teaser (1 to 2 sentences)"
+        },
+        {
+          "type": "text",
+          "id": "article",
+          "label": "Article handle",
+          "info": "Links once the article is published."
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Or link to any page"
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "Link label",
+          "default": "Read article"
+        }
       ]
     }
   ],
   "max_blocks": 16,
-  "presets": [{ "name": "Skin Edu articles" }]
+  "presets": [
+    {
+      "name": "Skin Edu articles"
+    }
+  ]
 }
 {% endschema %}

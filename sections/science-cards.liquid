@@ -52,37 +52,229 @@
 {
   "name": "Science cards",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "charcoal", "label": "Charcoal" }, { "value": "green", "label": "Evergreen" }, { "value": "green-light", "label": "Lighter green" }, { "value": "light", "label": "Beige" }, { "value": "beige", "label": "Warm beige" }] },
-    { "type": "text", "id": "anchor", "label": "Anchor id (optional)", "info": "Lets a button link to this section, e.g. research." },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "select", "id": "layout", "label": "Layout", "default": "grid", "options": [{ "value": "grid", "label": "Grid" }, { "value": "rows", "label": "Numbered rows" }, { "value": "split", "label": "Heading left, cards right" }] },
-    { "type": "select", "id": "columns", "label": "Cards per row (desktop)", "default": "4", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }] },
-    { "type": "checkbox", "id": "show_images", "label": "Show image frames", "default": false, "info": "Shows an image on each card. Cards without an image show a placeholder frame." },
-    { "type": "richtext", "id": "note", "label": "Bottom note" },
-    { "type": "text", "id": "button_label", "label": "Button label (optional)" },
-    { "type": "url", "id": "button_url", "label": "Button link" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "light",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "charcoal",
+          "label": "Charcoal"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "green-light",
+          "label": "Lighter green"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "beige",
+          "label": "Warm beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Anchor id (optional)",
+      "info": "Lets a button link to this section, e.g. research."
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "default": "grid",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "rows",
+          "label": "Numbered rows"
+        },
+        {
+          "value": "split",
+          "label": "Heading left, cards right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Cards per row (desktop)",
+      "default": "4",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_images",
+      "label": "Show image frames",
+      "default": false,
+      "info": "Shows an image on each card. Cards without an image show a placeholder frame."
+    },
+    {
+      "type": "richtext",
+      "id": "note",
+      "label": "Bottom note"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label (optional)"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button link"
+    }
   ],
   "blocks": [
     {
       "type": "card",
       "name": "Card",
       "settings": [
-        { "type": "text", "id": "number", "label": "Number (optional)" },
-        { "type": "text", "id": "kicker", "label": "Kicker (small label above the title)" },
-        { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [{ "value": "none", "label": "None" }, { "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
-        { "type": "text", "id": "title", "label": "Title" },
-        { "type": "url", "id": "url", "label": "Card link (optional)", "info": "Makes the whole card clickable." },
-        { "type": "richtext", "id": "text", "label": "Text" },
-        { "type": "text", "id": "tag", "label": "Research area tag" },
-        { "type": "text", "id": "study", "label": "Citation (study handle)", "info": "Handle of a Research study entry. Shows only when that study is approved for public display." },
-        { "type": "image_picker", "id": "image", "label": "Image (3:2)" },
-        { "type": "text", "id": "asset", "label": "Or theme asset filename", "info": "Used when no image is picked." }
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number (optional)"
+        },
+        {
+          "type": "text",
+          "id": "kicker",
+          "label": "Kicker (small label above the title)"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "none",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "molecule",
+              "label": "Molecule"
+            },
+            {
+              "value": "cell",
+              "label": "Cell"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "layers",
+              "label": "Layers"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Card link (optional)",
+          "info": "Makes the whole card clickable."
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Research area tag"
+        },
+        {
+          "type": "text",
+          "id": "study",
+          "label": "Citation (study handle)",
+          "info": "Handle of a Research study entry. Shows only when that study is approved for public display."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image (3:2)"
+        },
+        {
+          "type": "text",
+          "id": "asset",
+          "label": "Or theme asset filename",
+          "info": "Used when no image is picked."
+        }
       ]
     }
   ],
   "max_blocks": 8,
-  "presets": [{ "name": "Science cards", "blocks": [{ "type": "card" }, { "type": "card" }, { "type": "card" }, { "type": "card" }] }]
+  "presets": [
+    {
+      "name": "Science cards",
+      "blocks": [
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

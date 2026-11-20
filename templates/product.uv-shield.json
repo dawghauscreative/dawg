@@ -86,7 +86,7 @@
         "fda"
       ],
       "settings": {
-        "lead_asset": "product-3d-uv-shield-portrait.webp",
+        "lead_asset": "product-beige-uv-shield.webp",
         "angle_assets": "product-angle-uv-shield-back.webp, product-angle-uv-shield-facts.webp",
         "media_order": "99",
         "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_01_Niacinamide_4x5_f38f2344-5da4-4eb2-a7e2-9b875e7655db.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_02_Polypodium_leucotomos_4x5_d71f3fdb-357b-4722-8af0-9b2d761bdd5c.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_03_EGCG_4x5_6063c5cb-17dd-490b-b6ac-2493bb760755.png, uvshield-slide-skin-from-within-split.webp, uvshield-slide-outdoors-hiker.webp",
@@ -96,7 +96,7 @@
     "definition": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "grey",
+        "color_scheme": "light",
         "align": "center",
         "image_asset": "lifestyle-hikers-summit-4x5.webp",
         "image_alt": "Two hikers and their dog on a sunny mountain summit",
@@ -227,7 +227,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Ingredients"
       }
@@ -308,7 +308,7 @@
     "claims": {
       "type": "science-boundaries",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "UV Shield+ is not intended to:",
@@ -346,7 +346,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "beige",
         "layout": "tabs",
         "eyebrow": "",
         "heading": "UV Shield+ can stand alone, or become part of a bundle.",
@@ -356,7 +356,7 @@
     "reviews": {
       "type": "pdp-reviews",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "heading": "What customers are saying"
       }
     },
@@ -423,7 +423,7 @@
         "b7"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading_tag": "h2",
         "heading": "Frequently asked questions"
@@ -439,7 +439,7 @@
     "final": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "Support the skin that keeps up with your life.",
         "body": "<p>Five targeted ingredients. One dermatologist-formulated daily routine for people who spend their lives outdoors.</p>",
@@ -512,7 +512,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "grey",
         "anchor": "",
         "eyebrow": "",
         "heading": "Every ingredient has a reason.",

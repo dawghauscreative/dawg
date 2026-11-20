@@ -61,7 +61,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "charcoal",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Three roles. Four ways to build your routine.",
         "columns": "3",
@@ -143,7 +143,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Discover Your Bundle",
         "card_columns": "2",
@@ -204,7 +204,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "grey",
         "style": "cards",
         "eyebrow": "",
         "heading": "Which bundle fits your routine?",
@@ -246,7 +246,7 @@
     "edu_resilience": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "image_side": "right",
         "eyebrow": "",
         "heading": "Sun Resilience Duo",
@@ -261,7 +261,7 @@
     "edu_complete": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "image_side": "left",
         "eyebrow": "",
         "heading": "Tria Prima",
@@ -316,7 +316,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "beige",
+        "color_scheme": "green-light",
         "columns": "2",
         "eyebrow": "",
         "heading": "Not sure which bundle to choose?"
@@ -325,7 +325,7 @@
     "why": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "charcoal",
+        "color_scheme": "beige",
         "align": "center",
         "width": "wide",
         "eyebrow": "",
@@ -363,7 +363,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "A bundle is still a daily routine.",
         "body": "<p>Each product is taken according to its own label directions.</p>"
@@ -414,7 +414,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "Built around complementary biology.",
         "columns": "4",
@@ -478,7 +478,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "grey",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading_tag": "h2",
         "heading": "Frequently asked questions"

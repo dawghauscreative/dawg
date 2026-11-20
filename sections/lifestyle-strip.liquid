@@ -32,28 +32,126 @@
 {
   "name": "Lifestyle strip",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "band", "label": "Band (black to green)" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "select", "id": "columns", "label": "Tiles per row (desktop)", "default": "4", "options": [{ "value": "3", "label": "3" }, { "value": "4", "label": "4" }] },
-    { "type": "text", "id": "statement", "label": "Bottom statement" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "White"
+        },
+        {
+          "value": "beige",
+          "label": "Beige"
+        },
+        {
+          "value": "band",
+          "label": "Band (black to green)"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Tiles per row (desktop)",
+      "default": "4",
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "statement",
+      "label": "Bottom statement"
+    }
   ],
   "blocks": [
     {
       "type": "image",
       "name": "Tile",
       "settings": [
-        { "type": "image_picker", "id": "image", "label": "Image", "info": "Activity, not posing." },
-        { "type": "text", "id": "asset", "label": "Fallback theme asset filename", "info": "Used only when no image is picked." },
-        { "type": "text", "id": "label", "label": "Label (shown over the image)" },
-        { "type": "text", "id": "caption", "label": "Caption (shown under the label)" },
-        { "type": "url", "id": "url", "label": "Link (optional)", "info": "A study, article or page. The tile becomes clickable." },
-        { "type": "text", "id": "link_label", "label": "Link label", "default": "Read more" }
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Activity, not posing."
+        },
+        {
+          "type": "text",
+          "id": "asset",
+          "label": "Fallback theme asset filename",
+          "info": "Used only when no image is picked."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label (shown over the image)"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption (shown under the label)"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link (optional)",
+          "info": "A study, article or page. The tile becomes clickable."
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link label",
+          "default": "Read more"
+        }
       ]
     }
   ],
   "max_blocks": 8,
-  "presets": [{ "name": "Lifestyle strip" }]
+  "presets": [
+    {
+      "name": "Lifestyle strip"
+    }
+  ]
 }
 {% endschema %}

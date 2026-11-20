@@ -27,25 +27,133 @@
 {
   "name": "Science grid",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "The Science" },
-    { "type": "select", "id": "heading_tag", "label": "Heading level", "default": "h2", "options": [{ "value": "h1", "label": "H1 (page title)" }, { "value": "h2", "label": "H2" }] },
-    { "type": "richtext", "id": "body", "label": "Intro" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "White"
+        },
+        {
+          "value": "beige",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Science"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading level",
+      "default": "h2",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1 (page title)"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Intro"
+    }
   ],
   "blocks": [
     {
       "type": "card",
       "name": "Card",
       "settings": [
-        { "type": "select", "id": "icon", "label": "Icon", "default": "molecule", "options": [{ "value": "none", "label": "None" }, { "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
-        { "type": "text", "id": "title", "label": "Title" },
-        { "type": "textarea", "id": "text", "label": "Text", "info": "Structure/function wording only. No disease claims." },
-        { "type": "text", "id": "citation_label", "label": "Tier 1 public citation label" },
-        { "type": "url", "id": "citation_url", "label": "Tier 1 public citation URL", "info": "Tier 1 only. Tier 2 research links are blocked pending the attorney." }
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "molecule",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "molecule",
+              "label": "Molecule"
+            },
+            {
+              "value": "cell",
+              "label": "Cell"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "layers",
+              "label": "Layers"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "info": "Structure/function wording only. No disease claims."
+        },
+        {
+          "type": "text",
+          "id": "citation_label",
+          "label": "Tier 1 public citation label"
+        },
+        {
+          "type": "url",
+          "id": "citation_url",
+          "label": "Tier 1 public citation URL",
+          "info": "Tier 1 only. Tier 2 research links are blocked pending the attorney."
+        }
       ]
     }
   ],
-  "presets": [{ "name": "Science grid" }]
+  "presets": [
+    {
+      "name": "Science grid"
+    }
+  ]
 }
 {% endschema %}

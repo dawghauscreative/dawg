@@ -86,7 +86,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "grey",
         "anchor": "research",
         "eyebrow": "",
         "heading": "Research first. Claims second.",
@@ -161,7 +161,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "grey",
         "anchor": "",
         "eyebrow": "",
         "heading": "Skin health is a system.",
@@ -270,7 +270,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "charcoal",
+        "color_scheme": "grey",
         "anchor": "uv-shield",
         "role": "Protect",
         "heading": "UV Shield+",
@@ -284,7 +284,7 @@
         "feature_show_frame": true,
         "show_card_images": false,
         "note": "<p>Research presented here describes studies on individual ingredients, not on UV Shield+ as a finished product. UV Shield+ is not a sunscreen and does not replace sun protection.</p>",
-        "image_asset": "product-3d-uv-shield.webp",
+        "image_asset": "product-beige-uv-shield.webp",
         "image_alt": "UV Shield+"
       }
     },
@@ -367,7 +367,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "charcoal",
+        "color_scheme": "light",
         "anchor": "skinbiotic",
         "role": "Balance",
         "heading": "Skinbiotic+",
@@ -381,7 +381,7 @@
         "feature_show_frame": true,
         "show_card_images": false,
         "note": "<p>Research presented here describes studies on individual strains and ingredients, not on Skinbiotic+ as a finished product.</p>",
-        "image_asset": "product-3d-skinbiotic.webp",
+        "image_asset": "product-beige-skinbiotic.webp",
         "image_alt": "Skinbiotic+",
         "feature_image": "shopify://shop_images/Alchemia_Gut_Skin_Axis_4x5_566e9564-6ffd-4837-9d7e-5115e7fbbcad.png"
       }
@@ -501,7 +501,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "charcoal",
+        "color_scheme": "light",
         "anchor": "dermaboost",
         "role": "Restore",
         "heading": "Dermaboost+",
@@ -515,7 +515,7 @@
         "feature_show_frame": true,
         "show_card_images": false,
         "note": "<p>Research presented here describes studies on individual ingredients, not on Dermaboost+ as a finished product.</p>",
-        "image_asset": "product-3d-dermaboost.webp",
+        "image_asset": "product-beige-dermaboost.webp",
         "image_alt": "Dermaboost+"
       }
     },
@@ -643,7 +643,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "beige",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Research worth reading.",
         "body": "",
@@ -758,7 +758,7 @@
         "b10"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "What we know, and what we don't.",
         "body": "",
@@ -768,7 +768,7 @@
     "boundaries": {
       "type": "science-boundaries",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Good science has boundaries.",
         "body": "",
@@ -781,7 +781,7 @@
     "library": {
       "type": "science-library",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Every study we cite.",
         "body": "<p>Filter by topic or search by ingredient. Studies describe individual ingredients or biological pathways, not Alchemia MD finished products.</p>",
@@ -852,7 +852,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "anchor": "",
         "eyebrow": "",
         "heading": "Why we formulate in systems.",
@@ -867,7 +867,7 @@
     "cta": {
       "type": "final-cta",
       "settings": {
-        "color_scheme": "band",
+        "color_scheme": "dark",
         "product": "",
         "eyebrow": "",
         "heading": "Build your internal skin health routine.",
@@ -950,7 +950,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "Blog: explore by topic",
         "body": "",
@@ -1003,7 +1003,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "anchor": "latest",
         "eyebrow": "",
         "heading": "New on the blog",
@@ -1017,7 +1017,7 @@
     "balance": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "align": "center",
         "width": "narrow",
         "salt_symbol": false,

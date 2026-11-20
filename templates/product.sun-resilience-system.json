@@ -88,7 +88,7 @@
         "fda"
       ],
       "settings": {
-        "lead_asset": "product-3d-uv-shield-dermaboost.webp",
+        "lead_asset": "product-beige-sun-resilience.webp",
         "angle_assets": "product-angle-sun-resilience-back.webp, product-angle-uv-shield-facts.webp, product-angle-dermaboost-facts.webp",
         "media_order": "99",
         "gallery_assets": "https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_DB_EDU_03_4x5_24d7c21d-2412-4f19-91bc-138142f6e916.png, https://cdn.shopify.com/s/files/1/0817/3735/1403/files/UV_DB_EDU_04_4x5_e9a00d5c-1d6c-4538-a119-f4044d7a8d41.png, bundle-sun-resilience-pairing.webp, bundle-sun-resilience-outdoor.webp, lifestyle-uvshield-dermaboost-tennis.webp",
@@ -120,7 +120,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Environmental support meets broader skin resilience.",
         "body": "<p>The Sun Resilience Duo combines two formulas with related but distinct roles.</p><p>The combination is intentionally more overlapping than Outdoor Duo: UV Shield+ and Dermaboost+ share more of their biological pathways, particularly oxidative-stress biology.</p>",
@@ -136,7 +136,7 @@
     "why": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "grey",
         "image_asset": "lifestyle-uvshield-dermaboost-tennis.webp",
         "image_alt": "UV Shield+ and Dermaboost+ courtside on a sunny day",
         "image_side": "right",
@@ -186,7 +186,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "grey",
         "columns": "3",
         "show_images": false,
         "note": "<p>This section describes formulation rationale. The combined Sun Resilience Duo has not been established here as a clinically tested finished-product regimen.</p>"
@@ -195,7 +195,7 @@
     "step1": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "image_side": "right",
         "eyebrow": "",
         "heading": "UV Shield+",
@@ -261,7 +261,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Outdoor life creates more than one type of stress.",
         "body": "<p>Environmental exposure can contribute to oxidative stress in skin.† The body responds through multiple antioxidant systems, which is why the Sun Resilience Duo uses chemically different ingredients rather than relying on one antioxidant.</p><p>A polyphenol is not the same as a vitamin. A carotenoid is not the same as a mineral. Different compounds have different chemical structures, cellular locations, and biological roles.</p>",
@@ -334,7 +334,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Two formulas. Broader pathway coverage."
       }
@@ -364,7 +364,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Intentional overlap.",
         "body": "<p>The two formulas share broad antioxidant and cellular-support themes, but their ingredient networks are different.†</p>",
@@ -436,7 +436,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Designed for people who want broader outdoor skin support.",
         "columns": "3",
@@ -482,7 +482,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "heading": "Four areas of support.",
         "columns": "4",
         "show_images": false,
@@ -531,7 +531,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Why these two formulas?",
         "columns": "4",
@@ -543,7 +543,7 @@
     "claims": {
       "type": "science-boundaries",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "The Sun Resilience Duo does not claim to:",
@@ -609,7 +609,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "Is Sun Resilience Duo right for you?",
         "button_label": "Compare all bundles",
@@ -653,7 +653,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading": "Need a different combination?"
       }
@@ -661,7 +661,7 @@
     "reviews": {
       "type": "pdp-reviews",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "heading": "What customers are saying"
       }
     },
@@ -826,7 +826,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Resilience is the goal, not perfection.",
         "body": "<p>Skin is constantly at work. The Sun Resilience Duo is built around supporting those everyday processes from two directions: <strong>environmental support</strong> with UV Shield+ and <strong>broader nutritional support†</strong> with Dermaboost+.</p>"

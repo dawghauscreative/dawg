@@ -31,18 +31,110 @@
 {
   "name": "Skin Edu ingredients",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "green-light", "label": "Lighter green" }, { "value": "light", "label": "Beige" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "text", "id": "formulas", "label": "Filter chips (comma separated)", "default": "UV Shield+, Skinbiotic+, Dermaboost+" },
-    { "type": "text", "id": "button_label", "label": "Button label (optional)" },
-    { "type": "url", "id": "button_url", "label": "Button link" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "green-light",
+          "label": "Lighter green"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "formulas",
+      "label": "Filter chips (comma separated)",
+      "default": "UV Shield+, Skinbiotic+, Dermaboost+"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label (optional)"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button link"
+    }
   ],
   "blocks": [
-    { "type": "ingredient", "name": "Ingredient", "settings": [{ "type": "text", "id": "name", "label": "Ingredient" }, { "type": "textarea", "id": "text", "label": "Text" }, { "type": "text", "id": "formulas", "label": "Where it appears (e.g. UV Shield+ / Dermaboost+)" }, { "type": "url", "id": "link", "label": "Link (e.g. its Science page card)", "info": "Makes the whole card a link. Leave empty for a plain card." }, { "type": "text", "id": "link_label", "label": "Link label", "default": "See the research" }] }
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Ingredient"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "formulas",
+          "label": "Where it appears (e.g. UV Shield+ / Dermaboost+)"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (e.g. its Science page card)",
+          "info": "Makes the whole card a link. Leave empty for a plain card."
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link label",
+          "default": "See the research"
+        }
+      ]
+    }
   ],
   "max_blocks": 24,
-  "presets": [{ "name": "Skin Edu ingredients" }]
+  "presets": [
+    {
+      "name": "Skin Edu ingredients"
+    }
+  ]
 }
 {% endschema %}

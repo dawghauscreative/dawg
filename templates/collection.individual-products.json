@@ -61,7 +61,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "charcoal",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Start with the role that fits you.",
         "columns": "3",
@@ -117,7 +117,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Choose your formula",
         "plan_heading": "Choose your plan"
@@ -190,7 +190,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Which formula is right for me?",
         "col_1": "UV Shield+",
@@ -215,7 +215,7 @@
     "edu_skin": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "image_side": "left",
         "eyebrow": "",
         "heading": "Skinbiotic+",
@@ -229,7 +229,7 @@
     "edu_derma": {
       "type": "feature-split",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "image_side": "right",
         "eyebrow": "",
         "heading": "Dermaboost+",
@@ -334,7 +334,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "charcoal",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Build a bundle instead.",
         "button_label": "Explore all bundles",
@@ -373,7 +373,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "green",
         "anchor": "",
         "eyebrow": "",
         "heading": "Understand what you’re taking.",
@@ -438,7 +438,7 @@
         "b6"
       ],
       "settings": {
-        "color_scheme": "grey",
+        "color_scheme": "green",
         "show_renewal_faq": false,
         "eyebrow": "",
         "heading_tag": "h2",

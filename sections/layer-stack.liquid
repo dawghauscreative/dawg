@@ -25,16 +25,101 @@
 {
   "name": "Layer stack",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "light", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Light" }, { "value": "grey", "label": "Grey (brand)" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Intro text" },
-    { "type": "text", "id": "callout", "label": "Callout" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "light",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Light"
+        },
+        {
+          "value": "grey",
+          "label": "Grey (brand)"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Intro text"
+    },
+    {
+      "type": "text",
+      "id": "callout",
+      "label": "Callout"
+    }
   ],
   "blocks": [
-    { "type": "layer", "name": "Layer", "settings": [{ "type": "text", "id": "short", "label": "Short label (diagram)" }, { "type": "text", "id": "title", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" }] }
+    {
+      "type": "layer",
+      "name": "Layer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "short",
+          "label": "Short label (diagram)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
   ],
   "max_blocks": 6,
-  "presets": [{ "name": "Layer stack", "blocks": [{ "type": "layer" }, { "type": "layer" }, { "type": "layer" }, { "type": "layer" }] }]
+  "presets": [
+    {
+      "name": "Layer stack",
+      "blocks": [
+        {
+          "type": "layer"
+        },
+        {
+          "type": "layer"
+        },
+        {
+          "type": "layer"
+        },
+        {
+          "type": "layer"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

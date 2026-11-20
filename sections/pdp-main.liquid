@@ -255,43 +255,280 @@
   "name": "Product hero",
   "tag": "div",
   "settings": [
-    { "type": "text", "id": "gallery_note_heading", "label": "Note under the gallery: heading", "info": "Optional. For a short explanation of a plan option, such as Enhanced Support. No prices or discounts here." },
-    { "type": "richtext", "id": "gallery_note", "label": "Note under the gallery: text" },
-    { "type": "text", "id": "lead_asset", "label": "Main image: 3D render (theme asset filename)", "info": "Shown first in the gallery, ahead of the product photos. e.g. product-3d-uv-shield.webp" },
-    { "type": "text", "id": "angle_assets", "label": "Product angle views (theme asset filenames, comma separated)", "info": "Shown right after the main render, e.g. front, back and supplement facts." },
-    { "type": "text", "id": "media_order", "label": "Product images to show, in order (numbers)", "info": "Position numbers of the product's Shopify images, e.g. 2,3,4 for three benefit slides. Leave empty to show them all." },
-    { "type": "text", "id": "gallery_assets", "label": "Extra gallery graphics (theme asset filenames, comma separated)", "info": "Appended after the product media. Theme assets by name, or the full URL / file:name.png of an image in Content > Files. e.g. slide-d01-1.webp, slide-d02-1.webp" },
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "dark", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }] }
+    {
+      "type": "text",
+      "id": "gallery_note_heading",
+      "label": "Note under the gallery: heading",
+      "info": "Optional. For a short explanation of a plan option, such as Enhanced Support. No prices or discounts here."
+    },
+    {
+      "type": "richtext",
+      "id": "gallery_note",
+      "label": "Note under the gallery: text"
+    },
+    {
+      "type": "text",
+      "id": "lead_asset",
+      "label": "Main image: 3D render (theme asset filename)",
+      "info": "Shown first in the gallery, ahead of the product photos. e.g. product-beige-uv-shield.webp"
+    },
+    {
+      "type": "text",
+      "id": "angle_assets",
+      "label": "Product angle views (theme asset filenames, comma separated)",
+      "info": "Shown right after the main render, e.g. front, back and supplement facts."
+    },
+    {
+      "type": "text",
+      "id": "media_order",
+      "label": "Product images to show, in order (numbers)",
+      "info": "Position numbers of the product's Shopify images, e.g. 2,3,4 for three benefit slides. Leave empty to show them all."
+    },
+    {
+      "type": "text",
+      "id": "gallery_assets",
+      "label": "Extra gallery graphics (theme asset filenames, comma separated)",
+      "info": "Appended after the product media. Theme assets by name, or the full URL / file:name.png of an image in Content > Files. e.g. slide-d01-1.webp, slide-d02-1.webp"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "White"
+        },
+        {
+          "value": "beige",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    }
   ],
   "blocks": [
-    { "type": "title", "name": "Title", "limit": 1, "settings": [{ "type": "text", "id": "eyebrow", "label": "Eyebrow (above the title)" }] },
-    { "type": "tagline", "name": "Tagline", "limit": 1 },
-    { "type": "description", "name": "Short description", "limit": 1, "settings": [{ "type": "richtext", "id": "text", "label": "Override text", "info": "Blank = first paragraph of the Shopify product description." }] },
-    { "type": "bullets", "name": "Benefit bullets", "limit": 1, "settings": [{ "type": "textarea", "id": "items", "label": "Bullets (one per line)" }] },
-    { "type": "note", "name": "Small note", "settings": [{ "type": "text", "id": "text", "label": "Text" }] },
-    { "type": "price", "name": "Price", "limit": 1 },
-    { "type": "reviews", "name": "Review summary slot", "limit": 1 },
-    { "type": "buy_buttons", "name": "Buy buttons", "limit": 1 },
-    { "type": "expectation", "name": "Expectation line", "limit": 1, "settings": [{ "type": "text", "id": "text", "label": "Override text", "info": "Blank = the line in Theme settings > Your Renewal Timeline." }] },
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Eyebrow (above the title)"
+        }
+      ]
+    },
+    {
+      "type": "tagline",
+      "name": "Tagline",
+      "limit": 1
+    },
+    {
+      "type": "description",
+      "name": "Short description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Override text",
+          "info": "Blank = first paragraph of the Shopify product description."
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "name": "Benefit bullets",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "items",
+          "label": "Bullets (one per line)"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "name": "Small note",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "price",
+      "name": "Price",
+      "limit": 1
+    },
+    {
+      "type": "reviews",
+      "name": "Review summary slot",
+      "limit": 1
+    },
+    {
+      "type": "buy_buttons",
+      "name": "Buy buttons",
+      "limit": 1
+    },
+    {
+      "type": "expectation",
+      "name": "Expectation line",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Override text",
+          "info": "Blank = the line in Theme settings > Your Renewal Timeline."
+        }
+      ]
+    },
     {
       "type": "trust_bar",
       "name": "Trust bar",
       "limit": 1,
       "settings": [
-        { "type": "paragraph", "content": "Up to three items. Leave empty until copy is approved. The guarantee cell appears only when the guarantee is switched on in Theme settings." },
-        { "type": "select", "id": "icon_1", "label": "Icon 1", "default": "shield", "options": [{ "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
-        { "type": "text", "id": "text_1", "label": "Text 1", "default": "Dermatologist-formulated" },
-        { "type": "select", "id": "icon_2", "label": "Icon 2", "default": "molecule", "options": [{ "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
-        { "type": "text", "id": "text_2", "label": "Text 2", "default": "Research-informed" },
-        { "type": "select", "id": "icon_3", "label": "Icon 3", "default": "layers", "options": [{ "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
-        { "type": "text", "id": "text_3", "label": "Text 3", "default": "Full ingredient transparency" }
+        {
+          "type": "paragraph",
+          "content": "Up to three items. Leave empty until copy is approved. The guarantee cell appears only when the guarantee is switched on in Theme settings."
+        },
+        {
+          "type": "select",
+          "id": "icon_1",
+          "label": "Icon 1",
+          "default": "shield",
+          "options": [
+            {
+              "value": "molecule",
+              "label": "Molecule"
+            },
+            {
+              "value": "cell",
+              "label": "Cell"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "layers",
+              "label": "Layers"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "text_1",
+          "label": "Text 1",
+          "default": "Dermatologist-formulated"
+        },
+        {
+          "type": "select",
+          "id": "icon_2",
+          "label": "Icon 2",
+          "default": "molecule",
+          "options": [
+            {
+              "value": "molecule",
+              "label": "Molecule"
+            },
+            {
+              "value": "cell",
+              "label": "Cell"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "layers",
+              "label": "Layers"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "text_2",
+          "label": "Text 2",
+          "default": "Research-informed"
+        },
+        {
+          "type": "select",
+          "id": "icon_3",
+          "label": "Icon 3",
+          "default": "layers",
+          "options": [
+            {
+              "value": "molecule",
+              "label": "Molecule"
+            },
+            {
+              "value": "cell",
+              "label": "Cell"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "layers",
+              "label": "Layers"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "text_3",
+          "label": "Text 3",
+          "default": "Full ingredient transparency"
+        }
       ]
     },
-    { "type": "melanoma", "name": "Melanoma research line", "limit": 1 },
-    { "type": "fda", "name": "FDA dagger line", "limit": 1 },
-    { "type": "compliance_slot", "name": "Product compliance slot", "limit": 1 },
-    { "type": "@app" }
+    {
+      "type": "melanoma",
+      "name": "Melanoma research line",
+      "limit": 1
+    },
+    {
+      "type": "fda",
+      "name": "FDA dagger line",
+      "limit": 1
+    },
+    {
+      "type": "compliance_slot",
+      "name": "Product compliance slot",
+      "limit": 1
+    },
+    {
+      "type": "@app"
+    }
   ],
-  "presets": [{ "name": "Product hero" }]
+  "presets": [
+    {
+      "name": "Product hero"
+    }
+  ]
 }
 {% endschema %}

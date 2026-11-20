@@ -81,7 +81,7 @@
         "fda"
       ],
       "settings": {
-        "lead_asset": "product-3d-dermaboost-portrait.webp",
+        "lead_asset": "product-beige-dermaboost.webp",
         "angle_assets": "product-angle-dermaboost-back.webp, product-angle-dermaboost-facts.webp",
         "media_order": "99",
         "gallery_assets": "slide-dermaboost-vitamin-d3.webp, slide-dermaboost-niacinamide.webp, slide-dermaboost-zinc.webp, lifestyle-dermaboost-yacht.webp",
@@ -91,7 +91,7 @@
     "definition": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "grey",
+        "color_scheme": "light",
         "align": "center",
         "image_asset": "lifestyle-running-cycling-duo.webp",
         "image_alt": "Runner and cyclist on a coastal road at golden hour",
@@ -181,7 +181,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Oxidative stress is not one single pathway.",
         "body": "<p>Reactive molecules are produced as part of normal metabolism and can also increase in response to environmental stress. The body relies on multiple antioxidant systems to maintain balance.†</p><p>That is one reason Dermaboost+ does not depend on a single antioxidant. Its formula includes several chemically distinct groups of compounds.</p>",
@@ -298,7 +298,7 @@
         "b8"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "columns": "4",
         "eyebrow": "",
         "heading": "Ingredients"
@@ -335,7 +335,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Skin is part of the immune system’s front line.",
         "body": "<p>Skin is not simply a covering. It contains immune cells and participates in communication between the body and the outside environment. Normal immune function therefore matters to skin health.</p><p>Dermaboost+ includes nutrients with established roles in normal immune physiology, alongside antioxidant and botanical compounds selected for complementary nutritional support.†</p>",
@@ -345,7 +345,7 @@
     "collagen": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "align": "left",
         "width": "wide",
         "eyebrow": "",
@@ -402,7 +402,7 @@
         "b5"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "eyebrow": "",
         "heading": "Built for people thinking beyond surface-level skincare.",
         "columns": "3",
@@ -448,7 +448,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "beige",
         "heading": "One formula. Four areas of support.",
         "columns": "4",
         "show_images": false,
@@ -513,7 +513,7 @@
     "claims": {
       "type": "science-boundaries",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Good science has boundaries.",
         "not_heading": "Dermaboost+ does not claim to:",
@@ -552,7 +552,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "layout": "tabs",
         "eyebrow": "",
         "heading": "Dermaboost+ can stand alone, or become part of a bundle.",
@@ -562,7 +562,7 @@
     "reviews": {
       "type": "pdp-reviews",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green",
         "heading": "What customers are saying"
       }
     },
@@ -629,7 +629,7 @@
         "b7"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "green",
         "eyebrow": "",
         "heading_tag": "h2",
         "heading": "Frequently asked questions"
@@ -718,7 +718,7 @@
         "b4"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "grey",
         "anchor": "",
         "eyebrow": "",
         "heading": "Every ingredient has a reason.",

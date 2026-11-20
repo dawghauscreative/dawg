@@ -18,20 +18,96 @@
 {
   "name": "Trust strip",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "beige", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "White" }, { "value": "beige", "label": "Beige" }, { "value": "band", "label": "Band (black to green)" }] },
-    { "type": "textarea", "id": "key_ingredients", "label": "Key ingredients, phones only (one per line: Label|anchor)", "info": "Optional chips linking to the Science page, shown under the strip on phones only." }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "beige",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "White"
+        },
+        {
+          "value": "beige",
+          "label": "Beige"
+        },
+        {
+          "value": "band",
+          "label": "Band (black to green)"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    },
+    {
+      "type": "textarea",
+      "id": "key_ingredients",
+      "label": "Key ingredients, phones only (one per line: Label|anchor)",
+      "info": "Optional chips linking to the Science page, shown under the strip on phones only."
+    }
   ],
   "blocks": [
     {
       "type": "item",
       "name": "Item",
       "settings": [
-        { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [{ "value": "none", "label": "None" }, { "value": "molecule", "label": "Molecule" }, { "value": "cell", "label": "Cell" }, { "value": "shield", "label": "Shield" }, { "value": "layers", "label": "Layers" }] },
-        { "type": "text", "id": "text", "label": "Text", "info": "Verified facts only (label or brand wording)." }
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "none",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "molecule",
+              "label": "Molecule"
+            },
+            {
+              "value": "cell",
+              "label": "Cell"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "layers",
+              "label": "Layers"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "info": "Verified facts only (label or brand wording)."
+        }
       ]
     }
   ],
   "max_blocks": 5,
-  "presets": [{ "name": "Trust strip" }]
+  "presets": [
+    {
+      "name": "Trust strip"
+    }
+  ]
 }
 {% endschema %}

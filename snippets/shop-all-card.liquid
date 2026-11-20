@@ -7,6 +7,7 @@
   {%- assign tag = heading_tag | default: 'h3' -%}
   {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: product.handle -%}{%- endcapture -%}
   {%- assign fallback_asset = fallback_capture | strip -%}
+  {%- if front_asset == blank -%}{%- capture beige_capture -%}{%- render 'product-front-asset', handle: product.handle -%}{%- endcapture -%}{%- assign front_asset = beige_capture | strip -%}{%- endif -%}
   {%- assign card_alt = product.featured_image.alt | default: product.title -%}
   {%- assign card_ratio = '4x5' -%}
   {%- if size == 'featured' -%}{%- assign card_ratio = '1x1' -%}{%- endif -%}

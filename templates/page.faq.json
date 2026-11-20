@@ -94,7 +94,7 @@
         "q3"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Bundles",
         "heading_tag": "h2",
@@ -116,7 +116,7 @@
         "q1"
       ],
       "settings": {
-        "color_scheme": "green-light",
+        "color_scheme": "light",
         "eyebrow": "",
         "heading": "Sunscreen",
         "heading_tag": "h2",
@@ -154,7 +154,7 @@
         "q3"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Directions",
         "heading_tag": "h2",
@@ -184,7 +184,7 @@
         "q2"
       ],
       "settings": {
-        "color_scheme": "grey",
+        "color_scheme": "dark",
         "eyebrow": "",
         "heading": "Subscriptions and support",
         "heading_tag": "h2",

@@ -58,18 +58,105 @@
 {
   "name": "Domain circles",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Beige" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Text" },
-    { "type": "text", "id": "center", "label": "Centre label", "default": "COMPLETE" },
-    { "type": "richtext", "id": "center_text", "label": "Centre info (shown on hover)", "default": "<p>Tria Prima brings UV Shield+, Skinbiotic+ and Dermaboost+ together. Each formula leads in one area and supports the others.</p>" },
-    { "type": "textarea", "id": "caption", "label": "Caption" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "green",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Beige"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        },
+        {
+          "value": "beige",
+          "label": "Tan"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "center",
+      "label": "Centre label",
+      "default": "COMPLETE"
+    },
+    {
+      "type": "richtext",
+      "id": "center_text",
+      "label": "Centre info (shown on hover)",
+      "default": "<p>Tria Prima brings UV Shield+, Skinbiotic+ and Dermaboost+ together. Each formula leads in one area and supports the others.</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "caption",
+      "label": "Caption"
+    }
   ],
   "blocks": [
-    { "type": "domain", "name": "Domain", "settings": [{ "type": "text", "id": "short", "label": "Short label (inside the circle)", "info": "Use | to break onto two lines, e.g. Gut|microbial." }, { "type": "text", "id": "title", "label": "Title" }, { "type": "text", "id": "primary", "label": "Primary formula" }, { "type": "text", "id": "supporting", "label": "Supporting formula(s)" }] }
+    {
+      "type": "domain",
+      "name": "Domain",
+      "settings": [
+        {
+          "type": "text",
+          "id": "short",
+          "label": "Short label (inside the circle)",
+          "info": "Use | to break onto two lines, e.g. Gut|microbial."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "primary",
+          "label": "Primary formula"
+        },
+        {
+          "type": "text",
+          "id": "supporting",
+          "label": "Supporting formula(s)"
+        }
+      ]
+    }
   ],
   "max_blocks": 3,
-  "presets": [{ "name": "Domain circles" }]
+  "presets": [
+    {
+      "name": "Domain circles"
+    }
+  ]
 }
 {% endschema %}

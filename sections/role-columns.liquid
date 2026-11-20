@@ -52,25 +52,103 @@
 {
   "name": "Role columns",
   "settings": [
-    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "green", "options": [{ "value": "dark", "label": "Black" }, { "value": "green", "label": "Evergreen" }, { "value": "light", "label": "Light" }, { "value": "beige", "label": "Beige (brand)" }] },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "body", "label": "Intro" }
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "green",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Black"
+        },
+        {
+          "value": "green",
+          "label": "Evergreen"
+        },
+        {
+          "value": "light",
+          "label": "Light"
+        },
+        {
+          "value": "beige",
+          "label": "Beige (brand)"
+        },
+        {
+          "value": "grey",
+          "label": "Light cream"
+        },
+        {
+          "value": "green-light",
+          "label": "Mint"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Intro"
+    }
   ],
   "blocks": [
     {
       "type": "role",
       "name": "Role",
       "settings": [
-        { "type": "product", "id": "product", "label": "Product" },
-        { "type": "text", "id": "role", "label": "Role (Protect, Balance, Restore)" },
-        { "type": "text", "id": "tagline", "label": "Positioning line" },
-        { "type": "textarea", "id": "text", "label": "Description" },
-        { "type": "text", "id": "cta", "label": "Button label" }
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role (Protect, Balance, Restore)"
+        },
+        {
+          "type": "text",
+          "id": "tagline",
+          "label": "Positioning line"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "cta",
+          "label": "Button label"
+        }
       ]
     }
   ],
   "max_blocks": 3,
-  "presets": [{ "name": "Role columns", "blocks": [{ "type": "role" }, { "type": "role" }, { "type": "role" }] }]
+  "presets": [
+    {
+      "name": "Role columns",
+      "blocks": [
+        {
+          "type": "role"
+        },
+        {
+          "type": "role"
+        },
+        {
+          "type": "role"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

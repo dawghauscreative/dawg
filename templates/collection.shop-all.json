@@ -22,7 +22,7 @@
     "featured": {
       "type": "shop-all-featured-system",
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "grey",
         "product": "outdoor-duo",
         "role": "Protect + Balance",
         "descriptor": "Environmental support paired with gut-skin balance.†",
@@ -73,7 +73,7 @@
         "complete"
       ],
       "settings": {
-        "color_scheme": "dark",
+        "color_scheme": "light",
         "heading": "More bundles",
         "subscribe_cue": "Subscribe & save available"
       }
@@ -124,7 +124,7 @@
         "dermaboost"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "green-light",
         "eyebrow": "",
         "heading": "Experience our Formulas",
         "body": "Choose the formula that matches your current priority, then explore the bundles that pair it with complementary support.",
@@ -152,7 +152,7 @@
         "text": "",
         "details_label": "See full details",
         "allow_plain_add": false,
-        "color_scheme": "green"
+        "color_scheme": "beige"
       }
     },
     "compare": {
