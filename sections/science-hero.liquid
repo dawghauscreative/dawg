@@ -16,6 +16,9 @@
     </div>
     {%- endif -%}
   </div>
+  {%- if section.settings.bleed_asset != blank -%}
+    <div class="sci-hero__bleed"><img src="{{ section.settings.bleed_asset | asset_url }}" alt="{{ section.settings.bleed_alt | escape }}" width="2000" height="862" loading="eager"></div>
+  {%- endif -%}
 </section>
 
 {% schema %}
@@ -99,6 +102,17 @@
       "id": "image",
       "label": "Image (optional)",
       "info": "Replaces the built-in abstract cell graphic. Microscopic or abstract imagery, no bottles."
+    },
+    {
+      "type": "text",
+      "id": "bleed_asset",
+      "label": "Full-width image under the header (theme asset)",
+      "info": "e.g. hero-skin-glow.webp"
+    },
+    {
+      "type": "text",
+      "id": "bleed_alt",
+      "label": "Full-width image description"
     }
   ],
   "presets": [

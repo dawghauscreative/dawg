@@ -282,8 +282,10 @@
       "settings": {
         "color_scheme": "grey",
         "eyebrow": "",
-        "heading": "Ingredients",
-        "body": "<p>Organic inulin at 500 mg and a 215 mg probiotic blend, as listed on the label.</p>"
+        "heading": "Every ingredient has a reason.",
+        "body": "<p>Skinbiotic+ pairs a prebiotic fiber with five probiotic strains, built around the connection between the gut and the skin.†</p><p>Here is what each part of the formula is there to do.</p><p>Organic inulin at 500 mg and a 215 mg probiotic blend, as listed on the label.</p>",
+        "button_label": "Explore the science",
+        "button_url": "/pages/science#skinbiotic"
       }
     },
     "who": {
@@ -483,7 +485,7 @@
         "b2"
       ],
       "settings": {
-        "color_scheme": "beige",
+        "color_scheme": "green",
         "layout": "tabs",
         "eyebrow": "",
         "heading": "Skinbiotic+ can stand alone, or become part of a bundle.",
@@ -568,7 +570,7 @@
         "b8"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "dark",
         "eyebrow": "",
         "heading_tag": "h2",
         "heading": "Frequently asked questions"
@@ -592,7 +594,8 @@
         "button_url": "#buy-box",
         "secondary_label": "Explore the science",
         "secondary_url": "/pages/science#skinbiotic"
-      }
+      },
+      "disabled": true
     },
     "reasons": {
       "type": "science-cards",
@@ -668,7 +671,8 @@
         "note": "",
         "button_label": "Explore the science",
         "button_url": "/pages/science#skinbiotic"
-      }
+      },
+      "disabled": true
     }
   },
   "order": [

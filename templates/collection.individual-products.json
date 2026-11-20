@@ -22,7 +22,7 @@
         "primary_url": "#choose",
         "secondary_label": "Explore the bundles",
         "secondary_url": "/pages/bundles",
-        "asset": "individual-three-formulas.webp",
+        "asset": "lifestyle-uvshield-hiker.webp",
         "ratio": "16x9",
         "light_panel": false
       }
@@ -82,7 +82,8 @@
             "choose_label": "Choose UV Shield+",
             "plan_heading": "Customize your UV Shield+ plan",
             "plan_copy": "Choose the routine that fits how you prefer to purchase and replenish.",
-            "plan_button": "Continue"
+            "plan_button": "Continue",
+            "asset": ""
           }
         },
         "b2": {
@@ -96,7 +97,8 @@
             "choose_label": "Choose Skinbiotic+",
             "plan_heading": "Customize your Skinbiotic+ plan",
             "plan_copy": "Build gut-skin support into a consistent daily routine.†",
-            "plan_button": "Continue"
+            "plan_button": "Continue",
+            "asset": ""
           }
         },
         "b3": {
@@ -110,7 +112,8 @@
             "choose_label": "Choose Dermaboost+",
             "plan_heading": "Customize your Dermaboost+ plan",
             "plan_copy": "Choose the replenishment schedule that fits your daily skin-health routine.",
-            "plan_button": "Continue"
+            "plan_button": "Continue",
+            "asset": ""
           }
         }
       },
@@ -123,7 +126,7 @@
         "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Choose your formula",
-        "plan_heading": "Customize your plan",
+        "plan_heading": "",
         "expectation": "",
         "trust_items": ""
       }

@@ -91,7 +91,7 @@
     "definition": {
       "type": "rich-text",
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "grey",
         "align": "center",
         "image_asset": "lifestyle-running-cycling-duo.webp",
         "image_alt": "Runner and cyclist on a coastal road at golden hour",
@@ -301,7 +301,10 @@
         "color_scheme": "grey",
         "columns": "4",
         "eyebrow": "",
-        "heading": "Ingredients"
+        "heading": "Every ingredient has a reason.",
+        "body": "<p>Dermaboost+ brings together eight nutrients and botanicals for calm, balanced, resilient skin.†</p><p>Here is what each part of the formula is there to do.</p>",
+        "button_label": "Explore the science",
+        "button_url": "/pages/science#dermaboost"
       }
     },
     "immune": {
@@ -629,7 +632,7 @@
         "b7"
       ],
       "settings": {
-        "color_scheme": "green",
+        "color_scheme": "dark",
         "eyebrow": "",
         "heading_tag": "h2",
         "heading": "Frequently asked questions"
@@ -653,7 +656,8 @@
         "button_url": "#buy-box",
         "secondary_label": "Explore the science",
         "secondary_url": "/pages/science#dermaboost"
-      }
+      },
+      "disabled": true
     },
     "reasons": {
       "type": "science-cards",
@@ -729,7 +733,8 @@
         "note": "",
         "button_label": "Explore the science",
         "button_url": "/pages/science#dermaboost"
-      }
+      },
+      "disabled": true
     }
   },
   "order": [

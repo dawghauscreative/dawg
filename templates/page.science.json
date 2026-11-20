@@ -20,7 +20,9 @@
         "primary_url": "#research",
         "secondary_label": "Meet the formulas",
         "secondary_url": "/collections/individual-products",
-        "trust_line": "Dermatologist-formulated · Ingredient-transparent · Research-informed"
+        "trust_line": "Dermatologist-formulated · Ingredient-transparent · Research-informed",
+        "bleed_asset": "hero-skin-glow.webp",
+        "bleed_alt": "Woman with glowing skin in soft light"
       }
     },
     "standard": {

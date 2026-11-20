@@ -14,9 +14,10 @@
       {%- for block in section.blocks -%}
         {%- assign p = block.settings.product -%}
         {%- if p != blank -%}
-          <article class="sel-card" data-sel-card="{{ p.handle }}" data-qv-card {{ block.shopify_attributes }}>
-            {%- render 'product-quickview', product: p -%}
-            <a class="sel-card__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
+          <article class="sel-card" data-sel-card="{{ p.handle }}" {{ block.shopify_attributes }}>
+            <div class="role-flip sel-flip" data-flip>
+            <div class="role-flip__inner">
+            <a class="sel-card__media role-flip__front" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
               {%- capture fallback_capture -%}{%- render 'product-fallback-asset', handle: p.handle -%}{%- endcapture -%}
               {%- assign fallback_asset = fallback_capture | strip -%}
               {%- capture front_capture -%}{%- render 'product-front-asset', handle: p.handle -%}{%- endcapture -%}
@@ -29,8 +30,20 @@
                 {% render 'responsive-image', image: p.featured_media, asset: fallback_asset, ratio: section.settings.media_ratio, sizes: '(min-width: 990px) 30vw, 100vw', alt: p.title %}
               {%- endif -%}
             </a>
+            {%- comment -%} Back of the card on hover (tap on phones): role, name, price and key ingredients (designer notes Nov 13). {%- endcomment -%}
+            <div class="role-flip__back">
+              {%- if block.settings.role != blank -%}<span class="role-badge">{{ block.settings.role }}</span>{%- endif -%}
+              <h3 class="role-flip__title"><a href="{{ p.url }}">{{ p.title }}</a></h3>
+              <p class="role-flip__price">{% if p.price_varies %}From {% endif %}{{ p.price_min | money }}</p>
+              {%- if p.metafields.custom.key_ingredients.value != blank -%}
+                <p class="role-flip__label">Key ingredients</p>
+                {%- assign flip_science = pages['science'].url | default: '/pages/science' -%}
+                {%- render 'product-quickview-ingredients', text: p.metafields.custom.key_ingredients.value, science: flip_science -%}
+              {%- endif -%}
+            </div>
+            </div>
+            </div>
             <div class="sel-card__body">
-              <span class="role-badge">{{ block.settings.role }}</span>
               <h3>{{ p.title }}</h3>
               {%- if block.settings.includes != blank -%}<p class="sel-card__includes"><strong>Includes</strong> {{ block.settings.includes }}</p>{%- endif -%}
               {%- assign tag_line = p.metafields.custom.tagline -%}
@@ -45,7 +58,7 @@
                 <ul class="sel-list">{%- assign items = block.settings.best_for | newline_to_br | split: '<br />' -%}{%- for it in items -%}{%- assign t = it | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
               {%- endif -%}
               <div class="btn-row">
-                <a class="btn" href="{{ p.url }}#buy-box" data-sel-choose="{{ p.handle }}" aria-controls="plan-{{ p.handle }}">{{ block.settings.choose_label | default: 'Choose' }}</a>
+                <a class="btn btn--outline sel-choose" href="{{ p.url }}#buy-box" data-sel-choose="{{ p.handle }}" aria-controls="plan-{{ p.handle }}" aria-pressed="false">Select</a>
                 <a class="btn btn--outline" href="{{ p.url }}">{{ block.settings.learn_label | default: 'Learn more' }}</a>
               </div>
             </div>

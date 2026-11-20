@@ -195,6 +195,13 @@
     var plan = root.querySelector('[data-sel-plan]');
     function choose(handle) {
       cards.forEach(function (c) { c.classList.toggle('is-selected', c.getAttribute('data-sel-card') === handle); });
+      root.querySelectorAll('[data-sel-choose]').forEach(function (b) {
+        var on = b.getAttribute('data-sel-choose') === handle;
+        b.classList.toggle('is-selected', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        b.innerHTML = on ? 'Selected <span aria-hidden="true">&#10003;</span>' : 'Select';
+      });
+      if (plan) plan.classList.add('is-chosen');
       panels.forEach(function (p) { p.hidden = p.getAttribute('data-sel-panel') !== handle; });
       if (empty) empty.hidden = true;
       if (plan) {

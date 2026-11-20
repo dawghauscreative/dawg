@@ -2,7 +2,7 @@
 {%- if section.blocks.size > 0 -%}
 <section id="shop-grid" class="section--tight scheme-{{ section.settings.color_scheme }} shop-grid-section" {{ section.shopify_attributes }}>
   <div class="container">
-    <h2 class="visually-hidden">{{ section.settings.heading }}</h2>
+    {%- if section.settings.heading != blank -%}<h2 class="shop-grid__head">{{ section.settings.heading }}</h2>{%- endif -%}
     <div class="shop-grid shop-grid--systems">
       {%- for block in section.blocks -%}
         {%- assign badge = '' -%}

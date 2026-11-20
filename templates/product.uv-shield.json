@@ -105,7 +105,7 @@
         "heading": "Daily internal support for life outdoors.",
         "heading_tag": "h2",
         "body": "<p>UV Shield+ is built for the reality that outdoor life exposes skin to more than one type of stress.</p><p>The formula uses five ingredients with different nutritional and biochemical roles so the support is broader than a single antioxidant or botanical alone.†</p>",
-        "quote": "One formula. Multiple complementary pathways."
+        "quote": ""
       }
     },
     "video": {
@@ -148,7 +148,7 @@
         "b3"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "grey",
         "eyebrow": "",
         "heading": "Sun exposure is a daily reality.",
         "body": "<p>Your skin is a living organ constantly responding to the environment.</p><p>Outdoor exposure can influence oxidative stress, inflammatory signaling, cellular energy demands, and the skin's barrier systems.</p><p>That does not mean avoiding the outdoors. It means supporting skin through a layered routine:†</p>",
@@ -229,7 +229,10 @@
       "settings": {
         "color_scheme": "grey",
         "eyebrow": "",
-        "heading": "Ingredients"
+        "heading": "Every ingredient has a reason.",
+        "body": "<p>UV Shield+ combines five ingredients, each chosen for a different role in skin exposed to life outdoors.†</p><p>Here is what each part of the formula is there to do.</p>",
+        "button_label": "Explore the science",
+        "button_url": "/pages/science#uv-shield"
       }
     },
     "who": {
@@ -447,7 +450,8 @@
         "button_url": "#buy-box",
         "secondary_label": "Explore the science",
         "secondary_url": "/pages/science#uv-shield"
-      }
+      },
+      "disabled": true
     },
     "reasons": {
       "type": "science-cards",
@@ -523,7 +527,8 @@
         "note": "",
         "button_label": "Explore the science",
         "button_url": "/pages/science#uv-shield"
-      }
+      },
+      "disabled": true
     }
   },
   "order": [

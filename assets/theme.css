@@ -2014,3 +2014,65 @@ body:not(.template-index) .btn { font-size: .95rem; padding: .55em 1.4em; min-he
 .nav__sub a { font-weight: 500; letter-spacing: .1em; }
 .drawer__sub { list-style: none; margin: 0 0 10px; padding: 0 0 0 14px; }
 .drawer nav .drawer__sub a { font-size: 1.05rem; padding: 6px 0 6px 12px; opacity: .8; }
+
+/* Designer layout notes (Nov 13), applied Nov 20 */
+/* Layers: the tab name is already on the left, so the panel drops its repeated title */
+.layers__list h3 { display: none; }
+/* Callout lines run full width with no box */
+.layers__callout { max-width: none; border: 0; background: none; padding: 0; }
+/* Ingredients section closes with the Explore the science button */
+.actives__cta { justify-content: center; margin-top: clamp(32px, 4vw, 48px); }
+
+/* Protect / Balance / Restore labels: one gold outlined rectangle everywhere (designer note, Nov 13) */
+.role-badge, .shopcard__role, .finder-card__roles, .sci-card__kicker,
+.scheme-light .role-badge, .scheme-beige .role-badge, .scheme-grey .role-badge, .scheme-green-light .role-badge {
+  display: inline-flex; width: fit-content; align-items: center; padding: 5px 10px; border: 1px solid var(--t-gold); border-radius: 0;
+  color: var(--t-gold); background: transparent; font-family: var(--font-callout); font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; line-height: 1.2;
+}
+.scheme-dark :is(.role-badge, .shopcard__role, .finder-card__roles, .sci-card__kicker), .scheme-green :is(.role-badge, .shopcard__role, .finder-card__roles, .sci-card__kicker) { color: var(--c-gold-bright, #E3B04B); border-color: var(--c-gold-bright, #E3B04B); }
+
+/* Bundle / formula selector: Select (gold outline) -> Selected with a check (gold fill); the plan area turns beige */
+.sel-choose { border-color: var(--t-gold); color: var(--t-gold); background: transparent; }
+.sel-choose:hover { background: color-mix(in srgb, var(--t-gold) 12%, transparent); color: var(--t-gold); border-color: var(--t-gold); }
+.sel-choose.is-selected, .sel-choose.is-selected:hover { background: var(--t-gold); border-color: var(--t-gold); color: #fff; }
+.selector__plan { transition: background .35s ease, box-shadow .35s ease; border-radius: 16px; }
+.selector__plan.is-chosen { background: var(--t-sand); color: var(--t-ink); padding: clamp(24px, 3vw, 40px); box-shadow: 0 0 0 2px var(--t-gold); }
+.selector__plan.is-chosen :is(h2, h3, p, li, .selector__plan-title) { color: var(--t-ink); }
+.sel-card.is-selected { box-shadow: 0 0 0 2px var(--t-gold); }
+.sel-flip .role-flip__front .media { aspect-ratio: 1; }
+
+/* Bundles and Individual headers: lifestyle photo runs full bleed to the right edge (designer note) */
+@media (min-width: 990px) {
+  :is(.template-page, .template-collection) #MainContent > .shopify-section:first-child > .section:has(> .container.feature-split) { position: relative; overflow: hidden; }
+  :is(.template-page, .template-collection) #MainContent > .shopify-section:first-child .container.feature-split { grid-template-columns: 1fr 1fr; min-height: clamp(460px, 42vw, 640px); }
+  :is(.template-page, .template-collection) #MainContent > .shopify-section:first-child .feature-split__media { position: absolute; top: 0; right: 0; bottom: 0; width: 50%; margin: 0; }
+  :is(.template-page, .template-collection) #MainContent > .shopify-section:first-child .feature-split__media .media { height: 100%; border-radius: 0; aspect-ratio: auto !important; }
+  :is(.template-page, .template-collection) #MainContent > .shopify-section:first-child .feature-split__media img { height: 100%; object-fit: cover; }
+  /* Feature images below line up with the top of their text */
+  :is(.template-page, .template-collection) #MainContent > .shopify-section:not(:first-child) .feature-split { align-items: start; }
+}
+@media (max-width: 989px) {
+  :is(.template-page, .template-collection) #MainContent > .shopify-section:first-child .feature-split__media { margin-inline: calc(-1 * var(--gutter)); }
+  :is(.template-page, .template-collection) #MainContent > .shopify-section:first-child .feature-split__media .media { border-radius: 0; }
+}
+
+/* Shop All bundles: visible "Bundles" headline, more room on top, no outline on the cards (designer note) */
+.shop-grid-section { padding-top: clamp(64px, 8vw, 112px); }
+.shop-grid__head { margin-bottom: clamp(28px, 4vw, 48px); }
+.shop-grid-section .shopcard { border: 0; }
+@media (min-width: 1100px) { .shop-grid--systems { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+/* Science header: full-bleed "celebrate skin" photo under the copy */
+.sci-hero:has(.sci-hero__bleed) { padding-bottom: 0; }
+.sci-hero__bleed { margin-top: clamp(40px, 5vw, 72px); }
+.sci-hero__bleed img { width: 100%; height: clamp(260px, 38vw, 560px); object-fit: cover; object-position: 50% 35%; }
+
+/* Blog topics: the topic name shows first; hover reveals the description and Browse (designer note) */
+@media (hover: hover) and (pointer: fine) {
+  .edu-topic { min-height: 200px; align-content: center; transition: border-color .25s ease, transform .25s ease, background .3s ease; }
+  .edu-topic h3 { font-family: var(--font-display); font-size: clamp(1.3rem, 1.8vw, 1.6rem); letter-spacing: 0; text-transform: none; font-weight: 500; color: var(--fg); transition: transform .35s cubic-bezier(.2, .7, .2, 1); }
+  .edu-topic p, .edu-topic .edu-topic__go { opacity: 0; max-height: 0; overflow: hidden; transform: translateY(8px); transition: opacity .3s ease, transform .35s cubic-bezier(.2, .7, .2, 1), max-height .35s ease; margin: 0; }
+  .edu-topic p { font-family: var(--font-body); font-size: .95rem; line-height: 1.55; }
+  .edu-topic:hover p, .edu-topic:focus-visible p, .edu-topic:hover .edu-topic__go, .edu-topic:focus-visible .edu-topic__go { opacity: 1; max-height: 8em; transform: none; }
+  .edu-topic:hover .edu-topic__go { color: var(--t-gold); }
+}

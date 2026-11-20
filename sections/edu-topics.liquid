@@ -10,7 +10,7 @@
         <a class="edu-topic" href="{% if t != blank %}/blogs/{{ section.settings.blog_handle }}/tagged/{{ t }}{% else %}#all-articles{% endif %}" {{ block.shopify_attributes }}>
           <h3>{{ block.settings.title }}</h3>
           <p>{{ block.settings.text }}</p>
-          <span class="edu-topic__go">Browse &rarr;</span>
+          <span class="edu-topic__go">Browse &rsaquo;</span>
         </a>
         {%- else -%}
         <div class="edu-topic edu-topic--soon" {{ block.shopify_attributes }}>
