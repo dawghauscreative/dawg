@@ -1976,3 +1976,6 @@ h3 { font-size: clamp(1.35rem, 1.9vw, 1.75rem); }
 
 /* "Start here" kicker in white (Nov 20) */
 p.home-buy__kicker, .section p.home-buy__kicker { color: #fff; }
+
+/* Shop All header ("Find the Routine That Fits You") in light cream #FEFBF3 (Nov 20) */
+#MainContent > .shopify-section:first-child > section.shop-head { --bg: #FEFBF3; background: #FEFBF3; }
