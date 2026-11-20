@@ -129,7 +129,9 @@
     },
     "video": {
       "type": "video-slot",
-      "settings": {}
+      "settings": {
+        "show_placeholder": false
+      }
     },
     "why": {
       "type": "flow-steps",
