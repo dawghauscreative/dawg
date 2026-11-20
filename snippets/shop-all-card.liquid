@@ -9,11 +9,11 @@
   {%- assign fallback_asset = fallback_capture | strip -%}
   {%- if front_asset == blank -%}{%- capture beige_capture -%}{%- render 'product-front-asset', handle: product.handle -%}{%- endcapture -%}{%- assign front_asset = beige_capture | strip -%}{%- endif -%}
   {%- assign card_alt = product.featured_image.alt | default: product.title -%}
-  {%- assign card_ratio = '4x5' -%}
+  {%- assign card_ratio = '1x1' -%}
   {%- if size == 'featured' -%}{%- assign card_ratio = '1x1' -%}{%- endif -%}
   <article class="shopcard shopcard--{{ size | default: 'system' }}">
     <a class="shopcard__media" href="{{ product.url }}" tabindex="-1" aria-hidden="true">
-      {% if front_asset != blank %}{% render 'responsive-image', asset: front_asset, asset_width: 1200, asset_height: 1500, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}{% else %}{% render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}{% endif %}
+      {% if front_asset != blank %}{% render 'responsive-image', asset: front_asset, asset_width: 1200, asset_height: 1200, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}{% else %}{% render 'responsive-image', image: product.featured_media, asset: fallback_asset, ratio: card_ratio, sizes: '(min-width: 1000px) 40vw, (min-width: 600px) 50vw, 100vw', alt: card_alt %}{% endif %}
     </a>
     <div class="shopcard__body">
       {%- if role != blank or badge != blank -%}

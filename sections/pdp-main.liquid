@@ -169,6 +169,7 @@
 
             {%- when 'buy_buttons' -%}
               <div class="buy-box" id="buy-box" {{ block.shopify_attributes }}>
+                {%- if settings.physician_note != blank -%}<p class="small physician-note physician-note--top">{{ settings.physician_note }}</p>{%- endif -%}
                 {%- form 'product', product, id: form_id, class: 'buy-form', novalidate: 'novalidate' -%}
                   <input type="hidden" name="product-id" value="{{ product.id }}">
                   {%- comment -%} One default variant per product. Supr's widget supplies the plan/quantity choices; this input is only the variant it posts. {%- endcomment -%}
@@ -188,7 +189,6 @@
                   <p class="price-placeholder small" role="note">{{ settings.three_month_placeholder_text }}</p>
                 {%- endif -%}
                 {%- render 'guarantee-badge', style: 'line' -%}
-                {%- if settings.physician_note != blank -%}<p class="small physician-note">{{ settings.physician_note }}</p>{%- endif -%}
               </div>
 
             {%- when 'expectation' -%}

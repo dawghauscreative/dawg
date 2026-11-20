@@ -1,13 +1,13 @@
 {%- comment -%}
-  Beige product shot (Nov 20) for every formula and bundle. Cards use this in place of the product's own photo.
+  Square grey product shot (Nov 20) for every formula and bundle. Cards use this in place of the product's own photo.
   Usage: {% capture front %}{% render 'product-front-asset', handle: product.handle %}{% endcapture %}
 {%- endcomment -%}
 {%- case handle -%}
-  {%- when 'uv-shield' -%}product-beige-uv-shield.webp
-  {%- when 'skinbiotic' -%}product-beige-skinbiotic.webp
-  {%- when 'dermaboost' -%}product-beige-dermaboost.webp
-  {%- when 'outdoor-duo', 'sun-safe-system' -%}product-beige-sun-safe.webp
-  {%- when 'balance-duo', 'skin-recovery-system' -%}product-beige-skin-recovery.webp
-  {%- when 'sun-resilience-duo', 'sun-resilience-system' -%}product-beige-sun-resilience.webp
-  {%- when 'tria-prima', 'complete-skin-defense-system' -%}product-beige-trio.webp
+  {%- when 'uv-shield' -%}product-square-uv-shield.webp
+  {%- when 'skinbiotic' -%}product-square-skinbiotic.webp
+  {%- when 'dermaboost' -%}product-square-dermaboost.webp
+  {%- when 'outdoor-duo', 'sun-safe-system' -%}product-square-sun-safe.webp
+  {%- when 'balance-duo', 'skin-recovery-system' -%}product-square-skin-recovery.webp
+  {%- when 'sun-resilience-duo', 'sun-resilience-system' -%}product-square-sun-resilience.webp
+  {%- when 'tria-prima', 'complete-skin-defense-system' -%}product-square-trio.webp
 {%- endcase -%}

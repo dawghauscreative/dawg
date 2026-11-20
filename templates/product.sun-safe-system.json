@@ -56,11 +56,11 @@
           "type": "trust_bar",
           "settings": {
             "icon_1": "shield",
-            "text_1": "Dermatologist-formulated",
+            "text_1": "Developed by Dr. Mia Luna / Board-certified dermatologist",
             "icon_2": "molecule",
-            "text_2": "Research-informed",
+            "text_2": "",
             "icon_3": "layers",
-            "text_3": "Full ingredient transparency"
+            "text_3": ""
           }
         },
         "note": {

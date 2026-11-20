@@ -1979,3 +1979,16 @@ p.home-buy__kicker, .section p.home-buy__kicker { color: #fff; }
 
 /* Shop All header ("Find the Routine That Fits You") in light cream #FEFBF3 (Nov 20) */
 #MainContent > .shopify-section:first-child > section.shop-head { --bg: #FEFBF3 !important; background: #FEFBF3 !important; }
+
+/* Designer feedback (Nov 13 notes, applied Nov 20) */
+/* Square product frames on cards, no gold outline around product images */
+.pcard__media { aspect-ratio: auto; }
+.pcard__media .media, .role-col__media .media, .finder-card__media, .shopcard__media .media, .sel-card__media .media, .bundle-tab__media .media { border: 0; }
+.pcard-wrap--featured .pcard { box-shadow: none; }
+/* Single trust line on product pages */
+.trust-bar:has(> div:only-of-type) { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+/* Consult note sits above the plan options */
+.physician-note--top, .home-buy__info > .physician-note { margin: 0 0 10px; }
+.home-buy__info > .home-buy__more { margin: 0 0 18px; }
+/* Buttons (all pages except the home page, which stays as approved): larger text, tighter padding */
+body:not(.template-index) .btn { font-size: .95rem; padding: .55em 1.4em; min-height: 42px; letter-spacing: .1em; }
