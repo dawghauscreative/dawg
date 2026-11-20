@@ -35,7 +35,7 @@ Paste this into any chat that writes or designs for Alchemia MD. It replaces the
 | Ink | #212121 | Text on light backgrounds |
 
 ## Layout
-- Photos have rounded corners (16px; 12px on small tiles). Product images and product cards use cream #FEF7EA behind the jars, on every page.
+- Photos have rounded corners (16px; 12px on small tiles). Product jar photos sit square on a light grey tile (#E0E0E0), on every page (product images use the same grey background).
 - A short thick rule (grey #AFAFAF or tan #DEBC8C, about 155 × 6px) can sit above a section, top left.
 - Footer: mailing list row (tan ALL CAPS label, pill email field with Subscribe), thin tan rule, four columns (Shop, Learn, Support, Legal) with tan headings and small caps links, FDA statement and copyright centred.
 - Home page order: hero (jar on olive slope) → credit band → SPF statement → layered routine → activities → formula cards → first 90 days → founder note → mailing list / footer.

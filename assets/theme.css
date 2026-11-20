@@ -1976,9 +1976,3 @@ h3 { font-size: clamp(1.35rem, 1.9vw, 1.75rem); }
 
 /* "Start here" kicker in white (Nov 20) */
 p.home-buy__kicker, .section p.home-buy__kicker { color: #fff; }
-
-/* Product cards and product image tiles in cream #FEF7EA (Nov 20), matching the product images' background. */
-:root { --t-card-cream: #FEF7EA; }
-:is(.shopcard, .pcard, .sel-card, .finder-card):not(.scheme-dark *):not(.scheme-green *) { background: var(--t-card-cream); }
-.hform__media { background: var(--t-card-cream); }
-:is(.shopcard__media, .pcard__media, .sel-card__media, .finder-card__media, .bundle-tab__media) .media { background: var(--t-card-cream); }
